@@ -1,5 +1,4 @@
-
-root: ./catapa_python/generated/
+root: ./python/catapa-python/catapa_python/generated/
 
 structure:
   readme: README.md
