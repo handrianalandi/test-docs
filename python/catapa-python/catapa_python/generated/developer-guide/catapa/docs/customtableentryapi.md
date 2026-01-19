@@ -52,10 +52,10 @@ except ApiException as e:
 
 #### Parameters
 
-| Name              | Type                                            | Description | Notes |
-| ----------------- | ----------------------------------------------- | ----------- | ----- |
-| **table\_id**     | **str**                                         |             |       |
-| **request\_body** | [**Dict\[str, object\]**](../../docs/object.md) |             |       |
+| Name              | Type                                               | Description | Notes |
+| ----------------- | -------------------------------------------------- | ----------- | ----- |
+| **table\_id**     | **str**                                            |             |       |
+| **request\_body** | [**Dict\[str, object\]**](../../../docs/object.md) |             |       |
 
 #### Return type
 
@@ -187,11 +187,11 @@ except ApiException as e:
 
 #### Parameters
 
-| Name              | Type                                            | Description | Notes |
-| ----------------- | ----------------------------------------------- | ----------- | ----- |
-| **table\_id**     | **str**                                         |             |       |
-| **entry\_id**     | **str**                                         |             |       |
-| **request\_body** | [**Dict\[str, object\]**](../../docs/object.md) |             |       |
+| Name              | Type                                               | Description | Notes |
+| ----------------- | -------------------------------------------------- | ----------- | ----- |
+| **table\_id**     | **str**                                            |             |       |
+| **entry\_id**     | **str**                                            |             |       |
+| **request\_body** | [**Dict\[str, object\]**](../../../docs/object.md) |             |       |
 
 #### Return type
 
