@@ -1,5 +1,0 @@
-root: ./python/catapa-python/catapa_python/
-
-structure:
-  readme: ./generated/README.md
-
