@@ -55,7 +55,7 @@ A complete example showing how to use multiple API classes with a single client.
 ```python
 #!/usr/bin/env python3
 
-from catapa import Catapa, OrganizationApi, MasterDataApi, TaxApi
+from catapa import Catapa, OrganizationApi, MasterDataApi
 
 def main() -> None:
     """Main function demonstrating multiple API usage."""
@@ -94,7 +94,6 @@ A complete example for long-running services that need persistent API access.
 from catapa import Catapa, EmployeeApi
 import time
 
-
 def main() -> None:
     """Main function for long-running service example."""
     # Initialize client once at service startup
@@ -124,7 +123,7 @@ if __name__ == "__main__":
     main()
 ```
 
-### Cookbook 3: Concurrent API Calls
+### Cookbook 2: Concurrent API Calls
 
 A complete example for making concurrent API calls efficiently.
 
