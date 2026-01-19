@@ -1,0 +1,6 @@
+
+root: ./catapa_python/generated/
+
+structure:
+  readme: README.md
+  summary: SUMMARY.md
