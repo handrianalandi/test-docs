@@ -1,0 +1,73 @@
+# WidgetsApi
+
+## WidgetsApi
+
+> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!\
+> &#xNAN;**✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
+
+All URIs are relative to _https://api.catapa.com_
+
+| Method                                                                           | HTTP request                      | Description                 |
+| -------------------------------------------------------------------------------- | --------------------------------- | --------------------------- |
+| [**get\_widgets\_by\_current\_user**](widgetsapi.md#get_widgets_by_current_user) | **GET** /core/v1/users/me/widgets | Get Widgets by Current User |
+
+## **get\_widgets\_by\_current\_user**
+
+> WidgetListResponse get\_widgets\_by\_current\_user()
+
+Get Widgets by Current User
+
+#### Search Query | Supported Keys | Supported Operators | Notes | |----------------|---------------------|---------------| | widgetType | : | Equal operator |
+
+#### Example
+
+```python
+from catapa import Catapa, WidgetsApi, ApiException
+from pprint import pprint
+
+# Step 1: Initialize the Catapa client with your credentials
+# The client automatically handles OAuth2 authentication and token refresh
+client = Catapa(
+    tenant="your-tenant-id",
+    client_id="your-client-id",
+    client_secret="your-client-secret"
+)
+
+# Step 2: Create an instance of the API class
+# Tokens are automatically refreshed on every API call (5-minute buffer before expiration)
+api_instance = WidgetsApi(client)
+
+try:
+    # Get Widgets by Current User
+    api_response = api_instance.get_widgets_by_current_user()
+    print("The response of WidgetsApi->get_widgets_by_current_user:\n")
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling WidgetsApi->get_widgets_by_current_user: %s\n" % e)
+```
+
+#### Parameters
+
+This endpoint does not need any parameter.
+
+#### Return type
+
+[**WidgetListResponse**](widgetlistresponse.md)
+
+#### Authorization
+
+[BearerAuth](../#BearerAuth)
+
+#### HTTP request headers
+
+* **Content-Type**: Not defined
+* **Accept**: application/json
+
+#### HTTP response details
+
+| Status code | Description | Response headers |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
+
+[\[Back to top\]](widgetsapi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
