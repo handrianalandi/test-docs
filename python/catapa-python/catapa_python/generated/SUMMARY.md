@@ -497,3 +497,4 @@
     * [WorkgroupWorkdayConfigurationListResponse](catapa/docs/workgroupworkdayconfigurationlistresponse.md)
     * [WorkgroupWorkdayConfigurationRequest](catapa/docs/workgroupworkdayconfigurationrequest.md)
     * [WorkgroupWorkdayConfigurationResponse](catapa/docs/workgroupworkdayconfigurationresponse.md)
+* [i dont care go on and tear me apart](i-dont-care-go-on-and-tear-me-apart.md)
