@@ -1,44 +1,45 @@
 # TimeManagementApi
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
-> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
+## TimeManagementApi
 
-All URIs are relative to *https://api.catapa.com*
+> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!\
+> &#xNAN;**✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create_attendance_machine_data**](TimeManagementApi.md#create_attendance_machine_data) | **POST** /timemanagement/v1/fingerprints | Create Attendance Machine Data
-[**create_employee_roster_configuration**](TimeManagementApi.md#create_employee_roster_configuration) | **POST** /timemanagement/v1/employee-workday-configurations | Create Employee Roster Configuration
-[**create_leave_balance**](TimeManagementApi.md#create_leave_balance) | **POST** /timemanagement/v1/leave-balances | Create Leave Balance
-[**create_other_leave_balance**](TimeManagementApi.md#create_other_leave_balance) | **POST** /timemanagement/v1/other-leave-balances | Create Other Leave Balance
-[**create_shift_pattern_template**](TimeManagementApi.md#create_shift_pattern_template) | **POST** /timemanagement/v1/shift-pattern-templates | Create Shift Pattern Template
-[**create_workgroup_roster_configuration**](TimeManagementApi.md#create_workgroup_roster_configuration) | **POST** /timemanagement/v1/workgroup-workday-configurations | Create Workgroup Roster Configuration
-[**delete_employee_roster_configuration**](TimeManagementApi.md#delete_employee_roster_configuration) | **DELETE** /timemanagement/v1/employee-workday-configurations/{id} | Delete Employee Roster Configuration
-[**delete_shift_pattern_template**](TimeManagementApi.md#delete_shift_pattern_template) | **DELETE** /timemanagement/v1/shift-pattern-templates/{id} | Delete Shift Pattern Template
-[**delete_workgroup_roster_configuration**](TimeManagementApi.md#delete_workgroup_roster_configuration) | **DELETE** /timemanagement/v1/workgroup-workday-configurations/{id} | Delete Workgroup Roster Configuration
-[**read_attendance**](TimeManagementApi.md#read_attendance) | **GET** /timemanagement/v1/attendances | Read Attendance
-[**read_attendance_recapitulation_detail**](TimeManagementApi.md#read_attendance_recapitulation_detail) | **GET** /timemanagement/v1/attendance-recapitulations/details | Read Attendance Recapitulation Detail
-[**read_employee_roster_configuration**](TimeManagementApi.md#read_employee_roster_configuration) | **GET** /timemanagement/v1/employee-workday-configurations | Read Employee Roster Configuration
-[**read_employee_roster_configuration_by_id**](TimeManagementApi.md#read_employee_roster_configuration_by_id) | **GET** /timemanagement/v1/employee-workday-configurations/{id} | Read Employee Roster Configuration By Id
-[**read_holiday**](TimeManagementApi.md#read_holiday) | **GET** /timemanagement/v1/holidays | Read Holiday
-[**read_leave_balance**](TimeManagementApi.md#read_leave_balance) | **GET** /timemanagement/v1/leave-balances | Read Leave Balance
-[**read_other_leave_balance**](TimeManagementApi.md#read_other_leave_balance) | **GET** /timemanagement/v1/other-leave-balances | Read Other Leave Balance
-[**read_shift_pattern_template**](TimeManagementApi.md#read_shift_pattern_template) | **GET** /timemanagement/v1/shift-pattern-templates | Read Shift Pattern Template
-[**read_shift_pattern_template_by_id**](TimeManagementApi.md#read_shift_pattern_template_by_id) | **GET** /timemanagement/v1/shift-pattern-templates/{id} | Read Shift Pattern Template By Id
-[**read_workgroup_roster_configuration**](TimeManagementApi.md#read_workgroup_roster_configuration) | **GET** /timemanagement/v1/workgroup-workday-configurations | Read Workgroup Roster Configuration
-[**read_workgroup_roster_configuration_by_id**](TimeManagementApi.md#read_workgroup_roster_configuration_by_id) | **GET** /timemanagement/v1/workgroup-workday-configurations/{id} | Read Workgroup Roster Configuration By ID
-[**update_employee_roster_configuration**](TimeManagementApi.md#update_employee_roster_configuration) | **PUT** /timemanagement/v1/employee-workday-configurations/{id} | Update Employee Roster Configuration
-[**update_shift_pattern_template**](TimeManagementApi.md#update_shift_pattern_template) | **PUT** /timemanagement/v1/shift-pattern-templates/{id} | Update Shift Pattern Template
-[**update_workgroup_roster_configuration**](TimeManagementApi.md#update_workgroup_roster_configuration) | **PUT** /timemanagement/v1/workgroup-workday-configurations/{id} | Update Workgroup Roster Configuration
+All URIs are relative to _https://api.catapa.com_
 
+| Method                                                                                                               | HTTP request                                                        | Description                               |
+| -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------------------------------- |
+| [**create\_attendance\_machine\_data**](TimeManagementApi.md#create_attendance_machine_data)                         | **POST** /timemanagement/v1/fingerprints                            | Create Attendance Machine Data            |
+| [**create\_employee\_roster\_configuration**](TimeManagementApi.md#create_employee_roster_configuration)             | **POST** /timemanagement/v1/employee-workday-configurations         | Create Employee Roster Configuration      |
+| [**create\_leave\_balance**](TimeManagementApi.md#create_leave_balance)                                              | **POST** /timemanagement/v1/leave-balances                          | Create Leave Balance                      |
+| [**create\_other\_leave\_balance**](TimeManagementApi.md#create_other_leave_balance)                                 | **POST** /timemanagement/v1/other-leave-balances                    | Create Other Leave Balance                |
+| [**create\_shift\_pattern\_template**](TimeManagementApi.md#create_shift_pattern_template)                           | **POST** /timemanagement/v1/shift-pattern-templates                 | Create Shift Pattern Template             |
+| [**create\_workgroup\_roster\_configuration**](TimeManagementApi.md#create_workgroup_roster_configuration)           | **POST** /timemanagement/v1/workgroup-workday-configurations        | Create Workgroup Roster Configuration     |
+| [**delete\_employee\_roster\_configuration**](TimeManagementApi.md#delete_employee_roster_configuration)             | **DELETE** /timemanagement/v1/employee-workday-configurations/{id}  | Delete Employee Roster Configuration      |
+| [**delete\_shift\_pattern\_template**](TimeManagementApi.md#delete_shift_pattern_template)                           | **DELETE** /timemanagement/v1/shift-pattern-templates/{id}          | Delete Shift Pattern Template             |
+| [**delete\_workgroup\_roster\_configuration**](TimeManagementApi.md#delete_workgroup_roster_configuration)           | **DELETE** /timemanagement/v1/workgroup-workday-configurations/{id} | Delete Workgroup Roster Configuration     |
+| [**read\_attendance**](TimeManagementApi.md#read_attendance)                                                         | **GET** /timemanagement/v1/attendances                              | Read Attendance                           |
+| [**read\_attendance\_recapitulation\_detail**](TimeManagementApi.md#read_attendance_recapitulation_detail)           | **GET** /timemanagement/v1/attendance-recapitulations/details       | Read Attendance Recapitulation Detail     |
+| [**read\_employee\_roster\_configuration**](TimeManagementApi.md#read_employee_roster_configuration)                 | **GET** /timemanagement/v1/employee-workday-configurations          | Read Employee Roster Configuration        |
+| [**read\_employee\_roster\_configuration\_by\_id**](TimeManagementApi.md#read_employee_roster_configuration_by_id)   | **GET** /timemanagement/v1/employee-workday-configurations/{id}     | Read Employee Roster Configuration By Id  |
+| [**read\_holiday**](TimeManagementApi.md#read_holiday)                                                               | **GET** /timemanagement/v1/holidays                                 | Read Holiday                              |
+| [**read\_leave\_balance**](TimeManagementApi.md#read_leave_balance)                                                  | **GET** /timemanagement/v1/leave-balances                           | Read Leave Balance                        |
+| [**read\_other\_leave\_balance**](TimeManagementApi.md#read_other_leave_balance)                                     | **GET** /timemanagement/v1/other-leave-balances                     | Read Other Leave Balance                  |
+| [**read\_shift\_pattern\_template**](TimeManagementApi.md#read_shift_pattern_template)                               | **GET** /timemanagement/v1/shift-pattern-templates                  | Read Shift Pattern Template               |
+| [**read\_shift\_pattern\_template\_by\_id**](TimeManagementApi.md#read_shift_pattern_template_by_id)                 | **GET** /timemanagement/v1/shift-pattern-templates/{id}             | Read Shift Pattern Template By Id         |
+| [**read\_workgroup\_roster\_configuration**](TimeManagementApi.md#read_workgroup_roster_configuration)               | **GET** /timemanagement/v1/workgroup-workday-configurations         | Read Workgroup Roster Configuration       |
+| [**read\_workgroup\_roster\_configuration\_by\_id**](TimeManagementApi.md#read_workgroup_roster_configuration_by_id) | **GET** /timemanagement/v1/workgroup-workday-configurations/{id}    | Read Workgroup Roster Configuration By ID |
+| [**update\_employee\_roster\_configuration**](TimeManagementApi.md#update_employee_roster_configuration)             | **PUT** /timemanagement/v1/employee-workday-configurations/{id}     | Update Employee Roster Configuration      |
+| [**update\_shift\_pattern\_template**](TimeManagementApi.md#update_shift_pattern_template)                           | **PUT** /timemanagement/v1/shift-pattern-templates/{id}             | Update Shift Pattern Template             |
+| [**update\_workgroup\_roster\_configuration**](TimeManagementApi.md#update_workgroup_roster_configuration)           | **PUT** /timemanagement/v1/workgroup-workday-configurations/{id}    | Update Workgroup Roster Configuration     |
 
-# **create_attendance_machine_data**
-> FingerprintResponse create_attendance_machine_data(fingerprint_item_request)
+## **create\_attendance\_machine\_data**
+
+> FingerprintResponse create\_attendance\_machine\_data(fingerprint\_item\_request)
 
 Create Attendance Machine Data
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TimeManagementApi, ApiException
@@ -66,44 +67,41 @@ except ApiException as e:
     print("Exception when calling TimeManagementApi->create_attendance_machine_data: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                           | Type                                                            | Description | Notes       |
+| ------------------------------ | --------------------------------------------------------------- | ----------- | ----------- |
+| **fingerprint\_item\_request** | [**List\[FingerprintItemRequest\]**](FingerprintItemRequest.md) |             | \[optional] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **fingerprint_item_request** | [**List[FingerprintItemRequest]**](FingerprintItemRequest.md)|  | [optional] 
-
-### Return type
+#### Return type
 
 [**FingerprintResponse**](FingerprintResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TimeManagementApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **create\_employee\_roster\_configuration**
 
-# **create_employee_roster_configuration**
-> EmployeeWorkdayConfigurationResponse create_employee_roster_configuration(employee_workday_configuration_request)
+> EmployeeWorkdayConfigurationResponse create\_employee\_roster\_configuration(employee\_workday\_configuration\_request)
 
 Create Employee Roster Configuration
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TimeManagementApi, ApiException
@@ -131,44 +129,41 @@ except ApiException as e:
     print("Exception when calling TimeManagementApi->create_employee_roster_configuration: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                                          | Type                                                                              | Description | Notes       |
+| --------------------------------------------- | --------------------------------------------------------------------------------- | ----------- | ----------- |
+| **employee\_workday\_configuration\_request** | [**EmployeeWorkdayConfigurationRequest**](EmployeeWorkdayConfigurationRequest.md) |             | \[optional] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **employee_workday_configuration_request** | [**EmployeeWorkdayConfigurationRequest**](EmployeeWorkdayConfigurationRequest.md)|  | [optional] 
-
-### Return type
+#### Return type
 
 [**EmployeeWorkdayConfigurationResponse**](EmployeeWorkdayConfigurationResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**201** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **201**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TimeManagementApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **create\_leave\_balance**
 
-# **create_leave_balance**
-> LeaveBalanceItemResponse create_leave_balance(leave_balance_request)
+> LeaveBalanceItemResponse create\_leave\_balance(leave\_balance\_request)
 
 Create Leave Balance
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TimeManagementApi, ApiException
@@ -196,44 +191,41 @@ except ApiException as e:
     print("Exception when calling TimeManagementApi->create_leave_balance: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                        | Type                                              | Description | Notes       |
+| --------------------------- | ------------------------------------------------- | ----------- | ----------- |
+| **leave\_balance\_request** | [**LeaveBalanceRequest**](LeaveBalanceRequest.md) |             | \[optional] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **leave_balance_request** | [**LeaveBalanceRequest**](LeaveBalanceRequest.md)|  | [optional] 
-
-### Return type
+#### Return type
 
 [**LeaveBalanceItemResponse**](LeaveBalanceItemResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TimeManagementApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **create\_other\_leave\_balance**
 
-# **create_other_leave_balance**
-> OtherLeaveBalanceCreateResponse create_other_leave_balance(other_leave_balance_request)
+> OtherLeaveBalanceCreateResponse create\_other\_leave\_balance(other\_leave\_balance\_request)
 
 Create Other Leave Balance
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TimeManagementApi, ApiException
@@ -261,44 +253,41 @@ except ApiException as e:
     print("Exception when calling TimeManagementApi->create_other_leave_balance: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                               | Type                                                        | Description | Notes       |
+| ---------------------------------- | ----------------------------------------------------------- | ----------- | ----------- |
+| **other\_leave\_balance\_request** | [**OtherLeaveBalanceRequest**](OtherLeaveBalanceRequest.md) |             | \[optional] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **other_leave_balance_request** | [**OtherLeaveBalanceRequest**](OtherLeaveBalanceRequest.md)|  | [optional] 
-
-### Return type
+#### Return type
 
 [**OtherLeaveBalanceCreateResponse**](OtherLeaveBalanceCreateResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TimeManagementApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **create\_shift\_pattern\_template**
 
-# **create_shift_pattern_template**
-> ShiftPatternTemplateListItemResponse create_shift_pattern_template(shift_pattern_template_request)
+> ShiftPatternTemplateListItemResponse create\_shift\_pattern\_template(shift\_pattern\_template\_request)
 
 Create Shift Pattern Template
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TimeManagementApi, ApiException
@@ -326,44 +315,41 @@ except ApiException as e:
     print("Exception when calling TimeManagementApi->create_shift_pattern_template: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                                  | Type                                                              | Description | Notes       |
+| ------------------------------------- | ----------------------------------------------------------------- | ----------- | ----------- |
+| **shift\_pattern\_template\_request** | [**ShiftPatternTemplateRequest**](ShiftPatternTemplateRequest.md) |             | \[optional] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **shift_pattern_template_request** | [**ShiftPatternTemplateRequest**](ShiftPatternTemplateRequest.md)|  | [optional] 
-
-### Return type
+#### Return type
 
 [**ShiftPatternTemplateListItemResponse**](ShiftPatternTemplateListItemResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**201** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **201**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TimeManagementApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **create\_workgroup\_roster\_configuration**
 
-# **create_workgroup_roster_configuration**
-> WorkgroupWorkdayConfigurationResponse create_workgroup_roster_configuration(workgroup_workday_configuration_request)
+> WorkgroupWorkdayConfigurationResponse create\_workgroup\_roster\_configuration(workgroup\_workday\_configuration\_request)
 
 Create Workgroup Roster Configuration
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TimeManagementApi, ApiException
@@ -391,44 +377,41 @@ except ApiException as e:
     print("Exception when calling TimeManagementApi->create_workgroup_roster_configuration: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                                           | Type                                                                                | Description | Notes       |
+| ---------------------------------------------- | ----------------------------------------------------------------------------------- | ----------- | ----------- |
+| **workgroup\_workday\_configuration\_request** | [**WorkgroupWorkdayConfigurationRequest**](WorkgroupWorkdayConfigurationRequest.md) |             | \[optional] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **workgroup_workday_configuration_request** | [**WorkgroupWorkdayConfigurationRequest**](WorkgroupWorkdayConfigurationRequest.md)|  | [optional] 
-
-### Return type
+#### Return type
 
 [**WorkgroupWorkdayConfigurationResponse**](WorkgroupWorkdayConfigurationResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**201** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **201**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TimeManagementApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **delete\_employee\_roster\_configuration**
 
-# **delete_employee_roster_configuration**
-> object delete_employee_roster_configuration(id)
+> object delete\_employee\_roster\_configuration(id)
 
 Delete Employee Roster Configuration
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TimeManagementApi, ApiException
@@ -456,44 +439,41 @@ except ApiException as e:
     print("Exception when calling TimeManagementApi->delete_employee_roster_configuration: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name   | Type    | Description | Notes |
+| ------ | ------- | ----------- | ----- |
+| **id** | **str** |             |       |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**|  | 
-
-### Return type
+#### Return type
 
 **object**
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TimeManagementApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **delete\_shift\_pattern\_template**
 
-# **delete_shift_pattern_template**
-> object delete_shift_pattern_template(id)
+> object delete\_shift\_pattern\_template(id)
 
 Delete Shift Pattern Template
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TimeManagementApi, ApiException
@@ -521,44 +501,41 @@ except ApiException as e:
     print("Exception when calling TimeManagementApi->delete_shift_pattern_template: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name   | Type    | Description | Notes |
+| ------ | ------- | ----------- | ----- |
+| **id** | **str** |             |       |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**|  | 
-
-### Return type
+#### Return type
 
 **object**
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TimeManagementApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **delete\_workgroup\_roster\_configuration**
 
-# **delete_workgroup_roster_configuration**
-> object delete_workgroup_roster_configuration(id)
+> object delete\_workgroup\_roster\_configuration(id)
 
 Delete Workgroup Roster Configuration
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TimeManagementApi, ApiException
@@ -586,46 +563,43 @@ except ApiException as e:
     print("Exception when calling TimeManagementApi->delete_workgroup_roster_configuration: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name   | Type    | Description | Notes |
+| ------ | ------- | ----------- | ----- |
+| **id** | **str** |             |       |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**|  | 
-
-### Return type
+#### Return type
 
 **object**
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TimeManagementApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **read\_attendance**
 
-# **read_attendance**
-> AttendanceListResponse read_attendance()
+> AttendanceListResponse read\_attendance()
 
 Read Attendance
 
-### Search Query | Supported Keys                | Supported Operators | Notes                                             | | ----------------------------- | ------------------- | ------------------------------------------------- | | employee.identificationNumber | :                   | Like                                              | | date                          | \\><br><             | Greater than or equal to<br>Less than or equal to | 
+#### Search Query | Supported Keys | Supported Operators | Notes | | ----------------------------- | ------------------- | ------------------------------------------------- | | employee.identificationNumber | : | Like | | date | \\> < | Greater than or equal to Less than or equal to |
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TimeManagementApi, ApiException
@@ -652,43 +626,41 @@ except ApiException as e:
     print("Exception when calling TimeManagementApi->read_attendance: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**AttendanceListResponse**](AttendanceListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TimeManagementApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **read\_attendance\_recapitulation\_detail**
 
-# **read_attendance_recapitulation_detail**
-> AttendanceRecapitulationDetailListResponse read_attendance_recapitulation_detail()
+> AttendanceRecapitulationDetailListResponse read\_attendance\_recapitulation\_detail()
 
 Read Attendance Recapitulation Detail
 
-### Search Query | Supported Keys   | Supported Operators | Notes                                                                           | | ---------------- | ------------------- | ------------------------------------------------------------------------------- | | employee.id      | :                   | Equal to                                                                        | | date             | \\><br><             | Greater than or equal to<br>Less than or equal to                               | | attendances.type | :                   | Equal to, supported values: ABSENT, ANNUAL\\_LEAVE, COMPENSATORY\\_LEAVE, PRESENT | 
+#### Search Query | Supported Keys | Supported Operators | Notes | | ---------------- | ------------------- | ------------------------------------------------------------------------------- | | employee.id | : | Equal to | | date | \\> < | Greater than or equal to Less than or equal to | | attendances.type | : | Equal to, supported values: ABSENT, ANNUAL\\\_LEAVE, COMPENSATORY\\\_LEAVE, PRESENT |
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TimeManagementApi, ApiException
@@ -715,43 +687,41 @@ except ApiException as e:
     print("Exception when calling TimeManagementApi->read_attendance_recapitulation_detail: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**AttendanceRecapitulationDetailListResponse**](AttendanceRecapitulationDetailListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TimeManagementApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **read\_employee\_roster\_configuration**
 
-# **read_employee_roster_configuration**
-> EmployeeWorkdayConfigurationListResponse read_employee_roster_configuration()
+> EmployeeWorkdayConfigurationListResponse read\_employee\_roster\_configuration()
 
 Read Employee Roster Configuration
 
-### Search Query | Supported Keys | Supported Operators | Notes                                             | | -------------- | ------------------- | ------------------------------------------------- | | startDate      | \\><br><             | Greater than or equal to<br>Less than or equal to | | endDate        | \\><br><             | Greater than or equal to<br>Less than or equal to | 
+#### Search Query | Supported Keys | Supported Operators | Notes | | -------------- | ------------------- | ------------------------------------------------- | | startDate | \\> < | Greater than or equal to Less than or equal to | | endDate | \\> < | Greater than or equal to Less than or equal to |
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TimeManagementApi, ApiException
@@ -778,41 +748,39 @@ except ApiException as e:
     print("Exception when calling TimeManagementApi->read_employee_roster_configuration: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**EmployeeWorkdayConfigurationListResponse**](EmployeeWorkdayConfigurationListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TimeManagementApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **read\_employee\_roster\_configuration\_by\_id**
 
-# **read_employee_roster_configuration_by_id**
-> EmployeeWorkdayConfigurationResponse read_employee_roster_configuration_by_id(id)
+> EmployeeWorkdayConfigurationResponse read\_employee\_roster\_configuration\_by\_id(id)
 
 Read Employee Roster Configuration By Id
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TimeManagementApi, ApiException
@@ -840,46 +808,43 @@ except ApiException as e:
     print("Exception when calling TimeManagementApi->read_employee_roster_configuration_by_id: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name   | Type    | Description | Notes |
+| ------ | ------- | ----------- | ----- |
+| **id** | **str** |             |       |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**EmployeeWorkdayConfigurationResponse**](EmployeeWorkdayConfigurationResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TimeManagementApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **read\_holiday**
 
-# **read_holiday**
-> HolidayListResponse read_holiday()
+> HolidayListResponse read\_holiday()
 
 Read Holiday
 
-### Search Query | Supported Keys | Supported Operators | Notes                                             | | -------------- | ------------------- | ------------------------------------------------- | | holidayDate    | \\><br><             | Greater than or equal to<br>Less than or equal to | | name           | :                   | Equal Operator                                    | 
+#### Search Query | Supported Keys | Supported Operators | Notes | | -------------- | ------------------- | ------------------------------------------------- | | holidayDate | \\> < | Greater than or equal to Less than or equal to | | name | : | Equal Operator |
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TimeManagementApi, ApiException
@@ -906,43 +871,41 @@ except ApiException as e:
     print("Exception when calling TimeManagementApi->read_holiday: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**HolidayListResponse**](HolidayListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TimeManagementApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **read\_leave\_balance**
 
-# **read_leave_balance**
-> LeaveBalanceListResponse read_leave_balance()
+> LeaveBalanceListResponse read\_leave\_balance()
 
 Read Leave Balance
 
-### Search Query | Supported Keys                | Supported Operators | Notes                                                      | | ----------------------------- | ------------------- | ---------------------------------------------------------- | | employee.identificationNumber | :                   | Like                                                       | | year                          | :<br>><br><          |Equal<br>Greater than or equal to<br>Less than or equal to | | active                        | :                   | Equal                                                      | | extended                      | :                   | Equal                                                      | 
+#### Search Query | Supported Keys | Supported Operators | Notes | | ----------------------------- | ------------------- | ---------------------------------------------------------- | | employee.identificationNumber | : | Like | | year | : > < |Equal Greater than or equal to Less than or equal to | | active | : | Equal | | extended | : | Equal |
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TimeManagementApi, ApiException
@@ -969,43 +932,41 @@ except ApiException as e:
     print("Exception when calling TimeManagementApi->read_leave_balance: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**LeaveBalanceListResponse**](LeaveBalanceListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TimeManagementApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **read\_other\_leave\_balance**
 
-# **read_other_leave_balance**
-> OtherLeaveBalanceListResponse read_other_leave_balance()
+> OtherLeaveBalanceListResponse read\_other\_leave\_balance()
 
 Read Other Leave Balance
 
-### Search Query | Supported Keys                | Supported Operators | Notes | | ----------------------------- | ------------------- | ----- | | employee.id                   | :                   | Equal | | employee.identificationNumber | :                   | Equal | | year                          | :                   | Equal | | otherLeaveStatus.code         | :                   | Equal | 
+#### Search Query | Supported Keys | Supported Operators | Notes | | ----------------------------- | ------------------- | ----- | | employee.id | : | Equal | | employee.identificationNumber | : | Equal | | year | : | Equal | | otherLeaveStatus.code | : | Equal |
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TimeManagementApi, ApiException
@@ -1032,43 +993,41 @@ except ApiException as e:
     print("Exception when calling TimeManagementApi->read_other_leave_balance: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**OtherLeaveBalanceListResponse**](OtherLeaveBalanceListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TimeManagementApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **read\_shift\_pattern\_template**
 
-# **read_shift_pattern_template**
-> ShiftPatternTemplateListResponse read_shift_pattern_template()
+> ShiftPatternTemplateListResponse read\_shift\_pattern\_template()
 
 Read Shift Pattern Template
 
-### Search Query | Supported Keys | Supported Operators | Notes         | | -------------- | ------------------- | ------------- | | name           | :                   | Like operator | 
+#### Search Query | Supported Keys | Supported Operators | Notes | | -------------- | ------------------- | ------------- | | name | : | Like operator |
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TimeManagementApi, ApiException
@@ -1095,41 +1054,39 @@ except ApiException as e:
     print("Exception when calling TimeManagementApi->read_shift_pattern_template: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**ShiftPatternTemplateListResponse**](ShiftPatternTemplateListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TimeManagementApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **read\_shift\_pattern\_template\_by\_id**
 
-# **read_shift_pattern_template_by_id**
-> ShiftPatternTemplateItemResponse read_shift_pattern_template_by_id(id)
+> ShiftPatternTemplateItemResponse read\_shift\_pattern\_template\_by\_id(id)
 
 Read Shift Pattern Template By Id
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TimeManagementApi, ApiException
@@ -1157,46 +1114,43 @@ except ApiException as e:
     print("Exception when calling TimeManagementApi->read_shift_pattern_template_by_id: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name   | Type    | Description | Notes |
+| ------ | ------- | ----------- | ----- |
+| **id** | **str** |             |       |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**ShiftPatternTemplateItemResponse**](ShiftPatternTemplateItemResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TimeManagementApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **read\_workgroup\_roster\_configuration**
 
-# **read_workgroup_roster_configuration**
-> WorkgroupWorkdayConfigurationListResponse read_workgroup_roster_configuration()
+> WorkgroupWorkdayConfigurationListResponse read\_workgroup\_roster\_configuration()
 
 Read Workgroup Roster Configuration
 
-### Search Query | Supported Keys | Supported Operators | Notes                                             | | -------------- | ------------------- | ------------------------------------------------- | | startDate      | \\><br><             | Greater than or equal to<br>Less than or equal to | | endDate        | \\><br><             | Greater than or equal to<br>Less than or equal to | 
+#### Search Query | Supported Keys | Supported Operators | Notes | | -------------- | ------------------- | ------------------------------------------------- | | startDate | \\> < | Greater than or equal to Less than or equal to | | endDate | \\> < | Greater than or equal to Less than or equal to |
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TimeManagementApi, ApiException
@@ -1223,41 +1177,39 @@ except ApiException as e:
     print("Exception when calling TimeManagementApi->read_workgroup_roster_configuration: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**WorkgroupWorkdayConfigurationListResponse**](WorkgroupWorkdayConfigurationListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TimeManagementApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **read\_workgroup\_roster\_configuration\_by\_id**
 
-# **read_workgroup_roster_configuration_by_id**
-> WorkgroupWorkdayConfigurationResponse read_workgroup_roster_configuration_by_id(id)
+> WorkgroupWorkdayConfigurationResponse read\_workgroup\_roster\_configuration\_by\_id(id)
 
 Read Workgroup Roster Configuration By ID
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TimeManagementApi, ApiException
@@ -1285,44 +1237,41 @@ except ApiException as e:
     print("Exception when calling TimeManagementApi->read_workgroup_roster_configuration_by_id: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name   | Type    | Description | Notes |
+| ------ | ------- | ----------- | ----- |
+| **id** | **str** |             |       |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**WorkgroupWorkdayConfigurationResponse**](WorkgroupWorkdayConfigurationResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TimeManagementApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **update\_employee\_roster\_configuration**
 
-# **update_employee_roster_configuration**
-> EmployeeWorkdayConfigurationResponse update_employee_roster_configuration(id, employee_workday_configuration_request)
+> EmployeeWorkdayConfigurationResponse update\_employee\_roster\_configuration(id, employee\_workday\_configuration\_request)
 
 Update Employee Roster Configuration
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TimeManagementApi, ApiException
@@ -1351,45 +1300,42 @@ except ApiException as e:
     print("Exception when calling TimeManagementApi->update_employee_roster_configuration: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                                          | Type                                                                              | Description | Notes       |
+| --------------------------------------------- | --------------------------------------------------------------------------------- | ----------- | ----------- |
+| **id**                                        | **str**                                                                           |             |             |
+| **employee\_workday\_configuration\_request** | [**EmployeeWorkdayConfigurationRequest**](EmployeeWorkdayConfigurationRequest.md) |             | \[optional] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**|  | 
- **employee_workday_configuration_request** | [**EmployeeWorkdayConfigurationRequest**](EmployeeWorkdayConfigurationRequest.md)|  | [optional] 
-
-### Return type
+#### Return type
 
 [**EmployeeWorkdayConfigurationResponse**](EmployeeWorkdayConfigurationResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TimeManagementApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **update\_shift\_pattern\_template**
 
-# **update_shift_pattern_template**
-> ShiftPatternTemplateItemResponse update_shift_pattern_template(id, shift_pattern_template_request)
+> ShiftPatternTemplateItemResponse update\_shift\_pattern\_template(id, shift\_pattern\_template\_request)
 
 Update Shift Pattern Template
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TimeManagementApi, ApiException
@@ -1418,45 +1364,42 @@ except ApiException as e:
     print("Exception when calling TimeManagementApi->update_shift_pattern_template: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                                  | Type                                                              | Description | Notes       |
+| ------------------------------------- | ----------------------------------------------------------------- | ----------- | ----------- |
+| **id**                                | **str**                                                           |             |             |
+| **shift\_pattern\_template\_request** | [**ShiftPatternTemplateRequest**](ShiftPatternTemplateRequest.md) |             | \[optional] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**|  | 
- **shift_pattern_template_request** | [**ShiftPatternTemplateRequest**](ShiftPatternTemplateRequest.md)|  | [optional] 
-
-### Return type
+#### Return type
 
 [**ShiftPatternTemplateItemResponse**](ShiftPatternTemplateItemResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TimeManagementApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **update\_workgroup\_roster\_configuration**
 
-# **update_workgroup_roster_configuration**
-> WorkgroupWorkdayConfigurationResponse update_workgroup_roster_configuration(id, workgroup_workday_configuration_request)
+> WorkgroupWorkdayConfigurationResponse update\_workgroup\_roster\_configuration(id, workgroup\_workday\_configuration\_request)
 
 Update Workgroup Roster Configuration
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TimeManagementApi, ApiException
@@ -1485,34 +1428,31 @@ except ApiException as e:
     print("Exception when calling TimeManagementApi->update_workgroup_roster_configuration: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                                           | Type                                                                                | Description | Notes       |
+| ---------------------------------------------- | ----------------------------------------------------------------------------------- | ----------- | ----------- |
+| **id**                                         | **str**                                                                             |             |             |
+| **workgroup\_workday\_configuration\_request** | [**WorkgroupWorkdayConfigurationRequest**](WorkgroupWorkdayConfigurationRequest.md) |             | \[optional] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**|  | 
- **workgroup_workday_configuration_request** | [**WorkgroupWorkdayConfigurationRequest**](WorkgroupWorkdayConfigurationRequest.md)|  | [optional] 
-
-### Return type
+#### Return type
 
 [**WorkgroupWorkdayConfigurationResponse**](WorkgroupWorkdayConfigurationResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](TimeManagementApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)

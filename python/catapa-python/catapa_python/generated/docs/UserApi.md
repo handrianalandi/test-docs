@@ -1,23 +1,24 @@
 # UserApi
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
-> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
+## UserApi
 
-All URIs are relative to *https://api.catapa.com*
+> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!\
+> &#xNAN;**✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**find_all_users**](UserApi.md#find_all_users) | **GET** /core/v1/users | Retrieve all users
-[**get_current_user**](UserApi.md#get_current_user) | **GET** /v1/users/me | Get Current User
+All URIs are relative to _https://api.catapa.com_
 
+| Method                                                | HTTP request           | Description        |
+| ----------------------------------------------------- | ---------------------- | ------------------ |
+| [**find\_all\_users**](UserApi.md#find_all_users)     | **GET** /core/v1/users | Retrieve all users |
+| [**get\_current\_user**](UserApi.md#get_current_user) | **GET** /v1/users/me   | Get Current User   |
 
-# **find_all_users**
-> UserListResponse find_all_users(page, size, query)
+## **find\_all\_users**
+
+> UserListResponse find\_all\_users(page, size, query)
 
 Retrieve all users
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, UserApi, ApiException
@@ -47,46 +48,43 @@ except ApiException as e:
     print("Exception when calling UserApi->find_all_users: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name      | Type    | Description      | Notes                        |
+| --------- | ------- | ---------------- | ---------------------------- |
+| **page**  | **int** | Page number      | \[optional] \[default to 0]  |
+| **size**  | **int** | Page size        | \[optional] \[default to 10] |
+| **query** | **str** | ### Search Query | Supported Keys               |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search Query | Supported Keys           | Supported Operators | Notes                                                                                     | |--------------------------|---------------------|-------------------------------------------------------------------------------------------| | usernameIn                 | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter  |                                         |  | [optional] 
-
-### Return type
+#### Return type
 
 [**UserListResponse**](UserListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Successful operation |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description          | Response headers |
+| ----------- | -------------------- | ---------------- |
+| **200**     | Successful operation | -                |
+| **400**     | Bad Request          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](UserApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_current\_user**
 
-# **get_current_user**
-> UserAndRoleResponse get_current_user()
+> UserAndRoleResponse get\_current\_user()
 
 Get Current User
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, UserApi, ApiException
@@ -113,30 +111,28 @@ except ApiException as e:
     print("Exception when calling UserApi->get_current_user: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**UserAndRoleResponse**](UserAndRoleResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](UserApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)

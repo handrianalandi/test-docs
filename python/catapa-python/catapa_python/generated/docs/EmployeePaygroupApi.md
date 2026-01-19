@@ -1,23 +1,24 @@
 # EmployeePaygroupApi
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
-> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
+## EmployeePaygroupApi
 
-All URIs are relative to *https://api.catapa.com*
+> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!\
+> &#xNAN;**✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**get_employee_paygroup_by_id**](EmployeePaygroupApi.md#get_employee_paygroup_by_id) | **GET** /core/v1/employee-paygroups/{id} | Get Employee Paygroup by ID
-[**get_employee_paygroups**](EmployeePaygroupApi.md#get_employee_paygroups) | **GET** /core/v1/employee-paygroups | Get Employee Paygroups
+All URIs are relative to _https://api.catapa.com_
 
+| Method                                                                                    | HTTP request                             | Description                 |
+| ----------------------------------------------------------------------------------------- | ---------------------------------------- | --------------------------- |
+| [**get\_employee\_paygroup\_by\_id**](EmployeePaygroupApi.md#get_employee_paygroup_by_id) | **GET** /core/v1/employee-paygroups/{id} | Get Employee Paygroup by ID |
+| [**get\_employee\_paygroups**](EmployeePaygroupApi.md#get_employee_paygroups)             | **GET** /core/v1/employee-paygroups      | Get Employee Paygroups      |
 
-# **get_employee_paygroup_by_id**
-> EmployeePaygroupResponse get_employee_paygroup_by_id(id)
+## **get\_employee\_paygroup\_by\_id**
+
+> EmployeePaygroupResponse get\_employee\_paygroup\_by\_id(id)
 
 Get Employee Paygroup by ID
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, EmployeePaygroupApi, ApiException
@@ -45,44 +46,41 @@ except ApiException as e:
     print("Exception when calling EmployeePaygroupApi->get_employee_paygroup_by_id: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name   | Type    | Description | Notes |
+| ------ | ------- | ----------- | ----- |
+| **id** | **str** |             |       |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**EmployeePaygroupResponse**](EmployeePaygroupResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](EmployeePaygroupApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_employee\_paygroups**
 
-# **get_employee_paygroups**
-> EmployeePaygroupListResponse get_employee_paygroups(page, size, query)
+> EmployeePaygroupListResponse get\_employee\_paygroups(page, size, query)
 
 Get Employee Paygroups
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, EmployeePaygroupApi, ApiException
@@ -112,35 +110,32 @@ except ApiException as e:
     print("Exception when calling EmployeePaygroupApi->get_employee_paygroups: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name      | Type    | Description      | Notes                        |
+| --------- | ------- | ---------------- | ---------------------------- |
+| **page**  | **int** | Page number      | \[optional] \[default to 0]  |
+| **size**  | **int** | Page size        | \[optional] \[default to 10] |
+| **query** | **str** | ### Search Query | Supported Keys               |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search Query | Supported Keys          | Supported Operators | Notes                                                                                | |-------------------------|---------------------|--------------------------------------------------------------------------------------| | employee.id             | &#x60;:&#x60;                 | Equal operator with multiple values. Each value should separated with delimiters &#x60;;&#x60; | | effectiveDate           | &#x60;&gt;&#x60;&lt;br/&gt;&#x60;&lt;&#x60;&lt;br/&gt;&#x60;&#x3D;&#x60; | Equal operator&lt;br/&gt;Greater than or equal operator&lt;br/&gt;Less than or equal operator&lt;br/&gt;&lt;br/&gt;Use the &#x60;YYYY-MM-DD&#x60; format, e.g. &#x60;effectiveDate&gt;2023-09-20&#x60; |  | [optional] 
-
-### Return type
+#### Return type
 
 [**EmployeePaygroupListResponse**](EmployeePaygroupListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](EmployeePaygroupApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)

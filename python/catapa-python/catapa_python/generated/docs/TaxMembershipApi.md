@@ -1,26 +1,27 @@
 # TaxMembershipApi
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
-> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
+## TaxMembershipApi
 
-All URIs are relative to *https://api.catapa.com*
+> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!\
+> &#xNAN;**✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**get_tax_membership**](TaxMembershipApi.md#get_tax_membership) | **GET** /core/v1/employees/{employeeId}/tax-memberships | Get Tax Membership
-[**update_tax_membership**](TaxMembershipApi.md#update_tax_membership) | **PUT** /core/v1/employees/{employeeId}/tax-memberships | Update Tax Membership
-[**update_tax_membership_tax_subject**](TaxMembershipApi.md#update_tax_membership_tax_subject) | **PUT** /core/v1/employees/{employeeId}/tax-memberships/tax-subjects | Update Tax Membership Tax Subject
+All URIs are relative to _https://api.catapa.com_
 
+| Method                                                                                             | HTTP request                                                         | Description                       |
+| -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- | --------------------------------- |
+| [**get\_tax\_membership**](TaxMembershipApi.md#get_tax_membership)                                 | **GET** /core/v1/employees/{employeeId}/tax-memberships              | Get Tax Membership                |
+| [**update\_tax\_membership**](TaxMembershipApi.md#update_tax_membership)                           | **PUT** /core/v1/employees/{employeeId}/tax-memberships              | Update Tax Membership             |
+| [**update\_tax\_membership\_tax\_subject**](TaxMembershipApi.md#update_tax_membership_tax_subject) | **PUT** /core/v1/employees/{employeeId}/tax-memberships/tax-subjects | Update Tax Membership Tax Subject |
 
-# **get_tax_membership**
-> TaxMembershipResponse get_tax_membership(employee_id)
+## **get\_tax\_membership**
+
+> TaxMembershipResponse get\_tax\_membership(employee\_id)
 
 Get Tax Membership
 
 Retrieve the current tax membership information for a specific employee
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TaxMembershipApi, ApiException
@@ -48,47 +49,44 @@ except ApiException as e:
     print("Exception when calling TaxMembershipApi->get_tax_membership: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name             | Type    | Description                        | Notes |
+| ---------------- | ------- | ---------------------------------- | ----- |
+| **employee\_id** | **str** | Unique identifier for the employee |       |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **employee_id** | **str**| Unique identifier for the employee | 
-
-### Return type
+#### Return type
 
 [**TaxMembershipResponse**](TaxMembershipResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Tax membership retrieved successfully |  -  |
-**400** | Bad Request - Invalid request parameters |  -  |
-**404** | Employee not found |  -  |
+| Status code | Description                              | Response headers |
+| ----------- | ---------------------------------------- | ---------------- |
+| **200**     | Tax membership retrieved successfully    | -                |
+| **400**     | Bad Request - Invalid request parameters | -                |
+| **404**     | Employee not found                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TaxMembershipApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **update\_tax\_membership**
 
-# **update_tax_membership**
-> TaxMembershipResponse update_tax_membership(employee_id, tax_membership_response)
+> TaxMembershipResponse update\_tax\_membership(employee\_id, tax\_membership\_response)
 
 Update Tax Membership
 
 Update the tax membership information for a specific employee
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TaxMembershipApi, ApiException
@@ -117,48 +115,45 @@ except ApiException as e:
     print("Exception when calling TaxMembershipApi->update_tax_membership: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                          | Type                                                  | Description                        | Notes       |
+| ----------------------------- | ----------------------------------------------------- | ---------------------------------- | ----------- |
+| **employee\_id**              | **str**                                               | Unique identifier for the employee |             |
+| **tax\_membership\_response** | [**TaxMembershipResponse**](TaxMembershipResponse.md) |                                    | \[optional] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **employee_id** | **str**| Unique identifier for the employee | 
- **tax_membership_response** | [**TaxMembershipResponse**](TaxMembershipResponse.md)|  | [optional] 
-
-### Return type
+#### Return type
 
 [**TaxMembershipResponse**](TaxMembershipResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Tax membership updated successfully |  -  |
-**400** | Bad Request - Invalid request data |  -  |
-**404** | Employee not found |  -  |
+| Status code | Description                         | Response headers |
+| ----------- | ----------------------------------- | ---------------- |
+| **200**     | Tax membership updated successfully | -                |
+| **400**     | Bad Request - Invalid request data  | -                |
+| **404**     | Employee not found                  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TaxMembershipApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **update\_tax\_membership\_tax\_subject**
 
-# **update_tax_membership_tax_subject**
-> TaxMembershipResponse update_tax_membership_tax_subject(employee_id, tax_membership_tax_subject_request)
+> TaxMembershipResponse update\_tax\_membership\_tax\_subject(employee\_id, tax\_membership\_tax\_subject\_request)
 
 Update Tax Membership Tax Subject
 
 Update tax subject information for an employee's tax membership
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TaxMembershipApi, ApiException
@@ -187,35 +182,32 @@ except ApiException as e:
     print("Exception when calling TaxMembershipApi->update_tax_membership_tax_subject: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                                       | Type                                                                    | Description                        | Notes |
+| ------------------------------------------ | ----------------------------------------------------------------------- | ---------------------------------- | ----- |
+| **employee\_id**                           | **str**                                                                 | Unique identifier for the employee |       |
+| **tax\_membership\_tax\_subject\_request** | [**TaxMembershipTaxSubjectRequest**](TaxMembershipTaxSubjectRequest.md) | Tax subject information to update  |       |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **employee_id** | **str**| Unique identifier for the employee | 
- **tax_membership_tax_subject_request** | [**TaxMembershipTaxSubjectRequest**](TaxMembershipTaxSubjectRequest.md)| Tax subject information to update | 
-
-### Return type
+#### Return type
 
 [**TaxMembershipResponse**](TaxMembershipResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Tax membership tax subject updated successfully |  -  |
-**400** | Bad Request - Invalid input data |  -  |
-**404** | Employee not found |  -  |
+| Status code | Description                                     | Response headers |
+| ----------- | ----------------------------------------------- | ---------------- |
+| **200**     | Tax membership tax subject updated successfully | -                |
+| **400**     | Bad Request - Invalid input data                | -                |
+| **404**     | Employee not found                              | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](TaxMembershipApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)

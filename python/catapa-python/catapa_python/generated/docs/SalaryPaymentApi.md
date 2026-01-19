@@ -1,26 +1,27 @@
 # SalaryPaymentApi
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
-> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
+## SalaryPaymentApi
 
-All URIs are relative to *https://api.catapa.com*
+> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!\
+> &#xNAN;**✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**get_payment_item_groups**](SalaryPaymentApi.md#get_payment_item_groups) | **GET** /core/v1/salary-payments/{id}/payment-item-groups | Get Payment Item Groups
-[**get_processed_salary_payment_summaries**](SalaryPaymentApi.md#get_processed_salary_payment_summaries) | **GET** /core/v1/salary-payment-summaries | Get Processed Salary Payment Summaries
-[**get_processed_salary_payments**](SalaryPaymentApi.md#get_processed_salary_payments) | **GET** /core/v1/salary-payments/process/processable/processed | Get Processed Salary Payments
-[**get_salary_payments**](SalaryPaymentApi.md#get_salary_payments) | **GET** /core/v1/salary-payments | Get Salary Payments
-[**get_salary_payments_date**](SalaryPaymentApi.md#get_salary_payments_date) | **GET** /core/v1/salary-payments/dates | Get Salary Payments Date
+All URIs are relative to _https://api.catapa.com_
 
+| Method                                                                                                       | HTTP request                                                   | Description                            |
+| ------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------- | -------------------------------------- |
+| [**get\_payment\_item\_groups**](SalaryPaymentApi.md#get_payment_item_groups)                                | **GET** /core/v1/salary-payments/{id}/payment-item-groups      | Get Payment Item Groups                |
+| [**get\_processed\_salary\_payment\_summaries**](SalaryPaymentApi.md#get_processed_salary_payment_summaries) | **GET** /core/v1/salary-payment-summaries                      | Get Processed Salary Payment Summaries |
+| [**get\_processed\_salary\_payments**](SalaryPaymentApi.md#get_processed_salary_payments)                    | **GET** /core/v1/salary-payments/process/processable/processed | Get Processed Salary Payments          |
+| [**get\_salary\_payments**](SalaryPaymentApi.md#get_salary_payments)                                         | **GET** /core/v1/salary-payments                               | Get Salary Payments                    |
+| [**get\_salary\_payments\_date**](SalaryPaymentApi.md#get_salary_payments_date)                              | **GET** /core/v1/salary-payments/dates                         | Get Salary Payments Date               |
 
-# **get_payment_item_groups**
-> PaymentItemGroupListResponse get_payment_item_groups(id)
+## **get\_payment\_item\_groups**
+
+> PaymentItemGroupListResponse get\_payment\_item\_groups(id)
 
 Get Payment Item Groups
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, SalaryPaymentApi, ApiException
@@ -48,46 +49,43 @@ except ApiException as e:
     print("Exception when calling SalaryPaymentApi->get_payment_item_groups: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name   | Type    | Description | Notes |
+| ------ | ------- | ----------- | ----- |
+| **id** | **str** |             |       |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**PaymentItemGroupListResponse**](PaymentItemGroupListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](SalaryPaymentApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_processed\_salary\_payment\_summaries**
 
-# **get_processed_salary_payment_summaries**
-> SalaryPaymentSummaryListResponse get_processed_salary_payment_summaries()
+> SalaryPaymentSummaryListResponse get\_processed\_salary\_payment\_summaries()
 
 Get Processed Salary Payment Summaries
 
-### Search Query | Supported Keys             | Supported Operators | Notes                                                      | | -------------------------- | ------------------- | ---------------------------------------------------------- | | exported                   | :                   | Like operator                                              | | bankId                     | :                   | Like operator                                              | | companyBankAccountId       | :                   | Like operator                                              | | bankName                   | :                   | Like operator                                              | | year                       | :<br>><br><         | Equal<br>Greater than or equal to<br>Less than or equal to | | month                      | :<br>><br><         | Equal<br>Greater than or equal to<br>Less than or equal to | | numberOfProcessedEmployees | :<br>><br><         | Equal<br>Greater than or equal to<br>Less than or equal to | | paymentDate                | :<br>><br><         | Equal<br>Greater than or equal to<br>Less than or equal to | 
+#### Search Query | Supported Keys | Supported Operators | Notes | | -------------------------- | ------------------- | ---------------------------------------------------------- | | exported | : | Like operator | | bankId | : | Like operator | | companyBankAccountId | : | Like operator | | bankName | : | Like operator | | year | : > < | Equal Greater than or equal to Less than or equal to | | month | : > < | Equal Greater than or equal to Less than or equal to | | numberOfProcessedEmployees | : > < | Equal Greater than or equal to Less than or equal to | | paymentDate | : > < | Equal Greater than or equal to Less than or equal to |
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, SalaryPaymentApi, ApiException
@@ -114,43 +112,41 @@ except ApiException as e:
     print("Exception when calling SalaryPaymentApi->get_processed_salary_payment_summaries: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**SalaryPaymentSummaryListResponse**](SalaryPaymentSummaryListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](SalaryPaymentApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_processed\_salary\_payments**
 
-# **get_processed_salary_payments**
-> ProcessedSalaryPaymentListResponse get_processed_salary_payments()
+> ProcessedSalaryPaymentListResponse get\_processed\_salary\_payments()
 
 Get Processed Salary Payments
 
-### Search Query | Supported Keys         | Supported Operators | Notes         | | ---------------------- | ------------------- | ------------- | | year                   | :                   | Like operator | | month                  | :                   | Like operator | | salaryPaymentProcess   | :                   | Like operator | | salaryPaymentSummaryId | :                   | Like operator | 
+#### Search Query | Supported Keys | Supported Operators | Notes | | ---------------------- | ------------------- | ------------- | | year | : | Like operator | | month | : | Like operator | | salaryPaymentProcess | : | Like operator | | salaryPaymentSummaryId | : | Like operator |
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, SalaryPaymentApi, ApiException
@@ -177,43 +173,41 @@ except ApiException as e:
     print("Exception when calling SalaryPaymentApi->get_processed_salary_payments: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**ProcessedSalaryPaymentListResponse**](ProcessedSalaryPaymentListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](SalaryPaymentApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_salary\_payments**
 
-# **get_salary_payments**
-> SalaryPaymentListResponse get_salary_payments()
+> SalaryPaymentListResponse get\_salary\_payments()
 
 Get Salary Payments
 
-### Search Query | Supported Keys               | Supported Operators        | Notes                                                                        | | ---------------------------- | -------------------------- | ---------------------------------------------------------------------------- | | process                      | `:`                        | Equal operator                                                               | | salaryPaymentSummary.id      | `:`                        | Like operator                                                                | | paymentDate                  | `:`<br/>`>`<br/>`<`        | Equal operator<br/>Greater than or equal to<br/>Less than or equal to        | | employee.id                  | `:`                        | Equal operator                                                                | 
+#### Search Query | Supported Keys | Supported Operators | Notes | | ---------------------------- | -------------------------- | ---------------------------------------------------------------------------- | | process | `:` | Equal operator | | salaryPaymentSummary.id | `:` | Like operator | | paymentDate | `:` `>` `<` | Equal operator Greater than or equal to Less than or equal to | | employee.id | `:` | Equal operator |
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, SalaryPaymentApi, ApiException
@@ -240,41 +234,39 @@ except ApiException as e:
     print("Exception when calling SalaryPaymentApi->get_salary_payments: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**SalaryPaymentListResponse**](SalaryPaymentListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](SalaryPaymentApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_salary\_payments\_date**
 
-# **get_salary_payments_date**
-> List[str] get_salary_payments_date(year, month)
+> List\[str] get\_salary\_payments\_date(year, month)
 
 Get Salary Payments Date
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, SalaryPaymentApi, ApiException
@@ -303,34 +295,31 @@ except ApiException as e:
     print("Exception when calling SalaryPaymentApi->get_salary_payments_date: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name      | Type      | Description | Notes       |
+| --------- | --------- | ----------- | ----------- |
+| **year**  | **float** |             | \[optional] |
+| **month** | **float** |             | \[optional] |
 
+#### Return type
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **year** | **float**|  | [optional] 
- **month** | **float**|  | [optional] 
+**List\[str]**
 
-### Return type
+#### Authorization
 
-**List[str]**
+[BearerAuth](../#BearerAuth)
 
-### Authorization
+#### HTTP request headers
 
-[BearerAuth](../README.md#BearerAuth)
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](SalaryPaymentApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)

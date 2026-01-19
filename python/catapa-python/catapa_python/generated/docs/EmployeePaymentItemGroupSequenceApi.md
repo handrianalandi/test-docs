@@ -1,23 +1,24 @@
 # EmployeePaymentItemGroupSequenceApi
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
-> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
+## EmployeePaymentItemGroupSequenceApi
 
-All URIs are relative to *https://api.catapa.com*
+> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!\
+> &#xNAN;**✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**get_last_sequence_employee**](EmployeePaymentItemGroupSequenceApi.md#get_last_sequence_employee) | **GET** /core/v1/employees/{employeeId}/payment-item-groups/last-sequence | Get Last Payment Item Group Sequence
-[**get_payment_item_group_sequences**](EmployeePaymentItemGroupSequenceApi.md#get_payment_item_group_sequences) | **GET** /core/v1/employees/{employeeId}/payment-item-groups/sequences | Get Payment Item Group Sequences
+All URIs are relative to _https://api.catapa.com_
 
+| Method                                                                                                              | HTTP request                                                              | Description                          |
+| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------------ |
+| [**get\_last\_sequence\_employee**](EmployeePaymentItemGroupSequenceApi.md#get_last_sequence_employee)              | **GET** /core/v1/employees/{employeeId}/payment-item-groups/last-sequence | Get Last Payment Item Group Sequence |
+| [**get\_payment\_item\_group\_sequences**](EmployeePaymentItemGroupSequenceApi.md#get_payment_item_group_sequences) | **GET** /core/v1/employees/{employeeId}/payment-item-groups/sequences     | Get Payment Item Group Sequences     |
 
-# **get_last_sequence_employee**
-> PaymentItemGroupLastSequenceResponse get_last_sequence_employee(employee_id)
+## **get\_last\_sequence\_employee**
+
+> PaymentItemGroupLastSequenceResponse get\_last\_sequence\_employee(employee\_id)
 
 Get Last Payment Item Group Sequence
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, EmployeePaymentItemGroupSequenceApi, ApiException
@@ -45,44 +46,41 @@ except ApiException as e:
     print("Exception when calling EmployeePaymentItemGroupSequenceApi->get_last_sequence_employee: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name             | Type    | Description | Notes |
+| ---------------- | ------- | ----------- | ----- |
+| **employee\_id** | **str** |             |       |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **employee_id** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**PaymentItemGroupLastSequenceResponse**](PaymentItemGroupLastSequenceResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](EmployeePaymentItemGroupSequenceApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_payment\_item\_group\_sequences**
 
-# **get_payment_item_group_sequences**
-> List[PaymentItemGroupSequenceResponse] get_payment_item_group_sequences(employee_id, page, size, query)
+> List\[PaymentItemGroupSequenceResponse] get\_payment\_item\_group\_sequences(employee\_id, page, size, query)
 
 Get Payment Item Group Sequences
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, EmployeePaymentItemGroupSequenceApi, ApiException
@@ -113,36 +111,33 @@ except ApiException as e:
     print("Exception when calling EmployeePaymentItemGroupSequenceApi->get_payment_item_group_sequences: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name             | Type    | Description      | Notes                        |
+| ---------------- | ------- | ---------------- | ---------------------------- |
+| **employee\_id** | **str** |                  |                              |
+| **page**         | **int** | Page number      | \[optional] \[default to 0]  |
+| **size**         | **int** | Page size        | \[optional] \[default to 10] |
+| **query**        | **str** | ### Search Query | Supported Keys               |
 
+#### Return type
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **employee_id** | **str**|  | 
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search Query | Supported Keys                  | Supported Operators | Notes                                                                           | |---------------------------------|---------------------|---------------------------------------------------------------------------------| | id                              | &#x60;:&#x60;                 | Equal operator                                                                  | | employee.id                     | &#x60;:&#x60;                 | Equal operator                                                                  | | paymentItemGroup.paymentType    | &#x60;:&#x60;                 | Equal operator (REGULAR_SALARY / SEVERANCE / RETROACTIVE / ADDITIONAL_INCOME)   | | payrollSequenceNumber           | &#x60;:&#x60;                 | Equal operator                                                                  |  | [optional] 
+[**List\[PaymentItemGroupSequenceResponse\]**](PaymentItemGroupSequenceResponse.md)
 
-### Return type
+#### Authorization
 
-[**List[PaymentItemGroupSequenceResponse]**](PaymentItemGroupSequenceResponse.md)
+[BearerAuth](../#BearerAuth)
 
-### Authorization
+#### HTTP request headers
 
-[BearerAuth](../README.md#BearerAuth)
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](EmployeePaymentItemGroupSequenceApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)

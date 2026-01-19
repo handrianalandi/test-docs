@@ -1,25 +1,26 @@
 # IdentityCardsApi
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
-> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
+## IdentityCardsApi
 
-All URIs are relative to *https://api.catapa.com*
+> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!\
+> &#xNAN;**✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create_employee_identity_cards**](IdentityCardsApi.md#create_employee_identity_cards) | **POST** /core/v1/employees/{employeeId}/employee-identity-cards | Create Employee Identity Cards
-[**delete_employee_identity_cards**](IdentityCardsApi.md#delete_employee_identity_cards) | **DELETE** /core/v1/employees/{employeeId}/employee-identity-cards/{employeeIdentityCardId} | Delete Employee Identity Cards
-[**get_employee_identity_cards**](IdentityCardsApi.md#get_employee_identity_cards) | **GET** /core/v1/employees/{employeeId}/employee-identity-cards | Get Employee Identity Cards
-[**update_employee_identity_cards**](IdentityCardsApi.md#update_employee_identity_cards) | **PUT** /core/v1/employees/{employeeId}/employee-identity-cards/{employeeIdentityCardId} | Update Employee Identity Cards
+All URIs are relative to _https://api.catapa.com_
 
+| Method                                                                                      | HTTP request                                                                                | Description                    |
+| ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------ |
+| [**create\_employee\_identity\_cards**](IdentityCardsApi.md#create_employee_identity_cards) | **POST** /core/v1/employees/{employeeId}/employee-identity-cards                            | Create Employee Identity Cards |
+| [**delete\_employee\_identity\_cards**](IdentityCardsApi.md#delete_employee_identity_cards) | **DELETE** /core/v1/employees/{employeeId}/employee-identity-cards/{employeeIdentityCardId} | Delete Employee Identity Cards |
+| [**get\_employee\_identity\_cards**](IdentityCardsApi.md#get_employee_identity_cards)       | **GET** /core/v1/employees/{employeeId}/employee-identity-cards                             | Get Employee Identity Cards    |
+| [**update\_employee\_identity\_cards**](IdentityCardsApi.md#update_employee_identity_cards) | **PUT** /core/v1/employees/{employeeId}/employee-identity-cards/{employeeIdentityCardId}    | Update Employee Identity Cards |
 
-# **create_employee_identity_cards**
-> EmployeeIdentityCardResponse create_employee_identity_cards(employee_id, employee_identity_card_request)
+## **create\_employee\_identity\_cards**
+
+> EmployeeIdentityCardResponse create\_employee\_identity\_cards(employee\_id, employee\_identity\_card\_request)
 
 Create Employee Identity Cards
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, IdentityCardsApi, ApiException
@@ -48,45 +49,42 @@ except ApiException as e:
     print("Exception when calling IdentityCardsApi->create_employee_identity_cards: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                                  | Type                                                              | Description | Notes       |
+| ------------------------------------- | ----------------------------------------------------------------- | ----------- | ----------- |
+| **employee\_id**                      | **str**                                                           |             |             |
+| **employee\_identity\_card\_request** | [**EmployeeIdentityCardRequest**](EmployeeIdentityCardRequest.md) |             | \[optional] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **employee_id** | **str**|  | 
- **employee_identity_card_request** | [**EmployeeIdentityCardRequest**](EmployeeIdentityCardRequest.md)|  | [optional] 
-
-### Return type
+#### Return type
 
 [**EmployeeIdentityCardResponse**](EmployeeIdentityCardResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](IdentityCardsApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **delete\_employee\_identity\_cards**
 
-# **delete_employee_identity_cards**
-> object delete_employee_identity_cards(employee_id, employee_identity_card_id)
+> object delete\_employee\_identity\_cards(employee\_id, employee\_identity\_card\_id)
 
 Delete Employee Identity Cards
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, IdentityCardsApi, ApiException
@@ -115,45 +113,42 @@ except ApiException as e:
     print("Exception when calling IdentityCardsApi->delete_employee_identity_cards: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                             | Type    | Description | Notes |
+| -------------------------------- | ------- | ----------- | ----- |
+| **employee\_id**                 | **str** |             |       |
+| **employee\_identity\_card\_id** | **str** |             |       |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **employee_id** | **str**|  | 
- **employee_identity_card_id** | **str**|  | 
-
-### Return type
+#### Return type
 
 **object**
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](IdentityCardsApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_employee\_identity\_cards**
 
-# **get_employee_identity_cards**
-> EmployeeIdentityCardListResponse get_employee_identity_cards(employee_id, query)
+> EmployeeIdentityCardListResponse get\_employee\_identity\_cards(employee\_id, query)
 
 Get Employee Identity Cards
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, IdentityCardsApi, ApiException
@@ -182,45 +177,42 @@ except ApiException as e:
     print("Exception when calling IdentityCardsApi->get_employee_identity_cards: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name             | Type    | Description      | Notes          |
+| ---------------- | ------- | ---------------- | -------------- |
+| **employee\_id** | **str** |                  |                |
+| **query**        | **str** | ### Search Query | Supported Keys |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **employee_id** | **str**|  | 
- **query** | **str**| ### Search Query | Supported Keys     | Supported Operators | Notes                                                                                     | |--------------------|---------------------|-------------------------------------------------------------------------------------------| | effectiveDate      | &#x60;&lt;&#x60;                 | Less than or equal to&lt;br/&gt;&lt;br/&gt;Use &#x60;yyyy-MM-dd&#x60; format, e.g. &#x60;effectiveDate&lt;2025-01-31  &#x60; |  | [optional] 
-
-### Return type
+#### Return type
 
 [**EmployeeIdentityCardListResponse**](EmployeeIdentityCardListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](IdentityCardsApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **update\_employee\_identity\_cards**
 
-# **update_employee_identity_cards**
-> EmployeeIdentityCardResponse update_employee_identity_cards(employee_id, employee_identity_card_id, employee_identity_card_request)
+> EmployeeIdentityCardResponse update\_employee\_identity\_cards(employee\_id, employee\_identity\_card\_id, employee\_identity\_card\_request)
 
 Update Employee Identity Cards
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, IdentityCardsApi, ApiException
@@ -250,35 +242,32 @@ except ApiException as e:
     print("Exception when calling IdentityCardsApi->update_employee_identity_cards: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                                  | Type                                                              | Description | Notes       |
+| ------------------------------------- | ----------------------------------------------------------------- | ----------- | ----------- |
+| **employee\_id**                      | **str**                                                           |             |             |
+| **employee\_identity\_card\_id**      | **str**                                                           |             |             |
+| **employee\_identity\_card\_request** | [**EmployeeIdentityCardRequest**](EmployeeIdentityCardRequest.md) |             | \[optional] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **employee_id** | **str**|  | 
- **employee_identity_card_id** | **str**|  | 
- **employee_identity_card_request** | [**EmployeeIdentityCardRequest**](EmployeeIdentityCardRequest.md)|  | [optional] 
-
-### Return type
+#### Return type
 
 [**EmployeeIdentityCardResponse**](EmployeeIdentityCardResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](IdentityCardsApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)

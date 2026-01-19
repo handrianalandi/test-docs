@@ -1,29 +1,30 @@
 # BankAccountConfigurationApi
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
-> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
+## BankAccountConfigurationApi
 
-All URIs are relative to *https://api.catapa.com*
+> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!\
+> &#xNAN;**✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**approve_approval**](BankAccountConfigurationApi.md#approve_approval) | **PUT** /core/v1/bank-account-configurations/approvals/approve | Update Bank Account Configuration
-[**cancel_approval**](BankAccountConfigurationApi.md#cancel_approval) | **PUT** /core/v1/bank-account-configurations/approvals/{id}/cancel | Cancel Bank Account Configuration
-[**create_bank_account_configuration_approval**](BankAccountConfigurationApi.md#create_bank_account_configuration_approval) | **POST** /core/v1/bank-account-configurations/approvals | Create Bank Account Configuration Approval
-[**get_bank_account_configuration_by_id**](BankAccountConfigurationApi.md#get_bank_account_configuration_by_id) | **GET** /core/v1/bank-account-configurations/{id} | Get Bank Account Configuration by Id
-[**get_bank_account_configurations**](BankAccountConfigurationApi.md#get_bank_account_configurations) | **GET** /core/v1/bank-account-configurations | Get all bank account configurations
-[**reject_approval**](BankAccountConfigurationApi.md#reject_approval) | **PUT** /core/v1/bank-account-configurations/approvals/reject | Reject Bank Account Configuration
-[**undo**](BankAccountConfigurationApi.md#undo) | **PUT** /core/v1/bank-account-configurations/approvals/undo | Undo Bank Account Configuration
-[**update_bank_account_configuration_approval**](BankAccountConfigurationApi.md#update_bank_account_configuration_approval) | **PUT** /core/v1/bank-account-configurations/approvals/{id} | Update Bank Account Configuration Approval
+All URIs are relative to _https://api.catapa.com_
 
+| Method                                                                                                                          | HTTP request                                                       | Description                                |
+| ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ | ------------------------------------------ |
+| [**approve\_approval**](BankAccountConfigurationApi.md#approve_approval)                                                        | **PUT** /core/v1/bank-account-configurations/approvals/approve     | Update Bank Account Configuration          |
+| [**cancel\_approval**](BankAccountConfigurationApi.md#cancel_approval)                                                          | **PUT** /core/v1/bank-account-configurations/approvals/{id}/cancel | Cancel Bank Account Configuration          |
+| [**create\_bank\_account\_configuration\_approval**](BankAccountConfigurationApi.md#create_bank_account_configuration_approval) | **POST** /core/v1/bank-account-configurations/approvals            | Create Bank Account Configuration Approval |
+| [**get\_bank\_account\_configuration\_by\_id**](BankAccountConfigurationApi.md#get_bank_account_configuration_by_id)            | **GET** /core/v1/bank-account-configurations/{id}                  | Get Bank Account Configuration by Id       |
+| [**get\_bank\_account\_configurations**](BankAccountConfigurationApi.md#get_bank_account_configurations)                        | **GET** /core/v1/bank-account-configurations                       | Get all bank account configurations        |
+| [**reject\_approval**](BankAccountConfigurationApi.md#reject_approval)                                                          | **PUT** /core/v1/bank-account-configurations/approvals/reject      | Reject Bank Account Configuration          |
+| [**undo**](BankAccountConfigurationApi.md#undo)                                                                                 | **PUT** /core/v1/bank-account-configurations/approvals/undo        | Undo Bank Account Configuration            |
+| [**update\_bank\_account\_configuration\_approval**](BankAccountConfigurationApi.md#update_bank_account_configuration_approval) | **PUT** /core/v1/bank-account-configurations/approvals/{id}        | Update Bank Account Configuration Approval |
 
-# **approve_approval**
-> BulkOperationResponse approve_approval(id_request)
+## **approve\_approval**
+
+> BulkOperationResponse approve\_approval(id\_request)
 
 Update Bank Account Configuration
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, BankAccountConfigurationApi, ApiException
@@ -51,44 +52,41 @@ except ApiException as e:
     print("Exception when calling BankAccountConfigurationApi->approve_approval: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name            | Type                                  | Description | Notes       |
+| --------------- | ------------------------------------- | ----------- | ----------- |
+| **id\_request** | [**List\[IdRequest\]**](IdRequest.md) |             | \[optional] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id_request** | [**List[IdRequest]**](IdRequest.md)|  | [optional] 
-
-### Return type
+#### Return type
 
 [**BulkOperationResponse**](BulkOperationResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](BankAccountConfigurationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **cancel\_approval**
 
-# **cancel_approval**
-> cancel_approval(id)
+> cancel\_approval(id)
 
 Cancel Bank Account Configuration
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, BankAccountConfigurationApi, ApiException
@@ -114,46 +112,43 @@ except ApiException as e:
     print("Exception when calling BankAccountConfigurationApi->cancel_approval: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name   | Type    | Description | Notes |
+| ------ | ------- | ----------- | ----- |
+| **id** | **str** |             |       |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**|  | 
-
-### Return type
+#### Return type
 
 void (empty response body)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+* **Content-Type**: Not defined
+* **Accept**: Not defined
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](BankAccountConfigurationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **create\_bank\_account\_configuration\_approval**
 
-# **create_bank_account_configuration_approval**
-> BankAccountConfigurationResponse create_bank_account_configuration_approval(update_bank_account_configuration_request)
+> BankAccountConfigurationResponse create\_bank\_account\_configuration\_approval(update\_bank\_account\_configuration\_request)
 
 Create Bank Account Configuration Approval
 
 Replacement for /v1/employees/{employeeId}/bank-account-configurations.
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, BankAccountConfigurationApi, ApiException
@@ -181,44 +176,41 @@ except ApiException as e:
     print("Exception when calling BankAccountConfigurationApi->create_bank_account_configuration_approval: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                                              | Type                                                                                  | Description | Notes       |
+| ------------------------------------------------- | ------------------------------------------------------------------------------------- | ----------- | ----------- |
+| **update\_bank\_account\_configuration\_request** | [**UpdateBankAccountConfigurationRequest**](UpdateBankAccountConfigurationRequest.md) |             | \[optional] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **update_bank_account_configuration_request** | [**UpdateBankAccountConfigurationRequest**](UpdateBankAccountConfigurationRequest.md)|  | [optional] 
-
-### Return type
+#### Return type
 
 [**BankAccountConfigurationResponse**](BankAccountConfigurationResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**201** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **201**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](BankAccountConfigurationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_bank\_account\_configuration\_by\_id**
 
-# **get_bank_account_configuration_by_id**
-> BankAccountConfigurationResponse get_bank_account_configuration_by_id(id)
+> BankAccountConfigurationResponse get\_bank\_account\_configuration\_by\_id(id)
 
 Get Bank Account Configuration by Id
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, BankAccountConfigurationApi, ApiException
@@ -246,46 +238,43 @@ except ApiException as e:
     print("Exception when calling BankAccountConfigurationApi->get_bank_account_configuration_by_id: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name   | Type    | Description | Notes |
+| ------ | ------- | ----------- | ----- |
+| **id** | **str** |             |       |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**BankAccountConfigurationResponse**](BankAccountConfigurationResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](BankAccountConfigurationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_bank\_account\_configurations**
 
-# **get_bank_account_configurations**
-> BankAccountConfigurationListResponse get_bank_account_configurations(page, size, query)
+> BankAccountConfigurationListResponse get\_bank\_account\_configurations(page, size, query)
 
 Get all bank account configurations
 
 Get all bank account configurations with pagination
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, BankAccountConfigurationApi, ApiException
@@ -315,46 +304,43 @@ except ApiException as e:
     print("Exception when calling BankAccountConfigurationApi->get_bank_account_configurations: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name      | Type    | Description      | Notes                        |
+| --------- | ------- | ---------------- | ---------------------------- |
+| **page**  | **int** | Page number      | \[optional] \[default to 0]  |
+| **size**  | **int** | Page size        | \[optional] \[default to 10] |
+| **query** | **str** | ### Search Query | Supported Keys               |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search Query | Supported Keys  | Supported Operators | Notes                                                                                     | |-----------------|---------------------|-------------------------------------------------------------------------------------------| | id              | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | employee.id     | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter |  | [optional] 
-
-### Return type
+#### Return type
 
 [**BankAccountConfigurationListResponse**](BankAccountConfigurationListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](BankAccountConfigurationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **reject\_approval**
 
-# **reject_approval**
-> BulkOperationResponse reject_approval(reject_approval_request)
+> BulkOperationResponse reject\_approval(reject\_approval\_request)
 
 Reject Bank Account Configuration
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, BankAccountConfigurationApi, ApiException
@@ -382,44 +368,41 @@ except ApiException as e:
     print("Exception when calling BankAccountConfigurationApi->reject_approval: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                          | Type                                                          | Description | Notes       |
+| ----------------------------- | ------------------------------------------------------------- | ----------- | ----------- |
+| **reject\_approval\_request** | [**List\[RejectApprovalRequest\]**](RejectApprovalRequest.md) |             | \[optional] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **reject_approval_request** | [**List[RejectApprovalRequest]**](RejectApprovalRequest.md)|  | [optional] 
-
-### Return type
+#### Return type
 
 [**BulkOperationResponse**](BulkOperationResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](BankAccountConfigurationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **undo**
 
-# **undo**
-> BulkOperationResponse undo(id_request)
+> BulkOperationResponse undo(id\_request)
 
 Undo Bank Account Configuration
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, BankAccountConfigurationApi, ApiException
@@ -447,44 +430,41 @@ except ApiException as e:
     print("Exception when calling BankAccountConfigurationApi->undo: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name            | Type                                  | Description | Notes       |
+| --------------- | ------------------------------------- | ----------- | ----------- |
+| **id\_request** | [**List\[IdRequest\]**](IdRequest.md) |             | \[optional] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id_request** | [**List[IdRequest]**](IdRequest.md)|  | [optional] 
-
-### Return type
+#### Return type
 
 [**BulkOperationResponse**](BulkOperationResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](BankAccountConfigurationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **update\_bank\_account\_configuration\_approval**
 
-# **update_bank_account_configuration_approval**
-> BankAccountConfigurationResponse update_bank_account_configuration_approval(id, update_bank_account_configuration_request)
+> BankAccountConfigurationResponse update\_bank\_account\_configuration\_approval(id, update\_bank\_account\_configuration\_request)
 
 Update Bank Account Configuration Approval
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, BankAccountConfigurationApi, ApiException
@@ -513,34 +493,31 @@ except ApiException as e:
     print("Exception when calling BankAccountConfigurationApi->update_bank_account_configuration_approval: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                                              | Type                                                                                  | Description | Notes       |
+| ------------------------------------------------- | ------------------------------------------------------------------------------------- | ----------- | ----------- |
+| **id**                                            | **str**                                                                               |             |             |
+| **update\_bank\_account\_configuration\_request** | [**UpdateBankAccountConfigurationRequest**](UpdateBankAccountConfigurationRequest.md) |             | \[optional] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**|  | 
- **update_bank_account_configuration_request** | [**UpdateBankAccountConfigurationRequest**](UpdateBankAccountConfigurationRequest.md)|  | [optional] 
-
-### Return type
+#### Return type
 
 [**BankAccountConfigurationResponse**](BankAccountConfigurationResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](BankAccountConfigurationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)

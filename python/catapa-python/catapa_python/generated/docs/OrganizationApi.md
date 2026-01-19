@@ -1,54 +1,55 @@
 # OrganizationApi
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
-> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
+## OrganizationApi
 
-All URIs are relative to *https://api.catapa.com*
+> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!\
+> &#xNAN;**✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**add_sub_location**](OrganizationApi.md#add_sub_location) | **POST** /core/v1/sub-locations | Add Sub Location
-[**create_company**](OrganizationApi.md#create_company) | **POST** /core/v1/companies | Create Company
-[**create_cost_center**](OrganizationApi.md#create_cost_center) | **POST** /core/v1/cost-centers | Create Cost Center
-[**create_job_level**](OrganizationApi.md#create_job_level) | **POST** /core/v1/job-levels | Create Job Level
-[**create_job_title**](OrganizationApi.md#create_job_title) | **POST** /core/v1/job-titles | Create Job Title
-[**create_job_title_with_job_levels**](OrganizationApi.md#create_job_title_with_job_levels) | **POST** /core/v1/job-titles/create | Create Job Title with Job Levels
-[**create_location**](OrganizationApi.md#create_location) | **POST** /core/v1/locations | Create Location
-[**create_organization**](OrganizationApi.md#create_organization) | **POST** /core/v1/organizations | Create Organization
-[**create_organization_group**](OrganizationApi.md#create_organization_group) | **POST** /core/v1/organization-groups | Create Organization Group
-[**create_organization_hierarchies**](OrganizationApi.md#create_organization_hierarchies) | **POST** /core/v1/organization-hierarchies | Create Organization Hierarchies
-[**delete_sub_location**](OrganizationApi.md#delete_sub_location) | **DELETE** /core/v1/sub-locations | Delete Sub Location
-[**get_companies**](OrganizationApi.md#get_companies) | **GET** /core/v1/companies/list | Get Companies
-[**get_company**](OrganizationApi.md#get_company) | **GET** /core/v1/companies | Get Company
-[**get_company_groups**](OrganizationApi.md#get_company_groups) | **GET** /core/v1/company-groups | Get Company Groups
-[**get_cost_center**](OrganizationApi.md#get_cost_center) | **GET** /core/v1/cost-centers | Get Cost Center
-[**get_job_level**](OrganizationApi.md#get_job_level) | **GET** /core/v1/job-levels | Get Job Level
-[**get_job_title**](OrganizationApi.md#get_job_title) | **GET** /core/v1/job-titles | Get Job Title
-[**get_job_title_job_level_mappings**](OrganizationApi.md#get_job_title_job_level_mappings) | **GET** /core/v1/job-title-levels | Get Job Title Job Level Mappings
-[**get_location_group**](OrganizationApi.md#get_location_group) | **GET** /core/v1/location-groups | Get Location Group
-[**get_locations**](OrganizationApi.md#get_locations) | **GET** /core/v1/locations | Get Location
-[**get_operational_groups**](OrganizationApi.md#get_operational_groups) | **GET** /core/v1/operational-groups | Get Operational Groups
-[**get_organization**](OrganizationApi.md#get_organization) | **GET** /core/v1/organizations | Get Organization
-[**get_organization_group**](OrganizationApi.md#get_organization_group) | **GET** /core/v1/organization-groups | Get Organization Group
-[**get_organization_heads**](OrganizationApi.md#get_organization_heads) | **GET** /core/v1/organizations/heads | Get Organization Heads
-[**get_organization_hierarchies**](OrganizationApi.md#get_organization_hierarchies) | **GET** /core/v1/organization-hierarchies | Get Organization Hierarchies
-[**get_organization_histories**](OrganizationApi.md#get_organization_histories) | **GET** /core/v1/organizations/histories | Get Organization Histories
-[**get_organization_superiors**](OrganizationApi.md#get_organization_superiors) | **GET** /core/v1/organizations/superiors | Get Organization Superiors
-[**get_position_cost_centers**](OrganizationApi.md#get_position_cost_centers) | **GET** /core/v1/positions/cost-centers | Get Position Cost Centers
-[**get_position_histories**](OrganizationApi.md#get_position_histories) | **GET** /core/v1/positions/histories | Get Position Histories
-[**get_position_vacancy_statuses**](OrganizationApi.md#get_position_vacancy_statuses) | **GET** /core/v1/positions/vacancy-statuses | Get Position Vacancy Statuses
-[**get_positions**](OrganizationApi.md#get_positions) | **GET** /core/v1/positions | Get Positions
-[**get_sub_locations**](OrganizationApi.md#get_sub_locations) | **GET** /core/v1/sub-locations | Get Sub Location
-[**update_cost_center**](OrganizationApi.md#update_cost_center) | **PUT** /core/v1/cost-centers/{id} | Update Cost Center
+All URIs are relative to _https://api.catapa.com_
 
+| Method                                                                                           | HTTP request                                | Description                      |
+| ------------------------------------------------------------------------------------------------ | ------------------------------------------- | -------------------------------- |
+| [**add\_sub\_location**](OrganizationApi.md#add_sub_location)                                    | **POST** /core/v1/sub-locations             | Add Sub Location                 |
+| [**create\_company**](OrganizationApi.md#create_company)                                         | **POST** /core/v1/companies                 | Create Company                   |
+| [**create\_cost\_center**](OrganizationApi.md#create_cost_center)                                | **POST** /core/v1/cost-centers              | Create Cost Center               |
+| [**create\_job\_level**](OrganizationApi.md#create_job_level)                                    | **POST** /core/v1/job-levels                | Create Job Level                 |
+| [**create\_job\_title**](OrganizationApi.md#create_job_title)                                    | **POST** /core/v1/job-titles                | Create Job Title                 |
+| [**create\_job\_title\_with\_job\_levels**](OrganizationApi.md#create_job_title_with_job_levels) | **POST** /core/v1/job-titles/create         | Create Job Title with Job Levels |
+| [**create\_location**](OrganizationApi.md#create_location)                                       | **POST** /core/v1/locations                 | Create Location                  |
+| [**create\_organization**](OrganizationApi.md#create_organization)                               | **POST** /core/v1/organizations             | Create Organization              |
+| [**create\_organization\_group**](OrganizationApi.md#create_organization_group)                  | **POST** /core/v1/organization-groups       | Create Organization Group        |
+| [**create\_organization\_hierarchies**](OrganizationApi.md#create_organization_hierarchies)      | **POST** /core/v1/organization-hierarchies  | Create Organization Hierarchies  |
+| [**delete\_sub\_location**](OrganizationApi.md#delete_sub_location)                              | **DELETE** /core/v1/sub-locations           | Delete Sub Location              |
+| [**get\_companies**](OrganizationApi.md#get_companies)                                           | **GET** /core/v1/companies/list             | Get Companies                    |
+| [**get\_company**](OrganizationApi.md#get_company)                                               | **GET** /core/v1/companies                  | Get Company                      |
+| [**get\_company\_groups**](OrganizationApi.md#get_company_groups)                                | **GET** /core/v1/company-groups             | Get Company Groups               |
+| [**get\_cost\_center**](OrganizationApi.md#get_cost_center)                                      | **GET** /core/v1/cost-centers               | Get Cost Center                  |
+| [**get\_job\_level**](OrganizationApi.md#get_job_level)                                          | **GET** /core/v1/job-levels                 | Get Job Level                    |
+| [**get\_job\_title**](OrganizationApi.md#get_job_title)                                          | **GET** /core/v1/job-titles                 | Get Job Title                    |
+| [**get\_job\_title\_job\_level\_mappings**](OrganizationApi.md#get_job_title_job_level_mappings) | **GET** /core/v1/job-title-levels           | Get Job Title Job Level Mappings |
+| [**get\_location\_group**](OrganizationApi.md#get_location_group)                                | **GET** /core/v1/location-groups            | Get Location Group               |
+| [**get\_locations**](OrganizationApi.md#get_locations)                                           | **GET** /core/v1/locations                  | Get Location                     |
+| [**get\_operational\_groups**](OrganizationApi.md#get_operational_groups)                        | **GET** /core/v1/operational-groups         | Get Operational Groups           |
+| [**get\_organization**](OrganizationApi.md#get_organization)                                     | **GET** /core/v1/organizations              | Get Organization                 |
+| [**get\_organization\_group**](OrganizationApi.md#get_organization_group)                        | **GET** /core/v1/organization-groups        | Get Organization Group           |
+| [**get\_organization\_heads**](OrganizationApi.md#get_organization_heads)                        | **GET** /core/v1/organizations/heads        | Get Organization Heads           |
+| [**get\_organization\_hierarchies**](OrganizationApi.md#get_organization_hierarchies)            | **GET** /core/v1/organization-hierarchies   | Get Organization Hierarchies     |
+| [**get\_organization\_histories**](OrganizationApi.md#get_organization_histories)                | **GET** /core/v1/organizations/histories    | Get Organization Histories       |
+| [**get\_organization\_superiors**](OrganizationApi.md#get_organization_superiors)                | **GET** /core/v1/organizations/superiors    | Get Organization Superiors       |
+| [**get\_position\_cost\_centers**](OrganizationApi.md#get_position_cost_centers)                 | **GET** /core/v1/positions/cost-centers     | Get Position Cost Centers        |
+| [**get\_position\_histories**](OrganizationApi.md#get_position_histories)                        | **GET** /core/v1/positions/histories        | Get Position Histories           |
+| [**get\_position\_vacancy\_statuses**](OrganizationApi.md#get_position_vacancy_statuses)         | **GET** /core/v1/positions/vacancy-statuses | Get Position Vacancy Statuses    |
+| [**get\_positions**](OrganizationApi.md#get_positions)                                           | **GET** /core/v1/positions                  | Get Positions                    |
+| [**get\_sub\_locations**](OrganizationApi.md#get_sub_locations)                                  | **GET** /core/v1/sub-locations              | Get Sub Location                 |
+| [**update\_cost\_center**](OrganizationApi.md#update_cost_center)                                | **PUT** /core/v1/cost-centers/{id}          | Update Cost Center               |
 
-# **add_sub_location**
-> SubLocationResponse add_sub_location(sub_location_request)
+## **add\_sub\_location**
+
+> SubLocationResponse add\_sub\_location(sub\_location\_request)
 
 Add Sub Location
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, OrganizationApi, ApiException
@@ -76,44 +77,41 @@ except ApiException as e:
     print("Exception when calling OrganizationApi->add_sub_location: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                       | Type                                            | Description | Notes       |
+| -------------------------- | ----------------------------------------------- | ----------- | ----------- |
+| **sub\_location\_request** | [**SubLocationRequest**](SubLocationRequest.md) |             | \[optional] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **sub_location_request** | [**SubLocationRequest**](SubLocationRequest.md)|  | [optional] 
-
-### Return type
+#### Return type
 
 [**SubLocationResponse**](SubLocationResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**201** | Created |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **201**     | Created     | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OrganizationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **create\_company**
 
-# **create_company**
-> CompanyDetailResponse create_company(request, file)
+> CompanyDetailResponse create\_company(request, file)
 
 Create Company
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, OrganizationApi, ApiException
@@ -142,45 +140,42 @@ except ApiException as e:
     print("Exception when calling OrganizationApi->create_company: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name        | Type                                                | Description                                                                                                                                                                                           | Notes       |
+| ----------- | --------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| **request** | [**CompanyDetailRequest**](CompanyDetailRequest.md) |                                                                                                                                                                                                       |             |
+| **file**    | **bytearray**                                       | Upload the company logo. Allowed file types: \`jpg\`, \`jpeg\`, \`png\`, and \`svg\`. The Content-Type must be \`image/jpeg\`, \`image/png\`, or \`image/svg+xml\`. The maximum file size is \`4MB\`. | \[optional] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**CompanyDetailRequest**](CompanyDetailRequest.md)|  | 
- **file** | **bytearray**| Upload the company logo. Allowed file types: &#x60;jpg&#x60;, &#x60;jpeg&#x60;, &#x60;png&#x60;, and &#x60;svg&#x60;. The Content-Type must be &#x60;image/jpeg&#x60;, &#x60;image/png&#x60;, or &#x60;image/svg+xml&#x60;. The maximum file size is &#x60;4MB&#x60;. | [optional] 
-
-### Return type
+#### Return type
 
 [**CompanyDetailResponse**](CompanyDetailResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: multipart/form-data
- - **Accept**: application/json
+* **Content-Type**: multipart/form-data
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**201** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **201**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OrganizationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **create\_cost\_center**
 
-# **create_cost_center**
-> CostCenterListItemResponse create_cost_center(cost_center_request)
+> CostCenterListItemResponse create\_cost\_center(cost\_center\_request)
 
 Create Cost Center
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, OrganizationApi, ApiException
@@ -208,44 +203,41 @@ except ApiException as e:
     print("Exception when calling OrganizationApi->create_cost_center: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                      | Type                                          | Description | Notes       |
+| ------------------------- | --------------------------------------------- | ----------- | ----------- |
+| **cost\_center\_request** | [**CostCenterRequest**](CostCenterRequest.md) |             | \[optional] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **cost_center_request** | [**CostCenterRequest**](CostCenterRequest.md)|  | [optional] 
-
-### Return type
+#### Return type
 
 [**CostCenterListItemResponse**](CostCenterListItemResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**201** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **201**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OrganizationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **create\_job\_level**
 
-# **create_job_level**
-> JobLevelResponse create_job_level(job_level_request)
+> JobLevelResponse create\_job\_level(job\_level\_request)
 
 Create Job Level
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, OrganizationApi, ApiException
@@ -273,46 +265,43 @@ except ApiException as e:
     print("Exception when calling OrganizationApi->create_job_level: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                    | Type                                      | Description | Notes       |
+| ----------------------- | ----------------------------------------- | ----------- | ----------- |
+| **job\_level\_request** | [**JobLevelRequest**](JobLevelRequest.md) |             | \[optional] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **job_level_request** | [**JobLevelRequest**](JobLevelRequest.md)|  | [optional] 
-
-### Return type
+#### Return type
 
 [**JobLevelResponse**](JobLevelResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**201** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **201**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OrganizationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **create\_job\_title**
 
-# **create_job_title**
-> JobTitleResponse create_job_title(job_title_request_deprecated)
+> JobTitleResponse create\_job\_title(job\_title\_request\_deprecated)
 
 Create Job Title
 
-⚠️ **This endpoint is deprecated.**       Please use [Create Job Title with Job Levels](https://api-docs.catapa.com/#tag/organization/operation/createJobTitleWithJobLevels) instead. 
+⚠️ **This endpoint is deprecated.** Please use [Create Job Title with Job Levels](https://api-docs.catapa.com/#tag/organization/operation/createJobTitleWithJobLevels) instead.
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, OrganizationApi, ApiException
@@ -340,44 +329,41 @@ except ApiException as e:
     print("Exception when calling OrganizationApi->create_job_title: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                                | Type                                                          | Description | Notes       |
+| ----------------------------------- | ------------------------------------------------------------- | ----------- | ----------- |
+| **job\_title\_request\_deprecated** | [**JobTitleRequestDeprecated**](JobTitleRequestDeprecated.md) |             | \[optional] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **job_title_request_deprecated** | [**JobTitleRequestDeprecated**](JobTitleRequestDeprecated.md)|  | [optional] 
-
-### Return type
+#### Return type
 
 [**JobTitleResponse**](JobTitleResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**201** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **201**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OrganizationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **create\_job\_title\_with\_job\_levels**
 
-# **create_job_title_with_job_levels**
-> JobTitleWithJobLevelsResponse create_job_title_with_job_levels(job_title_request)
+> JobTitleWithJobLevelsResponse create\_job\_title\_with\_job\_levels(job\_title\_request)
 
 Create Job Title with Job Levels
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, OrganizationApi, ApiException
@@ -405,44 +391,41 @@ except ApiException as e:
     print("Exception when calling OrganizationApi->create_job_title_with_job_levels: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                    | Type                                      | Description | Notes       |
+| ----------------------- | ----------------------------------------- | ----------- | ----------- |
+| **job\_title\_request** | [**JobTitleRequest**](JobTitleRequest.md) |             | \[optional] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **job_title_request** | [**JobTitleRequest**](JobTitleRequest.md)|  | [optional] 
-
-### Return type
+#### Return type
 
 [**JobTitleWithJobLevelsResponse**](JobTitleWithJobLevelsResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**201** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **201**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OrganizationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **create\_location**
 
-# **create_location**
-> LocationResponse create_location(location_create_request)
+> LocationResponse create\_location(location\_create\_request)
 
 Create Location
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, OrganizationApi, ApiException
@@ -470,44 +453,41 @@ except ApiException as e:
     print("Exception when calling OrganizationApi->create_location: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                          | Type                                                  | Description | Notes       |
+| ----------------------------- | ----------------------------------------------------- | ----------- | ----------- |
+| **location\_create\_request** | [**LocationCreateRequest**](LocationCreateRequest.md) |             | \[optional] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **location_create_request** | [**LocationCreateRequest**](LocationCreateRequest.md)|  | [optional] 
-
-### Return type
+#### Return type
 
 [**LocationResponse**](LocationResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**201** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **201**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OrganizationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **create\_organization**
 
-# **create_organization**
-> OrganizationResponse create_organization(organization_request)
+> OrganizationResponse create\_organization(organization\_request)
 
 Create Organization
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, OrganizationApi, ApiException
@@ -535,44 +515,41 @@ except ApiException as e:
     print("Exception when calling OrganizationApi->create_organization: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                      | Type                                              | Description | Notes       |
+| ------------------------- | ------------------------------------------------- | ----------- | ----------- |
+| **organization\_request** | [**OrganizationRequest**](OrganizationRequest.md) |             | \[optional] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **organization_request** | [**OrganizationRequest**](OrganizationRequest.md)|  | [optional] 
-
-### Return type
+#### Return type
 
 [**OrganizationResponse**](OrganizationResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**201** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **201**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OrganizationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **create\_organization\_group**
 
-# **create_organization_group**
-> IdCodeNameResponse create_organization_group(organization_group_request)
+> IdCodeNameResponse create\_organization\_group(organization\_group\_request)
 
 Create Organization Group
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, OrganizationApi, ApiException
@@ -600,44 +577,41 @@ except ApiException as e:
     print("Exception when calling OrganizationApi->create_organization_group: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                             | Type                                                        | Description | Notes       |
+| -------------------------------- | ----------------------------------------------------------- | ----------- | ----------- |
+| **organization\_group\_request** | [**OrganizationGroupRequest**](OrganizationGroupRequest.md) |             | \[optional] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **organization_group_request** | [**OrganizationGroupRequest**](OrganizationGroupRequest.md)|  | [optional] 
-
-### Return type
+#### Return type
 
 [**IdCodeNameResponse**](IdCodeNameResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**201** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **201**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OrganizationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **create\_organization\_hierarchies**
 
-# **create_organization_hierarchies**
-> OrganizationHierarchyResponse create_organization_hierarchies(organization_hierarchy_request)
+> OrganizationHierarchyResponse create\_organization\_hierarchies(organization\_hierarchy\_request)
 
 Create Organization Hierarchies
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, OrganizationApi, ApiException
@@ -665,46 +639,43 @@ except ApiException as e:
     print("Exception when calling OrganizationApi->create_organization_hierarchies: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                                 | Type                                                                | Description | Notes       |
+| ------------------------------------ | ------------------------------------------------------------------- | ----------- | ----------- |
+| **organization\_hierarchy\_request** | [**OrganizationHierarchyRequest**](OrganizationHierarchyRequest.md) |             | \[optional] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **organization_hierarchy_request** | [**OrganizationHierarchyRequest**](OrganizationHierarchyRequest.md)|  | [optional] 
-
-### Return type
+#### Return type
 
 [**OrganizationHierarchyResponse**](OrganizationHierarchyResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**201** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **201**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OrganizationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **delete\_sub\_location**
 
-# **delete_sub_location**
-> BulkOperationResponse delete_sub_location()
+> BulkOperationResponse delete\_sub\_location()
 
 Delete Sub Location
 
-This endpoint expects a JSON array in the request body,  where each item is an object containing an `id` field representing the sub-location to delete. The array must contain at least 1 item. **Request body schema:** ```json [   { \"id\": \"string\" } ] ``` **Example payload:** ```json [   { \"id\": \"a31aa166-70be-4303-81e4-5ada93b5213a\" } ] ``` 
+This endpoint expects a JSON array in the request body, where each item is an object containing an `id` field representing the sub-location to delete. The array must contain at least 1 item. **Request body schema:** `json [ { \"id\": \"string\" } ]` **Example payload:** `json [ { \"id\": \"a31aa166-70be-4303-81e4-5ada93b5213a\" } ]`
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, OrganizationApi, ApiException
@@ -731,41 +702,39 @@ except ApiException as e:
     print("Exception when calling OrganizationApi->delete_sub_location: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**BulkOperationResponse**](BulkOperationResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OrganizationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_companies**
 
-# **get_companies**
-> CompanyListResponse get_companies(page, size, query)
+> CompanyListResponse get\_companies(page, size, query)
 
 Get Companies
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, OrganizationApi, ApiException
@@ -795,46 +764,43 @@ except ApiException as e:
     print("Exception when calling OrganizationApi->get_companies: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name      | Type    | Description      | Notes                        |
+| --------- | ------- | ---------------- | ---------------------------- |
+| **page**  | **int** | Page number      | \[optional] \[default to 0]  |
+| **size**  | **int** | Page size        | \[optional] \[default to 10] |
+| **query** | **str** | ### Search query | Supported Keys               |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search query   | Supported Keys         | Supported Operators | Notes                                                         | |------------------------|---------------------|---------------------------------------------------------------| | name                   | &#x60;:&#x60;                 | Equal operator                                                | | companySuperior.id     | &#x60;:&#x60;                 | Equal operator                                                |  | [optional] 
-
-### Return type
+#### Return type
 
 [**CompanyListResponse**](CompanyListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OrganizationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_company**
 
-# **get_company**
-> CompanyDetailResponse get_company()
+> CompanyDetailResponse get\_company()
 
 Get Company
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, OrganizationApi, ApiException
@@ -861,41 +827,39 @@ except ApiException as e:
     print("Exception when calling OrganizationApi->get_company: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**CompanyDetailResponse**](CompanyDetailResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OrganizationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_company\_groups**
 
-# **get_company_groups**
-> CompanyGroupListResponse get_company_groups(page, size, query)
+> CompanyGroupListResponse get\_company\_groups(page, size, query)
 
 Get Company Groups
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, OrganizationApi, ApiException
@@ -925,46 +889,43 @@ except ApiException as e:
     print("Exception when calling OrganizationApi->get_company_groups: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name      | Type    | Description      | Notes                        |
+| --------- | ------- | ---------------- | ---------------------------- |
+| **page**  | **int** | Page number      | \[optional] \[default to 0]  |
+| **size**  | **int** | Page size        | \[optional] \[default to 10] |
+| **query** | **str** | ### Search Query | Supported Keys               |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search Query | Supported Keys  | Supported Operators | Notes                                                                                     | |-----------------|---------------------|-------------------------------------------------------------------------------------------| | code            | &#x60;:&#x60;                 | Like operator                                                                             | | name            | &#x60;:&#x60;                 | Like operator                                                                             |  | [optional] 
-
-### Return type
+#### Return type
 
 [**CompanyGroupListResponse**](CompanyGroupListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OrganizationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_cost\_center**
 
-# **get_cost_center**
-> CostCenterListResponse get_cost_center()
+> CostCenterListResponse get\_cost\_center()
 
 Get Cost Center
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, OrganizationApi, ApiException
@@ -991,43 +952,41 @@ except ApiException as e:
     print("Exception when calling OrganizationApi->get_cost_center: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**CostCenterListResponse**](CostCenterListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OrganizationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_job\_level**
 
-# **get_job_level**
-> JobLevelListResponse get_job_level()
+> JobLevelListResponse get\_job\_level()
 
 Get Job Level
 
-### Search Query | Supported Keys | Supported Operators | Notes                                                                             | |----------------|---------------------|-----------------------------------------------------------------------------------| | name           | `:`                 | Like operator                                                                     | | code           | `:`                 | Like operator                                                                     | | jobPosistionId | `:`                 | Like operator                                                                     | | level          | `:`<br/>`>`<br/>`<` | Equal operator<br/>Greater than or equal operator<br/>Less than or equal operator | 
+#### Search Query | Supported Keys | Supported Operators | Notes | |----------------|---------------------|-----------------------------------------------------------------------------------| | name | `:` | Like operator | | code | `:` | Like operator | | jobPosistionId | `:` | Like operator | | level | `:` `>` `<` | Equal operator Greater than or equal operator Less than or equal operator |
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, OrganizationApi, ApiException
@@ -1054,43 +1013,41 @@ except ApiException as e:
     print("Exception when calling OrganizationApi->get_job_level: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**JobLevelListResponse**](JobLevelListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OrganizationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_job\_title**
 
-# **get_job_title**
-> JobTitleListResponse get_job_title(page, size, query)
+> JobTitleListResponse get\_job\_title(page, size, query)
 
 Get Job Title
 
-minJobLevel and maxJobLevel are deprecated. check Tenant Job Hierarchy Policy setting, it may cause error to this endpoint 
+minJobLevel and maxJobLevel are deprecated. check Tenant Job Hierarchy Policy setting, it may cause error to this endpoint
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, OrganizationApi, ApiException
@@ -1120,48 +1077,45 @@ except ApiException as e:
     print("Exception when calling OrganizationApi->get_job_title: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name      | Type    | Description      | Notes                        |
+| --------- | ------- | ---------------- | ---------------------------- |
+| **page**  | **int** | Page number      | \[optional] \[default to 0]  |
+| **size**  | **int** | Page size        | \[optional] \[default to 10] |
+| **query** | **str** | ### Search Query | Supported Keys               |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search Query | Supported Keys | Supported Operators | Notes                      | |----------------|---------------------|----------------------------| | name           | &#x60;:&#x60;                 | Like operator              | | code           | &#x60;:&#x60;                 | Like operator              | | minJobLevelId  | &#x60;:&#x60;                 | Equal operator(Deprecated) | | maxJobLevelId  | &#x60;:&#x60;                 | Equal operator(Deprecated) |  | [optional] 
-
-### Return type
+#### Return type
 
 [**JobTitleListResponse**](JobTitleListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OrganizationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_job\_title\_job\_level\_mappings**
 
-# **get_job_title_job_level_mappings**
-> JobTitleLevelMappingListResponse get_job_title_job_level_mappings(page, size, query)
+> JobTitleLevelMappingListResponse get\_job\_title\_job\_level\_mappings(page, size, query)
 
 Get Job Title Job Level Mappings
 
-minJobLevel and MaxJobLevel are deprecated. 
+minJobLevel and MaxJobLevel are deprecated.
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, OrganizationApi, ApiException
@@ -1191,48 +1145,45 @@ except ApiException as e:
     print("Exception when calling OrganizationApi->get_job_title_job_level_mappings: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name      | Type    | Description      | Notes                        |
+| --------- | ------- | ---------------- | ---------------------------- |
+| **page**  | **int** | Page number      | \[optional] \[default to 0]  |
+| **size**  | **int** | Page size        | \[optional] \[default to 10] |
+| **query** | **str** | ### Search Query | Supported Keys               |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search Query | Supported Keys | Supported Operators | Notes                                                                                     | |----------------|---------------------|-------------------------------------------------------------------------------------------| | jobLevel.code  | &#x60;:&#x60;                 | Like operator                                                                             | | jobLevel.name  | &#x60;:&#x60;                 | Like operator                                                                             | | jobTitle.id    | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | jobLevel.id    | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter |  | [optional] 
-
-### Return type
+#### Return type
 
 [**JobTitleLevelMappingListResponse**](JobTitleLevelMappingListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OrganizationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_location\_group**
 
-# **get_location_group**
-> LocationGroupListResponse get_location_group()
+> LocationGroupListResponse get\_location\_group()
 
 Get Location Group
 
-### Search Query | Supported Keys | Supported Operators | Notes                      | |----------------|---------------------|----------------------------| | name           | `:`                 | Like operator              | | code           | `:`                 | Like operator              | 
+#### Search Query | Supported Keys | Supported Operators | Notes | |----------------|---------------------|----------------------------| | name | `:` | Like operator | | code | `:` | Like operator |
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, OrganizationApi, ApiException
@@ -1259,41 +1210,39 @@ except ApiException as e:
     print("Exception when calling OrganizationApi->get_location_group: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**LocationGroupListResponse**](LocationGroupListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OrganizationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_locations**
 
-# **get_locations**
-> LocationListResponse get_locations(page, size, query)
+> LocationListResponse get\_locations(page, size, query)
 
 Get Location
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, OrganizationApi, ApiException
@@ -1323,46 +1272,43 @@ except ApiException as e:
     print("Exception when calling OrganizationApi->get_locations: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name      | Type    | Description      | Notes                        |
+| --------- | ------- | ---------------- | ---------------------------- |
+| **page**  | **int** | Page number      | \[optional] \[default to 0]  |
+| **size**  | **int** | Page size        | \[optional] \[default to 10] |
+| **query** | **str** | ### Search query | Supported Keys               |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search query   | Supported Keys    | Supported Operators | Notes                                                                                                              | |-------------------|---------------------|-------------------------------------------------------------------------------------------------------------------| | name              | &#x60;:&#x60;                 | Like operator                                                                                                      | | code              | &#x60;:&#x60;                 | Like operator                                                                                                      | | zipCode           | &#x60;:&#x60;                 | Equal operator                                                                                                     | | phone             | &#x60;:&#x60;                 | Equal operator                                                                                                     | | address           | &#x60;:&#x60;                 | Equal operator                                                                                                     | | locationGroupId   | &#x60;:&#x60;                 | Equal operator                                                                                                     | | cityId            | &#x60;:&#x60;                 | Equal operator                                                                                                     |  | [optional] 
-
-### Return type
+#### Return type
 
 [**LocationListResponse**](LocationListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OrganizationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_operational\_groups**
 
-# **get_operational_groups**
-> OperationalGroupListResponse get_operational_groups(page, size, query)
+> OperationalGroupListResponse get\_operational\_groups(page, size, query)
 
 Get Operational Groups
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, OrganizationApi, ApiException
@@ -1392,48 +1338,45 @@ except ApiException as e:
     print("Exception when calling OrganizationApi->get_operational_groups: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name      | Type    | Description      | Notes                        |
+| --------- | ------- | ---------------- | ---------------------------- |
+| **page**  | **int** | Page number      | \[optional] \[default to 0]  |
+| **size**  | **int** | Page size        | \[optional] \[default to 10] |
+| **query** | **str** | ### Search Query | Supported Keys               |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search Query | Supported Keys  | Supported Operators | Notes                                                                                     | |-----------------|---------------------|-------------------------------------------------------------------------------------------| | id              | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | name            | &#x60;:&#x60;                 | Like operator                                                                             | | code            | &#x60;:&#x60;                 | Like operator                                                                             |  | [optional] 
-
-### Return type
+#### Return type
 
 [**OperationalGroupListResponse**](OperationalGroupListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OrganizationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_organization**
 
-# **get_organization**
-> OrganizationListResponse get_organization()
+> OrganizationListResponse get\_organization()
 
 Get Organization
 
-### Search Query   | Supported Keys          | Supported Operators | Notes                                                                           |   |-------------------------|---------------------|---------------------------------------------------------------------------------|   | id                      | `:`                 | Equal operator<br/>Support multiple values with each value separated by the `;` delimiter |   | name                    | `:`                 | Like operator                                                                   |   | code                    | `:`                 | Like operator                                                                   |   | type                    | `:`                 | Equal operator                                                                  |   | organizationGroupId     | `:`                 | Equal operator                                                                  |   | organizationHierarchyId | `:`                 | Equal operator                                                                  |   | organizationParentId    | `:`                 | Equal operator                                                                  |   | haveParent              | `:`                 | Equal operator                                                                  |   | organizationChildrenId  | `:`                 | Equal operator                                                                  |   | level                   | `:`<br>`<`<br>`>`   | Equal operator<br>Less than or equal operator<br>Greater than or equal operator |   | company.id              | `:`                 | Equal operator                                                                  |   | effectiveDate           | `<`<br>`>`          | Less than or equal operator<br>Greater than or equal operator                   |   | endDate                 | `<`<br>`>`          | Less than or equal operator<br>Greater than or equal operator                   |   | endDateIsNull           | `:`                 | Equal operator                                                                  | 
+#### Search Query | Supported Keys | Supported Operators | Notes | |-------------------------|---------------------|---------------------------------------------------------------------------------| | id | `:` | Equal operator Support multiple values with each value separated by the `;` delimiter | | name | `:` | Like operator | | code | `:` | Like operator | | type | `:` | Equal operator | | organizationGroupId | `:` | Equal operator | | organizationHierarchyId | `:` | Equal operator | | organizationParentId | `:` | Equal operator | | haveParent | `:` | Equal operator | | organizationChildrenId | `:` | Equal operator | | level | `:` `<` `>` | Equal operator Less than or equal operator Greater than or equal operator | | company.id | `:` | Equal operator | | effectiveDate | `<` `>` | Less than or equal operator Greater than or equal operator | | endDate | `<` `>` | Less than or equal operator Greater than or equal operator | | endDateIsNull | `:` | Equal operator |
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, OrganizationApi, ApiException
@@ -1460,43 +1403,41 @@ except ApiException as e:
     print("Exception when calling OrganizationApi->get_organization: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**OrganizationListResponse**](OrganizationListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OrganizationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_organization\_group**
 
-# **get_organization_group**
-> OrganizationGroupListResponse get_organization_group()
+> OrganizationGroupListResponse get\_organization\_group()
 
 Get Organization Group
 
-### Search Query | Supported Keys | Supported Operators | Notes                      | |----------------|---------------------|----------------------------| | name           | `:`                 | Like operator              | | code           | `:`                 | Like operator              | 
+#### Search Query | Supported Keys | Supported Operators | Notes | |----------------|---------------------|----------------------------| | name | `:` | Like operator | | code | `:` | Like operator |
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, OrganizationApi, ApiException
@@ -1523,41 +1464,39 @@ except ApiException as e:
     print("Exception when calling OrganizationApi->get_organization_group: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**OrganizationGroupListResponse**](OrganizationGroupListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OrganizationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_organization\_heads**
 
-# **get_organization_heads**
-> OrganizationHeadListResponse get_organization_heads(page, size, query)
+> OrganizationHeadListResponse get\_organization\_heads(page, size, query)
 
 Get Organization Heads
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, OrganizationApi, ApiException
@@ -1587,48 +1526,45 @@ except ApiException as e:
     print("Exception when calling OrganizationApi->get_organization_heads: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name      | Type    | Description      | Notes                        |
+| --------- | ------- | ---------------- | ---------------------------- |
+| **page**  | **int** | Page number      | \[optional] \[default to 0]  |
+| **size**  | **int** | Page size        | \[optional] \[default to 10] |
+| **query** | **str** | ### Search Query | Supported Keys               |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search Query   | Supported Keys          | Supported Operators | Notes                                                                                     |   |-------------------------|---------------------|-------------------------------------------------------------------------------------------|   | id                      | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter |   | organization.company.id | &#x60;:&#x60;                 | Equal operator                                                                            |   | organization.id         | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter |  | [optional] 
-
-### Return type
+#### Return type
 
 [**OrganizationHeadListResponse**](OrganizationHeadListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OrganizationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_organization\_hierarchies**
 
-# **get_organization_hierarchies**
-> OrganizationHierarchyListResponse get_organization_hierarchies()
+> OrganizationHierarchyListResponse get\_organization\_hierarchies()
 
 Get Organization Hierarchies
 
-### Search Query | Supported Keys | Supported Operators | Notes                                                                           | |----------------|---------------------|---------------------------------------------------------------------------------| | name           | `:`                 | Like operator                                                                   | | code           | `:`                 | Like operator                                                                   | | color          | `:`                 | Like operator                                                                   | | level          | `:`<br>`<`<br>`>`   | Equal operator<br>Less than or equal operator<br>Greater than or equal operator | 
+#### Search Query | Supported Keys | Supported Operators | Notes | |----------------|---------------------|---------------------------------------------------------------------------------| | name | `:` | Like operator | | code | `:` | Like operator | | color | `:` | Like operator | | level | `:` `<` `>` | Equal operator Less than or equal operator Greater than or equal operator |
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, OrganizationApi, ApiException
@@ -1655,41 +1591,39 @@ except ApiException as e:
     print("Exception when calling OrganizationApi->get_organization_hierarchies: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**OrganizationHierarchyListResponse**](OrganizationHierarchyListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OrganizationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_organization\_histories**
 
-# **get_organization_histories**
-> OrganizationHistoryListResponse get_organization_histories(page, size, query)
+> OrganizationHistoryListResponse get\_organization\_histories(page, size, query)
 
 Get Organization Histories
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, OrganizationApi, ApiException
@@ -1719,46 +1653,43 @@ except ApiException as e:
     print("Exception when calling OrganizationApi->get_organization_histories: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name      | Type    | Description      | Notes                        |
+| --------- | ------- | ---------------- | ---------------------------- |
+| **page**  | **int** | Page number      | \[optional] \[default to 0]  |
+| **size**  | **int** | Page size        | \[optional] \[default to 10] |
+| **query** | **str** | ### Search Query | Supported Keys               |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search Query | Supported Keys       | Supported Operators | Notes                                                                                     | |---------------------|---------------------|-------------------------------------------------------------------------------------------| | id                  | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | organization.id     | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | type                | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | organization.company.id          | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | organizationGroup.id| &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | effectiveDate       | &#x60;&gt;&#x60;, &#x60;&lt;&#x60;            | Greater than or equal / Less than or equal operators&lt;br/&gt;Date format: YYYY-MM-DD         | | endDate             | &#x60;&gt;&#x60;, &#x60;&lt;&#x60;            | Greater than or equal / Less than or equal operators&lt;br/&gt;Date format: YYYY-MM-DD         |  | [optional] 
-
-### Return type
+#### Return type
 
 [**OrganizationHistoryListResponse**](OrganizationHistoryListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OrganizationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_organization\_superiors**
 
-# **get_organization_superiors**
-> OrganizationSuperiorListResponse get_organization_superiors(page, size, query)
+> OrganizationSuperiorListResponse get\_organization\_superiors(page, size, query)
 
 Get Organization Superiors
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, OrganizationApi, ApiException
@@ -1788,46 +1719,43 @@ except ApiException as e:
     print("Exception when calling OrganizationApi->get_organization_superiors: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name      | Type    | Description      | Notes                        |
+| --------- | ------- | ---------------- | ---------------------------- |
+| **page**  | **int** | Page number      | \[optional] \[default to 0]  |
+| **size**  | **int** | Page size        | \[optional] \[default to 10] |
+| **query** | **str** | ### Search Query | Supported Keys               |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search Query | Supported Keys  | Supported Operators | Notes                                                                                     | |-----------------|---------------------|-------------------------------------------------------------------------------------------| | id              | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | organization.id | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | superior.id     | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | effectiveDate   | &#x60;gte&#x60;, &#x60;lte&#x60;        | Greater than or equal / Less than or equal operators&lt;br/&gt;Date format: YYYY-MM-DD         |  | [optional] 
-
-### Return type
+#### Return type
 
 [**OrganizationSuperiorListResponse**](OrganizationSuperiorListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OrganizationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_position\_cost\_centers**
 
-# **get_position_cost_centers**
-> PositionCostCenterListResponse get_position_cost_centers(page, size, query)
+> PositionCostCenterListResponse get\_position\_cost\_centers(page, size, query)
 
 Get Position Cost Centers
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, OrganizationApi, ApiException
@@ -1857,46 +1785,43 @@ except ApiException as e:
     print("Exception when calling OrganizationApi->get_position_cost_centers: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name      | Type    | Description      | Notes                        |
+| --------- | ------- | ---------------- | ---------------------------- |
+| **page**  | **int** | Page number      | \[optional] \[default to 0]  |
+| **size**  | **int** | Page size        | \[optional] \[default to 10] |
+| **query** | **str** | ### Search Query | Supported Keys               |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search Query | Supported Keys  | Supported Operators | Notes                                                                                     | |-----------------|---------------------|-------------------------------------------------------------------------------------------| | id              | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | position.id     | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter |  | [optional] 
-
-### Return type
+#### Return type
 
 [**PositionCostCenterListResponse**](PositionCostCenterListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OrganizationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_position\_histories**
 
-# **get_position_histories**
-> PositionHistoryListResponse get_position_histories(page, size, query)
+> PositionHistoryListResponse get\_position\_histories(page, size, query)
 
 Get Position Histories
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, OrganizationApi, ApiException
@@ -1926,46 +1851,43 @@ except ApiException as e:
     print("Exception when calling OrganizationApi->get_position_histories: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name      | Type    | Description      | Notes                        |
+| --------- | ------- | ---------------- | ---------------------------- |
+| **page**  | **int** | Page number      | \[optional] \[default to 0]  |
+| **size**  | **int** | Page size        | \[optional] \[default to 10] |
+| **query** | **str** | ### Search Query | Supported Keys               |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search Query | Supported Keys  | Supported Operators | Notes                                                                                     | |-----------------|---------------------|-------------------------------------------------------------------------------------------| | id              | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | position.id     | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | organization.id | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter |  | [optional] 
-
-### Return type
+#### Return type
 
 [**PositionHistoryListResponse**](PositionHistoryListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OrganizationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_position\_vacancy\_statuses**
 
-# **get_position_vacancy_statuses**
-> PositionVacancyStatusListResponse get_position_vacancy_statuses(page, size, query)
+> PositionVacancyStatusListResponse get\_position\_vacancy\_statuses(page, size, query)
 
 Get Position Vacancy Statuses
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, OrganizationApi, ApiException
@@ -1995,46 +1917,43 @@ except ApiException as e:
     print("Exception when calling OrganizationApi->get_position_vacancy_statuses: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name      | Type    | Description      | Notes                        |
+| --------- | ------- | ---------------- | ---------------------------- |
+| **page**  | **int** | Page number      | \[optional] \[default to 0]  |
+| **size**  | **int** | Page size        | \[optional] \[default to 10] |
+| **query** | **str** | ### Search Query | Supported Keys               |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search Query | Supported Keys  | Supported Operators | Notes                                                                                     | |-----------------|---------------------|-------------------------------------------------------------------------------------------| | id              | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | position.id     | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | vacancyStatus   | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter |  | [optional] 
-
-### Return type
+#### Return type
 
 [**PositionVacancyStatusListResponse**](PositionVacancyStatusListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OrganizationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_positions**
 
-# **get_positions**
-> PositionListResponse get_positions(page, size, query)
+> PositionListResponse get\_positions(page, size, query)
 
 Get Positions
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, OrganizationApi, ApiException
@@ -2064,46 +1983,43 @@ except ApiException as e:
     print("Exception when calling OrganizationApi->get_positions: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name      | Type    | Description                                                       | Notes                        |
+| --------- | ------- | ----------------------------------------------------------------- | ---------------------------- |
+| **page**  | **int** | Page number                                                       | \[optional] \[default to 0]  |
+| **size**  | **int** | Page size                                                         | \[optional] \[default to 10] |
+| **query** | **str** | Get a list of positions with pagination support. ### Search Query | Supported Keys               |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| Get a list of positions with pagination support. ### Search Query   | Supported Keys          | Supported Operators | Notes                                                                           |   |-------------------------|---------------------|---------------------------------------------------------------------------------|   | id                      | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter |   | name                    | &#x60;:&#x60;                 | Like operator                                                                   |   | code                    | &#x60;:&#x60;                 | Like operator                                                                   |  | [optional] 
-
-### Return type
+#### Return type
 
 [**PositionListResponse**](PositionListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OrganizationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_sub\_locations**
 
-# **get_sub_locations**
-> SubLocationListResponse get_sub_locations(page, size, query)
+> SubLocationListResponse get\_sub\_locations(page, size, query)
 
 Get Sub Location
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, OrganizationApi, ApiException
@@ -2133,46 +2049,43 @@ except ApiException as e:
     print("Exception when calling OrganizationApi->get_sub_locations: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name      | Type    | Description      | Notes                        |
+| --------- | ------- | ---------------- | ---------------------------- |
+| **page**  | **int** | Page number      | \[optional] \[default to 0]  |
+| **size**  | **int** | Page size        | \[optional] \[default to 10] |
+| **query** | **str** | ### Search Query | Supported Keys               |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search Query | Supported Keys  | Supported Operators | Notes                                                                                     | |-----------------|---------------------|-------------------------------------------------------------------------------------------| | id              | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | name            | &#x60;:&#x60;                 | Like operator                                                                             | | code            | &#x60;:&#x60;                 | Like operator                                                                             | | location.id     | &#x60;:&#x60;                 | Equal operator                                                                            |  | [optional] 
-
-### Return type
+#### Return type
 
 [**SubLocationListResponse**](SubLocationListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OrganizationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **update\_cost\_center**
 
-# **update_cost_center**
-> CostCenterListItemResponse update_cost_center(id, cost_center_request)
+> CostCenterListItemResponse update\_cost\_center(id, cost\_center\_request)
 
 Update Cost Center
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, OrganizationApi, ApiException
@@ -2201,34 +2114,31 @@ except ApiException as e:
     print("Exception when calling OrganizationApi->update_cost_center: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                      | Type                                          | Description | Notes       |
+| ------------------------- | --------------------------------------------- | ----------- | ----------- |
+| **id**                    | **str**                                       |             |             |
+| **cost\_center\_request** | [**CostCenterRequest**](CostCenterRequest.md) |             | \[optional] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**|  | 
- **cost_center_request** | [**CostCenterRequest**](CostCenterRequest.md)|  | [optional] 
-
-### Return type
+#### Return type
 
 [**CostCenterListItemResponse**](CostCenterListItemResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](OrganizationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)

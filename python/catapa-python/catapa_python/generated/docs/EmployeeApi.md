@@ -1,28 +1,29 @@
 # EmployeeApi
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
-> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
+## EmployeeApi
 
-All URIs are relative to *https://api.catapa.com*
+> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!\
+> &#xNAN;**✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**add_employee**](EmployeeApi.md#add_employee) | **POST** /core/v1/employees | Add Employee
-[**delete_employee**](EmployeeApi.md#delete_employee) | **DELETE** /core/v1/employees | Delete Employee
-[**get_additional_assignment_approvals**](EmployeeApi.md#get_additional_assignment_approvals) | **GET** /core/v1/additional-assignments/approvals | List All Additional Assignment Approvals
-[**get_employee_hiring_data**](EmployeeApi.md#get_employee_hiring_data) | **GET** /core/v1/employees/{id}/hiring-data | Get Employee Hiring Data
-[**list_all_employees**](EmployeeApi.md#list_all_employees) | **GET** /core/v1/employees | List All Employees
-[**update_employee_hiring_data**](EmployeeApi.md#update_employee_hiring_data) | **PUT** /core/v1/employees/{id}/hiring-data | Update Employee Hiring Data
-[**update_manager**](EmployeeApi.md#update_manager) | **PUT** /core/v1/employees/{employeeId}/manager | Update Manager
+All URIs are relative to _https://api.catapa.com_
 
+| Method                                                                                           | HTTP request                                      | Description                              |
+| ------------------------------------------------------------------------------------------------ | ------------------------------------------------- | ---------------------------------------- |
+| [**add\_employee**](EmployeeApi.md#add_employee)                                                 | **POST** /core/v1/employees                       | Add Employee                             |
+| [**delete\_employee**](EmployeeApi.md#delete_employee)                                           | **DELETE** /core/v1/employees                     | Delete Employee                          |
+| [**get\_additional\_assignment\_approvals**](EmployeeApi.md#get_additional_assignment_approvals) | **GET** /core/v1/additional-assignments/approvals | List All Additional Assignment Approvals |
+| [**get\_employee\_hiring\_data**](EmployeeApi.md#get_employee_hiring_data)                       | **GET** /core/v1/employees/{id}/hiring-data       | Get Employee Hiring Data                 |
+| [**list\_all\_employees**](EmployeeApi.md#list_all_employees)                                    | **GET** /core/v1/employees                        | List All Employees                       |
+| [**update\_employee\_hiring\_data**](EmployeeApi.md#update_employee_hiring_data)                 | **PUT** /core/v1/employees/{id}/hiring-data       | Update Employee Hiring Data              |
+| [**update\_manager**](EmployeeApi.md#update_manager)                                             | **PUT** /core/v1/employees/{employeeId}/manager   | Update Manager                           |
 
-# **add_employee**
-> EmployeeCreateResponse add_employee(employee_request)
+## **add\_employee**
+
+> EmployeeCreateResponse add\_employee(employee\_request)
 
 Add Employee
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, EmployeeApi, ApiException
@@ -50,46 +51,43 @@ except ApiException as e:
     print("Exception when calling EmployeeApi->add_employee: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                  | Type                                      | Description | Notes       |
+| --------------------- | ----------------------------------------- | ----------- | ----------- |
+| **employee\_request** | [**EmployeeRequest**](EmployeeRequest.md) |             | \[optional] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **employee_request** | [**EmployeeRequest**](EmployeeRequest.md)|  | [optional] 
-
-### Return type
+#### Return type
 
 [**EmployeeCreateResponse**](EmployeeCreateResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**201** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **201**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](EmployeeApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **delete\_employee**
 
-# **delete_employee**
-> BulkOperationResponse delete_employee()
+> BulkOperationResponse delete\_employee()
 
 Delete Employee
 
-This endpoint expects a JSON array in the request body,  where each item is an object containing an `id` field representing the employee to delete. The array must contain between 1 and 50 items. **Request body schema:** ```json [   { \"id\": \"string\" } ] ``` **Example payload:** ```json [   { \"id\": \"7eb20b1e-577b-45c0-adf4-c76ae17cdeae\" } ] ``` 
+This endpoint expects a JSON array in the request body, where each item is an object containing an `id` field representing the employee to delete. The array must contain between 1 and 50 items. **Request body schema:** `json [ { \"id\": \"string\" } ]` **Example payload:** `json [ { \"id\": \"7eb20b1e-577b-45c0-adf4-c76ae17cdeae\" } ]`
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, EmployeeApi, ApiException
@@ -116,41 +114,39 @@ except ApiException as e:
     print("Exception when calling EmployeeApi->delete_employee: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**BulkOperationResponse**](BulkOperationResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](EmployeeApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_additional\_assignment\_approvals**
 
-# **get_additional_assignment_approvals**
-> AdditionalAssignmentApprovalListResponse get_additional_assignment_approvals(page, size, query)
+> AdditionalAssignmentApprovalListResponse get\_additional\_assignment\_approvals(page, size, query)
 
 List All Additional Assignment Approvals
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, EmployeeApi, ApiException
@@ -180,46 +176,43 @@ except ApiException as e:
     print("Exception when calling EmployeeApi->get_additional_assignment_approvals: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name      | Type    | Description      | Notes                        |
+| --------- | ------- | ---------------- | ---------------------------- |
+| **page**  | **int** | Page number      | \[optional] \[default to 0]  |
+| **size**  | **int** | Page size        | \[optional] \[default to 10] |
+| **query** | **str** | ### Search Query | Supported Keys               |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search Query | Supported Keys          | Supported Operators | Notes                                                                                | |-------------------------|---------------------|--------------------------------------------------------------------------------------| | id                      | &#x60;:&#x60;                 | Equal operator                                                                       | | employee.id             | &#x60;:&#x60;                 | Equal operator                                                                       | | employee.name           | &#x60;:&#x60;                 | Like operator                                                                        | | approvalStatus          | &#x60;:&#x60;                 | Equal operator                                                                       | | additionalAssignment.id | &#x60;:&#x60;                 | Equal operator with multiple values. Each value should separated with delimiters &#x60;;&#x60; |  | [optional] 
-
-### Return type
+#### Return type
 
 [**AdditionalAssignmentApprovalListResponse**](AdditionalAssignmentApprovalListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](EmployeeApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_employee\_hiring\_data**
 
-# **get_employee_hiring_data**
-> EmployeeHiringDataSimpleResponse get_employee_hiring_data(id)
+> EmployeeHiringDataSimpleResponse get\_employee\_hiring\_data(id)
 
 Get Employee Hiring Data
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, EmployeeApi, ApiException
@@ -247,44 +240,41 @@ except ApiException as e:
     print("Exception when calling EmployeeApi->get_employee_hiring_data: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name   | Type    | Description | Notes |
+| ------ | ------- | ----------- | ----- |
+| **id** | **str** |             |       |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**EmployeeHiringDataSimpleResponse**](EmployeeHiringDataSimpleResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | ok |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | ok          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](EmployeeApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **list\_all\_employees**
 
-# **list_all_employees**
-> EmployeeListResponse list_all_employees(page, size, query)
+> EmployeeListResponse list\_all\_employees(page, size, query)
 
 List All Employees
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, EmployeeApi, ApiException
@@ -314,46 +304,43 @@ except ApiException as e:
     print("Exception when calling EmployeeApi->list_all_employees: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name      | Type    | Description      | Notes                        |
+| --------- | ------- | ---------------- | ---------------------------- |
+| **page**  | **int** | Page number      | \[optional] \[default to 0]  |
+| **size**  | **int** | Page size        | \[optional] \[default to 10] |
+| **query** | **str** | ### Search query | Supported Keys               |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search query   | Supported Keys                    | Supported Operators | Notes                                                                                                                                                 | |-----------------------------------|---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------| | id                                | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter                                                             | | active                            | &#x60;:&#x60;                 | Equal operator                                                                                                                                        | | createdDate                       | &#x60;&gt;&#x60;&lt;br/&gt;&#x60;&lt;&#x60;         | Greater than or equal operator&lt;br/&gt;Less than or equal operator&lt;br/&gt;&lt;br/&gt;Use unix timestamp in milliseconds, e.g. &#x60;createdDate&gt;1675827618944&#x60;          | | employmentStatus.organization.id  | &#x60;:&#x60;                 | Equal operator                                                                                                                                        | | identificationNumber              | &#x60;:&#x60;                 | Like operator                                                                                                                                         | | identificationNumberIn            | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter                                                             | | name                              | &#x60;:&#x60;                 | Like operator                                                                                                                                         | | startDate                         | &#x60;:&#x60;&lt;br/&gt;&#x60;&gt;&#x60;&lt;br/&gt;&#x60;&lt;&#x60; | Equal operator&lt;br/&gt;Greater than or equal operator&lt;br/&gt;Less than or equal operator&lt;br/&gt;&lt;br/&gt;Use &#x60;yyyy-MM-dd&#x60; format, e.g. &#x60;startDate&gt;2023-05-31&#x60;       | | lastWorkingDate                   | &#x60;&gt;&#x60;&lt;br/&gt;&#x60;&lt;&#x60;         | Greater than or equal operator&lt;br/&gt;Less than or equal operator&lt;br/&gt;&lt;br/&gt;Use &#x60;yyyy-MM-dd&#x60; format, e.g. &#x60;lastWorkingDate&gt;2023-05-31&#x60;                    |  | [optional] 
-
-### Return type
+#### Return type
 
 [**EmployeeListResponse**](EmployeeListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](EmployeeApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **update\_employee\_hiring\_data**
 
-# **update_employee_hiring_data**
-> EmployeeHiringDataResponse update_employee_hiring_data(id, employee_hiring_data_request)
+> EmployeeHiringDataResponse update\_employee\_hiring\_data(id, employee\_hiring\_data\_request)
 
 Update Employee Hiring Data
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, EmployeeApi, ApiException
@@ -382,45 +369,42 @@ except ApiException as e:
     print("Exception when calling EmployeeApi->update_employee_hiring_data: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                                | Type                                                          | Description | Notes       |
+| ----------------------------------- | ------------------------------------------------------------- | ----------- | ----------- |
+| **id**                              | **str**                                                       |             |             |
+| **employee\_hiring\_data\_request** | [**EmployeeHiringDataRequest**](EmployeeHiringDataRequest.md) |             | \[optional] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**|  | 
- **employee_hiring_data_request** | [**EmployeeHiringDataRequest**](EmployeeHiringDataRequest.md)|  | [optional] 
-
-### Return type
+#### Return type
 
 [**EmployeeHiringDataResponse**](EmployeeHiringDataResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](EmployeeApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **update\_manager**
 
-# **update_manager**
-> EmployeeFullResponse update_manager(employee_id, manager_request)
+> EmployeeFullResponse update\_manager(employee\_id, manager\_request)
 
 Update Manager
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, EmployeeApi, ApiException
@@ -449,34 +433,31 @@ except ApiException as e:
     print("Exception when calling EmployeeApi->update_manager: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                 | Type                                    | Description | Notes       |
+| -------------------- | --------------------------------------- | ----------- | ----------- |
+| **employee\_id**     | **str**                                 |             |             |
+| **manager\_request** | [**ManagerRequest**](ManagerRequest.md) |             | \[optional] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **employee_id** | **str**|  | 
- **manager_request** | [**ManagerRequest**](ManagerRequest.md)|  | [optional] 
-
-### Return type
+#### Return type
 
 [**EmployeeFullResponse**](EmployeeFullResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](EmployeeApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)

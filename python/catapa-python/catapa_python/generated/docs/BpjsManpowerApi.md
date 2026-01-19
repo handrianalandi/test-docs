@@ -1,33 +1,34 @@
 # BpjsManpowerApi
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
-> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
+## BpjsManpowerApi
 
-All URIs are relative to *https://api.catapa.com*
+> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!\
+> &#xNAN;**✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**download_bpjs_manpower_payment_details_report**](BpjsManpowerApi.md#download_bpjs_manpower_payment_details_report) | **GET** /core/v1/bpjs-manpower-reports/payment-details | Download BPJS Manpower Payment Details Report
-[**download_pension_debt_report**](BpjsManpowerApi.md#download_pension_debt_report) | **GET** /core/v1/bpjs-manpower-reports/pension-debt-report | Download Pension Debt Report
-[**download_sipp_advance_member_report**](BpjsManpowerApi.md#download_sipp_advance_member_report) | **GET** /core/v1/bpjs-manpower-reports/sipp-advance-members | Download SIPP Advance Member Report
-[**download_sipp_new_member_report**](BpjsManpowerApi.md#download_sipp_new_member_report) | **GET** /core/v1/bpjs-manpower-reports/sipp-new-members | Download SIPP New Member Report
-[**download_sipp_terminated_member_report**](BpjsManpowerApi.md#download_sipp_terminated_member_report) | **GET** /core/v1/bpjs-manpower-reports/sipp-terminated-member | Download SIPP Terminated Member Report
-[**download_sipp_wage_update_report**](BpjsManpowerApi.md#download_sipp_wage_update_report) | **GET** /core/v1/bpjs-manpower-reports/sipp-wage-update | Download SIPP Wage Update Report
-[**get_bpjs_manpower_premium_summaries**](BpjsManpowerApi.md#get_bpjs_manpower_premium_summaries) | **GET** /core/v1/bpjs-manpower-premiums/summaries | Get BPJS Manpower Premium Summaries
-[**get_bpjs_manpower_premium_summary_details**](BpjsManpowerApi.md#get_bpjs_manpower_premium_summary_details) | **GET** /core/v1/bpjs-manpower-premiums/summaries/{id}/details | Get BPJS Manpower Premium Summary Details
-[**get_bpjs_manpower_providers**](BpjsManpowerApi.md#get_bpjs_manpower_providers) | **GET** /core/v1/bpjs-manpower-providers | Get BPJS Manpower Providers
-[**get_bpjs_manpower_templates**](BpjsManpowerApi.md#get_bpjs_manpower_templates) | **GET** /core/v1/bpjs-manpower-templates | Get BPJS Manpower Templates
+All URIs are relative to _https://api.catapa.com_
 
+| Method                                                                                                                     | HTTP request                                                   | Description                                   |
+| -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- | --------------------------------------------- |
+| [**download\_bpjs\_manpower\_payment\_details\_report**](BpjsManpowerApi.md#download_bpjs_manpower_payment_details_report) | **GET** /core/v1/bpjs-manpower-reports/payment-details         | Download BPJS Manpower Payment Details Report |
+| [**download\_pension\_debt\_report**](BpjsManpowerApi.md#download_pension_debt_report)                                     | **GET** /core/v1/bpjs-manpower-reports/pension-debt-report     | Download Pension Debt Report                  |
+| [**download\_sipp\_advance\_member\_report**](BpjsManpowerApi.md#download_sipp_advance_member_report)                      | **GET** /core/v1/bpjs-manpower-reports/sipp-advance-members    | Download SIPP Advance Member Report           |
+| [**download\_sipp\_new\_member\_report**](BpjsManpowerApi.md#download_sipp_new_member_report)                              | **GET** /core/v1/bpjs-manpower-reports/sipp-new-members        | Download SIPP New Member Report               |
+| [**download\_sipp\_terminated\_member\_report**](BpjsManpowerApi.md#download_sipp_terminated_member_report)                | **GET** /core/v1/bpjs-manpower-reports/sipp-terminated-member  | Download SIPP Terminated Member Report        |
+| [**download\_sipp\_wage\_update\_report**](BpjsManpowerApi.md#download_sipp_wage_update_report)                            | **GET** /core/v1/bpjs-manpower-reports/sipp-wage-update        | Download SIPP Wage Update Report              |
+| [**get\_bpjs\_manpower\_premium\_summaries**](BpjsManpowerApi.md#get_bpjs_manpower_premium_summaries)                      | **GET** /core/v1/bpjs-manpower-premiums/summaries              | Get BPJS Manpower Premium Summaries           |
+| [**get\_bpjs\_manpower\_premium\_summary\_details**](BpjsManpowerApi.md#get_bpjs_manpower_premium_summary_details)         | **GET** /core/v1/bpjs-manpower-premiums/summaries/{id}/details | Get BPJS Manpower Premium Summary Details     |
+| [**get\_bpjs\_manpower\_providers**](BpjsManpowerApi.md#get_bpjs_manpower_providers)                                       | **GET** /core/v1/bpjs-manpower-providers                       | Get BPJS Manpower Providers                   |
+| [**get\_bpjs\_manpower\_templates**](BpjsManpowerApi.md#get_bpjs_manpower_templates)                                       | **GET** /core/v1/bpjs-manpower-templates                       | Get BPJS Manpower Templates                   |
 
-# **download_bpjs_manpower_payment_details_report**
-> download_bpjs_manpower_payment_details_report()
+## **download\_bpjs\_manpower\_payment\_details\_report**
+
+> download\_bpjs\_manpower\_payment\_details\_report()
 
 Download BPJS Manpower Payment Details Report
 
-### Search Query | Request Parameter Name | Description                                      | | ---------------------- | ------------------------------------------------ | | month                  | Month of the report<br>Value: 1-12.              | | year                   | Year of the report<br>Value: YYYY, example: 2021 | | bpjsManpowerProviderId | Provider Id                                      | 
+#### Search Query | Request Parameter Name | Description | | ---------------------- | ------------------------------------------------ | | month | Month of the report Value: 1-12. | | year | Year of the report Value: YYYY, example: 2021 | | bpjsManpowerProviderId | Provider Id |
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, BpjsManpowerApi, ApiException
@@ -52,43 +53,41 @@ except ApiException as e:
     print("Exception when calling BpjsManpowerApi->download_bpjs_manpower_payment_details_report: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 void (empty response body)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+* **Content-Type**: Not defined
+* **Accept**: Not defined
 
-### HTTP response details
+#### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK - File download response |  * Content-Disposition -  <br>  |
-**400** | Bad Request |  -  |
+| Status code | Description                 | Response headers                   |
+| ----------- | --------------------------- | ---------------------------------- |
+| **200**     | OK - File download response | <p>* Content-Disposition -<br></p> |
+| **400**     | Bad Request                 | -                                  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](BpjsManpowerApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **download\_pension\_debt\_report**
 
-# **download_pension_debt_report**
-> download_pension_debt_report()
+> download\_pension\_debt\_report()
 
 Download Pension Debt Report
 
-To comply with [PP No. 49 Tahun 2020](https://peraturan.bpk.go.id/Home/Details/144869/pp-no-49-tahun-2020#:~:text=PP%20No.%2049%20Tahun%202020,19\\)%20%5BJDIH%20BPK%20RI%5D&text=LN.2020%2FNo.199,go.id%20%3A%2020%20hlm.) for “Jaminan Pensiun”  ### Search Query | Request Parameter Name | Description        | | ---------------------- | ------------------ | | bpjsManpowerProviderId | Provider Id. UUID4 | 
+To comply with [PP No. 49 Tahun 2020](https://peraturan.bpk.go.id/Home/Details/144869/pp-no-49-tahun-2020)%20%5BJDIH%20BPK%20RI%5D\&text=LN.2020%2FNo.199,go.id%20%3A%2020%20hlm.) for “Jaminan Pensiun” ### Search Query | Request Parameter Name | Description | | ---------------------- | ------------------ | | bpjsManpowerProviderId | Provider Id. UUID4 |
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, BpjsManpowerApi, ApiException
@@ -113,43 +112,41 @@ except ApiException as e:
     print("Exception when calling BpjsManpowerApi->download_pension_debt_report: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 void (empty response body)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+* **Content-Type**: Not defined
+* **Accept**: Not defined
 
-### HTTP response details
+#### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK - File download response |  * Content-Disposition -  <br>  |
-**400** | Bad Request |  -  |
+| Status code | Description                 | Response headers                   |
+| ----------- | --------------------------- | ---------------------------------- |
+| **200**     | OK - File download response | <p>* Content-Disposition -<br></p> |
+| **400**     | Bad Request                 | -                                  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](BpjsManpowerApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **download\_sipp\_advance\_member\_report**
 
-# **download_sipp_advance_member_report**
-> download_sipp_advance_member_report()
+> download\_sipp\_advance\_member\_report()
 
 Download SIPP Advance Member Report
 
-### Search Query | Request Parameter Name | Description                                        | | ---------------------- | ------------------------------------------------   | | month                  | Month of the report<br>Value: 1-12.                | | year                   | Year of the report<br>Value: YYYY, example: 2021   | | bpjsManpowerProviderId | Provider Id                                        | 
+#### Search Query | Request Parameter Name | Description | | ---------------------- | ------------------------------------------------ | | month | Month of the report Value: 1-12. | | year | Year of the report Value: YYYY, example: 2021 | | bpjsManpowerProviderId | Provider Id |
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, BpjsManpowerApi, ApiException
@@ -174,43 +171,41 @@ except ApiException as e:
     print("Exception when calling BpjsManpowerApi->download_sipp_advance_member_report: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 void (empty response body)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+* **Content-Type**: Not defined
+* **Accept**: Not defined
 
-### HTTP response details
+#### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK - File download response |  * Content-Disposition -  <br>  |
-**400** | Bad Request |  -  |
+| Status code | Description                 | Response headers                   |
+| ----------- | --------------------------- | ---------------------------------- |
+| **200**     | OK - File download response | <p>* Content-Disposition -<br></p> |
+| **400**     | Bad Request                 | -                                  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](BpjsManpowerApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **download\_sipp\_new\_member\_report**
 
-# **download_sipp_new_member_report**
-> download_sipp_new_member_report()
+> download\_sipp\_new\_member\_report()
 
 Download SIPP New Member Report
 
-### Search Query | Request Parameter Name | Description                                        | | ---------------------- | ------------------------------------------------   | | month                  | Month of the report<br>Value: 1-12.                | | year                   | Year of the report<br>Value: YYYY, example: 2021   | | bpjsManpowerProviderId | Provider Id                                        | 
+#### Search Query | Request Parameter Name | Description | | ---------------------- | ------------------------------------------------ | | month | Month of the report Value: 1-12. | | year | Year of the report Value: YYYY, example: 2021 | | bpjsManpowerProviderId | Provider Id |
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, BpjsManpowerApi, ApiException
@@ -235,43 +230,41 @@ except ApiException as e:
     print("Exception when calling BpjsManpowerApi->download_sipp_new_member_report: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 void (empty response body)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+* **Content-Type**: Not defined
+* **Accept**: Not defined
 
-### HTTP response details
+#### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK - File download response |  * Content-Disposition -  <br>  |
-**400** | Bad Request |  -  |
+| Status code | Description                 | Response headers                   |
+| ----------- | --------------------------- | ---------------------------------- |
+| **200**     | OK - File download response | <p>* Content-Disposition -<br></p> |
+| **400**     | Bad Request                 | -                                  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](BpjsManpowerApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **download\_sipp\_terminated\_member\_report**
 
-# **download_sipp_terminated_member_report**
-> download_sipp_terminated_member_report()
+> download\_sipp\_terminated\_member\_report()
 
 Download SIPP Terminated Member Report
 
-### Search Query | Request Parameter Name | Description                                        | | ---------------------- | ------------------------------------------------   | | month                  | Month of the report<br>Value: 1-12.                | | year                   | Year of the report<br>Value: YYYY, example: 2021   | | bpjsManpowerProviderId | Provider Id                                        | 
+#### Search Query | Request Parameter Name | Description | | ---------------------- | ------------------------------------------------ | | month | Month of the report Value: 1-12. | | year | Year of the report Value: YYYY, example: 2021 | | bpjsManpowerProviderId | Provider Id |
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, BpjsManpowerApi, ApiException
@@ -296,43 +289,41 @@ except ApiException as e:
     print("Exception when calling BpjsManpowerApi->download_sipp_terminated_member_report: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 void (empty response body)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+* **Content-Type**: Not defined
+* **Accept**: Not defined
 
-### HTTP response details
+#### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK - File download response |  * Content-Disposition -  <br>  |
-**400** | Bad Request |  -  |
+| Status code | Description                 | Response headers                   |
+| ----------- | --------------------------- | ---------------------------------- |
+| **200**     | OK - File download response | <p>* Content-Disposition -<br></p> |
+| **400**     | Bad Request                 | -                                  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](BpjsManpowerApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **download\_sipp\_wage\_update\_report**
 
-# **download_sipp_wage_update_report**
-> download_sipp_wage_update_report()
+> download\_sipp\_wage\_update\_report()
 
 Download SIPP Wage Update Report
 
-### Search Query | Request Parameter Name | Description                                        | | ---------------------- | ------------------------------------------------   | | month                  | Month of the report<br>Value: 1-12.                | | year                   | Year of the report<br>Value: YYYY, example: 2021   | | bpjsManpowerProviderId | Provider Id. UUID4                                 | | paygroupId             | Provider Id from payroll. UUID4                    | 
+#### Search Query | Request Parameter Name | Description | | ---------------------- | ------------------------------------------------ | | month | Month of the report Value: 1-12. | | year | Year of the report Value: YYYY, example: 2021 | | bpjsManpowerProviderId | Provider Id. UUID4 | | paygroupId | Provider Id from payroll. UUID4 |
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, BpjsManpowerApi, ApiException
@@ -357,43 +348,41 @@ except ApiException as e:
     print("Exception when calling BpjsManpowerApi->download_sipp_wage_update_report: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 void (empty response body)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+* **Content-Type**: Not defined
+* **Accept**: Not defined
 
-### HTTP response details
+#### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK - File download response |  * Content-Disposition -  <br>  |
-**400** | Bad Request |  -  |
+| Status code | Description                 | Response headers                   |
+| ----------- | --------------------------- | ---------------------------------- |
+| **200**     | OK - File download response | <p>* Content-Disposition -<br></p> |
+| **400**     | Bad Request                 | -                                  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](BpjsManpowerApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_bpjs\_manpower\_premium\_summaries**
 
-# **get_bpjs_manpower_premium_summaries**
-> BpjsManpowerPremiumSummaryListResponse get_bpjs_manpower_premium_summaries()
+> BpjsManpowerPremiumSummaryListResponse get\_bpjs\_manpower\_premium\_summaries()
 
 Get BPJS Manpower Premium Summaries
 
-### Search Query | Supported Keys       | Supported Operators | Notes         | |----------------------|---------------------|---------------| | employeeName         | :                   | Like Operator | | identificationNumber | :                   | Like Operator | | cutoffEndDate        | :<br>><br><         | Equal operator<br>Greater than or equal to operator<br>Less than or equal to equal operator | 
+#### Search Query | Supported Keys | Supported Operators | Notes | |----------------------|---------------------|---------------| | employeeName | : | Like Operator | | identificationNumber | : | Like Operator | | cutoffEndDate | : > < | Equal operator Greater than or equal to operator Less than or equal to equal operator |
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, BpjsManpowerApi, ApiException
@@ -420,41 +409,39 @@ except ApiException as e:
     print("Exception when calling BpjsManpowerApi->get_bpjs_manpower_premium_summaries: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**BpjsManpowerPremiumSummaryListResponse**](BpjsManpowerPremiumSummaryListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](BpjsManpowerApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_bpjs\_manpower\_premium\_summary\_details**
 
-# **get_bpjs_manpower_premium_summary_details**
-> BpjsManpowerPremiumDetailsResponse get_bpjs_manpower_premium_summary_details(id)
+> BpjsManpowerPremiumDetailsResponse get\_bpjs\_manpower\_premium\_summary\_details(id)
 
 Get BPJS Manpower Premium Summary Details
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, BpjsManpowerApi, ApiException
@@ -482,46 +469,43 @@ except ApiException as e:
     print("Exception when calling BpjsManpowerApi->get_bpjs_manpower_premium_summary_details: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name   | Type    | Description | Notes |
+| ------ | ------- | ----------- | ----- |
+| **id** | **str** |             |       |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**BpjsManpowerPremiumDetailsResponse**](BpjsManpowerPremiumDetailsResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](BpjsManpowerApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_bpjs\_manpower\_providers**
 
-# **get_bpjs_manpower_providers**
-> BpjsManpowerProviderListResponse get_bpjs_manpower_providers()
+> BpjsManpowerProviderListResponse get\_bpjs\_manpower\_providers()
 
 Get BPJS Manpower Providers
 
-### Search Query | Supported Keys          | Supported Operators | Notes         | | ----------------------- | ------------------- | ------------- | | name                    | :                   | Like Operator | | code                    | :                   | Like Operator | | address                 | :                   | Like Operator | | registrationNumber      | :                   | Like Operator | | reportSignatoryName     | :                   | Like Operator | | reportSignatoryJobTitle | :                   | Like Operator | 
+#### Search Query | Supported Keys | Supported Operators | Notes | | ----------------------- | ------------------- | ------------- | | name | : | Like Operator | | code | : | Like Operator | | address | : | Like Operator | | registrationNumber | : | Like Operator | | reportSignatoryName | : | Like Operator | | reportSignatoryJobTitle | : | Like Operator |
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, BpjsManpowerApi, ApiException
@@ -548,43 +532,41 @@ except ApiException as e:
     print("Exception when calling BpjsManpowerApi->get_bpjs_manpower_providers: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**BpjsManpowerProviderListResponse**](BpjsManpowerProviderListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](BpjsManpowerApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_bpjs\_manpower\_templates**
 
-# **get_bpjs_manpower_templates**
-> BpjsManpowerTemplateListResponse get_bpjs_manpower_templates()
+> BpjsManpowerTemplateListResponse get\_bpjs\_manpower\_templates()
 
 Get BPJS Manpower Templates
 
-### Search Query | Supported Keys | Supported Operators |Notes                                                                                     | | -------------- | ------------------- |------------------------------------------------------------------------------------------| | code           | :                   | Like Operator                                                                            | | name           | :                   | Like Operator                                                                            | | salaryType     | :                   | Equal Operator<br>Enum, available values:<br>\\[BY\\_PRORATED\\_SALARY, BY\\_SALARY\\_DECREE\\]| | linkToPayroll  | :                   | Equal Operator.<br>Boolean                                                               | 
+#### Search Query | Supported Keys | Supported Operators |Notes | | -------------- | ------------------- |------------------------------------------------------------------------------------------| | code | : | Like Operator | | name | : | Like Operator | | salaryType | : | Equal Operator Enum, available values: \\\[BY\\\_PRORATED\\\_SALARY, BY\\\_SALARY\\\_DECREE\\]| | linkToPayroll | : | Equal Operator. Boolean |
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, BpjsManpowerApi, ApiException
@@ -611,30 +593,28 @@ except ApiException as e:
     print("Exception when calling BpjsManpowerApi->get_bpjs_manpower_templates: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**BpjsManpowerTemplateListResponse**](BpjsManpowerTemplateListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](BpjsManpowerApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)

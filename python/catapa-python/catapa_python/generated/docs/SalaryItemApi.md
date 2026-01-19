@@ -1,23 +1,24 @@
 # SalaryItemApi
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
-> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
+## SalaryItemApi
 
-All URIs are relative to *https://api.catapa.com*
+> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!\
+> &#xNAN;**✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**get_salary_item_by_id**](SalaryItemApi.md#get_salary_item_by_id) | **GET** /core/v1/salary-items/{id} | Get Salary Item by ID
-[**get_salary_items**](SalaryItemApi.md#get_salary_items) | **GET** /core/v1/salary-items | Get Salary Items
+All URIs are relative to _https://api.catapa.com_
 
+| Method                                                                  | HTTP request                       | Description           |
+| ----------------------------------------------------------------------- | ---------------------------------- | --------------------- |
+| [**get\_salary\_item\_by\_id**](SalaryItemApi.md#get_salary_item_by_id) | **GET** /core/v1/salary-items/{id} | Get Salary Item by ID |
+| [**get\_salary\_items**](SalaryItemApi.md#get_salary_items)             | **GET** /core/v1/salary-items      | Get Salary Items      |
 
-# **get_salary_item_by_id**
-> SalaryItemResponse get_salary_item_by_id(id)
+## **get\_salary\_item\_by\_id**
+
+> SalaryItemResponse get\_salary\_item\_by\_id(id)
 
 Get Salary Item by ID
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, SalaryItemApi, ApiException
@@ -45,46 +46,41 @@ except ApiException as e:
     print("Exception when calling SalaryItemApi->get_salary_item_by_id: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name   | Type    | Description | Notes |
+| ------ | ------- | ----------- | ----- |
+| **id** | **str** |             |       |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**SalaryItemResponse**](SalaryItemResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](SalaryItemApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_salary\_items**
 
-# **get_salary_items**
-> SalaryItemListResponse get_salary_items(page, size, include_default_type, query)
+> SalaryItemListResponse get\_salary\_items(page, size, include\_default\_type, query)
 
 Get Salary Items
 
-
-
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, SalaryItemApi, ApiException
@@ -115,36 +111,33 @@ except ApiException as e:
     print("Exception when calling SalaryItemApi->get_salary_items: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                       | Type     | Description      | Notes                           |
+| -------------------------- | -------- | ---------------- | ------------------------------- |
+| **page**                   | **int**  | Page number      | \[optional] \[default to 0]     |
+| **size**                   | **int**  | Page size        | \[optional] \[default to 10]    |
+| **include\_default\_type** | **bool** |                  | \[optional] \[default to False] |
+| **query**                  | **str**  | ### Search Query | Supported Keys                  |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **include_default_type** | **bool**|  | [optional] [default to False]
- **query** | **str**| ### Search Query | Supported Keys | Supported Operators | Notes         | | -------------- | ------------------- | ------------- | | code           | :                   | Like operator | | name           | :                   | Like operator |  | [optional] 
-
-### Return type
+#### Return type
 
 [**SalaryItemListResponse**](SalaryItemListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](SalaryItemApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)

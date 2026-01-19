@@ -1,35 +1,36 @@
 # EmployeeVariableApi
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
-> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
+## EmployeeVariableApi
 
-All URIs are relative to *https://api.catapa.com*
+> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!\
+> &#xNAN;**✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create_employee_variable**](EmployeeVariableApi.md#create_employee_variable) | **POST** /core/v1/employee-variables | Create Employee Variable
-[**create_employee_variable_metadata**](EmployeeVariableApi.md#create_employee_variable_metadata) | **POST** /core/v1/employee-variable-metadata | Create Employee Variable Metadata
-[**create_or_update_employee_variables**](EmployeeVariableApi.md#create_or_update_employee_variables) | **PUT** /core/v1/employee-variables | Create or Update Employee Variables
-[**delete_all_aperiodic_employee_variables**](EmployeeVariableApi.md#delete_all_aperiodic_employee_variables) | **DELETE** /core/v1/employee-variables/aperiodic/all | Delete All Aperiodic Employee Variables
-[**delete_employee_variable_metadata**](EmployeeVariableApi.md#delete_employee_variable_metadata) | **DELETE** /core/v1/employee-variable-metadata | Delete Employee Variable Metadata
-[**delete_employee_variables**](EmployeeVariableApi.md#delete_employee_variables) | **DELETE** /core/v1/employee-variables | Delete Employee Variables
-[**get_aperiodic_employee_variables**](EmployeeVariableApi.md#get_aperiodic_employee_variables) | **GET** /core/v1/employee-variables/aperiodic | Get Aperiodic Employee Variables
-[**get_employee_variable_by_id**](EmployeeVariableApi.md#get_employee_variable_by_id) | **GET** /core/v1/employee-variables/{id} | Get Employee Variable By Id
-[**get_employee_variable_metadata**](EmployeeVariableApi.md#get_employee_variable_metadata) | **GET** /core/v1/employee-variable-metadata | Get Employee Variable Metadata
-[**get_employee_variable_metadata_by_id**](EmployeeVariableApi.md#get_employee_variable_metadata_by_id) | **GET** /core/v1/employee-variable-metadata/{id} | Get Employee Variable Metadata By Id
-[**get_employee_variables**](EmployeeVariableApi.md#get_employee_variables) | **GET** /core/v1/employee-variables | Get Employee Variables
-[**get_periodic_employee_variables**](EmployeeVariableApi.md#get_periodic_employee_variables) | **GET** /core/v1/employee-variables/periodic | Get Periodic Employee Variables
-[**update_employee_variable_by_id**](EmployeeVariableApi.md#update_employee_variable_by_id) | **PUT** /core/v1/employee-variables/{id} | Update Employee Variable By Id
-[**update_employee_variable_metadata**](EmployeeVariableApi.md#update_employee_variable_metadata) | **PUT** /core/v1/employee-variable-metadata/{id} | Update Employee Variable Metadata
+All URIs are relative to _https://api.catapa.com_
 
+| Method                                                                                                            | HTTP request                                         | Description                             |
+| ----------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | --------------------------------------- |
+| [**create\_employee\_variable**](EmployeeVariableApi.md#create_employee_variable)                                 | **POST** /core/v1/employee-variables                 | Create Employee Variable                |
+| [**create\_employee\_variable\_metadata**](EmployeeVariableApi.md#create_employee_variable_metadata)              | **POST** /core/v1/employee-variable-metadata         | Create Employee Variable Metadata       |
+| [**create\_or\_update\_employee\_variables**](EmployeeVariableApi.md#create_or_update_employee_variables)         | **PUT** /core/v1/employee-variables                  | Create or Update Employee Variables     |
+| [**delete\_all\_aperiodic\_employee\_variables**](EmployeeVariableApi.md#delete_all_aperiodic_employee_variables) | **DELETE** /core/v1/employee-variables/aperiodic/all | Delete All Aperiodic Employee Variables |
+| [**delete\_employee\_variable\_metadata**](EmployeeVariableApi.md#delete_employee_variable_metadata)              | **DELETE** /core/v1/employee-variable-metadata       | Delete Employee Variable Metadata       |
+| [**delete\_employee\_variables**](EmployeeVariableApi.md#delete_employee_variables)                               | **DELETE** /core/v1/employee-variables               | Delete Employee Variables               |
+| [**get\_aperiodic\_employee\_variables**](EmployeeVariableApi.md#get_aperiodic_employee_variables)                | **GET** /core/v1/employee-variables/aperiodic        | Get Aperiodic Employee Variables        |
+| [**get\_employee\_variable\_by\_id**](EmployeeVariableApi.md#get_employee_variable_by_id)                         | **GET** /core/v1/employee-variables/{id}             | Get Employee Variable By Id             |
+| [**get\_employee\_variable\_metadata**](EmployeeVariableApi.md#get_employee_variable_metadata)                    | **GET** /core/v1/employee-variable-metadata          | Get Employee Variable Metadata          |
+| [**get\_employee\_variable\_metadata\_by\_id**](EmployeeVariableApi.md#get_employee_variable_metadata_by_id)      | **GET** /core/v1/employee-variable-metadata/{id}     | Get Employee Variable Metadata By Id    |
+| [**get\_employee\_variables**](EmployeeVariableApi.md#get_employee_variables)                                     | **GET** /core/v1/employee-variables                  | Get Employee Variables                  |
+| [**get\_periodic\_employee\_variables**](EmployeeVariableApi.md#get_periodic_employee_variables)                  | **GET** /core/v1/employee-variables/periodic         | Get Periodic Employee Variables         |
+| [**update\_employee\_variable\_by\_id**](EmployeeVariableApi.md#update_employee_variable_by_id)                   | **PUT** /core/v1/employee-variables/{id}             | Update Employee Variable By Id          |
+| [**update\_employee\_variable\_metadata**](EmployeeVariableApi.md#update_employee_variable_metadata)              | **PUT** /core/v1/employee-variable-metadata/{id}     | Update Employee Variable Metadata       |
 
-# **create_employee_variable**
-> EmployeeVariableResponse create_employee_variable(employee_variable_request)
+## **create\_employee\_variable**
+
+> EmployeeVariableResponse create\_employee\_variable(employee\_variable\_request)
 
 Create Employee Variable
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, EmployeeVariableApi, ApiException
@@ -57,44 +58,41 @@ except ApiException as e:
     print("Exception when calling EmployeeVariableApi->create_employee_variable: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                            | Type                                                      | Description | Notes       |
+| ------------------------------- | --------------------------------------------------------- | ----------- | ----------- |
+| **employee\_variable\_request** | [**EmployeeVariableRequest**](EmployeeVariableRequest.md) |             | \[optional] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **employee_variable_request** | [**EmployeeVariableRequest**](EmployeeVariableRequest.md)|  | [optional] 
-
-### Return type
+#### Return type
 
 [**EmployeeVariableResponse**](EmployeeVariableResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](EmployeeVariableApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **create\_employee\_variable\_metadata**
 
-# **create_employee_variable_metadata**
-> EmployeeVariableMetadataResponse create_employee_variable_metadata(employee_variable_metadata_request)
+> EmployeeVariableMetadataResponse create\_employee\_variable\_metadata(employee\_variable\_metadata\_request)
 
 Create Employee Variable Metadata
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, EmployeeVariableApi, ApiException
@@ -122,44 +120,41 @@ except ApiException as e:
     print("Exception when calling EmployeeVariableApi->create_employee_variable_metadata: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                                      | Type                                                                      | Description | Notes       |
+| ----------------------------------------- | ------------------------------------------------------------------------- | ----------- | ----------- |
+| **employee\_variable\_metadata\_request** | [**EmployeeVariableMetadataRequest**](EmployeeVariableMetadataRequest.md) |             | \[optional] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **employee_variable_metadata_request** | [**EmployeeVariableMetadataRequest**](EmployeeVariableMetadataRequest.md)|  | [optional] 
-
-### Return type
+#### Return type
 
 [**EmployeeVariableMetadataResponse**](EmployeeVariableMetadataResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**201** | CREATED |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **201**     | CREATED     | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](EmployeeVariableApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **create\_or\_update\_employee\_variables**
 
-# **create_or_update_employee_variables**
-> List[EmployeeVariableResponse] create_or_update_employee_variables(employee_variable_request)
+> List\[EmployeeVariableResponse] create\_or\_update\_employee\_variables(employee\_variable\_request)
 
 Create or Update Employee Variables
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, EmployeeVariableApi, ApiException
@@ -187,46 +182,43 @@ except ApiException as e:
     print("Exception when calling EmployeeVariableApi->create_or_update_employee_variables: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                            | Type                                                              | Description | Notes       |
+| ------------------------------- | ----------------------------------------------------------------- | ----------- | ----------- |
+| **employee\_variable\_request** | [**List\[EmployeeVariableRequest\]**](EmployeeVariableRequest.md) |             | \[optional] |
 
+#### Return type
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **employee_variable_request** | [**List[EmployeeVariableRequest]**](EmployeeVariableRequest.md)|  | [optional] 
+[**List\[EmployeeVariableResponse\]**](EmployeeVariableResponse.md)
 
-### Return type
+#### Authorization
 
-[**List[EmployeeVariableResponse]**](EmployeeVariableResponse.md)
+[BearerAuth](../#BearerAuth)
 
-### Authorization
+#### HTTP request headers
 
-[BearerAuth](../README.md#BearerAuth)
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](EmployeeVariableApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **delete\_all\_aperiodic\_employee\_variables**
 
-# **delete_all_aperiodic_employee_variables**
-> CountResponse delete_all_aperiodic_employee_variables()
+> CountResponse delete\_all\_aperiodic\_employee\_variables()
 
 Delete All Aperiodic Employee Variables
 
-### Search Query | Supported Keys                | Supported Operators | Notes | | ----------------------------- | ------------------- | ----- | | employeeId                    | :                   | Equal | | employee.identificationNumber | :                   | Like  | | employee.name                 | :                   | Like  | | employee.active               | :                   | Equal | | name                          | :                   | Like  | | metadata.id                   | :                   | Equal | | date                          | :<br>><br><         | Equal<br>Greater than or equal to<br>Less than or equal to | 
+#### Search Query | Supported Keys | Supported Operators | Notes | | ----------------------------- | ------------------- | ----- | | employeeId | : | Equal | | employee.identificationNumber | : | Like | | employee.name | : | Like | | employee.active | : | Equal | | name | : | Like | | metadata.id | : | Equal | | date | : > < | Equal Greater than or equal to Less than or equal to |
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, EmployeeVariableApi, ApiException
@@ -253,43 +245,41 @@ except ApiException as e:
     print("Exception when calling EmployeeVariableApi->delete_all_aperiodic_employee_variables: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**CountResponse**](CountResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](EmployeeVariableApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **delete\_employee\_variable\_metadata**
 
-# **delete_employee_variable_metadata**
-> BulkOperationResponse delete_employee_variable_metadata()
+> BulkOperationResponse delete\_employee\_variable\_metadata()
 
 Delete Employee Variable Metadata
 
-This endpoint deletes employee variable metadata. This endpoint expects a JSON array in the request body,  where each item is an object containing an `id` field representing the employee variable metadata to delete. The array must contain between 1 and 50 items.      **Request body schema:** ```json [   {     \"id\": \"string\"   } ] ``` **Example payload**: ```json [   { \"id\": \"673d457f-1975-434c-81a4-067f79345554\" },   { \"id\": \"730e2120-96e6-4426-8bbd-c1945ce561f7\" } ] ``` 
+This endpoint deletes employee variable metadata. This endpoint expects a JSON array in the request body, where each item is an object containing an `id` field representing the employee variable metadata to delete. The array must contain between 1 and 50 items. **Request body schema:** `json [ { \"id\": \"string\" } ]` **Example payload**: `json [ { \"id\": \"673d457f-1975-434c-81a4-067f79345554\" }, { \"id\": \"730e2120-96e6-4426-8bbd-c1945ce561f7\" } ]`
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, EmployeeVariableApi, ApiException
@@ -316,43 +306,41 @@ except ApiException as e:
     print("Exception when calling EmployeeVariableApi->delete_employee_variable_metadata: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**BulkOperationResponse**](BulkOperationResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](EmployeeVariableApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **delete\_employee\_variables**
 
-# **delete_employee_variables**
-> BulkOperationResponse delete_employee_variables()
+> BulkOperationResponse delete\_employee\_variables()
 
 Delete Employee Variables
 
-This endpoint expects a JSON array in the request body,  where each item is an object containing an `id` field representing the employee variable to delete. The array must contain between 1 and 50 items. **Request body schema:** ```json [   { \"id\": \"string\" } ] ``` **Example payload**: ```json [   { \"id\": \"673d457f-1975-434c-81a4-067f79345554\" },   { \"id\": \"730e2120-96e6-4426-8bbd-c1945ce561f7\" } ] ``` 
+This endpoint expects a JSON array in the request body, where each item is an object containing an `id` field representing the employee variable to delete. The array must contain between 1 and 50 items. **Request body schema:** `json [ { \"id\": \"string\" } ]` **Example payload**: `json [ { \"id\": \"673d457f-1975-434c-81a4-067f79345554\" }, { \"id\": \"730e2120-96e6-4426-8bbd-c1945ce561f7\" } ]`
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, EmployeeVariableApi, ApiException
@@ -379,41 +367,39 @@ except ApiException as e:
     print("Exception when calling EmployeeVariableApi->delete_employee_variables: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**BulkOperationResponse**](BulkOperationResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](EmployeeVariableApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_aperiodic\_employee\_variables**
 
-# **get_aperiodic_employee_variables**
-> EmployeeVariableListResponse get_aperiodic_employee_variables()
+> EmployeeVariableListResponse get\_aperiodic\_employee\_variables()
 
 Get Aperiodic Employee Variables
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, EmployeeVariableApi, ApiException
@@ -440,41 +426,39 @@ except ApiException as e:
     print("Exception when calling EmployeeVariableApi->get_aperiodic_employee_variables: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**EmployeeVariableListResponse**](EmployeeVariableListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](EmployeeVariableApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_employee\_variable\_by\_id**
 
-# **get_employee_variable_by_id**
-> EmployeeVariableResponse get_employee_variable_by_id(id)
+> EmployeeVariableResponse get\_employee\_variable\_by\_id(id)
 
 Get Employee Variable By Id
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, EmployeeVariableApi, ApiException
@@ -502,46 +486,43 @@ except ApiException as e:
     print("Exception when calling EmployeeVariableApi->get_employee_variable_by_id: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name   | Type    | Description | Notes |
+| ------ | ------- | ----------- | ----- |
+| **id** | **str** |             |       |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**EmployeeVariableResponse**](EmployeeVariableResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](EmployeeVariableApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_employee\_variable\_metadata**
 
-# **get_employee_variable_metadata**
-> EmployeeVariableMetadataListResponse get_employee_variable_metadata()
+> EmployeeVariableMetadataListResponse get\_employee\_variable\_metadata()
 
 Get Employee Variable Metadata
 
-### Search Query | Supported Keys | Supported Operators | Notes | | -------------- | ------------------- | ----- | | name           | :                   | Equal | | type           | :                   | Equal | | periodic       | :                   | Equal | | description    | :                   | Like  | 
+#### Search Query | Supported Keys | Supported Operators | Notes | | -------------- | ------------------- | ----- | | name | : | Equal | | type | : | Equal | | periodic | : | Equal | | description | : | Like |
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, EmployeeVariableApi, ApiException
@@ -568,41 +549,39 @@ except ApiException as e:
     print("Exception when calling EmployeeVariableApi->get_employee_variable_metadata: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**EmployeeVariableMetadataListResponse**](EmployeeVariableMetadataListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](EmployeeVariableApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_employee\_variable\_metadata\_by\_id**
 
-# **get_employee_variable_metadata_by_id**
-> EmployeeVariableMetadataResponse get_employee_variable_metadata_by_id(id)
+> EmployeeVariableMetadataResponse get\_employee\_variable\_metadata\_by\_id(id)
 
 Get Employee Variable Metadata By Id
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, EmployeeVariableApi, ApiException
@@ -630,46 +609,43 @@ except ApiException as e:
     print("Exception when calling EmployeeVariableApi->get_employee_variable_metadata_by_id: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name   | Type    | Description | Notes |
+| ------ | ------- | ----------- | ----- |
+| **id** | **str** |             |       |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**EmployeeVariableMetadataResponse**](EmployeeVariableMetadataResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](EmployeeVariableApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_employee\_variables**
 
-# **get_employee_variables**
-> EmployeeVariableListResponse get_employee_variables()
+> EmployeeVariableListResponse get\_employee\_variables()
 
 Get Employee Variables
 
-### Search Query | Supported Keys                | Supported Operators | Notes | | ----------------------------- | ------------------- | ----- | | employeeId                    | :                   | Equal | | employee.identificationNumber | :                   | Like  | | employee.name                 | :                   | Like  | | employee.active               | :                   | Equal | | name                          | :                   | Like  | | metadata.id                   | :                   | Equal | | date                          | :<br>><br><         | Equal<br>Greater than or equal to<br>Less than or equal to | 
+#### Search Query | Supported Keys | Supported Operators | Notes | | ----------------------------- | ------------------- | ----- | | employeeId | : | Equal | | employee.identificationNumber | : | Like | | employee.name | : | Like | | employee.active | : | Equal | | name | : | Like | | metadata.id | : | Equal | | date | : > < | Equal Greater than or equal to Less than or equal to |
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, EmployeeVariableApi, ApiException
@@ -696,41 +672,39 @@ except ApiException as e:
     print("Exception when calling EmployeeVariableApi->get_employee_variables: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**EmployeeVariableListResponse**](EmployeeVariableListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](EmployeeVariableApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_periodic\_employee\_variables**
 
-# **get_periodic_employee_variables**
-> EmployeeVariableListResponse get_periodic_employee_variables()
+> EmployeeVariableListResponse get\_periodic\_employee\_variables()
 
 Get Periodic Employee Variables
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, EmployeeVariableApi, ApiException
@@ -757,41 +731,39 @@ except ApiException as e:
     print("Exception when calling EmployeeVariableApi->get_periodic_employee_variables: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**EmployeeVariableListResponse**](EmployeeVariableListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](EmployeeVariableApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **update\_employee\_variable\_by\_id**
 
-# **update_employee_variable_by_id**
-> EmployeeVariableResponse update_employee_variable_by_id(id, employee_variable_request)
+> EmployeeVariableResponse update\_employee\_variable\_by\_id(id, employee\_variable\_request)
 
 Update Employee Variable By Id
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, EmployeeVariableApi, ApiException
@@ -820,45 +792,42 @@ except ApiException as e:
     print("Exception when calling EmployeeVariableApi->update_employee_variable_by_id: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                            | Type                                                      | Description | Notes       |
+| ------------------------------- | --------------------------------------------------------- | ----------- | ----------- |
+| **id**                          | **str**                                                   |             |             |
+| **employee\_variable\_request** | [**EmployeeVariableRequest**](EmployeeVariableRequest.md) |             | \[optional] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**|  | 
- **employee_variable_request** | [**EmployeeVariableRequest**](EmployeeVariableRequest.md)|  | [optional] 
-
-### Return type
+#### Return type
 
 [**EmployeeVariableResponse**](EmployeeVariableResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](EmployeeVariableApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **update\_employee\_variable\_metadata**
 
-# **update_employee_variable_metadata**
-> EmployeeVariableMetadataResponse update_employee_variable_metadata(id, employee_variable_metadata_request)
+> EmployeeVariableMetadataResponse update\_employee\_variable\_metadata(id, employee\_variable\_metadata\_request)
 
 Update Employee Variable Metadata
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, EmployeeVariableApi, ApiException
@@ -887,34 +856,31 @@ except ApiException as e:
     print("Exception when calling EmployeeVariableApi->update_employee_variable_metadata: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                                      | Type                                                                      | Description | Notes       |
+| ----------------------------------------- | ------------------------------------------------------------------------- | ----------- | ----------- |
+| **id**                                    | **str**                                                                   |             |             |
+| **employee\_variable\_metadata\_request** | [**EmployeeVariableMetadataRequest**](EmployeeVariableMetadataRequest.md) |             | \[optional] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**|  | 
- **employee_variable_metadata_request** | [**EmployeeVariableMetadataRequest**](EmployeeVariableMetadataRequest.md)|  | [optional] 
-
-### Return type
+#### Return type
 
 [**EmployeeVariableMetadataResponse**](EmployeeVariableMetadataResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](EmployeeVariableApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)

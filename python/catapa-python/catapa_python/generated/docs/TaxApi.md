@@ -1,48 +1,49 @@
 # TaxApi
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
-> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
+## TaxApi
 
-All URIs are relative to *https://api.catapa.com*
+> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!\
+> &#xNAN;**✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create_tax_calculation**](TaxApi.md#create_tax_calculation) | **POST** /core/v1/tax-calculations | Create Tax Calculation
-[**download1721_a1_report**](TaxApi.md#download1721_a1_report) | **GET** /core/v1/tax-reports/1721-a1/{id}/download | Download 1721 A1 Report
-[**download1721_vi_report**](TaxApi.md#download1721_vi_report) | **GET** /core/v1/pph21-reports/1721-vi/{id}/download | Download 1721 VI Report
-[**download1721_vi_tax_report**](TaxApi.md#download1721_vi_tax_report) | **GET** /core/v1/tax-reports/1721-vi/{id}/download | Download 1721 VI Report
-[**download1721_vii_report**](TaxApi.md#download1721_vii_report) | **GET** /core/v1/pph21-reports/1721-vii/{id}/download | Download 1721 VII Report
-[**download1721_vii_tax_report**](TaxApi.md#download1721_vii_tax_report) | **GET** /core/v1/tax-reports/1721-vii/{id}/download | Download 1721 VII Report
-[**download1721_viii_report**](TaxApi.md#download1721_viii_report) | **GET** /core/v1/tax-reports/1721-viii/{id}/download | Download 1721 VIII Report
-[**get1721_a1_reports**](TaxApi.md#get1721_a1_reports) | **GET** /core/v1/tax-reports/1721-a1 | Get 1721 A1 Reports
-[**get1721_vi_reports**](TaxApi.md#get1721_vi_reports) | **GET** /core/v1/pph21-reports/1721-vi | Get 1721 VI Reports
-[**get1721_vi_tax_reports**](TaxApi.md#get1721_vi_tax_reports) | **GET** /core/v1/tax-reports/1721-vi | Get 1721 VI Reports
-[**get1721_vii_reports**](TaxApi.md#get1721_vii_reports) | **GET** /core/v1/pph21-reports/1721-vii | Get 1721 VII Reports
-[**get1721_vii_tax_reports**](TaxApi.md#get1721_vii_tax_reports) | **GET** /core/v1/tax-reports/1721-vii | Get 1721 VII Reports
-[**get1721_viii_reports**](TaxApi.md#get1721_viii_reports) | **GET** /core/v1/tax-reports/1721-viii | Get 1721 VIII Reports
-[**get_detailed1721_vi_reports**](TaxApi.md#get_detailed1721_vi_reports) | **GET** /core/v1/pph21-reports/1721-vi/detail | Get Detailed 1721 VI Reports
-[**get_detailed1721_vi_tax_reports**](TaxApi.md#get_detailed1721_vi_tax_reports) | **GET** /core/v1/tax-reports/1721-vi/detail | Get Detailed 1721 VI Reports
-[**get_kpp**](TaxApi.md#get_kpp) | **GET** /core/v1/kpps | Get Kpp
-[**get_monthly_tax_report**](TaxApi.md#get_monthly_tax_report) | **GET** /core/v1/monthly-tax-reports | Get Monthly Tax Report
-[**get_pph21_policy**](TaxApi.md#get_pph21_policy) | **GET** /core/v1/pph21-policies | Get Pph21 Policy
-[**get_ptkp_categories**](TaxApi.md#get_ptkp_categories) | **GET** /core/v1/ptkp-categories | Get Ptkp Categories
-[**get_tax_calculations**](TaxApi.md#get_tax_calculations) | **GET** /core/v1/tax-calculations | Get Tax Calculations
-[**get_tax_calculations_by_external_id**](TaxApi.md#get_tax_calculations_by_external_id) | **GET** /core/v1/tax-calculations/externalId&#x3D;{externalId} | Get Tax Calculations By External Id
-[**get_tax_calculations_by_id**](TaxApi.md#get_tax_calculations_by_id) | **GET** /core/v1/tax-calculations/{id} | Get Tax Calculations By Id
-[**monthly_tax_detail_find_all**](TaxApi.md#monthly_tax_detail_find_all) | **GET** /core/v1/monthly-tax-details | GET Monthly Tax Detail
-[**simulate_annual_tax**](TaxApi.md#simulate_annual_tax) | **POST** /core/v1/tax-calculators | Simulate annual tax calculation
-[**simulate_monthly_tax**](TaxApi.md#simulate_monthly_tax) | **POST** /core/v1/tax-calculators/monthly | Simulate monthly tax calculation
-[**undo_tax_calculation_by_id**](TaxApi.md#undo_tax_calculation_by_id) | **DELETE** /core/v1/tax-calculations/{id} | Undo Tax Calculation By Id
-[**undo_tax_calculations_by_external_id**](TaxApi.md#undo_tax_calculations_by_external_id) | **DELETE** /core/v1/tax-calculations/externalId&#x3D;{externalId} | Undo Tax Calculations By External Id
+All URIs are relative to _https://api.catapa.com_
 
+| Method                                                                                          | HTTP request                                                 | Description                          |
+| ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------ |
+| [**create\_tax\_calculation**](TaxApi.md#create_tax_calculation)                                | **POST** /core/v1/tax-calculations                           | Create Tax Calculation               |
+| [**download1721\_a1\_report**](TaxApi.md#download1721_a1_report)                                | **GET** /core/v1/tax-reports/1721-a1/{id}/download           | Download 1721 A1 Report              |
+| [**download1721\_vi\_report**](TaxApi.md#download1721_vi_report)                                | **GET** /core/v1/pph21-reports/1721-vi/{id}/download         | Download 1721 VI Report              |
+| [**download1721\_vi\_tax\_report**](TaxApi.md#download1721_vi_tax_report)                       | **GET** /core/v1/tax-reports/1721-vi/{id}/download           | Download 1721 VI Report              |
+| [**download1721\_vii\_report**](TaxApi.md#download1721_vii_report)                              | **GET** /core/v1/pph21-reports/1721-vii/{id}/download        | Download 1721 VII Report             |
+| [**download1721\_vii\_tax\_report**](TaxApi.md#download1721_vii_tax_report)                     | **GET** /core/v1/tax-reports/1721-vii/{id}/download          | Download 1721 VII Report             |
+| [**download1721\_viii\_report**](TaxApi.md#download1721_viii_report)                            | **GET** /core/v1/tax-reports/1721-viii/{id}/download         | Download 1721 VIII Report            |
+| [**get1721\_a1\_reports**](TaxApi.md#get1721_a1_reports)                                        | **GET** /core/v1/tax-reports/1721-a1                         | Get 1721 A1 Reports                  |
+| [**get1721\_vi\_reports**](TaxApi.md#get1721_vi_reports)                                        | **GET** /core/v1/pph21-reports/1721-vi                       | Get 1721 VI Reports                  |
+| [**get1721\_vi\_tax\_reports**](TaxApi.md#get1721_vi_tax_reports)                               | **GET** /core/v1/tax-reports/1721-vi                         | Get 1721 VI Reports                  |
+| [**get1721\_vii\_reports**](TaxApi.md#get1721_vii_reports)                                      | **GET** /core/v1/pph21-reports/1721-vii                      | Get 1721 VII Reports                 |
+| [**get1721\_vii\_tax\_reports**](TaxApi.md#get1721_vii_tax_reports)                             | **GET** /core/v1/tax-reports/1721-vii                        | Get 1721 VII Reports                 |
+| [**get1721\_viii\_reports**](TaxApi.md#get1721_viii_reports)                                    | **GET** /core/v1/tax-reports/1721-viii                       | Get 1721 VIII Reports                |
+| [**get\_detailed1721\_vi\_reports**](TaxApi.md#get_detailed1721_vi_reports)                     | **GET** /core/v1/pph21-reports/1721-vi/detail                | Get Detailed 1721 VI Reports         |
+| [**get\_detailed1721\_vi\_tax\_reports**](TaxApi.md#get_detailed1721_vi_tax_reports)            | **GET** /core/v1/tax-reports/1721-vi/detail                  | Get Detailed 1721 VI Reports         |
+| [**get\_kpp**](TaxApi.md#get_kpp)                                                               | **GET** /core/v1/kpps                                        | Get Kpp                              |
+| [**get\_monthly\_tax\_report**](TaxApi.md#get_monthly_tax_report)                               | **GET** /core/v1/monthly-tax-reports                         | Get Monthly Tax Report               |
+| [**get\_pph21\_policy**](TaxApi.md#get_pph21_policy)                                            | **GET** /core/v1/pph21-policies                              | Get Pph21 Policy                     |
+| [**get\_ptkp\_categories**](TaxApi.md#get_ptkp_categories)                                      | **GET** /core/v1/ptkp-categories                             | Get Ptkp Categories                  |
+| [**get\_tax\_calculations**](TaxApi.md#get_tax_calculations)                                    | **GET** /core/v1/tax-calculations                            | Get Tax Calculations                 |
+| [**get\_tax\_calculations\_by\_external\_id**](TaxApi.md#get_tax_calculations_by_external_id)   | **GET** /core/v1/tax-calculations/externalId={externalId}    | Get Tax Calculations By External Id  |
+| [**get\_tax\_calculations\_by\_id**](TaxApi.md#get_tax_calculations_by_id)                      | **GET** /core/v1/tax-calculations/{id}                       | Get Tax Calculations By Id           |
+| [**monthly\_tax\_detail\_find\_all**](TaxApi.md#monthly_tax_detail_find_all)                    | **GET** /core/v1/monthly-tax-details                         | GET Monthly Tax Detail               |
+| [**simulate\_annual\_tax**](TaxApi.md#simulate_annual_tax)                                      | **POST** /core/v1/tax-calculators                            | Simulate annual tax calculation      |
+| [**simulate\_monthly\_tax**](TaxApi.md#simulate_monthly_tax)                                    | **POST** /core/v1/tax-calculators/monthly                    | Simulate monthly tax calculation     |
+| [**undo\_tax\_calculation\_by\_id**](TaxApi.md#undo_tax_calculation_by_id)                      | **DELETE** /core/v1/tax-calculations/{id}                    | Undo Tax Calculation By Id           |
+| [**undo\_tax\_calculations\_by\_external\_id**](TaxApi.md#undo_tax_calculations_by_external_id) | **DELETE** /core/v1/tax-calculations/externalId={externalId} | Undo Tax Calculations By External Id |
 
-# **create_tax_calculation**
-> TaxCalculationDetailResponse create_tax_calculation(tax_calculation_request)
+## **create\_tax\_calculation**
+
+> TaxCalculationDetailResponse create\_tax\_calculation(tax\_calculation\_request)
 
 Create Tax Calculation
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TaxApi, ApiException
@@ -70,44 +71,41 @@ except ApiException as e:
     print("Exception when calling TaxApi->create_tax_calculation: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                          | Type                                                  | Description | Notes       |
+| ----------------------------- | ----------------------------------------------------- | ----------- | ----------- |
+| **tax\_calculation\_request** | [**TaxCalculationRequest**](TaxCalculationRequest.md) |             | \[optional] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tax_calculation_request** | [**TaxCalculationRequest**](TaxCalculationRequest.md)|  | [optional] 
-
-### Return type
+#### Return type
 
 [**TaxCalculationDetailResponse**](TaxCalculationDetailResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TaxApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **download1721\_a1\_report**
 
-# **download1721_a1_report**
-> object download1721_a1_report(id)
+> object download1721\_a1\_report(id)
 
 Download 1721 A1 Report
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TaxApi, ApiException
@@ -135,44 +133,41 @@ except ApiException as e:
     print("Exception when calling TaxApi->download1721_a1_report: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name   | Type    | Description | Notes |
+| ------ | ------- | ----------- | ----- |
+| **id** | **str** |             |       |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**|  | 
-
-### Return type
+#### Return type
 
 **object**
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TaxApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **download1721\_vi\_report**
 
-# **download1721_vi_report**
-> object download1721_vi_report(id)
+> object download1721\_vi\_report(id)
 
 Download 1721 VI Report
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TaxApi, ApiException
@@ -200,44 +195,41 @@ except ApiException as e:
     print("Exception when calling TaxApi->download1721_vi_report: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name   | Type    | Description | Notes |
+| ------ | ------- | ----------- | ----- |
+| **id** | **str** |             |       |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**|  | 
-
-### Return type
+#### Return type
 
 **object**
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TaxApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **download1721\_vi\_tax\_report**
 
-# **download1721_vi_tax_report**
-> object download1721_vi_tax_report(id)
+> object download1721\_vi\_tax\_report(id)
 
 Download 1721 VI Report
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TaxApi, ApiException
@@ -265,44 +257,41 @@ except ApiException as e:
     print("Exception when calling TaxApi->download1721_vi_tax_report: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name   | Type    | Description | Notes |
+| ------ | ------- | ----------- | ----- |
+| **id** | **str** |             |       |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**|  | 
-
-### Return type
+#### Return type
 
 **object**
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TaxApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **download1721\_vii\_report**
 
-# **download1721_vii_report**
-> object download1721_vii_report(id)
+> object download1721\_vii\_report(id)
 
 Download 1721 VII Report
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TaxApi, ApiException
@@ -330,44 +319,41 @@ except ApiException as e:
     print("Exception when calling TaxApi->download1721_vii_report: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name   | Type    | Description | Notes |
+| ------ | ------- | ----------- | ----- |
+| **id** | **str** |             |       |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**|  | 
-
-### Return type
+#### Return type
 
 **object**
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TaxApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **download1721\_vii\_tax\_report**
 
-# **download1721_vii_tax_report**
-> object download1721_vii_tax_report(id)
+> object download1721\_vii\_tax\_report(id)
 
 Download 1721 VII Report
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TaxApi, ApiException
@@ -395,44 +381,41 @@ except ApiException as e:
     print("Exception when calling TaxApi->download1721_vii_tax_report: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name   | Type    | Description | Notes |
+| ------ | ------- | ----------- | ----- |
+| **id** | **str** |             |       |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**|  | 
-
-### Return type
+#### Return type
 
 **object**
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TaxApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **download1721\_viii\_report**
 
-# **download1721_viii_report**
-> object download1721_viii_report(id)
+> object download1721\_viii\_report(id)
 
 Download 1721 VIII Report
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TaxApi, ApiException
@@ -460,44 +443,41 @@ except ApiException as e:
     print("Exception when calling TaxApi->download1721_viii_report: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name   | Type    | Description | Notes |
+| ------ | ------- | ----------- | ----- |
+| **id** | **str** |             |       |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**|  | 
-
-### Return type
+#### Return type
 
 **object**
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TaxApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get1721\_a1\_reports**
 
-# **get1721_a1_reports**
-> TaxReport1721A1ListResponse get1721_a1_reports()
+> TaxReport1721A1ListResponse get1721\_a1\_reports()
 
 Get 1721 A1 Reports
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TaxApi, ApiException
@@ -524,41 +504,39 @@ except ApiException as e:
     print("Exception when calling TaxApi->get1721_a1_reports: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**TaxReport1721A1ListResponse**](TaxReport1721A1ListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TaxApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get1721\_vi\_reports**
 
-# **get1721_vi_reports**
-> TaxReport1721VIListResponse get1721_vi_reports()
+> TaxReport1721VIListResponse get1721\_vi\_reports()
 
 Get 1721 VI Reports
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TaxApi, ApiException
@@ -585,41 +563,39 @@ except ApiException as e:
     print("Exception when calling TaxApi->get1721_vi_reports: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**TaxReport1721VIListResponse**](TaxReport1721VIListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TaxApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get1721\_vi\_tax\_reports**
 
-# **get1721_vi_tax_reports**
-> TaxReport1721VIListResponse get1721_vi_tax_reports()
+> TaxReport1721VIListResponse get1721\_vi\_tax\_reports()
 
 Get 1721 VI Reports
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TaxApi, ApiException
@@ -646,41 +622,39 @@ except ApiException as e:
     print("Exception when calling TaxApi->get1721_vi_tax_reports: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**TaxReport1721VIListResponse**](TaxReport1721VIListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TaxApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get1721\_vii\_reports**
 
-# **get1721_vii_reports**
-> TaxReport1721VIIListResponse get1721_vii_reports()
+> TaxReport1721VIIListResponse get1721\_vii\_reports()
 
 Get 1721 VII Reports
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TaxApi, ApiException
@@ -707,41 +681,39 @@ except ApiException as e:
     print("Exception when calling TaxApi->get1721_vii_reports: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**TaxReport1721VIIListResponse**](TaxReport1721VIIListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TaxApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get1721\_vii\_tax\_reports**
 
-# **get1721_vii_tax_reports**
-> TaxReport1721VIIListResponse get1721_vii_tax_reports()
+> TaxReport1721VIIListResponse get1721\_vii\_tax\_reports()
 
 Get 1721 VII Reports
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TaxApi, ApiException
@@ -768,41 +740,39 @@ except ApiException as e:
     print("Exception when calling TaxApi->get1721_vii_tax_reports: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**TaxReport1721VIIListResponse**](TaxReport1721VIIListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TaxApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get1721\_viii\_reports**
 
-# **get1721_viii_reports**
-> TaxReport1721VIIIListResponse get1721_viii_reports()
+> TaxReport1721VIIIListResponse get1721\_viii\_reports()
 
 Get 1721 VIII Reports
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TaxApi, ApiException
@@ -829,41 +799,39 @@ except ApiException as e:
     print("Exception when calling TaxApi->get1721_viii_reports: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**TaxReport1721VIIIListResponse**](TaxReport1721VIIIListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TaxApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_detailed1721\_vi\_reports**
 
-# **get_detailed1721_vi_reports**
-> TaxReport1721VIDetailResponse get_detailed1721_vi_reports()
+> TaxReport1721VIDetailResponse get\_detailed1721\_vi\_reports()
 
 Get Detailed 1721 VI Reports
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TaxApi, ApiException
@@ -890,41 +858,39 @@ except ApiException as e:
     print("Exception when calling TaxApi->get_detailed1721_vi_reports: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**TaxReport1721VIDetailResponse**](TaxReport1721VIDetailResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TaxApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_detailed1721\_vi\_tax\_reports**
 
-# **get_detailed1721_vi_tax_reports**
-> TaxReport1721VIDetailResponse get_detailed1721_vi_tax_reports()
+> TaxReport1721VIDetailResponse get\_detailed1721\_vi\_tax\_reports()
 
 Get Detailed 1721 VI Reports
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TaxApi, ApiException
@@ -951,43 +917,41 @@ except ApiException as e:
     print("Exception when calling TaxApi->get_detailed1721_vi_tax_reports: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**TaxReport1721VIDetailResponse**](TaxReport1721VIDetailResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TaxApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_kpp**
 
-# **get_kpp**
-> KppListResponse get_kpp()
+> KppListResponse get\_kpp()
 
 Get Kpp
 
-### Search Query | Supported Keys | Supported Operators | Notes         | | -------------- | ------------------- | ------------- | | name           | :                   | Like operator | | code           | :                   | Like operator | 
+#### Search Query | Supported Keys | Supported Operators | Notes | | -------------- | ------------------- | ------------- | | name | : | Like operator | | code | : | Like operator |
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TaxApi, ApiException
@@ -1014,43 +978,41 @@ except ApiException as e:
     print("Exception when calling TaxApi->get_kpp: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**KppListResponse**](KppListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TaxApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_monthly\_tax\_report**
 
-# **get_monthly_tax_report**
-> MonthlyTaxReportListResponse get_monthly_tax_report()
+> MonthlyTaxReportListResponse get\_monthly\_tax\_report()
 
 Get Monthly Tax Report
 
-### Search Query | Supported Keys               | Supported Operators | Notes                                                                              | | ---------------------------- | ------------------- | ---------------------------------------------------------------------------------- | | year                         | :<br>\\><br><        | Equal operator<br>Greater than or equal to<br>Less than or equal to                | | month                        | :<br>\\><br><        | Equal operator<br>Greater than or equal to<br>Less than or equal to equal operator | | taxObject                    | :                   | Equal operator                                                                     | | taxObjectIn                  | :                   | Equal operator with multiple value delimited by “;”                                | | pph21Method                  | :                   | Equal operator                                                                     | | employeeId                   | :                   | Equal operator                                                                     | | employeeIdentificationNumber | :                   | Like operator                                                                      | | employeeName                 | :                   | Like operator                                                                      | | kppId                        | :                   | Equal operator                                                                     | | migrated                     | :                   | Equal operator                                                                     | 
+#### Search Query | Supported Keys | Supported Operators | Notes | | ---------------------------- | ------------------- | ---------------------------------------------------------------------------------- | | year | : \\> < | Equal operator Greater than or equal to Less than or equal to | | month | : \\> < | Equal operator Greater than or equal to Less than or equal to equal operator | | taxObject | : | Equal operator | | taxObjectIn | : | Equal operator with multiple value delimited by “;” | | pph21Method | : | Equal operator | | employeeId | : | Equal operator | | employeeIdentificationNumber | : | Like operator | | employeeName | : | Like operator | | kppId | : | Equal operator | | migrated | : | Equal operator |
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TaxApi, ApiException
@@ -1077,41 +1039,39 @@ except ApiException as e:
     print("Exception when calling TaxApi->get_monthly_tax_report: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**MonthlyTaxReportListResponse**](MonthlyTaxReportListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TaxApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_pph21\_policy**
 
-# **get_pph21_policy**
-> Pph21PolicyResponse get_pph21_policy()
+> Pph21PolicyResponse get\_pph21\_policy()
 
 Get Pph21 Policy
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TaxApi, ApiException
@@ -1138,43 +1098,41 @@ except ApiException as e:
     print("Exception when calling TaxApi->get_pph21_policy: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**Pph21PolicyResponse**](Pph21PolicyResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TaxApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_ptkp\_categories**
 
-# **get_ptkp_categories**
-> PtkpCategoryListResponse get_ptkp_categories()
+> PtkpCategoryListResponse get\_ptkp\_categories()
 
 Get Ptkp Categories
 
-### Search Query | Supported Keys | Supported Operators | Notes         | | -------------- | ------------------- | ------------- | | name           | :                   | Like operator | | code           | :                   | Like operator | 
+#### Search Query | Supported Keys | Supported Operators | Notes | | -------------- | ------------------- | ------------- | | name | : | Like operator | | code | : | Like operator |
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TaxApi, ApiException
@@ -1201,43 +1159,41 @@ except ApiException as e:
     print("Exception when calling TaxApi->get_ptkp_categories: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**PtkpCategoryListResponse**](PtkpCategoryListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TaxApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_tax\_calculations**
 
-# **get_tax_calculations**
-> TaxCalculationListResponse get_tax_calculations()
+> TaxCalculationListResponse get\_tax\_calculations()
 
 Get Tax Calculations
 
-### Search Query | Supported Keys | Supported Operators | Notes                                                                              | | -------------- | ------------------- | ---------------------------------------------------------------------------------- | | idIn           | :                   | Equal operator with multiple value delimited by “;”                                | | employeeIdIn   | :                   | Equal operator with multiple value delimited by “;”                                | | year           | :<br>\\><br><        | Equal operator<br>Greater than or equal to<br>Less than or equal to                | | month          | :<br>\\><br><        | Equal operator<br>Greater than or equal to<br>Less than or equal to equal operator | | paymentDate    | :<br>\\><br><        | Equal operator<br>Greater than or equal to<br>Less than or equal to equal operator | | taxObject      | :                   | Equal operator                                                                     | | taxObjectIn    | :                   | Equal operator with multiple value delimited by “;”                                | | pph21Method    | :                   | Equal operator                                                                     | | employeeId     | :                   | Equal operator                                                                     | | employeeName   | :                   | Like operator                                                                      | 
+#### Search Query | Supported Keys | Supported Operators | Notes | | -------------- | ------------------- | ---------------------------------------------------------------------------------- | | idIn | : | Equal operator with multiple value delimited by “;” | | employeeIdIn | : | Equal operator with multiple value delimited by “;” | | year | : \\> < | Equal operator Greater than or equal to Less than or equal to | | month | : \\> < | Equal operator Greater than or equal to Less than or equal to equal operator | | paymentDate | : \\> < | Equal operator Greater than or equal to Less than or equal to equal operator | | taxObject | : | Equal operator | | taxObjectIn | : | Equal operator with multiple value delimited by “;” | | pph21Method | : | Equal operator | | employeeId | : | Equal operator | | employeeName | : | Like operator |
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TaxApi, ApiException
@@ -1264,41 +1220,39 @@ except ApiException as e:
     print("Exception when calling TaxApi->get_tax_calculations: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**TaxCalculationListResponse**](TaxCalculationListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TaxApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_tax\_calculations\_by\_external\_id**
 
-# **get_tax_calculations_by_external_id**
-> TaxCalculationDetailResponse get_tax_calculations_by_external_id(external_id)
+> TaxCalculationDetailResponse get\_tax\_calculations\_by\_external\_id(external\_id)
 
 Get Tax Calculations By External Id
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TaxApi, ApiException
@@ -1326,44 +1280,41 @@ except ApiException as e:
     print("Exception when calling TaxApi->get_tax_calculations_by_external_id: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name             | Type    | Description | Notes |
+| ---------------- | ------- | ----------- | ----- |
+| **external\_id** | **str** |             |       |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **external_id** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**TaxCalculationDetailResponse**](TaxCalculationDetailResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TaxApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_tax\_calculations\_by\_id**
 
-# **get_tax_calculations_by_id**
-> TaxCalculationDetailResponse get_tax_calculations_by_id(id)
+> TaxCalculationDetailResponse get\_tax\_calculations\_by\_id(id)
 
 Get Tax Calculations By Id
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TaxApi, ApiException
@@ -1391,46 +1342,43 @@ except ApiException as e:
     print("Exception when calling TaxApi->get_tax_calculations_by_id: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name   | Type    | Description | Notes |
+| ------ | ------- | ----------- | ----- |
+| **id** | **str** |             |       |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**TaxCalculationDetailResponse**](TaxCalculationDetailResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TaxApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **monthly\_tax\_detail\_find\_all**
 
-# **monthly_tax_detail_find_all**
-> MonthlyTaxDetailListResponse monthly_tax_detail_find_all(page, size)
+> MonthlyTaxDetailListResponse monthly\_tax\_detail\_find\_all(page, size)
 
 GET Monthly Tax Detail
 
-### Search Query | Supported Keys               | Supported Operators | Notes                                                                              | | ---------------------------- | ------------------- | ---------------------------------------------------------------------------------- | | year                         | :<br>\\><br><        | Equal operator<br>Greater than or equal to<br>Less than or equal to                | | month                        | :<br>\\><br><        | Equal operator<br>Greater than or equal to<br>Less than or equal to equal operator | | taxObject                    | :                   | Equal operator                                                                     | | taxObjectIn                  | :                   | Equal operator with multiple value delimited by “;”                                | | pph21Method                  | :                   | Equal operator                                                                     | | employeeId                   | :                   | Equal operator                                                                     | | employeeIdentificationNumber | :                   | Like operator                                                                      | | employeeName                 | :                   | Like operator                                                                      | | kppId                        | :                   | Equal operator                                                                     | | migrated                     | :                   | Equal operator                                                                     | 
+#### Search Query | Supported Keys | Supported Operators | Notes | | ---------------------------- | ------------------- | ---------------------------------------------------------------------------------- | | year | : \\> < | Equal operator Greater than or equal to Less than or equal to | | month | : \\> < | Equal operator Greater than or equal to Less than or equal to equal operator | | taxObject | : | Equal operator | | taxObjectIn | : | Equal operator with multiple value delimited by “;” | | pph21Method | : | Equal operator | | employeeId | : | Equal operator | | employeeIdentificationNumber | : | Like operator | | employeeName | : | Like operator | | kppId | : | Equal operator | | migrated | : | Equal operator |
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TaxApi, ApiException
@@ -1459,47 +1407,45 @@ except ApiException as e:
     print("Exception when calling TaxApi->monthly_tax_detail_find_all: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name     | Type    | Description | Notes                        |
+| -------- | ------- | ----------- | ---------------------------- |
+| **page** | **int** | Page number | \[optional] \[default to 0]  |
+| **size** | **int** | Page size   | \[optional] \[default to 10] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
-
-### Return type
+#### Return type
 
 [**MonthlyTaxDetailListResponse**](MonthlyTaxDetailListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TaxApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **simulate\_annual\_tax**
 
-# **simulate_annual_tax**
-> AnnualTaxCalculationSimulatorResponse simulate_annual_tax(annual_tax_calculation_simulator_request)
+> AnnualTaxCalculationSimulatorResponse simulate\_annual\_tax(annual\_tax\_calculation\_simulator\_request)
 
 Simulate annual tax calculation
 
-Simulate annual tax calculation based on the provided scenario. <br>This API only works for <strong>PERMANENT</strong> taxObject. 
+Simulate annual tax calculation based on the provided scenario.\
+This API only works for **PERMANENT** taxObject.
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TaxApi, ApiException
@@ -1527,46 +1473,43 @@ except ApiException as e:
     print("Exception when calling TaxApi->simulate_annual_tax: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                                             | Type                                                                                | Description | Notes |
+| ------------------------------------------------ | ----------------------------------------------------------------------------------- | ----------- | ----- |
+| **annual\_tax\_calculation\_simulator\_request** | [**AnnualTaxCalculationSimulatorRequest**](AnnualTaxCalculationSimulatorRequest.md) |             |       |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **annual_tax_calculation_simulator_request** | [**AnnualTaxCalculationSimulatorRequest**](AnnualTaxCalculationSimulatorRequest.md)|  | 
-
-### Return type
+#### Return type
 
 [**AnnualTaxCalculationSimulatorResponse**](AnnualTaxCalculationSimulatorResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TaxApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **simulate\_monthly\_tax**
 
-# **simulate_monthly_tax**
-> MonthlyTaxCalculationSimulatorResponse simulate_monthly_tax(monthly_tax_calculation_simulator_request)
+> MonthlyTaxCalculationSimulatorResponse simulate\_monthly\_tax(monthly\_tax\_calculation\_simulator\_request)
 
 Simulate monthly tax calculation
 
-Simulate monthly tax calculation based on the provided scenario. 
+Simulate monthly tax calculation based on the provided scenario.
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TaxApi, ApiException
@@ -1594,44 +1537,41 @@ except ApiException as e:
     print("Exception when calling TaxApi->simulate_monthly_tax: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                                              | Type                                                                                  | Description | Notes |
+| ------------------------------------------------- | ------------------------------------------------------------------------------------- | ----------- | ----- |
+| **monthly\_tax\_calculation\_simulator\_request** | [**MonthlyTaxCalculationSimulatorRequest**](MonthlyTaxCalculationSimulatorRequest.md) |             |       |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **monthly_tax_calculation_simulator_request** | [**MonthlyTaxCalculationSimulatorRequest**](MonthlyTaxCalculationSimulatorRequest.md)|  | 
-
-### Return type
+#### Return type
 
 [**MonthlyTaxCalculationSimulatorResponse**](MonthlyTaxCalculationSimulatorResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TaxApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **undo\_tax\_calculation\_by\_id**
 
-# **undo_tax_calculation_by_id**
-> object undo_tax_calculation_by_id(id)
+> object undo\_tax\_calculation\_by\_id(id)
 
 Undo Tax Calculation By Id
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TaxApi, ApiException
@@ -1659,44 +1599,41 @@ except ApiException as e:
     print("Exception when calling TaxApi->undo_tax_calculation_by_id: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name   | Type    | Description | Notes |
+| ------ | ------- | ----------- | ----- |
+| **id** | **str** |             |       |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**|  | 
-
-### Return type
+#### Return type
 
 **object**
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](TaxApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **undo\_tax\_calculations\_by\_external\_id**
 
-# **undo_tax_calculations_by_external_id**
-> object undo_tax_calculations_by_external_id(external_id)
+> object undo\_tax\_calculations\_by\_external\_id(external\_id)
 
 Undo Tax Calculations By External Id
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, TaxApi, ApiException
@@ -1724,33 +1661,30 @@ except ApiException as e:
     print("Exception when calling TaxApi->undo_tax_calculations_by_external_id: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name             | Type    | Description | Notes |
+| ---------------- | ------- | ----------- | ----- |
+| **external\_id** | **str** |             |       |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **external_id** | **str**|  | 
-
-### Return type
+#### Return type
 
 **object**
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](TaxApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)

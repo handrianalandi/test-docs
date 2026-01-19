@@ -1,25 +1,26 @@
 # RoleApi
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
-> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
+## RoleApi
 
-All URIs are relative to *https://api.catapa.com*
+> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!\
+> &#xNAN;**✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**get_role_authorities**](RoleApi.md#get_role_authorities) | **GET** /v1/roles/{id}/authorities | Get Role Authorities
-[**get_role_by_id**](RoleApi.md#get_role_by_id) | **GET** /v1/roles/{id} | Get Role by ID
-[**get_role_permissions**](RoleApi.md#get_role_permissions) | **GET** /v1/roles/{id}/permissions | Get Role Permissions
-[**list_all_roles**](RoleApi.md#list_all_roles) | **GET** /v1/roles | List All Roles
+All URIs are relative to _https://api.catapa.com_
 
+| Method                                                        | HTTP request                       | Description          |
+| ------------------------------------------------------------- | ---------------------------------- | -------------------- |
+| [**get\_role\_authorities**](RoleApi.md#get_role_authorities) | **GET** /v1/roles/{id}/authorities | Get Role Authorities |
+| [**get\_role\_by\_id**](RoleApi.md#get_role_by_id)            | **GET** /v1/roles/{id}             | Get Role by ID       |
+| [**get\_role\_permissions**](RoleApi.md#get_role_permissions) | **GET** /v1/roles/{id}/permissions | Get Role Permissions |
+| [**list\_all\_roles**](RoleApi.md#list_all_roles)             | **GET** /v1/roles                  | List All Roles       |
 
-# **get_role_authorities**
-> RoleAuthorityListResponse get_role_authorities(id, page, size)
+## **get\_role\_authorities**
+
+> RoleAuthorityListResponse get\_role\_authorities(id, page, size)
 
 Get Role Authorities
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, RoleApi, ApiException
@@ -49,47 +50,44 @@ except ApiException as e:
     print("Exception when calling RoleApi->get_role_authorities: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name     | Type    | Description | Notes                        |
+| -------- | ------- | ----------- | ---------------------------- |
+| **id**   | **str** | Role ID     |                              |
+| **page** | **int** | Page number | \[optional] \[default to 0]  |
+| **size** | **int** | Page size   | \[optional] \[default to 10] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Role ID | 
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
-
-### Return type
+#### Return type
 
 [**RoleAuthorityListResponse**](RoleAuthorityListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
-**404** | Role not found |  -  |
+| Status code | Description    | Response headers |
+| ----------- | -------------- | ---------------- |
+| **200**     | OK             | -                |
+| **400**     | Bad Request    | -                |
+| **404**     | Role not found | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](RoleApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_role\_by\_id**
 
-# **get_role_by_id**
-> RoleDetailResponse get_role_by_id(id)
+> RoleDetailResponse get\_role\_by\_id(id)
 
 Get Role by ID
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, RoleApi, ApiException
@@ -117,45 +115,42 @@ except ApiException as e:
     print("Exception when calling RoleApi->get_role_by_id: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name   | Type    | Description | Notes |
+| ------ | ------- | ----------- | ----- |
+| **id** | **str** | Role ID     |       |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Role ID | 
-
-### Return type
+#### Return type
 
 [**RoleDetailResponse**](RoleDetailResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
-**404** | Role not found |  -  |
+| Status code | Description    | Response headers |
+| ----------- | -------------- | ---------------- |
+| **200**     | OK             | -                |
+| **400**     | Bad Request    | -                |
+| **404**     | Role not found | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](RoleApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_role\_permissions**
 
-# **get_role_permissions**
-> RolePermissionListResponse get_role_permissions(id, expanded)
+> RolePermissionListResponse get\_role\_permissions(id, expanded)
 
 Get Role Permissions
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, RoleApi, ApiException
@@ -184,46 +179,43 @@ except ApiException as e:
     print("Exception when calling RoleApi->get_role_permissions: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name         | Type     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | Notes                           |
+| ------------ | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- |
+| **id**       | **str**  | Role ID                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |                                 |
+| **expanded** | **bool** | Controls how permissions are returned: - \`false\` (default): Returns raw permissions as stored in the database without any transformation. Permissions with dataId=\&quot;ALL\&quot; will be returned as-is. - \`true\`: Returns expanded permissions where: 1. Roles with ADMIN type will get all available dataId permissions 2. Any permission with dataId=\&quot;ALL\&quot; will be expanded to show all available dataId permissions for the same dataType Raw permissions show the exact database records, while expanded permissions show the effective access granted to the role after applying permission inheritance rules. | \[optional] \[default to False] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Role ID | 
- **expanded** | **bool**| Controls how permissions are returned: - &#x60;false&#x60; (default): Returns raw permissions as stored in the database without any transformation.   Permissions with dataId&#x3D;\&quot;ALL\&quot; will be returned as-is. - &#x60;true&#x60;: Returns expanded permissions where:   1. Roles with ADMIN type will get all available dataId permissions   2. Any permission with dataId&#x3D;\&quot;ALL\&quot; will be expanded to show all available dataId       permissions for the same dataType  Raw permissions show the exact database records, while expanded permissions show the effective access granted to the role after applying permission inheritance rules.  | [optional] [default to False]
-
-### Return type
+#### Return type
 
 [**RolePermissionListResponse**](RolePermissionListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
-**404** | Role not found |  -  |
+| Status code | Description    | Response headers |
+| ----------- | -------------- | ---------------- |
+| **200**     | OK             | -                |
+| **400**     | Bad Request    | -                |
+| **404**     | Role not found | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](RoleApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **list\_all\_roles**
 
-# **list_all_roles**
-> RoleListResponse list_all_roles(page, size, query)
+> RoleListResponse list\_all\_roles(page, size, query)
 
 List All Roles
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, RoleApi, ApiException
@@ -253,35 +245,32 @@ except ApiException as e:
     print("Exception when calling RoleApi->list_all_roles: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name      | Type    | Description      | Notes                        |
+| --------- | ------- | ---------------- | ---------------------------- |
+| **page**  | **int** | Page number      | \[optional] \[default to 0]  |
+| **size**  | **int** | Page size        | \[optional] \[default to 10] |
+| **query** | **str** | ### Search query | Supported Keys               |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search query   | Supported Keys | Supported Operators | Notes                                                                                     | |----------------|---------------------|-------------------------------------------------------------------------------------------| | id             | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | name           | &#x60;:&#x60;                 | Like operator                                                                             |  | [optional] 
-
-### Return type
+#### Return type
 
 [**RoleListResponse**](RoleListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](RoleApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)

@@ -1,23 +1,24 @@
 # OauthClientApi
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
-> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
+## OauthClientApi
 
-All URIs are relative to *https://api.catapa.com*
+> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!\
+> &#xNAN;**✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**get_o_auth_client_by_id**](OauthClientApi.md#get_o_auth_client_by_id) | **GET** /v1/oauth-clients/{id} | Get OAuth Client by ID
-[**list_all_o_auth_clients**](OauthClientApi.md#list_all_o_auth_clients) | **GET** /v1/oauth-clients | List All OAuth Clients
+All URIs are relative to _https://api.catapa.com_
 
+| Method                                                                        | HTTP request                   | Description            |
+| ----------------------------------------------------------------------------- | ------------------------------ | ---------------------- |
+| [**get\_o\_auth\_client\_by\_id**](OauthClientApi.md#get_o_auth_client_by_id) | **GET** /v1/oauth-clients/{id} | Get OAuth Client by ID |
+| [**list\_all\_o\_auth\_clients**](OauthClientApi.md#list_all_o_auth_clients)  | **GET** /v1/oauth-clients      | List All OAuth Clients |
 
-# **get_o_auth_client_by_id**
-> OAuthClientResponse get_o_auth_client_by_id(id)
+## **get\_o\_auth\_client\_by\_id**
+
+> OAuthClientResponse get\_o\_auth\_client\_by\_id(id)
 
 Get OAuth Client by ID
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, OauthClientApi, ApiException
@@ -45,45 +46,42 @@ except ApiException as e:
     print("Exception when calling OauthClientApi->get_o_auth_client_by_id: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name   | Type    | Description     | Notes |
+| ------ | ------- | --------------- | ----- |
+| **id** | **str** | OAuth Client ID |       |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| OAuth Client ID | 
-
-### Return type
+#### Return type
 
 [**OAuthClientResponse**](OAuthClientResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
-**404** | Not Found |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
+| **404**     | Not Found   | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](OauthClientApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **list\_all\_o\_auth\_clients**
 
-# **list_all_o_auth_clients**
-> OAuthClientListResponse list_all_o_auth_clients(page, size)
+> OAuthClientListResponse list\_all\_o\_auth\_clients(page, size)
 
 List All OAuth Clients
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, OauthClientApi, ApiException
@@ -112,34 +110,31 @@ except ApiException as e:
     print("Exception when calling OauthClientApi->list_all_o_auth_clients: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name     | Type    | Description | Notes                        |
+| -------- | ------- | ----------- | ---------------------------- |
+| **page** | **int** | Page number | \[optional] \[default to 0]  |
+| **size** | **int** | Page size   | \[optional] \[default to 10] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
-
-### Return type
+#### Return type
 
 [**OAuthClientListResponse**](OAuthClientListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](OauthClientApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)

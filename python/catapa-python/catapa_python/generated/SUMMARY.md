@@ -496,4 +496,3 @@
   * [WorkgroupWorkdayConfigurationListResponse](docs/WorkgroupWorkdayConfigurationListResponse.md)
   * [WorkgroupWorkdayConfigurationRequest](docs/WorkgroupWorkdayConfigurationRequest.md)
   * [WorkgroupWorkdayConfigurationResponse](docs/WorkgroupWorkdayConfigurationResponse.md)
-* [halo adik adik](halo-adik-adik.md)

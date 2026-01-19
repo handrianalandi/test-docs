@@ -1,26 +1,27 @@
 # CustomTableEntryApi
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
-> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
+## CustomTableEntryApi
 
-All URIs are relative to *https://api.catapa.com*
+> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!\
+> &#xNAN;**✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create_entry**](CustomTableEntryApi.md#create_entry) | **POST** /core/v1/custom-tables/{tableId}/entries | Create a new entry in a custom table
-[**find_all_entries**](CustomTableEntryApi.md#find_all_entries) | **GET** /core/v1/custom-tables/{tableId}/entries | Retrieve all entries for a custom table, with response structure varying based on the custom table columns
-[**update_entry**](CustomTableEntryApi.md#update_entry) | **PUT** /core/v1/custom-tables/{tableId}/entries/{entryId} | Update an entry in a custom table
+All URIs are relative to _https://api.catapa.com_
 
+| Method                                                            | HTTP request                                               | Description                                                                                                |
+| ----------------------------------------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| [**create\_entry**](CustomTableEntryApi.md#create_entry)          | **POST** /core/v1/custom-tables/{tableId}/entries          | Create a new entry in a custom table                                                                       |
+| [**find\_all\_entries**](CustomTableEntryApi.md#find_all_entries) | **GET** /core/v1/custom-tables/{tableId}/entries           | Retrieve all entries for a custom table, with response structure varying based on the custom table columns |
+| [**update\_entry**](CustomTableEntryApi.md#update_entry)          | **PUT** /core/v1/custom-tables/{tableId}/entries/{entryId} | Update an entry in a custom table                                                                          |
 
-# **create_entry**
-> Dict[str, object] create_entry(table_id, request_body)
+## **create\_entry**
+
+> Dict\[str, object] create\_entry(table\_id, request\_body)
 
 Create a new entry in a custom table
 
 Creates a new entry in a custom table with the provided details
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, CustomTableEntryApi, ApiException
@@ -49,45 +50,42 @@ except ApiException as e:
     print("Exception when calling CustomTableEntryApi->create_entry: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name              | Type                                 | Description | Notes |
+| ----------------- | ------------------------------------ | ----------- | ----- |
+| **table\_id**     | **str**                              |             |       |
+| **request\_body** | [**Dict\[str, object\]**](object.md) |             |       |
 
+#### Return type
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **table_id** | **str**|  | 
- **request_body** | [**Dict[str, object]**](object.md)|  | 
+**Dict\[str, object]**
 
-### Return type
+#### Authorization
 
-**Dict[str, object]**
+[BearerAuth](../#BearerAuth)
 
-### Authorization
+#### HTTP request headers
 
-[BearerAuth](../README.md#BearerAuth)
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP request headers
+#### HTTP response details
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+| Status code | Description                | Response headers |
+| ----------- | -------------------------- | ---------------- |
+| **201**     | Entry created successfully | -                |
+| **400**     | Bad Request                | -                |
 
-### HTTP response details
+[\[Back to top\]](CustomTableEntryApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**201** | Entry created successfully |  -  |
-**400** | Bad Request |  -  |
+## **find\_all\_entries**
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-# **find_all_entries**
-> CustomTableEntryListResponse find_all_entries(table_id, query, page, size)
+> CustomTableEntryListResponse find\_all\_entries(table\_id, query, page, size)
 
 Retrieve all entries for a custom table, with response structure varying based on the custom table columns
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, CustomTableEntryApi, ApiException
@@ -118,49 +116,46 @@ except ApiException as e:
     print("Exception when calling CustomTableEntryApi->find_all_entries: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name          | Type    | Description                                                                        | Notes                        |
+| ------------- | ------- | ---------------------------------------------------------------------------------- | ---------------------------- |
+| **table\_id** | **str** |                                                                                    |                              |
+| **query**     | **str** | Filter entries based on specific criteria, depending on the custom table's schema. | \[optional]                  |
+| **page**      | **int** | Page number                                                                        | \[optional] \[default to 0]  |
+| **size**      | **int** | Page size                                                                          | \[optional] \[default to 10] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **table_id** | **str**|  | 
- **query** | **str**| Filter entries based on specific criteria, depending on the custom table&#39;s schema. | [optional] 
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
-
-### Return type
+#### Return type
 
 [**CustomTableEntryListResponse**](CustomTableEntryListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Successful operation |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description          | Response headers |
+| ----------- | -------------------- | ---------------- |
+| **200**     | Successful operation | -                |
+| **400**     | Bad Request          | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](CustomTableEntryApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **update\_entry**
 
-# **update_entry**
-> Dict[str, object] update_entry(table_id, entry_id, request_body)
+> Dict\[str, object] update\_entry(table\_id, entry\_id, request\_body)
 
 Update an entry in a custom table
 
 Updates an existing entry in a custom table with the provided details
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, CustomTableEntryApi, ApiException
@@ -190,36 +185,33 @@ except ApiException as e:
     print("Exception when calling CustomTableEntryApi->update_entry: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name              | Type                                 | Description | Notes |
+| ----------------- | ------------------------------------ | ----------- | ----- |
+| **table\_id**     | **str**                              |             |       |
+| **entry\_id**     | **str**                              |             |       |
+| **request\_body** | [**Dict\[str, object\]**](object.md) |             |       |
 
+#### Return type
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **table_id** | **str**|  | 
- **entry_id** | **str**|  | 
- **request_body** | [**Dict[str, object]**](object.md)|  | 
+**Dict\[str, object]**
 
-### Return type
+#### Authorization
 
-**Dict[str, object]**
+[BearerAuth](../#BearerAuth)
 
-### Authorization
+#### HTTP request headers
 
-[BearerAuth](../README.md#BearerAuth)
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP request headers
+#### HTTP response details
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+| Status code | Description                | Response headers |
+| ----------- | -------------------------- | ---------------- |
+| **200**     | Entry updated successfully | -                |
+| **400**     | Bad Request                | -                |
+| **404**     | Entry not found            | -                |
 
-### HTTP response details
-
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Entry updated successfully |  -  |
-**400** | Bad Request |  -  |
-**404** | Entry not found |  -  |
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](CustomTableEntryApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)

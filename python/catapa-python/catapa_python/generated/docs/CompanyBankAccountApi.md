@@ -1,22 +1,23 @@
 # CompanyBankAccountApi
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
-> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
+## CompanyBankAccountApi
 
-All URIs are relative to *https://api.catapa.com*
+> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!\
+> &#xNAN;**✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**get_company_bank_accounts**](CompanyBankAccountApi.md#get_company_bank_accounts) | **GET** /core/v1/company-bank-accounts | Get Company Bank Accounts
+All URIs are relative to _https://api.catapa.com_
 
+| Method                                                                                 | HTTP request                           | Description               |
+| -------------------------------------------------------------------------------------- | -------------------------------------- | ------------------------- |
+| [**get\_company\_bank\_accounts**](CompanyBankAccountApi.md#get_company_bank_accounts) | **GET** /core/v1/company-bank-accounts | Get Company Bank Accounts |
 
-# **get_company_bank_accounts**
-> CompanyBankAccountListResponse get_company_bank_accounts(page, size, query)
+## **get\_company\_bank\_accounts**
+
+> CompanyBankAccountListResponse get\_company\_bank\_accounts(page, size, query)
 
 Get Company Bank Accounts
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, CompanyBankAccountApi, ApiException
@@ -46,35 +47,32 @@ except ApiException as e:
     print("Exception when calling CompanyBankAccountApi->get_company_bank_accounts: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name      | Type    | Description      | Notes                        |
+| --------- | ------- | ---------------- | ---------------------------- |
+| **page**  | **int** | Page number      | \[optional] \[default to 0]  |
+| **size**  | **int** | Page size        | \[optional] \[default to 10] |
+| **query** | **str** | ### Search query | Supported Keys               |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search query   | Supported Keys         | Supported Operators | Notes                                                         | |------------------------|---------------------|---------------------------------------------------------------| | id                     | &#x60;:&#x60;                 | Equal operator with multiple values. Each value should separated with delimiters &#x60;;&#x60; |                                                |  | [optional] 
-
-### Return type
+#### Return type
 
 [**CompanyBankAccountListResponse**](CompanyBankAccountListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](CompanyBankAccountApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)

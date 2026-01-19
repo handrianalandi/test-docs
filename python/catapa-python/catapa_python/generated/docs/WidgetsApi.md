@@ -1,24 +1,25 @@
 # WidgetsApi
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
-> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
+## WidgetsApi
 
-All URIs are relative to *https://api.catapa.com*
+> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!\
+> &#xNAN;**✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**get_widgets_by_current_user**](WidgetsApi.md#get_widgets_by_current_user) | **GET** /core/v1/users/me/widgets | Get Widgets by Current User
+All URIs are relative to _https://api.catapa.com_
 
+| Method                                                                           | HTTP request                      | Description                 |
+| -------------------------------------------------------------------------------- | --------------------------------- | --------------------------- |
+| [**get\_widgets\_by\_current\_user**](WidgetsApi.md#get_widgets_by_current_user) | **GET** /core/v1/users/me/widgets | Get Widgets by Current User |
 
-# **get_widgets_by_current_user**
-> WidgetListResponse get_widgets_by_current_user()
+## **get\_widgets\_by\_current\_user**
+
+> WidgetListResponse get\_widgets\_by\_current\_user()
 
 Get Widgets by Current User
 
-### Search Query | Supported Keys | Supported Operators | Notes         | |----------------|---------------------|---------------| | widgetType          | :                   | Equal operator | 
+#### Search Query | Supported Keys | Supported Operators | Notes | |----------------|---------------------|---------------| | widgetType | : | Equal operator |
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, WidgetsApi, ApiException
@@ -45,30 +46,28 @@ except ApiException as e:
     print("Exception when calling WidgetsApi->get_widgets_by_current_user: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**WidgetListResponse**](WidgetListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](WidgetsApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)

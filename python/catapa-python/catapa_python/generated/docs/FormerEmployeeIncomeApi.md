@@ -1,26 +1,27 @@
 # FormerEmployeeIncomeApi
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
-> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
+## FormerEmployeeIncomeApi
 
-All URIs are relative to *https://api.catapa.com*
+> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!\
+> &#xNAN;**✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**get_former_employee_income_by_id**](FormerEmployeeIncomeApi.md#get_former_employee_income_by_id) | **GET** /core/v1/former-employee-incomes/{id} | Get Former Employee Income By Id
-[**get_former_employee_income_employee**](FormerEmployeeIncomeApi.md#get_former_employee_income_employee) | **GET** /core/v1/former-employee-income-employees | Get Former Employee Income Employee
-[**get_former_employee_income_employee_by_former_employee_income_id**](FormerEmployeeIncomeApi.md#get_former_employee_income_employee_by_former_employee_income_id) | **GET** /core/v1/former-employee-incomes/{formerEmployeeIncomeId}/former-employee-income-employees | Get Former Employee Income Employee By Former Employee Income Id
-[**get_former_employee_incomes**](FormerEmployeeIncomeApi.md#get_former_employee_incomes) | **GET** /core/v1/former-employee-incomes | Get Former Employee Incomes
-[**update_former_employee_income_employee_by_former_employee_income_id**](FormerEmployeeIncomeApi.md#update_former_employee_income_employee_by_former_employee_income_id) | **PUT** /core/v1/former-employee-incomes/{formerEmployeeIncomeId}/former-employee-income-employees/amounts | Update Former Employee Income Employee By Former Employee Income Id
+All URIs are relative to _https://api.catapa.com_
 
+| Method                                                                                                                                                                             | HTTP request                                                                                               | Description                                                         |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| [**get\_former\_employee\_income\_by\_id**](FormerEmployeeIncomeApi.md#get_former_employee_income_by_id)                                                                           | **GET** /core/v1/former-employee-incomes/{id}                                                              | Get Former Employee Income By Id                                    |
+| [**get\_former\_employee\_income\_employee**](FormerEmployeeIncomeApi.md#get_former_employee_income_employee)                                                                      | **GET** /core/v1/former-employee-income-employees                                                          | Get Former Employee Income Employee                                 |
+| [**get\_former\_employee\_income\_employee\_by\_former\_employee\_income\_id**](FormerEmployeeIncomeApi.md#get_former_employee_income_employee_by_former_employee_income_id)       | **GET** /core/v1/former-employee-incomes/{formerEmployeeIncomeId}/former-employee-income-employees         | Get Former Employee Income Employee By Former Employee Income Id    |
+| [**get\_former\_employee\_incomes**](FormerEmployeeIncomeApi.md#get_former_employee_incomes)                                                                                       | **GET** /core/v1/former-employee-incomes                                                                   | Get Former Employee Incomes                                         |
+| [**update\_former\_employee\_income\_employee\_by\_former\_employee\_income\_id**](FormerEmployeeIncomeApi.md#update_former_employee_income_employee_by_former_employee_income_id) | **PUT** /core/v1/former-employee-incomes/{formerEmployeeIncomeId}/former-employee-income-employees/amounts | Update Former Employee Income Employee By Former Employee Income Id |
 
-# **get_former_employee_income_by_id**
-> FormerEmployeeIncomeResponse get_former_employee_income_by_id(id)
+## **get\_former\_employee\_income\_by\_id**
+
+> FormerEmployeeIncomeResponse get\_former\_employee\_income\_by\_id(id)
 
 Get Former Employee Income By Id
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, FormerEmployeeIncomeApi, ApiException
@@ -48,46 +49,43 @@ except ApiException as e:
     print("Exception when calling FormerEmployeeIncomeApi->get_former_employee_income_by_id: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name   | Type    | Description | Notes |
+| ------ | ------- | ----------- | ----- |
+| **id** | **str** |             |       |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**FormerEmployeeIncomeResponse**](FormerEmployeeIncomeResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](FormerEmployeeIncomeApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_former\_employee\_income\_employee**
 
-# **get_former_employee_income_employee**
-> FormerEmployeeIncomeEmployeeListResponse get_former_employee_income_employee()
+> FormerEmployeeIncomeEmployeeListResponse get\_former\_employee\_income\_employee()
 
 Get Former Employee Income Employee
 
-### Search Query | Supported Keys | Supported Operators |Notes                                                                                       | | -------------- | ------------------- |--------------------------------------------------------------------------------------------| | paymentDate    | :<br>\\><br><        | Equal operator<br>Greater than or equal to operator<br>Less than or equal to equal operator| | paid           | :                   | Equal operator                                                                             | 
+#### Search Query | Supported Keys | Supported Operators |Notes | | -------------- | ------------------- |--------------------------------------------------------------------------------------------| | paymentDate | : \\> < | Equal operator Greater than or equal to operator Less than or equal to equal operator| | paid | : | Equal operator |
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, FormerEmployeeIncomeApi, ApiException
@@ -114,43 +112,41 @@ except ApiException as e:
     print("Exception when calling FormerEmployeeIncomeApi->get_former_employee_income_employee: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**FormerEmployeeIncomeEmployeeListResponse**](FormerEmployeeIncomeEmployeeListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](FormerEmployeeIncomeApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_former\_employee\_income\_employee\_by\_former\_employee\_income\_id**
 
-# **get_former_employee_income_employee_by_former_employee_income_id**
-> FormerEmployeeIncomeEmployeeListResponse get_former_employee_income_employee_by_former_employee_income_id(former_employee_income_id)
+> FormerEmployeeIncomeEmployeeListResponse get\_former\_employee\_income\_employee\_by\_former\_employee\_income\_id(former\_employee\_income\_id)
 
 Get Former Employee Income Employee By Former Employee Income Id
 
-### Search Query | Supported Keys | Supported Operators | Notes                                                                                       | | -------------- | ------------------- | ------------------------------------------------------------------------------------------- | | paymentDate    | :<br>\\><br><        | Equal operator<br>Greater than or equal to operator<br>Less than or equal to equal operator | | paid           | :                   | Equal operator                                                                              | 
+#### Search Query | Supported Keys | Supported Operators | Notes | | -------------- | ------------------- | ------------------------------------------------------------------------------------------- | | paymentDate | : \\> < | Equal operator Greater than or equal to operator Less than or equal to equal operator | | paid | : | Equal operator |
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, FormerEmployeeIncomeApi, ApiException
@@ -178,46 +174,43 @@ except ApiException as e:
     print("Exception when calling FormerEmployeeIncomeApi->get_former_employee_income_employee_by_former_employee_income_id: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                             | Type    | Description | Notes |
+| -------------------------------- | ------- | ----------- | ----- |
+| **former\_employee\_income\_id** | **str** |             |       |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **former_employee_income_id** | **str**|  | 
-
-### Return type
+#### Return type
 
 [**FormerEmployeeIncomeEmployeeListResponse**](FormerEmployeeIncomeEmployeeListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](FormerEmployeeIncomeApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **get\_former\_employee\_incomes**
 
-# **get_former_employee_incomes**
-> FormerEmployeeIncomeListResponse get_former_employee_incomes()
+> FormerEmployeeIncomeListResponse get\_former\_employee\_incomes()
 
 Get Former Employee Incomes
 
-### Search Query | Supported Keys         | Supported Operators | Notes                                                                                       | | ---------------------- | ------------------- | --------------------------------------------------------------------------------------------| | itemName               | :                   | Like operator<br><br>                                                                       | | itemType               | :                   | Equal operator                                                                              | | referenceDate          | :<br>\\><br><        | Equal operator<br>Greater than or equal to operator<br>Less than or equal to equal operator | | pph21Method            | :                   | Equal operator                                                                              | | minimumLastWorkingDate | :<br>\\><br><        | Equal operator<br>Greater than or equal to operator<br>Less than or equal to equal operator | | proportionalMethod     | :                   | Equal operator                                                                              | 
+#### Search Query | Supported Keys | Supported Operators | Notes | | ---------------------- | ------------------- | --------------------------------------------------------------------------------------------| | itemName | : | Like operator  | | itemType | : | Equal operator | | referenceDate | : \\> < | Equal operator Greater than or equal to operator Less than or equal to equal operator | | pph21Method | : | Equal operator | | minimumLastWorkingDate | : \\> < | Equal operator Greater than or equal to operator Less than or equal to equal operator | | proportionalMethod | : | Equal operator |
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, FormerEmployeeIncomeApi, ApiException
@@ -244,41 +237,39 @@ except ApiException as e:
     print("Exception when calling FormerEmployeeIncomeApi->get_former_employee_incomes: %s\n" % e)
 ```
 
-
-### Parameters
+#### Parameters
 
 This endpoint does not need any parameter.
 
-### Return type
+#### Return type
 
 [**FormerEmployeeIncomeListResponse**](FormerEmployeeIncomeListResponse.md)
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+* **Content-Type**: Not defined
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[\[Back to top\]](FormerEmployeeIncomeApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
 
+## **update\_former\_employee\_income\_employee\_by\_former\_employee\_income\_id**
 
-# **update_former_employee_income_employee_by_former_employee_income_id**
-> object update_former_employee_income_employee_by_former_employee_income_id(former_employee_income_id, former_employee_income_employee_amount_update_request)
+> object update\_former\_employee\_income\_employee\_by\_former\_employee\_income\_id(former\_employee\_income\_id, former\_employee\_income\_employee\_amount\_update\_request)
 
 Update Former Employee Income Employee By Former Employee Income Id
 
-### Example
-
+#### Example
 
 ```python
 from catapa import Catapa, FormerEmployeeIncomeApi, ApiException
@@ -307,34 +298,31 @@ except ApiException as e:
     print("Exception when calling FormerEmployeeIncomeApi->update_former_employee_income_employee_by_former_employee_income_id: %s\n" % e)
 ```
 
+#### Parameters
 
-### Parameters
+| Name                                                            | Type                                                                                                              | Description | Notes       |
+| --------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------- | ----------- |
+| **former\_employee\_income\_id**                                | **str**                                                                                                           |             |             |
+| **former\_employee\_income\_employee\_amount\_update\_request** | [**List\[FormerEmployeeIncomeEmployeeAmountUpdateRequest\]**](FormerEmployeeIncomeEmployeeAmountUpdateRequest.md) |             | \[optional] |
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **former_employee_income_id** | **str**|  | 
- **former_employee_income_employee_amount_update_request** | [**List[FormerEmployeeIncomeEmployeeAmountUpdateRequest]**](FormerEmployeeIncomeEmployeeAmountUpdateRequest.md)|  | [optional] 
-
-### Return type
+#### Return type
 
 **object**
 
-### Authorization
+#### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[BearerAuth](../#BearerAuth)
 
-### HTTP request headers
+#### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+* **Content-Type**: application/json
+* **Accept**: application/json
 
-### HTTP response details
+#### HTTP response details
 
 | Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**400** | Bad Request |  -  |
+| ----------- | ----------- | ---------------- |
+| **200**     | OK          | -                |
+| **400**     | Bad Request | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[\[Back to top\]](FormerEmployeeIncomeApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
