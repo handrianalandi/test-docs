@@ -1,25 +1,24 @@
 # EmployeeSalaryTemplateApi
 
-## EmployeeSalaryTemplateApi
+> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
+> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!\
-> &#xNAN;**✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
+All URIs are relative to *https://api.catapa.com*
 
-All URIs are relative to _https://api.catapa.com_
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**createor_update_employee_salary_template**](EmployeeSalaryTemplateApi.md#createor_update_employee_salary_template) | **PATCH** /core/v1/employees/{id}/employee-salary-templates | Create or Update Employee Salary Template
+[**get_effective_employee_salary_template**](EmployeeSalaryTemplateApi.md#get_effective_employee_salary_template) | **GET** /core/v1/employees/{id}/employee-salary-templates/effective | Get Effective Employee Salary Template
+[**get_latest_employee_salary_template**](EmployeeSalaryTemplateApi.md#get_latest_employee_salary_template) | **GET** /core/v1/employees/{id}/employee-salary-templates | Get Latest Employee Salary Template
 
-| Method                                                                                                                    | HTTP request                                                        | Description                               |
-| ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------------------------------- |
-| [**createor\_update\_employee\_salary\_template**](EmployeeSalaryTemplateApi.md#createor_update_employee_salary_template) | **PATCH** /core/v1/employees/{id}/employee-salary-templates         | Create or Update Employee Salary Template |
-| [**get\_effective\_employee\_salary\_template**](EmployeeSalaryTemplateApi.md#get_effective_employee_salary_template)     | **GET** /core/v1/employees/{id}/employee-salary-templates/effective | Get Effective Employee Salary Template    |
-| [**get\_latest\_employee\_salary\_template**](EmployeeSalaryTemplateApi.md#get_latest_employee_salary_template)           | **GET** /core/v1/employees/{id}/employee-salary-templates           | Get Latest Employee Salary Template       |
 
-## **createor\_update\_employee\_salary\_template**
-
-> EmployeeSalaryTemplateUpdateResponse createor\_update\_employee\_salary\_template(id, employee\_salary\_template\_request)
+# **createor_update_employee_salary_template**
+> EmployeeSalaryTemplateUpdateResponse createor_update_employee_salary_template(id, employee_salary_template_request)
 
 Create or Update Employee Salary Template
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, EmployeeSalaryTemplateApi, ApiException
@@ -48,42 +47,45 @@ except ApiException as e:
     print("Exception when calling EmployeeSalaryTemplateApi->createor_update_employee_salary_template: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name                                    | Type                                                                  | Description | Notes       |
-| --------------------------------------- | --------------------------------------------------------------------- | ----------- | ----------- |
-| **id**                                  | **str**                                                               |             |             |
-| **employee\_salary\_template\_request** | [**EmployeeSalaryTemplateRequest**](EmployeeSalaryTemplateRequest.md) |             | \[optional] |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**|  | 
+ **employee_salary_template_request** | [**EmployeeSalaryTemplateRequest**](EmployeeSalaryTemplateRequest.md)|  | [optional] 
+
+### Return type
 
 [**EmployeeSalaryTemplateUpdateResponse**](EmployeeSalaryTemplateUpdateResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: application/json
-* **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](EmployeeSalaryTemplateApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_effective\_employee\_salary\_template**
 
-> EmployeeSalaryTemplateListResponse get\_effective\_employee\_salary\_template(id, year, month)
+# **get_effective_employee_salary_template**
+> EmployeeSalaryTemplateListResponse get_effective_employee_salary_template(id, year, month)
 
 Get Effective Employee Salary Template
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, EmployeeSalaryTemplateApi, ApiException
@@ -113,43 +115,46 @@ except ApiException as e:
     print("Exception when calling EmployeeSalaryTemplateApi->get_effective_employee_salary_template: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name      | Type      | Description | Notes       |
-| --------- | --------- | ----------- | ----------- |
-| **id**    | **str**   |             |             |
-| **year**  | **float** |             | \[optional] |
-| **month** | **float** |             | \[optional] |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**|  | 
+ **year** | **float**|  | [optional] 
+ **month** | **float**|  | [optional] 
+
+### Return type
 
 [**EmployeeSalaryTemplateListResponse**](EmployeeSalaryTemplateListResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](EmployeeSalaryTemplateApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_latest\_employee\_salary\_template**
 
-> EmployeeSalaryTemplateResponse get\_latest\_employee\_salary\_template(id)
+# **get_latest_employee_salary_template**
+> EmployeeSalaryTemplateResponse get_latest_employee_salary_template(id)
 
 Get Latest Employee Salary Template
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, EmployeeSalaryTemplateApi, ApiException
@@ -177,30 +182,33 @@ except ApiException as e:
     print("Exception when calling EmployeeSalaryTemplateApi->get_latest_employee_salary_template: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name   | Type    | Description | Notes |
-| ------ | ------- | ----------- | ----- |
-| **id** | **str** |             |       |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**|  | 
+
+### Return type
 
 [**EmployeeSalaryTemplateResponse**](EmployeeSalaryTemplateResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](EmployeeSalaryTemplateApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+

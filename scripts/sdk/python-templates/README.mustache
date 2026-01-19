@@ -25,11 +25,7 @@ def main() -> None:
     """Main function demonstrating basic SDK usage."""
     # Initialize the client with your credentials
     # The client automatically handles OAuth2 authentication and token refresh
-    client = Catapa(
-        tenant="zfrl",
-        client_id="test-client-id",
-        client_secret="test-client-secret"
-    )
+    client = Catapa(tenant="zfrl", client_id="test-client-id", client_secret="test-client-secret")
 
     # Create an API instance
     # Tokens are automatically refreshed on every API call (5-minute buffer before expiration)
@@ -60,11 +56,7 @@ from catapa import Catapa, OrganizationApi, MasterDataApi
 def main() -> None:
     """Main function demonstrating multiple API usage."""
     # Initialize client once
-    client = Catapa(
-        tenant="zfrl",
-        client_id="test-client-id",
-        client_secret="test-client-secret"
-    )
+    client = Catapa(tenant="zfrl", client_id="test-client-id", client_secret="test-client-secret")
 
     # Use different APIs with the same client
     # Each API instance shares the same authentication and token management
@@ -97,11 +89,7 @@ import time
 def main() -> None:
     """Main function for long-running service example."""
     # Initialize client once at service startup
-    client = Catapa(
-        tenant="zfrl",
-        client_id="test-client-id",
-        client_secret="test-client-secret"
-    )
+    client = Catapa(tenant="zfrl", client_id="test-client-id", client_secret="test-client-secret")
     employee_api = EmployeeApi(client)
 
     # Make an API call
@@ -135,11 +123,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 def main() -> None:
     """Main function for concurrent API calls example."""
-    client = Catapa(
-        tenant="zfrl",
-        client_id="test-client-id",
-        client_secret="test-client-secret"
-    )
+    client = Catapa(tenant="zfrl", client_id="test-client-id", client_secret="test-client-secret")
 
     # Create API instances
     employee_api = EmployeeApi(client)

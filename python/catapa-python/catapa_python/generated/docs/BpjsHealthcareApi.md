@@ -1,33 +1,32 @@
 # BpjsHealthcareApi
 
-## BpjsHealthcareApi
+> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
+> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!\
-> &#xNAN;**✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
+All URIs are relative to *https://api.catapa.com*
 
-All URIs are relative to _https://api.catapa.com_
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**download_bpjs_healthcare_payment_details_report**](BpjsHealthcareApi.md#download_bpjs_healthcare_payment_details_report) | **GET** /core/v1/bpjs-healthcare-reports/payment-details | Download BPJS Healthcare Payment Details Report
+[**download_e_dabu_advance_member_report**](BpjsHealthcareApi.md#download_e_dabu_advance_member_report) | **GET** /core/v1/bpjs-healthcare-reports/edabu-advance-members | Download E-Dabu Advance Member Report
+[**download_e_dabu_employee_identity_card_member_check_report**](BpjsHealthcareApi.md#download_e_dabu_employee_identity_card_member_check_report) | **GET** /core/v1/bpjs-healthcare-reports/edabu-employee-identity-card-number-check | Download E-Dabu Employee Identity Card Member Check Report
+[**download_e_dabu_new_member_report**](BpjsHealthcareApi.md#download_e_dabu_new_member_report) | **GET** /core/v1/bpjs-healthcare-reports/edabu-new-members | Download E-Dabu New Member Report
+[**download_e_dabu_wage_update_report**](BpjsHealthcareApi.md#download_e_dabu_wage_update_report) | **GET** /core/v1/bpjs-healthcare-reports/edabu-wage-update | Download E-Dabu Wage Update Report
+[**get_bpjs_healthcare_premium_summaries**](BpjsHealthcareApi.md#get_bpjs_healthcare_premium_summaries) | **GET** /core/v1/bpjs-healthcare-premiums/summaries | Get BPJS Healthcare Premium Summaries
+[**get_bpjs_healthcare_premium_summary_details**](BpjsHealthcareApi.md#get_bpjs_healthcare_premium_summary_details) | **GET** /core/v1/bpjs-healthcare-premiums/summaries/{id}/details | Get BPJS Healthcare Premium Summary Details
+[**get_bpjs_healthcare_providers**](BpjsHealthcareApi.md#get_bpjs_healthcare_providers) | **GET** /core/v1/bpjs-healthcare-providers | Get BPJS Healthcare Providers
+[**get_bpjs_healthcare_templates**](BpjsHealthcareApi.md#get_bpjs_healthcare_templates) | **GET** /core/v1/bpjs-healthcare-templates | Get BPJS Healthcare Templates
 
-| Method                                                                                                                                                    | HTTP request                                                                       | Description                                                |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ---------------------------------------------------------- |
-| [**download\_bpjs\_healthcare\_payment\_details\_report**](BpjsHealthcareApi.md#download_bpjs_healthcare_payment_details_report)                          | **GET** /core/v1/bpjs-healthcare-reports/payment-details                           | Download BPJS Healthcare Payment Details Report            |
-| [**download\_e\_dabu\_advance\_member\_report**](BpjsHealthcareApi.md#download_e_dabu_advance_member_report)                                              | **GET** /core/v1/bpjs-healthcare-reports/edabu-advance-members                     | Download E-Dabu Advance Member Report                      |
-| [**download\_e\_dabu\_employee\_identity\_card\_member\_check\_report**](BpjsHealthcareApi.md#download_e_dabu_employee_identity_card_member_check_report) | **GET** /core/v1/bpjs-healthcare-reports/edabu-employee-identity-card-number-check | Download E-Dabu Employee Identity Card Member Check Report |
-| [**download\_e\_dabu\_new\_member\_report**](BpjsHealthcareApi.md#download_e_dabu_new_member_report)                                                      | **GET** /core/v1/bpjs-healthcare-reports/edabu-new-members                         | Download E-Dabu New Member Report                          |
-| [**download\_e\_dabu\_wage\_update\_report**](BpjsHealthcareApi.md#download_e_dabu_wage_update_report)                                                    | **GET** /core/v1/bpjs-healthcare-reports/edabu-wage-update                         | Download E-Dabu Wage Update Report                         |
-| [**get\_bpjs\_healthcare\_premium\_summaries**](BpjsHealthcareApi.md#get_bpjs_healthcare_premium_summaries)                                               | **GET** /core/v1/bpjs-healthcare-premiums/summaries                                | Get BPJS Healthcare Premium Summaries                      |
-| [**get\_bpjs\_healthcare\_premium\_summary\_details**](BpjsHealthcareApi.md#get_bpjs_healthcare_premium_summary_details)                                  | **GET** /core/v1/bpjs-healthcare-premiums/summaries/{id}/details                   | Get BPJS Healthcare Premium Summary Details                |
-| [**get\_bpjs\_healthcare\_providers**](BpjsHealthcareApi.md#get_bpjs_healthcare_providers)                                                                | **GET** /core/v1/bpjs-healthcare-providers                                         | Get BPJS Healthcare Providers                              |
-| [**get\_bpjs\_healthcare\_templates**](BpjsHealthcareApi.md#get_bpjs_healthcare_templates)                                                                | **GET** /core/v1/bpjs-healthcare-templates                                         | Get BPJS Healthcare Templates                              |
 
-## **download\_bpjs\_healthcare\_payment\_details\_report**
-
-> download\_bpjs\_healthcare\_payment\_details\_report()
+# **download_bpjs_healthcare_payment_details_report**
+> download_bpjs_healthcare_payment_details_report()
 
 Download BPJS Healthcare Payment Details Report
 
-#### Search Query | Request Parameter Name | Description | | ------------------------ | --------------------------------------------| | month | Month of the report Value: 1-12. | | year | Year of the report Value: YYYY, eg: 2021 | | bpjsHealthcareProviderId | Provider Id |
+### Search Query | Request Parameter Name   | Description                                 | | ------------------------ | --------------------------------------------| | month                    | Month of the report<br>Value: 1-12.         | | year                     | Year of the report<br>Value: YYYY, eg: 2021 | | bpjsHealthcareProviderId | Provider Id                                 | 
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, BpjsHealthcareApi, ApiException
@@ -52,41 +51,43 @@ except ApiException as e:
     print("Exception when calling BpjsHealthcareApi->download_bpjs_healthcare_payment_details_report: %s\n" % e)
 ```
 
-#### Parameters
+
+### Parameters
 
 This endpoint does not need any parameter.
 
-#### Return type
+### Return type
 
 void (empty response body)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: Not defined
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
 
-#### HTTP response details
+### HTTP response details
 
-| Status code | Description                 | Response headers                   |
-| ----------- | --------------------------- | ---------------------------------- |
-| **200**     | OK - File download response | <p>* Content-Disposition -<br></p> |
-| **400**     | Bad Request                 | -                                  |
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | OK - File download response |  * Content-Disposition -  <br>  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](BpjsHealthcareApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **download\_e\_dabu\_advance\_member\_report**
 
-> download\_e\_dabu\_advance\_member\_report()
+# **download_e_dabu_advance_member_report**
+> download_e_dabu_advance_member_report()
 
 Download E-Dabu Advance Member Report
 
-#### Search Query | Request Parameter Name | Description | | ------------------------ | ------------------------------------------- | | month | Month of the report Value: 1-12. | | year | Year of the report Value: YYYY, eg: 2021 | | bpjsHealthcareProviderId | Provider Id |
+### Search Query | Request Parameter Name   | Description                                 | | ------------------------ | ------------------------------------------- | | month                    | Month of the report<br>Value: 1-12.         | | year                     | Year of the report<br>Value: YYYY, eg: 2021 | | bpjsHealthcareProviderId | Provider Id                                 | 
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, BpjsHealthcareApi, ApiException
@@ -111,41 +112,43 @@ except ApiException as e:
     print("Exception when calling BpjsHealthcareApi->download_e_dabu_advance_member_report: %s\n" % e)
 ```
 
-#### Parameters
+
+### Parameters
 
 This endpoint does not need any parameter.
 
-#### Return type
+### Return type
 
 void (empty response body)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: Not defined
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
 
-#### HTTP response details
+### HTTP response details
 
-| Status code | Description                 | Response headers                   |
-| ----------- | --------------------------- | ---------------------------------- |
-| **200**     | OK - File download response | <p>* Content-Disposition -<br></p> |
-| **400**     | Bad Request                 | -                                  |
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | OK - File download response |  * Content-Disposition -  <br>  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](BpjsHealthcareApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **download\_e\_dabu\_employee\_identity\_card\_member\_check\_report**
 
-> download\_e\_dabu\_employee\_identity\_card\_member\_check\_report()
+# **download_e_dabu_employee_identity_card_member_check_report**
+> download_e_dabu_employee_identity_card_member_check_report()
 
 Download E-Dabu Employee Identity Card Member Check Report
 
-#### Search Query | Request Parameter Name | Description | | ------------------------ | ------------------------------------------- | | month | Month of the report Value: 1-12. | | year | Year of the report Value: YYYY, eg: 2021 | | bpjsHealthcareProviderId | Provider Id |
+### Search Query | Request Parameter Name   | Description                                 | | ------------------------ | ------------------------------------------- | | month                    | Month of the report<br>Value: 1-12.         | | year                     | Year of the report<br>Value: YYYY, eg: 2021 | | bpjsHealthcareProviderId | Provider Id                                 | 
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, BpjsHealthcareApi, ApiException
@@ -170,41 +173,43 @@ except ApiException as e:
     print("Exception when calling BpjsHealthcareApi->download_e_dabu_employee_identity_card_member_check_report: %s\n" % e)
 ```
 
-#### Parameters
+
+### Parameters
 
 This endpoint does not need any parameter.
 
-#### Return type
+### Return type
 
 void (empty response body)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: Not defined
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
 
-#### HTTP response details
+### HTTP response details
 
-| Status code | Description                 | Response headers                   |
-| ----------- | --------------------------- | ---------------------------------- |
-| **200**     | OK - File download response | <p>* Content-Disposition -<br></p> |
-| **400**     | Bad Request                 | -                                  |
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | OK - File download response |  * Content-Disposition -  <br>  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](BpjsHealthcareApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **download\_e\_dabu\_new\_member\_report**
 
-> download\_e\_dabu\_new\_member\_report()
+# **download_e_dabu_new_member_report**
+> download_e_dabu_new_member_report()
 
 Download E-Dabu New Member Report
 
-#### Search Query | Request Parameter Name | Description | | ------------------------ | ------------------------------------------- | | month | Month of the report Value: 1-12. | | year | Year of the report Value: YYYY, eg: 2021 | | bpjsHealthcareProviderId | Provider Id |
+### Search Query | Request Parameter Name   | Description                                 | | ------------------------ | ------------------------------------------- | | month                    | Month of the report<br>Value: 1-12.         | | year                     | Year of the report<br>Value: YYYY, eg: 2021 | | bpjsHealthcareProviderId | Provider Id                                 | 
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, BpjsHealthcareApi, ApiException
@@ -229,41 +234,43 @@ except ApiException as e:
     print("Exception when calling BpjsHealthcareApi->download_e_dabu_new_member_report: %s\n" % e)
 ```
 
-#### Parameters
+
+### Parameters
 
 This endpoint does not need any parameter.
 
-#### Return type
+### Return type
 
 void (empty response body)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: Not defined
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
 
-#### HTTP response details
+### HTTP response details
 
-| Status code | Description                 | Response headers                   |
-| ----------- | --------------------------- | ---------------------------------- |
-| **200**     | OK - File download response | <p>* Content-Disposition -<br></p> |
-| **400**     | Bad Request                 | -                                  |
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | OK - File download response |  * Content-Disposition -  <br>  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](BpjsHealthcareApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **download\_e\_dabu\_wage\_update\_report**
 
-> download\_e\_dabu\_wage\_update\_report()
+# **download_e_dabu_wage_update_report**
+> download_e_dabu_wage_update_report()
 
 Download E-Dabu Wage Update Report
 
-#### Search Query | Request Parameter Name | Description | | ------------------------ | ------------------------------------------- | | month | Month of the report Value: 1-12. | | year | Year of the report Value: YYYY, eg: 2021 | | bpjsHealthcareProviderId | Provider Id. UUID4 | | paygroupId | Paygroup id from payroll. UUID4 |
+### Search Query | Request Parameter Name   | Description                                 | | ------------------------ | ------------------------------------------- | | month                    | Month of the report<br>Value: 1-12.         | | year                     | Year of the report<br>Value: YYYY, eg: 2021 | | bpjsHealthcareProviderId | Provider Id. UUID4                          | | paygroupId               | Paygroup id from payroll. UUID4             | 
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, BpjsHealthcareApi, ApiException
@@ -288,41 +295,43 @@ except ApiException as e:
     print("Exception when calling BpjsHealthcareApi->download_e_dabu_wage_update_report: %s\n" % e)
 ```
 
-#### Parameters
+
+### Parameters
 
 This endpoint does not need any parameter.
 
-#### Return type
+### Return type
 
 void (empty response body)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: Not defined
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
 
-#### HTTP response details
+### HTTP response details
 
-| Status code | Description                 | Response headers                   |
-| ----------- | --------------------------- | ---------------------------------- |
-| **200**     | OK - File download response | <p>* Content-Disposition -<br></p> |
-| **400**     | Bad Request                 | -                                  |
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | OK - File download response |  * Content-Disposition -  <br>  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](BpjsHealthcareApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_bpjs\_healthcare\_premium\_summaries**
 
-> BpjsHealthcarePremiumSummaryListResponse get\_bpjs\_healthcare\_premium\_summaries()
+# **get_bpjs_healthcare_premium_summaries**
+> BpjsHealthcarePremiumSummaryListResponse get_bpjs_healthcare_premium_summaries()
 
 Get BPJS Healthcare Premium Summaries
 
-#### Search Query | Supported Keys | Supported Operators | Notes | |----------------------|---------------------|---------------| | employeeName | : | Like Operator | | identificationNumber | : | Like Operator | | cutoffEndDate | : > < | Equal operator Greater than or equal to operator Less than or equal to equal operator |
+### Search Query | Supported Keys       | Supported Operators | Notes         | |----------------------|---------------------|---------------| | employeeName         | :                   | Like Operator | | identificationNumber | :                   | Like Operator | | cutoffEndDate        | :<br>><br><         | Equal operator<br>Greater than or equal to operator<br>Less than or equal to equal operator | 
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, BpjsHealthcareApi, ApiException
@@ -349,39 +358,41 @@ except ApiException as e:
     print("Exception when calling BpjsHealthcareApi->get_bpjs_healthcare_premium_summaries: %s\n" % e)
 ```
 
-#### Parameters
+
+### Parameters
 
 This endpoint does not need any parameter.
 
-#### Return type
+### Return type
 
 [**BpjsHealthcarePremiumSummaryListResponse**](BpjsHealthcarePremiumSummaryListResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](BpjsHealthcareApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_bpjs\_healthcare\_premium\_summary\_details**
 
-> BpjsHealthcarePremiumDetailsResponse get\_bpjs\_healthcare\_premium\_summary\_details(id)
+# **get_bpjs_healthcare_premium_summary_details**
+> BpjsHealthcarePremiumDetailsResponse get_bpjs_healthcare_premium_summary_details(id)
 
 Get BPJS Healthcare Premium Summary Details
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, BpjsHealthcareApi, ApiException
@@ -409,43 +420,46 @@ except ApiException as e:
     print("Exception when calling BpjsHealthcareApi->get_bpjs_healthcare_premium_summary_details: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name   | Type    | Description | Notes |
-| ------ | ------- | ----------- | ----- |
-| **id** | **str** |             |       |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**|  | 
+
+### Return type
 
 [**BpjsHealthcarePremiumDetailsResponse**](BpjsHealthcarePremiumDetailsResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](BpjsHealthcareApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_bpjs\_healthcare\_providers**
 
-> BpjsHealthcareProviderListResponse get\_bpjs\_healthcare\_providers()
+# **get_bpjs_healthcare_providers**
+> BpjsHealthcareProviderListResponse get_bpjs_healthcare_providers()
 
 Get BPJS Healthcare Providers
 
-#### Search Query | Supported Keys | Supported Operators | Notes | | ----------------------- | ------------------- | ------------- | | name | : | Like Operator | | code | : | Like Operator | | address | : | Like Operator | | registrationNumber | : | Like Operator | | reportSignatoryName | : | Like Operator | | reportSignatoryJobTitle | : | Like Operator |
+### Search Query | Supported Keys          | Supported Operators | Notes         | | ----------------------- | ------------------- | ------------- | | name                    | :                   | Like Operator | | code                    | :                   | Like Operator | | address                 | :                   | Like Operator | | registrationNumber      | :                   | Like Operator | | reportSignatoryName     | :                   | Like Operator | | reportSignatoryJobTitle | :                   | Like Operator | 
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, BpjsHealthcareApi, ApiException
@@ -472,41 +486,43 @@ except ApiException as e:
     print("Exception when calling BpjsHealthcareApi->get_bpjs_healthcare_providers: %s\n" % e)
 ```
 
-#### Parameters
+
+### Parameters
 
 This endpoint does not need any parameter.
 
-#### Return type
+### Return type
 
 [**BpjsHealthcareProviderListResponse**](BpjsHealthcareProviderListResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](BpjsHealthcareApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_bpjs\_healthcare\_templates**
 
-> BpjsHealthcareTemplateListResponse get\_bpjs\_healthcare\_templates()
+# **get_bpjs_healthcare_templates**
+> BpjsHealthcareTemplateListResponse get_bpjs_healthcare_templates()
 
 Get BPJS Healthcare Templates
 
-#### Search Query | Supported Keys | Supported Operators |Notes | | -------------- | ------------------- |------------------------------------------------------------------------------------------| | code | : | Like Operator | | name | : | Like Operator | | salaryType | : | Equal Operator Enum, available values: \\\[BY\\\_PRORATED\\\_SALARY, BY\\\_SALARY\\\_DECREE\\]| | linkToPayroll | : | Equal Operator. Boolean |
+### Search Query | Supported Keys | Supported Operators |Notes                                                                                     | | -------------- | ------------------- |------------------------------------------------------------------------------------------| | code           | :                   | Like Operator                                                                            | | name           | :                   | Like Operator                                                                            | | salaryType     | :                   | Equal Operator<br>Enum, available values:<br>\\[BY\\_PRORATED\\_SALARY, BY\\_SALARY\\_DECREE\\]| | linkToPayroll  | :                   | Equal Operator.<br>Boolean                                                               | 
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, BpjsHealthcareApi, ApiException
@@ -533,28 +549,30 @@ except ApiException as e:
     print("Exception when calling BpjsHealthcareApi->get_bpjs_healthcare_templates: %s\n" % e)
 ```
 
-#### Parameters
+
+### Parameters
 
 This endpoint does not need any parameter.
 
-#### Return type
+### Return type
 
 [**BpjsHealthcareTemplateListResponse**](BpjsHealthcareTemplateListResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](BpjsHealthcareApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+

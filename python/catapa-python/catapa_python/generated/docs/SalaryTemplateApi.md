@@ -1,29 +1,28 @@
 # SalaryTemplateApi
 
-## SalaryTemplateApi
+> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
+> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!\
-> &#xNAN;**✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
+All URIs are relative to *https://api.catapa.com*
 
-All URIs are relative to _https://api.catapa.com_
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**add_salary_item_add_on**](SalaryTemplateApi.md#add_salary_item_add_on) | **PUT** /core/v1/salary-item-add-on/add | Add Salary Item Add On
+[**delete_salary_item_add_on**](SalaryTemplateApi.md#delete_salary_item_add_on) | **DELETE** /core/v1/salary-item-add-on | Delete Salary Item Add On
+[**get_salary_item_add_on**](SalaryTemplateApi.md#get_salary_item_add_on) | **GET** /core/v1/salary-item-add-on | Get Salary Item Add On
+[**get_salary_template_by_id**](SalaryTemplateApi.md#get_salary_template_by_id) | **GET** /core/v1/salary-templates/{id} | Get Salary Template by ID
+[**get_salary_templates**](SalaryTemplateApi.md#get_salary_templates) | **GET** /core/v1/salary-templates | Get Salary Templates
+[**subtract_salary_item_add_on**](SalaryTemplateApi.md#subtract_salary_item_add_on) | **PUT** /core/v1/salary-item-add-on/subtract | Subtract Salary Item Add On
+[**update_salary_item_add_on**](SalaryTemplateApi.md#update_salary_item_add_on) | **PUT** /core/v1/salary-item-add-on | Update Salary Item Add On
 
-| Method                                                                                  | HTTP request                                 | Description                 |
-| --------------------------------------------------------------------------------------- | -------------------------------------------- | --------------------------- |
-| [**add\_salary\_item\_add\_on**](SalaryTemplateApi.md#add_salary_item_add_on)           | **PUT** /core/v1/salary-item-add-on/add      | Add Salary Item Add On      |
-| [**delete\_salary\_item\_add\_on**](SalaryTemplateApi.md#delete_salary_item_add_on)     | **DELETE** /core/v1/salary-item-add-on       | Delete Salary Item Add On   |
-| [**get\_salary\_item\_add\_on**](SalaryTemplateApi.md#get_salary_item_add_on)           | **GET** /core/v1/salary-item-add-on          | Get Salary Item Add On      |
-| [**get\_salary\_template\_by\_id**](SalaryTemplateApi.md#get_salary_template_by_id)     | **GET** /core/v1/salary-templates/{id}       | Get Salary Template by ID   |
-| [**get\_salary\_templates**](SalaryTemplateApi.md#get_salary_templates)                 | **GET** /core/v1/salary-templates            | Get Salary Templates        |
-| [**subtract\_salary\_item\_add\_on**](SalaryTemplateApi.md#subtract_salary_item_add_on) | **PUT** /core/v1/salary-item-add-on/subtract | Subtract Salary Item Add On |
-| [**update\_salary\_item\_add\_on**](SalaryTemplateApi.md#update_salary_item_add_on)     | **PUT** /core/v1/salary-item-add-on          | Update Salary Item Add On   |
 
-## **add\_salary\_item\_add\_on**
-
-> SalaryItemAddOnResponse add\_salary\_item\_add\_on(salary\_item\_add\_on\_request)
+# **add_salary_item_add_on**
+> SalaryItemAddOnResponse add_salary_item_add_on(salary_item_add_on_request)
 
 Add Salary Item Add On
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, SalaryTemplateApi, ApiException
@@ -51,41 +50,44 @@ except ApiException as e:
     print("Exception when calling SalaryTemplateApi->add_salary_item_add_on: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name                               | Type                                                    | Description | Notes       |
-| ---------------------------------- | ------------------------------------------------------- | ----------- | ----------- |
-| **salary\_item\_add\_on\_request** | [**SalaryItemAddOnRequest**](SalaryItemAddOnRequest.md) |             | \[optional] |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **salary_item_add_on_request** | [**SalaryItemAddOnRequest**](SalaryItemAddOnRequest.md)|  | [optional] 
+
+### Return type
 
 [**SalaryItemAddOnResponse**](SalaryItemAddOnResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: application/json
-* **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](SalaryTemplateApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **delete\_salary\_item\_add\_on**
 
-> object delete\_salary\_item\_add\_on(tenant, employee\_identification\_number, var\_date, salary\_item\_code)
+# **delete_salary_item_add_on**
+> object delete_salary_item_add_on(tenant, employee_identification_number, var_date, salary_item_code)
 
 Delete Salary Item Add On
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, SalaryTemplateApi, ApiException
@@ -116,44 +118,47 @@ except ApiException as e:
     print("Exception when calling SalaryTemplateApi->delete_salary_item_add_on: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name                                 | Type    | Description | Notes |
-| ------------------------------------ | ------- | ----------- | ----- |
-| **tenant**                           | **str** |             |       |
-| **employee\_identification\_number** | **str** |             |       |
-| **var\_date**                        | **str** |             |       |
-| **salary\_item\_code**               | **str** |             |       |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenant** | **str**|  | 
+ **employee_identification_number** | **str**|  | 
+ **var_date** | **str**|  | 
+ **salary_item_code** | **str**|  | 
+
+### Return type
 
 **object**
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](SalaryTemplateApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_salary\_item\_add\_on**
 
-> SalaryItemAddOnResponse get\_salary\_item\_add\_on(employee\_identification\_number, var\_date, salary\_item\_code)
+# **get_salary_item_add_on**
+> SalaryItemAddOnResponse get_salary_item_add_on(employee_identification_number, var_date, salary_item_code)
 
 Get Salary Item Add On
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, SalaryTemplateApi, ApiException
@@ -183,43 +188,46 @@ except ApiException as e:
     print("Exception when calling SalaryTemplateApi->get_salary_item_add_on: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name                                 | Type    | Description | Notes |
-| ------------------------------------ | ------- | ----------- | ----- |
-| **employee\_identification\_number** | **str** |             |       |
-| **var\_date**                        | **str** |             |       |
-| **salary\_item\_code**               | **str** |             |       |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **employee_identification_number** | **str**|  | 
+ **var_date** | **str**|  | 
+ **salary_item_code** | **str**|  | 
+
+### Return type
 
 [**SalaryItemAddOnResponse**](SalaryItemAddOnResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](SalaryTemplateApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_salary\_template\_by\_id**
 
-> SalaryTemplateResponse get\_salary\_template\_by\_id(id)
+# **get_salary_template_by_id**
+> SalaryTemplateResponse get_salary_template_by_id(id)
 
 Get Salary Template by ID
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, SalaryTemplateApi, ApiException
@@ -247,43 +255,46 @@ except ApiException as e:
     print("Exception when calling SalaryTemplateApi->get_salary_template_by_id: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name   | Type    | Description | Notes |
-| ------ | ------- | ----------- | ----- |
-| **id** | **str** |             |       |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**|  | 
+
+### Return type
 
 [**SalaryTemplateResponse**](SalaryTemplateResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](SalaryTemplateApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_salary\_templates**
 
-> SalaryTemplateListResponse get\_salary\_templates()
+# **get_salary_templates**
+> SalaryTemplateListResponse get_salary_templates()
 
 Get Salary Templates
 
-#### Search Query | Supported Keys | Supported Operators | Notes | | -------------- | ------------------- | ------------- | | code | : | Like operator | | name | : | Like operator |
+### Search Query | Supported Keys | Supported Operators | Notes         | | -------------- | ------------------- | ------------- | | code           | :                   | Like operator | | name           | :                   | Like operator | 
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, SalaryTemplateApi, ApiException
@@ -310,39 +321,41 @@ except ApiException as e:
     print("Exception when calling SalaryTemplateApi->get_salary_templates: %s\n" % e)
 ```
 
-#### Parameters
+
+### Parameters
 
 This endpoint does not need any parameter.
 
-#### Return type
+### Return type
 
 [**SalaryTemplateListResponse**](SalaryTemplateListResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](SalaryTemplateApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **subtract\_salary\_item\_add\_on**
 
-> object subtract\_salary\_item\_add\_on(salary\_item\_add\_on\_request)
+# **subtract_salary_item_add_on**
+> object subtract_salary_item_add_on(salary_item_add_on_request)
 
 Subtract Salary Item Add On
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, SalaryTemplateApi, ApiException
@@ -370,41 +383,44 @@ except ApiException as e:
     print("Exception when calling SalaryTemplateApi->subtract_salary_item_add_on: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name                               | Type                                                    | Description | Notes       |
-| ---------------------------------- | ------------------------------------------------------- | ----------- | ----------- |
-| **salary\_item\_add\_on\_request** | [**SalaryItemAddOnRequest**](SalaryItemAddOnRequest.md) |             | \[optional] |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **salary_item_add_on_request** | [**SalaryItemAddOnRequest**](SalaryItemAddOnRequest.md)|  | [optional] 
+
+### Return type
 
 **object**
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: application/json
-* **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](SalaryTemplateApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **update\_salary\_item\_add\_on**
 
-> SalaryItemAddOnResponse update\_salary\_item\_add\_on(salary\_item\_add\_on\_request)
+# **update_salary_item_add_on**
+> SalaryItemAddOnResponse update_salary_item_add_on(salary_item_add_on_request)
 
 Update Salary Item Add On
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, SalaryTemplateApi, ApiException
@@ -432,30 +448,33 @@ except ApiException as e:
     print("Exception when calling SalaryTemplateApi->update_salary_item_add_on: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name                               | Type                                                    | Description | Notes       |
-| ---------------------------------- | ------------------------------------------------------- | ----------- | ----------- |
-| **salary\_item\_add\_on\_request** | [**SalaryItemAddOnRequest**](SalaryItemAddOnRequest.md) |             | \[optional] |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **salary_item_add_on_request** | [**SalaryItemAddOnRequest**](SalaryItemAddOnRequest.md)|  | [optional] 
+
+### Return type
 
 [**SalaryItemAddOnResponse**](SalaryItemAddOnResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: application/json
-* **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](SalaryTemplateApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+

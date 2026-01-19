@@ -1,29 +1,28 @@
 # WorkflowApi
 
-## WorkflowApi
+> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
+> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!\
-> &#xNAN;**✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
+All URIs are relative to *https://api.catapa.com*
 
-All URIs are relative to _https://api.catapa.com_
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**create_workflow_reason**](WorkflowApi.md#create_workflow_reason) | **POST** /core/v1/workflow-reasons | Create Workflow Reason
+[**create_workflow_reason_category**](WorkflowApi.md#create_workflow_reason_category) | **POST** /core/v1/workflow-reason-categories | Create Workflow Reason Category
+[**get_workflow_activity**](WorkflowApi.md#get_workflow_activity) | **GET** /core/v1/workflow-activities | Get Workflow Activities
+[**get_workflow_reason**](WorkflowApi.md#get_workflow_reason) | **GET** /core/v1/workflow-reasons | Get Workflow Reasons
+[**get_workflow_reason_category**](WorkflowApi.md#get_workflow_reason_category) | **GET** /core/v1/workflow-reason-categories | Get Workflow Reason Categories
+[**update_workflow_reason**](WorkflowApi.md#update_workflow_reason) | **PUT** /core/v1/workflow-reasons/{id} | Update Workflow Reason
+[**update_workflow_reason_categories**](WorkflowApi.md#update_workflow_reason_categories) | **PUT** /core/v1/workflow-reason-categories/{id} | Update Workflow Reason Category
 
-| Method                                                                                       | HTTP request                                     | Description                     |
-| -------------------------------------------------------------------------------------------- | ------------------------------------------------ | ------------------------------- |
-| [**create\_workflow\_reason**](WorkflowApi.md#create_workflow_reason)                        | **POST** /core/v1/workflow-reasons               | Create Workflow Reason          |
-| [**create\_workflow\_reason\_category**](WorkflowApi.md#create_workflow_reason_category)     | **POST** /core/v1/workflow-reason-categories     | Create Workflow Reason Category |
-| [**get\_workflow\_activity**](WorkflowApi.md#get_workflow_activity)                          | **GET** /core/v1/workflow-activities             | Get Workflow Activities         |
-| [**get\_workflow\_reason**](WorkflowApi.md#get_workflow_reason)                              | **GET** /core/v1/workflow-reasons                | Get Workflow Reasons            |
-| [**get\_workflow\_reason\_category**](WorkflowApi.md#get_workflow_reason_category)           | **GET** /core/v1/workflow-reason-categories      | Get Workflow Reason Categories  |
-| [**update\_workflow\_reason**](WorkflowApi.md#update_workflow_reason)                        | **PUT** /core/v1/workflow-reasons/{id}           | Update Workflow Reason          |
-| [**update\_workflow\_reason\_categories**](WorkflowApi.md#update_workflow_reason_categories) | **PUT** /core/v1/workflow-reason-categories/{id} | Update Workflow Reason Category |
 
-## **create\_workflow\_reason**
-
-> WorkflowReasonResponse create\_workflow\_reason(workflow\_reason\_request)
+# **create_workflow_reason**
+> WorkflowReasonResponse create_workflow_reason(workflow_reason_request)
 
 Create Workflow Reason
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, WorkflowApi, ApiException
@@ -51,41 +50,44 @@ except ApiException as e:
     print("Exception when calling WorkflowApi->create_workflow_reason: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name                          | Type                                                  | Description | Notes       |
-| ----------------------------- | ----------------------------------------------------- | ----------- | ----------- |
-| **workflow\_reason\_request** | [**WorkflowReasonRequest**](WorkflowReasonRequest.md) |             | \[optional] |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **workflow_reason_request** | [**WorkflowReasonRequest**](WorkflowReasonRequest.md)|  | [optional] 
+
+### Return type
 
 [**WorkflowReasonResponse**](WorkflowReasonResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: application/json
-* **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **201**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**201** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](WorkflowApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **create\_workflow\_reason\_category**
 
-> WorkflowReasonCategoryResponse create\_workflow\_reason\_category(workflow\_reason\_category\_request)
+# **create_workflow_reason_category**
+> WorkflowReasonCategoryResponse create_workflow_reason_category(workflow_reason_category_request)
 
 Create Workflow Reason Category
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, WorkflowApi, ApiException
@@ -113,43 +115,46 @@ except ApiException as e:
     print("Exception when calling WorkflowApi->create_workflow_reason_category: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name                                    | Type                                                                  | Description | Notes       |
-| --------------------------------------- | --------------------------------------------------------------------- | ----------- | ----------- |
-| **workflow\_reason\_category\_request** | [**WorkflowReasonCategoryRequest**](WorkflowReasonCategoryRequest.md) |             | \[optional] |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **workflow_reason_category_request** | [**WorkflowReasonCategoryRequest**](WorkflowReasonCategoryRequest.md)|  | [optional] 
+
+### Return type
 
 [**WorkflowReasonCategoryResponse**](WorkflowReasonCategoryResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: application/json
-* **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **201**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**201** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](WorkflowApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_workflow\_activity**
 
-> WorkflowActivityListResponse get\_workflow\_activity()
+# **get_workflow_activity**
+> WorkflowActivityListResponse get_workflow_activity()
 
 Get Workflow Activities
 
-#### Search Query | Supported Keys | Supported Operators | Notes | |-------------------------|---------------------|--------------------------------------------------| | id | `:` | Equal operator | | effectiveDate | > < |Greater than or equal to Less than or equal to | | employee.id | `:` | Equal operator |
+### Search Query | Supported Keys          | Supported Operators | Notes                                            | |-------------------------|---------------------|--------------------------------------------------| | id                      | `:`                 | Equal operator                                   | | effectiveDate           | ><br><              |Greater than or equal to<br>Less than or equal to | | employee.id             | `:`                 | Equal operator                                   | 
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, WorkflowApi, ApiException
@@ -176,41 +181,43 @@ except ApiException as e:
     print("Exception when calling WorkflowApi->get_workflow_activity: %s\n" % e)
 ```
 
-#### Parameters
+
+### Parameters
 
 This endpoint does not need any parameter.
 
-#### Return type
+### Return type
 
 [**WorkflowActivityListResponse**](WorkflowActivityListResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](WorkflowApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_workflow\_reason**
 
-> WorkflowReasonListResponse get\_workflow\_reason()
+# **get_workflow_reason**
+> WorkflowReasonListResponse get_workflow_reason()
 
 Get Workflow Reasons
 
-#### Search Query | Supported Keys | Supported Operators | Notes | |-------------------------|---------------------|----------------------------| | code | `:` | Like operator | | name | `:` | Like operator | | category.id | `:` | Equal operator |
+### Search Query | Supported Keys          | Supported Operators | Notes                      | |-------------------------|---------------------|----------------------------| | code                    | `:`                 | Like operator              | | name                    | `:`                 | Like operator              | | category.id                    | `:`                 | Equal operator              | 
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, WorkflowApi, ApiException
@@ -237,41 +244,43 @@ except ApiException as e:
     print("Exception when calling WorkflowApi->get_workflow_reason: %s\n" % e)
 ```
 
-#### Parameters
+
+### Parameters
 
 This endpoint does not need any parameter.
 
-#### Return type
+### Return type
 
 [**WorkflowReasonListResponse**](WorkflowReasonListResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](WorkflowApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_workflow\_reason\_category**
 
-> WorkflowReasonCategoryListResponse get\_workflow\_reason\_category()
+# **get_workflow_reason_category**
+> WorkflowReasonCategoryListResponse get_workflow_reason_category()
 
 Get Workflow Reason Categories
 
-#### Search Query | Supported Keys | Supported Operators | Notes | |-------------------------|---------------------|----------------------------| | code | `:` | Like operator | | name | `:` | Like operator |
+### Search Query | Supported Keys          | Supported Operators | Notes                      | |-------------------------|---------------------|----------------------------| | code                    | `:`                 | Like operator              | | name                    | `:`                 | Like operator              | 
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, WorkflowApi, ApiException
@@ -298,39 +307,41 @@ except ApiException as e:
     print("Exception when calling WorkflowApi->get_workflow_reason_category: %s\n" % e)
 ```
 
-#### Parameters
+
+### Parameters
 
 This endpoint does not need any parameter.
 
-#### Return type
+### Return type
 
 [**WorkflowReasonCategoryListResponse**](WorkflowReasonCategoryListResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](WorkflowApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **update\_workflow\_reason**
 
-> WorkflowReasonResponse update\_workflow\_reason(id, workflow\_reason\_request)
+# **update_workflow_reason**
+> WorkflowReasonResponse update_workflow_reason(id, workflow_reason_request)
 
 Update Workflow Reason
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, WorkflowApi, ApiException
@@ -359,42 +370,45 @@ except ApiException as e:
     print("Exception when calling WorkflowApi->update_workflow_reason: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name                          | Type                                                  | Description | Notes       |
-| ----------------------------- | ----------------------------------------------------- | ----------- | ----------- |
-| **id**                        | **str**                                               |             |             |
-| **workflow\_reason\_request** | [**WorkflowReasonRequest**](WorkflowReasonRequest.md) |             | \[optional] |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**|  | 
+ **workflow_reason_request** | [**WorkflowReasonRequest**](WorkflowReasonRequest.md)|  | [optional] 
+
+### Return type
 
 [**WorkflowReasonResponse**](WorkflowReasonResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: application/json
-* **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](WorkflowApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **update\_workflow\_reason\_categories**
 
-> WorkflowReasonCategoryResponse update\_workflow\_reason\_categories(id, workflow\_reason\_category\_request)
+# **update_workflow_reason_categories**
+> WorkflowReasonCategoryResponse update_workflow_reason_categories(id, workflow_reason_category_request)
 
 Update Workflow Reason Category
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, WorkflowApi, ApiException
@@ -423,31 +437,34 @@ except ApiException as e:
     print("Exception when calling WorkflowApi->update_workflow_reason_categories: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name                                    | Type                                                                  | Description | Notes       |
-| --------------------------------------- | --------------------------------------------------------------------- | ----------- | ----------- |
-| **id**                                  | **str**                                                               |             |             |
-| **workflow\_reason\_category\_request** | [**WorkflowReasonCategoryRequest**](WorkflowReasonCategoryRequest.md) |             | \[optional] |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**|  | 
+ **workflow_reason_category_request** | [**WorkflowReasonCategoryRequest**](WorkflowReasonCategoryRequest.md)|  | [optional] 
+
+### Return type
 
 [**WorkflowReasonCategoryResponse**](WorkflowReasonCategoryResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: application/json
-* **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](WorkflowApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+

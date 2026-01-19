@@ -1,26 +1,25 @@
 # AnomalyDetectionApi
 
-## AnomalyDetectionApi
+> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
+> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!\
-> &#xNAN;**✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
+All URIs are relative to *https://api.catapa.com*
 
-All URIs are relative to _https://api.catapa.com_
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**read_anomaly_suspect**](AnomalyDetectionApi.md#read_anomaly_suspect) | **GET** /anomalydetection/v1/anomaly-detection-types/MEDICAL_CLAIM/anomaly-suspects | Read Anomaly Suspects
+[**read_anomaly_suspect_by_id**](AnomalyDetectionApi.md#read_anomaly_suspect_by_id) | **GET** /anomalydetection/v1/anomaly-detection-types/MEDICAL_CLAIM/anomaly-suspects/{id} | Read Anomaly Suspect By Id
 
-| Method                                                                                  | HTTP request                                                                              | Description                |
-| --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | -------------------------- |
-| [**read\_anomaly\_suspect**](AnomalyDetectionApi.md#read_anomaly_suspect)               | **GET** /anomalydetection/v1/anomaly-detection-types/MEDICAL\_CLAIM/anomaly-suspects      | Read Anomaly Suspects      |
-| [**read\_anomaly\_suspect\_by\_id**](AnomalyDetectionApi.md#read_anomaly_suspect_by_id) | **GET** /anomalydetection/v1/anomaly-detection-types/MEDICAL\_CLAIM/anomaly-suspects/{id} | Read Anomaly Suspect By Id |
 
-## **read\_anomaly\_suspect**
-
-> AnomalySuspectListResponse read\_anomaly\_suspect()
+# **read_anomaly_suspect**
+> AnomalySuspectListResponse read_anomaly_suspect()
 
 Read Anomaly Suspects
 
-#### Search Query | Supported Keys | Supported Operators | Notes | | ----------------------------- | ------------------- | ------------------------------------------------- | | identifier | : | Like |
+### Search Query | Supported Keys                | Supported Operators | Notes                                             | | ----------------------------- | ------------------- | ------------------------------------------------- | | identifier                    | :                   | Like                                              | 
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, AnomalyDetectionApi, ApiException
@@ -47,39 +46,41 @@ except ApiException as e:
     print("Exception when calling AnomalyDetectionApi->read_anomaly_suspect: %s\n" % e)
 ```
 
-#### Parameters
+
+### Parameters
 
 This endpoint does not need any parameter.
 
-#### Return type
+### Return type
 
 [**AnomalySuspectListResponse**](AnomalySuspectListResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](AnomalyDetectionApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **read\_anomaly\_suspect\_by\_id**
 
-> AnomalySuspectResponse read\_anomaly\_suspect\_by\_id(id)
+# **read_anomaly_suspect_by_id**
+> AnomalySuspectResponse read_anomaly_suspect_by_id(id)
 
 Read Anomaly Suspect By Id
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, AnomalyDetectionApi, ApiException
@@ -107,30 +108,33 @@ except ApiException as e:
     print("Exception when calling AnomalyDetectionApi->read_anomaly_suspect_by_id: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name   | Type    | Description | Notes |
-| ------ | ------- | ----------- | ----- |
-| **id** | **str** |             |       |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**|  | 
+
+### Return type
 
 [**AnomalySuspectResponse**](AnomalySuspectResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](AnomalyDetectionApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+

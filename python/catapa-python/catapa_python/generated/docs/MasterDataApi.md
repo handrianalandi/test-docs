@@ -1,42 +1,41 @@
 # MasterDataApi
 
-## MasterDataApi
+> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
+> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!\
-> &#xNAN;**✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
+All URIs are relative to *https://api.catapa.com*
 
-All URIs are relative to _https://api.catapa.com_
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**create_city**](MasterDataApi.md#create_city) | **POST** /core/v1/cities | Create City
+[**create_country**](MasterDataApi.md#create_country) | **POST** /core/v1/countries | Create Country
+[**create_employment_type**](MasterDataApi.md#create_employment_type) | **POST** /core/v1/employment-types | Create Employment Type
+[**create_religion**](MasterDataApi.md#create_religion) | **POST** /core/v1/religions | Create Religion
+[**get_bank_branches**](MasterDataApi.md#get_bank_branches) | **GET** /core/v1/bank-branches | Get Bank Branches
+[**get_banks**](MasterDataApi.md#get_banks) | **GET** /core/v1/banks | Get Banks
+[**get_cities**](MasterDataApi.md#get_cities) | **GET** /core/v1/cities | Get Cities
+[**get_countries**](MasterDataApi.md#get_countries) | **GET** /core/v1/countries | Get Countries
+[**get_currencies**](MasterDataApi.md#get_currencies) | **GET** /core/v1/currencies | Get Currencies
+[**get_education_levels**](MasterDataApi.md#get_education_levels) | **GET** /core/v1/education-levels | Get Education Levels
+[**get_employment_status_type**](MasterDataApi.md#get_employment_status_type) | **GET** /core/v1/employment-status-types | Get Employment Status Type
+[**get_employment_type**](MasterDataApi.md#get_employment_type) | **GET** /core/v1/employment-types | Get Employment Type
+[**get_family_relations**](MasterDataApi.md#get_family_relations) | **GET** /core/v1/family-relations | Get Family Relations
+[**get_field_of_studies**](MasterDataApi.md#get_field_of_studies) | **GET** /core/v1/field-of-studies | Get Field Of Study
+[**get_historical_educations**](MasterDataApi.md#get_historical_educations) | **GET** /core/v1/educations | Get Historical Educations
+[**get_identity_card**](MasterDataApi.md#get_identity_card) | **GET** /core/v1/identity-cards | Get Identity Card
+[**get_institutions**](MasterDataApi.md#get_institutions) | **GET** /core/v1/institutions | Get Institutions
+[**get_religions**](MasterDataApi.md#get_religions) | **GET** /core/v1/religions | Get Religions
+[**get_states**](MasterDataApi.md#get_states) | **GET** /core/v1/states | Get States
+[**update_employment_type**](MasterDataApi.md#update_employment_type) | **PUT** /core/v1/employment-types/{id} | Update Employment Type
 
-| Method                                                                           | HTTP request                             | Description                |
-| -------------------------------------------------------------------------------- | ---------------------------------------- | -------------------------- |
-| [**create\_city**](MasterDataApi.md#create_city)                                 | **POST** /core/v1/cities                 | Create City                |
-| [**create\_country**](MasterDataApi.md#create_country)                           | **POST** /core/v1/countries              | Create Country             |
-| [**create\_employment\_type**](MasterDataApi.md#create_employment_type)          | **POST** /core/v1/employment-types       | Create Employment Type     |
-| [**create\_religion**](MasterDataApi.md#create_religion)                         | **POST** /core/v1/religions              | Create Religion            |
-| [**get\_bank\_branches**](MasterDataApi.md#get_bank_branches)                    | **GET** /core/v1/bank-branches           | Get Bank Branches          |
-| [**get\_banks**](MasterDataApi.md#get_banks)                                     | **GET** /core/v1/banks                   | Get Banks                  |
-| [**get\_cities**](MasterDataApi.md#get_cities)                                   | **GET** /core/v1/cities                  | Get Cities                 |
-| [**get\_countries**](MasterDataApi.md#get_countries)                             | **GET** /core/v1/countries               | Get Countries              |
-| [**get\_currencies**](MasterDataApi.md#get_currencies)                           | **GET** /core/v1/currencies              | Get Currencies             |
-| [**get\_education\_levels**](MasterDataApi.md#get_education_levels)              | **GET** /core/v1/education-levels        | Get Education Levels       |
-| [**get\_employment\_status\_type**](MasterDataApi.md#get_employment_status_type) | **GET** /core/v1/employment-status-types | Get Employment Status Type |
-| [**get\_employment\_type**](MasterDataApi.md#get_employment_type)                | **GET** /core/v1/employment-types        | Get Employment Type        |
-| [**get\_family\_relations**](MasterDataApi.md#get_family_relations)              | **GET** /core/v1/family-relations        | Get Family Relations       |
-| [**get\_field\_of\_studies**](MasterDataApi.md#get_field_of_studies)             | **GET** /core/v1/field-of-studies        | Get Field Of Study         |
-| [**get\_historical\_educations**](MasterDataApi.md#get_historical_educations)    | **GET** /core/v1/educations              | Get Historical Educations  |
-| [**get\_identity\_card**](MasterDataApi.md#get_identity_card)                    | **GET** /core/v1/identity-cards          | Get Identity Card          |
-| [**get\_institutions**](MasterDataApi.md#get_institutions)                       | **GET** /core/v1/institutions            | Get Institutions           |
-| [**get\_religions**](MasterDataApi.md#get_religions)                             | **GET** /core/v1/religions               | Get Religions              |
-| [**get\_states**](MasterDataApi.md#get_states)                                   | **GET** /core/v1/states                  | Get States                 |
-| [**update\_employment\_type**](MasterDataApi.md#update_employment_type)          | **PUT** /core/v1/employment-types/{id}   | Update Employment Type     |
 
-## **create\_city**
-
-> CityResponse create\_city(create\_city\_request)
+# **create_city**
+> CityResponse create_city(create_city_request)
 
 Create City
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, MasterDataApi, ApiException
@@ -64,41 +63,44 @@ except ApiException as e:
     print("Exception when calling MasterDataApi->create_city: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name                      | Type                                          | Description | Notes       |
-| ------------------------- | --------------------------------------------- | ----------- | ----------- |
-| **create\_city\_request** | [**CreateCityRequest**](CreateCityRequest.md) |             | \[optional] |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **create_city_request** | [**CreateCityRequest**](CreateCityRequest.md)|  | [optional] 
+
+### Return type
 
 [**CityResponse**](CityResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: application/json
-* **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **201**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**201** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](MasterDataApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **create\_country**
 
-> CountryResponse create\_country(country\_request)
+# **create_country**
+> CountryResponse create_country(country_request)
 
 Create Country
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, MasterDataApi, ApiException
@@ -126,41 +128,44 @@ except ApiException as e:
     print("Exception when calling MasterDataApi->create_country: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name                 | Type                                    | Description | Notes       |
-| -------------------- | --------------------------------------- | ----------- | ----------- |
-| **country\_request** | [**CountryRequest**](CountryRequest.md) |             | \[optional] |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **country_request** | [**CountryRequest**](CountryRequest.md)|  | [optional] 
+
+### Return type
 
 [**CountryResponse**](CountryResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: application/json
-* **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **201**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**201** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](MasterDataApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **create\_employment\_type**
 
-> EmploymentTypeResponse create\_employment\_type(employment\_type\_request)
+# **create_employment_type**
+> EmploymentTypeResponse create_employment_type(employment_type_request)
 
 Create Employment Type
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, MasterDataApi, ApiException
@@ -188,41 +193,44 @@ except ApiException as e:
     print("Exception when calling MasterDataApi->create_employment_type: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name                          | Type                                                  | Description | Notes       |
-| ----------------------------- | ----------------------------------------------------- | ----------- | ----------- |
-| **employment\_type\_request** | [**EmploymentTypeRequest**](EmploymentTypeRequest.md) |             | \[optional] |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **employment_type_request** | [**EmploymentTypeRequest**](EmploymentTypeRequest.md)|  | [optional] 
+
+### Return type
 
 [**EmploymentTypeResponse**](EmploymentTypeResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: application/json
-* **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **201**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**201** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](MasterDataApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **create\_religion**
 
-> ReligionResponse create\_religion(religion\_request)
+# **create_religion**
+> ReligionResponse create_religion(religion_request)
 
 Create Religion
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, MasterDataApi, ApiException
@@ -250,43 +258,46 @@ except ApiException as e:
     print("Exception when calling MasterDataApi->create_religion: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name                  | Type                                      | Description | Notes       |
-| --------------------- | ----------------------------------------- | ----------- | ----------- |
-| **religion\_request** | [**ReligionRequest**](ReligionRequest.md) |             | \[optional] |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **religion_request** | [**ReligionRequest**](ReligionRequest.md)|  | [optional] 
+
+### Return type
 
 [**ReligionResponse**](ReligionResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: application/json
-* **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **201**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**201** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](MasterDataApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_bank\_branches**
 
-> BankBranchListResponse get\_bank\_branches()
+# **get_bank_branches**
+> BankBranchListResponse get_bank_branches()
 
 Get Bank Branches
 
-#### Search Query | Supported Keys | Supported Operators | Notes | |--------------------|---------------------|------------------------------------------------------------------------------------------| | id | `:` | Equal operator Support multiple values with each value separated by the `;` delimiter|
+### Search Query | Supported Keys     | Supported Operators | Notes                                                                                    | |--------------------|---------------------|------------------------------------------------------------------------------------------| | id                 | `:`                 | Equal operator<br/>Support multiple values with each value separated by the `;` delimiter| 
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, MasterDataApi, ApiException
@@ -313,39 +324,41 @@ except ApiException as e:
     print("Exception when calling MasterDataApi->get_bank_branches: %s\n" % e)
 ```
 
-#### Parameters
+
+### Parameters
 
 This endpoint does not need any parameter.
 
-#### Return type
+### Return type
 
 [**BankBranchListResponse**](BankBranchListResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](MasterDataApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_banks**
 
-> BankListResponse get\_banks()
+# **get_banks**
+> BankListResponse get_banks()
 
 Get Banks
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, MasterDataApi, ApiException
@@ -372,39 +385,41 @@ except ApiException as e:
     print("Exception when calling MasterDataApi->get_banks: %s\n" % e)
 ```
 
-#### Parameters
+
+### Parameters
 
 This endpoint does not need any parameter.
 
-#### Return type
+### Return type
 
 [**BankListResponse**](BankListResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](MasterDataApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_cities**
 
-> CityListResponse get\_cities()
+# **get_cities**
+> CityListResponse get_cities()
 
 Get Cities
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, MasterDataApi, ApiException
@@ -431,39 +446,41 @@ except ApiException as e:
     print("Exception when calling MasterDataApi->get_cities: %s\n" % e)
 ```
 
-#### Parameters
+
+### Parameters
 
 This endpoint does not need any parameter.
 
-#### Return type
+### Return type
 
 [**CityListResponse**](CityListResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](MasterDataApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_countries**
 
-> CountryListResponse get\_countries()
+# **get_countries**
+> CountryListResponse get_countries()
 
 Get Countries
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, MasterDataApi, ApiException
@@ -490,39 +507,41 @@ except ApiException as e:
     print("Exception when calling MasterDataApi->get_countries: %s\n" % e)
 ```
 
-#### Parameters
+
+### Parameters
 
 This endpoint does not need any parameter.
 
-#### Return type
+### Return type
 
 [**CountryListResponse**](CountryListResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](MasterDataApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_currencies**
 
-> CurrencyListResponse get\_currencies()
+# **get_currencies**
+> CurrencyListResponse get_currencies()
 
 Get Currencies
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, MasterDataApi, ApiException
@@ -549,39 +568,41 @@ except ApiException as e:
     print("Exception when calling MasterDataApi->get_currencies: %s\n" % e)
 ```
 
-#### Parameters
+
+### Parameters
 
 This endpoint does not need any parameter.
 
-#### Return type
+### Return type
 
 [**CurrencyListResponse**](CurrencyListResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](MasterDataApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_education\_levels**
 
-> EducationLevelListResponse get\_education\_levels(page, size, query)
+# **get_education_levels**
+> EducationLevelListResponse get_education_levels(page, size, query)
 
 Get Education Levels
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, MasterDataApi, ApiException
@@ -611,45 +632,48 @@ except ApiException as e:
     print("Exception when calling MasterDataApi->get_education_levels: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name      | Type    | Description      | Notes                        |
-| --------- | ------- | ---------------- | ---------------------------- |
-| **page**  | **int** | Page number      | \[optional] \[default to 0]  |
-| **size**  | **int** | Page size        | \[optional] \[default to 10] |
-| **query** | **str** | ### Search Query | Supported Keys               |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **int**| Page number | [optional] [default to 0]
+ **size** | **int**| Page size | [optional] [default to 10]
+ **query** | **str**| ### Search Query | Supported Keys     | Supported Operators | Notes                                                                                | |--------------------|---------------------|--------------------------------------------------------------------------------------| | id                 | &#x60;:&#x60;                 | Equal operator with multiple values. Each value should separated with delimiters &#x60;;&#x60; |  | [optional] 
+
+### Return type
 
 [**EducationLevelListResponse**](EducationLevelListResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](MasterDataApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_employment\_status\_type**
 
-> EmploymentStatusTypeListResponse get\_employment\_status\_type(name, employment\_status\_number\_type, default\_data)
+# **get_employment_status_type**
+> EmploymentStatusTypeListResponse get_employment_status_type(name, employment_status_number_type, default_data)
 
 Get Employment Status Type
 
-#### Search Query | Supported Keys | Supported Operators | Notes | |----------------------------|---------------------|----------------------------| | name | `:` | Like operator | | employmentStatusNumberType | `:` | Like operator | | defaultData | `:` | Equal operator |
+### Search Query | Supported Keys             | Supported Operators | Notes                      | |----------------------------|---------------------|----------------------------| | name                       | `:`                 | Like operator              | | employmentStatusNumberType | `:`                 | Like operator              | | defaultData                | `:`                 | Equal operator             | 
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, MasterDataApi, ApiException
@@ -679,45 +703,48 @@ except ApiException as e:
     print("Exception when calling MasterDataApi->get_employment_status_type: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name                                 | Type    | Description | Notes       |
-| ------------------------------------ | ------- | ----------- | ----------- |
-| **name**                             | **str** |             | \[optional] |
-| **employment\_status\_number\_type** | **str** |             | \[optional] |
-| **default\_data**                    | **str** |             | \[optional] |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **str**|  | [optional] 
+ **employment_status_number_type** | **str**|  | [optional] 
+ **default_data** | **str**|  | [optional] 
+
+### Return type
 
 [**EmploymentStatusTypeListResponse**](EmploymentStatusTypeListResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](MasterDataApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_employment\_type**
 
-> EmploymentTypeListResponse get\_employment\_type()
+# **get_employment_type**
+> EmploymentTypeListResponse get_employment_type()
 
 Get Employment Type
 
-#### Search Query | Supported Keys | Supported Operators | Notes | |-----------------------|---------------------|----------------------------| | name | `:` | Like operator | | employmentGroupCode | `:` | Like operator | | permanent | `:` | Equal operator | | otherLeaveStatus.code | `:` | Equal operator |
+### Search Query | Supported Keys        | Supported Operators | Notes                      | |-----------------------|---------------------|----------------------------| | name                  | `:`                 | Like operator              | | employmentGroupCode   | `:`                 | Like operator              | | permanent             | `:`                 | Equal operator             | | otherLeaveStatus.code | `:`                 | Equal operator             | 
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, MasterDataApi, ApiException
@@ -744,41 +771,43 @@ except ApiException as e:
     print("Exception when calling MasterDataApi->get_employment_type: %s\n" % e)
 ```
 
-#### Parameters
+
+### Parameters
 
 This endpoint does not need any parameter.
 
-#### Return type
+### Return type
 
 [**EmploymentTypeListResponse**](EmploymentTypeListResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](MasterDataApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_family\_relations**
 
-> FamilyMemberRelationListResponse get\_family\_relations()
+# **get_family_relations**
+> FamilyMemberRelationListResponse get_family_relations()
 
 Get Family Relations
 
-#### Search Query | Supported Keys | Supported Operators | Notes | |-------------------------|---------------------|----------------------------| | name | `:` | Like operator |
+### Search Query | Supported Keys          | Supported Operators | Notes                      | |-------------------------|---------------------|----------------------------| | name                    | `:`                 | Like operator              | 
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, MasterDataApi, ApiException
@@ -805,39 +834,41 @@ except ApiException as e:
     print("Exception when calling MasterDataApi->get_family_relations: %s\n" % e)
 ```
 
-#### Parameters
+
+### Parameters
 
 This endpoint does not need any parameter.
 
-#### Return type
+### Return type
 
 [**FamilyMemberRelationListResponse**](FamilyMemberRelationListResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](MasterDataApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_field\_of\_studies**
 
-> FieldOfStudyListResponse get\_field\_of\_studies(page, size, query)
+# **get_field_of_studies**
+> FieldOfStudyListResponse get_field_of_studies(page, size, query)
 
 Get Field Of Study
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, MasterDataApi, ApiException
@@ -867,43 +898,46 @@ except ApiException as e:
     print("Exception when calling MasterDataApi->get_field_of_studies: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name      | Type    | Description      | Notes                        |
-| --------- | ------- | ---------------- | ---------------------------- |
-| **page**  | **int** | Page number      | \[optional] \[default to 0]  |
-| **size**  | **int** | Page size        | \[optional] \[default to 10] |
-| **query** | **str** | ### Search Query | Supported Keys               |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **int**| Page number | [optional] [default to 0]
+ **size** | **int**| Page size | [optional] [default to 10]
+ **query** | **str**| ### Search Query | Supported Keys     | Supported Operators | Notes                                                                                | |--------------------|---------------------|--------------------------------------------------------------------------------------| | id                 | &#x60;:&#x60;                 | Equal operator with multiple values. Each value should separated with delimiters &#x60;;&#x60; |  | [optional] 
+
+### Return type
 
 [**FieldOfStudyListResponse**](FieldOfStudyListResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](MasterDataApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_historical\_educations**
 
-> EducationListResponse get\_historical\_educations(page, size, query)
+# **get_historical_educations**
+> EducationListResponse get_historical_educations(page, size, query)
 
 Get Historical Educations
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, MasterDataApi, ApiException
@@ -933,45 +967,48 @@ except ApiException as e:
     print("Exception when calling MasterDataApi->get_historical_educations: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name      | Type    | Description      | Notes                        |
-| --------- | ------- | ---------------- | ---------------------------- |
-| **page**  | **int** | Page number      | \[optional] \[default to 0]  |
-| **size**  | **int** | Page size        | \[optional] \[default to 10] |
-| **query** | **str** | ### Search Query | Supported Keys               |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **int**| Page number | [optional] [default to 0]
+ **size** | **int**| Page size | [optional] [default to 10]
+ **query** | **str**| ### Search Query | Supported Keys     | Supported Operators | Notes                                                                                | |--------------------|---------------------|--------------------------------------------------------------------------------------| | id                 | &#x60;:&#x60;                 | Equal operator with multiple values. Each value should separated with delimiters &#x60;;&#x60; | | employee.id        | &#x60;:&#x60;                 | Equal operator with multiple values. Each value should separated with delimiters &#x60;;&#x60; |  | [optional] 
+
+### Return type
 
 [**EducationListResponse**](EducationListResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](MasterDataApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_identity\_card**
 
-> IdentityCardListResponse get\_identity\_card()
+# **get_identity_card**
+> IdentityCardListResponse get_identity_card()
 
 Get Identity Card
 
-#### Search Query | Supported Keys | Supported Operators | Notes | |-------------------------|---------------------|----------------------------| | name | `:` | Like operator |
+### Search Query | Supported Keys          | Supported Operators | Notes                      | |-------------------------|---------------------|----------------------------| | name                    | `:`                 | Like operator              | 
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, MasterDataApi, ApiException
@@ -998,39 +1035,41 @@ except ApiException as e:
     print("Exception when calling MasterDataApi->get_identity_card: %s\n" % e)
 ```
 
-#### Parameters
+
+### Parameters
 
 This endpoint does not need any parameter.
 
-#### Return type
+### Return type
 
 [**IdentityCardListResponse**](IdentityCardListResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](MasterDataApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_institutions**
 
-> InstitutionListResponse get\_institutions(page, size, query)
+# **get_institutions**
+> InstitutionListResponse get_institutions(page, size, query)
 
 Get Institutions
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, MasterDataApi, ApiException
@@ -1060,43 +1099,46 @@ except ApiException as e:
     print("Exception when calling MasterDataApi->get_institutions: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name      | Type    | Description      | Notes                        |
-| --------- | ------- | ---------------- | ---------------------------- |
-| **page**  | **int** | Page number      | \[optional] \[default to 0]  |
-| **size**  | **int** | Page size        | \[optional] \[default to 10] |
-| **query** | **str** | ### Search Query | Supported Keys               |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **int**| Page number | [optional] [default to 0]
+ **size** | **int**| Page size | [optional] [default to 10]
+ **query** | **str**| ### Search Query | Supported Keys     | Supported Operators | Notes                                                                                | |--------------------|---------------------|--------------------------------------------------------------------------------------| | id                 | &#x60;:&#x60;                 | Equal operator with multiple values. Each value should separated with delimiters &#x60;;&#x60; |  | [optional] 
+
+### Return type
 
 [**InstitutionListResponse**](InstitutionListResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](MasterDataApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_religions**
 
-> ReligionListResponse get\_religions()
+# **get_religions**
+> ReligionListResponse get_religions()
 
 Get Religions
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, MasterDataApi, ApiException
@@ -1123,39 +1165,41 @@ except ApiException as e:
     print("Exception when calling MasterDataApi->get_religions: %s\n" % e)
 ```
 
-#### Parameters
+
+### Parameters
 
 This endpoint does not need any parameter.
 
-#### Return type
+### Return type
 
 [**ReligionListResponse**](ReligionListResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](MasterDataApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_states**
 
-> StateListResponse get\_states()
+# **get_states**
+> StateListResponse get_states()
 
 Get States
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, MasterDataApi, ApiException
@@ -1182,39 +1226,41 @@ except ApiException as e:
     print("Exception when calling MasterDataApi->get_states: %s\n" % e)
 ```
 
-#### Parameters
+
+### Parameters
 
 This endpoint does not need any parameter.
 
-#### Return type
+### Return type
 
 [**StateListResponse**](StateListResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](MasterDataApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **update\_employment\_type**
 
-> EmploymentTypeResponse update\_employment\_type(id, employment\_type\_request)
+# **update_employment_type**
+> EmploymentTypeResponse update_employment_type(id, employment_type_request)
 
 Update Employment Type
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, MasterDataApi, ApiException
@@ -1243,31 +1289,34 @@ except ApiException as e:
     print("Exception when calling MasterDataApi->update_employment_type: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name                          | Type                                                  | Description | Notes       |
-| ----------------------------- | ----------------------------------------------------- | ----------- | ----------- |
-| **id**                        | **str**                                               |             |             |
-| **employment\_type\_request** | [**EmploymentTypeRequest**](EmploymentTypeRequest.md) |             | \[optional] |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**|  | 
+ **employment_type_request** | [**EmploymentTypeRequest**](EmploymentTypeRequest.md)|  | [optional] 
+
+### Return type
 
 [**EmploymentTypeResponse**](EmploymentTypeResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: application/json
-* **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](MasterDataApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+

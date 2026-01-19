@@ -1,27 +1,26 @@
 # EmployeeDetailApi
 
-## EmployeeDetailApi
+> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
+> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!\
-> &#xNAN;**✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
+All URIs are relative to *https://api.catapa.com*
 
-All URIs are relative to _https://api.catapa.com_
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**get_employee_detail**](EmployeeDetailApi.md#get_employee_detail) | **GET** /core/v1/employees/{employeeId}/employee-details | Get Employee Detail
+[**get_historical_employee_details**](EmployeeDetailApi.md#get_historical_employee_details) | **GET** /core/v1/employee-details | Get Historical Employee Details
+[**update_employee_detail**](EmployeeDetailApi.md#update_employee_detail) | **PUT** /core/v1/employees/{employeeId}/employee-details | Update Employee Detail
 
-| Method                                                                                         | HTTP request                                             | Description                     |
-| ---------------------------------------------------------------------------------------------- | -------------------------------------------------------- | ------------------------------- |
-| [**get\_employee\_detail**](EmployeeDetailApi.md#get_employee_detail)                          | **GET** /core/v1/employees/{employeeId}/employee-details | Get Employee Detail             |
-| [**get\_historical\_employee\_details**](EmployeeDetailApi.md#get_historical_employee_details) | **GET** /core/v1/employee-details                        | Get Historical Employee Details |
-| [**update\_employee\_detail**](EmployeeDetailApi.md#update_employee_detail)                    | **PUT** /core/v1/employees/{employeeId}/employee-details | Update Employee Detail          |
 
-## **get\_employee\_detail**
-
-> EmployeeDetailResponse get\_employee\_detail(employee\_id)
+# **get_employee_detail**
+> EmployeeDetailResponse get_employee_detail(employee_id)
 
 Get Employee Detail
 
 The `id` field in the response refers to the **employee's ID**, **not the employee detail's actual ID**.
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, EmployeeDetailApi, ApiException
@@ -49,41 +48,44 @@ except ApiException as e:
     print("Exception when calling EmployeeDetailApi->get_employee_detail: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name             | Type    | Description | Notes |
-| ---------------- | ------- | ----------- | ----- |
-| **employee\_id** | **str** |             |       |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **employee_id** | **str**|  | 
+
+### Return type
 
 [**EmployeeDetailResponse**](EmployeeDetailResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](EmployeeDetailApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_historical\_employee\_details**
 
-> EmployeeDetailListResponse get\_historical\_employee\_details(page, size, query)
+# **get_historical_employee_details**
+> EmployeeDetailListResponse get_historical_employee_details(page, size, query)
 
 Get Historical Employee Details
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, EmployeeDetailApi, ApiException
@@ -113,45 +115,48 @@ except ApiException as e:
     print("Exception when calling EmployeeDetailApi->get_historical_employee_details: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name      | Type    | Description      | Notes                        |
-| --------- | ------- | ---------------- | ---------------------------- |
-| **page**  | **int** | Page number      | \[optional] \[default to 0]  |
-| **size**  | **int** | Page size        | \[optional] \[default to 10] |
-| **query** | **str** | ### Search Query | Supported Keys               |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **int**| Page number | [optional] [default to 0]
+ **size** | **int**| Page size | [optional] [default to 10]
+ **query** | **str**| ### Search Query | Supported Keys     | Supported Operators | Notes                                                                                     | |--------------------|---------------------|-------------------------------------------------------------------------------------------| | id                 | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | employee.id        | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | effectiveDate      | &#x60;&lt;&#x60;                 | Less than or equal to&lt;br/&gt;&lt;br/&gt;Use &#x60;yyyy-MM-dd&#x60; format, e.g. &#x60;effectiveDate&lt;2025-01-31  &#x60; |  | [optional] 
+
+### Return type
 
 [**EmployeeDetailListResponse**](EmployeeDetailListResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](EmployeeDetailApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **update\_employee\_detail**
 
-> EmployeeDetailResponse update\_employee\_detail(employee\_id, employee\_detail\_request)
+# **update_employee_detail**
+> EmployeeDetailResponse update_employee_detail(employee_id, employee_detail_request)
 
 Update Employee Detail
 
 The `id` field in the response refers to the **employee's ID**, **not the employee detail's actual ID**.
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, EmployeeDetailApi, ApiException
@@ -180,31 +185,34 @@ except ApiException as e:
     print("Exception when calling EmployeeDetailApi->update_employee_detail: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name                          | Type                                                  | Description | Notes       |
-| ----------------------------- | ----------------------------------------------------- | ----------- | ----------- |
-| **employee\_id**              | **str**                                               |             |             |
-| **employee\_detail\_request** | [**EmployeeDetailRequest**](EmployeeDetailRequest.md) |             | \[optional] |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **employee_id** | **str**|  | 
+ **employee_detail_request** | [**EmployeeDetailRequest**](EmployeeDetailRequest.md)|  | [optional] 
+
+### Return type
 
 [**EmployeeDetailResponse**](EmployeeDetailResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: application/json
-* **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](EmployeeDetailApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+

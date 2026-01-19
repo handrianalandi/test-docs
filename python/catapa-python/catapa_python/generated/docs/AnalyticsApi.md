@@ -1,25 +1,24 @@
 # AnalyticsApi
 
-## AnalyticsApi
+> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
+> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!\
-> &#xNAN;**✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
+All URIs are relative to *https://api.catapa.com*
 
-All URIs are relative to _https://api.catapa.com_
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**create_analytics_chart**](AnalyticsApi.md#create_analytics_chart) | **POST** /core/v1/analytics/charts | Create Analytics Chart
+[**get_analytics_chart**](AnalyticsApi.md#get_analytics_chart) | **GET** /core/v1/analytics/charts | Get Analytics Chart Data
+[**get_analytics_data_by_chart_id_and_current_user**](AnalyticsApi.md#get_analytics_data_by_chart_id_and_current_user) | **GET** /core/v1/users/me/analytics/charts/{id}/data | Get Analytics Data by Chart ID and Current User
 
-| Method                                                                                                                         | HTTP request                                         | Description                                     |
-| ------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------- | ----------------------------------------------- |
-| [**create\_analytics\_chart**](AnalyticsApi.md#create_analytics_chart)                                                         | **POST** /core/v1/analytics/charts                   | Create Analytics Chart                          |
-| [**get\_analytics\_chart**](AnalyticsApi.md#get_analytics_chart)                                                               | **GET** /core/v1/analytics/charts                    | Get Analytics Chart Data                        |
-| [**get\_analytics\_data\_by\_chart\_id\_and\_current\_user**](AnalyticsApi.md#get_analytics_data_by_chart_id_and_current_user) | **GET** /core/v1/users/me/analytics/charts/{id}/data | Get Analytics Data by Chart ID and Current User |
 
-## **create\_analytics\_chart**
-
-> AnalyticsChartResponse create\_analytics\_chart(analytics\_chart\_request)
+# **create_analytics_chart**
+> AnalyticsChartResponse create_analytics_chart(analytics_chart_request)
 
 Create Analytics Chart
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, AnalyticsApi, ApiException
@@ -47,43 +46,46 @@ except ApiException as e:
     print("Exception when calling AnalyticsApi->create_analytics_chart: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name                          | Type                                                  | Description | Notes       |
-| ----------------------------- | ----------------------------------------------------- | ----------- | ----------- |
-| **analytics\_chart\_request** | [**AnalyticsChartRequest**](AnalyticsChartRequest.md) |             | \[optional] |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **analytics_chart_request** | [**AnalyticsChartRequest**](AnalyticsChartRequest.md)|  | [optional] 
+
+### Return type
 
 [**AnalyticsChartResponse**](AnalyticsChartResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: application/json
-* **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **201**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**201** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](AnalyticsApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_analytics\_chart**
 
-> AnalyticsChartListResponse get\_analytics\_chart()
+# **get_analytics_chart**
+> AnalyticsChartListResponse get_analytics_chart()
 
 Get Analytics Chart Data
 
-#### Search Query | Supported Keys | Supported Operators | Notes | |----------------|---------------------|---------------| | title | : | Like operator |
+### Search Query | Supported Keys | Supported Operators | Notes         | |----------------|---------------------|---------------| | title          | :                   | Like operator | 
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, AnalyticsApi, ApiException
@@ -110,41 +112,43 @@ except ApiException as e:
     print("Exception when calling AnalyticsApi->get_analytics_chart: %s\n" % e)
 ```
 
-#### Parameters
+
+### Parameters
 
 This endpoint does not need any parameter.
 
-#### Return type
+### Return type
 
 [**AnalyticsChartListResponse**](AnalyticsChartListResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](AnalyticsApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_analytics\_data\_by\_chart\_id\_and\_current\_user**
 
-> AnalyticsChartDataResponse get\_analytics\_data\_by\_chart\_id\_and\_current\_user(tenant, id)
-
-Get Analytics Data by Chart ID and Current User
+# **get_analytics_data_by_chart_id_and_current_user**
+> AnalyticsChartDataResponse get_analytics_data_by_chart_id_and_current_user(tenant, id)
 
 Get Analytics Data by Chart ID and Current User
 
-#### Example
+Get Analytics Data by Chart ID and Current User
+
+### Example
+
 
 ```python
 from catapa import Catapa, AnalyticsApi, ApiException
@@ -173,31 +177,34 @@ except ApiException as e:
     print("Exception when calling AnalyticsApi->get_analytics_data_by_chart_id_and_current_user: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name       | Type    | Description | Notes |
-| ---------- | ------- | ----------- | ----- |
-| **tenant** | **str** |             |       |
-| **id**     | **str** |             |       |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenant** | **str**|  | 
+ **id** | **str**|  | 
+
+### Return type
 
 [**AnalyticsChartDataResponse**](AnalyticsChartDataResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](AnalyticsApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+

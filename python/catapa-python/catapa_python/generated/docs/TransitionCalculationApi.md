@@ -1,40 +1,31 @@
 # TransitionCalculationApi
 
-## TransitionCalculationApi
+> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
+> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!\
-> &#xNAN;**✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
+All URIs are relative to *https://api.catapa.com*
 
-All URIs are relative to _https://api.catapa.com_
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**get_processable_time_allowance_transition**](TransitionCalculationApi.md#get_processable_time_allowance_transition) | **GET** /core/v1/transition-calculations/time-allowances/process/processable | Get Processable Time Allowance Transition
+[**get_processable_transition_calculation**](TransitionCalculationApi.md#get_processable_transition_calculation) | **GET** /core/v1/transition-calculations/process/processable/unprocessed | Get Processable Transition Calculation
+[**get_processed_transition_calculation**](TransitionCalculationApi.md#get_processed_transition_calculation) | **GET** /core/v1/transition-calculations/process/processable/processed | Get Processed Transition Calculation
+[**get_prorate_details_by_transition_calculation_detail_id**](TransitionCalculationApi.md#get_prorate_details_by_transition_calculation_detail_id) | **GET** /core/v1/transition-calculation-details/{id}/prorate-details | Get Prorate Details By Transition Calculation Detail Id
+[**get_time_allowance_detailsby_transition_calculation_detail_id**](TransitionCalculationApi.md#get_time_allowance_detailsby_transition_calculation_detail_id) | **GET** /core/v1/transition-calculation-details/{id}/time-allowance-details | Get Time Allowance Details by Transition Calculation Detail Id
+[**get_transition_calculation_count**](TransitionCalculationApi.md#get_transition_calculation_count) | **GET** /core/v1/transition-calculations/process/count | Get Transition Calculation Count
+[**get_transition_calculationby_id**](TransitionCalculationApi.md#get_transition_calculationby_id) | **GET** /core/v1/transition-calculations/{id} | Get Transition Calculation by Id
+[**update_transition_calculation_details_with_editable_type**](TransitionCalculationApi.md#update_transition_calculation_details_with_editable_type) | **PUT** /core/v1/transition-calculations/{id}/details | Update Transition Calculation Details With Editable Type
 
-| Method                                                                                                                                                                | HTTP request                                                                 | Description                                                    |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | -------------------------------------------------------------- |
-| [**get\_processable\_time\_allowance\_transition**](TransitionCalculationApi.md#get_processable_time_allowance_transition)                                            | **GET** /core/v1/transition-calculations/time-allowances/process/processable | Get Processable Time Allowance Transition                      |
-| [**get\_processable\_transition\_calculation**](TransitionCalculationApi.md#get_processable_transition_calculation)                                                   | **GET** /core/v1/transition-calculations/process/processable/unprocessed     | Get Processable Transition Calculation                         |
-| [**get\_processed\_transition\_calculation**](TransitionCalculationApi.md#get_processed_transition_calculation)                                                       | **GET** /core/v1/transition-calculations/process/processable/processed       | Get Processed Transition Calculation                           |
-| [**get\_prorate\_details\_by\_transition\_calculation\_detail\_id**](TransitionCalculationApi.md#get_prorate_details_by_transition_calculation_detail_id)             | **GET** /core/v1/transition-calculation-details/{id}/prorate-details         | Get Prorate Details By Transition Calculation Detail Id        |
-| [**get\_time\_allowance\_detailsby\_transition\_calculation\_detail\_id**](TransitionCalculationApi.md#get_time_allowance_detailsby_transition_calculation_detail_id) | **GET** /core/v1/transition-calculation-details/{id}/time-allowance-details  | Get Time Allowance Details by Transition Calculation Detail Id |
-| [**get\_transition\_calculation\_count**](TransitionCalculationApi.md#get_transition_calculation_count)                                                               | **GET** /core/v1/transition-calculations/process/count                       | Get Transition Calculation Count                               |
-| [**get\_transition\_calculationby\_id**](TransitionCalculationApi.md#get_transition_calculationby_id)                                                                 | **GET** /core/v1/transition-calculations/{id}                                | Get Transition Calculation by Id                               |
-| [**update\_transition\_calculation\_details\_with\_editable\_type**](TransitionCalculationApi.md#update_transition_calculation_details_with_editable_type)            | **PUT** /core/v1/transition-calculations/{id}/details                        | Update Transition Calculation Details With Editable Type       |
 
-## **get\_processable\_time\_allowance\_transition**
-
-> ProcessableTimeAllowanceTransitionListResponse get\_processable\_time\_allowance\_transition()
+# **get_processable_time_allowance_transition**
+> ProcessableTimeAllowanceTransitionListResponse get_processable_time_allowance_transition()
 
 Get Processable Time Allowance Transition
 
-⚠️ **This endpoint is deprecated.** Transition Calculation Process now available at Regular Salary Process, so the menu and existing endpoint are deprecated and will be removed ### Search Query | Supported Keys | Supported Operators | Notes | | ---------------------------- | ------------------- | --------------------------------------------------------------------------- | | idIn | : | Equal operator with multiple values, each value separated with delimiters ; | | year | : | Like operator | | month | : | Like operator | | organizationId | : | Like operator | | jobTitleId | : | Like operator | | locationId | : | Like operator | | employeeId | : | Like operator | | employeeName | : | Like operator | | employeeIdentificationNumber | : | Like operator | | startDate | :\
-\>\
-< | Equal\
-Greater than or equal to\
-Less than or equal to | | endDate | :\
-\>\
-< | Equal\
-Greater than or equal to\
-Less than or equal to |
+⚠️ **This endpoint is deprecated.** Transition Calculation Process now available at Regular Salary Process, so the menu and existing endpoint are deprecated and will be removed  ### Search Query | Supported Keys               | Supported Operators | Notes                                                                       | | ---------------------------- | ------------------- | --------------------------------------------------------------------------- | | idIn                         | :                   | Equal operator with multiple values, each value separated with delimiters ; | | year                         | :                   | Like operator                                                               | | month                        | :                   | Like operator                                                               | | organizationId               | :                   | Like operator                                                               | | jobTitleId                   | :                   | Like operator                                                               | | locationId                   | :                   | Like operator                                                               | | employeeId                   | :                   | Like operator                                                               | | employeeName                 | :                   | Like operator                                                               | | employeeIdentificationNumber | :                   | Like operator                                                               | | startDate                    | :<br>><br><          | Equal<br>Greater than or equal to<br>Less than or equal to                  | | endDate                      | :<br>><br><          | Equal<br>Greater than or equal to<br>Less than or equal to                  | 
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, TransitionCalculationApi, ApiException
@@ -61,49 +52,43 @@ except ApiException as e:
     print("Exception when calling TransitionCalculationApi->get_processable_time_allowance_transition: %s\n" % e)
 ```
 
-#### Parameters
+
+### Parameters
 
 This endpoint does not need any parameter.
 
-#### Return type
+### Return type
 
 [**ProcessableTimeAllowanceTransitionListResponse**](ProcessableTimeAllowanceTransitionListResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](TransitionCalculationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_processable\_transition\_calculation**
 
-> UnprocessedTransitionCalculationListResponse get\_processable\_transition\_calculation()
+# **get_processable_transition_calculation**
+> UnprocessedTransitionCalculationListResponse get_processable_transition_calculation()
 
 Get Processable Transition Calculation
 
-⚠️ **This endpoint is deprecated.** Transition Calculation Process now available at Regular Salary Process, so the menu and existing endpoint are deprecated and will be removed --- ### Search Query | Supported Keys | Supported Operators | Notes | | ---------------------------- | ------------------- | --------------------------------------------------------------------------- | | idIn | : | Equal operator with multiple values, each value separated with delimiters ; | | year | : | Like operator | | month | : | Like operator | | organizationId | : | Like operator | | jobTitleId | : | Like operator | | locationId | : | Like operator | | employeeId | : | Like operator | | employeeName | : | Like operator | | employeeIdentificationNumber | : | Like operator | | startDate | :\
-\>\
-< | Equal\
-Greater than or equal to\
-Less than or equal to | | endDate | :\
-\>\
-< | Equal\
-Greater than or equal to\
-Less than or equal to |
+⚠️ **This endpoint is deprecated.**  Transition Calculation Process now available at Regular Salary Process, so the menu and existing endpoint are deprecated and will be removed  --- ### Search Query | Supported Keys               | Supported Operators | Notes                                                                       | | ---------------------------- | ------------------- | --------------------------------------------------------------------------- | | idIn                         | :                   | Equal operator with multiple values, each value separated with delimiters ; | | year                         | :                   | Like operator                                                               | | month                        | :                   | Like operator                                                               | | organizationId               | :                   | Like operator                                                               | | jobTitleId                   | :                   | Like operator                                                               | | locationId                   | :                   | Like operator                                                               | | employeeId                   | :                   | Like operator                                                               | | employeeName                 | :                   | Like operator                                                               | | employeeIdentificationNumber | :                   | Like operator                                                               | | startDate                    | :<br>><br><          | Equal<br>Greater than or equal to<br>Less than or equal to                  | | endDate                      | :<br>><br><          | Equal<br>Greater than or equal to<br>Less than or equal to                  | 
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, TransitionCalculationApi, ApiException
@@ -130,49 +115,43 @@ except ApiException as e:
     print("Exception when calling TransitionCalculationApi->get_processable_transition_calculation: %s\n" % e)
 ```
 
-#### Parameters
+
+### Parameters
 
 This endpoint does not need any parameter.
 
-#### Return type
+### Return type
 
 [**UnprocessedTransitionCalculationListResponse**](UnprocessedTransitionCalculationListResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](TransitionCalculationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_processed\_transition\_calculation**
 
-> ProcessedTransitionCalculationListResponse get\_processed\_transition\_calculation()
+# **get_processed_transition_calculation**
+> ProcessedTransitionCalculationListResponse get_processed_transition_calculation()
 
 Get Processed Transition Calculation
 
-⚠️ **This endpoint is deprecated.** Transition Calculation Process now available at Regular Salary Process, so the menu and existing endpoint are deprecated and will be removed --- ### Search Query | Supported Keys | Supported Operators | Notes | | ---------------------------- | ------------------- | --------------------------------------------------------------------------- | | idIn | : | Equal operator with multiple values, each value separated with delimiters ; | | year | : | Like operator | | month | : | Like operator | | organizationId | : | Like operator | | jobTitleId | : | Like operator | | locationId | : | Like operator | | employeeId | : | Like operator | | employeeName | : | Like operator | | employeeIdentificationNumber | : | Like operator | | startDate | :\
-\>\
-< | Equal\
-Greater than or equal to\
-Less than or equal to | | endDate | :\
-\>\
-< | Equal\
-Greater than or equal to\
-Less than or equal to |
+⚠️ **This endpoint is deprecated.** Transition Calculation Process now available at Regular Salary Process, so the menu and existing endpoint are deprecated and will be removed  --- ### Search Query | Supported Keys               | Supported Operators | Notes                                                                       | | ---------------------------- | ------------------- | --------------------------------------------------------------------------- | | idIn                         | :                   | Equal operator with multiple values, each value separated with delimiters ; | | year                         | :                   | Like operator                                                               | | month                        | :                   | Like operator                                                               | | organizationId               | :                   | Like operator                                                               | | jobTitleId                   | :                   | Like operator                                                               | | locationId                   | :                   | Like operator                                                               | | employeeId                   | :                   | Like operator                                                               | | employeeName                 | :                   | Like operator                                                               | | employeeIdentificationNumber | :                   | Like operator                                                               | | startDate                    | :<br>><br><          | Equal<br>Greater than or equal to<br>Less than or equal to                  | | endDate                      | :<br>><br><          | Equal<br>Greater than or equal to<br>Less than or equal to                  | 
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, TransitionCalculationApi, ApiException
@@ -199,41 +178,43 @@ except ApiException as e:
     print("Exception when calling TransitionCalculationApi->get_processed_transition_calculation: %s\n" % e)
 ```
 
-#### Parameters
+
+### Parameters
 
 This endpoint does not need any parameter.
 
-#### Return type
+### Return type
 
 [**ProcessedTransitionCalculationListResponse**](ProcessedTransitionCalculationListResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](TransitionCalculationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_prorate\_details\_by\_transition\_calculation\_detail\_id**
 
-> List\[ProrateDetailResponse] get\_prorate\_details\_by\_transition\_calculation\_detail\_id(id)
+# **get_prorate_details_by_transition_calculation_detail_id**
+> List[ProrateDetailResponse] get_prorate_details_by_transition_calculation_detail_id(id)
 
 Get Prorate Details By Transition Calculation Detail Id
 
-⚠️ **This endpoint is deprecated.** Transition Calculation Process now available at Regular Salary Process, so the menu and existing endpoint are deprecated and will be removed
+⚠️ **This endpoint is deprecated.** Transition Calculation Process now available at Regular Salary Process, so the menu and existing endpoint are deprecated and will be removed 
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, TransitionCalculationApi, ApiException
@@ -261,43 +242,46 @@ except ApiException as e:
     print("Exception when calling TransitionCalculationApi->get_prorate_details_by_transition_calculation_detail_id: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name   | Type    | Description | Notes |
-| ------ | ------- | ----------- | ----- |
-| **id** | **str** |             |       |
+### Parameters
 
-#### Return type
 
-[**List\[ProrateDetailResponse\]**](ProrateDetailResponse.md)
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**|  | 
 
-#### Authorization
+### Return type
 
-[BearerAuth](../#BearerAuth)
+[**List[ProrateDetailResponse]**](ProrateDetailResponse.md)
 
-#### HTTP request headers
+### Authorization
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP response details
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](TransitionCalculationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_time\_allowance\_detailsby\_transition\_calculation\_detail\_id**
 
-> List\[TransitionTimeAllowanceDetailResponse] get\_time\_allowance\_detailsby\_transition\_calculation\_detail\_id(id)
+# **get_time_allowance_detailsby_transition_calculation_detail_id**
+> List[TransitionTimeAllowanceDetailResponse] get_time_allowance_detailsby_transition_calculation_detail_id(id)
 
 Get Time Allowance Details by Transition Calculation Detail Id
 
-⚠️ **This endpoint is deprecated.** Transition Calculation Process now available at Regular Salary Process, so the menu and existing endpoint are deprecated and will be removed
+⚠️ **This endpoint is deprecated.** Transition Calculation Process now available at Regular Salary Process, so the menu and existing endpoint are deprecated and will be removed 
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, TransitionCalculationApi, ApiException
@@ -325,51 +309,46 @@ except ApiException as e:
     print("Exception when calling TransitionCalculationApi->get_time_allowance_detailsby_transition_calculation_detail_id: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name   | Type    | Description | Notes |
-| ------ | ------- | ----------- | ----- |
-| **id** | **str** |             |       |
+### Parameters
 
-#### Return type
 
-[**List\[TransitionTimeAllowanceDetailResponse\]**](TransitionTimeAllowanceDetailResponse.md)
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**|  | 
 
-#### Authorization
+### Return type
 
-[BearerAuth](../#BearerAuth)
+[**List[TransitionTimeAllowanceDetailResponse]**](TransitionTimeAllowanceDetailResponse.md)
 
-#### HTTP request headers
+### Authorization
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP response details
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](TransitionCalculationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_transition\_calculation\_count**
 
-> TransitionCalculationCountResponse get\_transition\_calculation\_count()
+# **get_transition_calculation_count**
+> TransitionCalculationCountResponse get_transition_calculation_count()
 
 Get Transition Calculation Count
 
-⚠️ **This endpoint is deprecated.** Transition Calculation Process now available at Regular Salary Process, so the menu and existing endpoint are deprecated and will be removed --- ### Search Query | Supported Keys | Supported Operators | Notes | | ---------------------------- | ------------------- | --------------------------------------------------------------------------- | | idIn | : | Equal operator with multiple values, each value separated with delimiters ; | | year | : | Like operator | | month | : | Like operator | | organizationId | : | Like operator | | jobTitleId | : | Like operator | | locationId | : | Like operator | | employeeId | : | Like operator | | employeeName | : | Like operator | | employeeIdentificationNumber | : | Like operator | | startDate | :\
-\>\
-< | Equal\
-Greater than or equal to\
-Less than or equal to | | endDate | :\
-\>\
-< | Equal\
-Greater than or equal to\
-Less than or equal to |
+⚠️ **This endpoint is deprecated.**  Transition Calculation Process now available at Regular Salary Process, so the menu and existing endpoint are deprecated and will be removed  --- ### Search Query | Supported Keys               | Supported Operators | Notes                                                                       | | ---------------------------- | ------------------- | --------------------------------------------------------------------------- | | idIn                         | :                   | Equal operator with multiple values, each value separated with delimiters ; | | year                         | :                   | Like operator                                                               | | month                        | :                   | Like operator                                                               | | organizationId               | :                   | Like operator                                                               | | jobTitleId                   | :                   | Like operator                                                               | | locationId                   | :                   | Like operator                                                               | | employeeId                   | :                   | Like operator                                                               | | employeeName                 | :                   | Like operator                                                               | | employeeIdentificationNumber | :                   | Like operator                                                               | | startDate                    | :<br>><br><          | Equal<br>Greater than or equal to<br>Less than or equal to                  | | endDate                      | :<br>><br><          | Equal<br>Greater than or equal to<br>Less than or equal to                  | 
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, TransitionCalculationApi, ApiException
@@ -396,41 +375,43 @@ except ApiException as e:
     print("Exception when calling TransitionCalculationApi->get_transition_calculation_count: %s\n" % e)
 ```
 
-#### Parameters
+
+### Parameters
 
 This endpoint does not need any parameter.
 
-#### Return type
+### Return type
 
 [**TransitionCalculationCountResponse**](TransitionCalculationCountResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](TransitionCalculationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_transition\_calculationby\_id**
 
-> TransitionCalculationResponse get\_transition\_calculationby\_id(id)
+# **get_transition_calculationby_id**
+> TransitionCalculationResponse get_transition_calculationby_id(id)
 
 Get Transition Calculation by Id
 
-⚠️ **This endpoint is deprecated.** Transition Calculation Process now available at Regular Salary Process, so the menu and existing endpoint are deprecated and will be removed
+⚠️ **This endpoint is deprecated.** Transition Calculation Process now available at Regular Salary Process, so the menu and existing endpoint are deprecated and will be removed 
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, TransitionCalculationApi, ApiException
@@ -458,43 +439,46 @@ except ApiException as e:
     print("Exception when calling TransitionCalculationApi->get_transition_calculationby_id: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name   | Type    | Description | Notes |
-| ------ | ------- | ----------- | ----- |
-| **id** | **str** |             |       |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**|  | 
+
+### Return type
 
 [**TransitionCalculationResponse**](TransitionCalculationResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](TransitionCalculationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **update\_transition\_calculation\_details\_with\_editable\_type**
 
-> update\_transition\_calculation\_details\_with\_editable\_type(id, transition\_calculation\_details\_request)
+# **update_transition_calculation_details_with_editable_type**
+> update_transition_calculation_details_with_editable_type(id, transition_calculation_details_request)
 
 Update Transition Calculation Details With Editable Type
 
-⚠️ **This endpoint is deprecated.** Transition Calculation Process now available at Regular Salary Process, so the menu and existing endpoint are deprecated and will be removed
+⚠️ **This endpoint is deprecated.** Transition Calculation Process now available at Regular Salary Process, so the menu and existing endpoint are deprecated and will be removed 
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, TransitionCalculationApi, ApiException
@@ -521,31 +505,34 @@ except ApiException as e:
     print("Exception when calling TransitionCalculationApi->update_transition_calculation_details_with_editable_type: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name                                          | Type                                                                              | Description | Notes       |
-| --------------------------------------------- | --------------------------------------------------------------------------------- | ----------- | ----------- |
-| **id**                                        | **str**                                                                           |             |             |
-| **transition\_calculation\_details\_request** | [**TransitionCalculationDetailsRequest**](TransitionCalculationDetailsRequest.md) |             | \[optional] |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**|  | 
+ **transition_calculation_details_request** | [**TransitionCalculationDetailsRequest**](TransitionCalculationDetailsRequest.md)|  | [optional] 
+
+### Return type
 
 void (empty response body)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: application/json
-* **Accept**: Not defined
+ - **Content-Type**: application/json
+ - **Accept**: Not defined
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](TransitionCalculationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+

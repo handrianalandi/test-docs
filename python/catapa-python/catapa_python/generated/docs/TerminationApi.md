@@ -1,31 +1,30 @@
 # TerminationApi
 
-## TerminationApi
+> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
+> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!\
-> &#xNAN;**✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
+All URIs are relative to *https://api.catapa.com*
 
-All URIs are relative to _https://api.catapa.com_
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**create_termination_entry**](TerminationApi.md#create_termination_entry) | **POST** /core/v1/employees/{employeeId}/termination-entries | Create Termination Entry
+[**create_termination_reason**](TerminationApi.md#create_termination_reason) | **POST** /core/v1/termination-reasons | Create Termination Reason
+[**get_termination_bpjs_manpower_reason**](TerminationApi.md#get_termination_bpjs_manpower_reason) | **GET** /core/v1/termination-bpjs-manpower-reasons | Get Termination BPJS Manpower Reason
+[**get_termination_entry**](TerminationApi.md#get_termination_entry) | **GET** /core/v1/employees/{employeeId}/termination-entries | Get Termination Entry
+[**get_termination_reason**](TerminationApi.md#get_termination_reason) | **GET** /core/v1/termination-reasons | Get Termination Reason
+[**get_termination_reason_category**](TerminationApi.md#get_termination_reason_category) | **GET** /core/v1/termination-reason-categories | Get Termination Reason Category
+[**get_termination_tax_reason**](TerminationApi.md#get_termination_tax_reason) | **GET** /core/v1/termination-tax-reasons | Get Termination Tax Reason
+[**undo_termination_entry**](TerminationApi.md#undo_termination_entry) | **DELETE** /core/v1/employees/{employeeId}/termination-entries | Undo Termination Entry
+[**update_termination_reason**](TerminationApi.md#update_termination_reason) | **PUT** /core/v1/termination-reasons/{id} | Update Termination Reason
 
-| Method                                                                                                 | HTTP request                                                   | Description                          |
-| ------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------- | ------------------------------------ |
-| [**create\_termination\_entry**](TerminationApi.md#create_termination_entry)                           | **POST** /core/v1/employees/{employeeId}/termination-entries   | Create Termination Entry             |
-| [**create\_termination\_reason**](TerminationApi.md#create_termination_reason)                         | **POST** /core/v1/termination-reasons                          | Create Termination Reason            |
-| [**get\_termination\_bpjs\_manpower\_reason**](TerminationApi.md#get_termination_bpjs_manpower_reason) | **GET** /core/v1/termination-bpjs-manpower-reasons             | Get Termination BPJS Manpower Reason |
-| [**get\_termination\_entry**](TerminationApi.md#get_termination_entry)                                 | **GET** /core/v1/employees/{employeeId}/termination-entries    | Get Termination Entry                |
-| [**get\_termination\_reason**](TerminationApi.md#get_termination_reason)                               | **GET** /core/v1/termination-reasons                           | Get Termination Reason               |
-| [**get\_termination\_reason\_category**](TerminationApi.md#get_termination_reason_category)            | **GET** /core/v1/termination-reason-categories                 | Get Termination Reason Category      |
-| [**get\_termination\_tax\_reason**](TerminationApi.md#get_termination_tax_reason)                      | **GET** /core/v1/termination-tax-reasons                       | Get Termination Tax Reason           |
-| [**undo\_termination\_entry**](TerminationApi.md#undo_termination_entry)                               | **DELETE** /core/v1/employees/{employeeId}/termination-entries | Undo Termination Entry               |
-| [**update\_termination\_reason**](TerminationApi.md#update_termination_reason)                         | **PUT** /core/v1/termination-reasons/{id}                      | Update Termination Reason            |
 
-## **create\_termination\_entry**
-
-> TerminationEntryResponse create\_termination\_entry(employee\_id, termination\_entry\_request)
+# **create_termination_entry**
+> TerminationEntryResponse create_termination_entry(employee_id, termination_entry_request)
 
 Create Termination Entry
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, TerminationApi, ApiException
@@ -54,42 +53,45 @@ except ApiException as e:
     print("Exception when calling TerminationApi->create_termination_entry: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name                            | Type                                                      | Description | Notes       |
-| ------------------------------- | --------------------------------------------------------- | ----------- | ----------- |
-| **employee\_id**                | **str**                                                   |             |             |
-| **termination\_entry\_request** | [**TerminationEntryRequest**](TerminationEntryRequest.md) |             | \[optional] |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **employee_id** | **str**|  | 
+ **termination_entry_request** | [**TerminationEntryRequest**](TerminationEntryRequest.md)|  | [optional] 
+
+### Return type
 
 [**TerminationEntryResponse**](TerminationEntryResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: application/json
-* **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](TerminationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **create\_termination\_reason**
 
-> TerminationReasonDetailResponse create\_termination\_reason(termination\_reason\_request)
+# **create_termination_reason**
+> TerminationReasonDetailResponse create_termination_reason(termination_reason_request)
 
 Create Termination Reason
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, TerminationApi, ApiException
@@ -117,43 +119,46 @@ except ApiException as e:
     print("Exception when calling TerminationApi->create_termination_reason: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name                             | Type                                                        | Description | Notes       |
-| -------------------------------- | ----------------------------------------------------------- | ----------- | ----------- |
-| **termination\_reason\_request** | [**TerminationReasonRequest**](TerminationReasonRequest.md) |             | \[optional] |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **termination_reason_request** | [**TerminationReasonRequest**](TerminationReasonRequest.md)|  | [optional] 
+
+### Return type
 
 [**TerminationReasonDetailResponse**](TerminationReasonDetailResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: application/json
-* **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **201**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**201** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](TerminationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_termination\_bpjs\_manpower\_reason**
 
-> TerminationBPJSManpowerReasonListResponse get\_termination\_bpjs\_manpower\_reason()
+# **get_termination_bpjs_manpower_reason**
+> TerminationBPJSManpowerReasonListResponse get_termination_bpjs_manpower_reason()
 
 Get Termination BPJS Manpower Reason
 
-#### Search Query | Supported Keys | Supported Operators | Notes | |-------------------------|---------------------|----------------------------| | name | `:` | Like operator |
+### Search Query | Supported Keys          | Supported Operators | Notes                      | |-------------------------|---------------------|----------------------------| | name                    | `:`                 | Like operator              | 
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, TerminationApi, ApiException
@@ -180,39 +185,41 @@ except ApiException as e:
     print("Exception when calling TerminationApi->get_termination_bpjs_manpower_reason: %s\n" % e)
 ```
 
-#### Parameters
+
+### Parameters
 
 This endpoint does not need any parameter.
 
-#### Return type
+### Return type
 
 [**TerminationBPJSManpowerReasonListResponse**](TerminationBPJSManpowerReasonListResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](TerminationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_termination\_entry**
 
-> TerminationEntryResponse get\_termination\_entry(employee\_id)
+# **get_termination_entry**
+> TerminationEntryResponse get_termination_entry(employee_id)
 
 Get Termination Entry
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, TerminationApi, ApiException
@@ -240,43 +247,46 @@ except ApiException as e:
     print("Exception when calling TerminationApi->get_termination_entry: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name             | Type    | Description | Notes |
-| ---------------- | ------- | ----------- | ----- |
-| **employee\_id** | **str** |             |       |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **employee_id** | **str**|  | 
+
+### Return type
 
 [**TerminationEntryResponse**](TerminationEntryResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](TerminationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_termination\_reason**
 
-> TerminationReasonListResponse get\_termination\_reason()
+# **get_termination_reason**
+> TerminationReasonListResponse get_termination_reason()
 
 Get Termination Reason
 
-#### Search Query | Supported Keys | Supported Operators | Notes | |-------------------------|---------------------|----------------------------| | name | `:` | Like operator |
+### Search Query | Supported Keys          | Supported Operators | Notes                      | |-------------------------|---------------------|----------------------------| | name                    | `:`                 | Like operator              | 
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, TerminationApi, ApiException
@@ -303,41 +313,43 @@ except ApiException as e:
     print("Exception when calling TerminationApi->get_termination_reason: %s\n" % e)
 ```
 
-#### Parameters
+
+### Parameters
 
 This endpoint does not need any parameter.
 
-#### Return type
+### Return type
 
 [**TerminationReasonListResponse**](TerminationReasonListResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](TerminationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_termination\_reason\_category**
 
-> TerminationReasonCategoryListResponse get\_termination\_reason\_category()
+# **get_termination_reason_category**
+> TerminationReasonCategoryListResponse get_termination_reason_category()
 
 Get Termination Reason Category
 
-#### Search Query | Supported Keys | Supported Operators | Notes | |-------------------------|---------------------|----------------------------| | name | `:` | Like operator |
+### Search Query | Supported Keys          | Supported Operators | Notes                      | |-------------------------|---------------------|----------------------------| | name                    | `:`                 | Like operator              | 
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, TerminationApi, ApiException
@@ -364,41 +376,43 @@ except ApiException as e:
     print("Exception when calling TerminationApi->get_termination_reason_category: %s\n" % e)
 ```
 
-#### Parameters
+
+### Parameters
 
 This endpoint does not need any parameter.
 
-#### Return type
+### Return type
 
 [**TerminationReasonCategoryListResponse**](TerminationReasonCategoryListResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](TerminationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_termination\_tax\_reason**
 
-> TerminationTaxReasonListResponse get\_termination\_tax\_reason()
+# **get_termination_tax_reason**
+> TerminationTaxReasonListResponse get_termination_tax_reason()
 
 Get Termination Tax Reason
 
-#### Search Query | Supported Keys | Supported Operators | Notes | |-------------------------|---------------------|----------------------------| | name | `:` | Like operator | | taxAnnualized | `:` | Equal operator |
+### Search Query | Supported Keys          | Supported Operators | Notes                      | |-------------------------|---------------------|----------------------------| | name                    | `:`                 | Like operator              | | taxAnnualized           | `:`                 | Equal operator             | 
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, TerminationApi, ApiException
@@ -425,39 +439,41 @@ except ApiException as e:
     print("Exception when calling TerminationApi->get_termination_tax_reason: %s\n" % e)
 ```
 
-#### Parameters
+
+### Parameters
 
 This endpoint does not need any parameter.
 
-#### Return type
+### Return type
 
 [**TerminationTaxReasonListResponse**](TerminationTaxReasonListResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](TerminationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **undo\_termination\_entry**
 
-> object undo\_termination\_entry(employee\_id)
+# **undo_termination_entry**
+> object undo_termination_entry(employee_id)
 
 Undo Termination Entry
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, TerminationApi, ApiException
@@ -485,41 +501,44 @@ except ApiException as e:
     print("Exception when calling TerminationApi->undo_termination_entry: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name             | Type    | Description | Notes |
-| ---------------- | ------- | ----------- | ----- |
-| **employee\_id** | **str** |             |       |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **employee_id** | **str**|  | 
+
+### Return type
 
 **object**
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](TerminationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **update\_termination\_reason**
 
-> TerminationReasonDetailResponse update\_termination\_reason(id, termination\_reason\_request)
+# **update_termination_reason**
+> TerminationReasonDetailResponse update_termination_reason(id, termination_reason_request)
 
 Update Termination Reason
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, TerminationApi, ApiException
@@ -548,31 +567,34 @@ except ApiException as e:
     print("Exception when calling TerminationApi->update_termination_reason: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name                             | Type                                                        | Description | Notes       |
-| -------------------------------- | ----------------------------------------------------------- | ----------- | ----------- |
-| **id**                           | **str**                                                     |             |             |
-| **termination\_reason\_request** | [**TerminationReasonRequest**](TerminationReasonRequest.md) |             | \[optional] |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**|  | 
+ **termination_reason_request** | [**TerminationReasonRequest**](TerminationReasonRequest.md)|  | [optional] 
+
+### Return type
 
 [**TerminationReasonDetailResponse**](TerminationReasonDetailResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: application/json
-* **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](TerminationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+

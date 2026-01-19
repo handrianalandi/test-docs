@@ -1,24 +1,23 @@
 # CustomTableApi
 
-## CustomTableApi
+> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
+> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!\
-> &#xNAN;**✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
+All URIs are relative to *https://api.catapa.com*
 
-All URIs are relative to _https://api.catapa.com_
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**find_all_custom_tables**](CustomTableApi.md#find_all_custom_tables) | **GET** /core/v1/custom-tables | Retrieve all custom tables
+[**find_custom_table_by_id**](CustomTableApi.md#find_custom_table_by_id) | **GET** /core/v1/custom-tables/{tableId} | Find Custom Table by Table ID
 
-| Method                                                                       | HTTP request                             | Description                   |
-| ---------------------------------------------------------------------------- | ---------------------------------------- | ----------------------------- |
-| [**find\_all\_custom\_tables**](CustomTableApi.md#find_all_custom_tables)    | **GET** /core/v1/custom-tables           | Retrieve all custom tables    |
-| [**find\_custom\_table\_by\_id**](CustomTableApi.md#find_custom_table_by_id) | **GET** /core/v1/custom-tables/{tableId} | Find Custom Table by Table ID |
 
-## **find\_all\_custom\_tables**
-
-> CustomTableListResponse find\_all\_custom\_tables(page, size, query)
+# **find_all_custom_tables**
+> CustomTableListResponse find_all_custom_tables(page, size, query)
 
 Retrieve all custom tables
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, CustomTableApi, ApiException
@@ -48,43 +47,46 @@ except ApiException as e:
     print("Exception when calling CustomTableApi->find_all_custom_tables: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name      | Type    | Description      | Notes                        |
-| --------- | ------- | ---------------- | ---------------------------- |
-| **page**  | **int** | Page number      | \[optional] \[default to 0]  |
-| **size**  | **int** | Page size        | \[optional] \[default to 10] |
-| **query** | **str** | ### Search Query | Supported Keys               |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **int**| Page number | [optional] [default to 0]
+ **size** | **int**| Page size | [optional] [default to 10]
+ **query** | **str**| ### Search Query | Supported Keys      | Supported Operators | Notes                                                                                     | |---------------------|---------------------|-------------------------------------------------------------------------------------------| | id                  | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | tableName           | &#x60;:&#x60;                 | Like operator                                                                             | | displayName         | &#x60;:&#x60;                 | Like operator                                                                             | | menuLocation        | &#x60;:&#x60;                 | Like operator                                                                             | | historicalType      | &#x60;:&#x60;                 | Like operator                                                                             | | parentEntity        | &#x60;:&#x60;                 | Like operator                                                                             | | parentEntityIsNull  | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Boolean                                                                | | parentReferenceField| &#x60;:&#x60;                 | Like operator                                                                             |  | [optional] 
+
+### Return type
 
 [**CustomTableListResponse**](CustomTableListResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
-| Status code | Description          | Response headers |
-| ----------- | -------------------- | ---------------- |
-| **200**     | Successful operation | -                |
-| **400**     | Bad Request          | -                |
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful operation |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](CustomTableApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **find\_custom\_table\_by\_id**
 
-> CustomTableResponse find\_custom\_table\_by\_id(table\_id)
+# **find_custom_table_by_id**
+> CustomTableResponse find_custom_table_by_id(table_id)
 
 Find Custom Table by Table ID
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, CustomTableApi, ApiException
@@ -112,31 +114,34 @@ except ApiException as e:
     print("Exception when calling CustomTableApi->find_custom_table_by_id: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name          | Type    | Description | Notes |
-| ------------- | ------- | ----------- | ----- |
-| **table\_id** | **str** |             |       |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **table_id** | **str**|  | 
+
+### Return type
 
 [**CustomTableResponse**](CustomTableResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
-| Status code | Description            | Response headers |
-| ----------- | ---------------------- | ---------------- |
-| **200**     | Successful operation   | -                |
-| **400**     | Bad Request            | -                |
-| **404**     | Custom table not found | -                |
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful operation |  -  |
+**400** | Bad Request |  -  |
+**404** | Custom table not found |  -  |
 
-[\[Back to top\]](CustomTableApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+

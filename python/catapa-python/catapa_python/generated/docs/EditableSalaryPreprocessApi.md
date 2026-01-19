@@ -1,25 +1,24 @@
 # EditableSalaryPreprocessApi
 
-## EditableSalaryPreprocessApi
+> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
+> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!\
-> &#xNAN;**✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
+All URIs are relative to *https://api.catapa.com*
 
-All URIs are relative to _https://api.catapa.com_
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**preprocess_editable_salary**](EditableSalaryPreprocessApi.md#preprocess_editable_salary) | **POST** /core/v1/editable-salary-preprocess | Preprocess editable salary
 
-| Method                                                                                        | HTTP request                                 | Description                |
-| --------------------------------------------------------------------------------------------- | -------------------------------------------- | -------------------------- |
-| [**preprocess\_editable\_salary**](EditableSalaryPreprocessApi.md#preprocess_editable_salary) | **POST** /core/v1/editable-salary-preprocess | Preprocess editable salary |
 
-## **preprocess\_editable\_salary**
-
-> EditableSalaryPreprocessResponse preprocess\_editable\_salary(editable\_salary\_preprocess\_request)
+# **preprocess_editable_salary**
+> EditableSalaryPreprocessResponse preprocess_editable_salary(editable_salary_preprocess_request)
 
 Preprocess editable salary
 
 Preprocess salary editor data for up to 50 items.
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, EditableSalaryPreprocessApi, ApiException
@@ -47,30 +46,33 @@ except ApiException as e:
     print("Exception when calling EditableSalaryPreprocessApi->preprocess_editable_salary: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name                                      | Type                                                                              | Description | Notes |
-| ----------------------------------------- | --------------------------------------------------------------------------------- | ----------- | ----- |
-| **editable\_salary\_preprocess\_request** | [**List\[EditableSalaryPreprocessRequest\]**](EditableSalaryPreprocessRequest.md) |             |       |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **editable_salary_preprocess_request** | [**List[EditableSalaryPreprocessRequest]**](EditableSalaryPreprocessRequest.md)|  | 
+
+### Return type
 
 [**EditableSalaryPreprocessResponse**](EditableSalaryPreprocessResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: application/json
-* **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
-| Status code | Description                                   | Response headers |
-| ----------- | --------------------------------------------- | ---------------- |
-| **200**     | Batch response for editable salary preprocess | -                |
-| **400**     | Bad Request                                   | -                |
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Batch response for editable salary preprocess |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](EditableSalaryPreprocessApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+

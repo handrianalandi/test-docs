@@ -1,30 +1,29 @@
 # PayslipApi
 
-## PayslipApi
+> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
+> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!\
-> &#xNAN;**✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
+All URIs are relative to *https://api.catapa.com*
 
-All URIs are relative to _https://api.catapa.com_
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**create_or_update_payslip_layout**](PayslipApi.md#create_or_update_payslip_layout) | **PUT** /core/v1/payslip-layouts | Create or Update Payslip Layout
+[**create_payslip_additional_note**](PayslipApi.md#create_payslip_additional_note) | **POST** /core/v1/payslip-additional-notes | Create Payslip Additional Note
+[**delete_payslip_layout_by_id**](PayslipApi.md#delete_payslip_layout_by_id) | **DELETE** /core/v1/payslip-layouts/{id} | Delete Payslip Layout By Id
+[**download_payslip**](PayslipApi.md#download_payslip) | **POST** /core/v1/employees/{id}/payslip | Download Payslip
+[**get_payslip_additional_notes**](PayslipApi.md#get_payslip_additional_notes) | **GET** /core/v1/payslip-additional-notes | Get Payslip Additional Notes
+[**get_payslip_layout_by_id**](PayslipApi.md#get_payslip_layout_by_id) | **GET** /core/v1/payslip-layouts/{id} | Get Payslip Layout By Id
+[**get_payslip_layouts**](PayslipApi.md#get_payslip_layouts) | **GET** /core/v1/payslip-layouts | Get Payslip Layouts
+[**update_payslip_additional_note_by_id**](PayslipApi.md#update_payslip_additional_note_by_id) | **PUT** /core/v1/payslip-additional-notes/{id} | Update Payslip Additional Note by Id
 
-| Method                                                                                              | HTTP request                                   | Description                          |
-| --------------------------------------------------------------------------------------------------- | ---------------------------------------------- | ------------------------------------ |
-| [**create\_or\_update\_payslip\_layout**](PayslipApi.md#create_or_update_payslip_layout)            | **PUT** /core/v1/payslip-layouts               | Create or Update Payslip Layout      |
-| [**create\_payslip\_additional\_note**](PayslipApi.md#create_payslip_additional_note)               | **POST** /core/v1/payslip-additional-notes     | Create Payslip Additional Note       |
-| [**delete\_payslip\_layout\_by\_id**](PayslipApi.md#delete_payslip_layout_by_id)                    | **DELETE** /core/v1/payslip-layouts/{id}       | Delete Payslip Layout By Id          |
-| [**download\_payslip**](PayslipApi.md#download_payslip)                                             | **POST** /core/v1/employees/{id}/payslip       | Download Payslip                     |
-| [**get\_payslip\_additional\_notes**](PayslipApi.md#get_payslip_additional_notes)                   | **GET** /core/v1/payslip-additional-notes      | Get Payslip Additional Notes         |
-| [**get\_payslip\_layout\_by\_id**](PayslipApi.md#get_payslip_layout_by_id)                          | **GET** /core/v1/payslip-layouts/{id}          | Get Payslip Layout By Id             |
-| [**get\_payslip\_layouts**](PayslipApi.md#get_payslip_layouts)                                      | **GET** /core/v1/payslip-layouts               | Get Payslip Layouts                  |
-| [**update\_payslip\_additional\_note\_by\_id**](PayslipApi.md#update_payslip_additional_note_by_id) | **PUT** /core/v1/payslip-additional-notes/{id} | Update Payslip Additional Note by Id |
 
-## **create\_or\_update\_payslip\_layout**
-
-> PayslipLayoutResponse create\_or\_update\_payslip\_layout(payslip\_layout\_request)
+# **create_or_update_payslip_layout**
+> PayslipLayoutResponse create_or_update_payslip_layout(payslip_layout_request)
 
 Create or Update Payslip Layout
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, PayslipApi, ApiException
@@ -52,41 +51,44 @@ except ApiException as e:
     print("Exception when calling PayslipApi->create_or_update_payslip_layout: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name                         | Type                                                | Description | Notes       |
-| ---------------------------- | --------------------------------------------------- | ----------- | ----------- |
-| **payslip\_layout\_request** | [**PayslipLayoutRequest**](PayslipLayoutRequest.md) |             | \[optional] |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **payslip_layout_request** | [**PayslipLayoutRequest**](PayslipLayoutRequest.md)|  | [optional] 
+
+### Return type
 
 [**PayslipLayoutResponse**](PayslipLayoutResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: application/json
-* **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](PayslipApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **create\_payslip\_additional\_note**
 
-> PayslipAdditionalNoteResponse create\_payslip\_additional\_note(payslip\_additional\_note\_request)
+# **create_payslip_additional_note**
+> PayslipAdditionalNoteResponse create_payslip_additional_note(payslip_additional_note_request)
 
 Create Payslip Additional Note
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, PayslipApi, ApiException
@@ -114,41 +116,44 @@ except ApiException as e:
     print("Exception when calling PayslipApi->create_payslip_additional_note: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name                                   | Type                                                                | Description | Notes       |
-| -------------------------------------- | ------------------------------------------------------------------- | ----------- | ----------- |
-| **payslip\_additional\_note\_request** | [**PayslipAdditionalNoteRequest**](PayslipAdditionalNoteRequest.md) |             | \[optional] |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **payslip_additional_note_request** | [**PayslipAdditionalNoteRequest**](PayslipAdditionalNoteRequest.md)|  | [optional] 
+
+### Return type
 
 [**PayslipAdditionalNoteResponse**](PayslipAdditionalNoteResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: application/json
-* **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](PayslipApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **delete\_payslip\_layout\_by\_id**
 
-> object delete\_payslip\_layout\_by\_id(tenant, id)
+# **delete_payslip_layout_by_id**
+> object delete_payslip_layout_by_id(tenant, id)
 
 Delete Payslip Layout By Id
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, PayslipApi, ApiException
@@ -177,42 +182,45 @@ except ApiException as e:
     print("Exception when calling PayslipApi->delete_payslip_layout_by_id: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name       | Type    | Description | Notes |
-| ---------- | ------- | ----------- | ----- |
-| **tenant** | **str** |             |       |
-| **id**     | **str** |             |       |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenant** | **str**|  | 
+ **id** | **str**|  | 
+
+### Return type
 
 **object**
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](PayslipApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **download\_payslip**
 
-> object download\_payslip(id, payslip\_download\_request)
+# **download_payslip**
+> object download_payslip(id, payslip_download_request)
 
 Download Payslip
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, PayslipApi, ApiException
@@ -241,44 +249,47 @@ except ApiException as e:
     print("Exception when calling PayslipApi->download_payslip: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name                           | Type                                                    | Description | Notes       |
-| ------------------------------ | ------------------------------------------------------- | ----------- | ----------- |
-| **id**                         | **str**                                                 |             |             |
-| **payslip\_download\_request** | [**PayslipDownloadRequest**](PayslipDownloadRequest.md) |             | \[optional] |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**|  | 
+ **payslip_download_request** | [**PayslipDownloadRequest**](PayslipDownloadRequest.md)|  | [optional] 
+
+### Return type
 
 **object**
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: application/json
-* **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](PayslipApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_payslip\_additional\_notes**
 
-> PayslipAdditionalNoteListResponse get\_payslip\_additional\_notes()
+# **get_payslip_additional_notes**
+> PayslipAdditionalNoteListResponse get_payslip_additional_notes()
 
 Get Payslip Additional Notes
 
-#### Search Query | Supported Keys | Supported Operators | Notes | | ---------------------------- | ------------------- | ---------------------| | paymentDate | : | Equal operator |
+### Search Query | Supported Keys               | Supported Operators | Notes                | | ---------------------------- | ------------------- | ---------------------| | paymentDate                  | :                   | Equal operator       | 
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, PayslipApi, ApiException
@@ -305,39 +316,41 @@ except ApiException as e:
     print("Exception when calling PayslipApi->get_payslip_additional_notes: %s\n" % e)
 ```
 
-#### Parameters
+
+### Parameters
 
 This endpoint does not need any parameter.
 
-#### Return type
+### Return type
 
 [**PayslipAdditionalNoteListResponse**](PayslipAdditionalNoteListResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](PayslipApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_payslip\_layout\_by\_id**
 
-> PayslipLayoutResponse get\_payslip\_layout\_by\_id(id)
+# **get_payslip_layout_by_id**
+> PayslipLayoutResponse get_payslip_layout_by_id(id)
 
 Get Payslip Layout By Id
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, PayslipApi, ApiException
@@ -365,43 +378,46 @@ except ApiException as e:
     print("Exception when calling PayslipApi->get_payslip_layout_by_id: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name   | Type    | Description | Notes |
-| ------ | ------- | ----------- | ----- |
-| **id** | **str** |             |       |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**|  | 
+
+### Return type
 
 [**PayslipLayoutResponse**](PayslipLayoutResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](PayslipApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_payslip\_layouts**
 
-> PayslipLayoutListResponse get\_payslip\_layouts()
+# **get_payslip_layouts**
+> PayslipLayoutListResponse get_payslip_layouts()
 
 Get Payslip Layouts
 
-#### Search Query | Supported Keys | Supported Operators | Notes | | ---------------------------- | ------------------- | ---------------------| | section | : | Equal operator |
+### Search Query | Supported Keys               | Supported Operators | Notes                | | ---------------------------- | ------------------- | ---------------------| | section                      | :                   | Equal operator       | 
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, PayslipApi, ApiException
@@ -428,39 +444,41 @@ except ApiException as e:
     print("Exception when calling PayslipApi->get_payslip_layouts: %s\n" % e)
 ```
 
-#### Parameters
+
+### Parameters
 
 This endpoint does not need any parameter.
 
-#### Return type
+### Return type
 
 [**PayslipLayoutListResponse**](PayslipLayoutListResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](PayslipApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **update\_payslip\_additional\_note\_by\_id**
 
-> PayslipAdditionalNoteResponse update\_payslip\_additional\_note\_by\_id(id, payslip\_additional\_note\_request)
+# **update_payslip_additional_note_by_id**
+> PayslipAdditionalNoteResponse update_payslip_additional_note_by_id(id, payslip_additional_note_request)
 
 Update Payslip Additional Note by Id
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, PayslipApi, ApiException
@@ -489,31 +507,34 @@ except ApiException as e:
     print("Exception when calling PayslipApi->update_payslip_additional_note_by_id: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name                                   | Type                                                                | Description | Notes       |
-| -------------------------------------- | ------------------------------------------------------------------- | ----------- | ----------- |
-| **id**                                 | **str**                                                             |             |             |
-| **payslip\_additional\_note\_request** | [**PayslipAdditionalNoteRequest**](PayslipAdditionalNoteRequest.md) |             | \[optional] |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**|  | 
+ **payslip_additional_note_request** | [**PayslipAdditionalNoteRequest**](PayslipAdditionalNoteRequest.md)|  | [optional] 
+
+### Return type
 
 [**PayslipAdditionalNoteResponse**](PayslipAdditionalNoteResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: application/json
-* **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](PayslipApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+

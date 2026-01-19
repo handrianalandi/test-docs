@@ -1,27 +1,26 @@
 # EmployeeBankAccountConfigurationApi
 
-## EmployeeBankAccountConfigurationApi
+> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
+> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!\
-> &#xNAN;**✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
+All URIs are relative to *https://api.catapa.com*
 
-All URIs are relative to _https://api.catapa.com_
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**get_employee_bank_account_configuration**](EmployeeBankAccountConfigurationApi.md#get_employee_bank_account_configuration) | **GET** /core/v1/employees/{employeeId}/bank-account-configurations | Get Employee Bank Account Configuration
+[**get_employee_bank_account_configuration_histories**](EmployeeBankAccountConfigurationApi.md#get_employee_bank_account_configuration_histories) | **GET** /core/v1/employees/{employeeId}/bank-account-configurations/histories | Get Employee Bank Account Configuration Histories
+[**update_bank_account_configuration**](EmployeeBankAccountConfigurationApi.md#update_bank_account_configuration) | **PUT** /core/v1/employees/{employeeId}/bank-account-configurations | Update Bank Account Configuration
 
-| Method                                                                                                                                                 | HTTP request                                                                  | Description                                       |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------- | ------------------------------------------------- |
-| [**get\_employee\_bank\_account\_configuration**](EmployeeBankAccountConfigurationApi.md#get_employee_bank_account_configuration)                      | **GET** /core/v1/employees/{employeeId}/bank-account-configurations           | Get Employee Bank Account Configuration           |
-| [**get\_employee\_bank\_account\_configuration\_histories**](EmployeeBankAccountConfigurationApi.md#get_employee_bank_account_configuration_histories) | **GET** /core/v1/employees/{employeeId}/bank-account-configurations/histories | Get Employee Bank Account Configuration Histories |
-| [**update\_bank\_account\_configuration**](EmployeeBankAccountConfigurationApi.md#update_bank_account_configuration)                                   | **PUT** /core/v1/employees/{employeeId}/bank-account-configurations           | Update Bank Account Configuration                 |
 
-## **get\_employee\_bank\_account\_configuration**
-
-> BankAccountConfigurationResponse get\_employee\_bank\_account\_configuration(employee\_id)
+# **get_employee_bank_account_configuration**
+> BankAccountConfigurationResponse get_employee_bank_account_configuration(employee_id)
 
 Get Employee Bank Account Configuration
 
 This endpoint is deprecated. Please use /v1/employees/{employeeId}/bank-account-configurations/histories instead.
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, EmployeeBankAccountConfigurationApi, ApiException
@@ -49,43 +48,46 @@ except ApiException as e:
     print("Exception when calling EmployeeBankAccountConfigurationApi->get_employee_bank_account_configuration: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name             | Type    | Description | Notes |
-| ---------------- | ------- | ----------- | ----- |
-| **employee\_id** | **str** |             |       |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **employee_id** | **str**|  | 
+
+### Return type
 
 [**BankAccountConfigurationResponse**](BankAccountConfigurationResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](EmployeeBankAccountConfigurationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_employee\_bank\_account\_configuration\_histories**
 
-> BankAccountConfigurationListResponse get\_employee\_bank\_account\_configuration\_histories(employee\_id, page, size)
+# **get_employee_bank_account_configuration_histories**
+> BankAccountConfigurationListResponse get_employee_bank_account_configuration_histories(employee_id, page, size)
 
 Get Employee Bank Account Configuration Histories
 
 replacement for /v1/employees/{employeeId}/bank-account-configurations.
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, EmployeeBankAccountConfigurationApi, ApiException
@@ -115,45 +117,48 @@ except ApiException as e:
     print("Exception when calling EmployeeBankAccountConfigurationApi->get_employee_bank_account_configuration_histories: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name             | Type    | Description | Notes                        |
-| ---------------- | ------- | ----------- | ---------------------------- |
-| **employee\_id** | **str** |             |                              |
-| **page**         | **int** | Page number | \[optional] \[default to 0]  |
-| **size**         | **int** | Page size   | \[optional] \[default to 10] |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **employee_id** | **str**|  | 
+ **page** | **int**| Page number | [optional] [default to 0]
+ **size** | **int**| Page size | [optional] [default to 10]
+
+### Return type
 
 [**BankAccountConfigurationListResponse**](BankAccountConfigurationListResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](EmployeeBankAccountConfigurationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **update\_bank\_account\_configuration**
 
-> BankAccountConfigurationResponse update\_bank\_account\_configuration(employee\_id, update\_bank\_account\_configuration\_request)
+# **update_bank_account_configuration**
+> BankAccountConfigurationResponse update_bank_account_configuration(employee_id, update_bank_account_configuration_request)
 
 Update Bank Account Configuration
 
 This endpoint is deprecated. Please use /v1/bank-account-configurations/approvals instead.
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, EmployeeBankAccountConfigurationApi, ApiException
@@ -182,31 +187,34 @@ except ApiException as e:
     print("Exception when calling EmployeeBankAccountConfigurationApi->update_bank_account_configuration: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name                                              | Type                                                                                  | Description | Notes       |
-| ------------------------------------------------- | ------------------------------------------------------------------------------------- | ----------- | ----------- |
-| **employee\_id**                                  | **str**                                                                               |             |             |
-| **update\_bank\_account\_configuration\_request** | [**UpdateBankAccountConfigurationRequest**](UpdateBankAccountConfigurationRequest.md) |             | \[optional] |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **employee_id** | **str**|  | 
+ **update_bank_account_configuration_request** | [**UpdateBankAccountConfigurationRequest**](UpdateBankAccountConfigurationRequest.md)|  | [optional] 
+
+### Return type
 
 [**BankAccountConfigurationResponse**](BankAccountConfigurationResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: application/json
-* **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](EmployeeBankAccountConfigurationApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+

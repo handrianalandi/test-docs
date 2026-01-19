@@ -1,26 +1,25 @@
 # EmployeeBpjsMembershipApi
 
-## EmployeeBpjsMembershipApi
+> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
+> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!\
-> &#xNAN;**✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
+All URIs are relative to *https://api.catapa.com*
 
-All URIs are relative to _https://api.catapa.com_
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**get_bpjs_healthcare_membership**](EmployeeBpjsMembershipApi.md#get_bpjs_healthcare_membership) | **GET** /core/v1/employees/{employeeId}/bpjs-healthcare-memberships | Get BPJS Healthcare Membership
+[**get_bpjs_manpower_membership**](EmployeeBpjsMembershipApi.md#get_bpjs_manpower_membership) | **GET** /core/v1/employees/{employeeId}/bpjs-manpower-memberships | Get BPJS Manpower Membership
+[**update_bpjs_healthcare_membership**](EmployeeBpjsMembershipApi.md#update_bpjs_healthcare_membership) | **PUT** /core/v1/employees/{employeeId}/bpjs-healthcare-memberships | Update BPJS Healthcare Membership
+[**update_bpjs_manpower_membership**](EmployeeBpjsMembershipApi.md#update_bpjs_manpower_membership) | **PUT** /core/v1/employees/{employeeId}/bpjs-manpower-memberships | Update BPJS Manpower Membership
 
-| Method                                                                                                     | HTTP request                                                        | Description                       |
-| ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | --------------------------------- |
-| [**get\_bpjs\_healthcare\_membership**](EmployeeBpjsMembershipApi.md#get_bpjs_healthcare_membership)       | **GET** /core/v1/employees/{employeeId}/bpjs-healthcare-memberships | Get BPJS Healthcare Membership    |
-| [**get\_bpjs\_manpower\_membership**](EmployeeBpjsMembershipApi.md#get_bpjs_manpower_membership)           | **GET** /core/v1/employees/{employeeId}/bpjs-manpower-memberships   | Get BPJS Manpower Membership      |
-| [**update\_bpjs\_healthcare\_membership**](EmployeeBpjsMembershipApi.md#update_bpjs_healthcare_membership) | **PUT** /core/v1/employees/{employeeId}/bpjs-healthcare-memberships | Update BPJS Healthcare Membership |
-| [**update\_bpjs\_manpower\_membership**](EmployeeBpjsMembershipApi.md#update_bpjs_manpower_membership)     | **PUT** /core/v1/employees/{employeeId}/bpjs-manpower-memberships   | Update BPJS Manpower Membership   |
 
-## **get\_bpjs\_healthcare\_membership**
-
-> BpjsHealthcareMembershipResponse get\_bpjs\_healthcare\_membership(employee\_id)
+# **get_bpjs_healthcare_membership**
+> BpjsHealthcareMembershipResponse get_bpjs_healthcare_membership(employee_id)
 
 Get BPJS Healthcare Membership
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, EmployeeBpjsMembershipApi, ApiException
@@ -48,41 +47,44 @@ except ApiException as e:
     print("Exception when calling EmployeeBpjsMembershipApi->get_bpjs_healthcare_membership: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name             | Type    | Description | Notes |
-| ---------------- | ------- | ----------- | ----- |
-| **employee\_id** | **str** |             |       |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **employee_id** | **str**|  | 
+
+### Return type
 
 [**BpjsHealthcareMembershipResponse**](BpjsHealthcareMembershipResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](EmployeeBpjsMembershipApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **get\_bpjs\_manpower\_membership**
 
-> BpjsManpowerMembershipResponse get\_bpjs\_manpower\_membership(employee\_id)
+# **get_bpjs_manpower_membership**
+> BpjsManpowerMembershipResponse get_bpjs_manpower_membership(employee_id)
 
 Get BPJS Manpower Membership
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, EmployeeBpjsMembershipApi, ApiException
@@ -110,41 +112,44 @@ except ApiException as e:
     print("Exception when calling EmployeeBpjsMembershipApi->get_bpjs_manpower_membership: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name             | Type    | Description | Notes |
-| ---------------- | ------- | ----------- | ----- |
-| **employee\_id** | **str** |             |       |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **employee_id** | **str**|  | 
+
+### Return type
 
 [**BpjsManpowerMembershipResponse**](BpjsManpowerMembershipResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: Not defined
-* **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](EmployeeBpjsMembershipApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **update\_bpjs\_healthcare\_membership**
 
-> BpjsHealthcareMembershipResponse update\_bpjs\_healthcare\_membership(employee\_id, bpjs\_healthcare\_membership\_request)
+# **update_bpjs_healthcare_membership**
+> BpjsHealthcareMembershipResponse update_bpjs_healthcare_membership(employee_id, bpjs_healthcare_membership_request)
 
 Update BPJS Healthcare Membership
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, EmployeeBpjsMembershipApi, ApiException
@@ -173,42 +178,45 @@ except ApiException as e:
     print("Exception when calling EmployeeBpjsMembershipApi->update_bpjs_healthcare_membership: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name                                      | Type                                                                      | Description | Notes       |
-| ----------------------------------------- | ------------------------------------------------------------------------- | ----------- | ----------- |
-| **employee\_id**                          | **str**                                                                   |             |             |
-| **bpjs\_healthcare\_membership\_request** | [**BpjsHealthcareMembershipRequest**](BpjsHealthcareMembershipRequest.md) |             | \[optional] |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **employee_id** | **str**|  | 
+ **bpjs_healthcare_membership_request** | [**BpjsHealthcareMembershipRequest**](BpjsHealthcareMembershipRequest.md)|  | [optional] 
+
+### Return type
 
 [**BpjsHealthcareMembershipResponse**](BpjsHealthcareMembershipResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: application/json
-* **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](EmployeeBpjsMembershipApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-## **update\_bpjs\_manpower\_membership**
 
-> BpjsManpowerMembershipResponse update\_bpjs\_manpower\_membership(employee\_id, bpjs\_manpower\_membership\_request)
+# **update_bpjs_manpower_membership**
+> BpjsManpowerMembershipResponse update_bpjs_manpower_membership(employee_id, bpjs_manpower_membership_request)
 
 Update BPJS Manpower Membership
 
-#### Example
+### Example
+
 
 ```python
 from catapa import Catapa, EmployeeBpjsMembershipApi, ApiException
@@ -237,31 +245,34 @@ except ApiException as e:
     print("Exception when calling EmployeeBpjsMembershipApi->update_bpjs_manpower_membership: %s\n" % e)
 ```
 
-#### Parameters
 
-| Name                                    | Type                                                                  | Description | Notes       |
-| --------------------------------------- | --------------------------------------------------------------------- | ----------- | ----------- |
-| **employee\_id**                        | **str**                                                               |             |             |
-| **bpjs\_manpower\_membership\_request** | [**BpjsManpowerMembershipRequest**](BpjsManpowerMembershipRequest.md) |             | \[optional] |
+### Parameters
 
-#### Return type
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **employee_id** | **str**|  | 
+ **bpjs_manpower_membership_request** | [**BpjsManpowerMembershipRequest**](BpjsManpowerMembershipRequest.md)|  | [optional] 
+
+### Return type
 
 [**BpjsManpowerMembershipResponse**](BpjsManpowerMembershipResponse.md)
 
-#### Authorization
+### Authorization
 
-[BearerAuth](../#BearerAuth)
+[BearerAuth](../README.md#BearerAuth)
 
-#### HTTP request headers
+### HTTP request headers
 
-* **Content-Type**: application/json
-* **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
-#### HTTP response details
+### HTTP response details
 
 | Status code | Description | Response headers |
-| ----------- | ----------- | ---------------- |
-| **200**     | OK          | -                |
-| **400**     | Bad Request | -                |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
 
-[\[Back to top\]](EmployeeBpjsMembershipApi.md) [\[Back to API list\]](../#documentation-for-api-endpoints) [\[Back to Model list\]](../#documentation-for-models) [\[Back to README\]](../)
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
