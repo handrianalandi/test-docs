@@ -1,0 +1,39 @@
+
+```python
+from catapa import Catapa, {{{classname}}}, ApiException
+from pprint import pprint
+
+# Step 1: Initialize the Catapa client with your credentials
+# The client automatically handles OAuth2 authentication and token refresh
+client = Catapa(
+    tenant="your-tenant-id",
+    client_id="your-client-id",
+    client_secret="your-client-secret"
+)
+
+# Step 2: Create an instance of the API class
+# Tokens are automatically refreshed on every API call (5-minute buffer before expiration)
+api_instance = {{{classname}}}(client)
+{{#allParams}}
+{{^isPrimitiveType}}{{paramName}} = {{dataType}}(){{/isPrimitiveType}}{{#isPrimitiveType}}{{paramName}} = {{{example}}}{{/isPrimitiveType}} # {{{dataType}}} | {{{description}}}{{^required}} (optional){{/required}}{{#defaultValue}} (default to {{{.}}}){{/defaultValue}}
+{{/allParams}}
+
+try:
+    {{#summary}}
+    # {{{.}}}
+    {{/summary}}
+    {{#returnType}}api_response = {{/returnType}}api_instance.{{{operationId}}}({{#allParams}}{{#required}}{{paramName}}{{/required}}{{^required}}{{paramName}}={{paramName}}{{/required}}{{^-last}}, {{/-last}}{{/allParams}})
+    {{#returnType}}
+    print("The response of {{classname}}->{{operationId}}:\n")
+    pprint(api_response)
+    {{/returnType}}
+except ApiException as e:
+    print("Exception when calling {{classname}}->{{operationId}}: %s\n" % e)
+```
+
+{{#vendorExtensions.x-py-postponed-example-imports.size}}
+{{#vendorExtensions.x-py-postponed-example-imports}}
+{{{.}}}
+{{/vendorExtensions.x-py-postponed-example-imports}}
+{{classname}}.update_forward_refs()
+{{/vendorExtensions.x-py-postponed-example-imports.size}}

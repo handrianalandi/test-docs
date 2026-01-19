@@ -1,0 +1,60 @@
+"""Quick Start Example - CATAPA Python SDK.
+
+The fastest way to get started with the CATAPA Python SDK.
+Features automatic OAuth2 authentication with token auto-refresh on every API call.
+
+Authors:
+    Handrian Alandi (handrian.alandi@gdplabs.id)
+
+References:
+    NONE
+"""
+
+from catapa import Catapa, EmployeeApi, MasterDataApi
+
+
+def main() -> None:
+    """Main function to run the example."""
+    print("⚡ CATAPA Python SDK - Quick Start\n")
+
+    # Step 1: Initialize with your credentials
+    client = Catapa(
+        tenant="zfrl",
+        client_id="test-client-id",
+        client_secret="test-client-secret"
+    )
+    print("✓ Client initialized with auto-refresh token support\n")
+
+    # Step 2: Create API instances
+    # Tokens are automatically refreshed on every API call (5-minute buffer before expiration)
+    employee_api = EmployeeApi(client)
+    master_data_api = MasterDataApi(client)
+
+    # Step 3: Make API calls
+    # No need to worry about token expiration - it's handled automatically!
+    employees = employee_api.list_all_employees(page=0, size=5)
+    print(f"📋 Employees: {len(employees.content)} found, first 3:")
+    for emp in employees.content[:3]:
+        print(f"   • {emp.name}")
+
+    countries = master_data_api.get_countries()
+    print(f"\n🌍 Countries: {len(countries.content)} found")
+
+    print("\n✨ That's all! All APIs work the same way.")
+    print("\n💡 Key Features:")
+    print("  • Automatic token refresh on every API call")
+    print("  • Create API instances once, use them throughout your application")
+    print("  • Perfect for long-running services and daemons")
+    print("  • No manual token management needed")
+    print("\n📚 Available APIs:")
+    print("  • EmployeeApi, OrganizationApi, MasterDataApi")
+    print("  • TaxApi, SalaryPaymentApi, PayrollProcessSnapshotApi")
+    print("  • ... and 40+ more!")
+
+
+if __name__ == "__main__":
+    try:
+        main()
+    except Exception as e:
+        print("\n❌ Note: This example will fail with connection error if not running against real API")
+        print(f"   Error: {e}")

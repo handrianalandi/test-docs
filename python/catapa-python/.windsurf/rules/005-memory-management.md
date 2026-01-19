@@ -1,0 +1,47 @@
+# Memory Management Standards
+
+Rules for optimizing memory usage, managing resources, and performance considerations.
+
+## Python Memory Best Practices
+
+- Use generators and iterators for large datasets to avoid loading everything into memory
+- Implement proper context managers (`with` statements) for resource cleanup
+- Use `__slots__` in classes when memory usage is critical
+- Be mindful of circular references and use weak references when appropriate
+- Profile memory usage regularly with tools like `memory_profiler`
+- Use appropriate data structures for memory efficiency (e.g., `array` vs `list`)
+
+## Resource Management
+
+- Always close files, database connections, and network resources
+- Use connection pooling for HTTP requests (requests.Session)
+- Implement proper cleanup in exception handlers
+- Use `try/finally` or context managers for guaranteed resource cleanup
+- Monitor and limit resource consumption in long-running processes
+- Properly manage HTTP session objects and connection pools
+
+## Performance Optimization
+
+- Use built-in functions and libraries which are typically optimized
+- Implement caching where appropriate (functools.lru_cache for token caching)
+- Avoid premature optimization - profile first, then optimize
+- Use connection pooling for multiple API requests
+- Consider lazy loading for expensive operations
+- Implement pagination for large API responses
+
+## Memory Profiling
+
+- Use `tracemalloc` for memory allocation tracking
+- Implement memory monitoring in production environments
+- Set memory limits and alerts for critical applications
+- Regular garbage collection monitoring and tuning
+- Profile memory usage during development and testing
+
+## Large Dataset Handling
+
+- Use chunking for processing large API responses
+- Implement streaming for data pipelines
+- Use memory-mapped files for very large datasets
+- Consider distributed processing for massive datasets
+- Implement efficient serialization/deserialization
+- Handle paginated API responses efficiently
