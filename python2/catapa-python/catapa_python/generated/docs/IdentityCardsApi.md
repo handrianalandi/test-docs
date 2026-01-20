@@ -18,6 +18,7 @@ Method | HTTP request | Description
 
 Create Employee Identity Cards
 
+
 ### Example
 
 
@@ -61,10 +62,6 @@ Name | Type | Description  | Notes
 
 [**EmployeeIdentityCardResponse**](EmployeeIdentityCardResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -84,6 +81,7 @@ Name | Type | Description  | Notes
 > object delete_employee_identity_cards(employee_id, employee_identity_card_id)
 
 Delete Employee Identity Cards
+
 
 ### Example
 
@@ -128,10 +126,6 @@ Name | Type | Description  | Notes
 
 **object**
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -151,6 +145,7 @@ Name | Type | Description  | Notes
 > EmployeeIdentityCardListResponse get_employee_identity_cards(employee_id, query)
 
 Get Employee Identity Cards
+
 
 ### Example
 
@@ -195,10 +190,6 @@ Name | Type | Description  | Notes
 
 [**EmployeeIdentityCardListResponse**](EmployeeIdentityCardListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -218,6 +209,7 @@ Name | Type | Description  | Notes
 > EmployeeIdentityCardResponse update_employee_identity_cards(employee_id, employee_identity_card_id, employee_identity_card_request)
 
 Update Employee Identity Cards
+
 
 ### Example
 
@@ -263,10 +255,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**EmployeeIdentityCardResponse**](EmployeeIdentityCardResponse.md)
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

@@ -21,6 +21,7 @@ Method | HTTP request | Description
 
 Create Severance Plan
 
+
 ### Example
 
 
@@ -64,10 +65,6 @@ Name | Type | Description  | Notes
 
 [**SeverancePlanResponseWithDetail**](SeverancePlanResponseWithDetail.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -87,6 +84,7 @@ Name | Type | Description  | Notes
 > object delete_severance_plans_by_id(id)
 
 Delete Severance Plans By Id
+
 
 ### Example
 
@@ -129,10 +127,6 @@ Name | Type | Description  | Notes
 
 **object**
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -152,6 +146,7 @@ Name | Type | Description  | Notes
 > object download_severance_slip(id)
 
 Download Severance Slip
+
 
 ### Example
 
@@ -194,10 +189,6 @@ Name | Type | Description  | Notes
 
 **object**
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -218,7 +209,16 @@ Name | Type | Description  | Notes
 
 Get Severance Payment Plan
 
-### Search Query | Supported Keys | Supported Operators | Notes                                                                                       | | -------------- | ------------------- | ------------------------------------------------------------------------------------------- | | paymentDate    | :<br>\\><br><        | Equal operator<br>Greater than or equal to operator<br>Less than or equal to operator       | | plannedDate    | :<br>\\><br><        | Equal operator<br>Greater than or equal to operator<br>Less than or equal to equal operator | | paymentMethod  | :                   | Equal operator                                                                              | | paymentOption  | :                   | Equal operator                                                                              | | paid           | :                   | Equal operator                                                                              | 
+### Search Query
+| Supported Keys | Supported Operators | Notes                                                                                       |
+| -------------- | ------------------- | ------------------------------------------------------------------------------------------- |
+| paymentDate    | :<br>\><br><        | Equal operator<br>Greater than or equal to operator<br>Less than or equal to operator       |
+| plannedDate    | :<br>\><br><        | Equal operator<br>Greater than or equal to operator<br>Less than or equal to equal operator |
+| paymentMethod  | :                   | Equal operator                                                                              |
+| paymentOption  | :                   | Equal operator                                                                              |
+| paid           | :                   | Equal operator                                                                              |
+
+
 
 ### Example
 
@@ -257,10 +257,6 @@ This endpoint does not need any parameter.
 
 [**SeverancePaymentPlanListResponse**](SeverancePaymentPlanListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -280,6 +276,7 @@ This endpoint does not need any parameter.
 > SeverancePaymentPlanResponse get_severance_payment_plan_by_id(id)
 
 Get Severance Payment Plan By Id
+
 
 ### Example
 
@@ -322,10 +319,6 @@ Name | Type | Description  | Notes
 
 [**SeverancePaymentPlanResponse**](SeverancePaymentPlanResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -346,7 +339,15 @@ Name | Type | Description  | Notes
 
 Get Severance Plans
 
-### Search Query | Supported Keys               | Supported Operators | Notes                 | | ---------------------------- | ------------------- | --------------------- | | employeeIdentificationNumber | :                   | Like operator<br><br> | | employeeName                 | :                   | Like operator         | | paymentMethod                | :                   | Equal operator        | | paymentOption                | :                   | Equal operator        | 
+### Search Query
+| Supported Keys               | Supported Operators | Notes                 |
+| ---------------------------- | ------------------- | --------------------- |
+| employeeIdentificationNumber | :                   | Like operator<br><br> |
+| employeeName                 | :                   | Like operator         |
+| paymentMethod                | :                   | Equal operator        |
+| paymentOption                | :                   | Equal operator        |
+
+
 
 ### Example
 
@@ -385,10 +386,6 @@ This endpoint does not need any parameter.
 
 [**SeverancePlanListResponse**](SeverancePlanListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -408,6 +405,7 @@ This endpoint does not need any parameter.
 > SeverancePlanResponseWithDetail get_severance_plans_by_id(id)
 
 Get Severance Plans By Id
+
 
 ### Example
 
@@ -449,10 +447,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**SeverancePlanResponseWithDetail**](SeverancePlanResponseWithDetail.md)
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

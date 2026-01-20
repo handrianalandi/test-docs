@@ -24,7 +24,14 @@ Method | HTTP request | Description
 
 Download BPJS Manpower Payment Details Report
 
-### Search Query | Request Parameter Name | Description                                      | | ---------------------- | ------------------------------------------------ | | month                  | Month of the report<br>Value: 1-12.              | | year                   | Year of the report<br>Value: YYYY, example: 2021 | | bpjsManpowerProviderId | Provider Id                                      | 
+### Search Query
+| Request Parameter Name | Description                                      |
+| ---------------------- | ------------------------------------------------ |
+| month                  | Month of the report<br>Value: 1-12.              |
+| year                   | Year of the report<br>Value: YYYY, example: 2021 |
+| bpjsManpowerProviderId | Provider Id                                      |
+
+
 
 ### Example
 
@@ -61,10 +68,6 @@ This endpoint does not need any parameter.
 
 void (empty response body)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -85,7 +88,16 @@ void (empty response body)
 
 Download Pension Debt Report
 
-To comply with [PP No. 49 Tahun 2020](https://peraturan.bpk.go.id/Home/Details/144869/pp-no-49-tahun-2020#:~:text=PP%20No.%2049%20Tahun%202020,19\\)%20%5BJDIH%20BPK%20RI%5D&text=LN.2020%2FNo.199,go.id%20%3A%2020%20hlm.) for “Jaminan Pensiun”  ### Search Query | Request Parameter Name | Description        | | ---------------------- | ------------------ | | bpjsManpowerProviderId | Provider Id. UUID4 | 
+To comply with [PP No. 49 Tahun
+2020](https://peraturan.bpk.go.id/Home/Details/144869/pp-no-49-tahun-2020#:~:text=PP%20No.%2049%20Tahun%202020,19\)%20%5BJDIH%20BPK%20RI%5D&text=LN.2020%2FNo.199,go.id%20%3A%2020%20hlm.)
+for “Jaminan Pensiun”
+
+### Search Query
+| Request Parameter Name | Description        |
+| ---------------------- | ------------------ |
+| bpjsManpowerProviderId | Provider Id. UUID4 |
+
+
 
 ### Example
 
@@ -122,10 +134,6 @@ This endpoint does not need any parameter.
 
 void (empty response body)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -146,7 +154,14 @@ void (empty response body)
 
 Download SIPP Advance Member Report
 
-### Search Query | Request Parameter Name | Description                                        | | ---------------------- | ------------------------------------------------   | | month                  | Month of the report<br>Value: 1-12.                | | year                   | Year of the report<br>Value: YYYY, example: 2021   | | bpjsManpowerProviderId | Provider Id                                        | 
+### Search Query
+| Request Parameter Name | Description                                        |
+| ---------------------- | ------------------------------------------------   |
+| month                  | Month of the report<br>Value: 1-12.                |
+| year                   | Year of the report<br>Value: YYYY, example: 2021   |
+| bpjsManpowerProviderId | Provider Id                                        |
+
+
 
 ### Example
 
@@ -183,10 +198,6 @@ This endpoint does not need any parameter.
 
 void (empty response body)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -207,7 +218,14 @@ void (empty response body)
 
 Download SIPP New Member Report
 
-### Search Query | Request Parameter Name | Description                                        | | ---------------------- | ------------------------------------------------   | | month                  | Month of the report<br>Value: 1-12.                | | year                   | Year of the report<br>Value: YYYY, example: 2021   | | bpjsManpowerProviderId | Provider Id                                        | 
+### Search Query
+| Request Parameter Name | Description                                        |
+| ---------------------- | ------------------------------------------------   |
+| month                  | Month of the report<br>Value: 1-12.                |
+| year                   | Year of the report<br>Value: YYYY, example: 2021   |
+| bpjsManpowerProviderId | Provider Id                                        |
+
+
 
 ### Example
 
@@ -244,10 +262,6 @@ This endpoint does not need any parameter.
 
 void (empty response body)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -268,7 +282,14 @@ void (empty response body)
 
 Download SIPP Terminated Member Report
 
-### Search Query | Request Parameter Name | Description                                        | | ---------------------- | ------------------------------------------------   | | month                  | Month of the report<br>Value: 1-12.                | | year                   | Year of the report<br>Value: YYYY, example: 2021   | | bpjsManpowerProviderId | Provider Id                                        | 
+### Search Query
+| Request Parameter Name | Description                                        |
+| ---------------------- | ------------------------------------------------   |
+| month                  | Month of the report<br>Value: 1-12.                |
+| year                   | Year of the report<br>Value: YYYY, example: 2021   |
+| bpjsManpowerProviderId | Provider Id                                        |
+
+
 
 ### Example
 
@@ -305,10 +326,6 @@ This endpoint does not need any parameter.
 
 void (empty response body)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -329,7 +346,15 @@ void (empty response body)
 
 Download SIPP Wage Update Report
 
-### Search Query | Request Parameter Name | Description                                        | | ---------------------- | ------------------------------------------------   | | month                  | Month of the report<br>Value: 1-12.                | | year                   | Year of the report<br>Value: YYYY, example: 2021   | | bpjsManpowerProviderId | Provider Id. UUID4                                 | | paygroupId             | Provider Id from payroll. UUID4                    | 
+### Search Query
+| Request Parameter Name | Description                                        |
+| ---------------------- | ------------------------------------------------   |
+| month                  | Month of the report<br>Value: 1-12.                |
+| year                   | Year of the report<br>Value: YYYY, example: 2021   |
+| bpjsManpowerProviderId | Provider Id. UUID4                                 |
+| paygroupId             | Provider Id from payroll. UUID4                    |
+
+
 
 ### Example
 
@@ -366,10 +391,6 @@ This endpoint does not need any parameter.
 
 void (empty response body)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -390,7 +411,14 @@ void (empty response body)
 
 Get BPJS Manpower Premium Summaries
 
-### Search Query | Supported Keys       | Supported Operators | Notes         | |----------------------|---------------------|---------------| | employeeName         | :                   | Like Operator | | identificationNumber | :                   | Like Operator | | cutoffEndDate        | :<br>><br><         | Equal operator<br>Greater than or equal to operator<br>Less than or equal to equal operator | 
+### Search Query
+| Supported Keys       | Supported Operators | Notes         |
+|----------------------|---------------------|---------------|
+| employeeName         | :                   | Like Operator |
+| identificationNumber | :                   | Like Operator |
+| cutoffEndDate        | :<br>><br><         | Equal operator<br>Greater than or equal to operator<br>Less than or equal to equal operator |
+
+
 
 ### Example
 
@@ -429,10 +457,6 @@ This endpoint does not need any parameter.
 
 [**BpjsManpowerPremiumSummaryListResponse**](BpjsManpowerPremiumSummaryListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -452,6 +476,7 @@ This endpoint does not need any parameter.
 > BpjsManpowerPremiumDetailsResponse get_bpjs_manpower_premium_summary_details(id)
 
 Get BPJS Manpower Premium Summary Details
+
 
 ### Example
 
@@ -494,10 +519,6 @@ Name | Type | Description  | Notes
 
 [**BpjsManpowerPremiumDetailsResponse**](BpjsManpowerPremiumDetailsResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -518,7 +539,17 @@ Name | Type | Description  | Notes
 
 Get BPJS Manpower Providers
 
-### Search Query | Supported Keys          | Supported Operators | Notes         | | ----------------------- | ------------------- | ------------- | | name                    | :                   | Like Operator | | code                    | :                   | Like Operator | | address                 | :                   | Like Operator | | registrationNumber      | :                   | Like Operator | | reportSignatoryName     | :                   | Like Operator | | reportSignatoryJobTitle | :                   | Like Operator | 
+### Search Query
+| Supported Keys          | Supported Operators | Notes         |
+| ----------------------- | ------------------- | ------------- |
+| name                    | :                   | Like Operator |
+| code                    | :                   | Like Operator |
+| address                 | :                   | Like Operator |
+| registrationNumber      | :                   | Like Operator |
+| reportSignatoryName     | :                   | Like Operator |
+| reportSignatoryJobTitle | :                   | Like Operator |
+
+
 
 ### Example
 
@@ -557,10 +588,6 @@ This endpoint does not need any parameter.
 
 [**BpjsManpowerProviderListResponse**](BpjsManpowerProviderListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -581,7 +608,15 @@ This endpoint does not need any parameter.
 
 Get BPJS Manpower Templates
 
-### Search Query | Supported Keys | Supported Operators |Notes                                                                                     | | -------------- | ------------------- |------------------------------------------------------------------------------------------| | code           | :                   | Like Operator                                                                            | | name           | :                   | Like Operator                                                                            | | salaryType     | :                   | Equal Operator<br>Enum, available values:<br>\\[BY\\_PRORATED\\_SALARY, BY\\_SALARY\\_DECREE\\]| | linkToPayroll  | :                   | Equal Operator.<br>Boolean                                                               | 
+### Search Query
+| Supported Keys | Supported Operators |Notes                                                                                     |
+| -------------- | ------------------- |------------------------------------------------------------------------------------------|
+| code           | :                   | Like Operator                                                                            |
+| name           | :                   | Like Operator                                                                            |
+| salaryType     | :                   | Equal Operator<br>Enum, available values:<br>\[BY\_PRORATED\_SALARY, BY\_SALARY\_DECREE\]|
+| linkToPayroll  | :                   | Equal Operator.<br>Boolean                                                               |
+
+
 
 ### Example
 
@@ -619,10 +654,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 [**BpjsManpowerTemplateListResponse**](BpjsManpowerTemplateListResponse.md)
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

@@ -37,6 +37,7 @@ Method | HTTP request | Description
 
 Create Attendance Machine Data
 
+
 ### Example
 
 
@@ -78,10 +79,6 @@ Name | Type | Description  | Notes
 
 [**FingerprintResponse**](FingerprintResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -101,6 +98,7 @@ Name | Type | Description  | Notes
 > EmployeeWorkdayConfigurationResponse create_employee_roster_configuration(employee_workday_configuration_request)
 
 Create Employee Roster Configuration
+
 
 ### Example
 
@@ -143,10 +141,6 @@ Name | Type | Description  | Notes
 
 [**EmployeeWorkdayConfigurationResponse**](EmployeeWorkdayConfigurationResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -166,6 +160,7 @@ Name | Type | Description  | Notes
 > LeaveBalanceItemResponse create_leave_balance(leave_balance_request)
 
 Create Leave Balance
+
 
 ### Example
 
@@ -208,10 +203,6 @@ Name | Type | Description  | Notes
 
 [**LeaveBalanceItemResponse**](LeaveBalanceItemResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -231,6 +222,7 @@ Name | Type | Description  | Notes
 > OtherLeaveBalanceCreateResponse create_other_leave_balance(other_leave_balance_request)
 
 Create Other Leave Balance
+
 
 ### Example
 
@@ -273,10 +265,6 @@ Name | Type | Description  | Notes
 
 [**OtherLeaveBalanceCreateResponse**](OtherLeaveBalanceCreateResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -296,6 +284,7 @@ Name | Type | Description  | Notes
 > ShiftPatternTemplateListItemResponse create_shift_pattern_template(shift_pattern_template_request)
 
 Create Shift Pattern Template
+
 
 ### Example
 
@@ -338,10 +327,6 @@ Name | Type | Description  | Notes
 
 [**ShiftPatternTemplateListItemResponse**](ShiftPatternTemplateListItemResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -361,6 +346,7 @@ Name | Type | Description  | Notes
 > WorkgroupWorkdayConfigurationResponse create_workgroup_roster_configuration(workgroup_workday_configuration_request)
 
 Create Workgroup Roster Configuration
+
 
 ### Example
 
@@ -403,10 +389,6 @@ Name | Type | Description  | Notes
 
 [**WorkgroupWorkdayConfigurationResponse**](WorkgroupWorkdayConfigurationResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -426,6 +408,7 @@ Name | Type | Description  | Notes
 > object delete_employee_roster_configuration(id)
 
 Delete Employee Roster Configuration
+
 
 ### Example
 
@@ -468,10 +451,6 @@ Name | Type | Description  | Notes
 
 **object**
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -491,6 +470,7 @@ Name | Type | Description  | Notes
 > object delete_shift_pattern_template(id)
 
 Delete Shift Pattern Template
+
 
 ### Example
 
@@ -533,10 +513,6 @@ Name | Type | Description  | Notes
 
 **object**
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -556,6 +532,7 @@ Name | Type | Description  | Notes
 > object delete_workgroup_roster_configuration(id)
 
 Delete Workgroup Roster Configuration
+
 
 ### Example
 
@@ -598,10 +575,6 @@ Name | Type | Description  | Notes
 
 **object**
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -622,7 +595,13 @@ Name | Type | Description  | Notes
 
 Read Attendance
 
-### Search Query | Supported Keys                | Supported Operators | Notes                                             | | ----------------------------- | ------------------- | ------------------------------------------------- | | employee.identificationNumber | :                   | Like                                              | | date                          | \\><br><             | Greater than or equal to<br>Less than or equal to | 
+### Search Query
+| Supported Keys                | Supported Operators | Notes                                             |
+| ----------------------------- | ------------------- | ------------------------------------------------- |
+| employee.identificationNumber | :                   | Like                                              |
+| date                          | \><br><             | Greater than or equal to<br>Less than or equal to |
+
+
 
 ### Example
 
@@ -661,10 +640,6 @@ This endpoint does not need any parameter.
 
 [**AttendanceListResponse**](AttendanceListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -685,7 +660,14 @@ This endpoint does not need any parameter.
 
 Read Attendance Recapitulation Detail
 
-### Search Query | Supported Keys   | Supported Operators | Notes                                                                           | | ---------------- | ------------------- | ------------------------------------------------------------------------------- | | employee.id      | :                   | Equal to                                                                        | | date             | \\><br><             | Greater than or equal to<br>Less than or equal to                               | | attendances.type | :                   | Equal to, supported values: ABSENT, ANNUAL\\_LEAVE, COMPENSATORY\\_LEAVE, PRESENT | 
+### Search Query
+| Supported Keys   | Supported Operators | Notes                                                                           |
+| ---------------- | ------------------- | ------------------------------------------------------------------------------- |
+| employee.id      | :                   | Equal to                                                                        |
+| date             | \><br><             | Greater than or equal to<br>Less than or equal to                               |
+| attendances.type | :                   | Equal to, supported values: ABSENT, ANNUAL\_LEAVE, COMPENSATORY\_LEAVE, PRESENT |
+
+
 
 ### Example
 
@@ -724,10 +706,6 @@ This endpoint does not need any parameter.
 
 [**AttendanceRecapitulationDetailListResponse**](AttendanceRecapitulationDetailListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -748,7 +726,13 @@ This endpoint does not need any parameter.
 
 Read Employee Roster Configuration
 
-### Search Query | Supported Keys | Supported Operators | Notes                                             | | -------------- | ------------------- | ------------------------------------------------- | | startDate      | \\><br><             | Greater than or equal to<br>Less than or equal to | | endDate        | \\><br><             | Greater than or equal to<br>Less than or equal to | 
+### Search Query
+| Supported Keys | Supported Operators | Notes                                             |
+| -------------- | ------------------- | ------------------------------------------------- |
+| startDate      | \><br><             | Greater than or equal to<br>Less than or equal to |
+| endDate        | \><br><             | Greater than or equal to<br>Less than or equal to |
+
+
 
 ### Example
 
@@ -787,10 +771,6 @@ This endpoint does not need any parameter.
 
 [**EmployeeWorkdayConfigurationListResponse**](EmployeeWorkdayConfigurationListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -810,6 +790,7 @@ This endpoint does not need any parameter.
 > EmployeeWorkdayConfigurationResponse read_employee_roster_configuration_by_id(id)
 
 Read Employee Roster Configuration By Id
+
 
 ### Example
 
@@ -852,10 +833,6 @@ Name | Type | Description  | Notes
 
 [**EmployeeWorkdayConfigurationResponse**](EmployeeWorkdayConfigurationResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -876,7 +853,13 @@ Name | Type | Description  | Notes
 
 Read Holiday
 
-### Search Query | Supported Keys | Supported Operators | Notes                                             | | -------------- | ------------------- | ------------------------------------------------- | | holidayDate    | \\><br><             | Greater than or equal to<br>Less than or equal to | | name           | :                   | Equal Operator                                    | 
+### Search Query
+| Supported Keys | Supported Operators | Notes                                             |
+| -------------- | ------------------- | ------------------------------------------------- |
+| holidayDate    | \><br><             | Greater than or equal to<br>Less than or equal to |
+| name           | :                   | Equal Operator                                    |
+
+
 
 ### Example
 
@@ -915,10 +898,6 @@ This endpoint does not need any parameter.
 
 [**HolidayListResponse**](HolidayListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -939,7 +918,15 @@ This endpoint does not need any parameter.
 
 Read Leave Balance
 
-### Search Query | Supported Keys                | Supported Operators | Notes                                                      | | ----------------------------- | ------------------- | ---------------------------------------------------------- | | employee.identificationNumber | :                   | Like                                                       | | year                          | :<br>><br><          |Equal<br>Greater than or equal to<br>Less than or equal to | | active                        | :                   | Equal                                                      | | extended                      | :                   | Equal                                                      | 
+### Search Query
+| Supported Keys                | Supported Operators | Notes                                                      |
+| ----------------------------- | ------------------- | ---------------------------------------------------------- |
+| employee.identificationNumber | :                   | Like                                                       |
+| year                          | :<br>><br><          |Equal<br>Greater than or equal to<br>Less than or equal to |
+| active                        | :                   | Equal                                                      |
+| extended                      | :                   | Equal                                                      |
+
+
 
 ### Example
 
@@ -978,10 +965,6 @@ This endpoint does not need any parameter.
 
 [**LeaveBalanceListResponse**](LeaveBalanceListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1002,7 +985,15 @@ This endpoint does not need any parameter.
 
 Read Other Leave Balance
 
-### Search Query | Supported Keys                | Supported Operators | Notes | | ----------------------------- | ------------------- | ----- | | employee.id                   | :                   | Equal | | employee.identificationNumber | :                   | Equal | | year                          | :                   | Equal | | otherLeaveStatus.code         | :                   | Equal | 
+### Search Query
+| Supported Keys                | Supported Operators | Notes |
+| ----------------------------- | ------------------- | ----- |
+| employee.id                   | :                   | Equal |
+| employee.identificationNumber | :                   | Equal |
+| year                          | :                   | Equal |
+| otherLeaveStatus.code         | :                   | Equal |
+
+
 
 ### Example
 
@@ -1041,10 +1032,6 @@ This endpoint does not need any parameter.
 
 [**OtherLeaveBalanceListResponse**](OtherLeaveBalanceListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1065,7 +1052,12 @@ This endpoint does not need any parameter.
 
 Read Shift Pattern Template
 
-### Search Query | Supported Keys | Supported Operators | Notes         | | -------------- | ------------------- | ------------- | | name           | :                   | Like operator | 
+### Search Query
+| Supported Keys | Supported Operators | Notes         |
+| -------------- | ------------------- | ------------- |
+| name           | :                   | Like operator |
+
+
 
 ### Example
 
@@ -1104,10 +1096,6 @@ This endpoint does not need any parameter.
 
 [**ShiftPatternTemplateListResponse**](ShiftPatternTemplateListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1127,6 +1115,7 @@ This endpoint does not need any parameter.
 > ShiftPatternTemplateItemResponse read_shift_pattern_template_by_id(id)
 
 Read Shift Pattern Template By Id
+
 
 ### Example
 
@@ -1169,10 +1158,6 @@ Name | Type | Description  | Notes
 
 [**ShiftPatternTemplateItemResponse**](ShiftPatternTemplateItemResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1193,7 +1178,13 @@ Name | Type | Description  | Notes
 
 Read Workgroup Roster Configuration
 
-### Search Query | Supported Keys | Supported Operators | Notes                                             | | -------------- | ------------------- | ------------------------------------------------- | | startDate      | \\><br><             | Greater than or equal to<br>Less than or equal to | | endDate        | \\><br><             | Greater than or equal to<br>Less than or equal to | 
+### Search Query
+| Supported Keys | Supported Operators | Notes                                             |
+| -------------- | ------------------- | ------------------------------------------------- |
+| startDate      | \><br><             | Greater than or equal to<br>Less than or equal to |
+| endDate        | \><br><             | Greater than or equal to<br>Less than or equal to |
+
+
 
 ### Example
 
@@ -1232,10 +1223,6 @@ This endpoint does not need any parameter.
 
 [**WorkgroupWorkdayConfigurationListResponse**](WorkgroupWorkdayConfigurationListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1255,6 +1242,7 @@ This endpoint does not need any parameter.
 > WorkgroupWorkdayConfigurationResponse read_workgroup_roster_configuration_by_id(id)
 
 Read Workgroup Roster Configuration By ID
+
 
 ### Example
 
@@ -1297,10 +1285,6 @@ Name | Type | Description  | Notes
 
 [**WorkgroupWorkdayConfigurationResponse**](WorkgroupWorkdayConfigurationResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1320,6 +1304,7 @@ Name | Type | Description  | Notes
 > EmployeeWorkdayConfigurationResponse update_employee_roster_configuration(id, employee_workday_configuration_request)
 
 Update Employee Roster Configuration
+
 
 ### Example
 
@@ -1364,10 +1349,6 @@ Name | Type | Description  | Notes
 
 [**EmployeeWorkdayConfigurationResponse**](EmployeeWorkdayConfigurationResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -1387,6 +1368,7 @@ Name | Type | Description  | Notes
 > ShiftPatternTemplateItemResponse update_shift_pattern_template(id, shift_pattern_template_request)
 
 Update Shift Pattern Template
+
 
 ### Example
 
@@ -1431,10 +1413,6 @@ Name | Type | Description  | Notes
 
 [**ShiftPatternTemplateItemResponse**](ShiftPatternTemplateItemResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -1454,6 +1432,7 @@ Name | Type | Description  | Notes
 > WorkgroupWorkdayConfigurationResponse update_workgroup_roster_configuration(id, workgroup_workday_configuration_request)
 
 Update Workgroup Roster Configuration
+
 
 ### Example
 
@@ -1497,10 +1476,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**WorkgroupWorkdayConfigurationResponse**](WorkgroupWorkdayConfigurationResponse.md)
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

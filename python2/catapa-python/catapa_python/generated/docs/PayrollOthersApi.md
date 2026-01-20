@@ -16,7 +16,13 @@ Method | HTTP request | Description
 
 Get Additional Income
 
-### Search Query | Supported Keys | Supported Operators |Notes                                                      | | -------------- | ------------------- |---------------------------------------------------------- | | paymentDate    | :<br>><br><         |Equal<br>Greater than or equal to<br>Less than or equal to | | payment.process    | :     |Equal<br>Boolean 
+### Search Query
+| Supported Keys | Supported Operators |Notes                                                      |
+| -------------- | ------------------- |---------------------------------------------------------- |
+| paymentDate    | :<br>><br><         |Equal<br>Greater than or equal to<br>Less than or equal to |
+| payment.process    | :     |Equal<br>Boolean
+
+
 
 ### Example
 
@@ -55,10 +61,6 @@ This endpoint does not need any parameter.
 
 [**AdditionalIncomePaymentListResponse**](AdditionalIncomePaymentListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -78,6 +80,7 @@ This endpoint does not need any parameter.
 > MonthlyRecapitulationListResponse get_monthly_recapitulation(filter_type, year, month)
 
 Get Monthly Recapitulation
+
 
 ### Example
 
@@ -123,10 +126,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**MonthlyRecapitulationListResponse**](MonthlyRecapitulationListResponse.md)
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

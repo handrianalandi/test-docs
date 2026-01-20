@@ -22,7 +22,25 @@ Method | HTTP request | Description
 
 Get Processable Time Allowance Transition
 
-⚠️ **This endpoint is deprecated.** Transition Calculation Process now available at Regular Salary Process, so the menu and existing endpoint are deprecated and will be removed  ### Search Query | Supported Keys               | Supported Operators | Notes                                                                       | | ---------------------------- | ------------------- | --------------------------------------------------------------------------- | | idIn                         | :                   | Equal operator with multiple values, each value separated with delimiters ; | | year                         | :                   | Like operator                                                               | | month                        | :                   | Like operator                                                               | | organizationId               | :                   | Like operator                                                               | | jobTitleId                   | :                   | Like operator                                                               | | locationId                   | :                   | Like operator                                                               | | employeeId                   | :                   | Like operator                                                               | | employeeName                 | :                   | Like operator                                                               | | employeeIdentificationNumber | :                   | Like operator                                                               | | startDate                    | :<br>><br><          | Equal<br>Greater than or equal to<br>Less than or equal to                  | | endDate                      | :<br>><br><          | Equal<br>Greater than or equal to<br>Less than or equal to                  | 
+⚠️ **This endpoint is deprecated.**
+Transition Calculation Process now available at Regular Salary Process, so the menu and existing endpoint are deprecated and will be removed
+
+### Search Query
+| Supported Keys               | Supported Operators | Notes                                                                       |
+| ---------------------------- | ------------------- | --------------------------------------------------------------------------- |
+| idIn                         | :                   | Equal operator with multiple values, each value separated with delimiters ; |
+| year                         | :                   | Like operator                                                               |
+| month                        | :                   | Like operator                                                               |
+| organizationId               | :                   | Like operator                                                               |
+| jobTitleId                   | :                   | Like operator                                                               |
+| locationId                   | :                   | Like operator                                                               |
+| employeeId                   | :                   | Like operator                                                               |
+| employeeName                 | :                   | Like operator                                                               |
+| employeeIdentificationNumber | :                   | Like operator                                                               |
+| startDate                    | :<br>><br><          | Equal<br>Greater than or equal to<br>Less than or equal to                  |
+| endDate                      | :<br>><br><          | Equal<br>Greater than or equal to<br>Less than or equal to                  |
+
+
 
 ### Example
 
@@ -61,10 +79,6 @@ This endpoint does not need any parameter.
 
 [**ProcessableTimeAllowanceTransitionListResponse**](ProcessableTimeAllowanceTransitionListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -85,7 +99,26 @@ This endpoint does not need any parameter.
 
 Get Processable Transition Calculation
 
-⚠️ **This endpoint is deprecated.**  Transition Calculation Process now available at Regular Salary Process, so the menu and existing endpoint are deprecated and will be removed  --- ### Search Query | Supported Keys               | Supported Operators | Notes                                                                       | | ---------------------------- | ------------------- | --------------------------------------------------------------------------- | | idIn                         | :                   | Equal operator with multiple values, each value separated with delimiters ; | | year                         | :                   | Like operator                                                               | | month                        | :                   | Like operator                                                               | | organizationId               | :                   | Like operator                                                               | | jobTitleId                   | :                   | Like operator                                                               | | locationId                   | :                   | Like operator                                                               | | employeeId                   | :                   | Like operator                                                               | | employeeName                 | :                   | Like operator                                                               | | employeeIdentificationNumber | :                   | Like operator                                                               | | startDate                    | :<br>><br><          | Equal<br>Greater than or equal to<br>Less than or equal to                  | | endDate                      | :<br>><br><          | Equal<br>Greater than or equal to<br>Less than or equal to                  | 
+⚠️ **This endpoint is deprecated.** 
+Transition Calculation Process now available at Regular Salary Process, so the menu and existing endpoint are deprecated and will be removed
+
+---
+### Search Query
+| Supported Keys               | Supported Operators | Notes                                                                       |
+| ---------------------------- | ------------------- | --------------------------------------------------------------------------- |
+| idIn                         | :                   | Equal operator with multiple values, each value separated with delimiters ; |
+| year                         | :                   | Like operator                                                               |
+| month                        | :                   | Like operator                                                               |
+| organizationId               | :                   | Like operator                                                               |
+| jobTitleId                   | :                   | Like operator                                                               |
+| locationId                   | :                   | Like operator                                                               |
+| employeeId                   | :                   | Like operator                                                               |
+| employeeName                 | :                   | Like operator                                                               |
+| employeeIdentificationNumber | :                   | Like operator                                                               |
+| startDate                    | :<br>><br><          | Equal<br>Greater than or equal to<br>Less than or equal to                  |
+| endDate                      | :<br>><br><          | Equal<br>Greater than or equal to<br>Less than or equal to                  |
+
+
 
 ### Example
 
@@ -124,10 +157,6 @@ This endpoint does not need any parameter.
 
 [**UnprocessedTransitionCalculationListResponse**](UnprocessedTransitionCalculationListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -148,7 +177,26 @@ This endpoint does not need any parameter.
 
 Get Processed Transition Calculation
 
-⚠️ **This endpoint is deprecated.** Transition Calculation Process now available at Regular Salary Process, so the menu and existing endpoint are deprecated and will be removed  --- ### Search Query | Supported Keys               | Supported Operators | Notes                                                                       | | ---------------------------- | ------------------- | --------------------------------------------------------------------------- | | idIn                         | :                   | Equal operator with multiple values, each value separated with delimiters ; | | year                         | :                   | Like operator                                                               | | month                        | :                   | Like operator                                                               | | organizationId               | :                   | Like operator                                                               | | jobTitleId                   | :                   | Like operator                                                               | | locationId                   | :                   | Like operator                                                               | | employeeId                   | :                   | Like operator                                                               | | employeeName                 | :                   | Like operator                                                               | | employeeIdentificationNumber | :                   | Like operator                                                               | | startDate                    | :<br>><br><          | Equal<br>Greater than or equal to<br>Less than or equal to                  | | endDate                      | :<br>><br><          | Equal<br>Greater than or equal to<br>Less than or equal to                  | 
+⚠️ **This endpoint is deprecated.**
+Transition Calculation Process now available at Regular Salary Process, so the menu and existing endpoint are deprecated and will be removed
+
+---
+### Search Query
+| Supported Keys               | Supported Operators | Notes                                                                       |
+| ---------------------------- | ------------------- | --------------------------------------------------------------------------- |
+| idIn                         | :                   | Equal operator with multiple values, each value separated with delimiters ; |
+| year                         | :                   | Like operator                                                               |
+| month                        | :                   | Like operator                                                               |
+| organizationId               | :                   | Like operator                                                               |
+| jobTitleId                   | :                   | Like operator                                                               |
+| locationId                   | :                   | Like operator                                                               |
+| employeeId                   | :                   | Like operator                                                               |
+| employeeName                 | :                   | Like operator                                                               |
+| employeeIdentificationNumber | :                   | Like operator                                                               |
+| startDate                    | :<br>><br><          | Equal<br>Greater than or equal to<br>Less than or equal to                  |
+| endDate                      | :<br>><br><          | Equal<br>Greater than or equal to<br>Less than or equal to                  |
+
+
 
 ### Example
 
@@ -187,10 +235,6 @@ This endpoint does not need any parameter.
 
 [**ProcessedTransitionCalculationListResponse**](ProcessedTransitionCalculationListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -211,7 +255,10 @@ This endpoint does not need any parameter.
 
 Get Prorate Details By Transition Calculation Detail Id
 
-⚠️ **This endpoint is deprecated.** Transition Calculation Process now available at Regular Salary Process, so the menu and existing endpoint are deprecated and will be removed 
+⚠️ **This endpoint is deprecated.**
+Transition Calculation Process now available at Regular Salary Process, so the menu and existing endpoint are deprecated and will be removed
+
+
 
 ### Example
 
@@ -254,10 +301,6 @@ Name | Type | Description  | Notes
 
 [**List[ProrateDetailResponse]**](ProrateDetailResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -278,7 +321,10 @@ Name | Type | Description  | Notes
 
 Get Time Allowance Details by Transition Calculation Detail Id
 
-⚠️ **This endpoint is deprecated.** Transition Calculation Process now available at Regular Salary Process, so the menu and existing endpoint are deprecated and will be removed 
+⚠️ **This endpoint is deprecated.**
+Transition Calculation Process now available at Regular Salary Process, so the menu and existing endpoint are deprecated and will be removed
+
+
 
 ### Example
 
@@ -321,10 +367,6 @@ Name | Type | Description  | Notes
 
 [**List[TransitionTimeAllowanceDetailResponse]**](TransitionTimeAllowanceDetailResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -345,7 +387,26 @@ Name | Type | Description  | Notes
 
 Get Transition Calculation Count
 
-⚠️ **This endpoint is deprecated.**  Transition Calculation Process now available at Regular Salary Process, so the menu and existing endpoint are deprecated and will be removed  --- ### Search Query | Supported Keys               | Supported Operators | Notes                                                                       | | ---------------------------- | ------------------- | --------------------------------------------------------------------------- | | idIn                         | :                   | Equal operator with multiple values, each value separated with delimiters ; | | year                         | :                   | Like operator                                                               | | month                        | :                   | Like operator                                                               | | organizationId               | :                   | Like operator                                                               | | jobTitleId                   | :                   | Like operator                                                               | | locationId                   | :                   | Like operator                                                               | | employeeId                   | :                   | Like operator                                                               | | employeeName                 | :                   | Like operator                                                               | | employeeIdentificationNumber | :                   | Like operator                                                               | | startDate                    | :<br>><br><          | Equal<br>Greater than or equal to<br>Less than or equal to                  | | endDate                      | :<br>><br><          | Equal<br>Greater than or equal to<br>Less than or equal to                  | 
+⚠️ **This endpoint is deprecated.** 
+Transition Calculation Process now available at Regular Salary Process, so the menu and existing endpoint are deprecated and will be removed
+
+---
+### Search Query
+| Supported Keys               | Supported Operators | Notes                                                                       |
+| ---------------------------- | ------------------- | --------------------------------------------------------------------------- |
+| idIn                         | :                   | Equal operator with multiple values, each value separated with delimiters ; |
+| year                         | :                   | Like operator                                                               |
+| month                        | :                   | Like operator                                                               |
+| organizationId               | :                   | Like operator                                                               |
+| jobTitleId                   | :                   | Like operator                                                               |
+| locationId                   | :                   | Like operator                                                               |
+| employeeId                   | :                   | Like operator                                                               |
+| employeeName                 | :                   | Like operator                                                               |
+| employeeIdentificationNumber | :                   | Like operator                                                               |
+| startDate                    | :<br>><br><          | Equal<br>Greater than or equal to<br>Less than or equal to                  |
+| endDate                      | :<br>><br><          | Equal<br>Greater than or equal to<br>Less than or equal to                  |
+
+
 
 ### Example
 
@@ -384,10 +445,6 @@ This endpoint does not need any parameter.
 
 [**TransitionCalculationCountResponse**](TransitionCalculationCountResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -408,7 +465,10 @@ This endpoint does not need any parameter.
 
 Get Transition Calculation by Id
 
-⚠️ **This endpoint is deprecated.** Transition Calculation Process now available at Regular Salary Process, so the menu and existing endpoint are deprecated and will be removed 
+⚠️ **This endpoint is deprecated.**
+Transition Calculation Process now available at Regular Salary Process, so the menu and existing endpoint are deprecated and will be removed
+
+
 
 ### Example
 
@@ -451,10 +511,6 @@ Name | Type | Description  | Notes
 
 [**TransitionCalculationResponse**](TransitionCalculationResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -475,7 +531,10 @@ Name | Type | Description  | Notes
 
 Update Transition Calculation Details With Editable Type
 
-⚠️ **This endpoint is deprecated.** Transition Calculation Process now available at Regular Salary Process, so the menu and existing endpoint are deprecated and will be removed 
+⚠️ **This endpoint is deprecated.**
+Transition Calculation Process now available at Regular Salary Process, so the menu and existing endpoint are deprecated and will be removed
+
+
 
 ### Example
 
@@ -517,10 +576,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

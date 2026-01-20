@@ -17,6 +17,7 @@ Method | HTTP request | Description
 
 Create or Update Employee Salary Template
 
+
 ### Example
 
 
@@ -60,10 +61,6 @@ Name | Type | Description  | Notes
 
 [**EmployeeSalaryTemplateUpdateResponse**](EmployeeSalaryTemplateUpdateResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -83,6 +80,7 @@ Name | Type | Description  | Notes
 > EmployeeSalaryTemplateListResponse get_effective_employee_salary_template(id, year, month)
 
 Get Effective Employee Salary Template
+
 
 ### Example
 
@@ -129,10 +127,6 @@ Name | Type | Description  | Notes
 
 [**EmployeeSalaryTemplateListResponse**](EmployeeSalaryTemplateListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -152,6 +146,7 @@ Name | Type | Description  | Notes
 > EmployeeSalaryTemplateResponse get_latest_employee_salary_template(id)
 
 Get Latest Employee Salary Template
+
 
 ### Example
 
@@ -193,10 +188,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**EmployeeSalaryTemplateResponse**](EmployeeSalaryTemplateResponse.md)
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

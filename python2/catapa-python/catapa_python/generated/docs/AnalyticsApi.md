@@ -17,6 +17,7 @@ Method | HTTP request | Description
 
 Create Analytics Chart
 
+
 ### Example
 
 
@@ -58,10 +59,6 @@ Name | Type | Description  | Notes
 
 [**AnalyticsChartResponse**](AnalyticsChartResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -82,7 +79,12 @@ Name | Type | Description  | Notes
 
 Get Analytics Chart Data
 
-### Search Query | Supported Keys | Supported Operators | Notes         | |----------------|---------------------|---------------| | title          | :                   | Like operator | 
+### Search Query
+| Supported Keys | Supported Operators | Notes         |
+|----------------|---------------------|---------------|
+| title          | :                   | Like operator |
+
+
 
 ### Example
 
@@ -121,10 +123,6 @@ This endpoint does not need any parameter.
 
 [**AnalyticsChartListResponse**](AnalyticsChartListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -146,6 +144,7 @@ This endpoint does not need any parameter.
 Get Analytics Data by Chart ID and Current User
 
 Get Analytics Data by Chart ID and Current User
+
 
 ### Example
 
@@ -189,10 +188,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**AnalyticsChartDataResponse**](AnalyticsChartDataResponse.md)
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

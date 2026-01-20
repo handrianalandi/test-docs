@@ -16,6 +16,7 @@ Method | HTTP request | Description
 
 Get OAuth Client by ID
 
+
 ### Example
 
 
@@ -57,10 +58,6 @@ Name | Type | Description  | Notes
 
 [**OAuthClientResponse**](OAuthClientResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -81,6 +78,7 @@ Name | Type | Description  | Notes
 > OAuthClientListResponse list_all_o_auth_clients(page, size)
 
 List All OAuth Clients
+
 
 ### Example
 
@@ -124,10 +122,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**OAuthClientListResponse**](OAuthClientListResponse.md)
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

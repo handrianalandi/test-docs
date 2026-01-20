@@ -21,6 +21,7 @@ Method | HTTP request | Description
 
 Create Workflow Reason
 
+
 ### Example
 
 
@@ -62,10 +63,6 @@ Name | Type | Description  | Notes
 
 [**WorkflowReasonResponse**](WorkflowReasonResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -85,6 +82,7 @@ Name | Type | Description  | Notes
 > WorkflowReasonCategoryResponse create_workflow_reason_category(workflow_reason_category_request)
 
 Create Workflow Reason Category
+
 
 ### Example
 
@@ -127,10 +125,6 @@ Name | Type | Description  | Notes
 
 [**WorkflowReasonCategoryResponse**](WorkflowReasonCategoryResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -151,7 +145,14 @@ Name | Type | Description  | Notes
 
 Get Workflow Activities
 
-### Search Query | Supported Keys          | Supported Operators | Notes                                            | |-------------------------|---------------------|--------------------------------------------------| | id                      | `:`                 | Equal operator                                   | | effectiveDate           | ><br><              |Greater than or equal to<br>Less than or equal to | | employee.id             | `:`                 | Equal operator                                   | 
+### Search Query
+| Supported Keys          | Supported Operators | Notes                                            |
+|-------------------------|---------------------|--------------------------------------------------|
+| id                      | `:`                 | Equal operator                                   |
+| effectiveDate           | ><br><              |Greater than or equal to<br>Less than or equal to |
+| employee.id             | `:`                 | Equal operator                                   |
+
+
 
 ### Example
 
@@ -190,10 +191,6 @@ This endpoint does not need any parameter.
 
 [**WorkflowActivityListResponse**](WorkflowActivityListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -214,7 +211,14 @@ This endpoint does not need any parameter.
 
 Get Workflow Reasons
 
-### Search Query | Supported Keys          | Supported Operators | Notes                      | |-------------------------|---------------------|----------------------------| | code                    | `:`                 | Like operator              | | name                    | `:`                 | Like operator              | | category.id                    | `:`                 | Equal operator              | 
+### Search Query
+| Supported Keys          | Supported Operators | Notes                      |
+|-------------------------|---------------------|----------------------------|
+| code                    | `:`                 | Like operator              |
+| name                    | `:`                 | Like operator              |
+| category.id                    | `:`                 | Equal operator              |
+
+
 
 ### Example
 
@@ -253,10 +257,6 @@ This endpoint does not need any parameter.
 
 [**WorkflowReasonListResponse**](WorkflowReasonListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -277,7 +277,13 @@ This endpoint does not need any parameter.
 
 Get Workflow Reason Categories
 
-### Search Query | Supported Keys          | Supported Operators | Notes                      | |-------------------------|---------------------|----------------------------| | code                    | `:`                 | Like operator              | | name                    | `:`                 | Like operator              | 
+### Search Query
+| Supported Keys          | Supported Operators | Notes                      |
+|-------------------------|---------------------|----------------------------|
+| code                    | `:`                 | Like operator              |
+| name                    | `:`                 | Like operator              |
+
+
 
 ### Example
 
@@ -316,10 +322,6 @@ This endpoint does not need any parameter.
 
 [**WorkflowReasonCategoryListResponse**](WorkflowReasonCategoryListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -339,6 +341,7 @@ This endpoint does not need any parameter.
 > WorkflowReasonResponse update_workflow_reason(id, workflow_reason_request)
 
 Update Workflow Reason
+
 
 ### Example
 
@@ -383,10 +386,6 @@ Name | Type | Description  | Notes
 
 [**WorkflowReasonResponse**](WorkflowReasonResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -406,6 +405,7 @@ Name | Type | Description  | Notes
 > WorkflowReasonCategoryResponse update_workflow_reason_categories(id, workflow_reason_category_request)
 
 Update Workflow Reason Category
+
 
 ### Example
 
@@ -449,10 +449,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**WorkflowReasonCategoryResponse**](WorkflowReasonCategoryResponse.md)
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

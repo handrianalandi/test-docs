@@ -23,7 +23,14 @@ Method | HTTP request | Description
 
 Download BPJS Healthcare Payment Details Report
 
-### Search Query | Request Parameter Name   | Description                                 | | ------------------------ | --------------------------------------------| | month                    | Month of the report<br>Value: 1-12.         | | year                     | Year of the report<br>Value: YYYY, eg: 2021 | | bpjsHealthcareProviderId | Provider Id                                 | 
+### Search Query
+| Request Parameter Name   | Description                                 |
+| ------------------------ | --------------------------------------------|
+| month                    | Month of the report<br>Value: 1-12.         |
+| year                     | Year of the report<br>Value: YYYY, eg: 2021 |
+| bpjsHealthcareProviderId | Provider Id                                 |
+
+
 
 ### Example
 
@@ -60,10 +67,6 @@ This endpoint does not need any parameter.
 
 void (empty response body)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -84,7 +87,14 @@ void (empty response body)
 
 Download E-Dabu Advance Member Report
 
-### Search Query | Request Parameter Name   | Description                                 | | ------------------------ | ------------------------------------------- | | month                    | Month of the report<br>Value: 1-12.         | | year                     | Year of the report<br>Value: YYYY, eg: 2021 | | bpjsHealthcareProviderId | Provider Id                                 | 
+### Search Query
+| Request Parameter Name   | Description                                 |
+| ------------------------ | ------------------------------------------- |
+| month                    | Month of the report<br>Value: 1-12.         |
+| year                     | Year of the report<br>Value: YYYY, eg: 2021 |
+| bpjsHealthcareProviderId | Provider Id                                 |
+
+
 
 ### Example
 
@@ -121,10 +131,6 @@ This endpoint does not need any parameter.
 
 void (empty response body)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -145,7 +151,14 @@ void (empty response body)
 
 Download E-Dabu Employee Identity Card Member Check Report
 
-### Search Query | Request Parameter Name   | Description                                 | | ------------------------ | ------------------------------------------- | | month                    | Month of the report<br>Value: 1-12.         | | year                     | Year of the report<br>Value: YYYY, eg: 2021 | | bpjsHealthcareProviderId | Provider Id                                 | 
+### Search Query
+| Request Parameter Name   | Description                                 |
+| ------------------------ | ------------------------------------------- |
+| month                    | Month of the report<br>Value: 1-12.         |
+| year                     | Year of the report<br>Value: YYYY, eg: 2021 |
+| bpjsHealthcareProviderId | Provider Id                                 |
+
+
 
 ### Example
 
@@ -182,10 +195,6 @@ This endpoint does not need any parameter.
 
 void (empty response body)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -206,7 +215,14 @@ void (empty response body)
 
 Download E-Dabu New Member Report
 
-### Search Query | Request Parameter Name   | Description                                 | | ------------------------ | ------------------------------------------- | | month                    | Month of the report<br>Value: 1-12.         | | year                     | Year of the report<br>Value: YYYY, eg: 2021 | | bpjsHealthcareProviderId | Provider Id                                 | 
+### Search Query
+| Request Parameter Name   | Description                                 |
+| ------------------------ | ------------------------------------------- |
+| month                    | Month of the report<br>Value: 1-12.         |
+| year                     | Year of the report<br>Value: YYYY, eg: 2021 |
+| bpjsHealthcareProviderId | Provider Id                                 |
+
+
 
 ### Example
 
@@ -243,10 +259,6 @@ This endpoint does not need any parameter.
 
 void (empty response body)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -267,7 +279,15 @@ void (empty response body)
 
 Download E-Dabu Wage Update Report
 
-### Search Query | Request Parameter Name   | Description                                 | | ------------------------ | ------------------------------------------- | | month                    | Month of the report<br>Value: 1-12.         | | year                     | Year of the report<br>Value: YYYY, eg: 2021 | | bpjsHealthcareProviderId | Provider Id. UUID4                          | | paygroupId               | Paygroup id from payroll. UUID4             | 
+### Search Query
+| Request Parameter Name   | Description                                 |
+| ------------------------ | ------------------------------------------- |
+| month                    | Month of the report<br>Value: 1-12.         |
+| year                     | Year of the report<br>Value: YYYY, eg: 2021 |
+| bpjsHealthcareProviderId | Provider Id. UUID4                          |
+| paygroupId               | Paygroup id from payroll. UUID4             |
+
+
 
 ### Example
 
@@ -304,10 +324,6 @@ This endpoint does not need any parameter.
 
 void (empty response body)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -328,7 +344,14 @@ void (empty response body)
 
 Get BPJS Healthcare Premium Summaries
 
-### Search Query | Supported Keys       | Supported Operators | Notes         | |----------------------|---------------------|---------------| | employeeName         | :                   | Like Operator | | identificationNumber | :                   | Like Operator | | cutoffEndDate        | :<br>><br><         | Equal operator<br>Greater than or equal to operator<br>Less than or equal to equal operator | 
+### Search Query
+| Supported Keys       | Supported Operators | Notes         |
+|----------------------|---------------------|---------------|
+| employeeName         | :                   | Like Operator |
+| identificationNumber | :                   | Like Operator |
+| cutoffEndDate        | :<br>><br><         | Equal operator<br>Greater than or equal to operator<br>Less than or equal to equal operator |
+
+
 
 ### Example
 
@@ -367,10 +390,6 @@ This endpoint does not need any parameter.
 
 [**BpjsHealthcarePremiumSummaryListResponse**](BpjsHealthcarePremiumSummaryListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -390,6 +409,7 @@ This endpoint does not need any parameter.
 > BpjsHealthcarePremiumDetailsResponse get_bpjs_healthcare_premium_summary_details(id)
 
 Get BPJS Healthcare Premium Summary Details
+
 
 ### Example
 
@@ -432,10 +452,6 @@ Name | Type | Description  | Notes
 
 [**BpjsHealthcarePremiumDetailsResponse**](BpjsHealthcarePremiumDetailsResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -456,7 +472,17 @@ Name | Type | Description  | Notes
 
 Get BPJS Healthcare Providers
 
-### Search Query | Supported Keys          | Supported Operators | Notes         | | ----------------------- | ------------------- | ------------- | | name                    | :                   | Like Operator | | code                    | :                   | Like Operator | | address                 | :                   | Like Operator | | registrationNumber      | :                   | Like Operator | | reportSignatoryName     | :                   | Like Operator | | reportSignatoryJobTitle | :                   | Like Operator | 
+### Search Query
+| Supported Keys          | Supported Operators | Notes         |
+| ----------------------- | ------------------- | ------------- |
+| name                    | :                   | Like Operator |
+| code                    | :                   | Like Operator |
+| address                 | :                   | Like Operator |
+| registrationNumber      | :                   | Like Operator |
+| reportSignatoryName     | :                   | Like Operator |
+| reportSignatoryJobTitle | :                   | Like Operator |
+
+
 
 ### Example
 
@@ -495,10 +521,6 @@ This endpoint does not need any parameter.
 
 [**BpjsHealthcareProviderListResponse**](BpjsHealthcareProviderListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -519,7 +541,15 @@ This endpoint does not need any parameter.
 
 Get BPJS Healthcare Templates
 
-### Search Query | Supported Keys | Supported Operators |Notes                                                                                     | | -------------- | ------------------- |------------------------------------------------------------------------------------------| | code           | :                   | Like Operator                                                                            | | name           | :                   | Like Operator                                                                            | | salaryType     | :                   | Equal Operator<br>Enum, available values:<br>\\[BY\\_PRORATED\\_SALARY, BY\\_SALARY\\_DECREE\\]| | linkToPayroll  | :                   | Equal Operator.<br>Boolean                                                               | 
+### Search Query
+| Supported Keys | Supported Operators |Notes                                                                                     |
+| -------------- | ------------------- |------------------------------------------------------------------------------------------|
+| code           | :                   | Like Operator                                                                            |
+| name           | :                   | Like Operator                                                                            |
+| salaryType     | :                   | Equal Operator<br>Enum, available values:<br>\[BY\_PRORATED\_SALARY, BY\_SALARY\_DECREE\]|
+| linkToPayroll  | :                   | Equal Operator.<br>Boolean                                                               |
+
+
 
 ### Example
 
@@ -557,10 +587,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 [**BpjsHealthcareTemplateListResponse**](BpjsHealthcareTemplateListResponse.md)
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

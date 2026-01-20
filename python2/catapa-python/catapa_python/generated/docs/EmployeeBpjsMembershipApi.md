@@ -18,6 +18,7 @@ Method | HTTP request | Description
 
 Get BPJS Healthcare Membership
 
+
 ### Example
 
 
@@ -59,10 +60,6 @@ Name | Type | Description  | Notes
 
 [**BpjsHealthcareMembershipResponse**](BpjsHealthcareMembershipResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -82,6 +79,7 @@ Name | Type | Description  | Notes
 > BpjsManpowerMembershipResponse get_bpjs_manpower_membership(employee_id)
 
 Get BPJS Manpower Membership
+
 
 ### Example
 
@@ -124,10 +122,6 @@ Name | Type | Description  | Notes
 
 [**BpjsManpowerMembershipResponse**](BpjsManpowerMembershipResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -147,6 +141,7 @@ Name | Type | Description  | Notes
 > BpjsHealthcareMembershipResponse update_bpjs_healthcare_membership(employee_id, bpjs_healthcare_membership_request)
 
 Update BPJS Healthcare Membership
+
 
 ### Example
 
@@ -191,10 +186,6 @@ Name | Type | Description  | Notes
 
 [**BpjsHealthcareMembershipResponse**](BpjsHealthcareMembershipResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -214,6 +205,7 @@ Name | Type | Description  | Notes
 > BpjsManpowerMembershipResponse update_bpjs_manpower_membership(employee_id, bpjs_manpower_membership_request)
 
 Update BPJS Manpower Membership
+
 
 ### Example
 
@@ -257,10 +249,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**BpjsManpowerMembershipResponse**](BpjsManpowerMembershipResponse.md)
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

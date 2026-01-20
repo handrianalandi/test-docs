@@ -19,6 +19,7 @@ Method | HTTP request | Description
 
 Get Payment Item Groups
 
+
 ### Example
 
 
@@ -60,10 +61,6 @@ Name | Type | Description  | Notes
 
 [**PaymentItemGroupListResponse**](PaymentItemGroupListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -84,7 +81,19 @@ Name | Type | Description  | Notes
 
 Get Processed Salary Payment Summaries
 
-### Search Query | Supported Keys             | Supported Operators | Notes                                                      | | -------------------------- | ------------------- | ---------------------------------------------------------- | | exported                   | :                   | Like operator                                              | | bankId                     | :                   | Like operator                                              | | companyBankAccountId       | :                   | Like operator                                              | | bankName                   | :                   | Like operator                                              | | year                       | :<br>><br><         | Equal<br>Greater than or equal to<br>Less than or equal to | | month                      | :<br>><br><         | Equal<br>Greater than or equal to<br>Less than or equal to | | numberOfProcessedEmployees | :<br>><br><         | Equal<br>Greater than or equal to<br>Less than or equal to | | paymentDate                | :<br>><br><         | Equal<br>Greater than or equal to<br>Less than or equal to | 
+### Search Query
+| Supported Keys             | Supported Operators | Notes                                                      |
+| -------------------------- | ------------------- | ---------------------------------------------------------- |
+| exported                   | :                   | Like operator                                              |
+| bankId                     | :                   | Like operator                                              |
+| companyBankAccountId       | :                   | Like operator                                              |
+| bankName                   | :                   | Like operator                                              |
+| year                       | :<br>><br><         | Equal<br>Greater than or equal to<br>Less than or equal to |
+| month                      | :<br>><br><         | Equal<br>Greater than or equal to<br>Less than or equal to |
+| numberOfProcessedEmployees | :<br>><br><         | Equal<br>Greater than or equal to<br>Less than or equal to |
+| paymentDate                | :<br>><br><         | Equal<br>Greater than or equal to<br>Less than or equal to |
+
+
 
 ### Example
 
@@ -123,10 +132,6 @@ This endpoint does not need any parameter.
 
 [**SalaryPaymentSummaryListResponse**](SalaryPaymentSummaryListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -147,7 +152,15 @@ This endpoint does not need any parameter.
 
 Get Processed Salary Payments
 
-### Search Query | Supported Keys         | Supported Operators | Notes         | | ---------------------- | ------------------- | ------------- | | year                   | :                   | Like operator | | month                  | :                   | Like operator | | salaryPaymentProcess   | :                   | Like operator | | salaryPaymentSummaryId | :                   | Like operator | 
+### Search Query
+| Supported Keys         | Supported Operators | Notes         |
+| ---------------------- | ------------------- | ------------- |
+| year                   | :                   | Like operator |
+| month                  | :                   | Like operator |
+| salaryPaymentProcess   | :                   | Like operator |
+| salaryPaymentSummaryId | :                   | Like operator |
+
+
 
 ### Example
 
@@ -186,10 +199,6 @@ This endpoint does not need any parameter.
 
 [**ProcessedSalaryPaymentListResponse**](ProcessedSalaryPaymentListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -210,7 +219,15 @@ This endpoint does not need any parameter.
 
 Get Salary Payments
 
-### Search Query | Supported Keys               | Supported Operators        | Notes                                                                        | | ---------------------------- | -------------------------- | ---------------------------------------------------------------------------- | | process                      | `:`                        | Equal operator                                                               | | salaryPaymentSummary.id      | `:`                        | Like operator                                                                | | paymentDate                  | `:`<br/>`>`<br/>`<`        | Equal operator<br/>Greater than or equal to<br/>Less than or equal to        | | employee.id                  | `:`                        | Equal operator                                                                | 
+### Search Query
+| Supported Keys               | Supported Operators        | Notes                                                                        |
+| ---------------------------- | -------------------------- | ---------------------------------------------------------------------------- |
+| process                      | `:`                        | Equal operator                                                               |
+| salaryPaymentSummary.id      | `:`                        | Like operator                                                                |
+| paymentDate                  | `:`<br/>`>`<br/>`<`        | Equal operator<br/>Greater than or equal to<br/>Less than or equal to        |
+| employee.id                  | `:`                        | Equal operator                                                                |
+
+
 
 ### Example
 
@@ -249,10 +266,6 @@ This endpoint does not need any parameter.
 
 [**SalaryPaymentListResponse**](SalaryPaymentListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -272,6 +285,7 @@ This endpoint does not need any parameter.
 > List[str] get_salary_payments_date(year, month)
 
 Get Salary Payments Date
+
 
 ### Example
 
@@ -315,10 +329,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **List[str]**
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

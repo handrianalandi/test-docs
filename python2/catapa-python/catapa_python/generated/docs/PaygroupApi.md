@@ -15,7 +15,13 @@ Method | HTTP request | Description
 
 Get Paygroup
 
-### Search Query | Supported Keys  | Supported Operators | Notes   | | --------------- | ------------------- | ------- | | code            | :                   | Equal   | | defaultPaygroup | :                   | boolean | 
+### Search Query
+| Supported Keys  | Supported Operators | Notes   |
+| --------------- | ------------------- | ------- |
+| code            | :                   | Equal   |
+| defaultPaygroup | :                   | boolean |
+
+
 
 ### Example
 
@@ -53,10 +59,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 [**PaygroupListResponse**](PaygroupListResponse.md)
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

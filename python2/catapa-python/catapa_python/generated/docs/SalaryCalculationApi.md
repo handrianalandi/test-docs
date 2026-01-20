@@ -18,7 +18,15 @@ Method | HTTP request | Description
 
 Get Salary Calculation
 
-### Search Query | Supported Keys         | Supported Operators | Notes | | ---------------------- | ------------------- | ----- | | id                  | :                   | Equal | | month                  | :                   | Equal | | year                   | :                   | Equal | | salaryPaymentProcess   | :                   | Equal | 
+### Search Query
+| Supported Keys         | Supported Operators | Notes |
+| ---------------------- | ------------------- | ----- |
+| id                  | :                   | Equal |
+| month                  | :                   | Equal |
+| year                   | :                   | Equal |
+| salaryPaymentProcess   | :                   | Equal |
+
+
 
 ### Example
 
@@ -57,10 +65,6 @@ This endpoint does not need any parameter.
 
 [**SalaryCalculationListResponse**](SalaryCalculationListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -81,7 +85,12 @@ This endpoint does not need any parameter.
 
 Get Salary Calculation Details
 
-### Search Query | Supported Keys      | Supported Operators | Notes         | | ------------------- | ------------------- | ------------- | | salaryCalculationId | :                   | Like operator | 
+### Search Query
+| Supported Keys      | Supported Operators | Notes         |
+| ------------------- | ------------------- | ------------- |
+| salaryCalculationId | :                   | Like operator |
+
+
 
 ### Example
 
@@ -120,10 +129,6 @@ This endpoint does not need any parameter.
 
 [**SalaryCalculationDetailListResponse**](SalaryCalculationDetailListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -143,6 +148,7 @@ This endpoint does not need any parameter.
 > TimeAllowanceDetailsResponse get_time_allowance_details_by_salary_calculation_detail(id)
 
 Get Time Allowance Details By Salary Calculation Detail
+
 
 ### Example
 
@@ -185,10 +191,6 @@ Name | Type | Description  | Notes
 
 [**TimeAllowanceDetailsResponse**](TimeAllowanceDetailsResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -208,6 +210,7 @@ Name | Type | Description  | Notes
 > object update_salary_calculation_detail(id, code, amount_request)
 
 Update Salary Calculation Detail
+
 
 ### Example
 
@@ -253,10 +256,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **object**
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

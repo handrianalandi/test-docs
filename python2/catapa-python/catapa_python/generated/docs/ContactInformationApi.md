@@ -17,6 +17,7 @@ Method | HTTP request | Description
 
 Get Contact Information
 
+
 ### Example
 
 
@@ -58,10 +59,6 @@ Name | Type | Description  | Notes
 
 [**ContactInformationResponse**](ContactInformationResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -81,6 +78,7 @@ Name | Type | Description  | Notes
 > ContactInformationListResponse get_historical_contact_information(page, size, query)
 
 Get Historical Contact Information
+
 
 ### Example
 
@@ -127,10 +125,6 @@ Name | Type | Description  | Notes
 
 [**ContactInformationListResponse**](ContactInformationListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -150,6 +144,7 @@ Name | Type | Description  | Notes
 > ContactInformationResponse update_contact_information(employee_id, contact_information_request)
 
 Update Contact Information
+
 
 ### Example
 
@@ -193,10 +188,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**ContactInformationResponse**](ContactInformationResponse.md)
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

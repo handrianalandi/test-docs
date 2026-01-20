@@ -19,6 +19,7 @@ Method | HTTP request | Description
 
 Get Former Employee Income By Id
 
+
 ### Example
 
 
@@ -60,10 +61,6 @@ Name | Type | Description  | Notes
 
 [**FormerEmployeeIncomeResponse**](FormerEmployeeIncomeResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -84,7 +81,13 @@ Name | Type | Description  | Notes
 
 Get Former Employee Income Employee
 
-### Search Query | Supported Keys | Supported Operators |Notes                                                                                       | | -------------- | ------------------- |--------------------------------------------------------------------------------------------| | paymentDate    | :<br>\\><br><        | Equal operator<br>Greater than or equal to operator<br>Less than or equal to equal operator| | paid           | :                   | Equal operator                                                                             | 
+### Search Query
+| Supported Keys | Supported Operators |Notes                                                                                       |
+| -------------- | ------------------- |--------------------------------------------------------------------------------------------|
+| paymentDate    | :<br>\><br><        | Equal operator<br>Greater than or equal to operator<br>Less than or equal to equal operator|
+| paid           | :                   | Equal operator                                                                             |
+
+
 
 ### Example
 
@@ -123,10 +126,6 @@ This endpoint does not need any parameter.
 
 [**FormerEmployeeIncomeEmployeeListResponse**](FormerEmployeeIncomeEmployeeListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -147,7 +146,13 @@ This endpoint does not need any parameter.
 
 Get Former Employee Income Employee By Former Employee Income Id
 
-### Search Query | Supported Keys | Supported Operators | Notes                                                                                       | | -------------- | ------------------- | ------------------------------------------------------------------------------------------- | | paymentDate    | :<br>\\><br><        | Equal operator<br>Greater than or equal to operator<br>Less than or equal to equal operator | | paid           | :                   | Equal operator                                                                              | 
+### Search Query
+| Supported Keys | Supported Operators | Notes                                                                                       |
+| -------------- | ------------------- | ------------------------------------------------------------------------------------------- |
+| paymentDate    | :<br>\><br><        | Equal operator<br>Greater than or equal to operator<br>Less than or equal to equal operator |
+| paid           | :                   | Equal operator                                                                              |
+
+
 
 ### Example
 
@@ -190,10 +195,6 @@ Name | Type | Description  | Notes
 
 [**FormerEmployeeIncomeEmployeeListResponse**](FormerEmployeeIncomeEmployeeListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -214,7 +215,17 @@ Name | Type | Description  | Notes
 
 Get Former Employee Incomes
 
-### Search Query | Supported Keys         | Supported Operators | Notes                                                                                       | | ---------------------- | ------------------- | --------------------------------------------------------------------------------------------| | itemName               | :                   | Like operator<br><br>                                                                       | | itemType               | :                   | Equal operator                                                                              | | referenceDate          | :<br>\\><br><        | Equal operator<br>Greater than or equal to operator<br>Less than or equal to equal operator | | pph21Method            | :                   | Equal operator                                                                              | | minimumLastWorkingDate | :<br>\\><br><        | Equal operator<br>Greater than or equal to operator<br>Less than or equal to equal operator | | proportionalMethod     | :                   | Equal operator                                                                              | 
+### Search Query
+| Supported Keys         | Supported Operators | Notes                                                                                       |
+| ---------------------- | ------------------- | --------------------------------------------------------------------------------------------|
+| itemName               | :                   | Like operator<br><br>                                                                       |
+| itemType               | :                   | Equal operator                                                                              |
+| referenceDate          | :<br>\><br><        | Equal operator<br>Greater than or equal to operator<br>Less than or equal to equal operator |
+| pph21Method            | :                   | Equal operator                                                                              |
+| minimumLastWorkingDate | :<br>\><br><        | Equal operator<br>Greater than or equal to operator<br>Less than or equal to equal operator |
+| proportionalMethod     | :                   | Equal operator                                                                              |
+
+
 
 ### Example
 
@@ -253,10 +264,6 @@ This endpoint does not need any parameter.
 
 [**FormerEmployeeIncomeListResponse**](FormerEmployeeIncomeListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -276,6 +283,7 @@ This endpoint does not need any parameter.
 > object update_former_employee_income_employee_by_former_employee_income_id(former_employee_income_id, former_employee_income_employee_amount_update_request)
 
 Update Former Employee Income Employee By Former Employee Income Id
+
 
 ### Example
 
@@ -319,10 +327,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **object**
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

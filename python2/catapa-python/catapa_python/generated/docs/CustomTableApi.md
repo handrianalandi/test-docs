@@ -16,6 +16,7 @@ Method | HTTP request | Description
 
 Retrieve all custom tables
 
+
 ### Example
 
 
@@ -61,10 +62,6 @@ Name | Type | Description  | Notes
 
 [**CustomTableListResponse**](CustomTableListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -84,6 +81,7 @@ Name | Type | Description  | Notes
 > CustomTableResponse find_custom_table_by_id(table_id)
 
 Find Custom Table by Table ID
+
 
 ### Example
 
@@ -125,10 +123,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**CustomTableResponse**](CustomTableResponse.md)
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

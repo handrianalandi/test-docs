@@ -21,6 +21,7 @@ Method | HTTP request | Description
 
 Add Salary Item Add On
 
+
 ### Example
 
 
@@ -62,10 +63,6 @@ Name | Type | Description  | Notes
 
 [**SalaryItemAddOnResponse**](SalaryItemAddOnResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -85,6 +82,7 @@ Name | Type | Description  | Notes
 > object delete_salary_item_add_on(tenant, employee_identification_number, var_date, salary_item_code)
 
 Delete Salary Item Add On
+
 
 ### Example
 
@@ -133,10 +131,6 @@ Name | Type | Description  | Notes
 
 **object**
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -156,6 +150,7 @@ Name | Type | Description  | Notes
 > SalaryItemAddOnResponse get_salary_item_add_on(employee_identification_number, var_date, salary_item_code)
 
 Get Salary Item Add On
+
 
 ### Example
 
@@ -202,10 +197,6 @@ Name | Type | Description  | Notes
 
 [**SalaryItemAddOnResponse**](SalaryItemAddOnResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -225,6 +216,7 @@ Name | Type | Description  | Notes
 > SalaryTemplateResponse get_salary_template_by_id(id)
 
 Get Salary Template by ID
+
 
 ### Example
 
@@ -267,10 +259,6 @@ Name | Type | Description  | Notes
 
 [**SalaryTemplateResponse**](SalaryTemplateResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -291,7 +279,13 @@ Name | Type | Description  | Notes
 
 Get Salary Templates
 
-### Search Query | Supported Keys | Supported Operators | Notes         | | -------------- | ------------------- | ------------- | | code           | :                   | Like operator | | name           | :                   | Like operator | 
+### Search Query
+| Supported Keys | Supported Operators | Notes         |
+| -------------- | ------------------- | ------------- |
+| code           | :                   | Like operator |
+| name           | :                   | Like operator |
+
+
 
 ### Example
 
@@ -330,10 +324,6 @@ This endpoint does not need any parameter.
 
 [**SalaryTemplateListResponse**](SalaryTemplateListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -353,6 +343,7 @@ This endpoint does not need any parameter.
 > object subtract_salary_item_add_on(salary_item_add_on_request)
 
 Subtract Salary Item Add On
+
 
 ### Example
 
@@ -395,10 +386,6 @@ Name | Type | Description  | Notes
 
 **object**
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -418,6 +405,7 @@ Name | Type | Description  | Notes
 > SalaryItemAddOnResponse update_salary_item_add_on(salary_item_add_on_request)
 
 Update Salary Item Add On
+
 
 ### Example
 
@@ -459,10 +447,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**SalaryItemAddOnResponse**](SalaryItemAddOnResponse.md)
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

@@ -23,6 +23,7 @@ Method | HTTP request | Description
 
 Create Termination Entry
 
+
 ### Example
 
 
@@ -66,10 +67,6 @@ Name | Type | Description  | Notes
 
 [**TerminationEntryResponse**](TerminationEntryResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -89,6 +86,7 @@ Name | Type | Description  | Notes
 > TerminationReasonDetailResponse create_termination_reason(termination_reason_request)
 
 Create Termination Reason
+
 
 ### Example
 
@@ -131,10 +129,6 @@ Name | Type | Description  | Notes
 
 [**TerminationReasonDetailResponse**](TerminationReasonDetailResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -155,7 +149,12 @@ Name | Type | Description  | Notes
 
 Get Termination BPJS Manpower Reason
 
-### Search Query | Supported Keys          | Supported Operators | Notes                      | |-------------------------|---------------------|----------------------------| | name                    | `:`                 | Like operator              | 
+### Search Query
+| Supported Keys          | Supported Operators | Notes                      |
+|-------------------------|---------------------|----------------------------|
+| name                    | `:`                 | Like operator              |
+
+
 
 ### Example
 
@@ -194,10 +193,6 @@ This endpoint does not need any parameter.
 
 [**TerminationBPJSManpowerReasonListResponse**](TerminationBPJSManpowerReasonListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -217,6 +212,7 @@ This endpoint does not need any parameter.
 > TerminationEntryResponse get_termination_entry(employee_id)
 
 Get Termination Entry
+
 
 ### Example
 
@@ -259,10 +255,6 @@ Name | Type | Description  | Notes
 
 [**TerminationEntryResponse**](TerminationEntryResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -283,7 +275,12 @@ Name | Type | Description  | Notes
 
 Get Termination Reason
 
-### Search Query | Supported Keys          | Supported Operators | Notes                      | |-------------------------|---------------------|----------------------------| | name                    | `:`                 | Like operator              | 
+### Search Query
+| Supported Keys          | Supported Operators | Notes                      |
+|-------------------------|---------------------|----------------------------|
+| name                    | `:`                 | Like operator              |
+
+
 
 ### Example
 
@@ -322,10 +319,6 @@ This endpoint does not need any parameter.
 
 [**TerminationReasonListResponse**](TerminationReasonListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -346,7 +339,12 @@ This endpoint does not need any parameter.
 
 Get Termination Reason Category
 
-### Search Query | Supported Keys          | Supported Operators | Notes                      | |-------------------------|---------------------|----------------------------| | name                    | `:`                 | Like operator              | 
+### Search Query
+| Supported Keys          | Supported Operators | Notes                      |
+|-------------------------|---------------------|----------------------------|
+| name                    | `:`                 | Like operator              |
+
+
 
 ### Example
 
@@ -385,10 +383,6 @@ This endpoint does not need any parameter.
 
 [**TerminationReasonCategoryListResponse**](TerminationReasonCategoryListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -409,7 +403,13 @@ This endpoint does not need any parameter.
 
 Get Termination Tax Reason
 
-### Search Query | Supported Keys          | Supported Operators | Notes                      | |-------------------------|---------------------|----------------------------| | name                    | `:`                 | Like operator              | | taxAnnualized           | `:`                 | Equal operator             | 
+### Search Query
+| Supported Keys          | Supported Operators | Notes                      |
+|-------------------------|---------------------|----------------------------|
+| name                    | `:`                 | Like operator              |
+| taxAnnualized           | `:`                 | Equal operator             |
+
+
 
 ### Example
 
@@ -448,10 +448,6 @@ This endpoint does not need any parameter.
 
 [**TerminationTaxReasonListResponse**](TerminationTaxReasonListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -471,6 +467,7 @@ This endpoint does not need any parameter.
 > object undo_termination_entry(employee_id)
 
 Undo Termination Entry
+
 
 ### Example
 
@@ -513,10 +510,6 @@ Name | Type | Description  | Notes
 
 **object**
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -536,6 +529,7 @@ Name | Type | Description  | Notes
 > TerminationReasonDetailResponse update_termination_reason(id, termination_reason_request)
 
 Update Termination Reason
+
 
 ### Example
 
@@ -579,10 +573,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**TerminationReasonDetailResponse**](TerminationReasonDetailResponse.md)
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

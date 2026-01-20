@@ -19,6 +19,7 @@ Get Tax Membership
 
 Retrieve the current tax membership information for a specific employee
 
+
 ### Example
 
 
@@ -60,10 +61,6 @@ Name | Type | Description  | Notes
 
 [**TaxMembershipResponse**](TaxMembershipResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -86,6 +83,7 @@ Name | Type | Description  | Notes
 Update Tax Membership
 
 Update the tax membership information for a specific employee
+
 
 ### Example
 
@@ -130,10 +128,6 @@ Name | Type | Description  | Notes
 
 [**TaxMembershipResponse**](TaxMembershipResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -156,6 +150,7 @@ Name | Type | Description  | Notes
 Update Tax Membership Tax Subject
 
 Update tax subject information for an employee's tax membership
+
 
 ### Example
 
@@ -199,10 +194,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**TaxMembershipResponse**](TaxMembershipResponse.md)
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

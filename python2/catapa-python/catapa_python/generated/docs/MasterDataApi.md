@@ -34,6 +34,7 @@ Method | HTTP request | Description
 
 Create City
 
+
 ### Example
 
 
@@ -75,10 +76,6 @@ Name | Type | Description  | Notes
 
 [**CityResponse**](CityResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -98,6 +95,7 @@ Name | Type | Description  | Notes
 > CountryResponse create_country(country_request)
 
 Create Country
+
 
 ### Example
 
@@ -140,10 +138,6 @@ Name | Type | Description  | Notes
 
 [**CountryResponse**](CountryResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -163,6 +157,7 @@ Name | Type | Description  | Notes
 > EmploymentTypeResponse create_employment_type(employment_type_request)
 
 Create Employment Type
+
 
 ### Example
 
@@ -205,10 +200,6 @@ Name | Type | Description  | Notes
 
 [**EmploymentTypeResponse**](EmploymentTypeResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -228,6 +219,7 @@ Name | Type | Description  | Notes
 > ReligionResponse create_religion(religion_request)
 
 Create Religion
+
 
 ### Example
 
@@ -270,10 +262,6 @@ Name | Type | Description  | Notes
 
 [**ReligionResponse**](ReligionResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -294,7 +282,12 @@ Name | Type | Description  | Notes
 
 Get Bank Branches
 
-### Search Query | Supported Keys     | Supported Operators | Notes                                                                                    | |--------------------|---------------------|------------------------------------------------------------------------------------------| | id                 | `:`                 | Equal operator<br/>Support multiple values with each value separated by the `;` delimiter| 
+### Search Query
+| Supported Keys     | Supported Operators | Notes                                                                                    |
+|--------------------|---------------------|------------------------------------------------------------------------------------------|
+| id                 | `:`                 | Equal operator<br/>Support multiple values with each value separated by the `;` delimiter|
+
+
 
 ### Example
 
@@ -333,10 +326,6 @@ This endpoint does not need any parameter.
 
 [**BankBranchListResponse**](BankBranchListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -356,6 +345,7 @@ This endpoint does not need any parameter.
 > BankListResponse get_banks()
 
 Get Banks
+
 
 ### Example
 
@@ -394,10 +384,6 @@ This endpoint does not need any parameter.
 
 [**BankListResponse**](BankListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -417,6 +403,7 @@ This endpoint does not need any parameter.
 > CityListResponse get_cities()
 
 Get Cities
+
 
 ### Example
 
@@ -455,10 +442,6 @@ This endpoint does not need any parameter.
 
 [**CityListResponse**](CityListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -478,6 +461,7 @@ This endpoint does not need any parameter.
 > CountryListResponse get_countries()
 
 Get Countries
+
 
 ### Example
 
@@ -516,10 +500,6 @@ This endpoint does not need any parameter.
 
 [**CountryListResponse**](CountryListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -539,6 +519,7 @@ This endpoint does not need any parameter.
 > CurrencyListResponse get_currencies()
 
 Get Currencies
+
 
 ### Example
 
@@ -577,10 +558,6 @@ This endpoint does not need any parameter.
 
 [**CurrencyListResponse**](CurrencyListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -600,6 +577,7 @@ This endpoint does not need any parameter.
 > EducationLevelListResponse get_education_levels(page, size, query)
 
 Get Education Levels
+
 
 ### Example
 
@@ -646,10 +624,6 @@ Name | Type | Description  | Notes
 
 [**EducationLevelListResponse**](EducationLevelListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -670,7 +644,14 @@ Name | Type | Description  | Notes
 
 Get Employment Status Type
 
-### Search Query | Supported Keys             | Supported Operators | Notes                      | |----------------------------|---------------------|----------------------------| | name                       | `:`                 | Like operator              | | employmentStatusNumberType | `:`                 | Like operator              | | defaultData                | `:`                 | Equal operator             | 
+### Search Query
+| Supported Keys             | Supported Operators | Notes                      |
+|----------------------------|---------------------|----------------------------|
+| name                       | `:`                 | Like operator              |
+| employmentStatusNumberType | `:`                 | Like operator              |
+| defaultData                | `:`                 | Equal operator             |
+
+
 
 ### Example
 
@@ -717,10 +698,6 @@ Name | Type | Description  | Notes
 
 [**EmploymentStatusTypeListResponse**](EmploymentStatusTypeListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -741,7 +718,15 @@ Name | Type | Description  | Notes
 
 Get Employment Type
 
-### Search Query | Supported Keys        | Supported Operators | Notes                      | |-----------------------|---------------------|----------------------------| | name                  | `:`                 | Like operator              | | employmentGroupCode   | `:`                 | Like operator              | | permanent             | `:`                 | Equal operator             | | otherLeaveStatus.code | `:`                 | Equal operator             | 
+### Search Query
+| Supported Keys        | Supported Operators | Notes                      |
+|-----------------------|---------------------|----------------------------|
+| name                  | `:`                 | Like operator              |
+| employmentGroupCode   | `:`                 | Like operator              |
+| permanent             | `:`                 | Equal operator             |
+| otherLeaveStatus.code | `:`                 | Equal operator             |
+
+
 
 ### Example
 
@@ -780,10 +765,6 @@ This endpoint does not need any parameter.
 
 [**EmploymentTypeListResponse**](EmploymentTypeListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -804,7 +785,12 @@ This endpoint does not need any parameter.
 
 Get Family Relations
 
-### Search Query | Supported Keys          | Supported Operators | Notes                      | |-------------------------|---------------------|----------------------------| | name                    | `:`                 | Like operator              | 
+### Search Query
+| Supported Keys          | Supported Operators | Notes                      |
+|-------------------------|---------------------|----------------------------|
+| name                    | `:`                 | Like operator              |
+
+
 
 ### Example
 
@@ -843,10 +829,6 @@ This endpoint does not need any parameter.
 
 [**FamilyMemberRelationListResponse**](FamilyMemberRelationListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -866,6 +848,7 @@ This endpoint does not need any parameter.
 > FieldOfStudyListResponse get_field_of_studies(page, size, query)
 
 Get Field Of Study
+
 
 ### Example
 
@@ -912,10 +895,6 @@ Name | Type | Description  | Notes
 
 [**FieldOfStudyListResponse**](FieldOfStudyListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -935,6 +914,7 @@ Name | Type | Description  | Notes
 > EducationListResponse get_historical_educations(page, size, query)
 
 Get Historical Educations
+
 
 ### Example
 
@@ -981,10 +961,6 @@ Name | Type | Description  | Notes
 
 [**EducationListResponse**](EducationListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1005,7 +981,12 @@ Name | Type | Description  | Notes
 
 Get Identity Card
 
-### Search Query | Supported Keys          | Supported Operators | Notes                      | |-------------------------|---------------------|----------------------------| | name                    | `:`                 | Like operator              | 
+### Search Query
+| Supported Keys          | Supported Operators | Notes                      |
+|-------------------------|---------------------|----------------------------|
+| name                    | `:`                 | Like operator              |
+
+
 
 ### Example
 
@@ -1044,10 +1025,6 @@ This endpoint does not need any parameter.
 
 [**IdentityCardListResponse**](IdentityCardListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1067,6 +1044,7 @@ This endpoint does not need any parameter.
 > InstitutionListResponse get_institutions(page, size, query)
 
 Get Institutions
+
 
 ### Example
 
@@ -1113,10 +1091,6 @@ Name | Type | Description  | Notes
 
 [**InstitutionListResponse**](InstitutionListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1136,6 +1110,7 @@ Name | Type | Description  | Notes
 > ReligionListResponse get_religions()
 
 Get Religions
+
 
 ### Example
 
@@ -1174,10 +1149,6 @@ This endpoint does not need any parameter.
 
 [**ReligionListResponse**](ReligionListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1197,6 +1168,7 @@ This endpoint does not need any parameter.
 > StateListResponse get_states()
 
 Get States
+
 
 ### Example
 
@@ -1235,10 +1207,6 @@ This endpoint does not need any parameter.
 
 [**StateListResponse**](StateListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1258,6 +1226,7 @@ This endpoint does not need any parameter.
 > EmploymentTypeResponse update_employment_type(id, employment_type_request)
 
 Update Employment Type
+
 
 ### Example
 
@@ -1301,10 +1270,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**EmploymentTypeResponse**](EmploymentTypeResponse.md)
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

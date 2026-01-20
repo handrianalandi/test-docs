@@ -19,6 +19,7 @@ Create a new entry in a custom table
 
 Creates a new entry in a custom table with the provided details
 
+
 ### Example
 
 
@@ -62,10 +63,6 @@ Name | Type | Description  | Notes
 
 **Dict[str, object]**
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -85,6 +82,7 @@ Name | Type | Description  | Notes
 > CustomTableEntryListResponse find_all_entries(table_id, query, page, size)
 
 Retrieve all entries for a custom table, with response structure varying based on the custom table columns
+
 
 ### Example
 
@@ -133,10 +131,6 @@ Name | Type | Description  | Notes
 
 [**CustomTableEntryListResponse**](CustomTableEntryListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -158,6 +152,7 @@ Name | Type | Description  | Notes
 Update an entry in a custom table
 
 Updates an existing entry in a custom table with the provided details
+
 
 ### Example
 
@@ -203,10 +198,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Dict[str, object]**
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

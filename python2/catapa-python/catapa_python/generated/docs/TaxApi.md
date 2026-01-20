@@ -41,6 +41,7 @@ Method | HTTP request | Description
 
 Create Tax Calculation
 
+
 ### Example
 
 
@@ -82,10 +83,6 @@ Name | Type | Description  | Notes
 
 [**TaxCalculationDetailResponse**](TaxCalculationDetailResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -105,6 +102,7 @@ Name | Type | Description  | Notes
 > object download1721_a1_report(id)
 
 Download 1721 A1 Report
+
 
 ### Example
 
@@ -147,10 +145,6 @@ Name | Type | Description  | Notes
 
 **object**
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -170,6 +164,7 @@ Name | Type | Description  | Notes
 > object download1721_vi_report(id)
 
 Download 1721 VI Report
+
 
 ### Example
 
@@ -212,10 +207,6 @@ Name | Type | Description  | Notes
 
 **object**
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -235,6 +226,7 @@ Name | Type | Description  | Notes
 > object download1721_vi_tax_report(id)
 
 Download 1721 VI Report
+
 
 ### Example
 
@@ -277,10 +269,6 @@ Name | Type | Description  | Notes
 
 **object**
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -300,6 +288,7 @@ Name | Type | Description  | Notes
 > object download1721_vii_report(id)
 
 Download 1721 VII Report
+
 
 ### Example
 
@@ -342,10 +331,6 @@ Name | Type | Description  | Notes
 
 **object**
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -365,6 +350,7 @@ Name | Type | Description  | Notes
 > object download1721_vii_tax_report(id)
 
 Download 1721 VII Report
+
 
 ### Example
 
@@ -407,10 +393,6 @@ Name | Type | Description  | Notes
 
 **object**
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -430,6 +412,7 @@ Name | Type | Description  | Notes
 > object download1721_viii_report(id)
 
 Download 1721 VIII Report
+
 
 ### Example
 
@@ -472,10 +455,6 @@ Name | Type | Description  | Notes
 
 **object**
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -495,6 +474,7 @@ Name | Type | Description  | Notes
 > TaxReport1721A1ListResponse get1721_a1_reports()
 
 Get 1721 A1 Reports
+
 
 ### Example
 
@@ -533,10 +513,6 @@ This endpoint does not need any parameter.
 
 [**TaxReport1721A1ListResponse**](TaxReport1721A1ListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -556,6 +532,7 @@ This endpoint does not need any parameter.
 > TaxReport1721VIListResponse get1721_vi_reports()
 
 Get 1721 VI Reports
+
 
 ### Example
 
@@ -594,10 +571,6 @@ This endpoint does not need any parameter.
 
 [**TaxReport1721VIListResponse**](TaxReport1721VIListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -617,6 +590,7 @@ This endpoint does not need any parameter.
 > TaxReport1721VIListResponse get1721_vi_tax_reports()
 
 Get 1721 VI Reports
+
 
 ### Example
 
@@ -655,10 +629,6 @@ This endpoint does not need any parameter.
 
 [**TaxReport1721VIListResponse**](TaxReport1721VIListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -678,6 +648,7 @@ This endpoint does not need any parameter.
 > TaxReport1721VIIListResponse get1721_vii_reports()
 
 Get 1721 VII Reports
+
 
 ### Example
 
@@ -716,10 +687,6 @@ This endpoint does not need any parameter.
 
 [**TaxReport1721VIIListResponse**](TaxReport1721VIIListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -739,6 +706,7 @@ This endpoint does not need any parameter.
 > TaxReport1721VIIListResponse get1721_vii_tax_reports()
 
 Get 1721 VII Reports
+
 
 ### Example
 
@@ -777,10 +745,6 @@ This endpoint does not need any parameter.
 
 [**TaxReport1721VIIListResponse**](TaxReport1721VIIListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -800,6 +764,7 @@ This endpoint does not need any parameter.
 > TaxReport1721VIIIListResponse get1721_viii_reports()
 
 Get 1721 VIII Reports
+
 
 ### Example
 
@@ -838,10 +803,6 @@ This endpoint does not need any parameter.
 
 [**TaxReport1721VIIIListResponse**](TaxReport1721VIIIListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -861,6 +822,7 @@ This endpoint does not need any parameter.
 > TaxReport1721VIDetailResponse get_detailed1721_vi_reports()
 
 Get Detailed 1721 VI Reports
+
 
 ### Example
 
@@ -899,10 +861,6 @@ This endpoint does not need any parameter.
 
 [**TaxReport1721VIDetailResponse**](TaxReport1721VIDetailResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -922,6 +880,7 @@ This endpoint does not need any parameter.
 > TaxReport1721VIDetailResponse get_detailed1721_vi_tax_reports()
 
 Get Detailed 1721 VI Reports
+
 
 ### Example
 
@@ -960,10 +919,6 @@ This endpoint does not need any parameter.
 
 [**TaxReport1721VIDetailResponse**](TaxReport1721VIDetailResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -984,7 +939,13 @@ This endpoint does not need any parameter.
 
 Get Kpp
 
-### Search Query | Supported Keys | Supported Operators | Notes         | | -------------- | ------------------- | ------------- | | name           | :                   | Like operator | | code           | :                   | Like operator | 
+### Search Query
+| Supported Keys | Supported Operators | Notes         |
+| -------------- | ------------------- | ------------- |
+| name           | :                   | Like operator |
+| code           | :                   | Like operator |
+
+
 
 ### Example
 
@@ -1023,10 +984,6 @@ This endpoint does not need any parameter.
 
 [**KppListResponse**](KppListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1047,7 +1004,21 @@ This endpoint does not need any parameter.
 
 Get Monthly Tax Report
 
-### Search Query | Supported Keys               | Supported Operators | Notes                                                                              | | ---------------------------- | ------------------- | ---------------------------------------------------------------------------------- | | year                         | :<br>\\><br><        | Equal operator<br>Greater than or equal to<br>Less than or equal to                | | month                        | :<br>\\><br><        | Equal operator<br>Greater than or equal to<br>Less than or equal to equal operator | | taxObject                    | :                   | Equal operator                                                                     | | taxObjectIn                  | :                   | Equal operator with multiple value delimited by “;”                                | | pph21Method                  | :                   | Equal operator                                                                     | | employeeId                   | :                   | Equal operator                                                                     | | employeeIdentificationNumber | :                   | Like operator                                                                      | | employeeName                 | :                   | Like operator                                                                      | | kppId                        | :                   | Equal operator                                                                     | | migrated                     | :                   | Equal operator                                                                     | 
+### Search Query
+| Supported Keys               | Supported Operators | Notes                                                                              |
+| ---------------------------- | ------------------- | ---------------------------------------------------------------------------------- |
+| year                         | :<br>\><br><        | Equal operator<br>Greater than or equal to<br>Less than or equal to                |
+| month                        | :<br>\><br><        | Equal operator<br>Greater than or equal to<br>Less than or equal to equal operator |
+| taxObject                    | :                   | Equal operator                                                                     |
+| taxObjectIn                  | :                   | Equal operator with multiple value delimited by “;”                                |
+| pph21Method                  | :                   | Equal operator                                                                     |
+| employeeId                   | :                   | Equal operator                                                                     |
+| employeeIdentificationNumber | :                   | Like operator                                                                      |
+| employeeName                 | :                   | Like operator                                                                      |
+| kppId                        | :                   | Equal operator                                                                     |
+| migrated                     | :                   | Equal operator                                                                     |
+
+
 
 ### Example
 
@@ -1086,10 +1057,6 @@ This endpoint does not need any parameter.
 
 [**MonthlyTaxReportListResponse**](MonthlyTaxReportListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1109,6 +1076,7 @@ This endpoint does not need any parameter.
 > Pph21PolicyResponse get_pph21_policy()
 
 Get Pph21 Policy
+
 
 ### Example
 
@@ -1147,10 +1115,6 @@ This endpoint does not need any parameter.
 
 [**Pph21PolicyResponse**](Pph21PolicyResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1171,7 +1135,13 @@ This endpoint does not need any parameter.
 
 Get Ptkp Categories
 
-### Search Query | Supported Keys | Supported Operators | Notes         | | -------------- | ------------------- | ------------- | | name           | :                   | Like operator | | code           | :                   | Like operator | 
+### Search Query
+| Supported Keys | Supported Operators | Notes         |
+| -------------- | ------------------- | ------------- |
+| name           | :                   | Like operator |
+| code           | :                   | Like operator |
+
+
 
 ### Example
 
@@ -1210,10 +1180,6 @@ This endpoint does not need any parameter.
 
 [**PtkpCategoryListResponse**](PtkpCategoryListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1234,7 +1200,21 @@ This endpoint does not need any parameter.
 
 Get Tax Calculations
 
-### Search Query | Supported Keys | Supported Operators | Notes                                                                              | | -------------- | ------------------- | ---------------------------------------------------------------------------------- | | idIn           | :                   | Equal operator with multiple value delimited by “;”                                | | employeeIdIn   | :                   | Equal operator with multiple value delimited by “;”                                | | year           | :<br>\\><br><        | Equal operator<br>Greater than or equal to<br>Less than or equal to                | | month          | :<br>\\><br><        | Equal operator<br>Greater than or equal to<br>Less than or equal to equal operator | | paymentDate    | :<br>\\><br><        | Equal operator<br>Greater than or equal to<br>Less than or equal to equal operator | | taxObject      | :                   | Equal operator                                                                     | | taxObjectIn    | :                   | Equal operator with multiple value delimited by “;”                                | | pph21Method    | :                   | Equal operator                                                                     | | employeeId     | :                   | Equal operator                                                                     | | employeeName   | :                   | Like operator                                                                      | 
+### Search Query
+| Supported Keys | Supported Operators | Notes                                                                              |
+| -------------- | ------------------- | ---------------------------------------------------------------------------------- |
+| idIn           | :                   | Equal operator with multiple value delimited by “;”                                |
+| employeeIdIn   | :                   | Equal operator with multiple value delimited by “;”                                |
+| year           | :<br>\><br><        | Equal operator<br>Greater than or equal to<br>Less than or equal to                |
+| month          | :<br>\><br><        | Equal operator<br>Greater than or equal to<br>Less than or equal to equal operator |
+| paymentDate    | :<br>\><br><        | Equal operator<br>Greater than or equal to<br>Less than or equal to equal operator |
+| taxObject      | :                   | Equal operator                                                                     |
+| taxObjectIn    | :                   | Equal operator with multiple value delimited by “;”                                |
+| pph21Method    | :                   | Equal operator                                                                     |
+| employeeId     | :                   | Equal operator                                                                     |
+| employeeName   | :                   | Like operator                                                                      |
+
+
 
 ### Example
 
@@ -1273,10 +1253,6 @@ This endpoint does not need any parameter.
 
 [**TaxCalculationListResponse**](TaxCalculationListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1296,6 +1272,7 @@ This endpoint does not need any parameter.
 > TaxCalculationDetailResponse get_tax_calculations_by_external_id(external_id)
 
 Get Tax Calculations By External Id
+
 
 ### Example
 
@@ -1338,10 +1315,6 @@ Name | Type | Description  | Notes
 
 [**TaxCalculationDetailResponse**](TaxCalculationDetailResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1361,6 +1334,7 @@ Name | Type | Description  | Notes
 > TaxCalculationDetailResponse get_tax_calculations_by_id(id)
 
 Get Tax Calculations By Id
+
 
 ### Example
 
@@ -1403,10 +1377,6 @@ Name | Type | Description  | Notes
 
 [**TaxCalculationDetailResponse**](TaxCalculationDetailResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1427,7 +1397,21 @@ Name | Type | Description  | Notes
 
 GET Monthly Tax Detail
 
-### Search Query | Supported Keys               | Supported Operators | Notes                                                                              | | ---------------------------- | ------------------- | ---------------------------------------------------------------------------------- | | year                         | :<br>\\><br><        | Equal operator<br>Greater than or equal to<br>Less than or equal to                | | month                        | :<br>\\><br><        | Equal operator<br>Greater than or equal to<br>Less than or equal to equal operator | | taxObject                    | :                   | Equal operator                                                                     | | taxObjectIn                  | :                   | Equal operator with multiple value delimited by “;”                                | | pph21Method                  | :                   | Equal operator                                                                     | | employeeId                   | :                   | Equal operator                                                                     | | employeeIdentificationNumber | :                   | Like operator                                                                      | | employeeName                 | :                   | Like operator                                                                      | | kppId                        | :                   | Equal operator                                                                     | | migrated                     | :                   | Equal operator                                                                     | 
+### Search Query
+| Supported Keys               | Supported Operators | Notes                                                                              |
+| ---------------------------- | ------------------- | ---------------------------------------------------------------------------------- |
+| year                         | :<br>\><br><        | Equal operator<br>Greater than or equal to<br>Less than or equal to                |
+| month                        | :<br>\><br><        | Equal operator<br>Greater than or equal to<br>Less than or equal to equal operator |
+| taxObject                    | :                   | Equal operator                                                                     |
+| taxObjectIn                  | :                   | Equal operator with multiple value delimited by “;”                                |
+| pph21Method                  | :                   | Equal operator                                                                     |
+| employeeId                   | :                   | Equal operator                                                                     |
+| employeeIdentificationNumber | :                   | Like operator                                                                      |
+| employeeName                 | :                   | Like operator                                                                      |
+| kppId                        | :                   | Equal operator                                                                     |
+| migrated                     | :                   | Equal operator                                                                     |
+
+
 
 ### Example
 
@@ -1472,10 +1456,6 @@ Name | Type | Description  | Notes
 
 [**MonthlyTaxDetailListResponse**](MonthlyTaxDetailListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1496,7 +1476,10 @@ Name | Type | Description  | Notes
 
 Simulate annual tax calculation
 
-Simulate annual tax calculation based on the provided scenario. <br>This API only works for <strong>PERMANENT</strong> taxObject. 
+Simulate annual tax calculation based on the provided scenario.
+<br>This API only works for <strong>PERMANENT</strong> taxObject.
+
+
 
 ### Example
 
@@ -1539,10 +1522,6 @@ Name | Type | Description  | Notes
 
 [**AnnualTaxCalculationSimulatorResponse**](AnnualTaxCalculationSimulatorResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -1563,7 +1542,9 @@ Name | Type | Description  | Notes
 
 Simulate monthly tax calculation
 
-Simulate monthly tax calculation based on the provided scenario. 
+Simulate monthly tax calculation based on the provided scenario.
+
+
 
 ### Example
 
@@ -1606,10 +1587,6 @@ Name | Type | Description  | Notes
 
 [**MonthlyTaxCalculationSimulatorResponse**](MonthlyTaxCalculationSimulatorResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -1629,6 +1606,7 @@ Name | Type | Description  | Notes
 > object undo_tax_calculation_by_id(id)
 
 Undo Tax Calculation By Id
+
 
 ### Example
 
@@ -1671,10 +1649,6 @@ Name | Type | Description  | Notes
 
 **object**
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1694,6 +1668,7 @@ Name | Type | Description  | Notes
 > object undo_tax_calculations_by_external_id(external_id)
 
 Undo Tax Calculations By External Id
+
 
 ### Example
 
@@ -1735,10 +1710,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **object**
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

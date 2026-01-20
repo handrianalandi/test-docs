@@ -16,6 +16,7 @@ Method | HTTP request | Description
 
 Get Last Payment Item Group Sequence
 
+
 ### Example
 
 
@@ -57,10 +58,6 @@ Name | Type | Description  | Notes
 
 [**PaymentItemGroupLastSequenceResponse**](PaymentItemGroupLastSequenceResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -80,6 +77,7 @@ Name | Type | Description  | Notes
 > List[PaymentItemGroupSequenceResponse] get_payment_item_group_sequences(employee_id, page, size, query)
 
 Get Payment Item Group Sequences
+
 
 ### Example
 
@@ -127,10 +125,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**List[PaymentItemGroupSequenceResponse]**](PaymentItemGroupSequenceResponse.md)
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

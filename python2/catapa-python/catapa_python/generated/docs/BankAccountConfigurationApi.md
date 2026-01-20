@@ -22,6 +22,7 @@ Method | HTTP request | Description
 
 Update Bank Account Configuration
 
+
 ### Example
 
 
@@ -63,10 +64,6 @@ Name | Type | Description  | Notes
 
 [**BulkOperationResponse**](BulkOperationResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -86,6 +83,7 @@ Name | Type | Description  | Notes
 > cancel_approval(id)
 
 Cancel Bank Account Configuration
+
 
 ### Example
 
@@ -126,10 +124,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -151,6 +145,7 @@ void (empty response body)
 Create Bank Account Configuration Approval
 
 Replacement for /v1/employees/{employeeId}/bank-account-configurations.
+
 
 ### Example
 
@@ -193,10 +188,6 @@ Name | Type | Description  | Notes
 
 [**BankAccountConfigurationResponse**](BankAccountConfigurationResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -216,6 +207,7 @@ Name | Type | Description  | Notes
 > BankAccountConfigurationResponse get_bank_account_configuration_by_id(id)
 
 Get Bank Account Configuration by Id
+
 
 ### Example
 
@@ -258,10 +250,6 @@ Name | Type | Description  | Notes
 
 [**BankAccountConfigurationResponse**](BankAccountConfigurationResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -283,6 +271,7 @@ Name | Type | Description  | Notes
 Get all bank account configurations
 
 Get all bank account configurations with pagination
+
 
 ### Example
 
@@ -329,10 +318,6 @@ Name | Type | Description  | Notes
 
 [**BankAccountConfigurationListResponse**](BankAccountConfigurationListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -352,6 +337,7 @@ Name | Type | Description  | Notes
 > BulkOperationResponse reject_approval(reject_approval_request)
 
 Reject Bank Account Configuration
+
 
 ### Example
 
@@ -394,10 +380,6 @@ Name | Type | Description  | Notes
 
 [**BulkOperationResponse**](BulkOperationResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -417,6 +399,7 @@ Name | Type | Description  | Notes
 > BulkOperationResponse undo(id_request)
 
 Undo Bank Account Configuration
+
 
 ### Example
 
@@ -459,10 +442,6 @@ Name | Type | Description  | Notes
 
 [**BulkOperationResponse**](BulkOperationResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -482,6 +461,7 @@ Name | Type | Description  | Notes
 > BankAccountConfigurationResponse update_bank_account_configuration_approval(id, update_bank_account_configuration_request)
 
 Update Bank Account Configuration Approval
+
 
 ### Example
 
@@ -525,10 +505,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**BankAccountConfigurationResponse**](BankAccountConfigurationResponse.md)
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

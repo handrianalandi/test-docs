@@ -21,6 +21,7 @@ Method | HTTP request | Description
 
 Add Employee
 
+
 ### Example
 
 
@@ -62,10 +63,6 @@ Name | Type | Description  | Notes
 
 [**EmployeeCreateResponse**](EmployeeCreateResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -86,7 +83,15 @@ Name | Type | Description  | Notes
 
 Delete Employee
 
-This endpoint expects a JSON array in the request body,  where each item is an object containing an `id` field representing the employee to delete. The array must contain between 1 and 50 items. **Request body schema:** ```json [   { \"id\": \"string\" } ] ``` **Example payload:** ```json [   { \"id\": \"7eb20b1e-577b-45c0-adf4-c76ae17cdeae\" } ] ``` 
+This endpoint expects a JSON array in the request body,  where each item is an object containing an `id` field representing the employee to delete. The array must contain between 1 and 50 items.
+**Request body schema:** ```json [
+  { "id": "string" }
+] ```
+**Example payload:** ```json [
+  { "id": "7eb20b1e-577b-45c0-adf4-c76ae17cdeae" }
+] ```
+
+
 
 ### Example
 
@@ -125,10 +130,6 @@ This endpoint does not need any parameter.
 
 [**BulkOperationResponse**](BulkOperationResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -148,6 +149,7 @@ This endpoint does not need any parameter.
 > AdditionalAssignmentApprovalListResponse get_additional_assignment_approvals(page, size, query)
 
 List All Additional Assignment Approvals
+
 
 ### Example
 
@@ -194,10 +196,6 @@ Name | Type | Description  | Notes
 
 [**AdditionalAssignmentApprovalListResponse**](AdditionalAssignmentApprovalListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -217,6 +215,7 @@ Name | Type | Description  | Notes
 > EmployeeHiringDataSimpleResponse get_employee_hiring_data(id)
 
 Get Employee Hiring Data
+
 
 ### Example
 
@@ -259,10 +258,6 @@ Name | Type | Description  | Notes
 
 [**EmployeeHiringDataSimpleResponse**](EmployeeHiringDataSimpleResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -282,6 +277,7 @@ Name | Type | Description  | Notes
 > EmployeeListResponse list_all_employees(page, size, query)
 
 List All Employees
+
 
 ### Example
 
@@ -328,10 +324,6 @@ Name | Type | Description  | Notes
 
 [**EmployeeListResponse**](EmployeeListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -351,6 +343,7 @@ Name | Type | Description  | Notes
 > EmployeeHiringDataResponse update_employee_hiring_data(id, employee_hiring_data_request)
 
 Update Employee Hiring Data
+
 
 ### Example
 
@@ -395,10 +388,6 @@ Name | Type | Description  | Notes
 
 [**EmployeeHiringDataResponse**](EmployeeHiringDataResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -418,6 +407,7 @@ Name | Type | Description  | Notes
 > EmployeeFullResponse update_manager(employee_id, manager_request)
 
 Update Manager
+
 
 ### Example
 
@@ -461,10 +451,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**EmployeeFullResponse**](EmployeeFullResponse.md)
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

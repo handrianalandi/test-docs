@@ -19,6 +19,7 @@ Get Employee Bank Account Configuration
 
 This endpoint is deprecated. Please use /v1/employees/{employeeId}/bank-account-configurations/histories instead.
 
+
 ### Example
 
 
@@ -60,10 +61,6 @@ Name | Type | Description  | Notes
 
 [**BankAccountConfigurationResponse**](BankAccountConfigurationResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -85,6 +82,7 @@ Name | Type | Description  | Notes
 Get Employee Bank Account Configuration Histories
 
 replacement for /v1/employees/{employeeId}/bank-account-configurations.
+
 
 ### Example
 
@@ -131,10 +129,6 @@ Name | Type | Description  | Notes
 
 [**BankAccountConfigurationListResponse**](BankAccountConfigurationListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -156,6 +150,7 @@ Name | Type | Description  | Notes
 Update Bank Account Configuration
 
 This endpoint is deprecated. Please use /v1/bank-account-configurations/approvals instead.
+
 
 ### Example
 
@@ -199,10 +194,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**BankAccountConfigurationResponse**](BankAccountConfigurationResponse.md)
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

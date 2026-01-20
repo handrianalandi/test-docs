@@ -22,6 +22,7 @@ Method | HTTP request | Description
 
 Approve Families
 
+
 ### Example
 
 
@@ -63,10 +64,6 @@ Name | Type | Description  | Notes
 
 [**BulkOperationResponse**](BulkOperationResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -86,6 +83,7 @@ Name | Type | Description  | Notes
 > FamilyApprovalListItemWithApprovalStatusResponse create_family_by_employee(employee_id, family_approval_request)
 
 Create Family By Employee
+
 
 ### Example
 
@@ -130,10 +128,6 @@ Name | Type | Description  | Notes
 
 [**FamilyApprovalListItemWithApprovalStatusResponse**](FamilyApprovalListItemWithApprovalStatusResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -153,6 +147,7 @@ Name | Type | Description  | Notes
 > delete_family_by_employee(employee_id, family_id)
 
 Delete Family
+
 
 ### Example
 
@@ -195,10 +190,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -218,6 +209,7 @@ void (empty response body)
 > FamilyApprovalListResponse get_family_by_employee(employee_id)
 
 List All Families
+
 
 ### Example
 
@@ -260,10 +252,6 @@ Name | Type | Description  | Notes
 
 [**FamilyApprovalListResponse**](FamilyApprovalListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -283,6 +271,7 @@ Name | Type | Description  | Notes
 > FamilyHistoricalListResponse get_historical_families(page, size, query)
 
 Get Historical Families
+
 
 ### Example
 
@@ -329,10 +318,6 @@ Name | Type | Description  | Notes
 
 [**FamilyHistoricalListResponse**](FamilyHistoricalListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -352,6 +337,7 @@ Name | Type | Description  | Notes
 > FamilyApprovalListItemWithApprovalStatusResponse get_job_experiences_by_employeeand_id(tenant, employee_id, approval_id)
 
 Get Family
+
 
 ### Example
 
@@ -398,10 +384,6 @@ Name | Type | Description  | Notes
 
 [**FamilyApprovalListItemWithApprovalStatusResponse**](FamilyApprovalListItemWithApprovalStatusResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -421,6 +403,7 @@ Name | Type | Description  | Notes
 > BulkOperationResponse reject_familiesby_employee(reject_approval_request)
 
 Reject Families
+
 
 ### Example
 
@@ -463,10 +446,6 @@ Name | Type | Description  | Notes
 
 [**BulkOperationResponse**](BulkOperationResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -486,6 +465,7 @@ Name | Type | Description  | Notes
 > FamilyApprovalListItemWithApprovalStatusResponse update_family_by_employee(tenant, employee_id, approval_id, family_approval_request)
 
 Update Family By Employee
+
 
 ### Example
 
@@ -533,10 +513,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**FamilyApprovalListItemWithApprovalStatusResponse**](FamilyApprovalListItemWithApprovalStatusResponse.md)
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

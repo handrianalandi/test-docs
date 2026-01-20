@@ -18,7 +18,9 @@ Method | HTTP request | Description
 
 Get Employment Status by Employee
 
-⚠️ **This endpoint is deprecated.**   Please use [Get Employment Statuses](https://api-docs.catapa.com/#tag/employment-status/operation/getEmploymentStatuses) instead. 
+⚠️ **This endpoint is deprecated.**   Please use [Get Employment Statuses](https://api-docs.catapa.com/#tag/employment-status/operation/getEmploymentStatuses) instead.
+
+
 
 ### Example
 
@@ -63,10 +65,6 @@ Name | Type | Description  | Notes
 
 [**EmploymentDataResponse**](EmploymentDataResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -86,6 +84,7 @@ Name | Type | Description  | Notes
 > EmploymentStatusHistoryListResponse get_employment_status_histories(page, size, query)
 
 Get Employment Status Histories
+
 
 ### Example
 
@@ -132,10 +131,6 @@ Name | Type | Description  | Notes
 
 [**EmploymentStatusHistoryListResponse**](EmploymentStatusHistoryListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -155,6 +150,7 @@ Name | Type | Description  | Notes
 > EmploymentStatusListResponse get_employment_statuses(page, size, query)
 
 Get Employment Statuses
+
 
 ### Example
 
@@ -201,10 +197,6 @@ Name | Type | Description  | Notes
 
 [**EmploymentStatusListResponse**](EmploymentStatusListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -225,7 +217,10 @@ Name | Type | Description  | Notes
 
 Update Employment Status by Employee
 
-### Generate Employment Status Number The default value for the `generateEmploymentStatusNumber` field in the request body is set to `false`. If a request is sent with the value of `true`, it will first check the existing employee policy. If the employee policy is set to manual, it will accept the employment status number in the request. If the employee policy is set to automatic, it will generate a new employment status number based on the format in the employee policy. 
+### Generate Employment Status Number
+The default value for the `generateEmploymentStatusNumber` field in the request body is set to `false`. If a request is sent with the value of `true`, it will first check the existing employee policy. If the employee policy is set to manual, it will accept the employment status number in the request. If the employee policy is set to automatic, it will generate a new employment status number based on the format in the employee policy.
+
+
 
 ### Example
 
@@ -269,10 +264,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**EmploymentDataResponse**](EmploymentDataResponse.md)
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

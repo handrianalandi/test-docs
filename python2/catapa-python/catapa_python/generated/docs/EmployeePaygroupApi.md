@@ -16,6 +16,7 @@ Method | HTTP request | Description
 
 Get Employee Paygroup by ID
 
+
 ### Example
 
 
@@ -57,10 +58,6 @@ Name | Type | Description  | Notes
 
 [**EmployeePaygroupResponse**](EmployeePaygroupResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -80,6 +77,7 @@ Name | Type | Description  | Notes
 > EmployeePaygroupListResponse get_employee_paygroups(page, size, query)
 
 Get Employee Paygroups
+
 
 ### Example
 
@@ -125,10 +123,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**EmployeePaygroupListResponse**](EmployeePaygroupListResponse.md)
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

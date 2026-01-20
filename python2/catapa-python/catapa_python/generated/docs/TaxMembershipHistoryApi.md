@@ -19,6 +19,7 @@ Get Tax Membership History
 
 Retrieve tax membership history for a specific employee for a given year and month
 
+
 ### Example
 
 
@@ -64,10 +65,6 @@ Name | Type | Description  | Notes
 
 [**TaxMembershipHistoryResponse**](TaxMembershipHistoryResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -90,6 +87,7 @@ Name | Type | Description  | Notes
 Get Tax Membership History by ID
 
 Retrieve a specific tax membership history record by its unique identifier
+
 
 ### Example
 
@@ -132,10 +130,6 @@ Name | Type | Description  | Notes
 
 [**TaxMembershipHistoryResponse**](TaxMembershipHistoryResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -158,6 +152,7 @@ Name | Type | Description  | Notes
 Update Tax Membership History Tax Subject
 
 Update tax subject information for a specific tax membership history record
+
 
 ### Example
 
@@ -201,10 +196,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**TaxMembershipHistoryResponse**](TaxMembershipHistoryResponse.md)
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

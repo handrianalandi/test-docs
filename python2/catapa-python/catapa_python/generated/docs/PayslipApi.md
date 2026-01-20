@@ -22,6 +22,7 @@ Method | HTTP request | Description
 
 Create or Update Payslip Layout
 
+
 ### Example
 
 
@@ -63,10 +64,6 @@ Name | Type | Description  | Notes
 
 [**PayslipLayoutResponse**](PayslipLayoutResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -86,6 +83,7 @@ Name | Type | Description  | Notes
 > PayslipAdditionalNoteResponse create_payslip_additional_note(payslip_additional_note_request)
 
 Create Payslip Additional Note
+
 
 ### Example
 
@@ -128,10 +126,6 @@ Name | Type | Description  | Notes
 
 [**PayslipAdditionalNoteResponse**](PayslipAdditionalNoteResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -151,6 +145,7 @@ Name | Type | Description  | Notes
 > object delete_payslip_layout_by_id(tenant, id)
 
 Delete Payslip Layout By Id
+
 
 ### Example
 
@@ -195,10 +190,6 @@ Name | Type | Description  | Notes
 
 **object**
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -218,6 +209,7 @@ Name | Type | Description  | Notes
 > object download_payslip(id, payslip_download_request)
 
 Download Payslip
+
 
 ### Example
 
@@ -262,10 +254,6 @@ Name | Type | Description  | Notes
 
 **object**
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -286,7 +274,12 @@ Name | Type | Description  | Notes
 
 Get Payslip Additional Notes
 
-### Search Query | Supported Keys               | Supported Operators | Notes                | | ---------------------------- | ------------------- | ---------------------| | paymentDate                  | :                   | Equal operator       | 
+### Search Query
+| Supported Keys               | Supported Operators | Notes                |
+| ---------------------------- | ------------------- | ---------------------|
+| paymentDate                  | :                   | Equal operator       |
+
+
 
 ### Example
 
@@ -325,10 +318,6 @@ This endpoint does not need any parameter.
 
 [**PayslipAdditionalNoteListResponse**](PayslipAdditionalNoteListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -348,6 +337,7 @@ This endpoint does not need any parameter.
 > PayslipLayoutResponse get_payslip_layout_by_id(id)
 
 Get Payslip Layout By Id
+
 
 ### Example
 
@@ -390,10 +380,6 @@ Name | Type | Description  | Notes
 
 [**PayslipLayoutResponse**](PayslipLayoutResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -414,7 +400,12 @@ Name | Type | Description  | Notes
 
 Get Payslip Layouts
 
-### Search Query | Supported Keys               | Supported Operators | Notes                | | ---------------------------- | ------------------- | ---------------------| | section                      | :                   | Equal operator       | 
+### Search Query
+| Supported Keys               | Supported Operators | Notes                |
+| ---------------------------- | ------------------- | ---------------------|
+| section                      | :                   | Equal operator       |
+
+
 
 ### Example
 
@@ -453,10 +444,6 @@ This endpoint does not need any parameter.
 
 [**PayslipLayoutListResponse**](PayslipLayoutListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -476,6 +463,7 @@ This endpoint does not need any parameter.
 > PayslipAdditionalNoteResponse update_payslip_additional_note_by_id(id, payslip_additional_note_request)
 
 Update Payslip Additional Note by Id
+
 
 ### Example
 
@@ -519,10 +507,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**PayslipAdditionalNoteResponse**](PayslipAdditionalNoteResponse.md)
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

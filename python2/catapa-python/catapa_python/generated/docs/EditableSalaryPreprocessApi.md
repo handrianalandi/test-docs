@@ -17,6 +17,7 @@ Preprocess editable salary
 
 Preprocess salary editor data for up to 50 items.
 
+
 ### Example
 
 
@@ -57,10 +58,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**EditableSalaryPreprocessResponse**](EditableSalaryPreprocessResponse.md)
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

@@ -47,6 +47,7 @@ Method | HTTP request | Description
 
 Add Sub Location
 
+
 ### Example
 
 
@@ -88,10 +89,6 @@ Name | Type | Description  | Notes
 
 [**SubLocationResponse**](SubLocationResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -111,6 +108,7 @@ Name | Type | Description  | Notes
 > CompanyDetailResponse create_company(request, file)
 
 Create Company
+
 
 ### Example
 
@@ -155,10 +153,6 @@ Name | Type | Description  | Notes
 
 [**CompanyDetailResponse**](CompanyDetailResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: multipart/form-data
@@ -178,6 +172,7 @@ Name | Type | Description  | Notes
 > CostCenterListItemResponse create_cost_center(cost_center_request)
 
 Create Cost Center
+
 
 ### Example
 
@@ -220,10 +215,6 @@ Name | Type | Description  | Notes
 
 [**CostCenterListItemResponse**](CostCenterListItemResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -243,6 +234,7 @@ Name | Type | Description  | Notes
 > JobLevelResponse create_job_level(job_level_request)
 
 Create Job Level
+
 
 ### Example
 
@@ -285,10 +277,6 @@ Name | Type | Description  | Notes
 
 [**JobLevelResponse**](JobLevelResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -309,7 +297,10 @@ Name | Type | Description  | Notes
 
 Create Job Title
 
-⚠️ **This endpoint is deprecated.**       Please use [Create Job Title with Job Levels](https://api-docs.catapa.com/#tag/organization/operation/createJobTitleWithJobLevels) instead. 
+⚠️ **This endpoint is deprecated.**  
+    Please use [Create Job Title with Job Levels](https://api-docs.catapa.com/#tag/organization/operation/createJobTitleWithJobLevels) instead.
+
+
 
 ### Example
 
@@ -352,10 +343,6 @@ Name | Type | Description  | Notes
 
 [**JobTitleResponse**](JobTitleResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -375,6 +362,7 @@ Name | Type | Description  | Notes
 > JobTitleWithJobLevelsResponse create_job_title_with_job_levels(job_title_request)
 
 Create Job Title with Job Levels
+
 
 ### Example
 
@@ -417,10 +405,6 @@ Name | Type | Description  | Notes
 
 [**JobTitleWithJobLevelsResponse**](JobTitleWithJobLevelsResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -440,6 +424,7 @@ Name | Type | Description  | Notes
 > LocationResponse create_location(location_create_request)
 
 Create Location
+
 
 ### Example
 
@@ -482,10 +467,6 @@ Name | Type | Description  | Notes
 
 [**LocationResponse**](LocationResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -505,6 +486,7 @@ Name | Type | Description  | Notes
 > OrganizationResponse create_organization(organization_request)
 
 Create Organization
+
 
 ### Example
 
@@ -547,10 +529,6 @@ Name | Type | Description  | Notes
 
 [**OrganizationResponse**](OrganizationResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -570,6 +548,7 @@ Name | Type | Description  | Notes
 > IdCodeNameResponse create_organization_group(organization_group_request)
 
 Create Organization Group
+
 
 ### Example
 
@@ -612,10 +591,6 @@ Name | Type | Description  | Notes
 
 [**IdCodeNameResponse**](IdCodeNameResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -635,6 +610,7 @@ Name | Type | Description  | Notes
 > OrganizationHierarchyResponse create_organization_hierarchies(organization_hierarchy_request)
 
 Create Organization Hierarchies
+
 
 ### Example
 
@@ -677,10 +653,6 @@ Name | Type | Description  | Notes
 
 [**OrganizationHierarchyResponse**](OrganizationHierarchyResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -701,7 +673,15 @@ Name | Type | Description  | Notes
 
 Delete Sub Location
 
-This endpoint expects a JSON array in the request body,  where each item is an object containing an `id` field representing the sub-location to delete. The array must contain at least 1 item. **Request body schema:** ```json [   { \"id\": \"string\" } ] ``` **Example payload:** ```json [   { \"id\": \"a31aa166-70be-4303-81e4-5ada93b5213a\" } ] ``` 
+This endpoint expects a JSON array in the request body,  where each item is an object containing an `id` field representing the sub-location to delete. The array must contain at least 1 item.
+**Request body schema:** ```json [
+  { "id": "string" }
+] ```
+**Example payload:** ```json [
+  { "id": "a31aa166-70be-4303-81e4-5ada93b5213a" }
+] ```
+
+
 
 ### Example
 
@@ -740,10 +720,6 @@ This endpoint does not need any parameter.
 
 [**BulkOperationResponse**](BulkOperationResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -763,6 +739,7 @@ This endpoint does not need any parameter.
 > CompanyListResponse get_companies(page, size, query)
 
 Get Companies
+
 
 ### Example
 
@@ -809,10 +786,6 @@ Name | Type | Description  | Notes
 
 [**CompanyListResponse**](CompanyListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -832,6 +805,7 @@ Name | Type | Description  | Notes
 > CompanyDetailResponse get_company()
 
 Get Company
+
 
 ### Example
 
@@ -870,10 +844,6 @@ This endpoint does not need any parameter.
 
 [**CompanyDetailResponse**](CompanyDetailResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -893,6 +863,7 @@ This endpoint does not need any parameter.
 > CompanyGroupListResponse get_company_groups(page, size, query)
 
 Get Company Groups
+
 
 ### Example
 
@@ -939,10 +910,6 @@ Name | Type | Description  | Notes
 
 [**CompanyGroupListResponse**](CompanyGroupListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -962,6 +929,7 @@ Name | Type | Description  | Notes
 > CostCenterListResponse get_cost_center()
 
 Get Cost Center
+
 
 ### Example
 
@@ -1000,10 +968,6 @@ This endpoint does not need any parameter.
 
 [**CostCenterListResponse**](CostCenterListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1024,7 +988,15 @@ This endpoint does not need any parameter.
 
 Get Job Level
 
-### Search Query | Supported Keys | Supported Operators | Notes                                                                             | |----------------|---------------------|-----------------------------------------------------------------------------------| | name           | `:`                 | Like operator                                                                     | | code           | `:`                 | Like operator                                                                     | | jobPosistionId | `:`                 | Like operator                                                                     | | level          | `:`<br/>`>`<br/>`<` | Equal operator<br/>Greater than or equal operator<br/>Less than or equal operator | 
+### Search Query
+| Supported Keys | Supported Operators | Notes                                                                             |
+|----------------|---------------------|-----------------------------------------------------------------------------------|
+| name           | `:`                 | Like operator                                                                     |
+| code           | `:`                 | Like operator                                                                     |
+| jobPosistionId | `:`                 | Like operator                                                                     |
+| level          | `:`<br/>`>`<br/>`<` | Equal operator<br/>Greater than or equal operator<br/>Less than or equal operator |
+
+
 
 ### Example
 
@@ -1063,10 +1035,6 @@ This endpoint does not need any parameter.
 
 [**JobLevelListResponse**](JobLevelListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1087,7 +1055,10 @@ This endpoint does not need any parameter.
 
 Get Job Title
 
-minJobLevel and maxJobLevel are deprecated. check Tenant Job Hierarchy Policy setting, it may cause error to this endpoint 
+minJobLevel and maxJobLevel are deprecated.
+check Tenant Job Hierarchy Policy setting, it may cause error to this endpoint
+
+
 
 ### Example
 
@@ -1134,10 +1105,6 @@ Name | Type | Description  | Notes
 
 [**JobTitleListResponse**](JobTitleListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1158,7 +1125,9 @@ Name | Type | Description  | Notes
 
 Get Job Title Job Level Mappings
 
-minJobLevel and MaxJobLevel are deprecated. 
+minJobLevel and MaxJobLevel are deprecated.
+
+
 
 ### Example
 
@@ -1205,10 +1174,6 @@ Name | Type | Description  | Notes
 
 [**JobTitleLevelMappingListResponse**](JobTitleLevelMappingListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1229,7 +1194,13 @@ Name | Type | Description  | Notes
 
 Get Location Group
 
-### Search Query | Supported Keys | Supported Operators | Notes                      | |----------------|---------------------|----------------------------| | name           | `:`                 | Like operator              | | code           | `:`                 | Like operator              | 
+### Search Query
+| Supported Keys | Supported Operators | Notes                      |
+|----------------|---------------------|----------------------------|
+| name           | `:`                 | Like operator              |
+| code           | `:`                 | Like operator              |
+
+
 
 ### Example
 
@@ -1268,10 +1239,6 @@ This endpoint does not need any parameter.
 
 [**LocationGroupListResponse**](LocationGroupListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1291,6 +1258,7 @@ This endpoint does not need any parameter.
 > LocationListResponse get_locations(page, size, query)
 
 Get Location
+
 
 ### Example
 
@@ -1337,10 +1305,6 @@ Name | Type | Description  | Notes
 
 [**LocationListResponse**](LocationListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1360,6 +1324,7 @@ Name | Type | Description  | Notes
 > OperationalGroupListResponse get_operational_groups(page, size, query)
 
 Get Operational Groups
+
 
 ### Example
 
@@ -1406,10 +1371,6 @@ Name | Type | Description  | Notes
 
 [**OperationalGroupListResponse**](OperationalGroupListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1430,7 +1391,25 @@ Name | Type | Description  | Notes
 
 Get Organization
 
-### Search Query   | Supported Keys          | Supported Operators | Notes                                                                           |   |-------------------------|---------------------|---------------------------------------------------------------------------------|   | id                      | `:`                 | Equal operator<br/>Support multiple values with each value separated by the `;` delimiter |   | name                    | `:`                 | Like operator                                                                   |   | code                    | `:`                 | Like operator                                                                   |   | type                    | `:`                 | Equal operator                                                                  |   | organizationGroupId     | `:`                 | Equal operator                                                                  |   | organizationHierarchyId | `:`                 | Equal operator                                                                  |   | organizationParentId    | `:`                 | Equal operator                                                                  |   | haveParent              | `:`                 | Equal operator                                                                  |   | organizationChildrenId  | `:`                 | Equal operator                                                                  |   | level                   | `:`<br>`<`<br>`>`   | Equal operator<br>Less than or equal operator<br>Greater than or equal operator |   | company.id              | `:`                 | Equal operator                                                                  |   | effectiveDate           | `<`<br>`>`          | Less than or equal operator<br>Greater than or equal operator                   |   | endDate                 | `<`<br>`>`          | Less than or equal operator<br>Greater than or equal operator                   |   | endDateIsNull           | `:`                 | Equal operator                                                                  | 
+### Search Query
+  | Supported Keys          | Supported Operators | Notes                                                                           |
+  |-------------------------|---------------------|---------------------------------------------------------------------------------|
+  | id                      | `:`                 | Equal operator<br/>Support multiple values with each value separated by the `;` delimiter |
+  | name                    | `:`                 | Like operator                                                                   |
+  | code                    | `:`                 | Like operator                                                                   |
+  | type                    | `:`                 | Equal operator                                                                  |
+  | organizationGroupId     | `:`                 | Equal operator                                                                  |
+  | organizationHierarchyId | `:`                 | Equal operator                                                                  |
+  | organizationParentId    | `:`                 | Equal operator                                                                  |
+  | haveParent              | `:`                 | Equal operator                                                                  |
+  | organizationChildrenId  | `:`                 | Equal operator                                                                  |
+  | level                   | `:`<br>`<`<br>`>`   | Equal operator<br>Less than or equal operator<br>Greater than or equal operator |
+  | company.id              | `:`                 | Equal operator                                                                  |
+  | effectiveDate           | `<`<br>`>`          | Less than or equal operator<br>Greater than or equal operator                   |
+  | endDate                 | `<`<br>`>`          | Less than or equal operator<br>Greater than or equal operator                   |
+  | endDateIsNull           | `:`                 | Equal operator                                                                  |
+
+
 
 ### Example
 
@@ -1469,10 +1448,6 @@ This endpoint does not need any parameter.
 
 [**OrganizationListResponse**](OrganizationListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1493,7 +1468,13 @@ This endpoint does not need any parameter.
 
 Get Organization Group
 
-### Search Query | Supported Keys | Supported Operators | Notes                      | |----------------|---------------------|----------------------------| | name           | `:`                 | Like operator              | | code           | `:`                 | Like operator              | 
+### Search Query
+| Supported Keys | Supported Operators | Notes                      |
+|----------------|---------------------|----------------------------|
+| name           | `:`                 | Like operator              |
+| code           | `:`                 | Like operator              |
+
+
 
 ### Example
 
@@ -1532,10 +1513,6 @@ This endpoint does not need any parameter.
 
 [**OrganizationGroupListResponse**](OrganizationGroupListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1555,6 +1532,7 @@ This endpoint does not need any parameter.
 > OrganizationHeadListResponse get_organization_heads(page, size, query)
 
 Get Organization Heads
+
 
 ### Example
 
@@ -1601,10 +1579,6 @@ Name | Type | Description  | Notes
 
 [**OrganizationHeadListResponse**](OrganizationHeadListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1625,7 +1599,15 @@ Name | Type | Description  | Notes
 
 Get Organization Hierarchies
 
-### Search Query | Supported Keys | Supported Operators | Notes                                                                           | |----------------|---------------------|---------------------------------------------------------------------------------| | name           | `:`                 | Like operator                                                                   | | code           | `:`                 | Like operator                                                                   | | color          | `:`                 | Like operator                                                                   | | level          | `:`<br>`<`<br>`>`   | Equal operator<br>Less than or equal operator<br>Greater than or equal operator | 
+### Search Query
+| Supported Keys | Supported Operators | Notes                                                                           |
+|----------------|---------------------|---------------------------------------------------------------------------------|
+| name           | `:`                 | Like operator                                                                   |
+| code           | `:`                 | Like operator                                                                   |
+| color          | `:`                 | Like operator                                                                   |
+| level          | `:`<br>`<`<br>`>`   | Equal operator<br>Less than or equal operator<br>Greater than or equal operator |
+
+
 
 ### Example
 
@@ -1664,10 +1646,6 @@ This endpoint does not need any parameter.
 
 [**OrganizationHierarchyListResponse**](OrganizationHierarchyListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1687,6 +1665,7 @@ This endpoint does not need any parameter.
 > OrganizationHistoryListResponse get_organization_histories(page, size, query)
 
 Get Organization Histories
+
 
 ### Example
 
@@ -1733,10 +1712,6 @@ Name | Type | Description  | Notes
 
 [**OrganizationHistoryListResponse**](OrganizationHistoryListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1756,6 +1731,7 @@ Name | Type | Description  | Notes
 > OrganizationSuperiorListResponse get_organization_superiors(page, size, query)
 
 Get Organization Superiors
+
 
 ### Example
 
@@ -1802,10 +1778,6 @@ Name | Type | Description  | Notes
 
 [**OrganizationSuperiorListResponse**](OrganizationSuperiorListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1825,6 +1797,7 @@ Name | Type | Description  | Notes
 > PositionCostCenterListResponse get_position_cost_centers(page, size, query)
 
 Get Position Cost Centers
+
 
 ### Example
 
@@ -1871,10 +1844,6 @@ Name | Type | Description  | Notes
 
 [**PositionCostCenterListResponse**](PositionCostCenterListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1894,6 +1863,7 @@ Name | Type | Description  | Notes
 > PositionHistoryListResponse get_position_histories(page, size, query)
 
 Get Position Histories
+
 
 ### Example
 
@@ -1940,10 +1910,6 @@ Name | Type | Description  | Notes
 
 [**PositionHistoryListResponse**](PositionHistoryListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1963,6 +1929,7 @@ Name | Type | Description  | Notes
 > PositionVacancyStatusListResponse get_position_vacancy_statuses(page, size, query)
 
 Get Position Vacancy Statuses
+
 
 ### Example
 
@@ -2009,10 +1976,6 @@ Name | Type | Description  | Notes
 
 [**PositionVacancyStatusListResponse**](PositionVacancyStatusListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -2032,6 +1995,7 @@ Name | Type | Description  | Notes
 > PositionListResponse get_positions(page, size, query)
 
 Get Positions
+
 
 ### Example
 
@@ -2078,10 +2042,6 @@ Name | Type | Description  | Notes
 
 [**PositionListResponse**](PositionListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -2101,6 +2061,7 @@ Name | Type | Description  | Notes
 > SubLocationListResponse get_sub_locations(page, size, query)
 
 Get Sub Location
+
 
 ### Example
 
@@ -2147,10 +2108,6 @@ Name | Type | Description  | Notes
 
 [**SubLocationListResponse**](SubLocationListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -2170,6 +2127,7 @@ Name | Type | Description  | Notes
 > CostCenterListItemResponse update_cost_center(id, cost_center_request)
 
 Update Cost Center
+
 
 ### Example
 
@@ -2213,10 +2171,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**CostCenterListItemResponse**](CostCenterListItemResponse.md)
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

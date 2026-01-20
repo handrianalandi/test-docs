@@ -28,6 +28,7 @@ Method | HTTP request | Description
 
 Create Employee Variable
 
+
 ### Example
 
 
@@ -69,10 +70,6 @@ Name | Type | Description  | Notes
 
 [**EmployeeVariableResponse**](EmployeeVariableResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -92,6 +89,7 @@ Name | Type | Description  | Notes
 > EmployeeVariableMetadataResponse create_employee_variable_metadata(employee_variable_metadata_request)
 
 Create Employee Variable Metadata
+
 
 ### Example
 
@@ -134,10 +132,6 @@ Name | Type | Description  | Notes
 
 [**EmployeeVariableMetadataResponse**](EmployeeVariableMetadataResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -157,6 +151,7 @@ Name | Type | Description  | Notes
 > List[EmployeeVariableResponse] create_or_update_employee_variables(employee_variable_request)
 
 Create or Update Employee Variables
+
 
 ### Example
 
@@ -199,10 +194,6 @@ Name | Type | Description  | Notes
 
 [**List[EmployeeVariableResponse]**](EmployeeVariableResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -223,7 +214,18 @@ Name | Type | Description  | Notes
 
 Delete All Aperiodic Employee Variables
 
-### Search Query | Supported Keys                | Supported Operators | Notes | | ----------------------------- | ------------------- | ----- | | employeeId                    | :                   | Equal | | employee.identificationNumber | :                   | Like  | | employee.name                 | :                   | Like  | | employee.active               | :                   | Equal | | name                          | :                   | Like  | | metadata.id                   | :                   | Equal | | date                          | :<br>><br><         | Equal<br>Greater than or equal to<br>Less than or equal to | 
+### Search Query
+| Supported Keys                | Supported Operators | Notes |
+| ----------------------------- | ------------------- | ----- |
+| employeeId                    | :                   | Equal |
+| employee.identificationNumber | :                   | Like  |
+| employee.name                 | :                   | Like  |
+| employee.active               | :                   | Equal |
+| name                          | :                   | Like  |
+| metadata.id                   | :                   | Equal |
+| date                          | :<br>><br><         | Equal<br>Greater than or equal to<br>Less than or equal to |
+
+
 
 ### Example
 
@@ -262,10 +264,6 @@ This endpoint does not need any parameter.
 
 [**CountResponse**](CountResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -286,7 +284,20 @@ This endpoint does not need any parameter.
 
 Delete Employee Variable Metadata
 
-This endpoint deletes employee variable metadata. This endpoint expects a JSON array in the request body,  where each item is an object containing an `id` field representing the employee variable metadata to delete. The array must contain between 1 and 50 items.      **Request body schema:** ```json [   {     \"id\": \"string\"   } ] ``` **Example payload**: ```json [   { \"id\": \"673d457f-1975-434c-81a4-067f79345554\" },   { \"id\": \"730e2120-96e6-4426-8bbd-c1945ce561f7\" } ] ``` 
+This endpoint deletes employee variable metadata.
+This endpoint expects a JSON array in the request body,  where each item is an object containing an `id` field representing the employee variable metadata to delete. The array must contain between 1 and 50 items.
+    
+**Request body schema:** ```json [
+  {
+    "id": "string"
+  }
+] ```
+**Example payload**: ```json [
+  { "id": "673d457f-1975-434c-81a4-067f79345554" },
+  { "id": "730e2120-96e6-4426-8bbd-c1945ce561f7" }
+] ```
+
+
 
 ### Example
 
@@ -325,10 +336,6 @@ This endpoint does not need any parameter.
 
 [**BulkOperationResponse**](BulkOperationResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -349,7 +356,16 @@ This endpoint does not need any parameter.
 
 Delete Employee Variables
 
-This endpoint expects a JSON array in the request body,  where each item is an object containing an `id` field representing the employee variable to delete. The array must contain between 1 and 50 items. **Request body schema:** ```json [   { \"id\": \"string\" } ] ``` **Example payload**: ```json [   { \"id\": \"673d457f-1975-434c-81a4-067f79345554\" },   { \"id\": \"730e2120-96e6-4426-8bbd-c1945ce561f7\" } ] ``` 
+This endpoint expects a JSON array in the request body,  where each item is an object containing an `id` field representing the employee variable to delete. The array must contain between 1 and 50 items.
+**Request body schema:** ```json [
+  { "id": "string" }
+] ```
+**Example payload**: ```json [
+  { "id": "673d457f-1975-434c-81a4-067f79345554" },
+  { "id": "730e2120-96e6-4426-8bbd-c1945ce561f7" }
+] ```
+
+
 
 ### Example
 
@@ -388,10 +404,6 @@ This endpoint does not need any parameter.
 
 [**BulkOperationResponse**](BulkOperationResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -411,6 +423,7 @@ This endpoint does not need any parameter.
 > EmployeeVariableListResponse get_aperiodic_employee_variables()
 
 Get Aperiodic Employee Variables
+
 
 ### Example
 
@@ -449,10 +462,6 @@ This endpoint does not need any parameter.
 
 [**EmployeeVariableListResponse**](EmployeeVariableListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -472,6 +481,7 @@ This endpoint does not need any parameter.
 > EmployeeVariableResponse get_employee_variable_by_id(id)
 
 Get Employee Variable By Id
+
 
 ### Example
 
@@ -514,10 +524,6 @@ Name | Type | Description  | Notes
 
 [**EmployeeVariableResponse**](EmployeeVariableResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -538,7 +544,15 @@ Name | Type | Description  | Notes
 
 Get Employee Variable Metadata
 
-### Search Query | Supported Keys | Supported Operators | Notes | | -------------- | ------------------- | ----- | | name           | :                   | Equal | | type           | :                   | Equal | | periodic       | :                   | Equal | | description    | :                   | Like  | 
+### Search Query
+| Supported Keys | Supported Operators | Notes |
+| -------------- | ------------------- | ----- |
+| name           | :                   | Equal |
+| type           | :                   | Equal |
+| periodic       | :                   | Equal |
+| description    | :                   | Like  |
+
+
 
 ### Example
 
@@ -577,10 +591,6 @@ This endpoint does not need any parameter.
 
 [**EmployeeVariableMetadataListResponse**](EmployeeVariableMetadataListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -600,6 +610,7 @@ This endpoint does not need any parameter.
 > EmployeeVariableMetadataResponse get_employee_variable_metadata_by_id(id)
 
 Get Employee Variable Metadata By Id
+
 
 ### Example
 
@@ -642,10 +653,6 @@ Name | Type | Description  | Notes
 
 [**EmployeeVariableMetadataResponse**](EmployeeVariableMetadataResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -666,7 +673,18 @@ Name | Type | Description  | Notes
 
 Get Employee Variables
 
-### Search Query | Supported Keys                | Supported Operators | Notes | | ----------------------------- | ------------------- | ----- | | employeeId                    | :                   | Equal | | employee.identificationNumber | :                   | Like  | | employee.name                 | :                   | Like  | | employee.active               | :                   | Equal | | name                          | :                   | Like  | | metadata.id                   | :                   | Equal | | date                          | :<br>><br><         | Equal<br>Greater than or equal to<br>Less than or equal to | 
+### Search Query
+| Supported Keys                | Supported Operators | Notes |
+| ----------------------------- | ------------------- | ----- |
+| employeeId                    | :                   | Equal |
+| employee.identificationNumber | :                   | Like  |
+| employee.name                 | :                   | Like  |
+| employee.active               | :                   | Equal |
+| name                          | :                   | Like  |
+| metadata.id                   | :                   | Equal |
+| date                          | :<br>><br><         | Equal<br>Greater than or equal to<br>Less than or equal to |
+
+
 
 ### Example
 
@@ -705,10 +723,6 @@ This endpoint does not need any parameter.
 
 [**EmployeeVariableListResponse**](EmployeeVariableListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -728,6 +742,7 @@ This endpoint does not need any parameter.
 > EmployeeVariableListResponse get_periodic_employee_variables()
 
 Get Periodic Employee Variables
+
 
 ### Example
 
@@ -766,10 +781,6 @@ This endpoint does not need any parameter.
 
 [**EmployeeVariableListResponse**](EmployeeVariableListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -789,6 +800,7 @@ This endpoint does not need any parameter.
 > EmployeeVariableResponse update_employee_variable_by_id(id, employee_variable_request)
 
 Update Employee Variable By Id
+
 
 ### Example
 
@@ -833,10 +845,6 @@ Name | Type | Description  | Notes
 
 [**EmployeeVariableResponse**](EmployeeVariableResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -856,6 +864,7 @@ Name | Type | Description  | Notes
 > EmployeeVariableMetadataResponse update_employee_variable_metadata(id, employee_variable_metadata_request)
 
 Update Employee Variable Metadata
+
 
 ### Example
 
@@ -899,10 +908,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**EmployeeVariableMetadataResponse**](EmployeeVariableMetadataResponse.md)
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

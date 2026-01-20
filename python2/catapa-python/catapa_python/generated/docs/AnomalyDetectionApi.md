@@ -16,7 +16,12 @@ Method | HTTP request | Description
 
 Read Anomaly Suspects
 
-### Search Query | Supported Keys                | Supported Operators | Notes                                             | | ----------------------------- | ------------------- | ------------------------------------------------- | | identifier                    | :                   | Like                                              | 
+### Search Query
+| Supported Keys                | Supported Operators | Notes                                             |
+| ----------------------------- | ------------------- | ------------------------------------------------- |
+| identifier                    | :                   | Like                                              |
+
+
 
 ### Example
 
@@ -55,10 +60,6 @@ This endpoint does not need any parameter.
 
 [**AnomalySuspectListResponse**](AnomalySuspectListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -78,6 +79,7 @@ This endpoint does not need any parameter.
 > AnomalySuspectResponse read_anomaly_suspect_by_id(id)
 
 Read Anomaly Suspect By Id
+
 
 ### Example
 
@@ -119,10 +121,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**AnomalySuspectResponse**](AnomalySuspectResponse.md)
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

@@ -15,7 +15,12 @@ Method | HTTP request | Description
 
 Get Widgets by Current User
 
-### Search Query | Supported Keys | Supported Operators | Notes         | |----------------|---------------------|---------------| | widgetType          | :                   | Equal operator | 
+### Search Query
+| Supported Keys | Supported Operators | Notes         |
+|----------------|---------------------|---------------|
+| widgetType          | :                   | Equal operator |
+
+
 
 ### Example
 
@@ -53,10 +58,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 [**WidgetListResponse**](WidgetListResponse.md)
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

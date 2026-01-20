@@ -15,6 +15,7 @@ Method | HTTP request | Description
 
 Get Company Bank Accounts
 
+
 ### Example
 
 
@@ -59,10 +60,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**CompanyBankAccountListResponse**](CompanyBankAccountListResponse.md)
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

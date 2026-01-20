@@ -18,6 +18,7 @@ Method | HTTP request | Description
 
 Get Role Authorities
 
+
 ### Example
 
 
@@ -63,10 +64,6 @@ Name | Type | Description  | Notes
 
 [**RoleAuthorityListResponse**](RoleAuthorityListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -87,6 +84,7 @@ Name | Type | Description  | Notes
 > RoleDetailResponse get_role_by_id(id)
 
 Get Role by ID
+
 
 ### Example
 
@@ -129,10 +127,6 @@ Name | Type | Description  | Notes
 
 [**RoleDetailResponse**](RoleDetailResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -153,6 +147,7 @@ Name | Type | Description  | Notes
 > RolePermissionListResponse get_role_permissions(id, expanded)
 
 Get Role Permissions
+
 
 ### Example
 
@@ -197,10 +192,6 @@ Name | Type | Description  | Notes
 
 [**RolePermissionListResponse**](RolePermissionListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -221,6 +212,7 @@ Name | Type | Description  | Notes
 > RoleListResponse list_all_roles(page, size, query)
 
 List All Roles
+
 
 ### Example
 
@@ -266,10 +258,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**RoleListResponse**](RoleListResponse.md)
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

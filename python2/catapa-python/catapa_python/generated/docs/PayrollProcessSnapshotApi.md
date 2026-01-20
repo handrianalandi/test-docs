@@ -17,6 +17,7 @@ Find all payroll process snapshots
 
 Retrieves all payroll process snapshots
 
+
 ### Example
 
 
@@ -61,10 +62,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**PayrollProcessSnapshotListResponse**](PayrollProcessSnapshotListResponse.md)
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

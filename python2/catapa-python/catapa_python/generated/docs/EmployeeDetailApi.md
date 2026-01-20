@@ -19,6 +19,7 @@ Get Employee Detail
 
 The `id` field in the response refers to the **employee's ID**, **not the employee detail's actual ID**.
 
+
 ### Example
 
 
@@ -60,10 +61,6 @@ Name | Type | Description  | Notes
 
 [**EmployeeDetailResponse**](EmployeeDetailResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -83,6 +80,7 @@ Name | Type | Description  | Notes
 > EmployeeDetailListResponse get_historical_employee_details(page, size, query)
 
 Get Historical Employee Details
+
 
 ### Example
 
@@ -129,10 +127,6 @@ Name | Type | Description  | Notes
 
 [**EmployeeDetailListResponse**](EmployeeDetailListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -154,6 +148,7 @@ Name | Type | Description  | Notes
 Update Employee Detail
 
 The `id` field in the response refers to the **employee's ID**, **not the employee detail's actual ID**.
+
 
 ### Example
 
@@ -197,10 +192,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**EmployeeDetailResponse**](EmployeeDetailResponse.md)
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

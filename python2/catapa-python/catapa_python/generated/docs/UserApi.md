@@ -16,6 +16,7 @@ Method | HTTP request | Description
 
 Retrieve all users
 
+
 ### Example
 
 
@@ -61,10 +62,6 @@ Name | Type | Description  | Notes
 
 [**UserListResponse**](UserListResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -84,6 +81,7 @@ Name | Type | Description  | Notes
 > UserAndRoleResponse get_current_user()
 
 Get Current User
+
 
 ### Example
 
@@ -121,10 +119,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 [**UserAndRoleResponse**](UserAndRoleResponse.md)
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 

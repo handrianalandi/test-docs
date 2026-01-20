@@ -16,6 +16,7 @@ Method | HTTP request | Description
 
 Get Salary Item by ID
 
+
 ### Example
 
 
@@ -57,10 +58,6 @@ Name | Type | Description  | Notes
 
 [**SalaryItemResponse**](SalaryItemResponse.md)
 
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -80,6 +77,7 @@ Name | Type | Description  | Notes
 > SalaryItemListResponse get_salary_items(page, size, include_default_type, query)
 
 Get Salary Items
+
 
 
 
@@ -129,10 +127,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**SalaryItemListResponse**](SalaryItemListResponse.md)
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 
