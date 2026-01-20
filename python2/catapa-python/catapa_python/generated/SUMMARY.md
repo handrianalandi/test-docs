@@ -1,4 +1,4 @@
-# Summary
-* [Python SDK 2](./README.md)
-* [Python SDK API Reference 2](./docs/*)
+# Table of contents
 
+* [Python SDK 2a](README.md)
+* [Python SDK API Reference 2](python-sdk-api-reference-2.md)
