@@ -145,7 +145,7 @@ generate_client_sdk() {
     "${GENERATE_CMD[@]}"
 
     # Post-generation: Create SUMMARY.md for Python if template exists
-    if [[ "$TARGET_LANGUAGE" == "Python" ]] && [[ -f "python-templates/SUMMARY.mustache" ]]; then
+    if [[ "$TARGET_LANGUAGE" == "Python" ]] && [[ -f "python-templates/SUMMARY.md.mustache" ]]; then
         echo "📝 Creating SUMMARY.md from template..."
         # Copy template directly (SUMMARY.md is static, no mustache variables needed)
         cp "python-templates/SUMMARY.md.mustache" "$TARGET_FOLDER_PATH/SUMMARY.md"
