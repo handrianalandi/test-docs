@@ -35,7 +35,7 @@ GENERATE_TYPESCRIPT=false
 GENERATE_PYTHON=false
 SPEC_URL=""
 FOLDER_TYPESCRIPT_PATH="../../node/catapa-fetch/src/generated"
-FOLDER_PYTHON_PATH="../../python/catapa-python/catapa_python/generated"
+FOLDER_PYTHON_PATH="../../python2/catapa-python/catapa_python/generated"
 SPEC_FILE="openapi-dist.yaml"
 SOURCE_SPEC="../openapi.yaml"
 
