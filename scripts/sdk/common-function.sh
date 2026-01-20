@@ -144,12 +144,16 @@ generate_client_sdk() {
     # Execute the command
     "${GENERATE_CMD[@]}"
 
-    # Post-generation: Create SUMMARY.md for Python if template exists
-    if [[ "$TARGET_LANGUAGE" == "Python" ]] && [[ -f "python-templates/SUMMARY.md.mustache" ]]; then
-        echo "📝 Creating SUMMARY.md from template..."
-        # Copy template directly (SUMMARY.md is static, no mustache variables needed)
-        cp "python-templates/SUMMARY.md.mustache" "$TARGET_FOLDER_PATH/SUMMARY.md"
-        echo "✅ SUMMARY.md created at $TARGET_FOLDER_PATH/SUMMARY.md"
+    echo "✅ $TARGET_LANGUAGE client SDK generated successfully at $TARGET_FOLDER_PATH!"
+
+    # Python-specific post-generation steps
+    if [[ "$TARGET_LANGUAGE" == "Python" ]]; then
+        # Create README.md in docs folder for API reference
+        local DOCS_DIR="$TARGET_FOLDER_PATH/docs"
+        echo "📝 Creating README.md in docs folder..."
+        mkdir -p "$DOCS_DIR"
+        echo "# Python SDK API Reference" > "$DOCS_DIR/README.md"
+        echo "✅ README.md created at $DOCS_DIR/README.md"
     fi
 
     echo "✅ $TARGET_LANGUAGE client SDK generated successfully at $TARGET_FOLDER_PATH!"
