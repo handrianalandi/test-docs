@@ -68,6 +68,20 @@ if __name__ == "__main__":
 > )
 > ```
 
+## Getting Your Credentials
+
+To use the SDK with your own account, you'll need the following authentication credentials:
+
+### Tenant ID
+
+Your **tenant ID** is your organization's unique identifier in CATAPA. To obtain it, please contact us.
+
+### Client ID and Client Secret
+
+Your **client ID** and **client secret** are OAuth2 credentials used to authenticate your application.
+
+Get them from: (https://apps.catapa.com/dashboard/setup/settings/oauth-client)[https://apps.catapa.com/dashboard/setup/settings/oauth-client]
+
 ## Tutorials
 
 More intermediate examples to help you learn the SDK.
@@ -197,20 +211,6 @@ def main() -> None:
 if __name__ == "__main__":
     main()
 ```
-
-## Getting Your Credentials
-
-Before you can use the SDK, you'll need to obtain your authentication credentials:
-
-### Tenant ID
-
-Your **tenant ID** is your organization's unique identifier in CATAPA. To obtain it, please contact us.
-
-### Client ID and Client Secret
-
-Your **client ID** and **client secret** are OAuth2 credentials used to authenticate your application.
-
-Get them from: https://apps.catapa.com/dashboard/setup/settings/oauth-client
 
 > **⚠️ Important:** Keep your client secret secure and never commit it to version control. Consider using environment variables or a secrets management system.
 
