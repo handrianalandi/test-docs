@@ -3,6 +3,10 @@
 # Common function to generate client SDK
 # This function handles the complete SDK generation workflow for a specific language
 
+# Source the docs post-process function (which also sources organize-docs)
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source "$SCRIPT_DIR/docs-post-process.sh"
+
 # Function to generate client SDK for a specific language
 # Parameters:
 #   $1 - TARGET_LANGUAGE: Display name (e.g., "TypeScript", "Python")
@@ -146,14 +150,11 @@ generate_client_sdk() {
 
     echo "✅ $TARGET_LANGUAGE client SDK generated successfully at $TARGET_FOLDER_PATH!"
 
-    # Python-specific post-generation steps
+    # Documentation post-generation steps
     if [[ "$TARGET_LANGUAGE" == "Python" ]]; then
-        # Create README.md in docs folder for API reference
-        local DOCS_DIR="$TARGET_FOLDER_PATH/docs"
-        echo "📝 Creating README.md in docs folder..."
-        mkdir -p "$DOCS_DIR"
-        echo "# Python SDK API Reference" > "$DOCS_DIR/README.md"
-        echo "✅ README.md created at $DOCS_DIR/README.md"
+        docs_post_process "$TARGET_FOLDER_PATH" "Python SDK"
+    elif [[ "$TARGET_LANGUAGE" == "TypeScript" ]]; then
+        docs_post_process "$TARGET_FOLDER_PATH" "TypeScript SDK"
     fi
 
     echo "✅ $TARGET_LANGUAGE client SDK generated successfully at $TARGET_FOLDER_PATH!"
