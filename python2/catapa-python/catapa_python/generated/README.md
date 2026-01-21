@@ -24,7 +24,7 @@ poetry add catapa
 
 {% tab title="uv" %}
 ```bash
-uv pip install catapa
+uv add catapa
 ```
 {% endtab %}
 
