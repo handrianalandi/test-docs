@@ -34,7 +34,7 @@ family_historical_response_dict = family_historical_response_instance.to_dict()
 # create an instance of FamilyHistoricalResponse from a dict
 family_historical_response_from_dict = FamilyHistoricalResponse.from_dict(family_historical_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

@@ -25,7 +25,7 @@ former_employee_income_employee_amount_update_request_dict = former_employee_inc
 # create an instance of FormerEmployeeIncomeEmployeeAmountUpdateRequest from a dict
 former_employee_income_employee_amount_update_request_from_dict = FormerEmployeeIncomeEmployeeAmountUpdateRequest.from_dict(former_employee_income_employee_amount_update_request_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

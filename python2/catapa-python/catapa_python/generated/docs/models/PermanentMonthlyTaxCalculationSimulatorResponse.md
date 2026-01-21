@@ -33,7 +33,7 @@ permanent_monthly_tax_calculation_simulator_response_dict = permanent_monthly_ta
 # create an instance of PermanentMonthlyTaxCalculationSimulatorResponse from a dict
 permanent_monthly_tax_calculation_simulator_response_from_dict = PermanentMonthlyTaxCalculationSimulatorResponse.from_dict(permanent_monthly_tax_calculation_simulator_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

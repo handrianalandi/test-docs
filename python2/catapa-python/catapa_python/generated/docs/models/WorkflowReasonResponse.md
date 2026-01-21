@@ -29,7 +29,7 @@ workflow_reason_response_dict = workflow_reason_response_instance.to_dict()
 # create an instance of WorkflowReasonResponse from a dict
 workflow_reason_response_from_dict = WorkflowReasonResponse.from_dict(workflow_reason_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

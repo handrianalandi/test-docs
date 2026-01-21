@@ -24,7 +24,7 @@ employee_identification_number_response_dict = employee_identification_number_re
 # create an instance of EmployeeIdentificationNumberResponse from a dict
 employee_identification_number_response_from_dict = EmployeeIdentificationNumberResponse.from_dict(employee_identification_number_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

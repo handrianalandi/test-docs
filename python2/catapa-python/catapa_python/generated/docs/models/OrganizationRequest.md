@@ -30,7 +30,7 @@ organization_request_dict = organization_request_instance.to_dict()
 # create an instance of OrganizationRequest from a dict
 organization_request_from_dict = OrganizationRequest.from_dict(organization_request_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

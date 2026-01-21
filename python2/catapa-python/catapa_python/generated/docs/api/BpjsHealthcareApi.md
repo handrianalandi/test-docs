@@ -79,7 +79,7 @@ void (empty response body)
 **200** | OK - File download response |  * Content-Disposition -  <br>  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **download_e_dabu_advance_member_report**
@@ -143,7 +143,7 @@ void (empty response body)
 **200** | OK - File download response |  * Content-Disposition -  <br>  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **download_e_dabu_employee_identity_card_member_check_report**
@@ -207,7 +207,7 @@ void (empty response body)
 **200** | OK - File download response |  * Content-Disposition -  <br>  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **download_e_dabu_new_member_report**
@@ -271,7 +271,7 @@ void (empty response body)
 **200** | OK - File download response |  * Content-Disposition -  <br>  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **download_e_dabu_wage_update_report**
@@ -336,7 +336,7 @@ void (empty response body)
 **200** | OK - File download response |  * Content-Disposition -  <br>  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_bpjs_healthcare_premium_summaries**
@@ -388,7 +388,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**BpjsHealthcarePremiumSummaryListResponse**](BpjsHealthcarePremiumSummaryListResponse.md)
+[**BpjsHealthcarePremiumSummaryListResponse**](../models/BpjsHealthcarePremiumSummaryListResponse.md)
 
 ### HTTP request headers
 
@@ -402,7 +402,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_bpjs_healthcare_premium_summary_details**
@@ -450,7 +450,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**BpjsHealthcarePremiumDetailsResponse**](BpjsHealthcarePremiumDetailsResponse.md)
+[**BpjsHealthcarePremiumDetailsResponse**](../models/BpjsHealthcarePremiumDetailsResponse.md)
 
 ### HTTP request headers
 
@@ -464,7 +464,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_bpjs_healthcare_providers**
@@ -519,7 +519,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**BpjsHealthcareProviderListResponse**](BpjsHealthcareProviderListResponse.md)
+[**BpjsHealthcareProviderListResponse**](../models/BpjsHealthcareProviderListResponse.md)
 
 ### HTTP request headers
 
@@ -533,7 +533,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_bpjs_healthcare_templates**
@@ -586,7 +586,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**BpjsHealthcareTemplateListResponse**](BpjsHealthcareTemplateListResponse.md)
+[**BpjsHealthcareTemplateListResponse**](../models/BpjsHealthcareTemplateListResponse.md)
 
 ### HTTP request headers
 
@@ -600,5 +600,5 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

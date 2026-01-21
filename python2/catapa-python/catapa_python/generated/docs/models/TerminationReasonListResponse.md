@@ -33,7 +33,7 @@ termination_reason_list_response_dict = termination_reason_list_response_instanc
 # create an instance of TerminationReasonListResponse from a dict
 termination_reason_list_response_from_dict = TerminationReasonListResponse.from_dict(termination_reason_list_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

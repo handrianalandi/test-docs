@@ -26,7 +26,7 @@ anomaly_suspect_attribute_value_child_response_dict = anomaly_suspect_attribute_
 # create an instance of AnomalySuspectAttributeValueChildResponse from a dict
 anomaly_suspect_attribute_value_child_response_from_dict = AnomalySuspectAttributeValueChildResponse.from_dict(anomaly_suspect_attribute_value_child_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

@@ -28,7 +28,7 @@ employment_status_detail_position_response_dict = employment_status_detail_posit
 # create an instance of EmploymentStatusDetailPositionResponse from a dict
 employment_status_detail_position_response_from_dict = EmploymentStatusDetailPositionResponse.from_dict(employment_status_detail_position_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

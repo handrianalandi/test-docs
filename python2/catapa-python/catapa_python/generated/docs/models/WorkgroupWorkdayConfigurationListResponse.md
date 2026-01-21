@@ -33,7 +33,7 @@ workgroup_workday_configuration_list_response_dict = workgroup_workday_configura
 # create an instance of WorkgroupWorkdayConfigurationListResponse from a dict
 workgroup_workday_configuration_list_response_from_dict = WorkgroupWorkdayConfigurationListResponse.from_dict(workgroup_workday_configuration_list_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

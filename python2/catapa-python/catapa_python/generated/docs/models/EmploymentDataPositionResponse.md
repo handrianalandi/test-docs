@@ -34,7 +34,7 @@ employment_data_position_response_dict = employment_data_position_response_insta
 # create an instance of EmploymentDataPositionResponse from a dict
 employment_data_position_response_from_dict = EmploymentDataPositionResponse.from_dict(employment_data_position_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

@@ -28,7 +28,7 @@ update_bank_account_configuration_request_dict = update_bank_account_configurati
 # create an instance of UpdateBankAccountConfigurationRequest from a dict
 update_bank_account_configuration_request_from_dict = UpdateBankAccountConfigurationRequest.from_dict(update_bank_account_configuration_request_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

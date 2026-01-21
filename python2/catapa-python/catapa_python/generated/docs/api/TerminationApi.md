@@ -61,11 +61,11 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **employee_id** | **str**|  | 
- **termination_entry_request** | [**TerminationEntryRequest**](TerminationEntryRequest.md)|  | [optional] 
+ **termination_entry_request** | [**TerminationEntryRequest**](../models/TerminationEntryRequest.md)|  | [optional] 
 
 ### Return type
 
-[**TerminationEntryResponse**](TerminationEntryResponse.md)
+[**TerminationEntryResponse**](../models/TerminationEntryResponse.md)
 
 ### HTTP request headers
 
@@ -79,7 +79,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **create_termination_reason**
@@ -123,11 +123,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **termination_reason_request** | [**TerminationReasonRequest**](TerminationReasonRequest.md)|  | [optional] 
+ **termination_reason_request** | [**TerminationReasonRequest**](../models/TerminationReasonRequest.md)|  | [optional] 
 
 ### Return type
 
-[**TerminationReasonDetailResponse**](TerminationReasonDetailResponse.md)
+[**TerminationReasonDetailResponse**](../models/TerminationReasonDetailResponse.md)
 
 ### HTTP request headers
 
@@ -141,7 +141,7 @@ Name | Type | Description  | Notes
 **201** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_termination_bpjs_manpower_reason**
@@ -191,7 +191,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**TerminationBPJSManpowerReasonListResponse**](TerminationBPJSManpowerReasonListResponse.md)
+[**TerminationBPJSManpowerReasonListResponse**](../models/TerminationBPJSManpowerReasonListResponse.md)
 
 ### HTTP request headers
 
@@ -205,7 +205,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_termination_entry**
@@ -253,7 +253,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**TerminationEntryResponse**](TerminationEntryResponse.md)
+[**TerminationEntryResponse**](../models/TerminationEntryResponse.md)
 
 ### HTTP request headers
 
@@ -267,7 +267,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_termination_reason**
@@ -317,7 +317,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**TerminationReasonListResponse**](TerminationReasonListResponse.md)
+[**TerminationReasonListResponse**](../models/TerminationReasonListResponse.md)
 
 ### HTTP request headers
 
@@ -331,7 +331,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_termination_reason_category**
@@ -381,7 +381,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**TerminationReasonCategoryListResponse**](TerminationReasonCategoryListResponse.md)
+[**TerminationReasonCategoryListResponse**](../models/TerminationReasonCategoryListResponse.md)
 
 ### HTTP request headers
 
@@ -395,7 +395,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_termination_tax_reason**
@@ -446,7 +446,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**TerminationTaxReasonListResponse**](TerminationTaxReasonListResponse.md)
+[**TerminationTaxReasonListResponse**](../models/TerminationTaxReasonListResponse.md)
 
 ### HTTP request headers
 
@@ -460,7 +460,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **undo_termination_entry**
@@ -522,7 +522,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **update_termination_reason**
@@ -568,11 +568,11 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**|  | 
- **termination_reason_request** | [**TerminationReasonRequest**](TerminationReasonRequest.md)|  | [optional] 
+ **termination_reason_request** | [**TerminationReasonRequest**](../models/TerminationReasonRequest.md)|  | [optional] 
 
 ### Return type
 
-[**TerminationReasonDetailResponse**](TerminationReasonDetailResponse.md)
+[**TerminationReasonDetailResponse**](../models/TerminationReasonDetailResponse.md)
 
 ### HTTP request headers
 
@@ -586,5 +586,5 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

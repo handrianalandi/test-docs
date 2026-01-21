@@ -58,11 +58,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payslip_layout_request** | [**PayslipLayoutRequest**](PayslipLayoutRequest.md)|  | [optional] 
+ **payslip_layout_request** | [**PayslipLayoutRequest**](../models/PayslipLayoutRequest.md)|  | [optional] 
 
 ### Return type
 
-[**PayslipLayoutResponse**](PayslipLayoutResponse.md)
+[**PayslipLayoutResponse**](../models/PayslipLayoutResponse.md)
 
 ### HTTP request headers
 
@@ -76,7 +76,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **create_payslip_additional_note**
@@ -120,11 +120,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payslip_additional_note_request** | [**PayslipAdditionalNoteRequest**](PayslipAdditionalNoteRequest.md)|  | [optional] 
+ **payslip_additional_note_request** | [**PayslipAdditionalNoteRequest**](../models/PayslipAdditionalNoteRequest.md)|  | [optional] 
 
 ### Return type
 
-[**PayslipAdditionalNoteResponse**](PayslipAdditionalNoteResponse.md)
+[**PayslipAdditionalNoteResponse**](../models/PayslipAdditionalNoteResponse.md)
 
 ### HTTP request headers
 
@@ -138,7 +138,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **delete_payslip_layout_by_id**
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **download_payslip**
@@ -248,7 +248,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**|  | 
- **payslip_download_request** | [**PayslipDownloadRequest**](PayslipDownloadRequest.md)|  | [optional] 
+ **payslip_download_request** | [**PayslipDownloadRequest**](../models/PayslipDownloadRequest.md)|  | [optional] 
 
 ### Return type
 
@@ -266,7 +266,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_payslip_additional_notes**
@@ -316,7 +316,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**PayslipAdditionalNoteListResponse**](PayslipAdditionalNoteListResponse.md)
+[**PayslipAdditionalNoteListResponse**](../models/PayslipAdditionalNoteListResponse.md)
 
 ### HTTP request headers
 
@@ -330,7 +330,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_payslip_layout_by_id**
@@ -378,7 +378,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PayslipLayoutResponse**](PayslipLayoutResponse.md)
+[**PayslipLayoutResponse**](../models/PayslipLayoutResponse.md)
 
 ### HTTP request headers
 
@@ -392,7 +392,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_payslip_layouts**
@@ -442,7 +442,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**PayslipLayoutListResponse**](PayslipLayoutListResponse.md)
+[**PayslipLayoutListResponse**](../models/PayslipLayoutListResponse.md)
 
 ### HTTP request headers
 
@@ -456,7 +456,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **update_payslip_additional_note_by_id**
@@ -502,11 +502,11 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**|  | 
- **payslip_additional_note_request** | [**PayslipAdditionalNoteRequest**](PayslipAdditionalNoteRequest.md)|  | [optional] 
+ **payslip_additional_note_request** | [**PayslipAdditionalNoteRequest**](../models/PayslipAdditionalNoteRequest.md)|  | [optional] 
 
 ### Return type
 
-[**PayslipAdditionalNoteResponse**](PayslipAdditionalNoteResponse.md)
+[**PayslipAdditionalNoteResponse**](../models/PayslipAdditionalNoteResponse.md)
 
 ### HTTP request headers
 
@@ -520,5 +520,5 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

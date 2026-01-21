@@ -25,7 +25,7 @@ time_allowance_details_response_dict = time_allowance_details_response_instance.
 # create an instance of TimeAllowanceDetailsResponse from a dict
 time_allowance_details_response_from_dict = TimeAllowanceDetailsResponse.from_dict(time_allowance_details_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

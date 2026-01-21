@@ -27,7 +27,7 @@ job_title_request_deprecated_dict = job_title_request_deprecated_instance.to_dic
 # create an instance of JobTitleRequestDeprecated from a dict
 job_title_request_deprecated_from_dict = JobTitleRequestDeprecated.from_dict(job_title_request_deprecated_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

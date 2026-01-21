@@ -25,7 +25,7 @@ payment_item_group_last_sequence_response_dict = payment_item_group_last_sequenc
 # create an instance of PaymentItemGroupLastSequenceResponse from a dict
 payment_item_group_last_sequence_response_from_dict = PaymentItemGroupLastSequenceResponse.from_dict(payment_item_group_last_sequence_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

@@ -83,11 +83,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **sub_location_request** | [**SubLocationRequest**](SubLocationRequest.md)|  | [optional] 
+ **sub_location_request** | [**SubLocationRequest**](../models/SubLocationRequest.md)|  | [optional] 
 
 ### Return type
 
-[**SubLocationResponse**](SubLocationResponse.md)
+[**SubLocationResponse**](../models/SubLocationResponse.md)
 
 ### HTTP request headers
 
@@ -101,7 +101,7 @@ Name | Type | Description  | Notes
 **201** | Created |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **create_company**
@@ -146,12 +146,12 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CompanyDetailRequest**](CompanyDetailRequest.md)|  | 
+ **request** | [**CompanyDetailRequest**](../models/CompanyDetailRequest.md)|  | 
  **file** | **bytearray**| Upload the company logo. Allowed file types: &#x60;jpg&#x60;, &#x60;jpeg&#x60;, &#x60;png&#x60;, and &#x60;svg&#x60;. The Content-Type must be &#x60;image/jpeg&#x60;, &#x60;image/png&#x60;, or &#x60;image/svg+xml&#x60;. The maximum file size is &#x60;4MB&#x60;. | [optional] 
 
 ### Return type
 
-[**CompanyDetailResponse**](CompanyDetailResponse.md)
+[**CompanyDetailResponse**](../models/CompanyDetailResponse.md)
 
 ### HTTP request headers
 
@@ -165,7 +165,7 @@ Name | Type | Description  | Notes
 **201** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **create_cost_center**
@@ -209,11 +209,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **cost_center_request** | [**CostCenterRequest**](CostCenterRequest.md)|  | [optional] 
+ **cost_center_request** | [**CostCenterRequest**](../models/CostCenterRequest.md)|  | [optional] 
 
 ### Return type
 
-[**CostCenterListItemResponse**](CostCenterListItemResponse.md)
+[**CostCenterListItemResponse**](../models/CostCenterListItemResponse.md)
 
 ### HTTP request headers
 
@@ -227,7 +227,7 @@ Name | Type | Description  | Notes
 **201** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **create_job_level**
@@ -271,11 +271,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **job_level_request** | [**JobLevelRequest**](JobLevelRequest.md)|  | [optional] 
+ **job_level_request** | [**JobLevelRequest**](../models/JobLevelRequest.md)|  | [optional] 
 
 ### Return type
 
-[**JobLevelResponse**](JobLevelResponse.md)
+[**JobLevelResponse**](../models/JobLevelResponse.md)
 
 ### HTTP request headers
 
@@ -289,7 +289,7 @@ Name | Type | Description  | Notes
 **201** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **create_job_title**
@@ -337,11 +337,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **job_title_request_deprecated** | [**JobTitleRequestDeprecated**](JobTitleRequestDeprecated.md)|  | [optional] 
+ **job_title_request_deprecated** | [**JobTitleRequestDeprecated**](../models/JobTitleRequestDeprecated.md)|  | [optional] 
 
 ### Return type
 
-[**JobTitleResponse**](JobTitleResponse.md)
+[**JobTitleResponse**](../models/JobTitleResponse.md)
 
 ### HTTP request headers
 
@@ -355,7 +355,7 @@ Name | Type | Description  | Notes
 **201** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **create_job_title_with_job_levels**
@@ -399,11 +399,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **job_title_request** | [**JobTitleRequest**](JobTitleRequest.md)|  | [optional] 
+ **job_title_request** | [**JobTitleRequest**](../models/JobTitleRequest.md)|  | [optional] 
 
 ### Return type
 
-[**JobTitleWithJobLevelsResponse**](JobTitleWithJobLevelsResponse.md)
+[**JobTitleWithJobLevelsResponse**](../models/JobTitleWithJobLevelsResponse.md)
 
 ### HTTP request headers
 
@@ -417,7 +417,7 @@ Name | Type | Description  | Notes
 **201** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **create_location**
@@ -461,11 +461,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **location_create_request** | [**LocationCreateRequest**](LocationCreateRequest.md)|  | [optional] 
+ **location_create_request** | [**LocationCreateRequest**](../models/LocationCreateRequest.md)|  | [optional] 
 
 ### Return type
 
-[**LocationResponse**](LocationResponse.md)
+[**LocationResponse**](../models/LocationResponse.md)
 
 ### HTTP request headers
 
@@ -479,7 +479,7 @@ Name | Type | Description  | Notes
 **201** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **create_organization**
@@ -523,11 +523,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **organization_request** | [**OrganizationRequest**](OrganizationRequest.md)|  | [optional] 
+ **organization_request** | [**OrganizationRequest**](../models/OrganizationRequest.md)|  | [optional] 
 
 ### Return type
 
-[**OrganizationResponse**](OrganizationResponse.md)
+[**OrganizationResponse**](../models/OrganizationResponse.md)
 
 ### HTTP request headers
 
@@ -541,7 +541,7 @@ Name | Type | Description  | Notes
 **201** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **create_organization_group**
@@ -585,11 +585,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **organization_group_request** | [**OrganizationGroupRequest**](OrganizationGroupRequest.md)|  | [optional] 
+ **organization_group_request** | [**OrganizationGroupRequest**](../models/OrganizationGroupRequest.md)|  | [optional] 
 
 ### Return type
 
-[**IdCodeNameResponse**](IdCodeNameResponse.md)
+[**IdCodeNameResponse**](../models/IdCodeNameResponse.md)
 
 ### HTTP request headers
 
@@ -603,7 +603,7 @@ Name | Type | Description  | Notes
 **201** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **create_organization_hierarchies**
@@ -647,11 +647,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **organization_hierarchy_request** | [**OrganizationHierarchyRequest**](OrganizationHierarchyRequest.md)|  | [optional] 
+ **organization_hierarchy_request** | [**OrganizationHierarchyRequest**](../models/OrganizationHierarchyRequest.md)|  | [optional] 
 
 ### Return type
 
-[**OrganizationHierarchyResponse**](OrganizationHierarchyResponse.md)
+[**OrganizationHierarchyResponse**](../models/OrganizationHierarchyResponse.md)
 
 ### HTTP request headers
 
@@ -665,7 +665,7 @@ Name | Type | Description  | Notes
 **201** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **delete_sub_location**
@@ -718,7 +718,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**BulkOperationResponse**](BulkOperationResponse.md)
+[**BulkOperationResponse**](../models/BulkOperationResponse.md)
 
 ### HTTP request headers
 
@@ -732,7 +732,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_companies**
@@ -784,7 +784,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CompanyListResponse**](CompanyListResponse.md)
+[**CompanyListResponse**](../models/CompanyListResponse.md)
 
 ### HTTP request headers
 
@@ -798,7 +798,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_company**
@@ -842,7 +842,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**CompanyDetailResponse**](CompanyDetailResponse.md)
+[**CompanyDetailResponse**](../models/CompanyDetailResponse.md)
 
 ### HTTP request headers
 
@@ -856,7 +856,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_company_groups**
@@ -908,7 +908,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CompanyGroupListResponse**](CompanyGroupListResponse.md)
+[**CompanyGroupListResponse**](../models/CompanyGroupListResponse.md)
 
 ### HTTP request headers
 
@@ -922,7 +922,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_cost_center**
@@ -966,7 +966,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**CostCenterListResponse**](CostCenterListResponse.md)
+[**CostCenterListResponse**](../models/CostCenterListResponse.md)
 
 ### HTTP request headers
 
@@ -980,7 +980,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_job_level**
@@ -1033,7 +1033,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**JobLevelListResponse**](JobLevelListResponse.md)
+[**JobLevelListResponse**](../models/JobLevelListResponse.md)
 
 ### HTTP request headers
 
@@ -1047,7 +1047,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_job_title**
@@ -1103,7 +1103,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**JobTitleListResponse**](JobTitleListResponse.md)
+[**JobTitleListResponse**](../models/JobTitleListResponse.md)
 
 ### HTTP request headers
 
@@ -1117,7 +1117,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_job_title_job_level_mappings**
@@ -1172,7 +1172,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**JobTitleLevelMappingListResponse**](JobTitleLevelMappingListResponse.md)
+[**JobTitleLevelMappingListResponse**](../models/JobTitleLevelMappingListResponse.md)
 
 ### HTTP request headers
 
@@ -1186,7 +1186,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_location_group**
@@ -1237,7 +1237,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**LocationGroupListResponse**](LocationGroupListResponse.md)
+[**LocationGroupListResponse**](../models/LocationGroupListResponse.md)
 
 ### HTTP request headers
 
@@ -1251,7 +1251,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_locations**
@@ -1303,7 +1303,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**LocationListResponse**](LocationListResponse.md)
+[**LocationListResponse**](../models/LocationListResponse.md)
 
 ### HTTP request headers
 
@@ -1317,7 +1317,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_operational_groups**
@@ -1369,7 +1369,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**OperationalGroupListResponse**](OperationalGroupListResponse.md)
+[**OperationalGroupListResponse**](../models/OperationalGroupListResponse.md)
 
 ### HTTP request headers
 
@@ -1383,7 +1383,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_organization**
@@ -1446,7 +1446,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**OrganizationListResponse**](OrganizationListResponse.md)
+[**OrganizationListResponse**](../models/OrganizationListResponse.md)
 
 ### HTTP request headers
 
@@ -1460,7 +1460,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_organization_group**
@@ -1511,7 +1511,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**OrganizationGroupListResponse**](OrganizationGroupListResponse.md)
+[**OrganizationGroupListResponse**](../models/OrganizationGroupListResponse.md)
 
 ### HTTP request headers
 
@@ -1525,7 +1525,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_organization_heads**
@@ -1577,7 +1577,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**OrganizationHeadListResponse**](OrganizationHeadListResponse.md)
+[**OrganizationHeadListResponse**](../models/OrganizationHeadListResponse.md)
 
 ### HTTP request headers
 
@@ -1591,7 +1591,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_organization_hierarchies**
@@ -1644,7 +1644,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**OrganizationHierarchyListResponse**](OrganizationHierarchyListResponse.md)
+[**OrganizationHierarchyListResponse**](../models/OrganizationHierarchyListResponse.md)
 
 ### HTTP request headers
 
@@ -1658,7 +1658,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_organization_histories**
@@ -1710,7 +1710,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**OrganizationHistoryListResponse**](OrganizationHistoryListResponse.md)
+[**OrganizationHistoryListResponse**](../models/OrganizationHistoryListResponse.md)
 
 ### HTTP request headers
 
@@ -1724,7 +1724,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_organization_superiors**
@@ -1776,7 +1776,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**OrganizationSuperiorListResponse**](OrganizationSuperiorListResponse.md)
+[**OrganizationSuperiorListResponse**](../models/OrganizationSuperiorListResponse.md)
 
 ### HTTP request headers
 
@@ -1790,7 +1790,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_position_cost_centers**
@@ -1842,7 +1842,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PositionCostCenterListResponse**](PositionCostCenterListResponse.md)
+[**PositionCostCenterListResponse**](../models/PositionCostCenterListResponse.md)
 
 ### HTTP request headers
 
@@ -1856,7 +1856,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_position_histories**
@@ -1908,7 +1908,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PositionHistoryListResponse**](PositionHistoryListResponse.md)
+[**PositionHistoryListResponse**](../models/PositionHistoryListResponse.md)
 
 ### HTTP request headers
 
@@ -1922,7 +1922,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_position_vacancy_statuses**
@@ -1974,7 +1974,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PositionVacancyStatusListResponse**](PositionVacancyStatusListResponse.md)
+[**PositionVacancyStatusListResponse**](../models/PositionVacancyStatusListResponse.md)
 
 ### HTTP request headers
 
@@ -1988,7 +1988,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_positions**
@@ -2040,7 +2040,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PositionListResponse**](PositionListResponse.md)
+[**PositionListResponse**](../models/PositionListResponse.md)
 
 ### HTTP request headers
 
@@ -2054,7 +2054,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_sub_locations**
@@ -2106,7 +2106,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SubLocationListResponse**](SubLocationListResponse.md)
+[**SubLocationListResponse**](../models/SubLocationListResponse.md)
 
 ### HTTP request headers
 
@@ -2120,7 +2120,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **update_cost_center**
@@ -2166,11 +2166,11 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**|  | 
- **cost_center_request** | [**CostCenterRequest**](CostCenterRequest.md)|  | [optional] 
+ **cost_center_request** | [**CostCenterRequest**](../models/CostCenterRequest.md)|  | [optional] 
 
 ### Return type
 
-[**CostCenterListItemResponse**](CostCenterListItemResponse.md)
+[**CostCenterListItemResponse**](../models/CostCenterListItemResponse.md)
 
 ### HTTP request headers
 
@@ -2184,5 +2184,5 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

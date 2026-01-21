@@ -43,7 +43,7 @@ family_approval_list_item_with_approval_status_response_dict = family_approval_l
 # create an instance of FamilyApprovalListItemWithApprovalStatusResponse from a dict
 family_approval_list_item_with_approval_status_response_from_dict = FamilyApprovalListItemWithApprovalStatusResponse.from_dict(family_approval_list_item_with_approval_status_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

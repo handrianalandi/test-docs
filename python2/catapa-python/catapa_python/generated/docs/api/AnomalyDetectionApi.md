@@ -58,7 +58,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**AnomalySuspectListResponse**](AnomalySuspectListResponse.md)
+[**AnomalySuspectListResponse**](../models/AnomalySuspectListResponse.md)
 
 ### HTTP request headers
 
@@ -72,7 +72,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **read_anomaly_suspect_by_id**
@@ -120,7 +120,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**AnomalySuspectResponse**](AnomalySuspectResponse.md)
+[**AnomalySuspectResponse**](../models/AnomalySuspectResponse.md)
 
 ### HTTP request headers
 
@@ -134,5 +134,5 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

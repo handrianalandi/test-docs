@@ -29,7 +29,7 @@ salary_payment_detail_company_bank_account_response_dict = salary_payment_detail
 # create an instance of SalaryPaymentDetailCompanyBankAccountResponse from a dict
 salary_payment_detail_company_bank_account_response_from_dict = SalaryPaymentDetailCompanyBankAccountResponse.from_dict(salary_payment_detail_company_bank_account_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

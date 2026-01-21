@@ -26,7 +26,7 @@ fingerprint_failure_item_response_dict = fingerprint_failure_item_response_insta
 # create an instance of FingerprintFailureItemResponse from a dict
 fingerprint_failure_item_response_from_dict = FingerprintFailureItemResponse.from_dict(fingerprint_failure_item_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

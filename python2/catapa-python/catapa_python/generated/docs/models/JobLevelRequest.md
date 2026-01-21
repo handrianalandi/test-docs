@@ -27,7 +27,7 @@ job_level_request_dict = job_level_request_instance.to_dict()
 # create an instance of JobLevelRequest from a dict
 job_level_request_from_dict = JobLevelRequest.from_dict(job_level_request_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

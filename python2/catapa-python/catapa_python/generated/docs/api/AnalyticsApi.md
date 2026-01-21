@@ -53,11 +53,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **analytics_chart_request** | [**AnalyticsChartRequest**](AnalyticsChartRequest.md)|  | [optional] 
+ **analytics_chart_request** | [**AnalyticsChartRequest**](../models/AnalyticsChartRequest.md)|  | [optional] 
 
 ### Return type
 
-[**AnalyticsChartResponse**](AnalyticsChartResponse.md)
+[**AnalyticsChartResponse**](../models/AnalyticsChartResponse.md)
 
 ### HTTP request headers
 
@@ -71,7 +71,7 @@ Name | Type | Description  | Notes
 **201** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_analytics_chart**
@@ -121,7 +121,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**AnalyticsChartListResponse**](AnalyticsChartListResponse.md)
+[**AnalyticsChartListResponse**](../models/AnalyticsChartListResponse.md)
 
 ### HTTP request headers
 
@@ -135,7 +135,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_analytics_data_by_chart_id_and_current_user**
@@ -187,7 +187,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**AnalyticsChartDataResponse**](AnalyticsChartDataResponse.md)
+[**AnalyticsChartDataResponse**](../models/AnalyticsChartDataResponse.md)
 
 ### HTTP request headers
 
@@ -201,5 +201,5 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

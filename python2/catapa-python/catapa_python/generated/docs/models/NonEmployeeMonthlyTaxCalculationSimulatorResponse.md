@@ -29,7 +29,7 @@ non_employee_monthly_tax_calculation_simulator_response_dict = non_employee_mont
 # create an instance of NonEmployeeMonthlyTaxCalculationSimulatorResponse from a dict
 non_employee_monthly_tax_calculation_simulator_response_from_dict = NonEmployeeMonthlyTaxCalculationSimulatorResponse.from_dict(non_employee_monthly_tax_calculation_simulator_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

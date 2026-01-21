@@ -26,7 +26,7 @@ transition_calculation_employee_salary_template_response_dict = transition_calcu
 # create an instance of TransitionCalculationEmployeeSalaryTemplateResponse from a dict
 transition_calculation_employee_salary_template_response_from_dict = TransitionCalculationEmployeeSalaryTemplateResponse.from_dict(transition_calculation_employee_salary_template_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

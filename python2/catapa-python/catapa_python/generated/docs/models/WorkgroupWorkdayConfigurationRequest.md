@@ -29,7 +29,7 @@ workgroup_workday_configuration_request_dict = workgroup_workday_configuration_r
 # create an instance of WorkgroupWorkdayConfigurationRequest from a dict
 workgroup_workday_configuration_request_from_dict = WorkgroupWorkdayConfigurationRequest.from_dict(workgroup_workday_configuration_request_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

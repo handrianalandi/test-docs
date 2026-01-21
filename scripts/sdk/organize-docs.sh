@@ -85,18 +85,39 @@ organize_docs() {
         
         # Update links in API files
         find "$API_DIR" -type f -name "*.md" -print0 | while IFS= read -r -d '' file; do
+            local api_filename=$(basename "$file")
             # Update ../Models/ references to ../models/
             sed -i 's|(\.\./Models/|(../models/|g' "$file" 2>/dev/null
             # Update ../Apis/ references to ../api/
             sed -i 's|(\.\./Apis/|(../api/|g' "$file" 2>/dev/null
+            # Update direct model file references (not API files) to point to ../models/
+            # Pattern: [text](ModelName.md) where ModelName.md is not an API file and not already a path
+            sed -i 's|(\([A-Za-z][A-Za-z0-9_]*\.md\)|(../models/\1|g' "$file" 2>/dev/null
+            # Fix any API file references that were incorrectly changed to point to ../api/
+            sed -i 's|(\.\./models/\([A-Za-z][A-Za-z0-9_]*Api\.md\)|(../api/\1|g' "$file" 2>/dev/null
+            # Fix self-references (same file) - remove path prefix
+            sed -i "s|(\.\./models/$api_filename|($api_filename|g" "$file" 2>/dev/null
+            sed -i "s|(\.\./api/$api_filename|($api_filename|g" "$file" 2>/dev/null
         done
         
         # Update links in models files
         find "$MODELS_DIR" -type f -name "*.md" -print0 | while IFS= read -r -d '' file; do
+            local model_filename=$(basename "$file")
             # Update ../Models/ references to ../models/
             sed -i 's|(\.\./Models/|(../models/|g' "$file" 2>/dev/null
             # Update ../Apis/ references to ../api/
             sed -i 's|(\.\./Apis/|(../api/|g' "$file" 2>/dev/null
+            # Update direct API file references to point to ../api/
+            # Pattern: [text](ApiNameApi.md) - must be done before general pattern
+            sed -i 's|(\([A-Za-z][A-Za-z0-9_]*Api\.md\)|(../api/\1|g' "$file" 2>/dev/null
+            # Update other direct file references (non-API) - keep as same directory (just filename)
+            # Model files in same directory can reference each other directly
+            # But if it's already been changed to ../models/, leave it
+            # Only update if it's a direct reference without path
+            sed -i 's|(\([A-Za-z][A-Za-z0-9_]*\.md\)|(\1|g' "$file" 2>/dev/null
+            # Fix self-references (same file) - ensure it's just the filename
+            sed -i "s|(\.\./models/$model_filename|($model_filename|g" "$file" 2>/dev/null
+            sed -i "s|(\.\./api/$model_filename|($model_filename|g" "$file" 2>/dev/null
         done
         
         # Update README.md references

@@ -33,7 +33,7 @@ employee_salary_template_list_response_dict = employee_salary_template_list_resp
 # create an instance of EmployeeSalaryTemplateListResponse from a dict
 employee_salary_template_list_response_from_dict = EmployeeSalaryTemplateListResponse.from_dict(employee_salary_template_list_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

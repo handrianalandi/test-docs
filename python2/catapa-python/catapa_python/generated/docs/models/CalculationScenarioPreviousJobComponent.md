@@ -25,7 +25,7 @@ calculation_scenario_previous_job_component_dict = calculation_scenario_previous
 # create an instance of CalculationScenarioPreviousJobComponent from a dict
 calculation_scenario_previous_job_component_from_dict = CalculationScenarioPreviousJobComponent.from_dict(calculation_scenario_previous_job_component_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

@@ -25,7 +25,7 @@ payslip_additional_note_request_dict = payslip_additional_note_request_instance.
 # create an instance of PayslipAdditionalNoteRequest from a dict
 payslip_additional_note_request_from_dict = PayslipAdditionalNoteRequest.from_dict(payslip_additional_note_request_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

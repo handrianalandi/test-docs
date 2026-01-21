@@ -27,7 +27,7 @@ bpjs_healthcare_current_month_detail_response_dict = bpjs_healthcare_current_mon
 # create an instance of BpjsHealthcareCurrentMonthDetailResponse from a dict
 bpjs_healthcare_current_month_detail_response_from_dict = BpjsHealthcareCurrentMonthDetailResponse.from_dict(bpjs_healthcare_current_month_detail_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

@@ -33,7 +33,7 @@ employee_paygroup_list_response_dict = employee_paygroup_list_response_instance.
 # create an instance of EmployeePaygroupListResponse from a dict
 employee_paygroup_list_response_from_dict = EmployeePaygroupListResponse.from_dict(employee_paygroup_list_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

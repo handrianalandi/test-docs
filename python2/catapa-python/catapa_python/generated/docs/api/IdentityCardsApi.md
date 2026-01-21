@@ -56,11 +56,11 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **employee_id** | **str**|  | 
- **employee_identity_card_request** | [**EmployeeIdentityCardRequest**](EmployeeIdentityCardRequest.md)|  | [optional] 
+ **employee_identity_card_request** | [**EmployeeIdentityCardRequest**](../models/EmployeeIdentityCardRequest.md)|  | [optional] 
 
 ### Return type
 
-[**EmployeeIdentityCardResponse**](EmployeeIdentityCardResponse.md)
+[**EmployeeIdentityCardResponse**](../models/EmployeeIdentityCardResponse.md)
 
 ### HTTP request headers
 
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **delete_employee_identity_cards**
@@ -138,7 +138,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_employee_identity_cards**
@@ -188,7 +188,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**EmployeeIdentityCardListResponse**](EmployeeIdentityCardListResponse.md)
+[**EmployeeIdentityCardListResponse**](../models/EmployeeIdentityCardListResponse.md)
 
 ### HTTP request headers
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **update_employee_identity_cards**
@@ -250,11 +250,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **employee_id** | **str**|  | 
  **employee_identity_card_id** | **str**|  | 
- **employee_identity_card_request** | [**EmployeeIdentityCardRequest**](EmployeeIdentityCardRequest.md)|  | [optional] 
+ **employee_identity_card_request** | [**EmployeeIdentityCardRequest**](../models/EmployeeIdentityCardRequest.md)|  | [optional] 
 
 ### Return type
 
-[**EmployeeIdentityCardResponse**](EmployeeIdentityCardResponse.md)
+[**EmployeeIdentityCardResponse**](../models/EmployeeIdentityCardResponse.md)
 
 ### HTTP request headers
 
@@ -268,5 +268,5 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

@@ -26,7 +26,7 @@ employee_identity_card_request_dict = employee_identity_card_request_instance.to
 # create an instance of EmployeeIdentityCardRequest from a dict
 employee_identity_card_request_from_dict = EmployeeIdentityCardRequest.from_dict(employee_identity_card_request_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

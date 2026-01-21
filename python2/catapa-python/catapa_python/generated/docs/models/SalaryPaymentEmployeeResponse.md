@@ -27,7 +27,7 @@ salary_payment_employee_response_dict = salary_payment_employee_response_instanc
 # create an instance of SalaryPaymentEmployeeResponse from a dict
 salary_payment_employee_response_from_dict = SalaryPaymentEmployeeResponse.from_dict(salary_payment_employee_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

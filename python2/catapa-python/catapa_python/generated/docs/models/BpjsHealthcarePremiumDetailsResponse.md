@@ -29,7 +29,7 @@ bpjs_healthcare_premium_details_response_dict = bpjs_healthcare_premium_details_
 # create an instance of BpjsHealthcarePremiumDetailsResponse from a dict
 bpjs_healthcare_premium_details_response_from_dict = BpjsHealthcarePremiumDetailsResponse.from_dict(bpjs_healthcare_premium_details_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

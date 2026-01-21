@@ -55,11 +55,11 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**|  | 
- **employee_salary_template_request** | [**EmployeeSalaryTemplateRequest**](EmployeeSalaryTemplateRequest.md)|  | [optional] 
+ **employee_salary_template_request** | [**EmployeeSalaryTemplateRequest**](../models/EmployeeSalaryTemplateRequest.md)|  | [optional] 
 
 ### Return type
 
-[**EmployeeSalaryTemplateUpdateResponse**](EmployeeSalaryTemplateUpdateResponse.md)
+[**EmployeeSalaryTemplateUpdateResponse**](../models/EmployeeSalaryTemplateUpdateResponse.md)
 
 ### HTTP request headers
 
@@ -73,7 +73,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_effective_employee_salary_template**
@@ -125,7 +125,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**EmployeeSalaryTemplateListResponse**](EmployeeSalaryTemplateListResponse.md)
+[**EmployeeSalaryTemplateListResponse**](../models/EmployeeSalaryTemplateListResponse.md)
 
 ### HTTP request headers
 
@@ -139,7 +139,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_latest_employee_salary_template**
@@ -187,7 +187,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**EmployeeSalaryTemplateResponse**](EmployeeSalaryTemplateResponse.md)
+[**EmployeeSalaryTemplateResponse**](../models/EmployeeSalaryTemplateResponse.md)
 
 ### HTTP request headers
 
@@ -201,5 +201,5 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

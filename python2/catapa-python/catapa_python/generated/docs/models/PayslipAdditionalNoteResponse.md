@@ -26,7 +26,7 @@ payslip_additional_note_response_dict = payslip_additional_note_response_instanc
 # create an instance of PayslipAdditionalNoteResponse from a dict
 payslip_additional_note_response_from_dict = PayslipAdditionalNoteResponse.from_dict(payslip_additional_note_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

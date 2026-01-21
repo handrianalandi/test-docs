@@ -33,7 +33,7 @@ analytics_chart_list_response_dict = analytics_chart_list_response_instance.to_d
 # create an instance of AnalyticsChartListResponse from a dict
 analytics_chart_list_response_from_dict = AnalyticsChartListResponse.from_dict(analytics_chart_list_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

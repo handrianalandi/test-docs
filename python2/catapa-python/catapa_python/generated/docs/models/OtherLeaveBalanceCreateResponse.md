@@ -31,7 +31,7 @@ other_leave_balance_create_response_dict = other_leave_balance_create_response_i
 # create an instance of OtherLeaveBalanceCreateResponse from a dict
 other_leave_balance_create_response_from_dict = OtherLeaveBalanceCreateResponse.from_dict(other_leave_balance_create_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

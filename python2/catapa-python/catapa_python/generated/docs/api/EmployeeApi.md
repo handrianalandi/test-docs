@@ -57,11 +57,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **employee_request** | [**EmployeeRequest**](EmployeeRequest.md)|  | [optional] 
+ **employee_request** | [**EmployeeRequest**](../models/EmployeeRequest.md)|  | [optional] 
 
 ### Return type
 
-[**EmployeeCreateResponse**](EmployeeCreateResponse.md)
+[**EmployeeCreateResponse**](../models/EmployeeCreateResponse.md)
 
 ### HTTP request headers
 
@@ -75,7 +75,7 @@ Name | Type | Description  | Notes
 **201** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **delete_employee**
@@ -128,7 +128,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**BulkOperationResponse**](BulkOperationResponse.md)
+[**BulkOperationResponse**](../models/BulkOperationResponse.md)
 
 ### HTTP request headers
 
@@ -142,7 +142,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_additional_assignment_approvals**
@@ -194,7 +194,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**AdditionalAssignmentApprovalListResponse**](AdditionalAssignmentApprovalListResponse.md)
+[**AdditionalAssignmentApprovalListResponse**](../models/AdditionalAssignmentApprovalListResponse.md)
 
 ### HTTP request headers
 
@@ -208,7 +208,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_employee_hiring_data**
@@ -256,7 +256,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**EmployeeHiringDataSimpleResponse**](EmployeeHiringDataSimpleResponse.md)
+[**EmployeeHiringDataSimpleResponse**](../models/EmployeeHiringDataSimpleResponse.md)
 
 ### HTTP request headers
 
@@ -270,7 +270,7 @@ Name | Type | Description  | Notes
 **200** | ok |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **list_all_employees**
@@ -322,7 +322,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**EmployeeListResponse**](EmployeeListResponse.md)
+[**EmployeeListResponse**](../models/EmployeeListResponse.md)
 
 ### HTTP request headers
 
@@ -336,7 +336,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **update_employee_hiring_data**
@@ -382,11 +382,11 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**|  | 
- **employee_hiring_data_request** | [**EmployeeHiringDataRequest**](EmployeeHiringDataRequest.md)|  | [optional] 
+ **employee_hiring_data_request** | [**EmployeeHiringDataRequest**](../models/EmployeeHiringDataRequest.md)|  | [optional] 
 
 ### Return type
 
-[**EmployeeHiringDataResponse**](EmployeeHiringDataResponse.md)
+[**EmployeeHiringDataResponse**](../models/EmployeeHiringDataResponse.md)
 
 ### HTTP request headers
 
@@ -400,7 +400,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **update_manager**
@@ -446,11 +446,11 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **employee_id** | **str**|  | 
- **manager_request** | [**ManagerRequest**](ManagerRequest.md)|  | [optional] 
+ **manager_request** | [**ManagerRequest**](../models/ManagerRequest.md)|  | [optional] 
 
 ### Return type
 
-[**EmployeeFullResponse**](EmployeeFullResponse.md)
+[**EmployeeFullResponse**](../models/EmployeeFullResponse.md)
 
 ### HTTP request headers
 
@@ -464,5 +464,5 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

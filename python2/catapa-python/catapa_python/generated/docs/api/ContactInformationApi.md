@@ -57,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ContactInformationResponse**](ContactInformationResponse.md)
+[**ContactInformationResponse**](../models/ContactInformationResponse.md)
 
 ### HTTP request headers
 
@@ -71,7 +71,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_historical_contact_information**
@@ -123,7 +123,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ContactInformationListResponse**](ContactInformationListResponse.md)
+[**ContactInformationListResponse**](../models/ContactInformationListResponse.md)
 
 ### HTTP request headers
 
@@ -137,7 +137,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **update_contact_information**
@@ -183,11 +183,11 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **employee_id** | **str**|  | 
- **contact_information_request** | [**ContactInformationRequest**](ContactInformationRequest.md)|  | [optional] 
+ **contact_information_request** | [**ContactInformationRequest**](../models/ContactInformationRequest.md)|  | [optional] 
 
 ### Return type
 
-[**ContactInformationResponse**](ContactInformationResponse.md)
+[**ContactInformationResponse**](../models/ContactInformationResponse.md)
 
 ### HTTP request headers
 
@@ -201,5 +201,5 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

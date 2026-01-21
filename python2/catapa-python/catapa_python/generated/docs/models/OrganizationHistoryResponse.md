@@ -33,7 +33,7 @@ organization_history_response_dict = organization_history_response_instance.to_d
 # create an instance of OrganizationHistoryResponse from a dict
 organization_history_response_from_dict = OrganizationHistoryResponse.from_dict(organization_history_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

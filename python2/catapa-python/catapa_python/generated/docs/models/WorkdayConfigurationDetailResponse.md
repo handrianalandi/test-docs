@@ -25,7 +25,7 @@ workday_configuration_detail_response_dict = workday_configuration_detail_respon
 # create an instance of WorkdayConfigurationDetailResponse from a dict
 workday_configuration_detail_response_from_dict = WorkdayConfigurationDetailResponse.from_dict(workday_configuration_detail_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

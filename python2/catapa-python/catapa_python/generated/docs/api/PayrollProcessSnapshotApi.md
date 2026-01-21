@@ -61,7 +61,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PayrollProcessSnapshotListResponse**](PayrollProcessSnapshotListResponse.md)
+[**PayrollProcessSnapshotListResponse**](../models/PayrollProcessSnapshotListResponse.md)
 
 ### HTTP request headers
 
@@ -75,5 +75,5 @@ Name | Type | Description  | Notes
 **200** | Page of PayrollProcessSnapshotResponse |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

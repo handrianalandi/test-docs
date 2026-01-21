@@ -25,7 +25,7 @@ editable_salary_preprocess_response_dict = editable_salary_preprocess_response_i
 # create an instance of EditableSalaryPreprocessResponse from a dict
 editable_salary_preprocess_response_from_dict = EditableSalaryPreprocessResponse.from_dict(editable_salary_preprocess_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

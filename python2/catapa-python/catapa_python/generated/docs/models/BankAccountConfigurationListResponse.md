@@ -33,7 +33,7 @@ bank_account_configuration_list_response_dict = bank_account_configuration_list_
 # create an instance of BankAccountConfigurationListResponse from a dict
 bank_account_configuration_list_response_from_dict = BankAccountConfigurationListResponse.from_dict(bank_account_configuration_list_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

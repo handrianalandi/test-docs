@@ -33,7 +33,7 @@ employment_status_history_list_response_dict = employment_status_history_list_re
 # create an instance of EmploymentStatusHistoryListResponse from a dict
 employment_status_history_list_response_from_dict = EmploymentStatusHistoryListResponse.from_dict(employment_status_history_list_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

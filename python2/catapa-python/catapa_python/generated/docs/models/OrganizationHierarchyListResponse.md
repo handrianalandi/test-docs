@@ -33,7 +33,7 @@ organization_hierarchy_list_response_dict = organization_hierarchy_list_response
 # create an instance of OrganizationHierarchyListResponse from a dict
 organization_hierarchy_list_response_from_dict = OrganizationHierarchyListResponse.from_dict(organization_hierarchy_list_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

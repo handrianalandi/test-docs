@@ -58,11 +58,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id_request** | [**List[IdRequest]**](IdRequest.md)|  | [optional] 
+ **id_request** | [**List[IdRequest]**](../models/IdRequest.md)|  | [optional] 
 
 ### Return type
 
-[**BulkOperationResponse**](BulkOperationResponse.md)
+[**BulkOperationResponse**](../models/BulkOperationResponse.md)
 
 ### HTTP request headers
 
@@ -76,7 +76,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **create_family_by_employee**
@@ -122,11 +122,11 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **employee_id** | **str**|  | 
- **family_approval_request** | [**FamilyApprovalRequest**](FamilyApprovalRequest.md)|  | [optional] 
+ **family_approval_request** | [**FamilyApprovalRequest**](../models/FamilyApprovalRequest.md)|  | [optional] 
 
 ### Return type
 
-[**FamilyApprovalListItemWithApprovalStatusResponse**](FamilyApprovalListItemWithApprovalStatusResponse.md)
+[**FamilyApprovalListItemWithApprovalStatusResponse**](../models/FamilyApprovalListItemWithApprovalStatusResponse.md)
 
 ### HTTP request headers
 
@@ -140,7 +140,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **delete_family_by_employee**
@@ -202,7 +202,7 @@ void (empty response body)
 **200** | OK |  -  |
 **404** | Not Found |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_family_by_employee**
@@ -250,7 +250,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**FamilyApprovalListResponse**](FamilyApprovalListResponse.md)
+[**FamilyApprovalListResponse**](../models/FamilyApprovalListResponse.md)
 
 ### HTTP request headers
 
@@ -264,7 +264,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_historical_families**
@@ -316,7 +316,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**FamilyHistoricalListResponse**](FamilyHistoricalListResponse.md)
+[**FamilyHistoricalListResponse**](../models/FamilyHistoricalListResponse.md)
 
 ### HTTP request headers
 
@@ -330,7 +330,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_job_experiences_by_employeeand_id**
@@ -382,7 +382,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**FamilyApprovalListItemWithApprovalStatusResponse**](FamilyApprovalListItemWithApprovalStatusResponse.md)
+[**FamilyApprovalListItemWithApprovalStatusResponse**](../models/FamilyApprovalListItemWithApprovalStatusResponse.md)
 
 ### HTTP request headers
 
@@ -396,7 +396,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **reject_familiesby_employee**
@@ -440,11 +440,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **reject_approval_request** | [**List[RejectApprovalRequest]**](RejectApprovalRequest.md)|  | [optional] 
+ **reject_approval_request** | [**List[RejectApprovalRequest]**](../models/RejectApprovalRequest.md)|  | [optional] 
 
 ### Return type
 
-[**BulkOperationResponse**](BulkOperationResponse.md)
+[**BulkOperationResponse**](../models/BulkOperationResponse.md)
 
 ### HTTP request headers
 
@@ -458,7 +458,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **update_family_by_employee**
@@ -508,11 +508,11 @@ Name | Type | Description  | Notes
  **tenant** | **str**|  | 
  **employee_id** | **str**|  | 
  **approval_id** | **str**|  | 
- **family_approval_request** | [**FamilyApprovalRequest**](FamilyApprovalRequest.md)|  | [optional] 
+ **family_approval_request** | [**FamilyApprovalRequest**](../models/FamilyApprovalRequest.md)|  | [optional] 
 
 ### Return type
 
-[**FamilyApprovalListItemWithApprovalStatusResponse**](FamilyApprovalListItemWithApprovalStatusResponse.md)
+[**FamilyApprovalListItemWithApprovalStatusResponse**](../models/FamilyApprovalListItemWithApprovalStatusResponse.md)
 
 ### HTTP request headers
 
@@ -526,5 +526,5 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

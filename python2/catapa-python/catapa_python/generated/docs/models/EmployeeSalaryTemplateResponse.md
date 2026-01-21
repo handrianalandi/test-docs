@@ -30,7 +30,7 @@ employee_salary_template_response_dict = employee_salary_template_response_insta
 # create an instance of EmployeeSalaryTemplateResponse from a dict
 employee_salary_template_response_from_dict = EmployeeSalaryTemplateResponse.from_dict(employee_salary_template_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

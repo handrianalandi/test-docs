@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CustomTableListResponse**](CustomTableListResponse.md)
+[**CustomTableListResponse**](../models/CustomTableListResponse.md)
 
 ### HTTP request headers
 
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 **200** | Successful operation |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **find_custom_table_by_id**
@@ -122,7 +122,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CustomTableResponse**](CustomTableResponse.md)
+[**CustomTableResponse**](../models/CustomTableResponse.md)
 
 ### HTTP request headers
 
@@ -137,5 +137,5 @@ Name | Type | Description  | Notes
 **400** | Bad Request |  -  |
 **404** | Custom table not found |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

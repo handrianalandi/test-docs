@@ -25,7 +25,7 @@ transition_calculation_count_response_dict = transition_calculation_count_respon
 # create an instance of TransitionCalculationCountResponse from a dict
 transition_calculation_count_response_from_dict = TransitionCalculationCountResponse.from_dict(transition_calculation_count_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

@@ -26,7 +26,7 @@ company_detail_time_zone_request_dict = company_detail_time_zone_request_instanc
 # create an instance of CompanyDetailTimeZoneRequest from a dict
 company_detail_time_zone_request_from_dict = CompanyDetailTimeZoneRequest.from_dict(company_detail_time_zone_request_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

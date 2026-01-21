@@ -26,7 +26,7 @@ employee_variable_validation_response_dict = employee_variable_validation_respon
 # create an instance of EmployeeVariableValidationResponse from a dict
 employee_variable_validation_response_from_dict = EmployeeVariableValidationResponse.from_dict(employee_variable_validation_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

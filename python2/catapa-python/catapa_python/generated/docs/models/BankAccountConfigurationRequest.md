@@ -34,7 +34,7 @@ bank_account_configuration_request_dict = bank_account_configuration_request_ins
 # create an instance of BankAccountConfigurationRequest from a dict
 bank_account_configuration_request_from_dict = BankAccountConfigurationRequest.from_dict(bank_account_configuration_request_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

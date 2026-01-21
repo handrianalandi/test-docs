@@ -33,7 +33,7 @@ operational_group_list_response_dict = operational_group_list_response_instance.
 # create an instance of OperationalGroupListResponse from a dict
 operational_group_list_response_from_dict = OperationalGroupListResponse.from_dict(operational_group_list_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

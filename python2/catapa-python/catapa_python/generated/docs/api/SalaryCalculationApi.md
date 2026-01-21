@@ -63,7 +63,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**SalaryCalculationListResponse**](SalaryCalculationListResponse.md)
+[**SalaryCalculationListResponse**](../models/SalaryCalculationListResponse.md)
 
 ### HTTP request headers
 
@@ -77,7 +77,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_salary_calculation_details**
@@ -127,7 +127,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**SalaryCalculationDetailListResponse**](SalaryCalculationDetailListResponse.md)
+[**SalaryCalculationDetailListResponse**](../models/SalaryCalculationDetailListResponse.md)
 
 ### HTTP request headers
 
@@ -141,7 +141,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_time_allowance_details_by_salary_calculation_detail**
@@ -189,7 +189,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**TimeAllowanceDetailsResponse**](TimeAllowanceDetailsResponse.md)
+[**TimeAllowanceDetailsResponse**](../models/TimeAllowanceDetailsResponse.md)
 
 ### HTTP request headers
 
@@ -203,7 +203,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **update_salary_calculation_detail**
@@ -251,7 +251,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**|  | 
  **code** | **str**|  | 
- **amount_request** | [**AmountRequest**](AmountRequest.md)|  | [optional] 
+ **amount_request** | [**AmountRequest**](../models/AmountRequest.md)|  | [optional] 
 
 ### Return type
 
@@ -269,5 +269,5 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

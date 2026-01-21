@@ -33,7 +33,7 @@ organization_head_list_response_dict = organization_head_list_response_instance.
 # create an instance of OrganizationHeadListResponse from a dict
 organization_head_list_response_from_dict = OrganizationHeadListResponse.from_dict(organization_head_list_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

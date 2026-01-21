@@ -41,7 +41,7 @@ contact_information_response_dict = contact_information_response_instance.to_dic
 # create an instance of ContactInformationResponse from a dict
 contact_information_response_from_dict = ContactInformationResponse.from_dict(contact_information_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

@@ -28,7 +28,7 @@ employee_hiring_data_simple_response_dict = employee_hiring_data_simple_response
 # create an instance of EmployeeHiringDataSimpleResponse from a dict
 employee_hiring_data_simple_response_from_dict = EmployeeHiringDataSimpleResponse.from_dict(employee_hiring_data_simple_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

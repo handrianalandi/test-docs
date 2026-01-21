@@ -80,7 +80,7 @@ void (empty response body)
 **200** | OK - File download response |  * Content-Disposition -  <br>  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **download_pension_debt_report**
@@ -146,7 +146,7 @@ void (empty response body)
 **200** | OK - File download response |  * Content-Disposition -  <br>  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **download_sipp_advance_member_report**
@@ -210,7 +210,7 @@ void (empty response body)
 **200** | OK - File download response |  * Content-Disposition -  <br>  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **download_sipp_new_member_report**
@@ -274,7 +274,7 @@ void (empty response body)
 **200** | OK - File download response |  * Content-Disposition -  <br>  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **download_sipp_terminated_member_report**
@@ -338,7 +338,7 @@ void (empty response body)
 **200** | OK - File download response |  * Content-Disposition -  <br>  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **download_sipp_wage_update_report**
@@ -403,7 +403,7 @@ void (empty response body)
 **200** | OK - File download response |  * Content-Disposition -  <br>  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_bpjs_manpower_premium_summaries**
@@ -455,7 +455,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**BpjsManpowerPremiumSummaryListResponse**](BpjsManpowerPremiumSummaryListResponse.md)
+[**BpjsManpowerPremiumSummaryListResponse**](../models/BpjsManpowerPremiumSummaryListResponse.md)
 
 ### HTTP request headers
 
@@ -469,7 +469,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_bpjs_manpower_premium_summary_details**
@@ -517,7 +517,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**BpjsManpowerPremiumDetailsResponse**](BpjsManpowerPremiumDetailsResponse.md)
+[**BpjsManpowerPremiumDetailsResponse**](../models/BpjsManpowerPremiumDetailsResponse.md)
 
 ### HTTP request headers
 
@@ -531,7 +531,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_bpjs_manpower_providers**
@@ -586,7 +586,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**BpjsManpowerProviderListResponse**](BpjsManpowerProviderListResponse.md)
+[**BpjsManpowerProviderListResponse**](../models/BpjsManpowerProviderListResponse.md)
 
 ### HTTP request headers
 
@@ -600,7 +600,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_bpjs_manpower_templates**
@@ -653,7 +653,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**BpjsManpowerTemplateListResponse**](BpjsManpowerTemplateListResponse.md)
+[**BpjsManpowerTemplateListResponse**](../models/BpjsManpowerTemplateListResponse.md)
 
 ### HTTP request headers
 
@@ -667,5 +667,5 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

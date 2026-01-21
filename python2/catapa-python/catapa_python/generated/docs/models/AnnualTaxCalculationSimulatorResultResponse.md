@@ -48,7 +48,7 @@ annual_tax_calculation_simulator_result_response_dict = annual_tax_calculation_s
 # create an instance of AnnualTaxCalculationSimulatorResultResponse from a dict
 annual_tax_calculation_simulator_result_response_from_dict = AnnualTaxCalculationSimulatorResultResponse.from_dict(annual_tax_calculation_simulator_result_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

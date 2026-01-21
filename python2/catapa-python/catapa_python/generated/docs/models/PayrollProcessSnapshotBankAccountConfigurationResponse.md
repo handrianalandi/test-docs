@@ -25,7 +25,7 @@ payroll_process_snapshot_bank_account_configuration_response_dict = payroll_proc
 # create an instance of PayrollProcessSnapshotBankAccountConfigurationResponse from a dict
 payroll_process_snapshot_bank_account_configuration_response_from_dict = PayrollProcessSnapshotBankAccountConfigurationResponse.from_dict(payroll_process_snapshot_bank_account_configuration_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

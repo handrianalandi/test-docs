@@ -27,7 +27,7 @@ workflow_reason_category_response_dict = workflow_reason_category_response_insta
 # create an instance of WorkflowReasonCategoryResponse from a dict
 workflow_reason_category_response_from_dict = WorkflowReasonCategoryResponse.from_dict(workflow_reason_category_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

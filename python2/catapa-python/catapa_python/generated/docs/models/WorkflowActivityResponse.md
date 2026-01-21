@@ -30,7 +30,7 @@ workflow_activity_response_dict = workflow_activity_response_instance.to_dict()
 # create an instance of WorkflowActivityResponse from a dict
 workflow_activity_response_from_dict = WorkflowActivityResponse.from_dict(workflow_activity_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

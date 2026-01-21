@@ -25,7 +25,7 @@ organization_group_request_dict = organization_group_request_instance.to_dict()
 # create an instance of OrganizationGroupRequest from a dict
 organization_group_request_from_dict = OrganizationGroupRequest.from_dict(organization_group_request_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

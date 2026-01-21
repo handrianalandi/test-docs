@@ -33,7 +33,7 @@ severance_payment_plan_list_response_dict = severance_payment_plan_list_response
 # create an instance of SeverancePaymentPlanListResponse from a dict
 severance_payment_plan_list_response_from_dict = SeverancePaymentPlanListResponse.from_dict(severance_payment_plan_list_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

@@ -32,7 +32,7 @@ calculation_scenario_salary_component_dict = calculation_scenario_salary_compone
 # create an instance of CalculationScenarioSalaryComponent from a dict
 calculation_scenario_salary_component_from_dict = CalculationScenarioSalaryComponent.from_dict(calculation_scenario_salary_component_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

@@ -29,7 +29,7 @@ anomaly_suspect_attribute_value_response_dict = anomaly_suspect_attribute_value_
 # create an instance of AnomalySuspectAttributeValueResponse from a dict
 anomaly_suspect_attribute_value_response_from_dict = AnomalySuspectAttributeValueResponse.from_dict(anomaly_suspect_attribute_value_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

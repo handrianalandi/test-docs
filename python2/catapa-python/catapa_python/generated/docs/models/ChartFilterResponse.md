@@ -32,7 +32,7 @@ chart_filter_response_dict = chart_filter_response_instance.to_dict()
 # create an instance of ChartFilterResponse from a dict
 chart_filter_response_from_dict = ChartFilterResponse.from_dict(chart_filter_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

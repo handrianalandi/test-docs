@@ -28,7 +28,7 @@ monthly_tax_calculation_simulator_response_dict = monthly_tax_calculation_simula
 # create an instance of MonthlyTaxCalculationSimulatorResponse from a dict
 monthly_tax_calculation_simulator_response_from_dict = MonthlyTaxCalculationSimulatorResponse.from_dict(monthly_tax_calculation_simulator_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

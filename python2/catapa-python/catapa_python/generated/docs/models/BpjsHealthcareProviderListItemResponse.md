@@ -30,7 +30,7 @@ bpjs_healthcare_provider_list_item_response_dict = bpjs_healthcare_provider_list
 # create an instance of BpjsHealthcareProviderListItemResponse from a dict
 bpjs_healthcare_provider_list_item_response_from_dict = BpjsHealthcareProviderListItemResponse.from_dict(bpjs_healthcare_provider_list_item_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

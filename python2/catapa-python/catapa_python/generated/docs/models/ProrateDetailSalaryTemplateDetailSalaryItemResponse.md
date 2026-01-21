@@ -27,7 +27,7 @@ prorate_detail_salary_template_detail_salary_item_response_dict = prorate_detail
 # create an instance of ProrateDetailSalaryTemplateDetailSalaryItemResponse from a dict
 prorate_detail_salary_template_detail_salary_item_response_from_dict = ProrateDetailSalaryTemplateDetailSalaryItemResponse.from_dict(prorate_detail_salary_template_detail_salary_item_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

@@ -56,7 +56,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PaymentItemGroupLastSequenceResponse**](PaymentItemGroupLastSequenceResponse.md)
+[**PaymentItemGroupLastSequenceResponse**](../models/PaymentItemGroupLastSequenceResponse.md)
 
 ### HTTP request headers
 
@@ -70,7 +70,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_payment_item_group_sequences**
@@ -124,7 +124,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[PaymentItemGroupSequenceResponse]**](PaymentItemGroupSequenceResponse.md)
+[**List[PaymentItemGroupSequenceResponse]**](../models/PaymentItemGroupSequenceResponse.md)
 
 ### HTTP request headers
 
@@ -138,5 +138,5 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

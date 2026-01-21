@@ -31,7 +31,7 @@ bpjs_manpower_membership_response_dict = bpjs_manpower_membership_response_insta
 # create an instance of BpjsManpowerMembershipResponse from a dict
 bpjs_manpower_membership_response_from_dict = BpjsManpowerMembershipResponse.from_dict(bpjs_manpower_membership_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

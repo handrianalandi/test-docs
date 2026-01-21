@@ -25,7 +25,7 @@ analytics_chart_data_series_response_dict = analytics_chart_data_series_response
 # create an instance of AnalyticsChartDataSeriesResponse from a dict
 analytics_chart_data_series_response_from_dict = AnalyticsChartDataSeriesResponse.from_dict(analytics_chart_data_series_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

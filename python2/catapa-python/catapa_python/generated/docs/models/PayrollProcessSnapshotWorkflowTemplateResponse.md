@@ -26,7 +26,7 @@ payroll_process_snapshot_workflow_template_response_dict = payroll_process_snaps
 # create an instance of PayrollProcessSnapshotWorkflowTemplateResponse from a dict
 payroll_process_snapshot_workflow_template_response_from_dict = PayrollProcessSnapshotWorkflowTemplateResponse.from_dict(payroll_process_snapshot_workflow_template_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

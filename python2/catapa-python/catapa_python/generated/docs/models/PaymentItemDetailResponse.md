@@ -26,7 +26,7 @@ payment_item_detail_response_dict = payment_item_detail_response_instance.to_dic
 # create an instance of PaymentItemDetailResponse from a dict
 payment_item_detail_response_from_dict = PaymentItemDetailResponse.from_dict(payment_item_detail_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

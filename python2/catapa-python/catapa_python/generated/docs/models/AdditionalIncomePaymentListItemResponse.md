@@ -25,7 +25,7 @@ additional_income_payment_list_item_response_dict = additional_income_payment_li
 # create an instance of AdditionalIncomePaymentListItemResponse from a dict
 additional_income_payment_list_item_response_from_dict = AdditionalIncomePaymentListItemResponse.from_dict(additional_income_payment_list_item_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

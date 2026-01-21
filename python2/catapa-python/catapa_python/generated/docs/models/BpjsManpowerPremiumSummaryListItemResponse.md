@@ -34,7 +34,7 @@ bpjs_manpower_premium_summary_list_item_response_dict = bpjs_manpower_premium_su
 # create an instance of BpjsManpowerPremiumSummaryListItemResponse from a dict
 bpjs_manpower_premium_summary_list_item_response_from_dict = BpjsManpowerPremiumSummaryListItemResponse.from_dict(bpjs_manpower_premium_summary_list_item_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

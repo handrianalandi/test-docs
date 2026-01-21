@@ -31,7 +31,7 @@ chart_filter_request_dict = chart_filter_request_instance.to_dict()
 # create an instance of ChartFilterRequest from a dict
 chart_filter_request_from_dict = ChartFilterRequest.from_dict(chart_filter_request_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

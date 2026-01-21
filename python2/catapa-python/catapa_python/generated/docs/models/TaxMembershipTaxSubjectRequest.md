@@ -30,7 +30,7 @@ tax_membership_tax_subject_request_dict = tax_membership_tax_subject_request_ins
 # create an instance of TaxMembershipTaxSubjectRequest from a dict
 tax_membership_tax_subject_request_from_dict = TaxMembershipTaxSubjectRequest.from_dict(tax_membership_tax_subject_request_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

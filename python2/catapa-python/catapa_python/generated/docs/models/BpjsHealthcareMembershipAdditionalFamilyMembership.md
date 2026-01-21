@@ -28,7 +28,7 @@ bpjs_healthcare_membership_additional_family_membership_dict = bpjs_healthcare_m
 # create an instance of BpjsHealthcareMembershipAdditionalFamilyMembership from a dict
 bpjs_healthcare_membership_additional_family_membership_from_dict = BpjsHealthcareMembershipAdditionalFamilyMembership.from_dict(bpjs_healthcare_membership_additional_family_membership_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

@@ -53,11 +53,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **editable_salary_preprocess_request** | [**List[EditableSalaryPreprocessRequest]**](EditableSalaryPreprocessRequest.md)|  | 
+ **editable_salary_preprocess_request** | [**List[EditableSalaryPreprocessRequest]**](../models/EditableSalaryPreprocessRequest.md)|  | 
 
 ### Return type
 
-[**EditableSalaryPreprocessResponse**](EditableSalaryPreprocessResponse.md)
+[**EditableSalaryPreprocessResponse**](../models/EditableSalaryPreprocessResponse.md)
 
 ### HTTP request headers
 
@@ -71,5 +71,5 @@ Name | Type | Description  | Notes
 **200** | Batch response for editable salary preprocess |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

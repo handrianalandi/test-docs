@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**UserListResponse**](UserListResponse.md)
+[**UserListResponse**](../models/UserListResponse.md)
 
 ### HTTP request headers
 
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 **200** | Successful operation |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_current_user**
@@ -118,7 +118,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**UserAndRoleResponse**](UserAndRoleResponse.md)
+[**UserAndRoleResponse**](../models/UserAndRoleResponse.md)
 
 ### HTTP request headers
 
@@ -132,5 +132,5 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

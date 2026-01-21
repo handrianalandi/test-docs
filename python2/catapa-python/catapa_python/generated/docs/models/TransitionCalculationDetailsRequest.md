@@ -25,7 +25,7 @@ transition_calculation_details_request_dict = transition_calculation_details_req
 # create an instance of TransitionCalculationDetailsRequest from a dict
 transition_calculation_details_request_from_dict = TransitionCalculationDetailsRequest.from_dict(transition_calculation_details_request_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

@@ -33,7 +33,7 @@ location_create_request_dict = location_create_request_instance.to_dict()
 # create an instance of LocationCreateRequest from a dict
 location_create_request_from_dict = LocationCreateRequest.from_dict(location_create_request_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

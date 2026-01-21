@@ -25,7 +25,7 @@ chart_table_relation_response_dict = chart_table_relation_response_instance.to_d
 # create an instance of ChartTableRelationResponse from a dict
 chart_table_relation_response_from_dict = ChartTableRelationResponse.from_dict(chart_table_relation_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

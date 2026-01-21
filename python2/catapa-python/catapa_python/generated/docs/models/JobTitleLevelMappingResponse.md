@@ -25,7 +25,7 @@ job_title_level_mapping_response_dict = job_title_level_mapping_response_instanc
 # create an instance of JobTitleLevelMappingResponse from a dict
 job_title_level_mapping_response_from_dict = JobTitleLevelMappingResponse.from_dict(job_title_level_mapping_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

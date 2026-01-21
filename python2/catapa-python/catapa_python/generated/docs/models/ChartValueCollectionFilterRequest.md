@@ -24,7 +24,7 @@ chart_value_collection_filter_request_dict = chart_value_collection_filter_reque
 # create an instance of ChartValueCollectionFilterRequest from a dict
 chart_value_collection_filter_request_from_dict = ChartValueCollectionFilterRequest.from_dict(chart_value_collection_filter_request_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

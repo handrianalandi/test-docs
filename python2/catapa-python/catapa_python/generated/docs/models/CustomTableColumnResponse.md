@@ -33,7 +33,7 @@ custom_table_column_response_dict = custom_table_column_response_instance.to_dic
 # create an instance of CustomTableColumnResponse from a dict
 custom_table_column_response_from_dict = CustomTableColumnResponse.from_dict(custom_table_column_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

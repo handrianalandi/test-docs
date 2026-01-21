@@ -26,7 +26,7 @@ role_response_dict = role_response_instance.to_dict()
 # create an instance of RoleResponse from a dict
 role_response_from_dict = RoleResponse.from_dict(role_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

@@ -27,7 +27,7 @@ employment_type_request_dict = employment_type_request_instance.to_dict()
 # create an instance of EmploymentTypeRequest from a dict
 employment_type_request_from_dict = EmploymentTypeRequest.from_dict(employment_type_request_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

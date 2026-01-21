@@ -28,7 +28,7 @@ organization_hierarchy_response_dict = organization_hierarchy_response_instance.
 # create an instance of OrganizationHierarchyResponse from a dict
 organization_hierarchy_response_from_dict = OrganizationHierarchyResponse.from_dict(organization_hierarchy_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RoleAuthorityListResponse**](RoleAuthorityListResponse.md)
+[**RoleAuthorityListResponse**](../models/RoleAuthorityListResponse.md)
 
 ### HTTP request headers
 
@@ -77,7 +77,7 @@ Name | Type | Description  | Notes
 **400** | Bad Request |  -  |
 **404** | Role not found |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_role_by_id**
@@ -125,7 +125,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RoleDetailResponse**](RoleDetailResponse.md)
+[**RoleDetailResponse**](../models/RoleDetailResponse.md)
 
 ### HTTP request headers
 
@@ -140,7 +140,7 @@ Name | Type | Description  | Notes
 **400** | Bad Request |  -  |
 **404** | Role not found |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_role_permissions**
@@ -190,7 +190,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RolePermissionListResponse**](RolePermissionListResponse.md)
+[**RolePermissionListResponse**](../models/RolePermissionListResponse.md)
 
 ### HTTP request headers
 
@@ -205,7 +205,7 @@ Name | Type | Description  | Notes
 **400** | Bad Request |  -  |
 **404** | Role not found |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **list_all_roles**
@@ -257,7 +257,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RoleListResponse**](RoleListResponse.md)
+[**RoleListResponse**](../models/RoleListResponse.md)
 
 ### HTTP request headers
 
@@ -271,5 +271,5 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

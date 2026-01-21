@@ -29,7 +29,7 @@ bpjs_healthcare_treatment_class_response_dict = bpjs_healthcare_treatment_class_
 # create an instance of BpjsHealthcareTreatmentClassResponse from a dict
 bpjs_healthcare_treatment_class_response_from_dict = BpjsHealthcareTreatmentClassResponse.from_dict(bpjs_healthcare_treatment_class_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

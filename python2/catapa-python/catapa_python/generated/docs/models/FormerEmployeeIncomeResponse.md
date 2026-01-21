@@ -32,7 +32,7 @@ former_employee_income_response_dict = former_employee_income_response_instance.
 # create an instance of FormerEmployeeIncomeResponse from a dict
 former_employee_income_response_from_dict = FormerEmployeeIncomeResponse.from_dict(former_employee_income_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

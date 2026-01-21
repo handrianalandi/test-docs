@@ -24,7 +24,7 @@ bank_account_configuration_response_source_dict = bank_account_configuration_res
 # create an instance of BankAccountConfigurationResponseSource from a dict
 bank_account_configuration_response_source_from_dict = BankAccountConfigurationResponseSource.from_dict(bank_account_configuration_response_source_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

@@ -59,7 +59,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**BankAccountConfigurationResponse**](BankAccountConfigurationResponse.md)
+[**BankAccountConfigurationResponse**](../models/BankAccountConfigurationResponse.md)
 
 ### HTTP request headers
 
@@ -73,7 +73,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_employee_bank_account_configuration_histories**
@@ -127,7 +127,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**BankAccountConfigurationListResponse**](BankAccountConfigurationListResponse.md)
+[**BankAccountConfigurationListResponse**](../models/BankAccountConfigurationListResponse.md)
 
 ### HTTP request headers
 
@@ -141,7 +141,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **update_bank_account_configuration**
@@ -189,11 +189,11 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **employee_id** | **str**|  | 
- **update_bank_account_configuration_request** | [**UpdateBankAccountConfigurationRequest**](UpdateBankAccountConfigurationRequest.md)|  | [optional] 
+ **update_bank_account_configuration_request** | [**UpdateBankAccountConfigurationRequest**](../models/UpdateBankAccountConfigurationRequest.md)|  | [optional] 
 
 ### Return type
 
-[**BankAccountConfigurationResponse**](BankAccountConfigurationResponse.md)
+[**BankAccountConfigurationResponse**](../models/BankAccountConfigurationResponse.md)
 
 ### HTTP request headers
 
@@ -207,5 +207,5 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

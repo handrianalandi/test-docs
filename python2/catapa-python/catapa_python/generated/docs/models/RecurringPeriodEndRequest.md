@@ -25,7 +25,7 @@ recurring_period_end_request_dict = recurring_period_end_request_instance.to_dic
 # create an instance of RecurringPeriodEndRequest from a dict
 recurring_period_end_request_from_dict = RecurringPeriodEndRequest.from_dict(recurring_period_end_request_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

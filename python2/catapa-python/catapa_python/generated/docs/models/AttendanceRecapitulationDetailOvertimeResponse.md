@@ -26,7 +26,7 @@ attendance_recapitulation_detail_overtime_response_dict = attendance_recapitulat
 # create an instance of AttendanceRecapitulationDetailOvertimeResponse from a dict
 attendance_recapitulation_detail_overtime_response_from_dict = AttendanceRecapitulationDetailOvertimeResponse.from_dict(attendance_recapitulation_detail_overtime_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

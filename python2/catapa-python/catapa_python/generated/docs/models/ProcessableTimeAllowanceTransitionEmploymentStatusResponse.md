@@ -25,7 +25,7 @@ processable_time_allowance_transition_employment_status_response_dict = processa
 # create an instance of ProcessableTimeAllowanceTransitionEmploymentStatusResponse from a dict
 processable_time_allowance_transition_employment_status_response_from_dict = ProcessableTimeAllowanceTransitionEmploymentStatusResponse.from_dict(processable_time_allowance_transition_employment_status_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

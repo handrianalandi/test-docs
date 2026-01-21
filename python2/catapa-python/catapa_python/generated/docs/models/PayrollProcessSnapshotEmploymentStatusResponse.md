@@ -37,7 +37,7 @@ payroll_process_snapshot_employment_status_response_dict = payroll_process_snaps
 # create an instance of PayrollProcessSnapshotEmploymentStatusResponse from a dict
 payroll_process_snapshot_employment_status_response_from_dict = PayrollProcessSnapshotEmploymentStatusResponse.from_dict(payroll_process_snapshot_employment_status_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

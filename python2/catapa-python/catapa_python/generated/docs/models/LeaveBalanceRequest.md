@@ -37,7 +37,7 @@ leave_balance_request_dict = leave_balance_request_instance.to_dict()
 # create an instance of LeaveBalanceRequest from a dict
 leave_balance_request_from_dict = LeaveBalanceRequest.from_dict(leave_balance_request_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

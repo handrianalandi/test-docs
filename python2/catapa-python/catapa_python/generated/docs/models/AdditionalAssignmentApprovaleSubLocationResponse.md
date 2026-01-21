@@ -27,7 +27,7 @@ additional_assignment_approvale_sub_location_response_dict = additional_assignme
 # create an instance of AdditionalAssignmentApprovaleSubLocationResponse from a dict
 additional_assignment_approvale_sub_location_response_from_dict = AdditionalAssignmentApprovaleSubLocationResponse.from_dict(additional_assignment_approvale_sub_location_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

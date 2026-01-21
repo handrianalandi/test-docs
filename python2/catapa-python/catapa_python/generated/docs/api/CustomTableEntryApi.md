@@ -57,7 +57,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **table_id** | **str**|  | 
- **request_body** | [**Dict[str, object]**](object.md)|  | 
+ **request_body** | [**Dict[str, object]**](../models/object.md)|  | 
 
 ### Return type
 
@@ -75,7 +75,7 @@ Name | Type | Description  | Notes
 **201** | Entry created successfully |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **find_all_entries**
@@ -129,7 +129,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CustomTableEntryListResponse**](CustomTableEntryListResponse.md)
+[**CustomTableEntryListResponse**](../models/CustomTableEntryListResponse.md)
 
 ### HTTP request headers
 
@@ -143,7 +143,7 @@ Name | Type | Description  | Notes
 **200** | Successful operation |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **update_entry**
@@ -193,7 +193,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **table_id** | **str**|  | 
  **entry_id** | **str**|  | 
- **request_body** | [**Dict[str, object]**](object.md)|  | 
+ **request_body** | [**Dict[str, object]**](../models/object.md)|  | 
 
 ### Return type
 
@@ -212,5 +212,5 @@ Name | Type | Description  | Notes
 **400** | Bad Request |  -  |
 **404** | Entry not found |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

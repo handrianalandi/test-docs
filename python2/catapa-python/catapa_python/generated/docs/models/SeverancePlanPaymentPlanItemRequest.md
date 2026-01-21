@@ -26,7 +26,7 @@ severance_plan_payment_plan_item_request_dict = severance_plan_payment_plan_item
 # create an instance of SeverancePlanPaymentPlanItemRequest from a dict
 severance_plan_payment_plan_item_request_from_dict = SeverancePlanPaymentPlanItemRequest.from_dict(severance_plan_payment_plan_item_request_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

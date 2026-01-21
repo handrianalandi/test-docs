@@ -28,7 +28,7 @@ salary_item_response_with_category_dict = salary_item_response_with_category_ins
 # create an instance of SalaryItemResponseWithCategory from a dict
 salary_item_response_with_category_from_dict = SalaryItemResponseWithCategory.from_dict(salary_item_response_with_category_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

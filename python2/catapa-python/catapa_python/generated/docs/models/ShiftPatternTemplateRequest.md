@@ -25,7 +25,7 @@ shift_pattern_template_request_dict = shift_pattern_template_request_instance.to
 # create an instance of ShiftPatternTemplateRequest from a dict
 shift_pattern_template_request_from_dict = ShiftPatternTemplateRequest.from_dict(shift_pattern_template_request_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

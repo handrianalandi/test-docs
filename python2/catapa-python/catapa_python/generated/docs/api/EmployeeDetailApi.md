@@ -59,7 +59,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**EmployeeDetailResponse**](EmployeeDetailResponse.md)
+[**EmployeeDetailResponse**](../models/EmployeeDetailResponse.md)
 
 ### HTTP request headers
 
@@ -73,7 +73,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_historical_employee_details**
@@ -125,7 +125,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**EmployeeDetailListResponse**](EmployeeDetailListResponse.md)
+[**EmployeeDetailListResponse**](../models/EmployeeDetailListResponse.md)
 
 ### HTTP request headers
 
@@ -139,7 +139,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **update_employee_detail**
@@ -187,11 +187,11 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **employee_id** | **str**|  | 
- **employee_detail_request** | [**EmployeeDetailRequest**](EmployeeDetailRequest.md)|  | [optional] 
+ **employee_detail_request** | [**EmployeeDetailRequest**](../models/EmployeeDetailRequest.md)|  | [optional] 
 
 ### Return type
 
-[**EmployeeDetailResponse**](EmployeeDetailResponse.md)
+[**EmployeeDetailResponse**](../models/EmployeeDetailResponse.md)
 
 ### HTTP request headers
 
@@ -205,5 +205,5 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

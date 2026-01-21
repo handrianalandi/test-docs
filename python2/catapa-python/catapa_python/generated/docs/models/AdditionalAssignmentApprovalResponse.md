@@ -46,7 +46,7 @@ additional_assignment_approval_response_dict = additional_assignment_approval_re
 # create an instance of AdditionalAssignmentApprovalResponse from a dict
 additional_assignment_approval_response_from_dict = AdditionalAssignmentApprovalResponse.from_dict(additional_assignment_approval_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

@@ -33,7 +33,7 @@ tax_report1721_viii_list_response_dict = tax_report1721_viii_list_response_insta
 # create an instance of TaxReport1721VIIIListResponse from a dict
 tax_report1721_viii_list_response_from_dict = TaxReport1721VIIIListResponse.from_dict(tax_report1721_viii_list_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

@@ -26,7 +26,7 @@ tax_calculation_response_dict = tax_calculation_response_instance.to_dict()
 # create an instance of TaxCalculationResponse from a dict
 tax_calculation_response_from_dict = TaxCalculationResponse.from_dict(tax_calculation_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

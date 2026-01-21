@@ -25,7 +25,7 @@ monthly_recapitulation_item_detail_response_dict = monthly_recapitulation_item_d
 # create an instance of MonthlyRecapitulationItemDetailResponse from a dict
 monthly_recapitulation_item_detail_response_from_dict = MonthlyRecapitulationItemDetailResponse.from_dict(monthly_recapitulation_item_detail_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

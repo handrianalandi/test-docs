@@ -27,7 +27,7 @@ job_title_with_job_levels_response_dict = job_title_with_job_levels_response_ins
 # create an instance of JobTitleWithJobLevelsResponse from a dict
 job_title_with_job_levels_response_from_dict = JobTitleWithJobLevelsResponse.from_dict(job_title_with_job_levels_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

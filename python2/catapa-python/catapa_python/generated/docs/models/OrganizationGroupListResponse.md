@@ -33,7 +33,7 @@ organization_group_list_response_dict = organization_group_list_response_instanc
 # create an instance of OrganizationGroupListResponse from a dict
 organization_group_list_response_from_dict = OrganizationGroupListResponse.from_dict(organization_group_list_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

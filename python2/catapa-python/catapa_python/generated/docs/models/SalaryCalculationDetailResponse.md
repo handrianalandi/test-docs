@@ -30,7 +30,7 @@ salary_calculation_detail_response_dict = salary_calculation_detail_response_ins
 # create an instance of SalaryCalculationDetailResponse from a dict
 salary_calculation_detail_response_from_dict = SalaryCalculationDetailResponse.from_dict(salary_calculation_detail_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

@@ -25,7 +25,7 @@ chart_table_relation_request_dict = chart_table_relation_request_instance.to_dic
 # create an instance of ChartTableRelationRequest from a dict
 chart_table_relation_request_from_dict = ChartTableRelationRequest.from_dict(chart_table_relation_request_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

@@ -26,7 +26,7 @@ employee_variable_validation_request_dict = employee_variable_validation_request
 # create an instance of EmployeeVariableValidationRequest from a dict
 employee_variable_validation_request_from_dict = EmployeeVariableValidationRequest.from_dict(employee_variable_validation_request_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

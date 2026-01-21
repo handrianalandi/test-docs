@@ -26,7 +26,7 @@ termination_tax_reason_response_dict = termination_tax_reason_response_instance.
 # create an instance of TerminationTaxReasonResponse from a dict
 termination_tax_reason_response_from_dict = TerminationTaxReasonResponse.from_dict(termination_tax_reason_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

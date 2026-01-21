@@ -58,7 +58,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**BpjsHealthcareMembershipResponse**](BpjsHealthcareMembershipResponse.md)
+[**BpjsHealthcareMembershipResponse**](../models/BpjsHealthcareMembershipResponse.md)
 
 ### HTTP request headers
 
@@ -72,7 +72,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_bpjs_manpower_membership**
@@ -120,7 +120,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**BpjsManpowerMembershipResponse**](BpjsManpowerMembershipResponse.md)
+[**BpjsManpowerMembershipResponse**](../models/BpjsManpowerMembershipResponse.md)
 
 ### HTTP request headers
 
@@ -134,7 +134,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **update_bpjs_healthcare_membership**
@@ -180,11 +180,11 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **employee_id** | **str**|  | 
- **bpjs_healthcare_membership_request** | [**BpjsHealthcareMembershipRequest**](BpjsHealthcareMembershipRequest.md)|  | [optional] 
+ **bpjs_healthcare_membership_request** | [**BpjsHealthcareMembershipRequest**](../models/BpjsHealthcareMembershipRequest.md)|  | [optional] 
 
 ### Return type
 
-[**BpjsHealthcareMembershipResponse**](BpjsHealthcareMembershipResponse.md)
+[**BpjsHealthcareMembershipResponse**](../models/BpjsHealthcareMembershipResponse.md)
 
 ### HTTP request headers
 
@@ -198,7 +198,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **update_bpjs_manpower_membership**
@@ -244,11 +244,11 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **employee_id** | **str**|  | 
- **bpjs_manpower_membership_request** | [**BpjsManpowerMembershipRequest**](BpjsManpowerMembershipRequest.md)|  | [optional] 
+ **bpjs_manpower_membership_request** | [**BpjsManpowerMembershipRequest**](../models/BpjsManpowerMembershipRequest.md)|  | [optional] 
 
 ### Return type
 
-[**BpjsManpowerMembershipResponse**](BpjsManpowerMembershipResponse.md)
+[**BpjsManpowerMembershipResponse**](../models/BpjsManpowerMembershipResponse.md)
 
 ### HTTP request headers
 
@@ -262,5 +262,5 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

@@ -59,7 +59,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PaymentItemGroupListResponse**](PaymentItemGroupListResponse.md)
+[**PaymentItemGroupListResponse**](../models/PaymentItemGroupListResponse.md)
 
 ### HTTP request headers
 
@@ -73,7 +73,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_processed_salary_payment_summaries**
@@ -130,7 +130,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**SalaryPaymentSummaryListResponse**](SalaryPaymentSummaryListResponse.md)
+[**SalaryPaymentSummaryListResponse**](../models/SalaryPaymentSummaryListResponse.md)
 
 ### HTTP request headers
 
@@ -144,7 +144,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_processed_salary_payments**
@@ -197,7 +197,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**ProcessedSalaryPaymentListResponse**](ProcessedSalaryPaymentListResponse.md)
+[**ProcessedSalaryPaymentListResponse**](../models/ProcessedSalaryPaymentListResponse.md)
 
 ### HTTP request headers
 
@@ -211,7 +211,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_salary_payments**
@@ -264,7 +264,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**SalaryPaymentListResponse**](SalaryPaymentListResponse.md)
+[**SalaryPaymentListResponse**](../models/SalaryPaymentListResponse.md)
 
 ### HTTP request headers
 
@@ -278,7 +278,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_salary_payments_date**
@@ -342,5 +342,5 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

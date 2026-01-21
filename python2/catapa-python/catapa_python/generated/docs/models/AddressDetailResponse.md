@@ -28,7 +28,7 @@ address_detail_response_dict = address_detail_response_instance.to_dict()
 # create an instance of AddressDetailResponse from a dict
 address_detail_response_from_dict = AddressDetailResponse.from_dict(address_detail_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

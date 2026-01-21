@@ -33,7 +33,7 @@ processed_salary_payment_list_response_dict = processed_salary_payment_list_resp
 # create an instance of ProcessedSalaryPaymentListResponse from a dict
 processed_salary_payment_list_response_from_dict = ProcessedSalaryPaymentListResponse.from_dict(processed_salary_payment_list_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

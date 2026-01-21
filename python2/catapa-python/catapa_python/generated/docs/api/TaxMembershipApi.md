@@ -59,7 +59,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**TaxMembershipResponse**](TaxMembershipResponse.md)
+[**TaxMembershipResponse**](../models/TaxMembershipResponse.md)
 
 ### HTTP request headers
 
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 **400** | Bad Request - Invalid request parameters |  -  |
 **404** | Employee not found |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **update_tax_membership**
@@ -122,11 +122,11 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **employee_id** | **str**| Unique identifier for the employee | 
- **tax_membership_response** | [**TaxMembershipResponse**](TaxMembershipResponse.md)|  | [optional] 
+ **tax_membership_response** | [**TaxMembershipResponse**](../models/TaxMembershipResponse.md)|  | [optional] 
 
 ### Return type
 
-[**TaxMembershipResponse**](TaxMembershipResponse.md)
+[**TaxMembershipResponse**](../models/TaxMembershipResponse.md)
 
 ### HTTP request headers
 
@@ -141,7 +141,7 @@ Name | Type | Description  | Notes
 **400** | Bad Request - Invalid request data |  -  |
 **404** | Employee not found |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **update_tax_membership_tax_subject**
@@ -189,11 +189,11 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **employee_id** | **str**| Unique identifier for the employee | 
- **tax_membership_tax_subject_request** | [**TaxMembershipTaxSubjectRequest**](TaxMembershipTaxSubjectRequest.md)| Tax subject information to update | 
+ **tax_membership_tax_subject_request** | [**TaxMembershipTaxSubjectRequest**](../models/TaxMembershipTaxSubjectRequest.md)| Tax subject information to update | 
 
 ### Return type
 
-[**TaxMembershipResponse**](TaxMembershipResponse.md)
+[**TaxMembershipResponse**](../models/TaxMembershipResponse.md)
 
 ### HTTP request headers
 
@@ -208,5 +208,5 @@ Name | Type | Description  | Notes
 **400** | Bad Request - Invalid input data |  -  |
 **404** | Employee not found |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

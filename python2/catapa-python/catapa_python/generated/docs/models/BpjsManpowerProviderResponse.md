@@ -30,7 +30,7 @@ bpjs_manpower_provider_response_dict = bpjs_manpower_provider_response_instance.
 # create an instance of BpjsManpowerProviderResponse from a dict
 bpjs_manpower_provider_response_from_dict = BpjsManpowerProviderResponse.from_dict(bpjs_manpower_provider_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

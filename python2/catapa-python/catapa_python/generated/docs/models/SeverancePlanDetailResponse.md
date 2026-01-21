@@ -28,7 +28,7 @@ severance_plan_detail_response_dict = severance_plan_detail_response_instance.to
 # create an instance of SeverancePlanDetailResponse from a dict
 severance_plan_detail_response_from_dict = SeverancePlanDetailResponse.from_dict(severance_plan_detail_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

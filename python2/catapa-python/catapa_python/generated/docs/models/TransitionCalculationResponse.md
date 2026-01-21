@@ -38,7 +38,7 @@ transition_calculation_response_dict = transition_calculation_response_instance.
 # create an instance of TransitionCalculationResponse from a dict
 transition_calculation_response_from_dict = TransitionCalculationResponse.from_dict(transition_calculation_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

@@ -77,7 +77,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**ProcessableTimeAllowanceTransitionListResponse**](ProcessableTimeAllowanceTransitionListResponse.md)
+[**ProcessableTimeAllowanceTransitionListResponse**](../models/ProcessableTimeAllowanceTransitionListResponse.md)
 
 ### HTTP request headers
 
@@ -91,7 +91,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_processable_transition_calculation**
@@ -155,7 +155,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**UnprocessedTransitionCalculationListResponse**](UnprocessedTransitionCalculationListResponse.md)
+[**UnprocessedTransitionCalculationListResponse**](../models/UnprocessedTransitionCalculationListResponse.md)
 
 ### HTTP request headers
 
@@ -169,7 +169,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_processed_transition_calculation**
@@ -233,7 +233,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**ProcessedTransitionCalculationListResponse**](ProcessedTransitionCalculationListResponse.md)
+[**ProcessedTransitionCalculationListResponse**](../models/ProcessedTransitionCalculationListResponse.md)
 
 ### HTTP request headers
 
@@ -247,7 +247,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_prorate_details_by_transition_calculation_detail_id**
@@ -299,7 +299,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[ProrateDetailResponse]**](ProrateDetailResponse.md)
+[**List[ProrateDetailResponse]**](../models/ProrateDetailResponse.md)
 
 ### HTTP request headers
 
@@ -313,7 +313,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_time_allowance_detailsby_transition_calculation_detail_id**
@@ -365,7 +365,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List[TransitionTimeAllowanceDetailResponse]**](TransitionTimeAllowanceDetailResponse.md)
+[**List[TransitionTimeAllowanceDetailResponse]**](../models/TransitionTimeAllowanceDetailResponse.md)
 
 ### HTTP request headers
 
@@ -379,7 +379,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_transition_calculation_count**
@@ -443,7 +443,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**TransitionCalculationCountResponse**](TransitionCalculationCountResponse.md)
+[**TransitionCalculationCountResponse**](../models/TransitionCalculationCountResponse.md)
 
 ### HTTP request headers
 
@@ -457,7 +457,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_transition_calculationby_id**
@@ -509,7 +509,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**TransitionCalculationResponse**](TransitionCalculationResponse.md)
+[**TransitionCalculationResponse**](../models/TransitionCalculationResponse.md)
 
 ### HTTP request headers
 
@@ -523,7 +523,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **update_transition_calculation_details_with_editable_type**
@@ -571,7 +571,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**|  | 
- **transition_calculation_details_request** | [**TransitionCalculationDetailsRequest**](TransitionCalculationDetailsRequest.md)|  | [optional] 
+ **transition_calculation_details_request** | [**TransitionCalculationDetailsRequest**](../models/TransitionCalculationDetailsRequest.md)|  | [optional] 
 
 ### Return type
 
@@ -589,5 +589,5 @@ void (empty response body)
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

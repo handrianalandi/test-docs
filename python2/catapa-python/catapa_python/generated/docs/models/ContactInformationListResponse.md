@@ -33,7 +33,7 @@ contact_information_list_response_dict = contact_information_list_response_insta
 # create an instance of ContactInformationListResponse from a dict
 contact_information_list_response_from_dict = ContactInformationListResponse.from_dict(contact_information_list_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

@@ -29,7 +29,7 @@ payment_item_detail_salary_item_response_dict = payment_item_detail_salary_item_
 # create an instance of PaymentItemDetailSalaryItemResponse from a dict
 payment_item_detail_salary_item_response_from_dict = PaymentItemDetailSalaryItemResponse.from_dict(payment_item_detail_salary_item_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

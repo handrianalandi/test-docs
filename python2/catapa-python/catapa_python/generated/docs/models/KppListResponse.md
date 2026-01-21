@@ -24,7 +24,7 @@ kpp_list_response_dict = kpp_list_response_instance.to_dict()
 # create an instance of KppListResponse from a dict
 kpp_list_response_from_dict = KppListResponse.from_dict(kpp_list_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

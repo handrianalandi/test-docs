@@ -63,7 +63,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**TaxMembershipHistoryResponse**](TaxMembershipHistoryResponse.md)
+[**TaxMembershipHistoryResponse**](../models/TaxMembershipHistoryResponse.md)
 
 ### HTTP request headers
 
@@ -78,7 +78,7 @@ Name | Type | Description  | Notes
 **400** | Bad Request - Invalid request parameters |  -  |
 **404** | Employee or tax membership history not found |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_tax_membership_history_by_id**
@@ -128,7 +128,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**TaxMembershipHistoryResponse**](TaxMembershipHistoryResponse.md)
+[**TaxMembershipHistoryResponse**](../models/TaxMembershipHistoryResponse.md)
 
 ### HTTP request headers
 
@@ -143,7 +143,7 @@ Name | Type | Description  | Notes
 **400** | Bad Request - Invalid ID format |  -  |
 **404** | Tax membership history not found |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **update_tax_membership_history_tax_subject**
@@ -191,11 +191,11 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| Unique identifier for the tax membership history record | 
- **tax_membership_tax_subject_request** | [**TaxMembershipTaxSubjectRequest**](TaxMembershipTaxSubjectRequest.md)| Tax subject information to update for the history record | 
+ **tax_membership_tax_subject_request** | [**TaxMembershipTaxSubjectRequest**](../models/TaxMembershipTaxSubjectRequest.md)| Tax subject information to update for the history record | 
 
 ### Return type
 
-[**TaxMembershipHistoryResponse**](TaxMembershipHistoryResponse.md)
+[**TaxMembershipHistoryResponse**](../models/TaxMembershipHistoryResponse.md)
 
 ### HTTP request headers
 
@@ -211,5 +211,5 @@ Name | Type | Description  | Notes
 **404** | Tax membership history not found |  -  |
 **422** | Unprocessable Entity - Business logic validation failed |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

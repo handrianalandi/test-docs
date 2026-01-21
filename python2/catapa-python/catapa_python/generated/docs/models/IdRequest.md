@@ -24,7 +24,7 @@ id_request_dict = id_request_instance.to_dict()
 # create an instance of IdRequest from a dict
 id_request_from_dict = IdRequest.from_dict(id_request_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

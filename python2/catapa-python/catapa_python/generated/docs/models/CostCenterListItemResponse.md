@@ -28,7 +28,7 @@ cost_center_list_item_response_dict = cost_center_list_item_response_instance.to
 # create an instance of CostCenterListItemResponse from a dict
 cost_center_list_item_response_from_dict = CostCenterListItemResponse.from_dict(cost_center_list_item_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

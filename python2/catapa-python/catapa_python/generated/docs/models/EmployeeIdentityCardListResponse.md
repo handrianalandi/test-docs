@@ -24,7 +24,7 @@ employee_identity_card_list_response_dict = employee_identity_card_list_response
 # create an instance of EmployeeIdentityCardListResponse from a dict
 employee_identity_card_list_response_from_dict = EmployeeIdentityCardListResponse.from_dict(employee_identity_card_list_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

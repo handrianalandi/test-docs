@@ -57,11 +57,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **salary_item_add_on_request** | [**SalaryItemAddOnRequest**](SalaryItemAddOnRequest.md)|  | [optional] 
+ **salary_item_add_on_request** | [**SalaryItemAddOnRequest**](../models/SalaryItemAddOnRequest.md)|  | [optional] 
 
 ### Return type
 
-[**SalaryItemAddOnResponse**](SalaryItemAddOnResponse.md)
+[**SalaryItemAddOnResponse**](../models/SalaryItemAddOnResponse.md)
 
 ### HTTP request headers
 
@@ -75,7 +75,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **delete_salary_item_add_on**
@@ -143,7 +143,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_salary_item_add_on**
@@ -195,7 +195,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SalaryItemAddOnResponse**](SalaryItemAddOnResponse.md)
+[**SalaryItemAddOnResponse**](../models/SalaryItemAddOnResponse.md)
 
 ### HTTP request headers
 
@@ -209,7 +209,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_salary_template_by_id**
@@ -257,7 +257,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SalaryTemplateResponse**](SalaryTemplateResponse.md)
+[**SalaryTemplateResponse**](../models/SalaryTemplateResponse.md)
 
 ### HTTP request headers
 
@@ -271,7 +271,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_salary_templates**
@@ -322,7 +322,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**SalaryTemplateListResponse**](SalaryTemplateListResponse.md)
+[**SalaryTemplateListResponse**](../models/SalaryTemplateListResponse.md)
 
 ### HTTP request headers
 
@@ -336,7 +336,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **subtract_salary_item_add_on**
@@ -380,7 +380,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **salary_item_add_on_request** | [**SalaryItemAddOnRequest**](SalaryItemAddOnRequest.md)|  | [optional] 
+ **salary_item_add_on_request** | [**SalaryItemAddOnRequest**](../models/SalaryItemAddOnRequest.md)|  | [optional] 
 
 ### Return type
 
@@ -398,7 +398,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **update_salary_item_add_on**
@@ -442,11 +442,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **salary_item_add_on_request** | [**SalaryItemAddOnRequest**](SalaryItemAddOnRequest.md)|  | [optional] 
+ **salary_item_add_on_request** | [**SalaryItemAddOnRequest**](../models/SalaryItemAddOnRequest.md)|  | [optional] 
 
 ### Return type
 
-[**SalaryItemAddOnResponse**](SalaryItemAddOnResponse.md)
+[**SalaryItemAddOnResponse**](../models/SalaryItemAddOnResponse.md)
 
 ### HTTP request headers
 
@@ -460,5 +460,5 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

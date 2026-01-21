@@ -59,11 +59,11 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**|  | 
- **severance_plan_request** | [**SeverancePlanRequest**](SeverancePlanRequest.md)|  | [optional] 
+ **severance_plan_request** | [**SeverancePlanRequest**](../models/SeverancePlanRequest.md)|  | [optional] 
 
 ### Return type
 
-[**SeverancePlanResponseWithDetail**](SeverancePlanResponseWithDetail.md)
+[**SeverancePlanResponseWithDetail**](../models/SeverancePlanResponseWithDetail.md)
 
 ### HTTP request headers
 
@@ -77,7 +77,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **delete_severance_plans_by_id**
@@ -139,7 +139,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **download_severance_slip**
@@ -201,7 +201,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_severance_payment_plan**
@@ -255,7 +255,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**SeverancePaymentPlanListResponse**](SeverancePaymentPlanListResponse.md)
+[**SeverancePaymentPlanListResponse**](../models/SeverancePaymentPlanListResponse.md)
 
 ### HTTP request headers
 
@@ -269,7 +269,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_severance_payment_plan_by_id**
@@ -317,7 +317,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SeverancePaymentPlanResponse**](SeverancePaymentPlanResponse.md)
+[**SeverancePaymentPlanResponse**](../models/SeverancePaymentPlanResponse.md)
 
 ### HTTP request headers
 
@@ -331,7 +331,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_severance_plans**
@@ -384,7 +384,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**SeverancePlanListResponse**](SeverancePlanListResponse.md)
+[**SeverancePlanListResponse**](../models/SeverancePlanListResponse.md)
 
 ### HTTP request headers
 
@@ -398,7 +398,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_severance_plans_by_id**
@@ -446,7 +446,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SeverancePlanResponseWithDetail**](SeverancePlanResponseWithDetail.md)
+[**SeverancePlanResponseWithDetail**](../models/SeverancePlanResponseWithDetail.md)
 
 ### HTTP request headers
 
@@ -460,5 +460,5 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

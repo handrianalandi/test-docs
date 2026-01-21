@@ -24,7 +24,7 @@ employee_variable_list_response_dict = employee_variable_list_response_instance.
 # create an instance of EmployeeVariableListResponse from a dict
 employee_variable_list_response_from_dict = EmployeeVariableListResponse.from_dict(employee_variable_list_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

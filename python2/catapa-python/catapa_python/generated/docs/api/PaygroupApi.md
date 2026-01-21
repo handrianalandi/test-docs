@@ -58,7 +58,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**PaygroupListResponse**](PaygroupListResponse.md)
+[**PaygroupListResponse**](../models/PaygroupListResponse.md)
 
 ### HTTP request headers
 
@@ -72,5 +72,5 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

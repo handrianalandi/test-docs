@@ -33,7 +33,7 @@ widget_list_response_dict = widget_list_response_instance.to_dict()
 # create an instance of WidgetListResponse from a dict
 widget_list_response_from_dict = WidgetListResponse.from_dict(widget_list_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

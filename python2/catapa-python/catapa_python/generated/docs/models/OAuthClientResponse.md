@@ -30,7 +30,7 @@ o_auth_client_response_dict = o_auth_client_response_instance.to_dict()
 # create an instance of OAuthClientResponse from a dict
 o_auth_client_response_from_dict = OAuthClientResponse.from_dict(o_auth_client_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

@@ -25,7 +25,7 @@ termination_bpjs_manpower_reason_response_dict = termination_bpjs_manpower_reaso
 # create an instance of TerminationBPJSManpowerReasonResponse from a dict
 termination_bpjs_manpower_reason_response_from_dict = TerminationBPJSManpowerReasonResponse.from_dict(termination_bpjs_manpower_reason_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

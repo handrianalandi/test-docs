@@ -33,7 +33,7 @@ salary_payment_list_response_dict = salary_payment_list_response_instance.to_dic
 # create an instance of SalaryPaymentListResponse from a dict
 salary_payment_list_response_from_dict = SalaryPaymentListResponse.from_dict(salary_payment_list_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

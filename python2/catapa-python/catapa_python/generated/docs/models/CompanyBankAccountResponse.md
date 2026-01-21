@@ -29,7 +29,7 @@ company_bank_account_response_dict = company_bank_account_response_instance.to_d
 # create an instance of CompanyBankAccountResponse from a dict
 company_bank_account_response_from_dict = CompanyBankAccountResponse.from_dict(company_bank_account_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

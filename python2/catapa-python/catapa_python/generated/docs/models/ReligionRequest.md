@@ -25,7 +25,7 @@ religion_request_dict = religion_request_instance.to_dict()
 # create an instance of ReligionRequest from a dict
 religion_request_from_dict = ReligionRequest.from_dict(religion_request_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

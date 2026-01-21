@@ -33,7 +33,7 @@ location_group_list_response_dict = location_group_list_response_instance.to_dic
 # create an instance of LocationGroupListResponse from a dict
 location_group_list_response_from_dict = LocationGroupListResponse.from_dict(location_group_list_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

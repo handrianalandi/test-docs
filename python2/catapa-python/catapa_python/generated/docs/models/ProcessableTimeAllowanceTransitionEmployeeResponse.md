@@ -27,7 +27,7 @@ processable_time_allowance_transition_employee_response_dict = processable_time_
 # create an instance of ProcessableTimeAllowanceTransitionEmployeeResponse from a dict
 processable_time_allowance_transition_employee_response_from_dict = ProcessableTimeAllowanceTransitionEmployeeResponse.from_dict(processable_time_allowance_transition_employee_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

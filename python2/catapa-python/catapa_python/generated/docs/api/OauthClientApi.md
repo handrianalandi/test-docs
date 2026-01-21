@@ -56,7 +56,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**OAuthClientResponse**](OAuthClientResponse.md)
+[**OAuthClientResponse**](../models/OAuthClientResponse.md)
 
 ### HTTP request headers
 
@@ -71,7 +71,7 @@ Name | Type | Description  | Notes
 **400** | Bad Request |  -  |
 **404** | Not Found |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **list_all_o_auth_clients**
@@ -121,7 +121,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**OAuthClientListResponse**](OAuthClientListResponse.md)
+[**OAuthClientListResponse**](../models/OAuthClientListResponse.md)
 
 ### HTTP request headers
 
@@ -135,5 +135,5 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

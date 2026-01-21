@@ -24,7 +24,7 @@ count_response_dict = count_response_instance.to_dict()
 # create an instance of CountResponse from a dict
 count_response_from_dict = CountResponse.from_dict(count_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

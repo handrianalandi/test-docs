@@ -33,7 +33,7 @@ company_detail_request_dict = company_detail_request_instance.to_dict()
 # create an instance of CompanyDetailRequest from a dict
 company_detail_request_from_dict = CompanyDetailRequest.from_dict(company_detail_request_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

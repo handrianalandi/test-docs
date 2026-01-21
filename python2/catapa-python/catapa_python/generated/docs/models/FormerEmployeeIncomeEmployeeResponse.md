@@ -34,7 +34,7 @@ former_employee_income_employee_response_dict = former_employee_income_employee_
 # create an instance of FormerEmployeeIncomeEmployeeResponse from a dict
 former_employee_income_employee_response_from_dict = FormerEmployeeIncomeEmployeeResponse.from_dict(former_employee_income_employee_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

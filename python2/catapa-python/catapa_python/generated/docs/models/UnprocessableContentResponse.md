@@ -25,7 +25,7 @@ unprocessable_content_response_dict = unprocessable_content_response_instance.to
 # create an instance of UnprocessableContentResponse from a dict
 unprocessable_content_response_from_dict = UnprocessableContentResponse.from_dict(unprocessable_content_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

@@ -33,7 +33,7 @@ shift_pattern_template_list_response_dict = shift_pattern_template_list_response
 # create an instance of ShiftPatternTemplateListResponse from a dict
 shift_pattern_template_list_response_from_dict = ShiftPatternTemplateListResponse.from_dict(shift_pattern_template_list_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

@@ -63,7 +63,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**EmploymentDataResponse**](EmploymentDataResponse.md)
+[**EmploymentDataResponse**](../models/EmploymentDataResponse.md)
 
 ### HTTP request headers
 
@@ -77,7 +77,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_employment_status_histories**
@@ -129,7 +129,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**EmploymentStatusHistoryListResponse**](EmploymentStatusHistoryListResponse.md)
+[**EmploymentStatusHistoryListResponse**](../models/EmploymentStatusHistoryListResponse.md)
 
 ### HTTP request headers
 
@@ -143,7 +143,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_employment_statuses**
@@ -195,7 +195,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**EmploymentStatusListResponse**](EmploymentStatusListResponse.md)
+[**EmploymentStatusListResponse**](../models/EmploymentStatusListResponse.md)
 
 ### HTTP request headers
 
@@ -209,7 +209,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **update_employment_status_by_employee**
@@ -259,11 +259,11 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **employee_id** | **str**|  | 
- **employment_data_request** | [**EmploymentDataRequest**](EmploymentDataRequest.md)|  | [optional] 
+ **employment_data_request** | [**EmploymentDataRequest**](../models/EmploymentDataRequest.md)|  | [optional] 
 
 ### Return type
 
-[**EmploymentDataResponse**](EmploymentDataResponse.md)
+[**EmploymentDataResponse**](../models/EmploymentDataResponse.md)
 
 ### HTTP request headers
 
@@ -277,5 +277,5 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

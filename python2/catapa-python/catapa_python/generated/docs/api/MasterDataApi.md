@@ -70,11 +70,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **create_city_request** | [**CreateCityRequest**](CreateCityRequest.md)|  | [optional] 
+ **create_city_request** | [**CreateCityRequest**](../models/CreateCityRequest.md)|  | [optional] 
 
 ### Return type
 
-[**CityResponse**](CityResponse.md)
+[**CityResponse**](../models/CityResponse.md)
 
 ### HTTP request headers
 
@@ -88,7 +88,7 @@ Name | Type | Description  | Notes
 **201** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **create_country**
@@ -132,11 +132,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **country_request** | [**CountryRequest**](CountryRequest.md)|  | [optional] 
+ **country_request** | [**CountryRequest**](../models/CountryRequest.md)|  | [optional] 
 
 ### Return type
 
-[**CountryResponse**](CountryResponse.md)
+[**CountryResponse**](../models/CountryResponse.md)
 
 ### HTTP request headers
 
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 **201** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **create_employment_type**
@@ -194,11 +194,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **employment_type_request** | [**EmploymentTypeRequest**](EmploymentTypeRequest.md)|  | [optional] 
+ **employment_type_request** | [**EmploymentTypeRequest**](../models/EmploymentTypeRequest.md)|  | [optional] 
 
 ### Return type
 
-[**EmploymentTypeResponse**](EmploymentTypeResponse.md)
+[**EmploymentTypeResponse**](../models/EmploymentTypeResponse.md)
 
 ### HTTP request headers
 
@@ -212,7 +212,7 @@ Name | Type | Description  | Notes
 **201** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **create_religion**
@@ -256,11 +256,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **religion_request** | [**ReligionRequest**](ReligionRequest.md)|  | [optional] 
+ **religion_request** | [**ReligionRequest**](../models/ReligionRequest.md)|  | [optional] 
 
 ### Return type
 
-[**ReligionResponse**](ReligionResponse.md)
+[**ReligionResponse**](../models/ReligionResponse.md)
 
 ### HTTP request headers
 
@@ -274,7 +274,7 @@ Name | Type | Description  | Notes
 **201** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_bank_branches**
@@ -324,7 +324,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**BankBranchListResponse**](BankBranchListResponse.md)
+[**BankBranchListResponse**](../models/BankBranchListResponse.md)
 
 ### HTTP request headers
 
@@ -338,7 +338,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_banks**
@@ -382,7 +382,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**BankListResponse**](BankListResponse.md)
+[**BankListResponse**](../models/BankListResponse.md)
 
 ### HTTP request headers
 
@@ -396,7 +396,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_cities**
@@ -440,7 +440,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**CityListResponse**](CityListResponse.md)
+[**CityListResponse**](../models/CityListResponse.md)
 
 ### HTTP request headers
 
@@ -454,7 +454,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_countries**
@@ -498,7 +498,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**CountryListResponse**](CountryListResponse.md)
+[**CountryListResponse**](../models/CountryListResponse.md)
 
 ### HTTP request headers
 
@@ -512,7 +512,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_currencies**
@@ -556,7 +556,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**CurrencyListResponse**](CurrencyListResponse.md)
+[**CurrencyListResponse**](../models/CurrencyListResponse.md)
 
 ### HTTP request headers
 
@@ -570,7 +570,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_education_levels**
@@ -622,7 +622,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**EducationLevelListResponse**](EducationLevelListResponse.md)
+[**EducationLevelListResponse**](../models/EducationLevelListResponse.md)
 
 ### HTTP request headers
 
@@ -636,7 +636,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_employment_status_type**
@@ -696,7 +696,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**EmploymentStatusTypeListResponse**](EmploymentStatusTypeListResponse.md)
+[**EmploymentStatusTypeListResponse**](../models/EmploymentStatusTypeListResponse.md)
 
 ### HTTP request headers
 
@@ -710,7 +710,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_employment_type**
@@ -763,7 +763,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**EmploymentTypeListResponse**](EmploymentTypeListResponse.md)
+[**EmploymentTypeListResponse**](../models/EmploymentTypeListResponse.md)
 
 ### HTTP request headers
 
@@ -777,7 +777,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_family_relations**
@@ -827,7 +827,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**FamilyMemberRelationListResponse**](FamilyMemberRelationListResponse.md)
+[**FamilyMemberRelationListResponse**](../models/FamilyMemberRelationListResponse.md)
 
 ### HTTP request headers
 
@@ -841,7 +841,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_field_of_studies**
@@ -893,7 +893,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**FieldOfStudyListResponse**](FieldOfStudyListResponse.md)
+[**FieldOfStudyListResponse**](../models/FieldOfStudyListResponse.md)
 
 ### HTTP request headers
 
@@ -907,7 +907,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_historical_educations**
@@ -959,7 +959,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**EducationListResponse**](EducationListResponse.md)
+[**EducationListResponse**](../models/EducationListResponse.md)
 
 ### HTTP request headers
 
@@ -973,7 +973,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_identity_card**
@@ -1023,7 +1023,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**IdentityCardListResponse**](IdentityCardListResponse.md)
+[**IdentityCardListResponse**](../models/IdentityCardListResponse.md)
 
 ### HTTP request headers
 
@@ -1037,7 +1037,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_institutions**
@@ -1089,7 +1089,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InstitutionListResponse**](InstitutionListResponse.md)
+[**InstitutionListResponse**](../models/InstitutionListResponse.md)
 
 ### HTTP request headers
 
@@ -1103,7 +1103,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_religions**
@@ -1147,7 +1147,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**ReligionListResponse**](ReligionListResponse.md)
+[**ReligionListResponse**](../models/ReligionListResponse.md)
 
 ### HTTP request headers
 
@@ -1161,7 +1161,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_states**
@@ -1205,7 +1205,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**StateListResponse**](StateListResponse.md)
+[**StateListResponse**](../models/StateListResponse.md)
 
 ### HTTP request headers
 
@@ -1219,7 +1219,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **update_employment_type**
@@ -1265,11 +1265,11 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**|  | 
- **employment_type_request** | [**EmploymentTypeRequest**](EmploymentTypeRequest.md)|  | [optional] 
+ **employment_type_request** | [**EmploymentTypeRequest**](../models/EmploymentTypeRequest.md)|  | [optional] 
 
 ### Return type
 
-[**EmploymentTypeResponse**](EmploymentTypeResponse.md)
+[**EmploymentTypeResponse**](../models/EmploymentTypeResponse.md)
 
 ### HTTP request headers
 
@@ -1283,5 +1283,5 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

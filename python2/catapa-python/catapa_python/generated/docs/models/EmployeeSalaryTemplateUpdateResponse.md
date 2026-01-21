@@ -24,7 +24,7 @@ employee_salary_template_update_response_dict = employee_salary_template_update_
 # create an instance of EmployeeSalaryTemplateUpdateResponse from a dict
 employee_salary_template_update_response_from_dict = EmployeeSalaryTemplateUpdateResponse.from_dict(employee_salary_template_update_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

@@ -33,7 +33,7 @@ monthly_tax_report_list_response_dict = monthly_tax_report_list_response_instanc
 # create an instance of MonthlyTaxReportListResponse from a dict
 monthly_tax_report_list_response_from_dict = MonthlyTaxReportListResponse.from_dict(monthly_tax_report_list_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

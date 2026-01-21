@@ -43,7 +43,7 @@ tax_membership_history_response_dict = tax_membership_history_response_instance.
 # create an instance of TaxMembershipHistoryResponse from a dict
 tax_membership_history_response_from_dict = TaxMembershipHistoryResponse.from_dict(tax_membership_history_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

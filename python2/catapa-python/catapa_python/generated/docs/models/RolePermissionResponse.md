@@ -29,7 +29,7 @@ role_permission_response_dict = role_permission_response_instance.to_dict()
 # create an instance of RolePermissionResponse from a dict
 role_permission_response_from_dict = RolePermissionResponse.from_dict(role_permission_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

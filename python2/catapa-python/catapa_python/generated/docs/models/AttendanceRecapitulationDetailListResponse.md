@@ -33,7 +33,7 @@ attendance_recapitulation_detail_list_response_dict = attendance_recapitulation_
 # create an instance of AttendanceRecapitulationDetailListResponse from a dict
 attendance_recapitulation_detail_list_response_from_dict = AttendanceRecapitulationDetailListResponse.from_dict(attendance_recapitulation_detail_list_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

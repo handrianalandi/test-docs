@@ -31,7 +31,7 @@ position_cost_center_response_dict = position_cost_center_response_instance.to_d
 # create an instance of PositionCostCenterResponse from a dict
 position_cost_center_response_from_dict = PositionCostCenterResponse.from_dict(position_cost_center_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

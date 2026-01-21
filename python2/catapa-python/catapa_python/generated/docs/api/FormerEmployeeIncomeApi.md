@@ -59,7 +59,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**FormerEmployeeIncomeResponse**](FormerEmployeeIncomeResponse.md)
+[**FormerEmployeeIncomeResponse**](../models/FormerEmployeeIncomeResponse.md)
 
 ### HTTP request headers
 
@@ -73,7 +73,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_former_employee_income_employee**
@@ -124,7 +124,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**FormerEmployeeIncomeEmployeeListResponse**](FormerEmployeeIncomeEmployeeListResponse.md)
+[**FormerEmployeeIncomeEmployeeListResponse**](../models/FormerEmployeeIncomeEmployeeListResponse.md)
 
 ### HTTP request headers
 
@@ -138,7 +138,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_former_employee_income_employee_by_former_employee_income_id**
@@ -193,7 +193,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**FormerEmployeeIncomeEmployeeListResponse**](FormerEmployeeIncomeEmployeeListResponse.md)
+[**FormerEmployeeIncomeEmployeeListResponse**](../models/FormerEmployeeIncomeEmployeeListResponse.md)
 
 ### HTTP request headers
 
@@ -207,7 +207,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_former_employee_incomes**
@@ -262,7 +262,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**FormerEmployeeIncomeListResponse**](FormerEmployeeIncomeListResponse.md)
+[**FormerEmployeeIncomeListResponse**](../models/FormerEmployeeIncomeListResponse.md)
 
 ### HTTP request headers
 
@@ -276,7 +276,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **update_former_employee_income_employee_by_former_employee_income_id**
@@ -322,7 +322,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **former_employee_income_id** | **str**|  | 
- **former_employee_income_employee_amount_update_request** | [**List[FormerEmployeeIncomeEmployeeAmountUpdateRequest]**](FormerEmployeeIncomeEmployeeAmountUpdateRequest.md)|  | [optional] 
+ **former_employee_income_employee_amount_update_request** | [**List[FormerEmployeeIncomeEmployeeAmountUpdateRequest]**](../models/FormerEmployeeIncomeEmployeeAmountUpdateRequest.md)|  | [optional] 
 
 ### Return type
 
@@ -340,5 +340,5 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

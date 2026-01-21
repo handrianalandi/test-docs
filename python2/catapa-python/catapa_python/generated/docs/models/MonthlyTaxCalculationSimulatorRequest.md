@@ -27,7 +27,7 @@ monthly_tax_calculation_simulator_request_dict = monthly_tax_calculation_simulat
 # create an instance of MonthlyTaxCalculationSimulatorRequest from a dict
 monthly_tax_calculation_simulator_request_from_dict = MonthlyTaxCalculationSimulatorRequest.from_dict(monthly_tax_calculation_simulator_request_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

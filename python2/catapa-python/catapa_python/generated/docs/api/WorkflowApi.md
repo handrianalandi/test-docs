@@ -57,11 +57,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **workflow_reason_request** | [**WorkflowReasonRequest**](WorkflowReasonRequest.md)|  | [optional] 
+ **workflow_reason_request** | [**WorkflowReasonRequest**](../models/WorkflowReasonRequest.md)|  | [optional] 
 
 ### Return type
 
-[**WorkflowReasonResponse**](WorkflowReasonResponse.md)
+[**WorkflowReasonResponse**](../models/WorkflowReasonResponse.md)
 
 ### HTTP request headers
 
@@ -75,7 +75,7 @@ Name | Type | Description  | Notes
 **201** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **create_workflow_reason_category**
@@ -119,11 +119,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **workflow_reason_category_request** | [**WorkflowReasonCategoryRequest**](WorkflowReasonCategoryRequest.md)|  | [optional] 
+ **workflow_reason_category_request** | [**WorkflowReasonCategoryRequest**](../models/WorkflowReasonCategoryRequest.md)|  | [optional] 
 
 ### Return type
 
-[**WorkflowReasonCategoryResponse**](WorkflowReasonCategoryResponse.md)
+[**WorkflowReasonCategoryResponse**](../models/WorkflowReasonCategoryResponse.md)
 
 ### HTTP request headers
 
@@ -137,7 +137,7 @@ Name | Type | Description  | Notes
 **201** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_workflow_activity**
@@ -189,7 +189,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**WorkflowActivityListResponse**](WorkflowActivityListResponse.md)
+[**WorkflowActivityListResponse**](../models/WorkflowActivityListResponse.md)
 
 ### HTTP request headers
 
@@ -203,7 +203,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_workflow_reason**
@@ -255,7 +255,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**WorkflowReasonListResponse**](WorkflowReasonListResponse.md)
+[**WorkflowReasonListResponse**](../models/WorkflowReasonListResponse.md)
 
 ### HTTP request headers
 
@@ -269,7 +269,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_workflow_reason_category**
@@ -320,7 +320,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**WorkflowReasonCategoryListResponse**](WorkflowReasonCategoryListResponse.md)
+[**WorkflowReasonCategoryListResponse**](../models/WorkflowReasonCategoryListResponse.md)
 
 ### HTTP request headers
 
@@ -334,7 +334,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **update_workflow_reason**
@@ -380,11 +380,11 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**|  | 
- **workflow_reason_request** | [**WorkflowReasonRequest**](WorkflowReasonRequest.md)|  | [optional] 
+ **workflow_reason_request** | [**WorkflowReasonRequest**](../models/WorkflowReasonRequest.md)|  | [optional] 
 
 ### Return type
 
-[**WorkflowReasonResponse**](WorkflowReasonResponse.md)
+[**WorkflowReasonResponse**](../models/WorkflowReasonResponse.md)
 
 ### HTTP request headers
 
@@ -398,7 +398,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **update_workflow_reason_categories**
@@ -444,11 +444,11 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**|  | 
- **workflow_reason_category_request** | [**WorkflowReasonCategoryRequest**](WorkflowReasonCategoryRequest.md)|  | [optional] 
+ **workflow_reason_category_request** | [**WorkflowReasonCategoryRequest**](../models/WorkflowReasonCategoryRequest.md)|  | [optional] 
 
 ### Return type
 
-[**WorkflowReasonCategoryResponse**](WorkflowReasonCategoryResponse.md)
+[**WorkflowReasonCategoryResponse**](../models/WorkflowReasonCategoryResponse.md)
 
 ### HTTP request headers
 
@@ -462,5 +462,5 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

@@ -33,7 +33,7 @@ position_vacancy_status_list_response_dict = position_vacancy_status_list_respon
 # create an instance of PositionVacancyStatusListResponse from a dict
 position_vacancy_status_list_response_from_dict = PositionVacancyStatusListResponse.from_dict(position_vacancy_status_list_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

@@ -28,7 +28,7 @@ additional_family_membership_response_dict = additional_family_membership_respon
 # create an instance of AdditionalFamilyMembershipResponse from a dict
 additional_family_membership_response_from_dict = AdditionalFamilyMembershipResponse.from_dict(additional_family_membership_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

@@ -33,7 +33,7 @@ field_of_study_list_response_dict = field_of_study_list_response_instance.to_dic
 # create an instance of FieldOfStudyListResponse from a dict
 field_of_study_list_response_from_dict = FieldOfStudyListResponse.from_dict(field_of_study_list_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

@@ -77,11 +77,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tax_calculation_request** | [**TaxCalculationRequest**](TaxCalculationRequest.md)|  | [optional] 
+ **tax_calculation_request** | [**TaxCalculationRequest**](../models/TaxCalculationRequest.md)|  | [optional] 
 
 ### Return type
 
-[**TaxCalculationDetailResponse**](TaxCalculationDetailResponse.md)
+[**TaxCalculationDetailResponse**](../models/TaxCalculationDetailResponse.md)
 
 ### HTTP request headers
 
@@ -95,7 +95,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **download1721_a1_report**
@@ -157,7 +157,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **download1721_vi_report**
@@ -219,7 +219,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **download1721_vi_tax_report**
@@ -281,7 +281,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **download1721_vii_report**
@@ -343,7 +343,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **download1721_vii_tax_report**
@@ -405,7 +405,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **download1721_viii_report**
@@ -467,7 +467,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get1721_a1_reports**
@@ -511,7 +511,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**TaxReport1721A1ListResponse**](TaxReport1721A1ListResponse.md)
+[**TaxReport1721A1ListResponse**](../models/TaxReport1721A1ListResponse.md)
 
 ### HTTP request headers
 
@@ -525,7 +525,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get1721_vi_reports**
@@ -569,7 +569,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**TaxReport1721VIListResponse**](TaxReport1721VIListResponse.md)
+[**TaxReport1721VIListResponse**](../models/TaxReport1721VIListResponse.md)
 
 ### HTTP request headers
 
@@ -583,7 +583,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get1721_vi_tax_reports**
@@ -627,7 +627,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**TaxReport1721VIListResponse**](TaxReport1721VIListResponse.md)
+[**TaxReport1721VIListResponse**](../models/TaxReport1721VIListResponse.md)
 
 ### HTTP request headers
 
@@ -641,7 +641,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get1721_vii_reports**
@@ -685,7 +685,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**TaxReport1721VIIListResponse**](TaxReport1721VIIListResponse.md)
+[**TaxReport1721VIIListResponse**](../models/TaxReport1721VIIListResponse.md)
 
 ### HTTP request headers
 
@@ -699,7 +699,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get1721_vii_tax_reports**
@@ -743,7 +743,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**TaxReport1721VIIListResponse**](TaxReport1721VIIListResponse.md)
+[**TaxReport1721VIIListResponse**](../models/TaxReport1721VIIListResponse.md)
 
 ### HTTP request headers
 
@@ -757,7 +757,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get1721_viii_reports**
@@ -801,7 +801,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**TaxReport1721VIIIListResponse**](TaxReport1721VIIIListResponse.md)
+[**TaxReport1721VIIIListResponse**](../models/TaxReport1721VIIIListResponse.md)
 
 ### HTTP request headers
 
@@ -815,7 +815,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_detailed1721_vi_reports**
@@ -859,7 +859,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**TaxReport1721VIDetailResponse**](TaxReport1721VIDetailResponse.md)
+[**TaxReport1721VIDetailResponse**](../models/TaxReport1721VIDetailResponse.md)
 
 ### HTTP request headers
 
@@ -873,7 +873,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_detailed1721_vi_tax_reports**
@@ -917,7 +917,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**TaxReport1721VIDetailResponse**](TaxReport1721VIDetailResponse.md)
+[**TaxReport1721VIDetailResponse**](../models/TaxReport1721VIDetailResponse.md)
 
 ### HTTP request headers
 
@@ -931,7 +931,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_kpp**
@@ -982,7 +982,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**KppListResponse**](KppListResponse.md)
+[**KppListResponse**](../models/KppListResponse.md)
 
 ### HTTP request headers
 
@@ -996,7 +996,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_monthly_tax_report**
@@ -1055,7 +1055,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**MonthlyTaxReportListResponse**](MonthlyTaxReportListResponse.md)
+[**MonthlyTaxReportListResponse**](../models/MonthlyTaxReportListResponse.md)
 
 ### HTTP request headers
 
@@ -1069,7 +1069,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_pph21_policy**
@@ -1113,7 +1113,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**Pph21PolicyResponse**](Pph21PolicyResponse.md)
+[**Pph21PolicyResponse**](../models/Pph21PolicyResponse.md)
 
 ### HTTP request headers
 
@@ -1127,7 +1127,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_ptkp_categories**
@@ -1178,7 +1178,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**PtkpCategoryListResponse**](PtkpCategoryListResponse.md)
+[**PtkpCategoryListResponse**](../models/PtkpCategoryListResponse.md)
 
 ### HTTP request headers
 
@@ -1192,7 +1192,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_tax_calculations**
@@ -1251,7 +1251,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**TaxCalculationListResponse**](TaxCalculationListResponse.md)
+[**TaxCalculationListResponse**](../models/TaxCalculationListResponse.md)
 
 ### HTTP request headers
 
@@ -1265,7 +1265,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_tax_calculations_by_external_id**
@@ -1313,7 +1313,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**TaxCalculationDetailResponse**](TaxCalculationDetailResponse.md)
+[**TaxCalculationDetailResponse**](../models/TaxCalculationDetailResponse.md)
 
 ### HTTP request headers
 
@@ -1327,7 +1327,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_tax_calculations_by_id**
@@ -1375,7 +1375,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**TaxCalculationDetailResponse**](TaxCalculationDetailResponse.md)
+[**TaxCalculationDetailResponse**](../models/TaxCalculationDetailResponse.md)
 
 ### HTTP request headers
 
@@ -1389,7 +1389,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **monthly_tax_detail_find_all**
@@ -1454,7 +1454,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**MonthlyTaxDetailListResponse**](MonthlyTaxDetailListResponse.md)
+[**MonthlyTaxDetailListResponse**](../models/MonthlyTaxDetailListResponse.md)
 
 ### HTTP request headers
 
@@ -1468,7 +1468,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **simulate_annual_tax**
@@ -1516,11 +1516,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **annual_tax_calculation_simulator_request** | [**AnnualTaxCalculationSimulatorRequest**](AnnualTaxCalculationSimulatorRequest.md)|  | 
+ **annual_tax_calculation_simulator_request** | [**AnnualTaxCalculationSimulatorRequest**](../models/AnnualTaxCalculationSimulatorRequest.md)|  | 
 
 ### Return type
 
-[**AnnualTaxCalculationSimulatorResponse**](AnnualTaxCalculationSimulatorResponse.md)
+[**AnnualTaxCalculationSimulatorResponse**](../models/AnnualTaxCalculationSimulatorResponse.md)
 
 ### HTTP request headers
 
@@ -1534,7 +1534,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **simulate_monthly_tax**
@@ -1581,11 +1581,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **monthly_tax_calculation_simulator_request** | [**MonthlyTaxCalculationSimulatorRequest**](MonthlyTaxCalculationSimulatorRequest.md)|  | 
+ **monthly_tax_calculation_simulator_request** | [**MonthlyTaxCalculationSimulatorRequest**](../models/MonthlyTaxCalculationSimulatorRequest.md)|  | 
 
 ### Return type
 
-[**MonthlyTaxCalculationSimulatorResponse**](MonthlyTaxCalculationSimulatorResponse.md)
+[**MonthlyTaxCalculationSimulatorResponse**](../models/MonthlyTaxCalculationSimulatorResponse.md)
 
 ### HTTP request headers
 
@@ -1599,7 +1599,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **undo_tax_calculation_by_id**
@@ -1661,7 +1661,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **undo_tax_calculations_by_external_id**
@@ -1723,5 +1723,5 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

@@ -64,11 +64,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **employee_variable_request** | [**EmployeeVariableRequest**](EmployeeVariableRequest.md)|  | [optional] 
+ **employee_variable_request** | [**EmployeeVariableRequest**](../models/EmployeeVariableRequest.md)|  | [optional] 
 
 ### Return type
 
-[**EmployeeVariableResponse**](EmployeeVariableResponse.md)
+[**EmployeeVariableResponse**](../models/EmployeeVariableResponse.md)
 
 ### HTTP request headers
 
@@ -82,7 +82,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **create_employee_variable_metadata**
@@ -126,11 +126,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **employee_variable_metadata_request** | [**EmployeeVariableMetadataRequest**](EmployeeVariableMetadataRequest.md)|  | [optional] 
+ **employee_variable_metadata_request** | [**EmployeeVariableMetadataRequest**](../models/EmployeeVariableMetadataRequest.md)|  | [optional] 
 
 ### Return type
 
-[**EmployeeVariableMetadataResponse**](EmployeeVariableMetadataResponse.md)
+[**EmployeeVariableMetadataResponse**](../models/EmployeeVariableMetadataResponse.md)
 
 ### HTTP request headers
 
@@ -144,7 +144,7 @@ Name | Type | Description  | Notes
 **201** | CREATED |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **create_or_update_employee_variables**
@@ -188,11 +188,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **employee_variable_request** | [**List[EmployeeVariableRequest]**](EmployeeVariableRequest.md)|  | [optional] 
+ **employee_variable_request** | [**List[EmployeeVariableRequest]**](../models/EmployeeVariableRequest.md)|  | [optional] 
 
 ### Return type
 
-[**List[EmployeeVariableResponse]**](EmployeeVariableResponse.md)
+[**List[EmployeeVariableResponse]**](../models/EmployeeVariableResponse.md)
 
 ### HTTP request headers
 
@@ -206,7 +206,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **delete_all_aperiodic_employee_variables**
@@ -262,7 +262,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**CountResponse**](CountResponse.md)
+[**CountResponse**](../models/CountResponse.md)
 
 ### HTTP request headers
 
@@ -276,7 +276,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **delete_employee_variable_metadata**
@@ -334,7 +334,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**BulkOperationResponse**](BulkOperationResponse.md)
+[**BulkOperationResponse**](../models/BulkOperationResponse.md)
 
 ### HTTP request headers
 
@@ -348,7 +348,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **delete_employee_variables**
@@ -402,7 +402,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**BulkOperationResponse**](BulkOperationResponse.md)
+[**BulkOperationResponse**](../models/BulkOperationResponse.md)
 
 ### HTTP request headers
 
@@ -416,7 +416,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_aperiodic_employee_variables**
@@ -460,7 +460,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**EmployeeVariableListResponse**](EmployeeVariableListResponse.md)
+[**EmployeeVariableListResponse**](../models/EmployeeVariableListResponse.md)
 
 ### HTTP request headers
 
@@ -474,7 +474,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_employee_variable_by_id**
@@ -522,7 +522,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**EmployeeVariableResponse**](EmployeeVariableResponse.md)
+[**EmployeeVariableResponse**](../models/EmployeeVariableResponse.md)
 
 ### HTTP request headers
 
@@ -536,7 +536,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_employee_variable_metadata**
@@ -589,7 +589,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**EmployeeVariableMetadataListResponse**](EmployeeVariableMetadataListResponse.md)
+[**EmployeeVariableMetadataListResponse**](../models/EmployeeVariableMetadataListResponse.md)
 
 ### HTTP request headers
 
@@ -603,7 +603,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_employee_variable_metadata_by_id**
@@ -651,7 +651,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**EmployeeVariableMetadataResponse**](EmployeeVariableMetadataResponse.md)
+[**EmployeeVariableMetadataResponse**](../models/EmployeeVariableMetadataResponse.md)
 
 ### HTTP request headers
 
@@ -665,7 +665,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_employee_variables**
@@ -721,7 +721,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**EmployeeVariableListResponse**](EmployeeVariableListResponse.md)
+[**EmployeeVariableListResponse**](../models/EmployeeVariableListResponse.md)
 
 ### HTTP request headers
 
@@ -735,7 +735,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_periodic_employee_variables**
@@ -779,7 +779,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**EmployeeVariableListResponse**](EmployeeVariableListResponse.md)
+[**EmployeeVariableListResponse**](../models/EmployeeVariableListResponse.md)
 
 ### HTTP request headers
 
@@ -793,7 +793,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **update_employee_variable_by_id**
@@ -839,11 +839,11 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**|  | 
- **employee_variable_request** | [**EmployeeVariableRequest**](EmployeeVariableRequest.md)|  | [optional] 
+ **employee_variable_request** | [**EmployeeVariableRequest**](../models/EmployeeVariableRequest.md)|  | [optional] 
 
 ### Return type
 
-[**EmployeeVariableResponse**](EmployeeVariableResponse.md)
+[**EmployeeVariableResponse**](../models/EmployeeVariableResponse.md)
 
 ### HTTP request headers
 
@@ -857,7 +857,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **update_employee_variable_metadata**
@@ -903,11 +903,11 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**|  | 
- **employee_variable_metadata_request** | [**EmployeeVariableMetadataRequest**](EmployeeVariableMetadataRequest.md)|  | [optional] 
+ **employee_variable_metadata_request** | [**EmployeeVariableMetadataRequest**](../models/EmployeeVariableMetadataRequest.md)|  | [optional] 
 
 ### Return type
 
-[**EmployeeVariableMetadataResponse**](EmployeeVariableMetadataResponse.md)
+[**EmployeeVariableMetadataResponse**](../models/EmployeeVariableMetadataResponse.md)
 
 ### HTTP request headers
 
@@ -921,5 +921,5 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

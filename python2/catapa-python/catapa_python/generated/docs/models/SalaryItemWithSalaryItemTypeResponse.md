@@ -27,7 +27,7 @@ salary_item_with_salary_item_type_response_dict = salary_item_with_salary_item_t
 # create an instance of SalaryItemWithSalaryItemTypeResponse from a dict
 salary_item_with_salary_item_type_response_from_dict = SalaryItemWithSalaryItemTypeResponse.from_dict(salary_item_with_salary_item_type_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

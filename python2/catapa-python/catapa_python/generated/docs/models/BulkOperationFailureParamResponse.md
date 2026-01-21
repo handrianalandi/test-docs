@@ -25,7 +25,7 @@ bulk_operation_failure_param_response_dict = bulk_operation_failure_param_respon
 # create an instance of BulkOperationFailureParamResponse from a dict
 bulk_operation_failure_param_response_from_dict = BulkOperationFailureParamResponse.from_dict(bulk_operation_failure_param_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

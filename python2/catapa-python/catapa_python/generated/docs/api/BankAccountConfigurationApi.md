@@ -58,11 +58,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id_request** | [**List[IdRequest]**](IdRequest.md)|  | [optional] 
+ **id_request** | [**List[IdRequest]**](../models/IdRequest.md)|  | [optional] 
 
 ### Return type
 
-[**BulkOperationResponse**](BulkOperationResponse.md)
+[**BulkOperationResponse**](../models/BulkOperationResponse.md)
 
 ### HTTP request headers
 
@@ -76,7 +76,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **cancel_approval**
@@ -136,7 +136,7 @@ void (empty response body)
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **create_bank_account_configuration_approval**
@@ -182,11 +182,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **update_bank_account_configuration_request** | [**UpdateBankAccountConfigurationRequest**](UpdateBankAccountConfigurationRequest.md)|  | [optional] 
+ **update_bank_account_configuration_request** | [**UpdateBankAccountConfigurationRequest**](../models/UpdateBankAccountConfigurationRequest.md)|  | [optional] 
 
 ### Return type
 
-[**BankAccountConfigurationResponse**](BankAccountConfigurationResponse.md)
+[**BankAccountConfigurationResponse**](../models/BankAccountConfigurationResponse.md)
 
 ### HTTP request headers
 
@@ -200,7 +200,7 @@ Name | Type | Description  | Notes
 **201** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_bank_account_configuration_by_id**
@@ -248,7 +248,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**BankAccountConfigurationResponse**](BankAccountConfigurationResponse.md)
+[**BankAccountConfigurationResponse**](../models/BankAccountConfigurationResponse.md)
 
 ### HTTP request headers
 
@@ -262,7 +262,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **get_bank_account_configurations**
@@ -316,7 +316,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**BankAccountConfigurationListResponse**](BankAccountConfigurationListResponse.md)
+[**BankAccountConfigurationListResponse**](../models/BankAccountConfigurationListResponse.md)
 
 ### HTTP request headers
 
@@ -330,7 +330,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **reject_approval**
@@ -374,11 +374,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **reject_approval_request** | [**List[RejectApprovalRequest]**](RejectApprovalRequest.md)|  | [optional] 
+ **reject_approval_request** | [**List[RejectApprovalRequest]**](../models/RejectApprovalRequest.md)|  | [optional] 
 
 ### Return type
 
-[**BulkOperationResponse**](BulkOperationResponse.md)
+[**BulkOperationResponse**](../models/BulkOperationResponse.md)
 
 ### HTTP request headers
 
@@ -392,7 +392,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **undo**
@@ -436,11 +436,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id_request** | [**List[IdRequest]**](IdRequest.md)|  | [optional] 
+ **id_request** | [**List[IdRequest]**](../models/IdRequest.md)|  | [optional] 
 
 ### Return type
 
-[**BulkOperationResponse**](BulkOperationResponse.md)
+[**BulkOperationResponse**](../models/BulkOperationResponse.md)
 
 ### HTTP request headers
 
@@ -454,7 +454,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **update_bank_account_configuration_approval**
@@ -500,11 +500,11 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**|  | 
- **update_bank_account_configuration_request** | [**UpdateBankAccountConfigurationRequest**](UpdateBankAccountConfigurationRequest.md)|  | [optional] 
+ **update_bank_account_configuration_request** | [**UpdateBankAccountConfigurationRequest**](../models/UpdateBankAccountConfigurationRequest.md)|  | [optional] 
 
 ### Return type
 
-[**BankAccountConfigurationResponse**](BankAccountConfigurationResponse.md)
+[**BankAccountConfigurationResponse**](../models/BankAccountConfigurationResponse.md)
 
 ### HTTP request headers
 
@@ -518,5 +518,5 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

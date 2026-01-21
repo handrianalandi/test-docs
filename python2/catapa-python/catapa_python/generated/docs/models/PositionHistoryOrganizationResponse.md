@@ -27,7 +27,7 @@ position_history_organization_response_dict = position_history_organization_resp
 # create an instance of PositionHistoryOrganizationResponse from a dict
 position_history_organization_response_from_dict = PositionHistoryOrganizationResponse.from_dict(position_history_organization_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

@@ -40,7 +40,7 @@ family_approval_response_dict = family_approval_response_instance.to_dict()
 # create an instance of FamilyApprovalResponse from a dict
 family_approval_response_from_dict = FamilyApprovalResponse.from_dict(family_approval_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

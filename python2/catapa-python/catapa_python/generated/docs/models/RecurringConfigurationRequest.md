@@ -27,7 +27,7 @@ recurring_configuration_request_dict = recurring_configuration_request_instance.
 # create an instance of RecurringConfigurationRequest from a dict
 recurring_configuration_request_from_dict = RecurringConfigurationRequest.from_dict(recurring_configuration_request_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

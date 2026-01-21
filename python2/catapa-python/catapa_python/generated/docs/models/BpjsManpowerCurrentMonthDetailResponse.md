@@ -32,7 +32,7 @@ bpjs_manpower_current_month_detail_response_dict = bpjs_manpower_current_month_d
 # create an instance of BpjsManpowerCurrentMonthDetailResponse from a dict
 bpjs_manpower_current_month_detail_response_from_dict = BpjsManpowerCurrentMonthDetailResponse.from_dict(bpjs_manpower_current_month_detail_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

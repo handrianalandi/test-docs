@@ -24,7 +24,7 @@ bpjs_manpower_template_list_response_dict = bpjs_manpower_template_list_response
 # create an instance of BpjsManpowerTemplateListResponse from a dict
 bpjs_manpower_template_list_response_from_dict = BpjsManpowerTemplateListResponse.from_dict(bpjs_manpower_template_list_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

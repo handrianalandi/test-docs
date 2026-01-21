@@ -24,7 +24,7 @@ unprocessed_transition_calculation_list_response_dict = unprocessed_transition_c
 # create an instance of UnprocessedTransitionCalculationListResponse from a dict
 unprocessed_transition_calculation_list_response_from_dict = UnprocessedTransitionCalculationListResponse.from_dict(unprocessed_transition_calculation_list_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

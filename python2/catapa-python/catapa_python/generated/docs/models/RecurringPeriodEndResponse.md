@@ -25,7 +25,7 @@ recurring_period_end_response_dict = recurring_period_end_response_instance.to_d
 # create an instance of RecurringPeriodEndResponse from a dict
 recurring_period_end_response_from_dict = RecurringPeriodEndResponse.from_dict(recurring_period_end_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

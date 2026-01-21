@@ -24,7 +24,7 @@ salary_item_add_on_employee_request_dict = salary_item_add_on_employee_request_i
 # create an instance of SalaryItemAddOnEmployeeRequest from a dict
 salary_item_add_on_employee_request_from_dict = SalaryItemAddOnEmployeeRequest.from_dict(salary_item_add_on_employee_request_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

@@ -54,7 +54,7 @@ leave_balance_item_response_dict = leave_balance_item_response_instance.to_dict(
 # create an instance of LeaveBalanceItemResponse from a dict
 leave_balance_item_response_from_dict = LeaveBalanceItemResponse.from_dict(leave_balance_item_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

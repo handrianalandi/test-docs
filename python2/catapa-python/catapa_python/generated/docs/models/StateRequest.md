@@ -27,7 +27,7 @@ state_request_dict = state_request_instance.to_dict()
 # create an instance of StateRequest from a dict
 state_request_from_dict = StateRequest.from_dict(state_request_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

@@ -25,7 +25,7 @@ analytics_color_scheme_response_dict = analytics_color_scheme_response_instance.
 # create an instance of AnalyticsColorSchemeResponse from a dict
 analytics_color_scheme_response_from_dict = AnalyticsColorSchemeResponse.from_dict(analytics_color_scheme_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

@@ -33,7 +33,7 @@ sub_location_list_response_dict = sub_location_list_response_instance.to_dict()
 # create an instance of SubLocationListResponse from a dict
 sub_location_list_response_from_dict = SubLocationListResponse.from_dict(sub_location_list_response_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 

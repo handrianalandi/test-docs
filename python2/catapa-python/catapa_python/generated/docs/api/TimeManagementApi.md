@@ -73,11 +73,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **fingerprint_item_request** | [**List[FingerprintItemRequest]**](FingerprintItemRequest.md)|  | [optional] 
+ **fingerprint_item_request** | [**List[FingerprintItemRequest]**](../models/FingerprintItemRequest.md)|  | [optional] 
 
 ### Return type
 
-[**FingerprintResponse**](FingerprintResponse.md)
+[**FingerprintResponse**](../models/FingerprintResponse.md)
 
 ### HTTP request headers
 
@@ -91,7 +91,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **create_employee_roster_configuration**
@@ -135,11 +135,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **employee_workday_configuration_request** | [**EmployeeWorkdayConfigurationRequest**](EmployeeWorkdayConfigurationRequest.md)|  | [optional] 
+ **employee_workday_configuration_request** | [**EmployeeWorkdayConfigurationRequest**](../models/EmployeeWorkdayConfigurationRequest.md)|  | [optional] 
 
 ### Return type
 
-[**EmployeeWorkdayConfigurationResponse**](EmployeeWorkdayConfigurationResponse.md)
+[**EmployeeWorkdayConfigurationResponse**](../models/EmployeeWorkdayConfigurationResponse.md)
 
 ### HTTP request headers
 
@@ -153,7 +153,7 @@ Name | Type | Description  | Notes
 **201** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **create_leave_balance**
@@ -197,11 +197,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **leave_balance_request** | [**LeaveBalanceRequest**](LeaveBalanceRequest.md)|  | [optional] 
+ **leave_balance_request** | [**LeaveBalanceRequest**](../models/LeaveBalanceRequest.md)|  | [optional] 
 
 ### Return type
 
-[**LeaveBalanceItemResponse**](LeaveBalanceItemResponse.md)
+[**LeaveBalanceItemResponse**](../models/LeaveBalanceItemResponse.md)
 
 ### HTTP request headers
 
@@ -215,7 +215,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **create_other_leave_balance**
@@ -259,11 +259,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **other_leave_balance_request** | [**OtherLeaveBalanceRequest**](OtherLeaveBalanceRequest.md)|  | [optional] 
+ **other_leave_balance_request** | [**OtherLeaveBalanceRequest**](../models/OtherLeaveBalanceRequest.md)|  | [optional] 
 
 ### Return type
 
-[**OtherLeaveBalanceCreateResponse**](OtherLeaveBalanceCreateResponse.md)
+[**OtherLeaveBalanceCreateResponse**](../models/OtherLeaveBalanceCreateResponse.md)
 
 ### HTTP request headers
 
@@ -277,7 +277,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **create_shift_pattern_template**
@@ -321,11 +321,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **shift_pattern_template_request** | [**ShiftPatternTemplateRequest**](ShiftPatternTemplateRequest.md)|  | [optional] 
+ **shift_pattern_template_request** | [**ShiftPatternTemplateRequest**](../models/ShiftPatternTemplateRequest.md)|  | [optional] 
 
 ### Return type
 
-[**ShiftPatternTemplateListItemResponse**](ShiftPatternTemplateListItemResponse.md)
+[**ShiftPatternTemplateListItemResponse**](../models/ShiftPatternTemplateListItemResponse.md)
 
 ### HTTP request headers
 
@@ -339,7 +339,7 @@ Name | Type | Description  | Notes
 **201** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **create_workgroup_roster_configuration**
@@ -383,11 +383,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **workgroup_workday_configuration_request** | [**WorkgroupWorkdayConfigurationRequest**](WorkgroupWorkdayConfigurationRequest.md)|  | [optional] 
+ **workgroup_workday_configuration_request** | [**WorkgroupWorkdayConfigurationRequest**](../models/WorkgroupWorkdayConfigurationRequest.md)|  | [optional] 
 
 ### Return type
 
-[**WorkgroupWorkdayConfigurationResponse**](WorkgroupWorkdayConfigurationResponse.md)
+[**WorkgroupWorkdayConfigurationResponse**](../models/WorkgroupWorkdayConfigurationResponse.md)
 
 ### HTTP request headers
 
@@ -401,7 +401,7 @@ Name | Type | Description  | Notes
 **201** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **delete_employee_roster_configuration**
@@ -463,7 +463,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **delete_shift_pattern_template**
@@ -525,7 +525,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **delete_workgroup_roster_configuration**
@@ -587,7 +587,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **read_attendance**
@@ -638,7 +638,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**AttendanceListResponse**](AttendanceListResponse.md)
+[**AttendanceListResponse**](../models/AttendanceListResponse.md)
 
 ### HTTP request headers
 
@@ -652,7 +652,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **read_attendance_recapitulation_detail**
@@ -704,7 +704,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**AttendanceRecapitulationDetailListResponse**](AttendanceRecapitulationDetailListResponse.md)
+[**AttendanceRecapitulationDetailListResponse**](../models/AttendanceRecapitulationDetailListResponse.md)
 
 ### HTTP request headers
 
@@ -718,7 +718,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **read_employee_roster_configuration**
@@ -769,7 +769,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**EmployeeWorkdayConfigurationListResponse**](EmployeeWorkdayConfigurationListResponse.md)
+[**EmployeeWorkdayConfigurationListResponse**](../models/EmployeeWorkdayConfigurationListResponse.md)
 
 ### HTTP request headers
 
@@ -783,7 +783,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **read_employee_roster_configuration_by_id**
@@ -831,7 +831,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**EmployeeWorkdayConfigurationResponse**](EmployeeWorkdayConfigurationResponse.md)
+[**EmployeeWorkdayConfigurationResponse**](../models/EmployeeWorkdayConfigurationResponse.md)
 
 ### HTTP request headers
 
@@ -845,7 +845,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **read_holiday**
@@ -896,7 +896,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**HolidayListResponse**](HolidayListResponse.md)
+[**HolidayListResponse**](../models/HolidayListResponse.md)
 
 ### HTTP request headers
 
@@ -910,7 +910,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **read_leave_balance**
@@ -963,7 +963,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**LeaveBalanceListResponse**](LeaveBalanceListResponse.md)
+[**LeaveBalanceListResponse**](../models/LeaveBalanceListResponse.md)
 
 ### HTTP request headers
 
@@ -977,7 +977,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **read_other_leave_balance**
@@ -1030,7 +1030,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**OtherLeaveBalanceListResponse**](OtherLeaveBalanceListResponse.md)
+[**OtherLeaveBalanceListResponse**](../models/OtherLeaveBalanceListResponse.md)
 
 ### HTTP request headers
 
@@ -1044,7 +1044,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **read_shift_pattern_template**
@@ -1094,7 +1094,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**ShiftPatternTemplateListResponse**](ShiftPatternTemplateListResponse.md)
+[**ShiftPatternTemplateListResponse**](../models/ShiftPatternTemplateListResponse.md)
 
 ### HTTP request headers
 
@@ -1108,7 +1108,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **read_shift_pattern_template_by_id**
@@ -1156,7 +1156,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ShiftPatternTemplateItemResponse**](ShiftPatternTemplateItemResponse.md)
+[**ShiftPatternTemplateItemResponse**](../models/ShiftPatternTemplateItemResponse.md)
 
 ### HTTP request headers
 
@@ -1170,7 +1170,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **read_workgroup_roster_configuration**
@@ -1221,7 +1221,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**WorkgroupWorkdayConfigurationListResponse**](WorkgroupWorkdayConfigurationListResponse.md)
+[**WorkgroupWorkdayConfigurationListResponse**](../models/WorkgroupWorkdayConfigurationListResponse.md)
 
 ### HTTP request headers
 
@@ -1235,7 +1235,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **read_workgroup_roster_configuration_by_id**
@@ -1283,7 +1283,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**WorkgroupWorkdayConfigurationResponse**](WorkgroupWorkdayConfigurationResponse.md)
+[**WorkgroupWorkdayConfigurationResponse**](../models/WorkgroupWorkdayConfigurationResponse.md)
 
 ### HTTP request headers
 
@@ -1297,7 +1297,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **update_employee_roster_configuration**
@@ -1343,11 +1343,11 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**|  | 
- **employee_workday_configuration_request** | [**EmployeeWorkdayConfigurationRequest**](EmployeeWorkdayConfigurationRequest.md)|  | [optional] 
+ **employee_workday_configuration_request** | [**EmployeeWorkdayConfigurationRequest**](../models/EmployeeWorkdayConfigurationRequest.md)|  | [optional] 
 
 ### Return type
 
-[**EmployeeWorkdayConfigurationResponse**](EmployeeWorkdayConfigurationResponse.md)
+[**EmployeeWorkdayConfigurationResponse**](../models/EmployeeWorkdayConfigurationResponse.md)
 
 ### HTTP request headers
 
@@ -1361,7 +1361,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **update_shift_pattern_template**
@@ -1407,11 +1407,11 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**|  | 
- **shift_pattern_template_request** | [**ShiftPatternTemplateRequest**](ShiftPatternTemplateRequest.md)|  | [optional] 
+ **shift_pattern_template_request** | [**ShiftPatternTemplateRequest**](../models/ShiftPatternTemplateRequest.md)|  | [optional] 
 
 ### Return type
 
-[**ShiftPatternTemplateItemResponse**](ShiftPatternTemplateItemResponse.md)
+[**ShiftPatternTemplateItemResponse**](../models/ShiftPatternTemplateItemResponse.md)
 
 ### HTTP request headers
 
@@ -1425,7 +1425,7 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 
 # **update_workgroup_roster_configuration**
@@ -1471,11 +1471,11 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**|  | 
- **workgroup_workday_configuration_request** | [**WorkgroupWorkdayConfigurationRequest**](WorkgroupWorkdayConfigurationRequest.md)|  | [optional] 
+ **workgroup_workday_configuration_request** | [**WorkgroupWorkdayConfigurationRequest**](../models/WorkgroupWorkdayConfigurationRequest.md)|  | [optional] 
 
 ### Return type
 
-[**WorkgroupWorkdayConfigurationResponse**](WorkgroupWorkdayConfigurationResponse.md)
+[**WorkgroupWorkdayConfigurationResponse**](../models/WorkgroupWorkdayConfigurationResponse.md)
 
 ### HTTP request headers
 
@@ -1489,5 +1489,5 @@ Name | Type | Description  | Notes
 **200** | OK |  -  |
 **400** | Bad Request |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

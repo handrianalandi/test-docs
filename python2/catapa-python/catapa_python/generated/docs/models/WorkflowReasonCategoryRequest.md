@@ -25,7 +25,7 @@ workflow_reason_category_request_dict = workflow_reason_category_request_instanc
 # create an instance of WorkflowReasonCategoryRequest from a dict
 workflow_reason_category_request_from_dict = WorkflowReasonCategoryRequest.from_dict(workflow_reason_category_request_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
 
 
