@@ -5,9 +5,9 @@
 # Parameters:
 #   $1 - TARGET_FOLDER_PATH: Path to the generated folder (e.g., generated/)
 
-# Source the organize-docs function
+# Path to organize-docs script
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-source "$SCRIPT_DIR/organize-docs.sh"
+ORGANIZE_DOCS_SCRIPT="$SCRIPT_DIR/organize-docs.py"
 
 docs_post_process() {
     local TARGET_FOLDER_PATH="$1"
@@ -25,7 +25,12 @@ docs_post_process() {
         ABS_TARGET_FOLDER="$(cd "$SCRIPT_DIR" && cd "$(dirname "$TARGET_FOLDER_PATH")" && pwd)/$(basename "$TARGET_FOLDER_PATH")"
     fi
     
-    organize_docs "$ABS_TARGET_FOLDER"
+    # Run organize-docs Python script
+    if [[ -f "$ORGANIZE_DOCS_SCRIPT" ]]; then
+        python3 "$ORGANIZE_DOCS_SCRIPT" "$ABS_TARGET_FOLDER"
+    else
+        echo "⚠️  Warning: organize-docs.py not found at $ORGANIZE_DOCS_SCRIPT"
+    fi
     
     # Create README.md in docs folder for API reference
     local DOCS_DIR="$TARGET_FOLDER_PATH/docs"
