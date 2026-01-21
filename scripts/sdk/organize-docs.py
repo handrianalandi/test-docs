@@ -1,20 +1,34 @@
 #!/usr/bin/env python3
-"""
-Function to organize documentation into api/ and models/ folders.
-API classes go to api/, everything else goes to models/
+"""Documentation Organization Script.
+
+This module provides functionality to organize generated API documentation
+into structured api/ and models/ folders. API classes go to api/, everything
+else goes to models/.
+
+Authors:
+    Handrian Alandi (handrian.alandi@gdplabs.id)
+
+References:
+    NONE
 """
 
 import re
 import shutil
+import sys
 from pathlib import Path
+
+README_FILE = "README.md"
 
 
 def organize_docs(target_folder_path: str) -> None:
-    """
-    Organize documentation files into api/ and models/ folders.
-    
+    """Organize documentation files into api/ and models/ folders.
+
+    This function moves API documentation files (ending with Api.md) to the
+    api/ folder and all other documentation files to the models/ folder.
+    It also updates all internal links to reflect the new structure.
+
     Args:
-        target_folder_path: Path to the generated folder (e.g., generated/)
+        target_folder_path (str): Path to the generated folder (e.g., generated/).
     """
     target_path = Path(target_folder_path)
     docs_dir = target_path / "docs"
@@ -39,7 +53,7 @@ def organize_docs(target_folder_path: str) -> None:
     files_to_process = []
     for file in all_md_files:
         # Skip README files
-        if file.name == "README.md":
+        if file.name == README_FILE:
             continue
         
         # Skip files already in target directories
@@ -96,23 +110,13 @@ def organize_docs(target_folder_path: str) -> None:
         # Update links in API files
         for file in api_dir.glob("*.md"):
             update_api_file_links(file)
-        
-        # # Update links in models files
-        # for file in models_dir.glob("*.md"):
-        #     update_model_file_links(file)
-        
+                
         # Update README.md references in the main README and docs/README
-        readme_file = target_path / "README.md"
+        readme_file = target_path / README_FILE
         if readme_file.exists():
             update_readme_links(readme_file)
-            print("   ✅ Updated references in README.md")
-        
-        # # Also update docs/README.md if it exists
-        # docs_readme_file = docs_dir / "README.md"
-        # if docs_readme_file.exists():
-        #     update_readme_links(docs_readme_file)
-        #     print("   ✅ Updated references in docs/README.md")
-    
+            print(f"   ✅ Updated references in {README_FILE}")
+            
     # Clean up empty directories
     for old_dir_name in ["Apis", "Models"]:
         old_dir = docs_dir / old_dir_name
@@ -127,10 +131,10 @@ def organize_docs(target_folder_path: str) -> None:
     
     # Create README.md files in api/ and models/ folders for GitBook page headers
     if api_count > 0:
-        (api_dir / "README.md").write_text("# APIs\n")
-    
+        (api_dir / README_FILE).write_text("# APIs\n")
+
     if models_count > 0:
-        (models_dir / "README.md").write_text("# Models\n")
+        (models_dir / README_FILE).write_text("# Models\n")
     
     print("✅ Documentation organized:")
     print(f"   📁 api/: {api_count} files")
@@ -138,18 +142,20 @@ def organize_docs(target_folder_path: str) -> None:
 
 
 def update_api_file_links(file_path: Path) -> None:
-    """Update links in API documentation files."""
+    """Update links in API documentation files.
+
+    Updates all markdown links in API documentation files to point to the
+    correct locations in the models/ folder. Fixes self-references and
+    ensures API-to-API links point to the api/ folder.
+
+    Args:
+        file_path (Path): Path to the API documentation file to update.
+    """
     try:
         content = file_path.read_text(encoding='utf-8')
         original_content = content
-        api_filename = file_path.name
-        
-        # # Update ../Models/ references to ../models/
-        # content = str.replace(r'\(\.\./Models/', r'(../models/', content)
-        
-        # # Update ../Apis/ references to ../api/
-        # content = str.replace(r'\(\.\./Apis/', r'(../api/', content)
-        
+        api_filename = file_path.name      
+  
         # Update direct model file references (not API files) to point to ../models/
         # Pattern: [text](ModelName.md) where ModelName.md is not an API file
         content = re.sub(
@@ -175,43 +181,17 @@ def update_api_file_links(file_path: Path) -> None:
         print(f"   ⚠️  Warning: Could not update links in {file_path.name}: {e}")
 
 
-# def update_model_file_links(file_path: Path) -> None:
-#     """Update links in model documentation files."""
-#     try:
-#         content = file_path.read_text(encoding='utf-8')
-#         original_content = content
-#         model_filename = file_path.name
-        
-#         # # Update ../Models/ references to ../models/
-#         # content = re.sub(r'\(\.\./Models/', r'(../models/', content)
-        
-#         # # Update ../Apis/ references to ../api/
-#         # content = re.sub(r'\(\.\./Apis/', r'(../api/', content)
-        
-#         # Update direct API file references to point to ../api/
-#         # Pattern: [text](ApiNameApi.md) - must be done before general pattern
-#         # content = re.sub(
-#         #     r'\(([A-Za-z][A-Za-z0-9_]*Api\.md)\)',
-#         #     r'(../api/\1)',
-#         #     content
-#         # )
-        
-#         # Update other direct file references (non-API) - keep as same directory (just filename)
-#         # Model files in same directory can reference each other directly
-#         # Only update if it's a direct reference without path (already handled by previous regex)
-        
-#         # Fix self-references (same file) - ensure it's just the filename
-#         content = content.replace(f'(../models/{model_filename}', f'({model_filename}')
-#         content = content.replace(f'(../api/{model_filename}', f'({model_filename}')
-        
-#         if content != original_content:
-#             file_path.write_text(content, encoding='utf-8')
-#     except Exception as e:
-#         print(f"   ⚠️  Warning: Could not update links in {file_path.name}: {e}")
-
 
 def update_readme_links(readme_path: Path) -> None:
-    """Update references in README.md to point to new locations."""
+    """Update references in README.md to point to new locations.
+
+    Updates all documentation links in README.md files to reflect the new
+    folder structure (api/ and models/). Handles both links with and
+    without anchors.
+
+    Args:
+        readme_path (Path): Path to the README.md file to update.
+    """
     try:
         content = readme_path.read_text(encoding='utf-8')
         original_content = content
@@ -231,14 +211,7 @@ def update_readme_links(readme_path: Path) -> None:
             r'(docs/models/\1\2)',
             content
         )
-        
-        # Second pass: fix any API files that were incorrectly changed
-        # content = re.sub(
-        #     r'\(docs/models/([A-Za-z][A-Za-z0-9_]*Api\.md)(#[^)]*)?\)',
-        #     r'(docs/api/\1\2)',
-        #     content
-        # )
-        
+                
         if content != original_content:
             readme_path.write_text(content, encoding='utf-8')
     except Exception as e:
@@ -246,12 +219,10 @@ def update_readme_links(readme_path: Path) -> None:
 
 
 if __name__ == "__main__":
-    import sys
-    
     if len(sys.argv) < 2:
         print("Usage: organize-docs.py <target_folder>")
         print("Example: organize-docs.py ../../python/catapa-python/catapa_python/generated")
         sys.exit(1)
-    
+
     organize_docs(sys.argv[1])
 

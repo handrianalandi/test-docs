@@ -30,27 +30,6 @@ uv add catapa
 
 {% endtabs %}
 
-## Getting Your Credentials
-
-Before you can use the SDK, you'll need to obtain your authentication credentials:
-
-### Tenant ID
-
-Your **tenant ID** is your organization's unique identifier in CATAPA. To obtain it, please contact us.
-
-### Client ID and Client Secret
-
-Your **client ID** and **client secret** are OAuth2 credentials used to authenticate your application. To obtain them:
-https://apps.catapa.com/dashboard/setup/settings/oauth-client
-**Option 1: Via Dashboard**
-1. Log in to your CATAPA account
-2. In the sidebar, go to **Admin Panel** group → **Setup** → **OAuth 2.0 clients**
-
-**Option 2: Direct URL**
-- Go to: https://apps.catapa.com/dashboard/setup/settings/oauth-client
-
-> **⚠️ Important:** Keep your client secret secure and never commit it to version control. Consider using environment variables or a secrets management system.
-
 ## Quick Start
 
 A complete Hello World example to get you started immediately.
@@ -218,6 +197,28 @@ def main() -> None:
 if __name__ == "__main__":
     main()
 ```
+
+## Getting Your Credentials
+
+Before you can use the SDK, you'll need to obtain your authentication credentials:
+
+### Tenant ID
+
+Your **tenant ID** is your organization's unique identifier in CATAPA. To obtain it, please contact us.
+
+### Client ID and Client Secret
+
+Your **client ID** and **client secret** are OAuth2 credentials used to authenticate your application. To obtain them:
+https://apps.catapa.com/dashboard/setup/settings/oauth-client
+**Option 1: Via Dashboard**
+1. Log in to your CATAPA account
+2. In the sidebar, go to **Admin Panel** group → **Setup** → **OAuth 2.0 clients**
+
+**Option 2: Direct URL**
+Go to: https://apps.catapa.com/dashboard/setup/settings/oauth-client
+
+> **⚠️ Important:** Keep your client secret secure and never commit it to version control. Consider using environment variables or a secrets management system.
+
 
 ## Available APIs
 
