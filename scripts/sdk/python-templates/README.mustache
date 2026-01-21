@@ -214,7 +214,7 @@ https://apps.catapa.com/dashboard/setup/settings/oauth-client
 1. Log in to your CATAPA account
 2. In the sidebar, go to **Admin Panel** group → **Setup** → **OAuth 2.0 clients**
 
-**Option 2: Direct URL**
+**Option 2: Direct URL**_
 Go to: https://apps.catapa.com/dashboard/setup/settings/oauth-client
 
 > **⚠️ Important:** Keep your client secret secure and never commit it to version control. Consider using environment variables or a secrets management system.
