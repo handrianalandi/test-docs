@@ -74,7 +74,7 @@ To use the SDK with your own account, you'll need the following authentication c
 
 ### Tenant ID
 
-Your **tenant ID** is your organization's unique identifier in CATAPA. To obtain it, please contact us.
+Your **tenant ID** is your organization's unique identifier in CATAPA. To obtain it, please contact [support@catapa.com](mailto:support@catapa.com).
 
 ### Client ID and Client Secret
 
