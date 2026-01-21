@@ -8,9 +8,27 @@ Python 3.11+
 
 ## Installation
 
+{% tabs %}
+
+{% tab title="pip" %}
 ```bash
 pip install catapa
 ```
+{% endtab %}
+
+{% tab title="poetry" %}
+```bash
+poetry add catapa
+```
+{% endtab %}
+
+{% tab title="uv" %}
+```bash
+uv pip install catapa
+```
+{% endtab %}
+
+{% endtabs %}
 
 ## Getting Your Credentials
 
