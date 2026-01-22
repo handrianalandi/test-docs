@@ -46,11 +46,9 @@ def main() -> None:
     client = Catapa(tenant="zfrl", client_id="test-client-id", client_secret="test-client-secret")
 
     # Create an API instance
-    # Tokens are automatically refreshed on every API call (5-minute buffer before expiration)
     employee_api = EmployeeApi(client)
 
     # Make your first API call
-    # No need to worry about token expiration - it's handled automatically!
     employees = employee_api.list_all_employees(page=0, size=10)
     print(f"Found {len(employees.content)} employees")
 
@@ -103,7 +101,6 @@ def main() -> None:
     client = Catapa(tenant="zfrl", client_id="test-client-id", client_secret="test-client-secret")
 
     # Use different APIs with the same client
-    # Each API instance shares the same authentication and token management
     org_api = OrganizationApi(client)
     company = org_api.get_companies()
     print(f"Company: {company.content[0].name}")
@@ -145,8 +142,6 @@ def main() -> None:
     print("Service running... (simulating 1 hour wait)")
     time.sleep(3600)
 
-    # This call will automatically refresh the token if needed
-    # No manual token management required!
     employees = employee_api.list_all_employees(page=0, size=10)
     print(f"After 1 hour: {len(employees.content)} employees")
     print("✅ Token was automatically refreshed if needed!")

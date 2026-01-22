@@ -156,18 +156,17 @@ def update_api_file_links(file_path: Path) -> None:
         original_content = content
         api_filename = file_path.name      
   
-        # Update direct model file references (not API files) to point to ../models/
-        # Pattern: [text](ModelName.md) where ModelName.md is not an API file
+        # Update file references: API files -> ../api/, others -> ../models/
+        def replace_link(match):
+            filename = match.group(1)
+            if filename.endswith('Api.md'):
+                return f'(../api/{filename})'
+            else:
+                return f'(../models/{filename})'
+        
         content = re.sub(
             r'\(([A-Za-z]\w*\.md)\)',
-            r'(../models/\1)',
-            content
-        )
-        
-        # Fix any API file references that were incorrectly changed to point to ../api/
-        content = re.sub(
-            r'\(\.\./models/([A-Za-z]\w*Api\.md)\)',
-            r'(../api/\1)',
+            replace_link,
             content
         )
         
