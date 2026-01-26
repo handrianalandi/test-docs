@@ -591,7 +591,7 @@ Name | Type | Description  | Notes
 
 
 # **read_attendance**
-> AttendanceListResponse read_attendance()
+> AttendancePageResponse read_attendance()
 
 Read Attendance
 
@@ -638,7 +638,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**AttendanceListResponse**](../models/AttendanceListResponse.md)
+[**AttendancePageResponse**](../models/AttendancePageResponse.md)
 
 ### HTTP request headers
 
@@ -656,7 +656,7 @@ This endpoint does not need any parameter.
 
 
 # **read_attendance_recapitulation_detail**
-> AttendanceRecapitulationDetailListResponse read_attendance_recapitulation_detail()
+> AttendanceRecapitulationDetailPageResponse read_attendance_recapitulation_detail()
 
 Read Attendance Recapitulation Detail
 
@@ -704,7 +704,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**AttendanceRecapitulationDetailListResponse**](../models/AttendanceRecapitulationDetailListResponse.md)
+[**AttendanceRecapitulationDetailPageResponse**](../models/AttendanceRecapitulationDetailPageResponse.md)
 
 ### HTTP request headers
 
@@ -722,7 +722,7 @@ This endpoint does not need any parameter.
 
 
 # **read_employee_roster_configuration**
-> EmployeeWorkdayConfigurationListResponse read_employee_roster_configuration()
+> EmployeeWorkdayConfigurationPageResponse read_employee_roster_configuration()
 
 Read Employee Roster Configuration
 
@@ -769,7 +769,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**EmployeeWorkdayConfigurationListResponse**](../models/EmployeeWorkdayConfigurationListResponse.md)
+[**EmployeeWorkdayConfigurationPageResponse**](../models/EmployeeWorkdayConfigurationPageResponse.md)
 
 ### HTTP request headers
 
@@ -849,7 +849,7 @@ Name | Type | Description  | Notes
 
 
 # **read_holiday**
-> HolidayListResponse read_holiday()
+> HolidayPageResponse read_holiday()
 
 Read Holiday
 
@@ -896,7 +896,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**HolidayListResponse**](../models/HolidayListResponse.md)
+[**HolidayPageResponse**](../models/HolidayPageResponse.md)
 
 ### HTTP request headers
 
@@ -914,7 +914,7 @@ This endpoint does not need any parameter.
 
 
 # **read_leave_balance**
-> LeaveBalanceListResponse read_leave_balance()
+> LeaveBalancePageResponse read_leave_balance()
 
 Read Leave Balance
 
@@ -963,7 +963,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**LeaveBalanceListResponse**](../models/LeaveBalanceListResponse.md)
+[**LeaveBalancePageResponse**](../models/LeaveBalancePageResponse.md)
 
 ### HTTP request headers
 
@@ -981,7 +981,7 @@ This endpoint does not need any parameter.
 
 
 # **read_other_leave_balance**
-> OtherLeaveBalanceListResponse read_other_leave_balance()
+> OtherLeaveBalancePageResponse read_other_leave_balance()
 
 Read Other Leave Balance
 
@@ -1030,7 +1030,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**OtherLeaveBalanceListResponse**](../models/OtherLeaveBalanceListResponse.md)
+[**OtherLeaveBalancePageResponse**](../models/OtherLeaveBalancePageResponse.md)
 
 ### HTTP request headers
 
@@ -1048,7 +1048,7 @@ This endpoint does not need any parameter.
 
 
 # **read_shift_pattern_template**
-> ShiftPatternTemplateListResponse read_shift_pattern_template()
+> ShiftPatternTemplatePageResponse read_shift_pattern_template()
 
 Read Shift Pattern Template
 
@@ -1094,7 +1094,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**ShiftPatternTemplateListResponse**](../models/ShiftPatternTemplateListResponse.md)
+[**ShiftPatternTemplatePageResponse**](../models/ShiftPatternTemplatePageResponse.md)
 
 ### HTTP request headers
 
@@ -1174,7 +1174,7 @@ Name | Type | Description  | Notes
 
 
 # **read_workgroup_roster_configuration**
-> WorkgroupWorkdayConfigurationListResponse read_workgroup_roster_configuration()
+> WorkgroupWorkdayConfigurationPageResponse read_workgroup_roster_configuration()
 
 Read Workgroup Roster Configuration
 
@@ -1221,7 +1221,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**WorkgroupWorkdayConfigurationListResponse**](../models/WorkgroupWorkdayConfigurationListResponse.md)
+[**WorkgroupWorkdayConfigurationPageResponse**](../models/WorkgroupWorkdayConfigurationPageResponse.md)
 
 ### HTTP request headers
 

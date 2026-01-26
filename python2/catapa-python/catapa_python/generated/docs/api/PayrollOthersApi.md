@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **get_additional_income**
-> AdditionalIncomePaymentListResponse get_additional_income()
+> AdditionalIncomePaymentPageResponse get_additional_income()
 
 Get Additional Income
 
@@ -59,7 +59,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**AdditionalIncomePaymentListResponse**](../models/AdditionalIncomePaymentListResponse.md)
+[**AdditionalIncomePaymentPageResponse**](../models/AdditionalIncomePaymentPageResponse.md)
 
 ### HTTP request headers
 
@@ -77,7 +77,7 @@ This endpoint does not need any parameter.
 
 
 # **get_monthly_recapitulation**
-> MonthlyRecapitulationListResponse get_monthly_recapitulation(filter_type, year, month)
+> MonthlyRecapitulationPageResponse get_monthly_recapitulation(filter_type, year, month)
 
 Get Monthly Recapitulation
 
@@ -125,7 +125,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**MonthlyRecapitulationListResponse**](../models/MonthlyRecapitulationListResponse.md)
+[**MonthlyRecapitulationPageResponse**](../models/MonthlyRecapitulationPageResponse.md)
 
 ### HTTP request headers
 

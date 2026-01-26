@@ -206,7 +206,7 @@ void (empty response body)
 
 
 # **get_family_by_employee**
-> FamilyApprovalListResponse get_family_by_employee(employee_id)
+> FamilyApprovalPageResponse get_family_by_employee(employee_id)
 
 List All Families
 
@@ -250,7 +250,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**FamilyApprovalListResponse**](../models/FamilyApprovalListResponse.md)
+[**FamilyApprovalPageResponse**](../models/FamilyApprovalPageResponse.md)
 
 ### HTTP request headers
 
@@ -268,7 +268,7 @@ Name | Type | Description  | Notes
 
 
 # **get_historical_families**
-> FamilyHistoricalListResponse get_historical_families(page, size, query)
+> FamilyHistoricalPageResponse get_historical_families(page, size, query)
 
 Get Historical Families
 
@@ -316,7 +316,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**FamilyHistoricalListResponse**](../models/FamilyHistoricalListResponse.md)
+[**FamilyHistoricalPageResponse**](../models/FamilyHistoricalPageResponse.md)
 
 ### HTTP request headers
 

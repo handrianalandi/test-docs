@@ -77,7 +77,7 @@ Name | Type | Description  | Notes
 
 
 # **get_historical_employee_details**
-> EmployeeDetailListResponse get_historical_employee_details(page, size, query)
+> EmployeeDetailPageResponse get_historical_employee_details(page, size, query)
 
 Get Historical Employee Details
 
@@ -125,7 +125,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**EmployeeDetailListResponse**](../models/EmployeeDetailListResponse.md)
+[**EmployeeDetailPageResponse**](../models/EmployeeDetailPageResponse.md)
 
 ### HTTP request headers
 

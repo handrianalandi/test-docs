@@ -77,7 +77,7 @@ Name | Type | Description  | Notes
 
 
 # **get_effective_employee_salary_template**
-> EmployeeSalaryTemplateListResponse get_effective_employee_salary_template(id, year, month)
+> EmployeeSalaryTemplatePageResponse get_effective_employee_salary_template(id, year, month)
 
 Get Effective Employee Salary Template
 
@@ -125,7 +125,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**EmployeeSalaryTemplateListResponse**](../models/EmployeeSalaryTemplateListResponse.md)
+[**EmployeeSalaryTemplatePageResponse**](../models/EmployeeSalaryTemplatePageResponse.md)
 
 ### HTTP request headers
 

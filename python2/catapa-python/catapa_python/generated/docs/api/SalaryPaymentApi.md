@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 
 # **get_payment_item_groups**
-> PaymentItemGroupListResponse get_payment_item_groups(id)
+> PaymentItemGroupPageResponse get_payment_item_groups(id)
 
 Get Payment Item Groups
 
@@ -59,7 +59,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PaymentItemGroupListResponse**](../models/PaymentItemGroupListResponse.md)
+[**PaymentItemGroupPageResponse**](../models/PaymentItemGroupPageResponse.md)
 
 ### HTTP request headers
 
@@ -77,7 +77,7 @@ Name | Type | Description  | Notes
 
 
 # **get_processed_salary_payment_summaries**
-> SalaryPaymentSummaryListResponse get_processed_salary_payment_summaries()
+> SalaryPaymentSummaryPageResponse get_processed_salary_payment_summaries()
 
 Get Processed Salary Payment Summaries
 
@@ -130,7 +130,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**SalaryPaymentSummaryListResponse**](../models/SalaryPaymentSummaryListResponse.md)
+[**SalaryPaymentSummaryPageResponse**](../models/SalaryPaymentSummaryPageResponse.md)
 
 ### HTTP request headers
 
@@ -148,7 +148,7 @@ This endpoint does not need any parameter.
 
 
 # **get_processed_salary_payments**
-> ProcessedSalaryPaymentListResponse get_processed_salary_payments()
+> ProcessedSalaryPaymentPageResponse get_processed_salary_payments()
 
 Get Processed Salary Payments
 
@@ -197,7 +197,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**ProcessedSalaryPaymentListResponse**](../models/ProcessedSalaryPaymentListResponse.md)
+[**ProcessedSalaryPaymentPageResponse**](../models/ProcessedSalaryPaymentPageResponse.md)
 
 ### HTTP request headers
 
@@ -215,7 +215,7 @@ This endpoint does not need any parameter.
 
 
 # **get_salary_payments**
-> SalaryPaymentListResponse get_salary_payments()
+> SalaryPaymentPageResponse get_salary_payments()
 
 Get Salary Payments
 
@@ -264,7 +264,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**SalaryPaymentListResponse**](../models/SalaryPaymentListResponse.md)
+[**SalaryPaymentPageResponse**](../models/SalaryPaymentPageResponse.md)
 
 ### HTTP request headers
 

@@ -75,7 +75,7 @@ Name | Type | Description  | Notes
 
 
 # **list_all_o_auth_clients**
-> OAuthClientListResponse list_all_o_auth_clients(page, size)
+> OAuthClientPageResponse list_all_o_auth_clients(page, size)
 
 List All OAuth Clients
 
@@ -121,7 +121,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**OAuthClientListResponse**](../models/OAuthClientListResponse.md)
+[**OAuthClientPageResponse**](../models/OAuthClientPageResponse.md)
 
 ### HTTP request headers
 

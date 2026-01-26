@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **get_company_bank_accounts**
-> CompanyBankAccountListResponse get_company_bank_accounts(page, size, query)
+> CompanyBankAccountPageResponse get_company_bank_accounts(page, size, query)
 
 Get Company Bank Accounts
 
@@ -59,7 +59,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CompanyBankAccountListResponse**](../models/CompanyBankAccountListResponse.md)
+[**CompanyBankAccountPageResponse**](../models/CompanyBankAccountPageResponse.md)
 
 ### HTTP request headers
 

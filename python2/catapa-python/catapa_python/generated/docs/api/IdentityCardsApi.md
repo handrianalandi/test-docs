@@ -142,7 +142,7 @@ Name | Type | Description  | Notes
 
 
 # **get_employee_identity_cards**
-> EmployeeIdentityCardListResponse get_employee_identity_cards(employee_id, query)
+> EmployeeIdentityCardPageResponse get_employee_identity_cards(employee_id, query)
 
 Get Employee Identity Cards
 
@@ -188,7 +188,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**EmployeeIdentityCardListResponse**](../models/EmployeeIdentityCardListResponse.md)
+[**EmployeeIdentityCardPageResponse**](../models/EmployeeIdentityCardPageResponse.md)
 
 ### HTTP request headers
 

@@ -340,7 +340,7 @@ void (empty response body)
 
 
 # **get_bpjs_healthcare_premium_summaries**
-> BpjsHealthcarePremiumSummaryListResponse get_bpjs_healthcare_premium_summaries()
+> BpjsHealthcarePremiumSummaryPageResponse get_bpjs_healthcare_premium_summaries()
 
 Get BPJS Healthcare Premium Summaries
 
@@ -388,7 +388,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**BpjsHealthcarePremiumSummaryListResponse**](../models/BpjsHealthcarePremiumSummaryListResponse.md)
+[**BpjsHealthcarePremiumSummaryPageResponse**](../models/BpjsHealthcarePremiumSummaryPageResponse.md)
 
 ### HTTP request headers
 
@@ -468,7 +468,7 @@ Name | Type | Description  | Notes
 
 
 # **get_bpjs_healthcare_providers**
-> BpjsHealthcareProviderListResponse get_bpjs_healthcare_providers()
+> BpjsHealthcareProviderPageResponse get_bpjs_healthcare_providers()
 
 Get BPJS Healthcare Providers
 
@@ -519,7 +519,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**BpjsHealthcareProviderListResponse**](../models/BpjsHealthcareProviderListResponse.md)
+[**BpjsHealthcareProviderPageResponse**](../models/BpjsHealthcareProviderPageResponse.md)
 
 ### HTTP request headers
 
@@ -537,7 +537,7 @@ This endpoint does not need any parameter.
 
 
 # **get_bpjs_healthcare_templates**
-> BpjsHealthcareTemplateListResponse get_bpjs_healthcare_templates()
+> BpjsHealthcareTemplatePageResponse get_bpjs_healthcare_templates()
 
 Get BPJS Healthcare Templates
 
@@ -586,7 +586,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**BpjsHealthcareTemplateListResponse**](../models/BpjsHealthcareTemplateListResponse.md)
+[**BpjsHealthcareTemplatePageResponse**](../models/BpjsHealthcareTemplatePageResponse.md)
 
 ### HTTP request headers
 

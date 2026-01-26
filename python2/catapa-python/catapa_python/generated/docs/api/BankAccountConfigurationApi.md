@@ -266,7 +266,7 @@ Name | Type | Description  | Notes
 
 
 # **get_bank_account_configurations**
-> BankAccountConfigurationListResponse get_bank_account_configurations(page, size, query)
+> BankAccountConfigurationPageResponse get_bank_account_configurations(page, size, query)
 
 Get all bank account configurations
 
@@ -316,7 +316,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**BankAccountConfigurationListResponse**](../models/BankAccountConfigurationListResponse.md)
+[**BankAccountConfigurationPageResponse**](../models/BankAccountConfigurationPageResponse.md)
 
 ### HTTP request headers
 

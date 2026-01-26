@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **get_paygroup**
-> PaygroupListResponse get_paygroup()
+> PaygroupPageResponse get_paygroup()
 
 Get Paygroup
 
@@ -58,7 +58,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**PaygroupListResponse**](../models/PaygroupListResponse.md)
+[**PaygroupPageResponse**](../models/PaygroupPageResponse.md)
 
 ### HTTP request headers
 

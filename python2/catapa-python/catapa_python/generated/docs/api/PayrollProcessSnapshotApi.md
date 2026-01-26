@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **find_payroll_process_snapshots**
-> PayrollProcessSnapshotListResponse find_payroll_process_snapshots(page, size, query)
+> PayrollProcessSnapshotPageResponse find_payroll_process_snapshots(page, size, query)
 
 Find all payroll process snapshots
 
@@ -61,7 +61,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PayrollProcessSnapshotListResponse**](../models/PayrollProcessSnapshotListResponse.md)
+[**PayrollProcessSnapshotPageResponse**](../models/PayrollProcessSnapshotPageResponse.md)
 
 ### HTTP request headers
 

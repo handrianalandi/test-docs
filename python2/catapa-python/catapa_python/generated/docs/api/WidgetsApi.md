@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **get_widgets_by_current_user**
-> WidgetListResponse get_widgets_by_current_user()
+> WidgetPageResponse get_widgets_by_current_user()
 
 Get Widgets by Current User
 
@@ -57,7 +57,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**WidgetListResponse**](../models/WidgetListResponse.md)
+[**WidgetPageResponse**](../models/WidgetPageResponse.md)
 
 ### HTTP request headers
 

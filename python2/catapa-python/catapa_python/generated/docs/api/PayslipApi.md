@@ -270,7 +270,7 @@ Name | Type | Description  | Notes
 
 
 # **get_payslip_additional_notes**
-> PayslipAdditionalNoteListResponse get_payslip_additional_notes()
+> PayslipAdditionalNotePageResponse get_payslip_additional_notes()
 
 Get Payslip Additional Notes
 
@@ -316,7 +316,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**PayslipAdditionalNoteListResponse**](../models/PayslipAdditionalNoteListResponse.md)
+[**PayslipAdditionalNotePageResponse**](../models/PayslipAdditionalNotePageResponse.md)
 
 ### HTTP request headers
 
@@ -396,7 +396,7 @@ Name | Type | Description  | Notes
 
 
 # **get_payslip_layouts**
-> PayslipLayoutListResponse get_payslip_layouts()
+> PayslipLayoutPageResponse get_payslip_layouts()
 
 Get Payslip Layouts
 
@@ -442,7 +442,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**PayslipLayoutListResponse**](../models/PayslipLayoutListResponse.md)
+[**PayslipLayoutPageResponse**](../models/PayslipLayoutPageResponse.md)
 
 ### HTTP request headers
 

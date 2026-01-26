@@ -141,7 +141,7 @@ Name | Type | Description  | Notes
 
 
 # **get_workflow_activity**
-> WorkflowActivityListResponse get_workflow_activity()
+> WorkflowActivityPageResponse get_workflow_activity()
 
 Get Workflow Activities
 
@@ -189,7 +189,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**WorkflowActivityListResponse**](../models/WorkflowActivityListResponse.md)
+[**WorkflowActivityPageResponse**](../models/WorkflowActivityPageResponse.md)
 
 ### HTTP request headers
 
@@ -207,7 +207,7 @@ This endpoint does not need any parameter.
 
 
 # **get_workflow_reason**
-> WorkflowReasonListResponse get_workflow_reason()
+> WorkflowReasonPageResponse get_workflow_reason()
 
 Get Workflow Reasons
 
@@ -255,7 +255,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**WorkflowReasonListResponse**](../models/WorkflowReasonListResponse.md)
+[**WorkflowReasonPageResponse**](../models/WorkflowReasonPageResponse.md)
 
 ### HTTP request headers
 
@@ -273,7 +273,7 @@ This endpoint does not need any parameter.
 
 
 # **get_workflow_reason_category**
-> WorkflowReasonCategoryListResponse get_workflow_reason_category()
+> WorkflowReasonCategoryPageResponse get_workflow_reason_category()
 
 Get Workflow Reason Categories
 
@@ -320,7 +320,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**WorkflowReasonCategoryListResponse**](../models/WorkflowReasonCategoryListResponse.md)
+[**WorkflowReasonCategoryPageResponse**](../models/WorkflowReasonCategoryPageResponse.md)
 
 ### HTTP request headers
 

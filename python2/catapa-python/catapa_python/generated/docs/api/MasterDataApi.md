@@ -278,7 +278,7 @@ Name | Type | Description  | Notes
 
 
 # **get_bank_branches**
-> BankBranchListResponse get_bank_branches()
+> BankBranchPageResponse get_bank_branches()
 
 Get Bank Branches
 
@@ -324,7 +324,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**BankBranchListResponse**](../models/BankBranchListResponse.md)
+[**BankBranchPageResponse**](../models/BankBranchPageResponse.md)
 
 ### HTTP request headers
 
@@ -342,7 +342,7 @@ This endpoint does not need any parameter.
 
 
 # **get_banks**
-> BankListResponse get_banks()
+> BankPageResponse get_banks()
 
 Get Banks
 
@@ -382,7 +382,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**BankListResponse**](../models/BankListResponse.md)
+[**BankPageResponse**](../models/BankPageResponse.md)
 
 ### HTTP request headers
 
@@ -400,7 +400,7 @@ This endpoint does not need any parameter.
 
 
 # **get_cities**
-> CityListResponse get_cities()
+> CityPageResponse get_cities()
 
 Get Cities
 
@@ -440,7 +440,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**CityListResponse**](../models/CityListResponse.md)
+[**CityPageResponse**](../models/CityPageResponse.md)
 
 ### HTTP request headers
 
@@ -458,7 +458,7 @@ This endpoint does not need any parameter.
 
 
 # **get_countries**
-> CountryListResponse get_countries()
+> CountryPageResponse get_countries()
 
 Get Countries
 
@@ -498,7 +498,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**CountryListResponse**](../models/CountryListResponse.md)
+[**CountryPageResponse**](../models/CountryPageResponse.md)
 
 ### HTTP request headers
 
@@ -516,7 +516,7 @@ This endpoint does not need any parameter.
 
 
 # **get_currencies**
-> CurrencyListResponse get_currencies()
+> CurrencyPageResponse get_currencies()
 
 Get Currencies
 
@@ -556,7 +556,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**CurrencyListResponse**](../models/CurrencyListResponse.md)
+[**CurrencyPageResponse**](../models/CurrencyPageResponse.md)
 
 ### HTTP request headers
 
@@ -574,7 +574,7 @@ This endpoint does not need any parameter.
 
 
 # **get_education_levels**
-> EducationLevelListResponse get_education_levels(page, size, query)
+> EducationLevelPageResponse get_education_levels(page, size, query)
 
 Get Education Levels
 
@@ -622,7 +622,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**EducationLevelListResponse**](../models/EducationLevelListResponse.md)
+[**EducationLevelPageResponse**](../models/EducationLevelPageResponse.md)
 
 ### HTTP request headers
 
@@ -640,7 +640,7 @@ Name | Type | Description  | Notes
 
 
 # **get_employment_status_type**
-> EmploymentStatusTypeListResponse get_employment_status_type(name, employment_status_number_type, default_data)
+> EmploymentStatusTypePageResponse get_employment_status_type(name, employment_status_number_type, default_data)
 
 Get Employment Status Type
 
@@ -696,7 +696,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**EmploymentStatusTypeListResponse**](../models/EmploymentStatusTypeListResponse.md)
+[**EmploymentStatusTypePageResponse**](../models/EmploymentStatusTypePageResponse.md)
 
 ### HTTP request headers
 
@@ -714,7 +714,7 @@ Name | Type | Description  | Notes
 
 
 # **get_employment_type**
-> EmploymentTypeListResponse get_employment_type()
+> EmploymentTypePageResponse get_employment_type()
 
 Get Employment Type
 
@@ -763,7 +763,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**EmploymentTypeListResponse**](../models/EmploymentTypeListResponse.md)
+[**EmploymentTypePageResponse**](../models/EmploymentTypePageResponse.md)
 
 ### HTTP request headers
 
@@ -781,7 +781,7 @@ This endpoint does not need any parameter.
 
 
 # **get_family_relations**
-> FamilyMemberRelationListResponse get_family_relations()
+> FamilyMemberRelationPageResponse get_family_relations()
 
 Get Family Relations
 
@@ -827,7 +827,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**FamilyMemberRelationListResponse**](../models/FamilyMemberRelationListResponse.md)
+[**FamilyMemberRelationPageResponse**](../models/FamilyMemberRelationPageResponse.md)
 
 ### HTTP request headers
 
@@ -845,7 +845,7 @@ This endpoint does not need any parameter.
 
 
 # **get_field_of_studies**
-> FieldOfStudyListResponse get_field_of_studies(page, size, query)
+> FieldOfStudyPageResponse get_field_of_studies(page, size, query)
 
 Get Field Of Study
 
@@ -893,7 +893,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**FieldOfStudyListResponse**](../models/FieldOfStudyListResponse.md)
+[**FieldOfStudyPageResponse**](../models/FieldOfStudyPageResponse.md)
 
 ### HTTP request headers
 
@@ -911,7 +911,7 @@ Name | Type | Description  | Notes
 
 
 # **get_historical_educations**
-> EducationListResponse get_historical_educations(page, size, query)
+> EducationPageResponse get_historical_educations(page, size, query)
 
 Get Historical Educations
 
@@ -959,7 +959,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**EducationListResponse**](../models/EducationListResponse.md)
+[**EducationPageResponse**](../models/EducationPageResponse.md)
 
 ### HTTP request headers
 
@@ -977,7 +977,7 @@ Name | Type | Description  | Notes
 
 
 # **get_identity_card**
-> IdentityCardListResponse get_identity_card()
+> IdentityCardPageResponse get_identity_card()
 
 Get Identity Card
 
@@ -1023,7 +1023,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**IdentityCardListResponse**](../models/IdentityCardListResponse.md)
+[**IdentityCardPageResponse**](../models/IdentityCardPageResponse.md)
 
 ### HTTP request headers
 
@@ -1041,7 +1041,7 @@ This endpoint does not need any parameter.
 
 
 # **get_institutions**
-> InstitutionListResponse get_institutions(page, size, query)
+> InstitutionPageResponse get_institutions(page, size, query)
 
 Get Institutions
 
@@ -1089,7 +1089,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InstitutionListResponse**](../models/InstitutionListResponse.md)
+[**InstitutionPageResponse**](../models/InstitutionPageResponse.md)
 
 ### HTTP request headers
 
@@ -1107,7 +1107,7 @@ Name | Type | Description  | Notes
 
 
 # **get_religions**
-> ReligionListResponse get_religions()
+> ReligionPageResponse get_religions()
 
 Get Religions
 
@@ -1147,7 +1147,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**ReligionListResponse**](../models/ReligionListResponse.md)
+[**ReligionPageResponse**](../models/ReligionPageResponse.md)
 
 ### HTTP request headers
 
@@ -1165,7 +1165,7 @@ This endpoint does not need any parameter.
 
 
 # **get_states**
-> StateListResponse get_states()
+> StatePageResponse get_states()
 
 Get States
 
@@ -1205,7 +1205,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**StateListResponse**](../models/StateListResponse.md)
+[**StatePageResponse**](../models/StatePageResponse.md)
 
 ### HTTP request headers
 

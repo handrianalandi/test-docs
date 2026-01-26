@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **find_all_custom_tables**
-> CustomTableListResponse find_all_custom_tables(page, size, query)
+> CustomTablePageResponse find_all_custom_tables(page, size, query)
 
 Retrieve all custom tables
 
@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CustomTableListResponse**](../models/CustomTableListResponse.md)
+[**CustomTablePageResponse**](../models/CustomTablePageResponse.md)
 
 ### HTTP request headers
 

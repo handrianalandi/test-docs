@@ -77,7 +77,7 @@ Name | Type | Description  | Notes
 
 
 # **get_former_employee_income_employee**
-> FormerEmployeeIncomeEmployeeListResponse get_former_employee_income_employee()
+> FormerEmployeeIncomeEmployeePageResponse get_former_employee_income_employee()
 
 Get Former Employee Income Employee
 
@@ -124,7 +124,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**FormerEmployeeIncomeEmployeeListResponse**](../models/FormerEmployeeIncomeEmployeeListResponse.md)
+[**FormerEmployeeIncomeEmployeePageResponse**](../models/FormerEmployeeIncomeEmployeePageResponse.md)
 
 ### HTTP request headers
 
@@ -142,7 +142,7 @@ This endpoint does not need any parameter.
 
 
 # **get_former_employee_income_employee_by_former_employee_income_id**
-> FormerEmployeeIncomeEmployeeListResponse get_former_employee_income_employee_by_former_employee_income_id(former_employee_income_id)
+> FormerEmployeeIncomeEmployeePageResponse get_former_employee_income_employee_by_former_employee_income_id(former_employee_income_id)
 
 Get Former Employee Income Employee By Former Employee Income Id
 
@@ -193,7 +193,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**FormerEmployeeIncomeEmployeeListResponse**](../models/FormerEmployeeIncomeEmployeeListResponse.md)
+[**FormerEmployeeIncomeEmployeePageResponse**](../models/FormerEmployeeIncomeEmployeePageResponse.md)
 
 ### HTTP request headers
 
@@ -211,7 +211,7 @@ Name | Type | Description  | Notes
 
 
 # **get_former_employee_incomes**
-> FormerEmployeeIncomeListResponse get_former_employee_incomes()
+> FormerEmployeeIncomePageResponse get_former_employee_incomes()
 
 Get Former Employee Incomes
 
@@ -262,7 +262,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**FormerEmployeeIncomeListResponse**](../models/FormerEmployeeIncomeListResponse.md)
+[**FormerEmployeeIncomePageResponse**](../models/FormerEmployeeIncomePageResponse.md)
 
 ### HTTP request headers
 

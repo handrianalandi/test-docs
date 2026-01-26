@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 
 
 # **get_employee_paygroups**
-> EmployeePaygroupListResponse get_employee_paygroups(page, size, query)
+> EmployeePaygroupPageResponse get_employee_paygroups(page, size, query)
 
 Get Employee Paygroups
 
@@ -122,7 +122,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**EmployeePaygroupListResponse**](../models/EmployeePaygroupListResponse.md)
+[**EmployeePaygroupPageResponse**](../models/EmployeePaygroupPageResponse.md)
 
 ### HTTP request headers
 

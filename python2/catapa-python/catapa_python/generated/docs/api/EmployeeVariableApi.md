@@ -420,7 +420,7 @@ This endpoint does not need any parameter.
 
 
 # **get_aperiodic_employee_variables**
-> EmployeeVariableListResponse get_aperiodic_employee_variables()
+> EmployeeVariablePageResponse get_aperiodic_employee_variables()
 
 Get Aperiodic Employee Variables
 
@@ -460,7 +460,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**EmployeeVariableListResponse**](../models/EmployeeVariableListResponse.md)
+[**EmployeeVariablePageResponse**](../models/EmployeeVariablePageResponse.md)
 
 ### HTTP request headers
 
@@ -540,7 +540,7 @@ Name | Type | Description  | Notes
 
 
 # **get_employee_variable_metadata**
-> EmployeeVariableMetadataListResponse get_employee_variable_metadata()
+> EmployeeVariableMetadataPageResponse get_employee_variable_metadata()
 
 Get Employee Variable Metadata
 
@@ -589,7 +589,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**EmployeeVariableMetadataListResponse**](../models/EmployeeVariableMetadataListResponse.md)
+[**EmployeeVariableMetadataPageResponse**](../models/EmployeeVariableMetadataPageResponse.md)
 
 ### HTTP request headers
 
@@ -669,7 +669,7 @@ Name | Type | Description  | Notes
 
 
 # **get_employee_variables**
-> EmployeeVariableListResponse get_employee_variables()
+> EmployeeVariablePageResponse get_employee_variables()
 
 Get Employee Variables
 
@@ -721,7 +721,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**EmployeeVariableListResponse**](../models/EmployeeVariableListResponse.md)
+[**EmployeeVariablePageResponse**](../models/EmployeeVariablePageResponse.md)
 
 ### HTTP request headers
 
@@ -739,7 +739,7 @@ This endpoint does not need any parameter.
 
 
 # **get_periodic_employee_variables**
-> EmployeeVariableListResponse get_periodic_employee_variables()
+> EmployeeVariablePageResponse get_periodic_employee_variables()
 
 Get Periodic Employee Variables
 
@@ -779,7 +779,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**EmployeeVariableListResponse**](../models/EmployeeVariableListResponse.md)
+[**EmployeeVariablePageResponse**](../models/EmployeeVariablePageResponse.md)
 
 ### HTTP request headers
 

@@ -81,7 +81,7 @@ Name | Type | Description  | Notes
 
 
 # **get_employment_status_histories**
-> EmploymentStatusHistoryListResponse get_employment_status_histories(page, size, query)
+> EmploymentStatusHistoryPageResponse get_employment_status_histories(page, size, query)
 
 Get Employment Status Histories
 
@@ -129,7 +129,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**EmploymentStatusHistoryListResponse**](../models/EmploymentStatusHistoryListResponse.md)
+[**EmploymentStatusHistoryPageResponse**](../models/EmploymentStatusHistoryPageResponse.md)
 
 ### HTTP request headers
 
@@ -147,7 +147,7 @@ Name | Type | Description  | Notes
 
 
 # **get_employment_statuses**
-> EmploymentStatusListResponse get_employment_statuses(page, size, query)
+> EmploymentStatusPageResponse get_employment_statuses(page, size, query)
 
 Get Employment Statuses
 
@@ -195,7 +195,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**EmploymentStatusListResponse**](../models/EmploymentStatusListResponse.md)
+[**EmploymentStatusPageResponse**](../models/EmploymentStatusPageResponse.md)
 
 ### HTTP request headers
 

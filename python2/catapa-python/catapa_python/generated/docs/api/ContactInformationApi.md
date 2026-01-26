@@ -75,7 +75,7 @@ Name | Type | Description  | Notes
 
 
 # **get_historical_contact_information**
-> ContactInformationListResponse get_historical_contact_information(page, size, query)
+> ContactInformationPageResponse get_historical_contact_information(page, size, query)
 
 Get Historical Contact Information
 
@@ -123,7 +123,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ContactInformationListResponse**](../models/ContactInformationListResponse.md)
+[**ContactInformationPageResponse**](../models/ContactInformationPageResponse.md)
 
 ### HTTP request headers
 

@@ -75,7 +75,7 @@ Name | Type | Description  | Notes
 
 
 # **get_analytics_chart**
-> AnalyticsChartListResponse get_analytics_chart()
+> AnalyticsChartPageResponse get_analytics_chart()
 
 Get Analytics Chart Data
 
@@ -121,7 +121,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**AnalyticsChartListResponse**](../models/AnalyticsChartListResponse.md)
+[**AnalyticsChartPageResponse**](../models/AnalyticsChartPageResponse.md)
 
 ### HTTP request headers
 

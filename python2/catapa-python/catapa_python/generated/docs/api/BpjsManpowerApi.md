@@ -407,7 +407,7 @@ void (empty response body)
 
 
 # **get_bpjs_manpower_premium_summaries**
-> BpjsManpowerPremiumSummaryListResponse get_bpjs_manpower_premium_summaries()
+> BpjsManpowerPremiumSummaryPageResponse get_bpjs_manpower_premium_summaries()
 
 Get BPJS Manpower Premium Summaries
 
@@ -455,7 +455,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**BpjsManpowerPremiumSummaryListResponse**](../models/BpjsManpowerPremiumSummaryListResponse.md)
+[**BpjsManpowerPremiumSummaryPageResponse**](../models/BpjsManpowerPremiumSummaryPageResponse.md)
 
 ### HTTP request headers
 
@@ -535,7 +535,7 @@ Name | Type | Description  | Notes
 
 
 # **get_bpjs_manpower_providers**
-> BpjsManpowerProviderListResponse get_bpjs_manpower_providers()
+> BpjsManpowerProviderPageResponse get_bpjs_manpower_providers()
 
 Get BPJS Manpower Providers
 
@@ -586,7 +586,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**BpjsManpowerProviderListResponse**](../models/BpjsManpowerProviderListResponse.md)
+[**BpjsManpowerProviderPageResponse**](../models/BpjsManpowerProviderPageResponse.md)
 
 ### HTTP request headers
 
@@ -604,7 +604,7 @@ This endpoint does not need any parameter.
 
 
 # **get_bpjs_manpower_templates**
-> BpjsManpowerTemplateListResponse get_bpjs_manpower_templates()
+> BpjsManpowerTemplatePageResponse get_bpjs_manpower_templates()
 
 Get BPJS Manpower Templates
 
@@ -653,7 +653,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**BpjsManpowerTemplateListResponse**](../models/BpjsManpowerTemplateListResponse.md)
+[**BpjsManpowerTemplatePageResponse**](../models/BpjsManpowerTemplatePageResponse.md)
 
 ### HTTP request headers
 

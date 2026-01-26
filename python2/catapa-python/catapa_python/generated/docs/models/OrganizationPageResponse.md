@@ -1,0 +1,39 @@
+# OrganizationPageResponse
+
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**total_pages** | **int** |  | [optional] 
+**last** | **bool** |  | [optional] 
+**total_elements** | **int** |  | [optional] 
+**number_of_elements** | **int** |  | [optional] 
+**has_content** | **bool** |  | [optional] 
+**sort** | [**List[SortProperty]**](SortProperty.md) |  | [optional] 
+**first** | **bool** |  | [optional] 
+**size** | **int** |  | [optional] 
+**number** | **int** |  | [optional] 
+**content** | [**List[OrganizationResponse]**](OrganizationResponse.md) |  | [optional] 
+
+## Example
+
+```python
+from catapa import OrganizationPageResponse
+
+# TODO update the JSON string below
+json = "{}"
+# create an instance of OrganizationPageResponse from a JSON string
+organization_page_response_instance = OrganizationPageResponse.from_json(json)
+# print the JSON string representation of the object
+print(OrganizationPageResponse.to_json())
+
+# convert the object into a dict
+organization_page_response_dict = organization_page_response_instance.to_dict()
+# create an instance of OrganizationPageResponse from a dict
+organization_page_response_from_dict = OrganizationPageResponse.from_dict(organization_page_response_dict)
+```
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
+
+
+

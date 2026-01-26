@@ -145,7 +145,7 @@ Name | Type | Description  | Notes
 
 
 # **get_termination_bpjs_manpower_reason**
-> TerminationBPJSManpowerReasonListResponse get_termination_bpjs_manpower_reason()
+> TerminationBPJSManpowerReasonPageResponse get_termination_bpjs_manpower_reason()
 
 Get Termination BPJS Manpower Reason
 
@@ -191,7 +191,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**TerminationBPJSManpowerReasonListResponse**](../models/TerminationBPJSManpowerReasonListResponse.md)
+[**TerminationBPJSManpowerReasonPageResponse**](../models/TerminationBPJSManpowerReasonPageResponse.md)
 
 ### HTTP request headers
 
@@ -271,7 +271,7 @@ Name | Type | Description  | Notes
 
 
 # **get_termination_reason**
-> TerminationReasonListResponse get_termination_reason()
+> TerminationReasonPageResponse get_termination_reason()
 
 Get Termination Reason
 
@@ -317,7 +317,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**TerminationReasonListResponse**](../models/TerminationReasonListResponse.md)
+[**TerminationReasonPageResponse**](../models/TerminationReasonPageResponse.md)
 
 ### HTTP request headers
 
@@ -335,7 +335,7 @@ This endpoint does not need any parameter.
 
 
 # **get_termination_reason_category**
-> TerminationReasonCategoryListResponse get_termination_reason_category()
+> TerminationReasonCategoryPageResponse get_termination_reason_category()
 
 Get Termination Reason Category
 
@@ -381,7 +381,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**TerminationReasonCategoryListResponse**](../models/TerminationReasonCategoryListResponse.md)
+[**TerminationReasonCategoryPageResponse**](../models/TerminationReasonCategoryPageResponse.md)
 
 ### HTTP request headers
 
@@ -399,7 +399,7 @@ This endpoint does not need any parameter.
 
 
 # **get_termination_tax_reason**
-> TerminationTaxReasonListResponse get_termination_tax_reason()
+> TerminationTaxReasonPageResponse get_termination_tax_reason()
 
 Get Termination Tax Reason
 
@@ -446,7 +446,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**TerminationTaxReasonListResponse**](../models/TerminationTaxReasonListResponse.md)
+[**TerminationTaxReasonPageResponse**](../models/TerminationTaxReasonPageResponse.md)
 
 ### HTTP request headers
 

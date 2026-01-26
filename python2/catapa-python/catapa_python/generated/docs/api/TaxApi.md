@@ -471,7 +471,7 @@ Name | Type | Description  | Notes
 
 
 # **get1721_a1_reports**
-> TaxReport1721A1ListResponse get1721_a1_reports()
+> TaxReport1721A1PageResponse get1721_a1_reports()
 
 Get 1721 A1 Reports
 
@@ -511,7 +511,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**TaxReport1721A1ListResponse**](../models/TaxReport1721A1ListResponse.md)
+[**TaxReport1721A1PageResponse**](../models/TaxReport1721A1PageResponse.md)
 
 ### HTTP request headers
 
@@ -529,7 +529,7 @@ This endpoint does not need any parameter.
 
 
 # **get1721_vi_reports**
-> TaxReport1721VIListResponse get1721_vi_reports()
+> TaxReport1721VIPageResponse get1721_vi_reports()
 
 Get 1721 VI Reports
 
@@ -569,7 +569,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**TaxReport1721VIListResponse**](../models/TaxReport1721VIListResponse.md)
+[**TaxReport1721VIPageResponse**](../models/TaxReport1721VIPageResponse.md)
 
 ### HTTP request headers
 
@@ -587,7 +587,7 @@ This endpoint does not need any parameter.
 
 
 # **get1721_vi_tax_reports**
-> TaxReport1721VIListResponse get1721_vi_tax_reports()
+> TaxReport1721VIPageResponse get1721_vi_tax_reports()
 
 Get 1721 VI Reports
 
@@ -627,7 +627,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**TaxReport1721VIListResponse**](../models/TaxReport1721VIListResponse.md)
+[**TaxReport1721VIPageResponse**](../models/TaxReport1721VIPageResponse.md)
 
 ### HTTP request headers
 
@@ -645,7 +645,7 @@ This endpoint does not need any parameter.
 
 
 # **get1721_vii_reports**
-> TaxReport1721VIIListResponse get1721_vii_reports()
+> TaxReport1721VIIPageResponse get1721_vii_reports()
 
 Get 1721 VII Reports
 
@@ -685,7 +685,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**TaxReport1721VIIListResponse**](../models/TaxReport1721VIIListResponse.md)
+[**TaxReport1721VIIPageResponse**](../models/TaxReport1721VIIPageResponse.md)
 
 ### HTTP request headers
 
@@ -703,7 +703,7 @@ This endpoint does not need any parameter.
 
 
 # **get1721_vii_tax_reports**
-> TaxReport1721VIIListResponse get1721_vii_tax_reports()
+> TaxReport1721VIIPageResponse get1721_vii_tax_reports()
 
 Get 1721 VII Reports
 
@@ -743,7 +743,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**TaxReport1721VIIListResponse**](../models/TaxReport1721VIIListResponse.md)
+[**TaxReport1721VIIPageResponse**](../models/TaxReport1721VIIPageResponse.md)
 
 ### HTTP request headers
 
@@ -761,7 +761,7 @@ This endpoint does not need any parameter.
 
 
 # **get1721_viii_reports**
-> TaxReport1721VIIIListResponse get1721_viii_reports()
+> TaxReport1721VIIIPageResponse get1721_viii_reports()
 
 Get 1721 VIII Reports
 
@@ -801,7 +801,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**TaxReport1721VIIIListResponse**](../models/TaxReport1721VIIIListResponse.md)
+[**TaxReport1721VIIIPageResponse**](../models/TaxReport1721VIIIPageResponse.md)
 
 ### HTTP request headers
 
@@ -935,7 +935,7 @@ This endpoint does not need any parameter.
 
 
 # **get_kpp**
-> KppListResponse get_kpp()
+> KppPageResponse get_kpp()
 
 Get Kpp
 
@@ -982,7 +982,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**KppListResponse**](../models/KppListResponse.md)
+[**KppPageResponse**](../models/KppPageResponse.md)
 
 ### HTTP request headers
 
@@ -1000,7 +1000,7 @@ This endpoint does not need any parameter.
 
 
 # **get_monthly_tax_report**
-> MonthlyTaxReportListResponse get_monthly_tax_report()
+> MonthlyTaxReportPageResponse get_monthly_tax_report()
 
 Get Monthly Tax Report
 
@@ -1055,7 +1055,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**MonthlyTaxReportListResponse**](../models/MonthlyTaxReportListResponse.md)
+[**MonthlyTaxReportPageResponse**](../models/MonthlyTaxReportPageResponse.md)
 
 ### HTTP request headers
 
@@ -1131,7 +1131,7 @@ This endpoint does not need any parameter.
 
 
 # **get_ptkp_categories**
-> PtkpCategoryListResponse get_ptkp_categories()
+> PtkpCategoryPageResponse get_ptkp_categories()
 
 Get Ptkp Categories
 
@@ -1178,7 +1178,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**PtkpCategoryListResponse**](../models/PtkpCategoryListResponse.md)
+[**PtkpCategoryPageResponse**](../models/PtkpCategoryPageResponse.md)
 
 ### HTTP request headers
 
@@ -1196,7 +1196,7 @@ This endpoint does not need any parameter.
 
 
 # **get_tax_calculations**
-> TaxCalculationListResponse get_tax_calculations()
+> TaxCalculationPageResponse get_tax_calculations()
 
 Get Tax Calculations
 
@@ -1251,7 +1251,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**TaxCalculationListResponse**](../models/TaxCalculationListResponse.md)
+[**TaxCalculationPageResponse**](../models/TaxCalculationPageResponse.md)
 
 ### HTTP request headers
 
@@ -1393,7 +1393,7 @@ Name | Type | Description  | Notes
 
 
 # **monthly_tax_detail_find_all**
-> MonthlyTaxDetailListResponse monthly_tax_detail_find_all(page, size)
+> MonthlyTaxDetailPageResponse monthly_tax_detail_find_all(page, size)
 
 GET Monthly Tax Detail
 
@@ -1454,7 +1454,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**MonthlyTaxDetailListResponse**](../models/MonthlyTaxDetailListResponse.md)
+[**MonthlyTaxDetailPageResponse**](../models/MonthlyTaxDetailPageResponse.md)
 
 ### HTTP request headers
 

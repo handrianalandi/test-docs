@@ -736,7 +736,7 @@ This endpoint does not need any parameter.
 
 
 # **get_companies**
-> CompanyListResponse get_companies(page, size, query)
+> CompanyPageResponse get_companies(page, size, query)
 
 Get Companies
 
@@ -784,7 +784,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CompanyListResponse**](../models/CompanyListResponse.md)
+[**CompanyPageResponse**](../models/CompanyPageResponse.md)
 
 ### HTTP request headers
 
@@ -860,7 +860,7 @@ This endpoint does not need any parameter.
 
 
 # **get_company_groups**
-> CompanyGroupListResponse get_company_groups(page, size, query)
+> CompanyGroupPageResponse get_company_groups(page, size, query)
 
 Get Company Groups
 
@@ -908,7 +908,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CompanyGroupListResponse**](../models/CompanyGroupListResponse.md)
+[**CompanyGroupPageResponse**](../models/CompanyGroupPageResponse.md)
 
 ### HTTP request headers
 
@@ -926,7 +926,7 @@ Name | Type | Description  | Notes
 
 
 # **get_cost_center**
-> CostCenterListResponse get_cost_center()
+> CostCenterPageResponse get_cost_center()
 
 Get Cost Center
 
@@ -966,7 +966,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**CostCenterListResponse**](../models/CostCenterListResponse.md)
+[**CostCenterPageResponse**](../models/CostCenterPageResponse.md)
 
 ### HTTP request headers
 
@@ -984,7 +984,7 @@ This endpoint does not need any parameter.
 
 
 # **get_job_level**
-> JobLevelListResponse get_job_level()
+> JobLevelPageResponse get_job_level()
 
 Get Job Level
 
@@ -1033,7 +1033,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**JobLevelListResponse**](../models/JobLevelListResponse.md)
+[**JobLevelPageResponse**](../models/JobLevelPageResponse.md)
 
 ### HTTP request headers
 
@@ -1051,7 +1051,7 @@ This endpoint does not need any parameter.
 
 
 # **get_job_title**
-> JobTitleListResponse get_job_title(page, size, query)
+> JobTitlePageResponse get_job_title(page, size, query)
 
 Get Job Title
 
@@ -1103,7 +1103,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**JobTitleListResponse**](../models/JobTitleListResponse.md)
+[**JobTitlePageResponse**](../models/JobTitlePageResponse.md)
 
 ### HTTP request headers
 
@@ -1121,7 +1121,7 @@ Name | Type | Description  | Notes
 
 
 # **get_job_title_job_level_mappings**
-> JobTitleLevelMappingListResponse get_job_title_job_level_mappings(page, size, query)
+> JobTitleLevelMappingPageResponse get_job_title_job_level_mappings(page, size, query)
 
 Get Job Title Job Level Mappings
 
@@ -1172,7 +1172,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**JobTitleLevelMappingListResponse**](../models/JobTitleLevelMappingListResponse.md)
+[**JobTitleLevelMappingPageResponse**](../models/JobTitleLevelMappingPageResponse.md)
 
 ### HTTP request headers
 
@@ -1190,7 +1190,7 @@ Name | Type | Description  | Notes
 
 
 # **get_location_group**
-> LocationGroupListResponse get_location_group()
+> LocationGroupPageResponse get_location_group()
 
 Get Location Group
 
@@ -1237,7 +1237,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**LocationGroupListResponse**](../models/LocationGroupListResponse.md)
+[**LocationGroupPageResponse**](../models/LocationGroupPageResponse.md)
 
 ### HTTP request headers
 
@@ -1255,7 +1255,7 @@ This endpoint does not need any parameter.
 
 
 # **get_locations**
-> LocationListResponse get_locations(page, size, query)
+> LocationPageResponse get_locations(page, size, query)
 
 Get Location
 
@@ -1303,7 +1303,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**LocationListResponse**](../models/LocationListResponse.md)
+[**LocationPageResponse**](../models/LocationPageResponse.md)
 
 ### HTTP request headers
 
@@ -1321,7 +1321,7 @@ Name | Type | Description  | Notes
 
 
 # **get_operational_groups**
-> OperationalGroupListResponse get_operational_groups(page, size, query)
+> OperationalGroupPageResponse get_operational_groups(page, size, query)
 
 Get Operational Groups
 
@@ -1369,7 +1369,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**OperationalGroupListResponse**](../models/OperationalGroupListResponse.md)
+[**OperationalGroupPageResponse**](../models/OperationalGroupPageResponse.md)
 
 ### HTTP request headers
 
@@ -1387,7 +1387,7 @@ Name | Type | Description  | Notes
 
 
 # **get_organization**
-> OrganizationListResponse get_organization()
+> OrganizationPageResponse get_organization()
 
 Get Organization
 
@@ -1446,7 +1446,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**OrganizationListResponse**](../models/OrganizationListResponse.md)
+[**OrganizationPageResponse**](../models/OrganizationPageResponse.md)
 
 ### HTTP request headers
 
@@ -1464,7 +1464,7 @@ This endpoint does not need any parameter.
 
 
 # **get_organization_group**
-> OrganizationGroupListResponse get_organization_group()
+> OrganizationGroupPageResponse get_organization_group()
 
 Get Organization Group
 
@@ -1511,7 +1511,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**OrganizationGroupListResponse**](../models/OrganizationGroupListResponse.md)
+[**OrganizationGroupPageResponse**](../models/OrganizationGroupPageResponse.md)
 
 ### HTTP request headers
 
@@ -1529,7 +1529,7 @@ This endpoint does not need any parameter.
 
 
 # **get_organization_heads**
-> OrganizationHeadListResponse get_organization_heads(page, size, query)
+> OrganizationHeadPageResponse get_organization_heads(page, size, query)
 
 Get Organization Heads
 
@@ -1577,7 +1577,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**OrganizationHeadListResponse**](../models/OrganizationHeadListResponse.md)
+[**OrganizationHeadPageResponse**](../models/OrganizationHeadPageResponse.md)
 
 ### HTTP request headers
 
@@ -1595,7 +1595,7 @@ Name | Type | Description  | Notes
 
 
 # **get_organization_hierarchies**
-> OrganizationHierarchyListResponse get_organization_hierarchies()
+> OrganizationHierarchyPageResponse get_organization_hierarchies()
 
 Get Organization Hierarchies
 
@@ -1644,7 +1644,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**OrganizationHierarchyListResponse**](../models/OrganizationHierarchyListResponse.md)
+[**OrganizationHierarchyPageResponse**](../models/OrganizationHierarchyPageResponse.md)
 
 ### HTTP request headers
 
@@ -1662,7 +1662,7 @@ This endpoint does not need any parameter.
 
 
 # **get_organization_histories**
-> OrganizationHistoryListResponse get_organization_histories(page, size, query)
+> OrganizationHistoryPageResponse get_organization_histories(page, size, query)
 
 Get Organization Histories
 
@@ -1710,7 +1710,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**OrganizationHistoryListResponse**](../models/OrganizationHistoryListResponse.md)
+[**OrganizationHistoryPageResponse**](../models/OrganizationHistoryPageResponse.md)
 
 ### HTTP request headers
 
@@ -1728,7 +1728,7 @@ Name | Type | Description  | Notes
 
 
 # **get_organization_superiors**
-> OrganizationSuperiorListResponse get_organization_superiors(page, size, query)
+> OrganizationSuperiorPageResponse get_organization_superiors(page, size, query)
 
 Get Organization Superiors
 
@@ -1776,7 +1776,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**OrganizationSuperiorListResponse**](../models/OrganizationSuperiorListResponse.md)
+[**OrganizationSuperiorPageResponse**](../models/OrganizationSuperiorPageResponse.md)
 
 ### HTTP request headers
 
@@ -1794,7 +1794,7 @@ Name | Type | Description  | Notes
 
 
 # **get_position_cost_centers**
-> PositionCostCenterListResponse get_position_cost_centers(page, size, query)
+> PositionCostCenterPageResponse get_position_cost_centers(page, size, query)
 
 Get Position Cost Centers
 
@@ -1842,7 +1842,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PositionCostCenterListResponse**](../models/PositionCostCenterListResponse.md)
+[**PositionCostCenterPageResponse**](../models/PositionCostCenterPageResponse.md)
 
 ### HTTP request headers
 
@@ -1860,7 +1860,7 @@ Name | Type | Description  | Notes
 
 
 # **get_position_histories**
-> PositionHistoryListResponse get_position_histories(page, size, query)
+> PositionHistoryPageResponse get_position_histories(page, size, query)
 
 Get Position Histories
 
@@ -1908,7 +1908,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PositionHistoryListResponse**](../models/PositionHistoryListResponse.md)
+[**PositionHistoryPageResponse**](../models/PositionHistoryPageResponse.md)
 
 ### HTTP request headers
 
@@ -1926,7 +1926,7 @@ Name | Type | Description  | Notes
 
 
 # **get_position_vacancy_statuses**
-> PositionVacancyStatusListResponse get_position_vacancy_statuses(page, size, query)
+> PositionVacancyStatusPageResponse get_position_vacancy_statuses(page, size, query)
 
 Get Position Vacancy Statuses
 
@@ -1974,7 +1974,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PositionVacancyStatusListResponse**](../models/PositionVacancyStatusListResponse.md)
+[**PositionVacancyStatusPageResponse**](../models/PositionVacancyStatusPageResponse.md)
 
 ### HTTP request headers
 
@@ -1992,7 +1992,7 @@ Name | Type | Description  | Notes
 
 
 # **get_positions**
-> PositionListResponse get_positions(page, size, query)
+> PositionPageResponse get_positions(page, size, query)
 
 Get Positions
 
@@ -2040,7 +2040,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PositionListResponse**](../models/PositionListResponse.md)
+[**PositionPageResponse**](../models/PositionPageResponse.md)
 
 ### HTTP request headers
 
@@ -2058,7 +2058,7 @@ Name | Type | Description  | Notes
 
 
 # **get_sub_locations**
-> SubLocationListResponse get_sub_locations(page, size, query)
+> SubLocationPageResponse get_sub_locations(page, size, query)
 
 Get Sub Location
 
@@ -2106,7 +2106,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SubLocationListResponse**](../models/SubLocationListResponse.md)
+[**SubLocationPageResponse**](../models/SubLocationPageResponse.md)
 
 ### HTTP request headers
 

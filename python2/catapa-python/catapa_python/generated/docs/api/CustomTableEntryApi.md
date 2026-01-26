@@ -79,7 +79,7 @@ Name | Type | Description  | Notes
 
 
 # **find_all_entries**
-> CustomTableEntryListResponse find_all_entries(table_id, query, page, size)
+> CustomTableEntryPageResponse find_all_entries(table_id, query, page, size)
 
 Retrieve all entries for a custom table, with response structure varying based on the custom table columns
 
@@ -129,7 +129,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CustomTableEntryListResponse**](../models/CustomTableEntryListResponse.md)
+[**CustomTableEntryPageResponse**](../models/CustomTableEntryPageResponse.md)
 
 ### HTTP request headers
 

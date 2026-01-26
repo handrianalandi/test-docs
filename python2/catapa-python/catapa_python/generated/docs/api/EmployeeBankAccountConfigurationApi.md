@@ -77,7 +77,7 @@ Name | Type | Description  | Notes
 
 
 # **get_employee_bank_account_configuration_histories**
-> BankAccountConfigurationListResponse get_employee_bank_account_configuration_histories(employee_id, page, size)
+> BankAccountConfigurationPageResponse get_employee_bank_account_configuration_histories(employee_id, page, size)
 
 Get Employee Bank Account Configuration Histories
 
@@ -127,7 +127,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**BankAccountConfigurationListResponse**](../models/BankAccountConfigurationListResponse.md)
+[**BankAccountConfigurationPageResponse**](../models/BankAccountConfigurationPageResponse.md)
 
 ### HTTP request headers
 

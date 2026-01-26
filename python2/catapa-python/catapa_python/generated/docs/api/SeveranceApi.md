@@ -205,7 +205,7 @@ Name | Type | Description  | Notes
 
 
 # **get_severance_payment_plan**
-> SeverancePaymentPlanListResponse get_severance_payment_plan()
+> SeverancePaymentPlanPageResponse get_severance_payment_plan()
 
 Get Severance Payment Plan
 
@@ -255,7 +255,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**SeverancePaymentPlanListResponse**](../models/SeverancePaymentPlanListResponse.md)
+[**SeverancePaymentPlanPageResponse**](../models/SeverancePaymentPlanPageResponse.md)
 
 ### HTTP request headers
 
@@ -335,7 +335,7 @@ Name | Type | Description  | Notes
 
 
 # **get_severance_plans**
-> SeverancePlanListResponse get_severance_plans()
+> SeverancePlanPageResponse get_severance_plans()
 
 Get Severance Plans
 
@@ -384,7 +384,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**SeverancePlanListResponse**](../models/SeverancePlanListResponse.md)
+[**SeverancePlanPageResponse**](../models/SeverancePlanPageResponse.md)
 
 ### HTTP request headers
 

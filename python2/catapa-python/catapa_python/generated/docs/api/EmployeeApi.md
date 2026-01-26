@@ -146,7 +146,7 @@ This endpoint does not need any parameter.
 
 
 # **get_additional_assignment_approvals**
-> AdditionalAssignmentApprovalListResponse get_additional_assignment_approvals(page, size, query)
+> AdditionalAssignmentApprovalPageResponse get_additional_assignment_approvals(page, size, query)
 
 List All Additional Assignment Approvals
 
@@ -194,7 +194,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**AdditionalAssignmentApprovalListResponse**](../models/AdditionalAssignmentApprovalListResponse.md)
+[**AdditionalAssignmentApprovalPageResponse**](../models/AdditionalAssignmentApprovalPageResponse.md)
 
 ### HTTP request headers
 
@@ -274,7 +274,7 @@ Name | Type | Description  | Notes
 
 
 # **list_all_employees**
-> EmployeeListResponse list_all_employees(page, size, query)
+> EmployeePageResponse list_all_employees(page, size, query)
 
 List All Employees
 
@@ -322,7 +322,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**EmployeeListResponse**](../models/EmployeeListResponse.md)
+[**EmployeePageResponse**](../models/EmployeePageResponse.md)
 
 ### HTTP request headers
 

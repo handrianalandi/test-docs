@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 
 # **get_role_authorities**
-> RoleAuthorityListResponse get_role_authorities(id, page, size)
+> RoleAuthorityPageResponse get_role_authorities(id, page, size)
 
 Get Role Authorities
 
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RoleAuthorityListResponse**](../models/RoleAuthorityListResponse.md)
+[**RoleAuthorityPageResponse**](../models/RoleAuthorityPageResponse.md)
 
 ### HTTP request headers
 
@@ -144,7 +144,7 @@ Name | Type | Description  | Notes
 
 
 # **get_role_permissions**
-> RolePermissionListResponse get_role_permissions(id, expanded)
+> RolePermissionPageResponse get_role_permissions(id, expanded)
 
 Get Role Permissions
 
@@ -190,7 +190,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RolePermissionListResponse**](../models/RolePermissionListResponse.md)
+[**RolePermissionPageResponse**](../models/RolePermissionPageResponse.md)
 
 ### HTTP request headers
 
@@ -209,7 +209,7 @@ Name | Type | Description  | Notes
 
 
 # **list_all_roles**
-> RoleListResponse list_all_roles(page, size, query)
+> RolePageResponse list_all_roles(page, size, query)
 
 List All Roles
 
@@ -257,7 +257,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RoleListResponse**](../models/RoleListResponse.md)
+[**RolePageResponse**](../models/RolePageResponse.md)
 
 ### HTTP request headers
 

@@ -275,7 +275,7 @@ Name | Type | Description  | Notes
 
 
 # **get_salary_templates**
-> SalaryTemplateListResponse get_salary_templates()
+> SalaryTemplatePageResponse get_salary_templates()
 
 Get Salary Templates
 
@@ -322,7 +322,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**SalaryTemplateListResponse**](../models/SalaryTemplateListResponse.md)
+[**SalaryTemplatePageResponse**](../models/SalaryTemplatePageResponse.md)
 
 ### HTTP request headers
 

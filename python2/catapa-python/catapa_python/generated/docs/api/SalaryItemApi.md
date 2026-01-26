@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 
 
 # **get_salary_items**
-> SalaryItemListResponse get_salary_items(page, size, include_default_type, query)
+> SalaryItemPageResponse get_salary_items(page, size, include_default_type, query)
 
 Get Salary Items
 
@@ -126,7 +126,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SalaryItemListResponse**](../models/SalaryItemListResponse.md)
+[**SalaryItemPageResponse**](../models/SalaryItemPageResponse.md)
 
 ### HTTP request headers
 

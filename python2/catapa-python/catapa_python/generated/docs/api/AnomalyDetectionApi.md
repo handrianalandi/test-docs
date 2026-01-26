@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **read_anomaly_suspect**
-> AnomalySuspectListResponse read_anomaly_suspect()
+> AnomalySuspectPageResponse read_anomaly_suspect()
 
 Read Anomaly Suspects
 
@@ -58,7 +58,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**AnomalySuspectListResponse**](../models/AnomalySuspectListResponse.md)
+[**AnomalySuspectPageResponse**](../models/AnomalySuspectPageResponse.md)
 
 ### HTTP request headers
 

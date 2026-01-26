@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **find_all_users**
-> UserListResponse find_all_users(page, size, query)
+> UserPageResponse find_all_users(page, size, query)
 
 Retrieve all users
 
@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**UserListResponse**](../models/UserListResponse.md)
+[**UserPageResponse**](../models/UserPageResponse.md)
 
 ### HTTP request headers
 

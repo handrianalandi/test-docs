@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 
 # **get_salary_calculation**
-> SalaryCalculationListResponse get_salary_calculation()
+> SalaryCalculationPageResponse get_salary_calculation()
 
 Get Salary Calculation
 
@@ -63,7 +63,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**SalaryCalculationListResponse**](../models/SalaryCalculationListResponse.md)
+[**SalaryCalculationPageResponse**](../models/SalaryCalculationPageResponse.md)
 
 ### HTTP request headers
 
@@ -81,7 +81,7 @@ This endpoint does not need any parameter.
 
 
 # **get_salary_calculation_details**
-> SalaryCalculationDetailListResponse get_salary_calculation_details()
+> SalaryCalculationDetailPageResponse get_salary_calculation_details()
 
 Get Salary Calculation Details
 
@@ -127,7 +127,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**SalaryCalculationDetailListResponse**](../models/SalaryCalculationDetailListResponse.md)
+[**SalaryCalculationDetailPageResponse**](../models/SalaryCalculationDetailPageResponse.md)
 
 ### HTTP request headers
 

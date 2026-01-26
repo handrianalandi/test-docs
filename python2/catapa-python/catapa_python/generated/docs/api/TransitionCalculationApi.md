@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 
 # **get_processable_time_allowance_transition**
-> ProcessableTimeAllowanceTransitionListResponse get_processable_time_allowance_transition()
+> ProcessableTimeAllowanceTransitionPageResponse get_processable_time_allowance_transition()
 
 Get Processable Time Allowance Transition
 
@@ -77,7 +77,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**ProcessableTimeAllowanceTransitionListResponse**](../models/ProcessableTimeAllowanceTransitionListResponse.md)
+[**ProcessableTimeAllowanceTransitionPageResponse**](../models/ProcessableTimeAllowanceTransitionPageResponse.md)
 
 ### HTTP request headers
 
@@ -95,7 +95,7 @@ This endpoint does not need any parameter.
 
 
 # **get_processable_transition_calculation**
-> UnprocessedTransitionCalculationListResponse get_processable_transition_calculation()
+> UnprocessedTransitionCalculationPageResponse get_processable_transition_calculation()
 
 Get Processable Transition Calculation
 
@@ -155,7 +155,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**UnprocessedTransitionCalculationListResponse**](../models/UnprocessedTransitionCalculationListResponse.md)
+[**UnprocessedTransitionCalculationPageResponse**](../models/UnprocessedTransitionCalculationPageResponse.md)
 
 ### HTTP request headers
 
@@ -173,7 +173,7 @@ This endpoint does not need any parameter.
 
 
 # **get_processed_transition_calculation**
-> ProcessedTransitionCalculationListResponse get_processed_transition_calculation()
+> ProcessedTransitionCalculationPageResponse get_processed_transition_calculation()
 
 Get Processed Transition Calculation
 
@@ -233,7 +233,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**ProcessedTransitionCalculationListResponse**](../models/ProcessedTransitionCalculationListResponse.md)
+[**ProcessedTransitionCalculationPageResponse**](../models/ProcessedTransitionCalculationPageResponse.md)
 
 ### HTTP request headers
 
