@@ -5,12 +5,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**created_date** | **float** |  | [optional] 
-**updated_date** | **float** |  | [optional] 
-**code** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**category** | [**WorkflowReasonCategoryResponse**](WorkflowReasonCategoryResponse.md) |  | [optional] 
+**id** | **str** |  | 
+**created_date** | **float** |  | 
+**updated_date** | **float** |  | 
+**code** | **str** |  | 
+**name** | **str** |  | 
+**category** | [**WorkflowReasonCategoryResponse**](WorkflowReasonCategoryResponse.md) |  | 
 
 ## Example
 

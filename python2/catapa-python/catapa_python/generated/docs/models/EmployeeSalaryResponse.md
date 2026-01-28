@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**salary_item_id** | **str** |  | [optional] 
-**salary_item_code** | **str** |  | [optional] 
-**amount** | **float** |  | [optional] 
-**recurring_configuration** | [**RecurringConfigurationResponse**](RecurringConfigurationResponse.md) |  | [optional] 
+**salary_item_id** | **str** |  | 
+**salary_item_code** | **str** |  | 
+**amount** | **float** |  | 
+**recurring_configuration** | [**RecurringConfigurationResponse**](RecurringConfigurationResponse.md) |  | 
 
 ## Example
 

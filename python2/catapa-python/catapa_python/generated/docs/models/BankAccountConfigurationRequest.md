@@ -5,13 +5,13 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**company_bank_account** | [**IdRequest**](IdRequest.md) |  | [optional] 
+**id** | **str** |  | 
+**company_bank_account** | [**IdRequest**](IdRequest.md) |  | 
 **bank_id** | **str** |  | 
-**bank_branch_id** | **str** |  | [optional] 
+**bank_branch_id** | **str** |  | 
 **account_number** | **str** | Numeric | 
 **account_name** | **str** |  | 
-**beneficiary_id** | **str** |  | [optional] 
+**beneficiary_id** | **str** |  | 
 **priority** | **float** |  | 
 **currency** | [**IdRequest**](IdRequest.md) |  | 
 **percentage** | **float** |  | 

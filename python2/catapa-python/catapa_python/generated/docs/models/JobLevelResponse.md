@@ -5,11 +5,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**code** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**job_position** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | [optional] 
-**level** | **float** |  | [optional] 
+**id** | **str** |  | 
+**code** | **str** |  | 
+**name** | **str** |  | 
+**job_position** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
+**level** | **float** |  | 
 
 ## Example
 

@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**code** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
+**code** | **str** |  | 
+**name** | **str** |  | 
 
 ## Example
 

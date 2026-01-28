@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**code** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**state** | [**StateResponse**](StateResponse.md) |  | [optional] 
+**id** | **str** |  | 
+**code** | **str** |  | 
+**name** | **str** |  | 
+**state** | [**StateResponse**](StateResponse.md) |  | 
 
 ## Example
 

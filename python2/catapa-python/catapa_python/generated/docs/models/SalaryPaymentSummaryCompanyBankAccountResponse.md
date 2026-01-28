@@ -5,9 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**account_number** | **str** |  | [optional] 
-**bank_branch** | [**BankBranchSimpleResponse**](BankBranchSimpleResponse.md) |  | [optional] 
+**id** | **str** |  | 
+**account_number** | **str** |  | 
+**bank_branch** | [**BankBranchSimpleResponse**](BankBranchSimpleResponse.md) |  | 
 
 ## Example
 

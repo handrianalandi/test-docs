@@ -5,15 +5,15 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**basic_salary** | **float** |  | [optional] [default to 0]
-**tax_allowance** | **float** |  | [optional] [default to 0]
-**other_allowance** | **float** |  | [optional] [default to 0]
-**honorarium** | **float** |  | [optional] [default to 0]
-**insurance_premium** | **float** |  | [optional] [default to 0]
-**enjoyment_revenue** | **float** |  | [optional] [default to 0]
-**bonus** | **float** |  | [optional] [default to 0]
-**monthly_retirement_contribution** | **float** |  | [optional] [default to 0]
-**monthly_religion_allowance** | **float** |  | [optional] [default to 0]
+**basic_salary** | **float** |  | [default to 0]
+**tax_allowance** | **float** |  | [default to 0]
+**other_allowance** | **float** |  | [default to 0]
+**honorarium** | **float** |  | [default to 0]
+**insurance_premium** | **float** |  | [default to 0]
+**enjoyment_revenue** | **float** |  | [default to 0]
+**bonus** | **float** |  | [default to 0]
+**monthly_retirement_contribution** | **float** |  | [default to 0]
+**monthly_religion_allowance** | **float** |  | [default to 0]
 
 ## Example
 

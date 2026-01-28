@@ -5,11 +5,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**address** | **str** |  | [optional] 
-**zip_code** | **str** |  | [optional] 
-**phone** | **str** |  | [optional] 
-**district** | **str** |  | [optional] 
-**city** | [**CityResponse**](CityResponse.md) |  | [optional] 
+**address** | **str** |  | 
+**zip_code** | **str** |  | 
+**phone** | **str** |  | 
+**district** | **str** |  | 
+**city** | [**CityResponse**](CityResponse.md) |  | 
 
 ## Example
 

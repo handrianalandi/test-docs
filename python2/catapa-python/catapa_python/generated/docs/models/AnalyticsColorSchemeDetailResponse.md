@@ -5,9 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**hex_color** | **str** |  | [optional] 
-**sequence** | **float** |  | [optional] 
+**id** | **str** |  | 
+**hex_color** | **str** |  | 
+**sequence** | **float** |  | 
 
 ## Example
 

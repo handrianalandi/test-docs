@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **tax_object** | **str** |  | 
 **start_month** | **int** |  | 
 **components** | [**List[CalculationScenarioComponent]**](CalculationScenarioComponent.md) | List of monthly income components. The last component is the tax end month. For example, if startMonth is 1 and there are 6 components, then endMonth is 6. | 
-**previous_job_component** | [**CalculationScenarioPreviousJobComponent**](CalculationScenarioPreviousJobComponent.md) |  | [optional] 
+**previous_job_component** | [**CalculationScenarioPreviousJobComponent**](CalculationScenarioPreviousJobComponent.md) |  | 
 
 ## Example
 

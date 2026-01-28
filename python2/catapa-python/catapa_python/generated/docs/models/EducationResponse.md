@@ -5,17 +5,17 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**education_level** | [**EducationLevelResponse**](EducationLevelResponse.md) |  | [optional] 
-**field_of_study** | [**FieldOfStudyResponse**](FieldOfStudyResponse.md) |  | [optional] 
-**country** | [**CountryResponse**](CountryResponse.md) |  | [optional] 
-**institution** | [**InstitutionResponse**](InstitutionResponse.md) |  | [optional] 
-**start_date** | **str** |  | [optional] 
-**graduation_date** | **str** |  | [optional] 
-**created_by** | **str** |  | [optional] 
-**created_date** | **float** |  | [optional] 
-**updated_by** | **str** |  | [optional] 
-**updated_date** | **float** |  | [optional] 
+**id** | **str** |  | 
+**education_level** | [**EducationLevelResponse**](EducationLevelResponse.md) |  | 
+**field_of_study** | [**FieldOfStudyResponse**](FieldOfStudyResponse.md) |  | 
+**country** | [**CountryResponse**](CountryResponse.md) |  | 
+**institution** | [**InstitutionResponse**](InstitutionResponse.md) |  | 
+**start_date** | **str** |  | 
+**graduation_date** | **str** |  | 
+**created_by** | **str** |  | 
+**created_date** | **float** |  | 
+**updated_by** | **str** |  | 
+**updated_date** | **float** |  | 
 
 ## Example
 

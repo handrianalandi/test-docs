@@ -1,8 +1,5 @@
 # ContactInformationApi
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
-> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
-
 All URIs are relative to the `base_url` specified in the Catapa client constructor (default: *https://api.catapa.com*)
 
 Method | HTTP request | Description
@@ -117,9 +114,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search Query | Supported Keys     | Supported Operators | Notes                                                                                                                                                                                                   | |--------------------|---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | id                 | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter&lt;br/&gt;The contact information ID value is the same as the ID of the employee who owns this contact information  | | employee.id        | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter&lt;br/&gt;The contact information ID value is the same as the ID of the employee who owns this contact information  |  | [optional] 
+ **page** | **int**| Page number | [default to 0]
+ **size** | **int**| Page size | [default to 10]
+ **query** | **str**| ### Search Query | Supported Keys     | Supported Operators | Notes                                                                                                                                                                                                   | |--------------------|---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | id                 | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter&lt;br/&gt;The contact information ID value is the same as the ID of the employee who owns this contact information  | | employee.id        | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter&lt;br/&gt;The contact information ID value is the same as the ID of the employee who owns this contact information  |  | 
 
 ### Return type
 
@@ -183,7 +180,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **employee_id** | **str**|  | 
- **contact_information_request** | [**ContactInformationRequest**](../models/ContactInformationRequest.md)|  | [optional] 
+ **contact_information_request** | [**ContactInformationRequest**](../models/ContactInformationRequest.md)|  | 
 
 ### Return type
 

@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**identity_card** | [**IdentityCardResponse**](IdentityCardResponse.md) |  | [optional] 
-**identity_card_number** | **str** |  | [optional] 
-**expired_date** | **str** |  | [optional] 
+**id** | **str** |  | 
+**identity_card** | [**IdentityCardResponse**](IdentityCardResponse.md) |  | 
+**identity_card_number** | **str** |  | 
+**expired_date** | **str** |  | 
 
 ## Example
 

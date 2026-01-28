@@ -8,8 +8,8 @@ Name | Type | Description | Notes
 **name** | **str** |  | 
 **type** | **str** |  | 
 **periodic** | **bool** |  | 
-**description** | **str** |  | [optional] 
-**validations** | [**List[EmployeeVariableValidationRequest]**](EmployeeVariableValidationRequest.md) |  | [optional] 
+**description** | **str** |  | 
+**validations** | [**List[EmployeeVariableValidationRequest]**](EmployeeVariableValidationRequest.md) |  | 
 
 ## Example
 

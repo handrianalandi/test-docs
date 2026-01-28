@@ -5,9 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** | Unique identifier of the user | [optional] 
-**username** | **str** | Username of the user | [optional] 
-**employee** | [**EmployeeFullResponse**](EmployeeFullResponse.md) |  | [optional] 
+**id** | **str** | Unique identifier of the user | 
+**username** | **str** | Username of the user | 
+**employee** | [**EmployeeFullResponse**](EmployeeFullResponse.md) |  | 
 
 ## Example
 

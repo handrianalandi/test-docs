@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**amount** | **float** |  | [optional] 
-**salary_item** | [**SalaryItemWithSalaryItemTypeResponse**](SalaryItemWithSalaryItemTypeResponse.md) |  | [optional] 
+**amount** | **float** |  | 
+**salary_item** | [**SalaryItemWithSalaryItemTypeResponse**](SalaryItemWithSalaryItemTypeResponse.md) |  | 
 
 ## Example
 

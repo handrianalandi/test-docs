@@ -1,8 +1,5 @@
 # MasterDataApi
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
-> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
-
 All URIs are relative to the `base_url` specified in the Catapa client constructor (default: *https://api.catapa.com*)
 
 Method | HTTP request | Description
@@ -70,7 +67,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **create_city_request** | [**CreateCityRequest**](../models/CreateCityRequest.md)|  | [optional] 
+ **create_city_request** | [**CreateCityRequest**](../models/CreateCityRequest.md)|  | 
 
 ### Return type
 
@@ -132,7 +129,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **country_request** | [**CountryRequest**](../models/CountryRequest.md)|  | [optional] 
+ **country_request** | [**CountryRequest**](../models/CountryRequest.md)|  | 
 
 ### Return type
 
@@ -194,7 +191,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **employment_type_request** | [**EmploymentTypeRequest**](../models/EmploymentTypeRequest.md)|  | [optional] 
+ **employment_type_request** | [**EmploymentTypeRequest**](../models/EmploymentTypeRequest.md)|  | 
 
 ### Return type
 
@@ -256,7 +253,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **religion_request** | [**ReligionRequest**](../models/ReligionRequest.md)|  | [optional] 
+ **religion_request** | [**ReligionRequest**](../models/ReligionRequest.md)|  | 
 
 ### Return type
 
@@ -616,9 +613,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search Query | Supported Keys     | Supported Operators | Notes                                                                                | |--------------------|---------------------|--------------------------------------------------------------------------------------| | id                 | &#x60;:&#x60;                 | Equal operator with multiple values. Each value should separated with delimiters &#x60;;&#x60; |  | [optional] 
+ **page** | **int**| Page number | [default to 0]
+ **size** | **int**| Page size | [default to 10]
+ **query** | **str**| ### Search Query | Supported Keys     | Supported Operators | Notes                                                                                | |--------------------|---------------------|--------------------------------------------------------------------------------------| | id                 | &#x60;:&#x60;                 | Equal operator with multiple values. Each value should separated with delimiters &#x60;;&#x60; |  | 
 
 ### Return type
 
@@ -690,9 +687,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **name** | **str**|  | [optional] 
- **employment_status_number_type** | **str**|  | [optional] 
- **default_data** | **str**|  | [optional] 
+ **name** | **str**|  | 
+ **employment_status_number_type** | **str**|  | 
+ **default_data** | **str**|  | 
 
 ### Return type
 
@@ -887,9 +884,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search Query | Supported Keys     | Supported Operators | Notes                                                                                | |--------------------|---------------------|--------------------------------------------------------------------------------------| | id                 | &#x60;:&#x60;                 | Equal operator with multiple values. Each value should separated with delimiters &#x60;;&#x60; |  | [optional] 
+ **page** | **int**| Page number | [default to 0]
+ **size** | **int**| Page size | [default to 10]
+ **query** | **str**| ### Search Query | Supported Keys     | Supported Operators | Notes                                                                                | |--------------------|---------------------|--------------------------------------------------------------------------------------| | id                 | &#x60;:&#x60;                 | Equal operator with multiple values. Each value should separated with delimiters &#x60;;&#x60; |  | 
 
 ### Return type
 
@@ -953,9 +950,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search Query | Supported Keys     | Supported Operators | Notes                                                                                | |--------------------|---------------------|--------------------------------------------------------------------------------------| | id                 | &#x60;:&#x60;                 | Equal operator with multiple values. Each value should separated with delimiters &#x60;;&#x60; | | employee.id        | &#x60;:&#x60;                 | Equal operator with multiple values. Each value should separated with delimiters &#x60;;&#x60; |  | [optional] 
+ **page** | **int**| Page number | [default to 0]
+ **size** | **int**| Page size | [default to 10]
+ **query** | **str**| ### Search Query | Supported Keys     | Supported Operators | Notes                                                                                | |--------------------|---------------------|--------------------------------------------------------------------------------------| | id                 | &#x60;:&#x60;                 | Equal operator with multiple values. Each value should separated with delimiters &#x60;;&#x60; | | employee.id        | &#x60;:&#x60;                 | Equal operator with multiple values. Each value should separated with delimiters &#x60;;&#x60; |  | 
 
 ### Return type
 
@@ -1083,9 +1080,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search Query | Supported Keys     | Supported Operators | Notes                                                                                | |--------------------|---------------------|--------------------------------------------------------------------------------------| | id                 | &#x60;:&#x60;                 | Equal operator with multiple values. Each value should separated with delimiters &#x60;;&#x60; |  | [optional] 
+ **page** | **int**| Page number | [default to 0]
+ **size** | **int**| Page size | [default to 10]
+ **query** | **str**| ### Search Query | Supported Keys     | Supported Operators | Notes                                                                                | |--------------------|---------------------|--------------------------------------------------------------------------------------| | id                 | &#x60;:&#x60;                 | Equal operator with multiple values. Each value should separated with delimiters &#x60;;&#x60; |  | 
 
 ### Return type
 
@@ -1265,7 +1262,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**|  | 
- **employment_type_request** | [**EmploymentTypeRequest**](../models/EmploymentTypeRequest.md)|  | [optional] 
+ **employment_type_request** | [**EmploymentTypeRequest**](../models/EmploymentTypeRequest.md)|  | 
 
 ### Return type
 

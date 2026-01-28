@@ -5,26 +5,26 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**gender** | **str** |  | [optional] 
-**date_of_birth** | **str** |  | [optional] 
-**identity_card_number** | **str** |  | [optional] 
-**family_relation** | [**FamilyMemberRelationResponse**](FamilyMemberRelationResponse.md) |  | [optional] 
-**employee** | [**EmployeeSimpleResponse**](EmployeeSimpleResponse.md) |  | [optional] 
-**place_of_birth** | [**PlaceOfBirthResponse**](PlaceOfBirthResponse.md) |  | [optional] 
-**alive** | **bool** |  | [optional] 
-**date_of_death** | **str** |  | [optional] 
-**marital_status** | **object** |  | [optional] 
-**marriage_date** | **str** |  | [optional] 
-**religion** | [**ReligionResponse**](ReligionResponse.md) |  | [optional] 
-**education_level** | [**EducationLevelResponse**](EducationLevelResponse.md) |  | [optional] 
-**job** | **str** |  | [optional] 
-**mobile_phone** | **str** |  | [optional] 
-**description** | **str** |  | [optional] 
-**family** | [**FamilyApprovalResponse**](FamilyApprovalResponse.md) |  | [optional] 
-**approval_status** | **str** |  | [optional] 
-**rejection_reason** | **str** |  | [optional] 
+**id** | **str** |  | 
+**name** | **str** |  | 
+**gender** | **str** |  | 
+**date_of_birth** | **str** |  | 
+**identity_card_number** | **str** |  | 
+**family_relation** | [**FamilyMemberRelationResponse**](FamilyMemberRelationResponse.md) |  | 
+**employee** | [**EmployeeSimpleResponse**](EmployeeSimpleResponse.md) |  | 
+**place_of_birth** | [**PlaceOfBirthResponse**](PlaceOfBirthResponse.md) |  | 
+**alive** | **bool** |  | 
+**date_of_death** | **str** |  | 
+**marital_status** | **object** |  | 
+**marriage_date** | **str** |  | 
+**religion** | [**ReligionResponse**](ReligionResponse.md) |  | 
+**education_level** | [**EducationLevelResponse**](EducationLevelResponse.md) |  | 
+**job** | **str** |  | 
+**mobile_phone** | **str** |  | 
+**description** | **str** |  | 
+**family** | [**FamilyApprovalResponse**](FamilyApprovalResponse.md) |  | 
+**approval_status** | **str** |  | 
+**rejection_reason** | **str** |  | 
 
 ## Example
 

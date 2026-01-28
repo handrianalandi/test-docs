@@ -5,11 +5,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**employment_group_code** | **str** |  | [optional] 
-**month_duration** | **int** |  | [optional] 
-**permanent** | **bool** |  | [optional] 
+**id** | **str** |  | 
+**name** | **str** |  | 
+**employment_group_code** | **str** |  | 
+**month_duration** | **int** |  | 
+**permanent** | **bool** |  | 
 
 ## Example
 

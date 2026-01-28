@@ -5,20 +5,20 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**code** | **str** |  | [optional] 
-**website** | **str** |  | [optional] 
-**siup** | **str** |  | [optional] 
-**tdp** | **str** |  | [optional] 
-**logo** | **str** |  | [optional] 
-**logo_original_filename** | **str** |  | [optional] 
-**logo_file_metadata** | [**LogoFileMetadataResponse**](LogoFileMetadataResponse.md) |  | [optional] 
-**time_zone** | [**TimeZoneResponse**](TimeZoneResponse.md) |  | [optional] 
-**email** | **str** |  | [optional] 
-**company_superior** | [**CompanySuperiorResponse**](CompanySuperiorResponse.md) |  | [optional] 
-**location** | [**LocationResponse**](LocationResponse.md) |  | [optional] 
-**company_group** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | [optional] 
+**id** | **str** |  | 
+**name** | **str** |  | 
+**code** | **str** |  | 
+**website** | **str** |  | 
+**siup** | **str** |  | 
+**tdp** | **str** |  | 
+**logo** | **str** |  | 
+**logo_original_filename** | **str** |  | 
+**logo_file_metadata** | [**LogoFileMetadataResponse**](LogoFileMetadataResponse.md) |  | 
+**time_zone** | [**TimeZoneResponse**](TimeZoneResponse.md) |  | 
+**email** | **str** |  | 
+**company_superior** | [**CompanySuperiorResponse**](CompanySuperiorResponse.md) |  | 
+**location** | [**LocationResponse**](LocationResponse.md) |  | 
+**company_group** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
 
 ## Example
 

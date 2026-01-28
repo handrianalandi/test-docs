@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**original** | **float** |  | [optional] 
-**penalty** | **float** |  | [optional] 
-**tax** | **float** |  | [optional] 
-**allowance** | **float** |  | [optional] 
+**original** | **float** |  | 
+**penalty** | **float** |  | 
+**tax** | **float** |  | 
+**allowance** | **float** |  | 
 
 ## Example
 

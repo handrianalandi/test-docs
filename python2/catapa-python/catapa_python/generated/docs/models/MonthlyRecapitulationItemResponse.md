@@ -5,13 +5,13 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**code** | **str** |  | [optional] 
-**id** | **str** |  | [optional] 
-**month** | **float** |  | [optional] 
-**name** | **str** |  | [optional] 
-**total_thp** | **float** |  | [optional] 
-**year** | **float** |  | [optional] 
-**details** | [**List[MonthlyRecapitulationItemDetailResponse]**](MonthlyRecapitulationItemDetailResponse.md) |  | [optional] 
+**code** | **str** |  | 
+**id** | **str** |  | 
+**month** | **float** |  | 
+**name** | **str** |  | 
+**total_thp** | **float** |  | 
+**year** | **float** |  | 
+**details** | [**List[MonthlyRecapitulationItemDetailResponse]**](MonthlyRecapitulationItemDetailResponse.md) |  | 
 
 ## Example
 

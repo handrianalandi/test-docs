@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**start_cutoff_date** | **str** |  | [optional] 
-**end_cutoff_date** | **str** |  | [optional] 
-**company_amount** | **float** | Value can be null if the date period is not processed yet | [optional] 
-**employee_amount** | **float** | Value can be null if the date period is not processed yet | [optional] 
+**start_cutoff_date** | **str** |  | 
+**end_cutoff_date** | **str** |  | 
+**company_amount** | **float** | Value can be null if the date period is not processed yet | 
+**employee_amount** | **float** | Value can be null if the date period is not processed yet | 
 
 ## Example
 

@@ -5,9 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**email** | **str** |  | [optional] 
-**mobile_phone** | **str** | e.g. &#x60;+6281234567890&#x60; | [optional] 
-**original_address** | **str** |  | [optional] 
+**email** | **str** |  | 
+**mobile_phone** | **str** | e.g. &#x60;+6281234567890&#x60; | 
+**original_address** | **str** |  | 
 
 ## Example
 

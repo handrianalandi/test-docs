@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**color_scheme_details** | [**List[AnalyticsColorSchemeDetailResponse]**](AnalyticsColorSchemeDetailResponse.md) |  | [optional] 
+**id** | **str** |  | 
+**color_scheme_details** | [**List[AnalyticsColorSchemeDetailResponse]**](AnalyticsColorSchemeDetailResponse.md) |  | 
 
 ## Example
 

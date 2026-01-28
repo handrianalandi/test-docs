@@ -5,13 +5,13 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **UUID** |  | [optional] 
-**code** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**payslip_name** | **str** |  | [optional] 
-**salary_item_category** | **str** |  | [optional] 
-**pph21_method** | **str** |  | [optional] 
-**pph21_item** | **str** |  | [optional] 
+**id** | **UUID** |  | 
+**code** | **str** |  | 
+**name** | **str** |  | 
+**payslip_name** | **str** |  | 
+**salary_item_category** | **str** |  | 
+**pph21_method** | **str** |  | 
+**pph21_item** | **str** |  | 
 
 ## Example
 

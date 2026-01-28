@@ -5,17 +5,17 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**employee_identification_number** | **str** |  | [optional] 
-**employee_name** | **str** |  | [optional] 
-**monthly_wage** | **float** |  | [optional] 
-**jkk_amount** | **float** |  | [optional] 
-**jkm_amount** | **float** |  | [optional] 
-**jhtpk_amount** | **float** |  | [optional] 
-**jhtp_amount** | **float** |  | [optional] 
-**jppk_amount** | **float** |  | [optional] 
-**jpp_amount** | **float** |  | [optional] 
-**jkp_amount** | **float** |  | [optional] 
+**id** | **str** |  | 
+**employee_identification_number** | **str** |  | 
+**employee_name** | **str** |  | 
+**monthly_wage** | **float** |  | 
+**jkk_amount** | **float** |  | 
+**jkm_amount** | **float** |  | 
+**jhtpk_amount** | **float** |  | 
+**jhtp_amount** | **float** |  | 
+**jppk_amount** | **float** |  | 
+**jpp_amount** | **float** |  | 
+**jkp_amount** | **float** |  | 
 
 ## Example
 

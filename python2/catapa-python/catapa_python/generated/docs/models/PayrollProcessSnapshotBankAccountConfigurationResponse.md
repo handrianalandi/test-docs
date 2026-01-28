@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**effective_date** | **date** |  | [optional] 
-**bank_accounts** | [**List[PayrollProcessSnapshotBankAccountResponse]**](PayrollProcessSnapshotBankAccountResponse.md) |  | [optional] 
+**effective_date** | **date** |  | 
+**bank_accounts** | [**List[PayrollProcessSnapshotBankAccountResponse]**](PayrollProcessSnapshotBankAccountResponse.md) |  | 
 
 ## Example
 

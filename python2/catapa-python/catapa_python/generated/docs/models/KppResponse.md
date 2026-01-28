@@ -5,14 +5,14 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** | KPP unique identifier | [optional] 
-**code** | **str** | KPP code | [optional] 
-**name** | **str** | KPP name | [optional] 
-**address** | **str** | KPP address | [optional] 
-**responsible_person_name** | **str** | Name of the responsible person | [optional] 
-**responsible_person_npwp** | **str** | NPWP of the responsible person | [optional] 
-**responsible_person_job_title** | **str** | Job title of the responsible person | [optional] 
-**kpp_status** | **str** | Status of the KPP | [optional] 
+**id** | **str** | KPP unique identifier | 
+**code** | **str** | KPP code | 
+**name** | **str** | KPP name | 
+**address** | **str** | KPP address | 
+**responsible_person_name** | **str** | Name of the responsible person | 
+**responsible_person_npwp** | **str** | NPWP of the responsible person | 
+**responsible_person_job_title** | **str** | Job title of the responsible person | 
+**kpp_status** | **str** | Status of the KPP | 
 
 ## Example
 

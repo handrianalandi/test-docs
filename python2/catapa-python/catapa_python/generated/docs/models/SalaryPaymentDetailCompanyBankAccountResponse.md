@@ -5,12 +5,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **UUID** |  | [optional] 
-**name** | **str** |  | [optional] 
-**company_code** | **str** |  | [optional] 
-**account_number** | **str** |  | [optional] 
-**bank_branch** | [**BankBranchResponse**](BankBranchResponse.md) |  | [optional] 
-**currency** | [**CurrencySimpleResponse**](CurrencySimpleResponse.md) |  | [optional] 
+**id** | **UUID** |  | 
+**name** | **str** |  | 
+**company_code** | **str** |  | 
+**account_number** | **str** |  | 
+**bank_branch** | [**BankBranchResponse**](BankBranchResponse.md) |  | 
+**currency** | [**CurrencySimpleResponse**](CurrencySimpleResponse.md) |  | 
 
 ## Example
 

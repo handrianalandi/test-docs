@@ -5,9 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**requested** | **float** |  | [optional] 
-**paid** | **float** |  | [optional] 
-**description** | **str** |  | [optional] 
+**requested** | **float** |  | 
+**paid** | **float** |  | 
+**description** | **str** |  | 
 
 ## Example
 

@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **tax_reason** | [**IdRequest**](IdRequest.md) |  | 
 **bpjs_manpower_reason** | [**IdRequest**](IdRequest.md) |  | 
 **reason_category** | [**IdRequest**](IdRequest.md) |  | 
-**severance** | **bool** |  | [optional] [default to False]
+**severance** | **bool** |  | [default to False]
 
 ## Example
 

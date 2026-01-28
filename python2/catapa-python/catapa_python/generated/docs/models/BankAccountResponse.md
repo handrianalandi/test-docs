@@ -5,18 +5,18 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **UUID** |  | [optional] 
-**bank_id** | **str** |  | [optional] 
-**bank** | [**BankResponse**](BankResponse.md) |  | [optional] 
-**bank_branch_id** | **str** |  | [optional] 
-**bank_branch** | [**BankBranchResponse**](BankBranchResponse.md) |  | [optional] 
-**account_number** | **str** |  | [optional] 
-**account_name** | **str** |  | [optional] 
-**beneficiary_id** | **str** |  | [optional] 
-**priority** | **float** |  | [optional] 
-**currency** | [**CurrencySimpleResponse**](CurrencySimpleResponse.md) |  | [optional] 
-**percentage** | **float** |  | [optional] 
-**amount** | **float** |  | [optional] 
+**id** | **UUID** |  | 
+**bank_id** | **str** |  | 
+**bank** | [**BankResponse**](BankResponse.md) |  | 
+**bank_branch_id** | **str** |  | 
+**bank_branch** | [**BankBranchResponse**](BankBranchResponse.md) |  | 
+**account_number** | **str** |  | 
+**account_name** | **str** |  | 
+**beneficiary_id** | **str** |  | 
+**priority** | **float** |  | 
+**currency** | [**CurrencySimpleResponse**](CurrencySimpleResponse.md) |  | 
+**percentage** | **float** |  | 
+**amount** | **float** |  | 
 
 ## Example
 

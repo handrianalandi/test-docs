@@ -5,12 +5,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** | Unique identifier for the attribute value | [optional] 
-**attribute_value** | **str** | Value of the attribute | [optional] 
-**score** | **float** | Score associated with the attribute value | [optional] 
-**input_source** | **str** | Source of the input data | [optional] 
-**anomaly_suspect_attribute** | [**AnomalySuspectAttributeResponse**](AnomalySuspectAttributeResponse.md) |  | [optional] 
-**child** | [**List[AnomalySuspectAttributeValueChildResponse]**](AnomalySuspectAttributeValueChildResponse.md) | Child attribute values | [optional] 
+**id** | **str** | Unique identifier for the attribute value | 
+**attribute_value** | **str** | Value of the attribute | 
+**score** | **float** | Score associated with the attribute value | 
+**input_source** | **str** | Source of the input data | 
+**anomaly_suspect_attribute** | [**AnomalySuspectAttributeResponse**](AnomalySuspectAttributeResponse.md) |  | 
+**child** | [**List[AnomalySuspectAttributeValueChildResponse]**](AnomalySuspectAttributeValueChildResponse.md) | Child attribute values | 
 
 ## Example
 

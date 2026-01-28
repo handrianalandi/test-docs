@@ -5,9 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** | Unique identifier for the child attribute value | [optional] 
-**attribute_value** | **str** | Value of the child attribute | [optional] 
-**anomaly_suspect_attribute** | [**AnomalySuspectAttributeResponse**](AnomalySuspectAttributeResponse.md) |  | [optional] 
+**id** | **str** | Unique identifier for the child attribute value | 
+**attribute_value** | **str** | Value of the child attribute | 
+**anomaly_suspect_attribute** | [**AnomalySuspectAttributeResponse**](AnomalySuspectAttributeResponse.md) |  | 
 
 ## Example
 

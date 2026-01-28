@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **UUID** |  | [optional] 
-**code** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**salary_template_details** | [**List[SalaryTemplateDetailResponse]**](SalaryTemplateDetailResponse.md) |  | [optional] 
+**id** | **UUID** |  | 
+**code** | **str** |  | 
+**name** | **str** |  | 
+**salary_template_details** | [**List[SalaryTemplateDetailResponse]**](SalaryTemplateDetailResponse.md) |  | 
 
 ## Example
 

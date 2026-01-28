@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**code** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**company** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | [optional] 
+**id** | **str** |  | 
+**code** | **str** |  | 
+**name** | **str** |  | 
+**company** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
 
 ## Example
 

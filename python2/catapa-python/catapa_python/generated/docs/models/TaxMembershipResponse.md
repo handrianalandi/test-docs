@@ -11,19 +11,19 @@ Name | Type | Description | Notes
 **link_to_payroll** | **bool** | Whether this tax membership is linked to payroll | 
 **membership_end_period** | [**TaxMembershipPeriodResponse**](TaxMembershipPeriodResponse.md) |  | 
 **membership_start_period** | [**TaxMembershipPeriodResponse**](TaxMembershipPeriodResponse.md) |  | 
-**effective_end_period** | [**TaxMembershipPeriodResponse**](TaxMembershipPeriodResponse.md) |  | [optional] 
-**effective_start_period** | [**TaxMembershipPeriodResponse**](TaxMembershipPeriodResponse.md) |  | [optional] 
+**effective_end_period** | [**TaxMembershipPeriodResponse**](TaxMembershipPeriodResponse.md) |  | 
+**effective_start_period** | [**TaxMembershipPeriodResponse**](TaxMembershipPeriodResponse.md) |  | 
 **method** | **str** | PPh21 calculation method | 
 **more_than_one_employer** | **bool** | Whether employee has more than one employer | 
 **npwp_address** | **str** | Address registered with NPWP | 
 **npwp_number** | **str** | NPWP (Tax ID) number - can be empty or contain only digits | 
-**tin** | **str** | Tax Identification Number | [optional] 
+**tin** | **str** | Tax Identification Number | 
 **previous_net_income** | **float** | Previous net income amount | 
 **previous_paid_pph** | **float** | Previous paid PPh amount | 
 **ptkp_category_id** | **str** | PTKP (Personal Tax Free Income) category identifier | 
 **tax_object** | **str** | Type of tax object for the employee | 
-**use_recommended_period** | **bool** |  | [optional] 
-**tax_dependents** | [**List[TaxDependentResponse]**](TaxDependentResponse.md) | List of tax dependents for PTKP calculation | [optional] 
+**use_recommended_period** | **bool** |  | 
+**tax_dependents** | [**List[TaxDependentResponse]**](TaxDependentResponse.md) | List of tax dependents for PTKP calculation | 
 
 ## Example
 

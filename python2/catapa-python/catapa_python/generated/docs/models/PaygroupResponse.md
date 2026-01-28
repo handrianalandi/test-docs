@@ -5,15 +5,15 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**code** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**cutoff_type** | **str** |  | [optional] 
-**cutoff_day_of_week** | **str** |  | [optional] 
-**daily_cutoff_date** | **float** |  | [optional] 
-**daily_cutoff_base** | **str** |  | [optional] 
-**default_paygroup** | **bool** |  | [optional] 
-**monthly_cutoff_date** | **float** |  | [optional] 
+**id** | **str** |  | 
+**code** | **str** |  | 
+**name** | **str** |  | 
+**cutoff_type** | **str** |  | 
+**cutoff_day_of_week** | **str** |  | 
+**daily_cutoff_date** | **float** |  | 
+**daily_cutoff_base** | **str** |  | 
+**default_paygroup** | **bool** |  | 
+**monthly_cutoff_date** | **float** |  | 
 
 ## Example
 

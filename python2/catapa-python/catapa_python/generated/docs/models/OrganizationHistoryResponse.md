@@ -5,16 +5,16 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**code** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**organization** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | [optional] 
-**company** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | [optional] 
-**type** | **str** |  | [optional] 
-**organization_hierarchy** | [**OrganizationHistoryHierarchyResponse**](OrganizationHistoryHierarchyResponse.md) |  | [optional] 
-**organization_group** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | [optional] 
-**effective_date** | **date** |  | [optional] 
-**end_date** | **date** |  | [optional] 
+**id** | **str** |  | 
+**code** | **str** |  | 
+**name** | **str** |  | 
+**organization** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
+**company** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
+**type** | **str** |  | 
+**organization_hierarchy** | [**OrganizationHistoryHierarchyResponse**](OrganizationHistoryHierarchyResponse.md) |  | 
+**organization_group** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
+**effective_date** | **date** |  | 
+**end_date** | **date** |  | 
 
 ## Example
 

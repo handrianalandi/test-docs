@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**employee_id** | **str** |  | [optional] 
-**payment_date** | **str** |  | [optional] 
+**employee_id** | **str** |  | 
+**payment_date** | **str** |  | 
 
 ## Example
 

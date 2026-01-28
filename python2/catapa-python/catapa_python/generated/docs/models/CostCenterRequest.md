@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **code** | **str** |  | 
 **name** | **str** |  | 
-**description** | **str** |  | [optional] 
+**description** | **str** |  | 
 
 ## Example
 

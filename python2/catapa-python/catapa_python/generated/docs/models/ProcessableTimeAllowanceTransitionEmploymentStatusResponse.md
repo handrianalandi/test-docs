@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**organization** | [**NameResponse**](NameResponse.md) |  | [optional] 
-**job_title** | [**NameResponse**](NameResponse.md) |  | [optional] 
+**organization** | [**NameResponse**](NameResponse.md) |  | 
+**job_title** | [**NameResponse**](NameResponse.md) |  | 
 
 ## Example
 

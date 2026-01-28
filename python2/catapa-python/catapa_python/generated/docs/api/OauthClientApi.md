@@ -1,8 +1,5 @@
 # OauthClientApi
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
-> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
-
 All URIs are relative to the `base_url` specified in the Catapa client constructor (default: *https://api.catapa.com*)
 
 Method | HTTP request | Description
@@ -116,8 +113,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
+ **page** | **int**| Page number | [default to 0]
+ **size** | **int**| Page size | [default to 10]
 
 ### Return type
 

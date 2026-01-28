@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**organization** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | [optional] 
-**superior** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | [optional] 
-**effective_date** | **date** |  | [optional] 
+**id** | **str** |  | 
+**organization** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
+**superior** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
+**effective_date** | **date** |  | 
 
 ## Example
 

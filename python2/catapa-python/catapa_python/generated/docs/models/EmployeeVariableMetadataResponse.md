@@ -5,12 +5,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**type** | **str** |  | [optional] 
-**periodic** | **bool** |  | [optional] 
-**description** | **str** |  | [optional] 
-**validations** | [**List[EmployeeVariableValidationResponse]**](EmployeeVariableValidationResponse.md) |  | [optional] 
+**id** | **str** |  | 
+**name** | **str** |  | 
+**type** | **str** |  | 
+**periodic** | **bool** |  | 
+**description** | **str** |  | 
+**validations** | [**List[EmployeeVariableValidationResponse]**](EmployeeVariableValidationResponse.md) |  | 
 
 ## Example
 

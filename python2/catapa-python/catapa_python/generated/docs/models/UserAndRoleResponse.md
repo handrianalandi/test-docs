@@ -7,8 +7,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **str** |  | 
 **username** | **str** |  | 
-**email** | **str** |  | [optional] 
-**employee** | [**EmployeeIdNameResponse**](EmployeeIdNameResponse.md) |  | [optional] 
+**email** | **str** |  | 
+**employee** | [**EmployeeIdNameResponse**](EmployeeIdNameResponse.md) |  | 
 **roles** | [**List[RoleResponse]**](RoleResponse.md) |  | 
 
 ## Example

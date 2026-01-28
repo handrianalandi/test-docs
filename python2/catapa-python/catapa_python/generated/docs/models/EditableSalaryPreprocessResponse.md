@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**successes** | [**List[EditableSalaryPreprocessSuccess]**](EditableSalaryPreprocessSuccess.md) |  | [optional] 
-**failures** | [**List[BulkOperationFailureResponse]**](BulkOperationFailureResponse.md) |  | [optional] 
+**successes** | [**List[EditableSalaryPreprocessSuccess]**](EditableSalaryPreprocessSuccess.md) |  | 
+**failures** | [**List[BulkOperationFailureResponse]**](BulkOperationFailureResponse.md) |  | 
 
 ## Example
 

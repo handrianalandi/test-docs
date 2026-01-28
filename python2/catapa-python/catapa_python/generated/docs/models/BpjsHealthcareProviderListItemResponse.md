@@ -5,13 +5,13 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**code** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**address** | **str** |  | [optional] 
-**registration_number** | **str** |  | [optional] 
-**report_signatory_name** | **str** |  | [optional] 
-**report_signatory_job_title** | **str** |  | [optional] 
+**id** | **str** |  | 
+**code** | **str** |  | 
+**name** | **str** |  | 
+**address** | **str** |  | 
+**registration_number** | **str** |  | 
+**report_signatory_name** | **str** |  | 
+**report_signatory_job_title** | **str** |  | 
 
 ## Example
 

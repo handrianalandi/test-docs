@@ -5,15 +5,15 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** | Former employee income ID | [optional] 
-**item_name** | **str** | Income item name | [optional] 
-**item_type** | **str** | Income item type | [optional] 
-**reference_date** | **date** | Reference date | [optional] 
-**pph21_method** | **str** | PPH21 calculation method | [optional] 
-**minimum_last_working_date** | **date** | Minimum last working date | [optional] 
-**proportional_method** | **str** | Proportional calculation method | [optional] 
-**proportional_days** | **int** | Number of proportional days | [optional] 
-**formula** | **str** | Calculation formula | [optional] 
+**id** | **str** | Former employee income ID | 
+**item_name** | **str** | Income item name | 
+**item_type** | **str** | Income item type | 
+**reference_date** | **date** | Reference date | 
+**pph21_method** | **str** | PPH21 calculation method | 
+**minimum_last_working_date** | **date** | Minimum last working date | 
+**proportional_method** | **str** | Proportional calculation method | 
+**proportional_days** | **int** | Number of proportional days | 
+**formula** | **str** | Calculation formula | 
 
 ## Example
 

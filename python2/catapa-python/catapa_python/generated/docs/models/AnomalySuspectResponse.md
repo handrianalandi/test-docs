@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** | Unique identifier for the anomaly suspect | [optional] 
-**identifier** | **str** | Anomaly suspect identifier | [optional] 
-**file** | [**AnomalySuspectFileResponse**](AnomalySuspectFileResponse.md) |  | [optional] 
-**anomaly_suspect_attribute_values** | [**List[AnomalySuspectAttributeValueResponse]**](AnomalySuspectAttributeValueResponse.md) | List of anomaly suspect attribute values | [optional] 
+**id** | **str** | Unique identifier for the anomaly suspect | 
+**identifier** | **str** | Anomaly suspect identifier | 
+**file** | [**AnomalySuspectFileResponse**](AnomalySuspectFileResponse.md) |  | 
+**anomaly_suspect_attribute_values** | [**List[AnomalySuspectAttributeValueResponse]**](AnomalySuspectAttributeValueResponse.md) | List of anomaly suspect attribute values | 
 
 ## Example
 

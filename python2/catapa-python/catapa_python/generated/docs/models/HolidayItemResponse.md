@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**holiday_date** | **date** | Date of the holiday | [optional] 
-**name** | **str** | Name of the holiday | [optional] 
+**holiday_date** | **date** | Date of the holiday | 
+**name** | **str** | Name of the holiday | 
 
 ## Example
 

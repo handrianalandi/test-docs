@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**salary_item** | [**SalaryItemResponseWithCategory**](SalaryItemResponseWithCategory.md) |  | [optional] 
-**salary_item_type** | **str** |  | [optional] 
-**thp** | **bool** |  | [optional] 
+**id** | **str** |  | 
+**salary_item** | [**SalaryItemResponseWithCategory**](SalaryItemResponseWithCategory.md) |  | 
+**salary_item_type** | **str** |  | 
+**thp** | **bool** |  | 
 
 ## Example
 

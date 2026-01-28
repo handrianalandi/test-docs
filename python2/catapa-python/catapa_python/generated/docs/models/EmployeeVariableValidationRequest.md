@@ -5,9 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**type** | **str** |  | [optional] 
-**value** | **float** |  | [optional] 
-**options** | **List[str]** |  | [optional] 
+**type** | **str** |  | 
+**value** | **float** |  | 
+**options** | **List[str]** |  | 
 
 ## Example
 

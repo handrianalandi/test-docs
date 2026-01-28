@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **code** | **str** |  | 
 **name** | **str** |  | 
-**job_levels** | [**List[IdRequest]**](IdRequest.md) |  | [optional] 
+**job_levels** | [**List[IdRequest]**](IdRequest.md) |  | 
 
 ## Example
 

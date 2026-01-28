@@ -5,12 +5,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**code** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**salary_item_category** | **str** |  | [optional] 
-**salary_item_type** | **str** |  | [optional] 
-**thp** | **bool** |  | [optional] 
+**id** | **str** |  | 
+**code** | **str** |  | 
+**name** | **str** |  | 
+**salary_item_category** | **str** |  | 
+**salary_item_type** | **str** |  | 
+**thp** | **bool** |  | 
 
 ## Example
 

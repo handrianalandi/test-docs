@@ -6,9 +6,9 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **type** | **str** |  | 
-**basic_salary** | **float** |  | [optional] 
-**tax_allowance** | **float** |  | [optional] 
-**bonus** | **float** |  | [optional] 
+**basic_salary** | **float** |  | 
+**tax_allowance** | **float** |  | 
+**bonus** | **float** |  | 
 
 ## Example
 

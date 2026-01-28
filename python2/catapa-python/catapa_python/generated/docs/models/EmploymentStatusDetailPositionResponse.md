@@ -5,11 +5,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**code** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**effective_date** | **date** | YYYY-MM-DD | [optional] 
-**end_date** | **date** | YYYY-MM-DD | [optional] 
+**id** | **str** |  | 
+**code** | **str** |  | 
+**name** | **str** |  | 
+**effective_date** | **date** | YYYY-MM-DD | 
+**end_date** | **date** | YYYY-MM-DD | 
 
 ## Example
 

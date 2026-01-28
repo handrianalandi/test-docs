@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**month_interval** | **float** |  | [optional] 
-**recurring_end_type** | **str** |  | [optional] 
-**max_recurring_times** | **float** |  | [optional] 
-**recurring_period_end** | [**RecurringPeriodEndResponse**](RecurringPeriodEndResponse.md) |  | [optional] 
+**month_interval** | **float** |  | 
+**recurring_end_type** | **str** |  | 
+**max_recurring_times** | **float** |  | 
+**recurring_period_end** | [**RecurringPeriodEndResponse**](RecurringPeriodEndResponse.md) |  | 
 
 ## Example
 

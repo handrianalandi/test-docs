@@ -5,13 +5,13 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** | OAuth client unique identifier | [optional] 
-**client_id** | **str** | OAuth client ID used for authentication | [optional] 
-**scope** | **str** | OAuth scopes granted to this client | [optional] 
-**authorized_grant_types** | **str** | Comma-separated list of authorized grant types (e.g., client_credentials, authorization_code, refresh_token) | [optional] 
-**authorities** | **str** | Authorities granted to this client | [optional] 
-**web_server_redirect_uri** | **str** | Redirect URI for web server flow | [optional] 
-**authorize_all_endpoints** | **bool** | Whether this client is authorized to access all endpoints | [optional] 
+**id** | **str** | OAuth client unique identifier | 
+**client_id** | **str** | OAuth client ID used for authentication | 
+**scope** | **str** | OAuth scopes granted to this client | 
+**authorized_grant_types** | **str** | Comma-separated list of authorized grant types (e.g., client_credentials, authorization_code, refresh_token) | 
+**authorities** | **str** | Authorities granted to this client | 
+**web_server_redirect_uri** | **str** | Redirect URI for web server flow | 
+**authorize_all_endpoints** | **bool** | Whether this client is authorized to access all endpoints | 
 
 ## Example
 

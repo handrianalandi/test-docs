@@ -5,11 +5,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**employee_identification_number** | **str** |  | [optional] 
-**salary_item_code** | **str** |  | [optional] 
-**amount** | **float** |  | [optional] 
-**period** | **int** |  | [optional] 
-**year** | **int** |  | [optional] 
+**employee_identification_number** | **str** |  | 
+**salary_item_code** | **str** |  | 
+**amount** | **float** |  | 
+**period** | **int** |  | 
+**year** | **int** |  | 
 
 ## Example
 

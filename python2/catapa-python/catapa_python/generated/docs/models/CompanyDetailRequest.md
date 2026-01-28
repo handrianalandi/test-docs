@@ -7,13 +7,13 @@ The Content-Type must be `application/json`
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **str** |  | 
-**code** | **str** |  | [optional] 
-**website** | **str** |  | [optional] 
-**siup** | **str** | Alphanumeric, hyphen (-), slash (/), period (.), and space | [optional] 
-**tdp** | **str** | Alphanumeric, hyphen (-), slash (/), period (.), and space | [optional] 
+**code** | **str** |  | 
+**website** | **str** |  | 
+**siup** | **str** | Alphanumeric, hyphen (-), slash (/), period (.), and space | 
+**tdp** | **str** | Alphanumeric, hyphen (-), slash (/), period (.), and space | 
 **time_zone** | [**CompanyDetailTimeZoneRequest**](CompanyDetailTimeZoneRequest.md) |  | 
 **email** | **str** |  | 
-**company_superior** | [**IdRequest**](IdRequest.md) |  | [optional] 
+**company_superior** | [**IdRequest**](IdRequest.md) |  | 
 **location** | [**IdRequest**](IdRequest.md) |  | 
 
 ## Example

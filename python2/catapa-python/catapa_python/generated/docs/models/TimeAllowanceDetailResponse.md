@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**amount** | **float** |  | [optional] 
-**var_date** | **str** |  | [optional] 
+**amount** | **float** |  | 
+**var_date** | **str** |  | 
 
 ## Example
 

@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**successes** | [**List[IdResponse]**](IdResponse.md) |  | [optional] 
-**failures** | [**List[BulkOperationFailureResponse]**](BulkOperationFailureResponse.md) |  | [optional] 
+**successes** | [**List[IdResponse]**](IdResponse.md) |  | 
+**failures** | [**List[BulkOperationFailureResponse]**](BulkOperationFailureResponse.md) |  | 
 
 ## Example
 

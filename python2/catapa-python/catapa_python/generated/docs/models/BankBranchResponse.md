@@ -5,11 +5,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **UUID** |  | [optional] 
-**name** | **str** |  | [optional] 
-**code** | **str** |  | [optional] 
-**address** | **str** |  | [optional] 
-**bank** | [**BankResponse**](BankResponse.md) |  | [optional] 
+**id** | **UUID** |  | 
+**name** | **str** |  | 
+**code** | **str** |  | 
+**address** | **str** |  | 
+**bank** | [**BankResponse**](BankResponse.md) |  | 
 
 ## Example
 

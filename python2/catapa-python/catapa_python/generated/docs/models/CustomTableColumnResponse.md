@@ -5,16 +5,16 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** | Unique identifier of the column | [optional] 
-**column_name** | **str** | Technical name of the column | [optional] 
-**field_name** | **str** | CamelCase version of columnName | [optional] 
-**display_name** | **str** | Display name of the column | [optional] 
-**field_order** | **int** | Order of the field in the table | [optional] 
-**data_type** | **str** | Data type of the column | [optional] 
-**is_required** | **bool** | Whether the column is required | [optional] 
-**is_reference** | **bool** | Whether the column is a reference to another entity | [optional] 
-**column_metadata** | **Dict[str, object]** | Additional metadata for the column | [optional] 
-**tooltip** | **str** | Optional custom tooltip to be shown to the user | [optional] 
+**id** | **str** | Unique identifier of the column | 
+**column_name** | **str** | Technical name of the column | 
+**field_name** | **str** | CamelCase version of columnName | 
+**display_name** | **str** | Display name of the column | 
+**field_order** | **int** | Order of the field in the table | 
+**data_type** | **str** | Data type of the column | 
+**is_required** | **bool** | Whether the column is required | 
+**is_reference** | **bool** | Whether the column is a reference to another entity | 
+**column_metadata** | **Dict[str, object]** | Additional metadata for the column | 
+**tooltip** | **str** | Optional custom tooltip to be shown to the user | 
 
 ## Example
 

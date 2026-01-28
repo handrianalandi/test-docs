@@ -5,20 +5,20 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**code** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**type** | **str** |  | [optional] 
-**effective_date** | **date** | YYYY-MM-DD | [optional] 
-**end_date** | **date** | YYYY-MM-DD | [optional] 
-**created_by** | **str** |  | [optional] 
-**created_date** | **float** |  | [optional] 
-**updated_by** | **str** |  | [optional] 
-**updated_date** | **float** |  | [optional] 
-**organization_hierarchy** | [**OrganizationHierarchyResponse**](OrganizationHierarchyResponse.md) |  | [optional] 
-**organization_group** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | [optional] 
-**organization_parent** | **object** |  | [optional] 
-**company** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | [optional] 
+**id** | **str** |  | 
+**code** | **str** |  | 
+**name** | **str** |  | 
+**type** | **str** |  | 
+**effective_date** | **date** | YYYY-MM-DD | 
+**end_date** | **date** | YYYY-MM-DD | 
+**created_by** | **str** |  | 
+**created_date** | **float** |  | 
+**updated_by** | **str** |  | 
+**updated_date** | **float** |  | 
+**organization_hierarchy** | [**OrganizationHierarchyResponse**](OrganizationHierarchyResponse.md) |  | 
+**organization_group** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
+**organization_parent** | **object** |  | 
+**company** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
 
 ## Example
 

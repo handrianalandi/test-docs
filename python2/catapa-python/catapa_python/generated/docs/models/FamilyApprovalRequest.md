@@ -7,19 +7,19 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **str** |  | 
 **gender** | **str** |  | 
-**date_of_birth** | **date** | YYYY-MM-DD | [optional] 
-**identity_card_number** | **str** |  | [optional] 
+**date_of_birth** | **date** | YYYY-MM-DD | 
+**identity_card_number** | **str** |  | 
 **family_relation** | [**IdRequest**](IdRequest.md) |  | 
-**place_of_birth** | [**PlaceOfBirthRequest**](PlaceOfBirthRequest.md) |  | [optional] 
-**alive** | **bool** |  | [optional] [default to True]
-**date_of_death** | **date** | If left &lt;b&gt;null&lt;/b&gt; and the individual is marked as &lt;b&gt;not alive&lt;/b&gt;, the system will automatically set the date of death to the default value of &#x60;December 31, 9999&#x60; | [optional] 
-**marital_status** | **str** |  | [optional] 
-**marriage_date** | **date** | YYYY-MM-DD | [optional] 
-**religion** | **object** |  | [optional] 
-**education_level** | **object** |  | [optional] 
-**job** | **str** | Alphanumeric with space, e.g. &#x60;Software Engineer 1&#x60; | [optional] 
-**mobile_phone** | **str** | e.g. &#x60;+6281234567890&#x60; | [optional] 
-**description** | **str** |  | [optional] 
+**place_of_birth** | [**PlaceOfBirthRequest**](PlaceOfBirthRequest.md) |  | 
+**alive** | **bool** |  | [default to True]
+**date_of_death** | **date** | If left &lt;b&gt;null&lt;/b&gt; and the individual is marked as &lt;b&gt;not alive&lt;/b&gt;, the system will automatically set the date of death to the default value of &#x60;December 31, 9999&#x60; | 
+**marital_status** | **str** |  | 
+**marriage_date** | **date** | YYYY-MM-DD | 
+**religion** | **object** |  | 
+**education_level** | **object** |  | 
+**job** | **str** | Alphanumeric with space, e.g. &#x60;Software Engineer 1&#x60; | 
+**mobile_phone** | **str** | e.g. &#x60;+6281234567890&#x60; | 
+**description** | **str** |  | 
 
 ## Example
 

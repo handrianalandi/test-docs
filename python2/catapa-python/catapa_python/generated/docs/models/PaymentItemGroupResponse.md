@@ -5,13 +5,13 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**payment_type** | **str** |  | [optional] 
-**start_process_date** | **str** |  | [optional] 
-**end_process_date** | **str** |  | [optional] 
-**job_level** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | [optional] 
-**location** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | [optional] 
-**payment_item_details** | [**List[PaymentItemDetailResponse]**](PaymentItemDetailResponse.md) |  | [optional] 
+**id** | **str** |  | 
+**payment_type** | **str** |  | 
+**start_process_date** | **str** |  | 
+**end_process_date** | **str** |  | 
+**job_level** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
+**location** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
+**payment_item_details** | [**List[PaymentItemDetailResponse]**](PaymentItemDetailResponse.md) |  | 
 
 ## Example
 

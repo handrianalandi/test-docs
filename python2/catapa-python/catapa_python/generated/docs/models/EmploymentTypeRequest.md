@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **name** | **str** |  | 
 **employment_group_code** | **str** |  | 
 **month_duration** | **int** |  | 
-**permanent** | **bool** |  | [optional] [default to False]
+**permanent** | **bool** |  | [default to False]
 
 ## Example
 

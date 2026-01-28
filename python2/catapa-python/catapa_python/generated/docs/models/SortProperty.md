@@ -5,12 +5,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**direction** | **str** |  | [optional] 
-**var_property** | **str** |  | [optional] 
-**ignore_case** | **bool** |  | [optional] 
-**null_handling** | **str** |  | [optional] 
-**ascending** | **bool** |  | [optional] 
-**descending** | **bool** |  | [optional] 
+**direction** | **str** |  | 
+**var_property** | **str** |  | 
+**ignore_case** | **bool** |  | 
+**null_handling** | **str** |  | 
+**ascending** | **bool** |  | 
+**descending** | **bool** |  | 
 
 ## Example
 

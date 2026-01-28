@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**successes** | [**List[FingerprintSuccessItemResponse]**](FingerprintSuccessItemResponse.md) |  | [optional] 
-**failures** | [**List[FingerprintFailureItemResponse]**](FingerprintFailureItemResponse.md) |  | [optional] 
+**successes** | [**List[FingerprintSuccessItemResponse]**](FingerprintSuccessItemResponse.md) |  | 
+**failures** | [**List[FingerprintFailureItemResponse]**](FingerprintFailureItemResponse.md) |  | 
 
 ## Example
 

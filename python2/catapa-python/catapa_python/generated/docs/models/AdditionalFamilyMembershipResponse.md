@@ -8,8 +8,8 @@ Name | Type | Description | Notes
 **id** | **str** |  | 
 **family_member_name** | **str** |  | 
 **family_member_relation** | [**FamilyMemberRelationResponse**](FamilyMemberRelationResponse.md) |  | 
-**first_level_healthcare_facility** | **str** |  | [optional] 
-**dental_healthcare_facility** | **str** |  | [optional] 
+**first_level_healthcare_facility** | **str** |  | 
+**dental_healthcare_facility** | **str** |  | 
 
 ## Example
 

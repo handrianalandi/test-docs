@@ -5,9 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**code** | **str** |  | [optional] 
-**message** | **str** |  | [optional] 
-**params** | [**EmployeeIdentificationNumberResponse**](EmployeeIdentificationNumberResponse.md) |  | [optional] 
+**code** | **str** |  | 
+**message** | **str** |  | 
+**params** | [**EmployeeIdentificationNumberResponse**](EmployeeIdentificationNumberResponse.md) |  | 
 
 ## Example
 

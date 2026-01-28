@@ -1,8 +1,5 @@
 # RoleApi
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
-> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
-
 All URIs are relative to the `base_url` specified in the Catapa client constructor (default: *https://api.catapa.com*)
 
 Method | HTTP request | Description
@@ -57,8 +54,8 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| Role ID | 
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
+ **page** | **int**| Page number | [default to 0]
+ **size** | **int**| Page size | [default to 10]
 
 ### Return type
 
@@ -186,7 +183,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| Role ID | 
- **expanded** | **bool**| Controls how permissions are returned: - &#x60;false&#x60; (default): Returns raw permissions as stored in the database without any transformation.   Permissions with dataId&#x3D;\&quot;ALL\&quot; will be returned as-is. - &#x60;true&#x60;: Returns expanded permissions where:   1. Roles with ADMIN type will get all available dataId permissions   2. Any permission with dataId&#x3D;\&quot;ALL\&quot; will be expanded to show all available dataId       permissions for the same dataType  Raw permissions show the exact database records, while expanded permissions show the effective access granted to the role after applying permission inheritance rules.  | [optional] [default to False]
+ **expanded** | **bool**| Controls how permissions are returned: - &#x60;false&#x60; (default): Returns raw permissions as stored in the database without any transformation.   Permissions with dataId&#x3D;\&quot;ALL\&quot; will be returned as-is. - &#x60;true&#x60;: Returns expanded permissions where:   1. Roles with ADMIN type will get all available dataId permissions   2. Any permission with dataId&#x3D;\&quot;ALL\&quot; will be expanded to show all available dataId       permissions for the same dataType  Raw permissions show the exact database records, while expanded permissions show the effective access granted to the role after applying permission inheritance rules.  | [default to False]
 
 ### Return type
 
@@ -251,9 +248,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search query   | Supported Keys | Supported Operators | Notes                                                                                     | |----------------|---------------------|-------------------------------------------------------------------------------------------| | id             | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | name           | &#x60;:&#x60;                 | Like operator                                                                             |  | [optional] 
+ **page** | **int**| Page number | [default to 0]
+ **size** | **int**| Page size | [default to 10]
+ **query** | **str**| ### Search query   | Supported Keys | Supported Operators | Notes                                                                                     | |----------------|---------------------|-------------------------------------------------------------------------------------------| | id             | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | name           | &#x60;:&#x60;                 | Like operator                                                                             |  | 
 
 ### Return type
 

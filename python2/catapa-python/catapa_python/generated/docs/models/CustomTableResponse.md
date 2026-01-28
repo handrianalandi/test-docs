@@ -5,14 +5,14 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** | Unique identifier of the custom table | [optional] 
-**table_name** | **str** | Technical name of the custom table | [optional] 
-**display_name** | **str** | Display name of the custom table | [optional] 
-**menu_location** | **str** | Location of the table in menu hierarchy | [optional] 
-**historical_type** | **str** | Type of historical tracking for the table | [optional] 
-**parent_entity** | **str** | Parent entity reference | [optional] 
-**parent_reference_field** | **str** | Field used for parent entity reference | [optional] 
-**columns** | [**List[CustomTableColumnResponse]**](CustomTableColumnResponse.md) | List of columns in the table | [optional] 
+**id** | **str** | Unique identifier of the custom table | 
+**table_name** | **str** | Technical name of the custom table | 
+**display_name** | **str** | Display name of the custom table | 
+**menu_location** | **str** | Location of the table in menu hierarchy | 
+**historical_type** | **str** | Type of historical tracking for the table | 
+**parent_entity** | **str** | Parent entity reference | 
+**parent_reference_field** | **str** | Field used for parent entity reference | 
+**columns** | [**List[CustomTableColumnResponse]**](CustomTableColumnResponse.md) | List of columns in the table | 
 
 ## Example
 

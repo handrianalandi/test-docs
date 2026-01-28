@@ -5,15 +5,15 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**start_date** | **str** |  | [optional] 
-**end_date** | **str** |  | [optional] 
-**shift_pattern_template** | [**ShiftPatternTemplateSimpleResponse**](ShiftPatternTemplateSimpleResponse.md) |  | [optional] 
-**workday_configuration_details** | [**List[WorkdayConfigurationDetailResponse]**](WorkdayConfigurationDetailResponse.md) |  | [optional] 
-**start_sequence** | **float** |  | [optional] 
-**start_shift** | [**ShiftResponse**](ShiftResponse.md) |  | [optional] 
-**include_holiday** | **bool** |  | [optional] 
-**workgroup** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | [optional] 
+**id** | **str** |  | 
+**start_date** | **str** |  | 
+**end_date** | **str** |  | 
+**shift_pattern_template** | [**ShiftPatternTemplateSimpleResponse**](ShiftPatternTemplateSimpleResponse.md) |  | 
+**workday_configuration_details** | [**List[WorkdayConfigurationDetailResponse]**](WorkdayConfigurationDetailResponse.md) |  | 
+**start_sequence** | **float** |  | 
+**start_shift** | [**ShiftResponse**](ShiftResponse.md) |  | 
+**include_holiday** | **bool** |  | 
+**workgroup** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
 
 ## Example
 

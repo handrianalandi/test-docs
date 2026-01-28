@@ -1,8 +1,5 @@
 # EmployeePaygroupApi
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
-> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
-
 All URIs are relative to the `base_url` specified in the Catapa client constructor (default: *https://api.catapa.com*)
 
 Method | HTTP request | Description
@@ -116,9 +113,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search Query | Supported Keys          | Supported Operators | Notes                                                                                | |-------------------------|---------------------|--------------------------------------------------------------------------------------| | employee.id             | &#x60;:&#x60;                 | Equal operator with multiple values. Each value should separated with delimiters &#x60;;&#x60; | | effectiveDate           | &#x60;&gt;&#x60;&lt;br/&gt;&#x60;&lt;&#x60;&lt;br/&gt;&#x60;&#x3D;&#x60; | Equal operator&lt;br/&gt;Greater than or equal operator&lt;br/&gt;Less than or equal operator&lt;br/&gt;&lt;br/&gt;Use the &#x60;YYYY-MM-DD&#x60; format, e.g. &#x60;effectiveDate&gt;2023-09-20&#x60; |  | [optional] 
+ **page** | **int**| Page number | [default to 0]
+ **size** | **int**| Page size | [default to 10]
+ **query** | **str**| ### Search Query | Supported Keys          | Supported Operators | Notes                                                                                | |-------------------------|---------------------|--------------------------------------------------------------------------------------| | employee.id             | &#x60;:&#x60;                 | Equal operator with multiple values. Each value should separated with delimiters &#x60;;&#x60; | | effectiveDate           | &#x60;&gt;&#x60;&lt;br/&gt;&#x60;&lt;&#x60;&lt;br/&gt;&#x60;&#x3D;&#x60; | Equal operator&lt;br/&gt;Greater than or equal operator&lt;br/&gt;Less than or equal operator&lt;br/&gt;&lt;br/&gt;Use the &#x60;YYYY-MM-DD&#x60; format, e.g. &#x60;effectiveDate&gt;2023-09-20&#x60; |  | 
 
 ### Return type
 

@@ -5,9 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**salary_item** | [**ProrateDetailSalaryTemplateDetailSalaryItemResponse**](ProrateDetailSalaryTemplateDetailSalaryItemResponse.md) |  | [optional] 
-**salary_item_type** | **str** |  | [optional] 
+**id** | **str** |  | 
+**salary_item** | [**ProrateDetailSalaryTemplateDetailSalaryItemResponse**](ProrateDetailSalaryTemplateDetailSalaryItemResponse.md) |  | 
+**salary_item_type** | **str** |  | 
 
 ## Example
 

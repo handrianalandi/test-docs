@@ -5,12 +5,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **UUID** |  | [optional] 
-**name** | **str** |  | [optional] 
-**termination_pph21_reason** | **str** |  | [optional] 
-**termination_bpjs_manpower_reason** | **str** |  | [optional] 
-**termination_reason_category** | **str** |  | [optional] 
-**severance** | **bool** |  | [optional] 
+**id** | **UUID** |  | 
+**name** | **str** |  | 
+**termination_pph21_reason** | **str** |  | 
+**termination_bpjs_manpower_reason** | **str** |  | 
+**termination_reason_category** | **str** |  | 
+**severance** | **bool** |  | 
 
 ## Example
 

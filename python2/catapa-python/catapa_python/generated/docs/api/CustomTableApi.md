@@ -1,8 +1,5 @@
 # CustomTableApi
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
-> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
-
 All URIs are relative to the `base_url` specified in the Catapa client constructor (default: *https://api.catapa.com*)
 
 Method | HTTP request | Description
@@ -54,9 +51,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search Query | Supported Keys      | Supported Operators | Notes                                                                                     | |---------------------|---------------------|-------------------------------------------------------------------------------------------| | id                  | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | tableName           | &#x60;:&#x60;                 | Like operator                                                                             | | displayName         | &#x60;:&#x60;                 | Like operator                                                                             | | menuLocation        | &#x60;:&#x60;                 | Like operator                                                                             | | historicalType      | &#x60;:&#x60;                 | Like operator                                                                             | | parentEntity        | &#x60;:&#x60;                 | Like operator                                                                             | | parentEntityIsNull  | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Boolean                                                                | | parentReferenceField| &#x60;:&#x60;                 | Like operator                                                                             |  | [optional] 
+ **page** | **int**| Page number | [default to 0]
+ **size** | **int**| Page size | [default to 10]
+ **query** | **str**| ### Search Query | Supported Keys      | Supported Operators | Notes                                                                                     | |---------------------|---------------------|-------------------------------------------------------------------------------------------| | id                  | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | tableName           | &#x60;:&#x60;                 | Like operator                                                                             | | displayName         | &#x60;:&#x60;                 | Like operator                                                                             | | menuLocation        | &#x60;:&#x60;                 | Like operator                                                                             | | historicalType      | &#x60;:&#x60;                 | Like operator                                                                             | | parentEntity        | &#x60;:&#x60;                 | Like operator                                                                             | | parentEntityIsNull  | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Boolean                                                                | | parentReferenceField| &#x60;:&#x60;                 | Like operator                                                                             |  | 
 
 ### Return type
 

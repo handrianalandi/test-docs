@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**code** | **str** | Authority code | [optional] 
+**code** | **str** | Authority code | 
 
 ## Example
 

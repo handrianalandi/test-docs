@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** | Unique identifier for the attribute | [optional] 
-**attribute_key** | **str** | Key/name of the attribute | [optional] 
+**id** | **str** | Unique identifier for the attribute | 
+**attribute_key** | **str** | Key/name of the attribute | 
 
 ## Example
 

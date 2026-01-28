@@ -5,44 +5,44 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**employee** | [**EmployeeSimpleResponse**](EmployeeSimpleResponse.md) |  | [optional] 
-**kpp** | [**KppSimpleResponse**](KppSimpleResponse.md) |  | [optional] 
-**external_id** | **str** |  | [optional] 
-**year** | **float** |  | [optional] 
-**end_month** | **float** |  | [optional] 
-**sequence_number** | **float** |  | [optional] 
-**membership_number** | **str** |  | [optional] 
-**ptkp** | **float** |  | [optional] 
-**job_title** | **str** |  | [optional] 
-**total_gross_income** | **float** |  | [optional] 
-**outstanding_original_tax** | **float** |  | [optional] 
-**outstanding_penalty_tax** | **float** |  | [optional] 
-**outstanding_tax** | **float** |  | [optional] 
-**paid_original_tax** | **float** |  | [optional] 
-**paid_penalty_tax** | **float** |  | [optional] 
-**paid_tax** | **float** |  | [optional] 
-**paid_tax_allowance** | **float** |  | [optional] 
-**basic_salary** | **float** |  | [optional] 
-**tax_allowance** | **float** |  | [optional] 
-**other_allowance** | **float** |  | [optional] 
-**honorarium** | **float** |  | [optional] 
-**insurance_premium** | **float** |  | [optional] 
-**enjoyment_revenue** | **float** |  | [optional] 
-**bonus** | **float** |  | [optional] 
-**retirement_contribution** | **float** |  | [optional] 
-**total_deduction** | **float** |  | [optional] 
-**net_income** | **float** |  | [optional] 
-**previous_net_income** | **float** |  | [optional] 
-**total_net_income** | **float** |  | [optional] 
-**base_income_tax_deduction** | **float** |  | [optional] 
-**base_income_tax** | **float** |  | [optional] 
-**yearly_original_tax** | **float** |  | [optional] 
-**yearly_penalty_tax** | **float** |  | [optional] 
-**yearly_tax** | **float** |  | [optional] 
-**previous_original_tax** | **float** |  | [optional] 
-**previous_penalty_tax** | **float** |  | [optional] 
-**previous_tax** | **float** |  | [optional] 
+**id** | **str** |  | 
+**employee** | [**EmployeeSimpleResponse**](EmployeeSimpleResponse.md) |  | 
+**kpp** | [**KppSimpleResponse**](KppSimpleResponse.md) |  | 
+**external_id** | **str** |  | 
+**year** | **float** |  | 
+**end_month** | **float** |  | 
+**sequence_number** | **float** |  | 
+**membership_number** | **str** |  | 
+**ptkp** | **float** |  | 
+**job_title** | **str** |  | 
+**total_gross_income** | **float** |  | 
+**outstanding_original_tax** | **float** |  | 
+**outstanding_penalty_tax** | **float** |  | 
+**outstanding_tax** | **float** |  | 
+**paid_original_tax** | **float** |  | 
+**paid_penalty_tax** | **float** |  | 
+**paid_tax** | **float** |  | 
+**paid_tax_allowance** | **float** |  | 
+**basic_salary** | **float** |  | 
+**tax_allowance** | **float** |  | 
+**other_allowance** | **float** |  | 
+**honorarium** | **float** |  | 
+**insurance_premium** | **float** |  | 
+**enjoyment_revenue** | **float** |  | 
+**bonus** | **float** |  | 
+**retirement_contribution** | **float** |  | 
+**total_deduction** | **float** |  | 
+**net_income** | **float** |  | 
+**previous_net_income** | **float** |  | 
+**total_net_income** | **float** |  | 
+**base_income_tax_deduction** | **float** |  | 
+**base_income_tax** | **float** |  | 
+**yearly_original_tax** | **float** |  | 
+**yearly_penalty_tax** | **float** |  | 
+**yearly_tax** | **float** |  | 
+**previous_original_tax** | **float** |  | 
+**previous_penalty_tax** | **float** |  | 
+**previous_tax** | **float** |  | 
 
 ## Example
 

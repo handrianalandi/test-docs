@@ -5,21 +5,21 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**employee** | [**EmployeeSimpleResponse**](EmployeeSimpleResponse.md) |  | [optional] 
-**other_leave_status** | [**OtherLeaveStatusResponse**](OtherLeaveStatusResponse.md) |  | [optional] 
-**year** | **float** |  | [optional] 
-**given_date** | **str** |  | [optional] 
-**start_date** | **str** |  | [optional] 
-**end_date** | **str** |  | [optional] 
-**balance** | **float** |  | [optional] 
-**used_balance** | **float** |  | [optional] 
-**pending_balance** | **float** |  | [optional] 
-**approved_balance** | **float** |  | [optional] 
-**remaining** | **float** |  | [optional] 
-**min_leave_date** | **str** |  | [optional] 
-**max_leave_date** | **str** |  | [optional] 
-**active** | **bool** |  | [optional] 
+**id** | **str** |  | 
+**employee** | [**EmployeeSimpleResponse**](EmployeeSimpleResponse.md) |  | 
+**other_leave_status** | [**OtherLeaveStatusResponse**](OtherLeaveStatusResponse.md) |  | 
+**year** | **float** |  | 
+**given_date** | **str** |  | 
+**start_date** | **str** |  | 
+**end_date** | **str** |  | 
+**balance** | **float** |  | 
+**used_balance** | **float** |  | 
+**pending_balance** | **float** |  | 
+**approved_balance** | **float** |  | 
+**remaining** | **float** |  | 
+**min_leave_date** | **str** |  | 
+**max_leave_date** | **str** |  | 
+**active** | **bool** |  | 
 
 ## Example
 

@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **code** | **str** |  | 
 **name** | **str** |  | 
-**color** | **str** | Hexadecimal color code, e.g. &#x60;#62A4D5&#x60; | [optional] 
+**color** | **str** | Hexadecimal color code, e.g. &#x60;#62A4D5&#x60; | 
 **level** | **float** |  | 
 
 ## Example

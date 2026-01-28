@@ -5,17 +5,17 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **UUID** |  | [optional] 
-**kpp** | [**KppSimpleResponse**](KppSimpleResponse.md) |  | [optional] 
-**payment_method** | **str** |  | [optional] 
-**pph21_method** | **str** |  | [optional] 
-**payment_option** | **str** |  | [optional] 
-**total** | **float** |  | [optional] 
-**total_thp** | **float** |  | [optional] 
-**total_pph** | **float** |  | [optional] 
-**tax_allowance** | **float** |  | [optional] 
-**details** | [**List[SeverancePlanDetailResponse]**](SeverancePlanDetailResponse.md) |  | [optional] 
-**payment_plans** | [**List[SeverancePaymentPlanResponse]**](SeverancePaymentPlanResponse.md) |  | [optional] 
+**id** | **UUID** |  | 
+**kpp** | [**KppSimpleResponse**](KppSimpleResponse.md) |  | 
+**payment_method** | **str** |  | 
+**pph21_method** | **str** |  | 
+**payment_option** | **str** |  | 
+**total** | **float** |  | 
+**total_thp** | **float** |  | 
+**total_pph** | **float** |  | 
+**tax_allowance** | **float** |  | 
+**details** | [**List[SeverancePlanDetailResponse]**](SeverancePlanDetailResponse.md) |  | 
+**payment_plans** | [**List[SeverancePaymentPlanResponse]**](SeverancePaymentPlanResponse.md) |  | 
 
 ## Example
 

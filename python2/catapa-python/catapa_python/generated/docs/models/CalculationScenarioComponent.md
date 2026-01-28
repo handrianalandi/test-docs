@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**first_component** | [**CalculationScenarioSalaryComponent**](CalculationScenarioSalaryComponent.md) |  | [optional] 
-**second_component** | [**CalculationScenarioSalaryComponent**](CalculationScenarioSalaryComponent.md) |  | [optional] 
+**first_component** | [**CalculationScenarioSalaryComponent**](CalculationScenarioSalaryComponent.md) |  | 
+**second_component** | [**CalculationScenarioSalaryComponent**](CalculationScenarioSalaryComponent.md) |  | 
 
 ## Example
 

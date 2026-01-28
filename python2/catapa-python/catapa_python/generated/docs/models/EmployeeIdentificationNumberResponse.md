@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**identification_number** | **str** |  | [optional] 
+**identification_number** | **str** |  | 
 
 ## Example
 

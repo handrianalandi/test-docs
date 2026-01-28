@@ -5,9 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**shift_pattern_template_details** | [**List[ShiftPatternTemplateDetailResponse]**](ShiftPatternTemplateDetailResponse.md) |  | [optional] 
+**id** | **str** |  | 
+**name** | **str** |  | 
+**shift_pattern_template_details** | [**List[ShiftPatternTemplateDetailResponse]**](ShiftPatternTemplateDetailResponse.md) |  | 
 
 ## Example
 

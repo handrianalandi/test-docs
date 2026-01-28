@@ -5,27 +5,27 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**contract_start** | **date** | YYYY-MM-DD | [optional] 
-**contract_end** | **date** | YYYY-MM-DD | [optional] 
-**cost_center** | [**CostCenterListItemResponse**](CostCenterListItemResponse.md) |  | [optional] 
-**effective_date** | **date** | YYYY-MM-DD | [optional] 
-**created_by** | **str** |  | [optional] 
-**created_date** | **float** |  | [optional] 
-**updated_by** | **str** |  | [optional] 
-**updated_date** | **float** |  | [optional] 
-**employment_status_number** | **str** |  | [optional] 
-**employment_status_type** | [**EmploymentStatusTypeResponse**](EmploymentStatusTypeResponse.md) |  | [optional] 
-**employment_type** | [**EmploymentTypeResponse**](EmploymentTypeResponse.md) |  | [optional] 
-**job_level** | [**JobLevelResponse**](JobLevelResponse.md) |  | [optional] 
-**job_title** | [**JobTitleResponse**](JobTitleResponse.md) |  | [optional] 
-**location** | [**LocationResponse**](LocationResponse.md) |  | [optional] 
-**organization** | [**OrganizationResponse**](OrganizationResponse.md) |  | [optional] 
-**permanent_date** | **date** | YYYY-MM-DD | [optional] 
-**sign_date** | **date** | YYYY-MM-DD | [optional] 
-**sub_location** | [**SubLocationResponse**](SubLocationResponse.md) |  | [optional] 
-**operational_group** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | [optional] 
-**position** | [**EmploymentStatusDetailPositionResponse**](EmploymentStatusDetailPositionResponse.md) |  | [optional] 
+**id** | **str** |  | 
+**contract_start** | **date** | YYYY-MM-DD | 
+**contract_end** | **date** | YYYY-MM-DD | 
+**cost_center** | [**CostCenterListItemResponse**](CostCenterListItemResponse.md) |  | 
+**effective_date** | **date** | YYYY-MM-DD | 
+**created_by** | **str** |  | 
+**created_date** | **float** |  | 
+**updated_by** | **str** |  | 
+**updated_date** | **float** |  | 
+**employment_status_number** | **str** |  | 
+**employment_status_type** | [**EmploymentStatusTypeResponse**](EmploymentStatusTypeResponse.md) |  | 
+**employment_type** | [**EmploymentTypeResponse**](EmploymentTypeResponse.md) |  | 
+**job_level** | [**JobLevelResponse**](JobLevelResponse.md) |  | 
+**job_title** | [**JobTitleResponse**](JobTitleResponse.md) |  | 
+**location** | [**LocationResponse**](LocationResponse.md) |  | 
+**organization** | [**OrganizationResponse**](OrganizationResponse.md) |  | 
+**permanent_date** | **date** | YYYY-MM-DD | 
+**sign_date** | **date** | YYYY-MM-DD | 
+**sub_location** | [**SubLocationResponse**](SubLocationResponse.md) |  | 
+**operational_group** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
+**position** | [**EmploymentStatusDetailPositionResponse**](EmploymentStatusDetailPositionResponse.md) |  | 
 
 ## Example
 

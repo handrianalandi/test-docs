@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**start_cutoff_date** | **str** |  | [optional] 
-**end_cutoff_date** | **str** |  | [optional] 
-**company_amount** | **float** |  | [optional] 
-**employee_amount** | **float** |  | [optional] 
+**start_cutoff_date** | **str** |  | 
+**end_cutoff_date** | **str** |  | 
+**company_amount** | **float** |  | 
+**employee_amount** | **float** |  | 
 
 ## Example
 

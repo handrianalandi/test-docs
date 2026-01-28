@@ -5,20 +5,20 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**effective_date** | **date** |  | [optional] 
-**position** | [**IdResponse**](IdResponse.md) |  | [optional] 
-**organization** | [**IdResponse**](IdResponse.md) |  | [optional] 
-**location** | [**IdResponse**](IdResponse.md) |  | [optional] 
-**sub_location** | [**IdResponse**](IdResponse.md) |  | [optional] 
-**job_title** | [**IdResponse**](IdResponse.md) |  | [optional] 
-**job_level** | [**IdResponse**](IdResponse.md) |  | [optional] 
-**employment_type** | [**IdResponse**](IdResponse.md) |  | [optional] 
-**operational_group** | [**IdResponse**](IdResponse.md) |  | [optional] 
-**cost_center** | [**IdResponse**](IdResponse.md) |  | [optional] 
-**company** | [**IdResponse**](IdResponse.md) |  | [optional] 
-**contract_start** | **date** |  | [optional] 
-**contract_end** | **date** |  | [optional] 
-**permanent_date** | **date** |  | [optional] 
+**effective_date** | **date** |  | 
+**position** | [**IdResponse**](IdResponse.md) |  | 
+**organization** | [**IdResponse**](IdResponse.md) |  | 
+**location** | [**IdResponse**](IdResponse.md) |  | 
+**sub_location** | [**IdResponse**](IdResponse.md) |  | 
+**job_title** | [**IdResponse**](IdResponse.md) |  | 
+**job_level** | [**IdResponse**](IdResponse.md) |  | 
+**employment_type** | [**IdResponse**](IdResponse.md) |  | 
+**operational_group** | [**IdResponse**](IdResponse.md) |  | 
+**cost_center** | [**IdResponse**](IdResponse.md) |  | 
+**company** | [**IdResponse**](IdResponse.md) |  | 
+**contract_start** | **date** |  | 
+**contract_end** | **date** |  | 
+**permanent_date** | **date** |  | 
 
 ## Example
 

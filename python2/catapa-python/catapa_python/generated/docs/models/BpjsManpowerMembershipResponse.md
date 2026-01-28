@@ -5,14 +5,14 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** | ID of the BPJS Manpower Membership | [optional] 
-**membership_number** | **str** |  | [optional] 
-**start_date** | **str** |  | [optional] 
-**end_date** | **str** |  | [optional] 
-**effective_date** | **str** |  | [optional] 
-**pension_end** | **str** |  | [optional] 
-**bpjs_manpower_provider** | [**BpjsManpowerProviderResponse**](BpjsManpowerProviderResponse.md) |  | [optional] 
-**bpjs_manpower_template** | [**BpjsManpowerTemplateResponse**](BpjsManpowerTemplateResponse.md) |  | [optional] 
+**id** | **str** | ID of the BPJS Manpower Membership | 
+**membership_number** | **str** |  | 
+**start_date** | **str** |  | 
+**end_date** | **str** |  | 
+**effective_date** | **str** |  | 
+**pension_end** | **str** |  | 
+**bpjs_manpower_provider** | [**BpjsManpowerProviderResponse**](BpjsManpowerProviderResponse.md) |  | 
+**bpjs_manpower_template** | [**BpjsManpowerTemplateResponse**](BpjsManpowerTemplateResponse.md) |  | 
 
 ## Example
 

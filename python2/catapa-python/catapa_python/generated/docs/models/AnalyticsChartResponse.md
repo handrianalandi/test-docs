@@ -5,27 +5,27 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**title** | **str** |  | [optional] 
-**size** | **float** |  | [optional] 
-**options** | **str** |  | [optional] 
-**chart_type** | **str** |  | [optional] 
-**aggregation_type** | **str** |  | [optional] 
-**table_id** | **str** |  | [optional] 
-**yaxis_title** | **str** |  | [optional] 
-**ycolumn_id** | **str** |  | [optional] 
-**ychart_table_relations** | [**List[ChartTableRelationResponse]**](ChartTableRelationResponse.md) |  | [optional] 
-**xaxis_title** | **str** |  | [optional] 
-**xcolumn_id** | **str** |  | [optional] 
-**xchart_table_relations** | [**List[ChartTableRelationResponse]**](ChartTableRelationResponse.md) |  | [optional] 
-**series_axis_title** | **str** |  | [optional] 
-**series_column_id** | **str** |  | [optional] 
-**series_chart_table_relations** | [**List[ChartTableRelationResponse]**](ChartTableRelationResponse.md) |  | [optional] 
-**color_scheme** | [**AnalyticsColorSchemeResponse**](AnalyticsColorSchemeResponse.md) |  | [optional] 
-**data_trustee_enabled** | **bool** |  | [optional] 
-**chart_filters** | [**List[ChartFilterResponse]**](ChartFilterResponse.md) |  | [optional] 
-**max_items** | **float** |  | [optional] 
-**sort_type** | **str** |  | [optional] 
+**id** | **str** |  | 
+**title** | **str** |  | 
+**size** | **float** |  | 
+**options** | **str** |  | 
+**chart_type** | **str** |  | 
+**aggregation_type** | **str** |  | 
+**table_id** | **str** |  | 
+**yaxis_title** | **str** |  | 
+**ycolumn_id** | **str** |  | 
+**ychart_table_relations** | [**List[ChartTableRelationResponse]**](ChartTableRelationResponse.md) |  | 
+**xaxis_title** | **str** |  | 
+**xcolumn_id** | **str** |  | 
+**xchart_table_relations** | [**List[ChartTableRelationResponse]**](ChartTableRelationResponse.md) |  | 
+**series_axis_title** | **str** |  | 
+**series_column_id** | **str** |  | 
+**series_chart_table_relations** | [**List[ChartTableRelationResponse]**](ChartTableRelationResponse.md) |  | 
+**color_scheme** | [**AnalyticsColorSchemeResponse**](AnalyticsColorSchemeResponse.md) |  | 
+**data_trustee_enabled** | **bool** |  | 
+**chart_filters** | [**List[ChartFilterResponse]**](ChartFilterResponse.md) |  | 
+**max_items** | **float** |  | 
+**sort_type** | **str** |  | 
 
 ## Example
 

@@ -5,17 +5,17 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**code** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**organization** | [**OrganizationResponse**](OrganizationResponse.md) |  | [optional] 
-**job_title** | [**JobTitleResponse**](JobTitleResponse.md) |  | [optional] 
-**job_level** | [**JobLevelResponse**](JobLevelResponse.md) |  | [optional] 
-**cost_center** | [**CostCenterResponse**](CostCenterResponse.md) |  | [optional] 
-**location** | [**LocationResponse**](LocationResponse.md) |  | [optional] 
-**assigned** | **bool** |  | [optional] 
-**effective_date** | **str** |  | [optional] 
-**end_date** | **str** |  | [optional] 
+**id** | **str** |  | 
+**code** | **str** |  | 
+**name** | **str** |  | 
+**organization** | [**OrganizationResponse**](OrganizationResponse.md) |  | 
+**job_title** | [**JobTitleResponse**](JobTitleResponse.md) |  | 
+**job_level** | [**JobLevelResponse**](JobLevelResponse.md) |  | 
+**cost_center** | [**CostCenterResponse**](CostCenterResponse.md) |  | 
+**location** | [**LocationResponse**](LocationResponse.md) |  | 
+**assigned** | **bool** |  | 
+**effective_date** | **str** |  | 
+**end_date** | **str** |  | 
 
 ## Example
 

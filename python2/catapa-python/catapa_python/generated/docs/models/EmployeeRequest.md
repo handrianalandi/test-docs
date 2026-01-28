@@ -6,34 +6,34 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **str** |  | 
-**username** | **str** |  | [optional] 
-**email** | **str** |  | [optional] 
+**username** | **str** |  | 
+**email** | **str** |  | 
 **join_date** | **date** | YYYY-MM-DD | 
 **start_date** | **date** | YYYY-MM-DD | 
-**contract_start** | **date** | YYYY-MM-DD | [optional] 
-**contract_end** | **date** | YYYY-MM-DD | [optional] 
+**contract_start** | **date** | YYYY-MM-DD | 
+**contract_end** | **date** | YYYY-MM-DD | 
 **date_of_birth** | **date** | YYYY-MM-DD | 
-**employment_status_number** | **str** |  | [optional] 
+**employment_status_number** | **str** |  | 
 **employment_type_id** | **str** |  | 
-**foreign_labour** | **bool** |  | [optional] [default to False]
+**foreign_labour** | **bool** |  | [default to False]
 **gender** | **str** |  | 
-**identification_number** | **str** |  | [optional] 
-**identity_card_expired_date** | **date** | YYYY-MM-DD | [optional] 
+**identification_number** | **str** |  | 
+**identity_card_expired_date** | **date** | YYYY-MM-DD | 
 **identity_card_number** | **str** |  | 
 **job_level_id** | **str** |  | 
 **job_title_id** | **str** |  | 
 **location_id** | **str** |  | 
 **marital_status** | **str** |  | 
 **organization_id** | **str** |  | 
-**place_of_birth_id** | **str** | City | [optional] 
+**place_of_birth_id** | **str** | City | 
 **point_of_hire_id** | **str** | Location | 
 **religion_id** | **str** |  | 
 **citizenship_id** | **str** | Country | 
-**position_id** | **str** |  | [optional] 
-**sub_location_id** | **str** |  | [optional] 
-**operational_group_id** | **str** |  | [optional] 
-**work_email** | **str** |  | [optional] 
-**cost_center_id** | **str** |  | [optional] 
+**position_id** | **str** |  | 
+**sub_location_id** | **str** |  | 
+**operational_group_id** | **str** |  | 
+**work_email** | **str** |  | 
+**cost_center_id** | **str** |  | 
 
 ## Example
 

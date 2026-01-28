@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **title** | **str** |  | 
 **size** | **float** |  | 
-**options** | **str** |  | [optional] 
+**options** | **str** |  | 
 **chart_type** | **str** |  | 
 **aggregation_type** | **str** |  | 
 **table_id** | **str** |  | 
@@ -17,12 +17,12 @@ Name | Type | Description | Notes
 **xaxis_title** | **str** |  | 
 **xcolumn_id** | **str** |  | 
 **xchart_table_relations** | [**List[ChartTableRelationRequest]**](ChartTableRelationRequest.md) |  | 
-**series_axis_title** | **str** |  | [optional] 
-**series_column_id** | **str** |  | [optional] 
-**series_chart_table_relations** | [**List[ChartTableRelationRequest]**](ChartTableRelationRequest.md) |  | [optional] 
+**series_axis_title** | **str** |  | 
+**series_column_id** | **str** |  | 
+**series_chart_table_relations** | [**List[ChartTableRelationRequest]**](ChartTableRelationRequest.md) |  | 
 **color_scheme** | [**IdRequest**](IdRequest.md) |  | 
-**data_trustee_enabled** | **bool** |  | [optional] 
-**chart_filters** | [**List[ChartFilterRequest]**](ChartFilterRequest.md) |  | [optional] 
+**data_trustee_enabled** | **bool** |  | 
+**chart_filters** | [**List[ChartFilterRequest]**](ChartFilterRequest.md) |  | 
 **max_items** | **float** |  | 
 **sort_type** | **str** |  | 
 

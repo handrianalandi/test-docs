@@ -5,12 +5,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**employee** | [**EmployeeSimpleResponse**](EmployeeSimpleResponse.md) |  | [optional] 
-**var_date** | **str** |  | [optional] 
-**time_in** | **str** |  | [optional] 
-**time_out** | **str** |  | [optional] 
-**attendance_status_in** | [**AttendanceStatusResponse**](AttendanceStatusResponse.md) |  | [optional] 
+**id** | **str** |  | 
+**employee** | [**EmployeeSimpleResponse**](EmployeeSimpleResponse.md) |  | 
+**var_date** | **str** |  | 
+**time_in** | **str** |  | 
+**time_out** | **str** |  | 
+**attendance_status_in** | [**AttendanceStatusResponse**](AttendanceStatusResponse.md) |  | 
 
 ## Example
 

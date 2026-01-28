@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**net_income** | **float** |  | [optional] [default to 0]
-**tax** | **float** |  | [optional] [default to 0]
+**net_income** | **float** |  | [default to 0]
+**tax** | **float** |  | [default to 0]
 
 ## Example
 

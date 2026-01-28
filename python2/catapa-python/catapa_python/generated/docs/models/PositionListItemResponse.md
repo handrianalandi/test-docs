@@ -5,13 +5,13 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**code** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**created_by** | **str** |  | [optional] 
-**created_date** | **float** |  | [optional] 
-**updated_by** | **str** |  | [optional] 
-**updated_date** | **float** |  | [optional] 
+**id** | **str** |  | 
+**code** | **str** |  | 
+**name** | **str** |  | 
+**created_by** | **str** |  | 
+**created_date** | **float** |  | 
+**updated_by** | **str** |  | 
+**updated_date** | **float** |  | 
 
 ## Example
 

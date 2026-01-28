@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**amount** | **float** |  | [optional] 
-**var_date** | **str** |  | [optional] 
-**salary_decree_number** | **str** |  | [optional] 
-**salary_template_detail_id** | **str** |  | [optional] 
+**amount** | **float** |  | 
+**var_date** | **str** |  | 
+**salary_decree_number** | **str** |  | 
+**salary_template_detail_id** | **str** |  | 
 
 ## Example
 

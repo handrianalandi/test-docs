@@ -5,18 +5,18 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**code** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**location_group** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | [optional] 
-**city** | [**CityResponse**](CityResponse.md) |  | [optional] 
-**latitude** | **float** |  | [optional] 
-**longitude** | **float** |  | [optional] 
-**headquarter** | **bool** |  | [optional] 
-**address** | **str** |  | [optional] 
-**phone** | **str** |  | [optional] 
-**zip_code** | **str** |  | [optional] 
-**company** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | [optional] 
+**id** | **str** |  | 
+**code** | **str** |  | 
+**name** | **str** |  | 
+**location_group** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
+**city** | [**CityResponse**](CityResponse.md) |  | 
+**latitude** | **float** |  | 
+**longitude** | **float** |  | 
+**headquarter** | **bool** |  | 
+**address** | **str** |  | 
+**phone** | **str** |  | 
+**zip_code** | **str** |  | 
+**company** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
 
 ## Example
 

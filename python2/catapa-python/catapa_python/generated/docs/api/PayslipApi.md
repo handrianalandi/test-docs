@@ -1,8 +1,5 @@
 # PayslipApi
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
-> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
-
 All URIs are relative to the `base_url` specified in the Catapa client constructor (default: *https://api.catapa.com*)
 
 Method | HTTP request | Description
@@ -58,7 +55,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payslip_layout_request** | [**PayslipLayoutRequest**](../models/PayslipLayoutRequest.md)|  | [optional] 
+ **payslip_layout_request** | [**PayslipLayoutRequest**](../models/PayslipLayoutRequest.md)|  | 
 
 ### Return type
 
@@ -120,7 +117,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payslip_additional_note_request** | [**PayslipAdditionalNoteRequest**](../models/PayslipAdditionalNoteRequest.md)|  | [optional] 
+ **payslip_additional_note_request** | [**PayslipAdditionalNoteRequest**](../models/PayslipAdditionalNoteRequest.md)|  | 
 
 ### Return type
 
@@ -248,7 +245,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**|  | 
- **payslip_download_request** | [**PayslipDownloadRequest**](../models/PayslipDownloadRequest.md)|  | [optional] 
+ **payslip_download_request** | [**PayslipDownloadRequest**](../models/PayslipDownloadRequest.md)|  | 
 
 ### Return type
 
@@ -502,7 +499,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**|  | 
- **payslip_additional_note_request** | [**PayslipAdditionalNoteRequest**](../models/PayslipAdditionalNoteRequest.md)|  | [optional] 
+ **payslip_additional_note_request** | [**PayslipAdditionalNoteRequest**](../models/PayslipAdditionalNoteRequest.md)|  | 
 
 ### Return type
 

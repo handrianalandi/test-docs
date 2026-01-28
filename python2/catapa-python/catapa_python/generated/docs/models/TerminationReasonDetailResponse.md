@@ -5,15 +5,15 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**termination_pph21_reason** | **str** | Use taxReason instead | [optional] 
-**termination_bpjs_manpower_reason** | **str** | Use bpjsManpowerReason instead | [optional] 
-**termination_reason_category** | **str** | Use reasonCategory instead | [optional] 
-**tax_reason** | [**TerminationTaxReasonResponse**](TerminationTaxReasonResponse.md) |  | [optional] 
-**bpjs_manpower_reason** | [**TerminationBPJSManpowerReasonResponse**](TerminationBPJSManpowerReasonResponse.md) |  | [optional] 
-**reason_category** | [**TerminationReasonCategoryResponse**](TerminationReasonCategoryResponse.md) |  | [optional] 
-**severance** | **bool** |  | [optional] 
+**id** | **str** |  | 
+**name** | **str** |  | 
+**termination_pph21_reason** | **str** | Use taxReason instead | 
+**termination_bpjs_manpower_reason** | **str** | Use bpjsManpowerReason instead | 
+**termination_reason_category** | **str** | Use reasonCategory instead | 
+**tax_reason** | [**TerminationTaxReasonResponse**](TerminationTaxReasonResponse.md) |  | 
+**bpjs_manpower_reason** | [**TerminationBPJSManpowerReasonResponse**](TerminationBPJSManpowerReasonResponse.md) |  | 
+**reason_category** | [**TerminationReasonCategoryResponse**](TerminationReasonCategoryResponse.md) |  | 
+**severance** | **bool** |  | 
 
 ## Example
 

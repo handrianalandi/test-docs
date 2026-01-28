@@ -5,20 +5,20 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**year** | **float** |  | [optional] 
-**month** | **float** |  | [optional] 
-**pph21_method** | **str** |  | [optional] 
-**membership_number** | **str** |  | [optional] 
-**membership_address** | **str** |  | [optional] 
-**total_monthly_gross_income** | **float** |  | [optional] 
-**total_tax_and_allowance** | [**TaxAndAllowanceResponse**](TaxAndAllowanceResponse.md) |  | [optional] 
-**paid_tax_and_allowance** | [**TaxAndAllowanceResponse**](TaxAndAllowanceResponse.md) |  | [optional] 
-**tax_object** | **str** |  | [optional] 
-**sequence_number** | **float** |  | [optional] 
-**migrated** | **bool** |  | [optional] 
-**employee** | [**EmployeeSimpleResponse**](EmployeeSimpleResponse.md) |  | [optional] 
-**kpp** | [**KppSimpleResponse**](KppSimpleResponse.md) |  | [optional] 
+**id** | **str** |  | 
+**year** | **float** |  | 
+**month** | **float** |  | 
+**pph21_method** | **str** |  | 
+**membership_number** | **str** |  | 
+**membership_address** | **str** |  | 
+**total_monthly_gross_income** | **float** |  | 
+**total_tax_and_allowance** | [**TaxAndAllowanceResponse**](TaxAndAllowanceResponse.md) |  | 
+**paid_tax_and_allowance** | [**TaxAndAllowanceResponse**](TaxAndAllowanceResponse.md) |  | 
+**tax_object** | **str** |  | 
+**sequence_number** | **float** |  | 
+**migrated** | **bool** |  | 
+**employee** | [**EmployeeSimpleResponse**](EmployeeSimpleResponse.md) |  | 
+**kpp** | [**KppSimpleResponse**](KppSimpleResponse.md) |  | 
 
 ## Example
 

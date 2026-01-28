@@ -5,18 +5,18 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**cost_center_code** | **str** |  | [optional] 
-**daily_workday_end_date** | **str** |  | [optional] 
-**daily_workday_start_date** | **str** |  | [optional] 
-**employee_id** | **str** |  | [optional] 
-**employee_identification_number** | **str** |  | [optional] 
-**employee_name** | **str** |  | [optional] 
-**employee_workday** | **float** |  | [optional] 
-**id** | **str** |  | [optional] 
-**location_group_code** | **str** |  | [optional] 
-**normal_workday** | **float** |  | [optional] 
-**previous_period_employee_workday** | **float** |  | [optional] 
-**previous_period_normal_workday** | **float** |  | [optional] 
+**cost_center_code** | **str** |  | 
+**daily_workday_end_date** | **str** |  | 
+**daily_workday_start_date** | **str** |  | 
+**employee_id** | **str** |  | 
+**employee_identification_number** | **str** |  | 
+**employee_name** | **str** |  | 
+**employee_workday** | **float** |  | 
+**id** | **str** |  | 
+**location_group_code** | **str** |  | 
+**normal_workday** | **float** |  | 
+**previous_period_employee_workday** | **float** |  | 
+**previous_period_normal_workday** | **float** |  | 
 
 ## Example
 

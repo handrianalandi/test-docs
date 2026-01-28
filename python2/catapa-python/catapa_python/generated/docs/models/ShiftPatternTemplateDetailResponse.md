@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**shift** | [**ShiftResponse**](ShiftResponse.md) |  | [optional] 
-**sequence** | **float** |  | [optional] 
+**shift** | [**ShiftResponse**](ShiftResponse.md) |  | 
+**sequence** | **float** |  | 
 
 ## Example
 

@@ -5,14 +5,14 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**effective_date** | **str** |  | [optional] 
-**cost_center** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | [optional] 
-**position** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | [optional] 
-**created_by** | **str** |  | [optional] 
-**created_date** | **float** |  | [optional] 
-**updated_by** | **str** |  | [optional] 
-**updated_date** | **float** |  | [optional] 
+**id** | **str** |  | 
+**effective_date** | **str** |  | 
+**cost_center** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
+**position** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
+**created_by** | **str** |  | 
+**created_date** | **float** |  | 
+**updated_by** | **str** |  | 
+**updated_date** | **float** |  | 
 
 ## Example
 

@@ -5,22 +5,22 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**marital_status** | **str** |  | [optional] 
-**religion** | [**ReligionResponse**](ReligionResponse.md) |  | [optional] 
-**foreign_labour** | **bool** |  | [optional] 
-**citizenship** | [**CountryResponse**](CountryResponse.md) |  | [optional] 
-**name** | **str** |  | [optional] 
-**date_of_birth** | **date** | YYYY-MM-DD | [optional] 
-**place_of_birth** | [**CityResponse**](CityResponse.md) |  | [optional] 
-**gender** | **str** |  | [optional] 
-**blood_type** | **str** |  | [optional] 
-**effective_date** | **date** | YYYY-MM-DD | [optional] 
-**created_by** | **str** |  | [optional] 
-**created_date** | **float** |  | [optional] 
-**updated_by** | **str** |  | [optional] 
-**updated_date** | **float** |  | [optional] 
-**employee** | [**EmployeeFullResponse**](EmployeeFullResponse.md) |  | [optional] 
+**id** | **str** |  | 
+**marital_status** | **str** |  | 
+**religion** | [**ReligionResponse**](ReligionResponse.md) |  | 
+**foreign_labour** | **bool** |  | 
+**citizenship** | [**CountryResponse**](CountryResponse.md) |  | 
+**name** | **str** |  | 
+**date_of_birth** | **date** | YYYY-MM-DD | 
+**place_of_birth** | [**CityResponse**](CityResponse.md) |  | 
+**gender** | **str** |  | 
+**blood_type** | **str** |  | 
+**effective_date** | **date** | YYYY-MM-DD | 
+**created_by** | **str** |  | 
+**created_date** | **float** |  | 
+**updated_by** | **str** |  | 
+**updated_date** | **float** |  | 
+**employee** | [**EmployeeFullResponse**](EmployeeFullResponse.md) |  | 
 
 ## Example
 

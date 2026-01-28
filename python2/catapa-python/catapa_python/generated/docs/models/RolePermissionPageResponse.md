@@ -5,16 +5,15 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**total_pages** | **int** |  | [optional] 
-**last** | **bool** |  | [optional] 
-**total_elements** | **int** |  | [optional] 
-**number_of_elements** | **int** |  | [optional] 
-**has_content** | **bool** |  | [optional] 
-**sort** | [**List[SortProperty]**](SortProperty.md) |  | [optional] 
-**first** | **bool** |  | [optional] 
-**size** | **int** |  | [optional] 
-**number** | **int** |  | [optional] 
-**content** | [**List[RolePermissionResponse]**](RolePermissionResponse.md) | List of role permissions | [optional] 
+**total_pages** | **int** |  | 
+**last** | **bool** |  | 
+**total_elements** | **int** |  | 
+**number_of_elements** | **int** |  | 
+**sort** | [**List[SortProperty]**](SortProperty.md) |  | 
+**first** | **bool** |  | 
+**size** | **int** |  | 
+**number** | **int** |  | 
+**content** | [**List[RolePermissionResponse]**](RolePermissionResponse.md) | List of role permissions | 
 
 ## Example
 

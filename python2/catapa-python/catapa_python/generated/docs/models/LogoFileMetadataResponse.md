@@ -5,9 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**filename** | **str** |  | [optional] 
-**path** | **str** |  | [optional] 
-**url** | **str** |  | [optional] 
+**filename** | **str** |  | 
+**path** | **str** |  | 
+**url** | **str** |  | 
 
 ## Example
 

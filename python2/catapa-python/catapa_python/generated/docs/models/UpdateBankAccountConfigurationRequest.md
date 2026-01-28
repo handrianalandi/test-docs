@@ -5,11 +5,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**employee** | [**IdRequest**](IdRequest.md) |  | [optional] 
-**effective_date** | **date** | YYYY-MM-DD | [optional] 
+**employee** | [**IdRequest**](IdRequest.md) |  | 
+**effective_date** | **date** | YYYY-MM-DD | 
 **payment_method** | **str** |  | 
-**distribution_method** | **str** |  | [optional] 
-**bank_accounts** | [**List[BankAccountConfigurationRequest]**](BankAccountConfigurationRequest.md) |  | [optional] 
+**distribution_method** | **str** |  | 
+**bank_accounts** | [**List[BankAccountConfigurationRequest]**](BankAccountConfigurationRequest.md) |  | 
 
 ## Example
 

@@ -5,9 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**effective_date** | **str** |  | [optional] 
-**salary_decree_number** | **str** |  | [optional] 
-**salary_template** | [**NameResponse**](NameResponse.md) |  | [optional] 
+**effective_date** | **str** |  | 
+**salary_decree_number** | **str** |  | 
+**salary_template** | [**NameResponse**](NameResponse.md) |  | 
 
 ## Example
 

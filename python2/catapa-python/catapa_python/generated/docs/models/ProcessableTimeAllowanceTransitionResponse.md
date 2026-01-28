@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**daily_end_date** | **str** |  | [optional] 
-**daily_start_date** | **str** |  | [optional] 
-**employee** | [**ProcessableTimeAllowanceTransitionEmployeeResponse**](ProcessableTimeAllowanceTransitionEmployeeResponse.md) |  | [optional] 
-**id** | **str** |  | [optional] 
+**daily_end_date** | **str** |  | 
+**daily_start_date** | **str** |  | 
+**employee** | [**ProcessableTimeAllowanceTransitionEmployeeResponse**](ProcessableTimeAllowanceTransitionEmployeeResponse.md) |  | 
+**id** | **str** |  | 
 
 ## Example
 

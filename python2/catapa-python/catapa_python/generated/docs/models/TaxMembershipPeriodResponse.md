@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**month** | **int** | Month of membership start period | [optional] 
-**year** | **int** | Year of membership start period | [optional] 
+**month** | **int** | Month of membership start period | 
+**year** | **int** | Year of membership start period | 
 
 ## Example
 

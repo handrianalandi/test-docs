@@ -1,8 +1,5 @@
 # EmployeeApi
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
-> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
-
 All URIs are relative to the `base_url` specified in the Catapa client constructor (default: *https://api.catapa.com*)
 
 Method | HTTP request | Description
@@ -57,7 +54,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **employee_request** | [**EmployeeRequest**](../models/EmployeeRequest.md)|  | [optional] 
+ **employee_request** | [**EmployeeRequest**](../models/EmployeeRequest.md)|  | 
 
 ### Return type
 
@@ -188,9 +185,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search Query | Supported Keys          | Supported Operators | Notes                                                                                | |-------------------------|---------------------|--------------------------------------------------------------------------------------| | id                      | &#x60;:&#x60;                 | Equal operator                                                                       | | employee.id             | &#x60;:&#x60;                 | Equal operator                                                                       | | employee.name           | &#x60;:&#x60;                 | Like operator                                                                        | | approvalStatus          | &#x60;:&#x60;                 | Equal operator                                                                       | | additionalAssignment.id | &#x60;:&#x60;                 | Equal operator with multiple values. Each value should separated with delimiters &#x60;;&#x60; |  | [optional] 
+ **page** | **int**| Page number | [default to 0]
+ **size** | **int**| Page size | [default to 10]
+ **query** | **str**| ### Search Query | Supported Keys          | Supported Operators | Notes                                                                                | |-------------------------|---------------------|--------------------------------------------------------------------------------------| | id                      | &#x60;:&#x60;                 | Equal operator                                                                       | | employee.id             | &#x60;:&#x60;                 | Equal operator                                                                       | | employee.name           | &#x60;:&#x60;                 | Like operator                                                                        | | approvalStatus          | &#x60;:&#x60;                 | Equal operator                                                                       | | additionalAssignment.id | &#x60;:&#x60;                 | Equal operator with multiple values. Each value should separated with delimiters &#x60;;&#x60; |  | 
 
 ### Return type
 
@@ -316,9 +313,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search query   | Supported Keys                    | Supported Operators | Notes                                                                                                                                                 | |-----------------------------------|---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------| | id                                | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter                                                             | | active                            | &#x60;:&#x60;                 | Equal operator                                                                                                                                        | | createdDate                       | &#x60;&gt;&#x60;&lt;br/&gt;&#x60;&lt;&#x60;         | Greater than or equal operator&lt;br/&gt;Less than or equal operator&lt;br/&gt;&lt;br/&gt;Use unix timestamp in milliseconds, e.g. &#x60;createdDate&gt;1675827618944&#x60;          | | employmentStatus.organization.id  | &#x60;:&#x60;                 | Equal operator                                                                                                                                        | | identificationNumber              | &#x60;:&#x60;                 | Like operator                                                                                                                                         | | identificationNumberIn            | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter                                                             | | name                              | &#x60;:&#x60;                 | Like operator                                                                                                                                         | | startDate                         | &#x60;:&#x60;&lt;br/&gt;&#x60;&gt;&#x60;&lt;br/&gt;&#x60;&lt;&#x60; | Equal operator&lt;br/&gt;Greater than or equal operator&lt;br/&gt;Less than or equal operator&lt;br/&gt;&lt;br/&gt;Use &#x60;yyyy-MM-dd&#x60; format, e.g. &#x60;startDate&gt;2023-05-31&#x60;       | | lastWorkingDate                   | &#x60;&gt;&#x60;&lt;br/&gt;&#x60;&lt;&#x60;         | Greater than or equal operator&lt;br/&gt;Less than or equal operator&lt;br/&gt;&lt;br/&gt;Use &#x60;yyyy-MM-dd&#x60; format, e.g. &#x60;lastWorkingDate&gt;2023-05-31&#x60;                    |  | [optional] 
+ **page** | **int**| Page number | [default to 0]
+ **size** | **int**| Page size | [default to 10]
+ **query** | **str**| ### Search query   | Supported Keys                    | Supported Operators | Notes                                                                                                                                                 | |-----------------------------------|---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------| | id                                | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter                                                             | | active                            | &#x60;:&#x60;                 | Equal operator                                                                                                                                        | | createdDate                       | &#x60;&gt;&#x60;&lt;br/&gt;&#x60;&lt;&#x60;         | Greater than or equal operator&lt;br/&gt;Less than or equal operator&lt;br/&gt;&lt;br/&gt;Use unix timestamp in milliseconds, e.g. &#x60;createdDate&gt;1675827618944&#x60;          | | employmentStatus.organization.id  | &#x60;:&#x60;                 | Equal operator                                                                                                                                        | | identificationNumber              | &#x60;:&#x60;                 | Like operator                                                                                                                                         | | identificationNumberIn            | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter                                                             | | name                              | &#x60;:&#x60;                 | Like operator                                                                                                                                         | | startDate                         | &#x60;:&#x60;&lt;br/&gt;&#x60;&gt;&#x60;&lt;br/&gt;&#x60;&lt;&#x60; | Equal operator&lt;br/&gt;Greater than or equal operator&lt;br/&gt;Less than or equal operator&lt;br/&gt;&lt;br/&gt;Use &#x60;yyyy-MM-dd&#x60; format, e.g. &#x60;startDate&gt;2023-05-31&#x60;       | | lastWorkingDate                   | &#x60;&gt;&#x60;&lt;br/&gt;&#x60;&lt;&#x60;         | Greater than or equal operator&lt;br/&gt;Less than or equal operator&lt;br/&gt;&lt;br/&gt;Use &#x60;yyyy-MM-dd&#x60; format, e.g. &#x60;lastWorkingDate&gt;2023-05-31&#x60;                    |  | 
 
 ### Return type
 
@@ -382,7 +379,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**|  | 
- **employee_hiring_data_request** | [**EmployeeHiringDataRequest**](../models/EmployeeHiringDataRequest.md)|  | [optional] 
+ **employee_hiring_data_request** | [**EmployeeHiringDataRequest**](../models/EmployeeHiringDataRequest.md)|  | 
 
 ### Return type
 
@@ -446,7 +443,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **employee_id** | **str**|  | 
- **manager_request** | [**ManagerRequest**](../models/ManagerRequest.md)|  | [optional] 
+ **manager_request** | [**ManagerRequest**](../models/ManagerRequest.md)|  | 
 
 ### Return type
 

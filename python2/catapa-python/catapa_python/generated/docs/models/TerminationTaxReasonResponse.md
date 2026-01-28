@@ -5,9 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**tax_annualized** | **bool** |  | [optional] 
+**id** | **str** |  | 
+**name** | **str** |  | 
+**tax_annualized** | **bool** |  | 
 
 ## Example
 

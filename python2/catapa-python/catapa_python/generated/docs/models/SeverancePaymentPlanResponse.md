@@ -5,24 +5,24 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **UUID** |  | [optional] 
-**termination_entry_id** | **UUID** |  | [optional] 
-**termination_entry_code** | **str** |  | [optional] 
-**employee_id** | **UUID** |  | [optional] 
-**employee_identification_number** | **str** |  | [optional] 
-**employee_name** | **str** |  | [optional] 
-**termination_reason_id** | **UUID** |  | [optional] 
-**termination_reason_name** | **str** |  | [optional] 
-**termination_date** | **date** |  | [optional] 
-**planned_date** | **date** |  | [optional] 
-**payment_date** | **date** |  | [optional] 
-**payment_method** | **str** |  | [optional] 
-**payment_option** | **str** |  | [optional] 
-**amount** | **float** |  | [optional] 
-**non_taxable_amount** | **float** |  | [optional] 
-**thp_amount** | **float** |  | [optional] 
-**pph_amount** | **float** |  | [optional] 
-**tax_allowance** | **float** |  | [optional] 
+**id** | **UUID** |  | 
+**termination_entry_id** | **UUID** |  | 
+**termination_entry_code** | **str** |  | 
+**employee_id** | **UUID** |  | 
+**employee_identification_number** | **str** |  | 
+**employee_name** | **str** |  | 
+**termination_reason_id** | **UUID** |  | 
+**termination_reason_name** | **str** |  | 
+**termination_date** | **date** |  | 
+**planned_date** | **date** |  | 
+**payment_date** | **date** |  | 
+**payment_method** | **str** |  | 
+**payment_option** | **str** |  | 
+**amount** | **float** |  | 
+**non_taxable_amount** | **float** |  | 
+**thp_amount** | **float** |  | 
+**pph_amount** | **float** |  | 
+**tax_allowance** | **float** |  | 
 
 ## Example
 

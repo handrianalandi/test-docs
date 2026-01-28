@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**monthly_gross_income** | **float** |  | [optional] 
-**percentage** | **float** |  | [optional] 
-**monthly_tax** | **float** |  | [optional] 
-**netto_tax** | **float** |  | [optional] 
+**monthly_gross_income** | **float** |  | 
+**percentage** | **float** |  | 
+**monthly_tax** | **float** |  | 
+**netto_tax** | **float** |  | 
 **type** | **str** |  | 
 
 ## Example

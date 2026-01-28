@@ -5,23 +5,23 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**annual_calculation** | **bool** |  | [optional] 
-**tax_object** | **str** |  | [optional] 
-**year** | **int** |  | [optional] 
-**month** | **int** |  | [optional] 
-**employee_id** | **str** |  | [optional] 
-**npwp_number** | **str** |  | [optional] 
-**npwp_address** | **str** |  | [optional] 
-**ptkp_category_code** | **str** |  | [optional] 
-**ter_category** | **str** |  | [optional] 
-**percentage** | **float** |  | [optional] 
-**monthly_gross_income** | **float** |  | [optional] 
-**tax** | [**TaxAmountResponse**](TaxAmountResponse.md) |  | [optional] 
-**regular_tax** | [**TaxAmountResponse**](TaxAmountResponse.md) |  | [optional] 
-**bonus_tax** | [**TaxAmountResponse**](TaxAmountResponse.md) |  | [optional] 
-**income** | [**TaxIncomeResponse**](TaxIncomeResponse.md) |  | [optional] 
-**positional_allowance** | **float** |  | [optional] 
-**base_income_tax_deduction** | **float** |  | [optional] 
+**annual_calculation** | **bool** |  | 
+**tax_object** | **str** |  | 
+**year** | **int** |  | 
+**month** | **int** |  | 
+**employee_id** | **str** |  | 
+**npwp_number** | **str** |  | 
+**npwp_address** | **str** |  | 
+**ptkp_category_code** | **str** |  | 
+**ter_category** | **str** |  | 
+**percentage** | **float** |  | 
+**monthly_gross_income** | **float** |  | 
+**tax** | [**TaxAmountResponse**](TaxAmountResponse.md) |  | 
+**regular_tax** | [**TaxAmountResponse**](TaxAmountResponse.md) |  | 
+**bonus_tax** | [**TaxAmountResponse**](TaxAmountResponse.md) |  | 
+**income** | [**TaxIncomeResponse**](TaxIncomeResponse.md) |  | 
+**positional_allowance** | **float** |  | 
+**base_income_tax_deduction** | **float** |  | 
 
 ## Example
 

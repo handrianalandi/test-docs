@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**salary_calculation_detail** | [**IdResponse**](IdResponse.md) |  | [optional] 
-**time_allowance_details** | [**List[TimeAllowanceDetailResponse]**](TimeAllowanceDetailResponse.md) |  | [optional] 
+**salary_calculation_detail** | [**IdResponse**](IdResponse.md) |  | 
+**time_allowance_details** | [**List[TimeAllowanceDetailResponse]**](TimeAllowanceDetailResponse.md) |  | 
 
 ## Example
 

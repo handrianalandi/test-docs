@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**code** | **str** | Error code | [optional] 
-**message** | **str** | Error message | [optional] 
-**status** | **int** | HTTP status code | [optional] 
-**timestamp** | **str** | Timestamp when the error occurred | [optional] 
+**code** | **str** | Error code | 
+**message** | **str** | Error message | 
+**status** | **int** | HTTP status code | 
+**timestamp** | **str** | Timestamp when the error occurred | 
 
 ## Example
 

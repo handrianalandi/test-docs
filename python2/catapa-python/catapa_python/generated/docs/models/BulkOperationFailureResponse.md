@@ -5,9 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**code** | **str** |  | [optional] 
-**message** | **str** |  | [optional] 
-**params** | [**BulkOperationFailureParamResponse**](BulkOperationFailureParamResponse.md) |  | [optional] 
+**code** | **str** |  | 
+**message** | **str** |  | 
+**params** | [**BulkOperationFailureParamResponse**](BulkOperationFailureParamResponse.md) |  | 
 
 ## Example
 

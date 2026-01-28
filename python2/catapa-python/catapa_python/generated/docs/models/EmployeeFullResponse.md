@@ -5,15 +5,15 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**identification_number** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**join_date** | **date** | YYYY-MM-DD | [optional] 
-**start_date** | **date** | YYYY-MM-DD | [optional] 
-**active** | **bool** |  | [optional] 
-**point_of_hire** | [**PointOfHireResponse**](PointOfHireResponse.md) |  | [optional] 
-**photo** | [**PhotoResponse**](PhotoResponse.md) |  | [optional] 
-**manager** | [**EmployeeManagerResponse**](EmployeeManagerResponse.md) |  | [optional] 
+**id** | **str** |  | 
+**identification_number** | **str** |  | 
+**name** | **str** |  | 
+**join_date** | **date** | YYYY-MM-DD | 
+**start_date** | **date** | YYYY-MM-DD | 
+**active** | **bool** |  | 
+**point_of_hire** | [**PointOfHireResponse**](PointOfHireResponse.md) |  | 
+**photo** | [**PhotoResponse**](PhotoResponse.md) |  | 
+**manager** | [**EmployeeManagerResponse**](EmployeeManagerResponse.md) |  | 
 
 ## Example
 

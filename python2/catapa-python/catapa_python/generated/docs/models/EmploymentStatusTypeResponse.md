@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**default_data** | **bool** |  | [optional] 
-**employment_status_number_type** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
+**id** | **str** |  | 
+**default_data** | **bool** |  | 
+**employment_status_number_type** | **str** |  | 
+**name** | **str** |  | 
 
 ## Example
 

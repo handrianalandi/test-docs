@@ -5,17 +5,17 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** | Former employee income employee ID | [optional] 
-**former_employee_income** | [**FormerEmployeeIncomeResponse**](FormerEmployeeIncomeResponse.md) |  | [optional] 
-**employee** | [**EmployeeSimpleResponse**](EmployeeSimpleResponse.md) |  | [optional] 
-**amount** | **float** | Income amount | [optional] 
-**last_working_date** | **date** | Last working date | [optional] 
-**payment_date** | **date** | Payment date | [optional] 
-**payment_method** | **str** | Payment method | [optional] 
-**total_thp** | **float** | Total take home pay | [optional] 
-**original_tax** | **float** | Original tax amount | [optional] 
-**penalty_tax** | **float** | Penalty tax amount | [optional] 
-**tax_allowance** | **float** | Tax allowance amount | [optional] 
+**id** | **str** | Former employee income employee ID | 
+**former_employee_income** | [**FormerEmployeeIncomeResponse**](FormerEmployeeIncomeResponse.md) |  | 
+**employee** | [**EmployeeSimpleResponse**](EmployeeSimpleResponse.md) |  | 
+**amount** | **float** | Income amount | 
+**last_working_date** | **date** | Last working date | 
+**payment_date** | **date** | Payment date | 
+**payment_method** | **str** | Payment method | 
+**total_thp** | **float** | Total take home pay | 
+**original_tax** | **float** | Original tax amount | 
+**penalty_tax** | **float** | Penalty tax amount | 
+**tax_allowance** | **float** | Tax allowance amount | 
 
 ## Example
 

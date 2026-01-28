@@ -6,12 +6,12 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **npwp_address** | **str** | Address registered with NPWP | 
-**npwp_number** | **str** | NPWP (Tax ID) number - can be empty or contain only digits | [optional] 
-**id_tku** | **str** | TKU (Tax Knowledge Unit) identifier | [optional] 
-**tin** | **str** | Tax Identification Number | [optional] 
-**kpp_id** | **str** | Tax office (KPP) identifier | [optional] 
-**ptkp_category_id** | **str** | PTKP (Personal Tax Free Income) category identifier | [optional] 
-**tax_dependents** | [**List[TaxDependentRequest]**](TaxDependentRequest.md) | List of tax dependents for PTKP calculation | [optional] 
+**npwp_number** | **str** | NPWP (Tax ID) number - can be empty or contain only digits | 
+**id_tku** | **str** | TKU (Tax Knowledge Unit) identifier | 
+**tin** | **str** | Tax Identification Number | 
+**kpp_id** | **str** | Tax office (KPP) identifier | 
+**ptkp_category_id** | **str** | PTKP (Personal Tax Free Income) category identifier | 
+**tax_dependents** | [**List[TaxDependentRequest]**](TaxDependentRequest.md) | List of tax dependents for PTKP calculation | 
 
 ## Example
 

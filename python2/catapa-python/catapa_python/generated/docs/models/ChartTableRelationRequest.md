@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**chart_table_relation_id** | **str** |  | [optional] 
-**sequence** | **float** |  | [optional] 
+**chart_table_relation_id** | **str** |  | 
+**sequence** | **float** |  | 
 
 ## Example
 

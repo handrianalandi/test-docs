@@ -5,14 +5,14 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**column_id** | **str** |  | [optional] 
-**chart_filter_type** | **str** |  | [optional] 
-**chart_value_collection_filters** | [**List[ChartValueCollectionFilterRequest]**](ChartValueCollectionFilterRequest.md) |  | [optional] 
-**start_date** | **str** |  | [optional] 
-**end_date** | **str** |  | [optional] 
-**time_frame** | **str** |  | [optional] 
-**time_unit** | **str** |  | [optional] 
-**duration** | **float** |  | [optional] 
+**column_id** | **str** |  | 
+**chart_filter_type** | **str** |  | 
+**chart_value_collection_filters** | [**List[ChartValueCollectionFilterRequest]**](ChartValueCollectionFilterRequest.md) |  | 
+**start_date** | **str** |  | 
+**end_date** | **str** |  | 
+**time_frame** | **str** |  | 
+**time_unit** | **str** |  | 
+**duration** | **float** |  | 
 
 ## Example
 

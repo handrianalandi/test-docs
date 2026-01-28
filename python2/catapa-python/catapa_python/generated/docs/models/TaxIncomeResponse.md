@@ -5,18 +5,18 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**basic_salary** | **float** |  | [optional] 
-**tax_allowance** | **float** |  | [optional] 
-**bonus** | **float** |  | [optional] 
-**irregular_bonus** | **float** |  | [optional] 
-**bonus_allowance** | **float** |  | [optional] 
-**honorarium** | **float** |  | [optional] 
-**insurance_premium** | **float** |  | [optional] 
-**enjoyment_revenue** | **float** |  | [optional] 
-**other_allowance** | **float** |  | [optional] 
-**irregular_other_allowance** | **float** |  | [optional] 
-**retirement_contribution** | **float** |  | [optional] 
-**religion_allowance** | **float** |  | [optional] 
+**basic_salary** | **float** |  | 
+**tax_allowance** | **float** |  | 
+**bonus** | **float** |  | 
+**irregular_bonus** | **float** |  | 
+**bonus_allowance** | **float** |  | 
+**honorarium** | **float** |  | 
+**insurance_premium** | **float** |  | 
+**enjoyment_revenue** | **float** |  | 
+**other_allowance** | **float** |  | 
+**irregular_other_allowance** | **float** |  | 
+**retirement_contribution** | **float** |  | 
+**religion_allowance** | **float** |  | 
 
 ## Example
 

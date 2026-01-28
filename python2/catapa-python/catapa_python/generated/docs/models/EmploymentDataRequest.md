@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**contract_start** | **date** | YYYY-MM-DD | [optional] 
-**contract_end** | **date** | YYYY-MM-DD | [optional] 
+**contract_start** | **date** | YYYY-MM-DD | 
+**contract_end** | **date** | YYYY-MM-DD | 
 **effective_date** | **date** | YYYY-MM-DD | 
 **employment_status_number** | **str** |  | 
 **employment_status_type_id** | **str** |  | 
@@ -15,12 +15,12 @@ Name | Type | Description | Notes
 **job_title_id** | **str** |  | 
 **location_id** | **str** |  | 
 **organization_id** | **str** |  | 
-**cost_center_id** | **str** |  | [optional] 
-**permanent_date** | **date** | YYYY-MM-DD | [optional] 
+**cost_center_id** | **str** |  | 
+**permanent_date** | **date** | YYYY-MM-DD | 
 **sign_date** | **date** | YYYY-MM-DD | 
-**generate_employment_status_number** | **bool** |  | [optional] [default to False]
-**sub_location_id** | **str** |  | [optional] 
-**operational_group_id** | **str** |  | [optional] 
+**generate_employment_status_number** | **bool** |  | [default to False]
+**sub_location_id** | **str** |  | 
+**operational_group_id** | **str** |  | 
 
 ## Example
 

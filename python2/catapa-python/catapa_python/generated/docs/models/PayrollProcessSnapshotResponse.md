@@ -5,17 +5,17 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**employee_id** | **str** |  | [optional] 
-**effective_date** | **date** |  | [optional] 
-**termination_date** | **date** |  | [optional] 
-**employment_status** | [**PayrollProcessSnapshotEmploymentStatusResponse**](PayrollProcessSnapshotEmploymentStatusResponse.md) |  | [optional] 
-**kpp** | [**IdResponse**](IdResponse.md) |  | [optional] 
-**paygroup** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | [optional] 
-**payroll_sequence_number** | **int** |  | [optional] 
-**previous_payroll_sequence_number** | **int** |  | [optional] 
-**payment_item_group** | [**IdResponse**](IdResponse.md) |  | [optional] 
-**bank_account_configuration** | [**PayrollProcessSnapshotBankAccountConfigurationResponse**](PayrollProcessSnapshotBankAccountConfigurationResponse.md) |  | [optional] 
-**workflow_activities** | [**List[PayrollProcessSnapshotWorkflowActivityResponse]**](PayrollProcessSnapshotWorkflowActivityResponse.md) |  | [optional] 
+**employee_id** | **str** |  | 
+**effective_date** | **date** |  | 
+**termination_date** | **date** |  | 
+**employment_status** | [**PayrollProcessSnapshotEmploymentStatusResponse**](PayrollProcessSnapshotEmploymentStatusResponse.md) |  | 
+**kpp** | [**IdResponse**](IdResponse.md) |  | 
+**paygroup** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
+**payroll_sequence_number** | **int** |  | 
+**previous_payroll_sequence_number** | **int** |  | 
+**payment_item_group** | [**IdResponse**](IdResponse.md) |  | 
+**bank_account_configuration** | [**PayrollProcessSnapshotBankAccountConfigurationResponse**](PayrollProcessSnapshotBankAccountConfigurationResponse.md) |  | 
+**workflow_activities** | [**List[PayrollProcessSnapshotWorkflowActivityResponse]**](PayrollProcessSnapshotWorkflowActivityResponse.md) |  | 
 
 ## Example
 

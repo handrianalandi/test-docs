@@ -5,37 +5,37 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**year** | **float** |  | [optional] 
-**accrual_frequency_type** | **str** |  | [optional] 
-**monthly_accrual_include_bonus** | **bool** |  | [optional] 
-**given_date** | **str** |  | [optional] 
-**start_date** | **str** |  | [optional] 
-**end_date** | **str** |  | [optional] 
-**expected_balance** | **float** |  | [optional] 
-**balance** | **float** |  | [optional] 
-**bonus** | **float** |  | [optional] 
-**debt** | **float** |  | [optional] 
-**extended** | **bool** |  | [optional] 
-**maximum_extended_duration** | **float** |  | [optional] 
-**maximum_extended_balance** | **float** |  | [optional] 
-**extended_balance_include_bonus** | **bool** |  | [optional] 
-**total_balance** | **float** |  | [optional] 
-**used_leave** | **float** |  | [optional] 
-**active** | **bool** |  | [optional] 
-**employee** | [**EmployeeSimpleResponse**](EmployeeSimpleResponse.md) |  | [optional] 
-**approved_leave** | **float** |  | [optional] 
-**pending_leave** | **float** |  | [optional] 
-**collective_leave** | **float** |  | [optional] 
-**remaining** | **float** |  | [optional] 
-**extended_date** | **str** |  | [optional] 
-**extended_balance** | **float** |  | [optional] 
-**extended_used_leave** | **float** |  | [optional] 
-**extended_collective_leave** | **float** |  | [optional] 
-**extended_available** | **float** |  | [optional] 
-**extended_remaining** | **float** |  | [optional] 
-**extended_approved_leave** | **float** |  | [optional] 
-**extended_pending_leave** | **float** |  | [optional] 
+**id** | **str** |  | 
+**year** | **float** |  | 
+**accrual_frequency_type** | **str** |  | 
+**monthly_accrual_include_bonus** | **bool** |  | 
+**given_date** | **str** |  | 
+**start_date** | **str** |  | 
+**end_date** | **str** |  | 
+**expected_balance** | **float** |  | 
+**balance** | **float** |  | 
+**bonus** | **float** |  | 
+**debt** | **float** |  | 
+**extended** | **bool** |  | 
+**maximum_extended_duration** | **float** |  | 
+**maximum_extended_balance** | **float** |  | 
+**extended_balance_include_bonus** | **bool** |  | 
+**total_balance** | **float** |  | 
+**used_leave** | **float** |  | 
+**active** | **bool** |  | 
+**employee** | [**EmployeeSimpleResponse**](EmployeeSimpleResponse.md) |  | 
+**approved_leave** | **float** |  | 
+**pending_leave** | **float** |  | 
+**collective_leave** | **float** |  | 
+**remaining** | **float** |  | 
+**extended_date** | **str** |  | 
+**extended_balance** | **float** |  | 
+**extended_used_leave** | **float** |  | 
+**extended_collective_leave** | **float** |  | 
+**extended_available** | **float** |  | 
+**extended_remaining** | **float** |  | 
+**extended_approved_leave** | **float** |  | 
+**extended_pending_leave** | **float** |  | 
 
 ## Example
 

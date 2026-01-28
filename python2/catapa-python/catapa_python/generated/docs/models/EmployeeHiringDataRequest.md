@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **join_date** | **date** |  | 
 **name** | **str** |  | 
 **start_date** | **date** |  | 
-**point_of_hire_id** | **str** |  | [optional] 
+**point_of_hire_id** | **str** |  | 
 
 ## Example
 

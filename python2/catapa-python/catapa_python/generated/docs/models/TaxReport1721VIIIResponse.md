@@ -5,16 +5,16 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**employee** | [**EmployeeSimpleResponse**](EmployeeSimpleResponse.md) |  | [optional] 
-**kpp** | [**KppSimpleResponse**](KppSimpleResponse.md) |  | [optional] 
-**year** | **float** |  | [optional] 
-**month** | **float** |  | [optional] 
-**sequence_number** | **float** |  | [optional] 
-**npwp_number** | **str** |  | [optional] 
-**address** | **str** |  | [optional] 
-**monthly_gross_income** | **float** |  | [optional] 
-**monthly_tax** | [**TaxAmountResponse**](TaxAmountResponse.md) |  | [optional] 
+**id** | **str** |  | 
+**employee** | [**EmployeeSimpleResponse**](EmployeeSimpleResponse.md) |  | 
+**kpp** | [**KppSimpleResponse**](KppSimpleResponse.md) |  | 
+**year** | **float** |  | 
+**month** | **float** |  | 
+**sequence_number** | **float** |  | 
+**npwp_number** | **str** |  | 
+**address** | **str** |  | 
+**monthly_gross_income** | **float** |  | 
+**monthly_tax** | [**TaxAmountResponse**](TaxAmountResponse.md) |  | 
 
 ## Example
 

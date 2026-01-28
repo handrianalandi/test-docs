@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**code** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**location** | [**SubLocationLocationResponse**](SubLocationLocationResponse.md) |  | [optional] 
+**id** | **str** |  | 
+**code** | **str** |  | 
+**name** | **str** |  | 
+**location** | [**SubLocationLocationResponse**](SubLocationLocationResponse.md) |  | 
 
 ## Example
 

@@ -5,25 +5,25 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**employment_status_type** | [**EmploymentStatusTypeResponse**](EmploymentStatusTypeResponse.md) |  | [optional] 
-**employment_type** | [**EmploymentTypeResponse**](EmploymentTypeResponse.md) |  | [optional] 
-**effective_date** | **str** |  | [optional] 
-**end_date** | **str** |  | [optional] 
-**sign_date** | **str** |  | [optional] 
-**created_by** | **str** |  | [optional] 
-**created_date** | **float** |  | [optional] 
-**updated_by** | **str** |  | [optional] 
-**updated_date** | **float** |  | [optional] 
-**organization** | [**OrganizationResponse**](OrganizationResponse.md) |  | [optional] 
-**position** | [**PositionResponse**](PositionResponse.md) |  | [optional] 
-**job_level** | [**JobLevelResponse**](JobLevelResponse.md) |  | [optional] 
-**job_title** | [**JobTitleResponse**](JobTitleResponse.md) |  | [optional] 
-**location** | [**LocationResponse**](LocationResponse.md) |  | [optional] 
-**cost_center** | [**CostCenterResponse**](CostCenterResponse.md) |  | [optional] 
-**employee** | [**EmployeeSimpleResponse**](EmployeeSimpleResponse.md) |  | [optional] 
-**sub_location** | [**SubLocationResponse**](SubLocationResponse.md) |  | [optional] 
-**operational_group** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | [optional] 
+**id** | **str** |  | 
+**employment_status_type** | [**EmploymentStatusTypeResponse**](EmploymentStatusTypeResponse.md) |  | 
+**employment_type** | [**EmploymentTypeResponse**](EmploymentTypeResponse.md) |  | 
+**effective_date** | **str** |  | 
+**end_date** | **str** |  | 
+**sign_date** | **str** |  | 
+**created_by** | **str** |  | 
+**created_date** | **float** |  | 
+**updated_by** | **str** |  | 
+**updated_date** | **float** |  | 
+**organization** | [**OrganizationResponse**](OrganizationResponse.md) |  | 
+**position** | [**PositionResponse**](PositionResponse.md) |  | 
+**job_level** | [**JobLevelResponse**](JobLevelResponse.md) |  | 
+**job_title** | [**JobTitleResponse**](JobTitleResponse.md) |  | 
+**location** | [**LocationResponse**](LocationResponse.md) |  | 
+**cost_center** | [**CostCenterResponse**](CostCenterResponse.md) |  | 
+**employee** | [**EmployeeSimpleResponse**](EmployeeSimpleResponse.md) |  | 
+**sub_location** | [**SubLocationResponse**](SubLocationResponse.md) |  | 
+**operational_group** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
 
 ## Example
 

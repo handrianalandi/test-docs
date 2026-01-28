@@ -5,15 +5,15 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**start_cutoff_date** | **str** |  | [optional] 
-**end_cutoff_date** | **str** |  | [optional] 
-**jkk_amount** | **float** | Amount can be null because the date period is not processed yet | [optional] 
-**jkm_amount** | **float** | Amount can be null because the date period is not processed yet | [optional] 
-**jhtpk_amount** | **float** | Amount can be null because the date period is not processed yet | [optional] 
-**jhtp_amount** | **float** | Amount can be null because the date period is not processed yet | [optional] 
-**jppk_amount** | **float** | Amount can be null because the date period is not processed yet | [optional] 
-**jpp_amount** | **float** | Amount can be null because the date period is not processed yet | [optional] 
-**jkp_amount** | **float** |  | [optional] 
+**start_cutoff_date** | **str** |  | 
+**end_cutoff_date** | **str** |  | 
+**jkk_amount** | **float** | Amount can be null because the date period is not processed yet | 
+**jkm_amount** | **float** | Amount can be null because the date period is not processed yet | 
+**jhtpk_amount** | **float** | Amount can be null because the date period is not processed yet | 
+**jhtp_amount** | **float** | Amount can be null because the date period is not processed yet | 
+**jppk_amount** | **float** | Amount can be null because the date period is not processed yet | 
+**jpp_amount** | **float** | Amount can be null because the date period is not processed yet | 
+**jkp_amount** | **float** |  | 
 
 ## Example
 

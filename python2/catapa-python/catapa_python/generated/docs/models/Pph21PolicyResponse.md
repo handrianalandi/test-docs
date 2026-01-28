@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**link_to_payroll** | **bool** |  | [optional] 
-**pph21_form_format_number** | **str** |  | [optional] 
-**pph21_method** | **str** |  | [optional] 
+**id** | **str** |  | 
+**link_to_payroll** | **bool** |  | 
+**pph21_form_format_number** | **str** |  | 
+**pph21_method** | **str** |  | 
 
 ## Example
 

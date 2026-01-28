@@ -5,13 +5,13 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**amount** | **float** |  | [optional] 
-**id** | **str** |  | [optional] 
-**salary_item_category** | **str** |  | [optional] 
-**salary_item_code** | **str** |  | [optional] 
-**salary_item_name** | **str** |  | [optional] 
-**salary_item_type** | **str** |  | [optional] 
-**thp** | **bool** |  | [optional] 
+**amount** | **float** |  | 
+**id** | **str** |  | 
+**salary_item_category** | **str** |  | 
+**salary_item_code** | **str** |  | 
+**salary_item_name** | **str** |  | 
+**salary_item_type** | **str** |  | 
+**thp** | **bool** |  | 
 
 ## Example
 

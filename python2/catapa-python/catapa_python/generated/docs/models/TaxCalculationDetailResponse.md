@@ -5,31 +5,31 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **UUID** |  | [optional] 
-**created_by** | **str** |  | [optional] 
-**created_date** | **float** |  | [optional] 
-**updated_by** | **str** |  | [optional] 
-**updated_date** | **float** |  | [optional] 
-**employee** | [**EmployeeSimpleResponse**](EmployeeSimpleResponse.md) |  | [optional] 
-**kpp** | [**KppSimpleResponse**](KppSimpleResponse.md) |  | [optional] 
-**external_id** | **str** |  | [optional] 
-**year** | **float** |  | [optional] 
-**month** | **float** |  | [optional] 
-**pph21_method** | **str** |  | [optional] 
-**membership_number** | **str** |  | [optional] 
-**membership_address** | **str** |  | [optional] 
-**total_monthly_gross_income** | **float** |  | [optional] 
-**total_tax_and_allowance** | [**TaxAndAllowanceResponse**](TaxAndAllowanceResponse.md) |  | [optional] 
-**paid_tax_and_allowance** | [**TaxAndAllowanceResponse**](TaxAndAllowanceResponse.md) |  | [optional] 
-**type** | **str** |  | [optional] 
-**tax_object** | **str** |  | [optional] 
-**reference_year** | **float** |  | [optional] 
-**reference_month** | **float** |  | [optional] 
-**multiplier** | **float** |  | [optional] 
-**calculation_type** | **str** |  | [optional] 
-**payment_method** | **str** |  | [optional] 
-**reference_date** | **date** |  | [optional] 
-**payment_date** | **date** |  | [optional] 
+**id** | **UUID** |  | 
+**created_by** | **str** |  | 
+**created_date** | **float** |  | 
+**updated_by** | **str** |  | 
+**updated_date** | **float** |  | 
+**employee** | [**EmployeeSimpleResponse**](EmployeeSimpleResponse.md) |  | 
+**kpp** | [**KppSimpleResponse**](KppSimpleResponse.md) |  | 
+**external_id** | **str** |  | 
+**year** | **float** |  | 
+**month** | **float** |  | 
+**pph21_method** | **str** |  | 
+**membership_number** | **str** |  | 
+**membership_address** | **str** |  | 
+**total_monthly_gross_income** | **float** |  | 
+**total_tax_and_allowance** | [**TaxAndAllowanceResponse**](TaxAndAllowanceResponse.md) |  | 
+**paid_tax_and_allowance** | [**TaxAndAllowanceResponse**](TaxAndAllowanceResponse.md) |  | 
+**type** | **str** |  | 
+**tax_object** | **str** |  | 
+**reference_year** | **float** |  | 
+**reference_month** | **float** |  | 
+**multiplier** | **float** |  | 
+**calculation_type** | **str** |  | 
+**payment_method** | **str** |  | 
+**reference_date** | **date** |  | 
+**payment_date** | **date** |  | 
 
 ## Example
 

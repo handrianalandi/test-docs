@@ -5,9 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**job_title** | [**NameResponse**](NameResponse.md) |  | [optional] 
-**employment_type** | [**NameResponse**](NameResponse.md) |  | [optional] 
-**cost_center** | [**CostCenterSimpleResponse**](CostCenterSimpleResponse.md) |  | [optional] 
+**job_title** | [**NameResponse**](NameResponse.md) |  | 
+**employment_type** | [**NameResponse**](NameResponse.md) |  | 
+**cost_center** | [**CostCenterSimpleResponse**](CostCenterSimpleResponse.md) |  | 
 
 ## Example
 

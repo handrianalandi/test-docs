@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**monthly_tax_reports** | [**List[AnnualTaxCalculationSimulatorMonthlyTaxReportsResponse]**](AnnualTaxCalculationSimulatorMonthlyTaxReportsResponse.md) |  | [optional] 
-**annual_tax_report** | [**AnnualTaxCalculationSimulatorResultResponse**](AnnualTaxCalculationSimulatorResultResponse.md) |  | [optional] 
+**monthly_tax_reports** | [**List[AnnualTaxCalculationSimulatorMonthlyTaxReportsResponse]**](AnnualTaxCalculationSimulatorMonthlyTaxReportsResponse.md) |  | 
+**annual_tax_report** | [**AnnualTaxCalculationSimulatorResultResponse**](AnnualTaxCalculationSimulatorResultResponse.md) |  | 
 
 ## Example
 

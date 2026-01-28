@@ -5,15 +5,15 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**employee** | [**EmployeeSimpleResponse**](EmployeeSimpleResponse.md) |  | [optional] 
-**kpp** | [**KppSimpleResponse**](KppSimpleResponse.md) |  | [optional] 
-**year** | **float** | Tax report year | [optional] 
-**month** | **float** | Tax report month | [optional] 
-**sequence_number** | **float** | Report sequence number | [optional] 
-**npwp_number** | **str** | NPWP (Tax identification number) | [optional] 
-**income** | **float** | Total income amount | [optional] 
-**tax** | **float** | Tax amount | [optional] 
+**id** | **str** |  | 
+**employee** | [**EmployeeSimpleResponse**](EmployeeSimpleResponse.md) |  | 
+**kpp** | [**KppSimpleResponse**](KppSimpleResponse.md) |  | 
+**year** | **float** | Tax report year | 
+**month** | **float** | Tax report month | 
+**sequence_number** | **float** | Report sequence number | 
+**npwp_number** | **str** | NPWP (Tax identification number) | 
+**income** | **float** | Total income amount | 
+**tax** | **float** | Tax amount | 
 
 ## Example
 

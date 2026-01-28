@@ -5,11 +5,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**employee** | [**EmployeeSimpleResponse**](EmployeeSimpleResponse.md) |  | [optional] 
-**var_date** | **str** |  | [optional] 
-**shift** | [**ShiftResponse**](ShiftResponse.md) |  | [optional] 
-**overtime** | [**AttendanceRecapitulationDetailOvertimeResponse**](AttendanceRecapitulationDetailOvertimeResponse.md) |  | [optional] 
-**attendances** | [**List[AttendanceRecapitulationDetailAttendanceItemResponse]**](AttendanceRecapitulationDetailAttendanceItemResponse.md) |  | [optional] 
+**employee** | [**EmployeeSimpleResponse**](EmployeeSimpleResponse.md) |  | 
+**var_date** | **str** |  | 
+**shift** | [**ShiftResponse**](ShiftResponse.md) |  | 
+**overtime** | [**AttendanceRecapitulationDetailOvertimeResponse**](AttendanceRecapitulationDetailOvertimeResponse.md) |  | 
+**attendances** | [**List[AttendanceRecapitulationDetailAttendanceItemResponse]**](AttendanceRecapitulationDetailAttendanceItemResponse.md) |  | 
 
 ## Example
 

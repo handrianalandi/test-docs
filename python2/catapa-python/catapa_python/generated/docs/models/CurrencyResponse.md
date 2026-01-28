@@ -5,16 +5,16 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **UUID** |  | [optional] 
-**created_by** | **str** |  | [optional] 
-**created_date** | **int** |  | [optional] 
-**updated_by** | **str** |  | [optional] 
-**updated_date** | **int** |  | [optional] 
-**code** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**payroll_rate** | **object** |  | [optional] 
-**tax_rate** | **object** |  | [optional] 
-**base_currency** | **bool** |  | [optional] 
+**id** | **UUID** |  | 
+**created_by** | **str** |  | 
+**created_date** | **int** |  | 
+**updated_by** | **str** |  | 
+**updated_date** | **int** |  | 
+**code** | **str** |  | 
+**name** | **str** |  | 
+**payroll_rate** | **object** |  | 
+**tax_rate** | **object** |  | 
+**base_currency** | **bool** |  | 
 
 ## Example
 

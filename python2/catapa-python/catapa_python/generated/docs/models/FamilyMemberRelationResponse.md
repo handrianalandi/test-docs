@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**code** | **str** |  | [optional] 
-**relation_type** | **str** |  | [optional] 
+**id** | **str** |  | 
+**name** | **str** |  | 
+**code** | **str** |  | 
+**relation_type** | **str** |  | 
 
 ## Example
 

@@ -5,12 +5,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** | Role identifier | [optional] 
-**name** | **str** | Role name | [optional] 
-**description** | **str** | Role description | [optional] 
-**role_type** | **str** | Type of role | [optional] 
-**cascade_organization_permission** | **bool** | Whether organization permissions cascade to child organizations | [optional] 
-**authorities** | [**List[AuthorityDetailResponse]**](AuthorityDetailResponse.md) | List of authorities assigned to this role | [optional] 
+**id** | **str** | Role identifier | 
+**name** | **str** | Role name | 
+**description** | **str** | Role description | 
+**role_type** | **str** | Type of role | 
+**cascade_organization_permission** | **bool** | Whether organization permissions cascade to child organizations | 
+**authorities** | [**List[AuthorityDetailResponse]**](AuthorityDetailResponse.md) | List of authorities assigned to this role | 
 
 ## Example
 

@@ -1,8 +1,5 @@
 # TimeManagementApi
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
-> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
-
 All URIs are relative to the `base_url` specified in the Catapa client constructor (default: *https://api.catapa.com*)
 
 Method | HTTP request | Description
@@ -73,7 +70,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **fingerprint_item_request** | [**List[FingerprintItemRequest]**](../models/FingerprintItemRequest.md)|  | [optional] 
+ **fingerprint_item_request** | [**List[FingerprintItemRequest]**](../models/FingerprintItemRequest.md)|  | 
 
 ### Return type
 
@@ -135,7 +132,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **employee_workday_configuration_request** | [**EmployeeWorkdayConfigurationRequest**](../models/EmployeeWorkdayConfigurationRequest.md)|  | [optional] 
+ **employee_workday_configuration_request** | [**EmployeeWorkdayConfigurationRequest**](../models/EmployeeWorkdayConfigurationRequest.md)|  | 
 
 ### Return type
 
@@ -197,7 +194,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **leave_balance_request** | [**LeaveBalanceRequest**](../models/LeaveBalanceRequest.md)|  | [optional] 
+ **leave_balance_request** | [**LeaveBalanceRequest**](../models/LeaveBalanceRequest.md)|  | 
 
 ### Return type
 
@@ -259,7 +256,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **other_leave_balance_request** | [**OtherLeaveBalanceRequest**](../models/OtherLeaveBalanceRequest.md)|  | [optional] 
+ **other_leave_balance_request** | [**OtherLeaveBalanceRequest**](../models/OtherLeaveBalanceRequest.md)|  | 
 
 ### Return type
 
@@ -321,7 +318,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **shift_pattern_template_request** | [**ShiftPatternTemplateRequest**](../models/ShiftPatternTemplateRequest.md)|  | [optional] 
+ **shift_pattern_template_request** | [**ShiftPatternTemplateRequest**](../models/ShiftPatternTemplateRequest.md)|  | 
 
 ### Return type
 
@@ -383,7 +380,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **workgroup_workday_configuration_request** | [**WorkgroupWorkdayConfigurationRequest**](../models/WorkgroupWorkdayConfigurationRequest.md)|  | [optional] 
+ **workgroup_workday_configuration_request** | [**WorkgroupWorkdayConfigurationRequest**](../models/WorkgroupWorkdayConfigurationRequest.md)|  | 
 
 ### Return type
 
@@ -1343,7 +1340,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**|  | 
- **employee_workday_configuration_request** | [**EmployeeWorkdayConfigurationRequest**](../models/EmployeeWorkdayConfigurationRequest.md)|  | [optional] 
+ **employee_workday_configuration_request** | [**EmployeeWorkdayConfigurationRequest**](../models/EmployeeWorkdayConfigurationRequest.md)|  | 
 
 ### Return type
 
@@ -1407,7 +1404,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**|  | 
- **shift_pattern_template_request** | [**ShiftPatternTemplateRequest**](../models/ShiftPatternTemplateRequest.md)|  | [optional] 
+ **shift_pattern_template_request** | [**ShiftPatternTemplateRequest**](../models/ShiftPatternTemplateRequest.md)|  | 
 
 ### Return type
 
@@ -1471,7 +1468,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**|  | 
- **workgroup_workday_configuration_request** | [**WorkgroupWorkdayConfigurationRequest**](../models/WorkgroupWorkdayConfigurationRequest.md)|  | [optional] 
+ **workgroup_workday_configuration_request** | [**WorkgroupWorkdayConfigurationRequest**](../models/WorkgroupWorkdayConfigurationRequest.md)|  | 
 
 ### Return type
 

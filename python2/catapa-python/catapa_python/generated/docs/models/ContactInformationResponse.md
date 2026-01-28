@@ -5,24 +5,24 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**mobile_phone** | **str** |  | [optional] 
-**email** | **str** | deprecated | [optional] 
-**work_email** | **str** |  | [optional] 
-**personal_email** | **str** |  | [optional] 
-**original_address** | **str** |  | [optional] 
-**original_address_phone_number** | **str** |  | [optional] 
-**original_address_detail** | [**AddressDetailResponse**](AddressDetailResponse.md) |  | [optional] 
-**facebook** | **str** |  | [optional] 
-**linked_in** | **str** |  | [optional] 
-**effective_date** | **date** | YYYY-MM-DD | [optional] 
-**created_by** | **str** |  | [optional] 
-**created_date** | **float** |  | [optional] 
-**updated_by** | **str** |  | [optional] 
-**updated_date** | **float** |  | [optional] 
-**residential_address** | [**AddressDetailResponse**](AddressDetailResponse.md) |  | [optional] 
-**emergency_contact** | [**EmergencyContactResponse**](EmergencyContactResponse.md) |  | [optional] 
-**employee** | [**EmployeeFullResponse**](EmployeeFullResponse.md) |  | [optional] 
+**id** | **str** |  | 
+**mobile_phone** | **str** |  | 
+**email** | **str** | deprecated | 
+**work_email** | **str** |  | 
+**personal_email** | **str** |  | 
+**original_address** | **str** |  | 
+**original_address_phone_number** | **str** |  | 
+**original_address_detail** | [**AddressDetailResponse**](AddressDetailResponse.md) |  | 
+**facebook** | **str** |  | 
+**linked_in** | **str** |  | 
+**effective_date** | **date** | YYYY-MM-DD | 
+**created_by** | **str** |  | 
+**created_date** | **float** |  | 
+**updated_by** | **str** |  | 
+**updated_date** | **float** |  | 
+**residential_address** | [**AddressDetailResponse**](AddressDetailResponse.md) |  | 
+**emergency_contact** | [**EmergencyContactResponse**](EmergencyContactResponse.md) |  | 
+**employee** | [**EmployeeFullResponse**](EmployeeFullResponse.md) |  | 
 
 ## Example
 

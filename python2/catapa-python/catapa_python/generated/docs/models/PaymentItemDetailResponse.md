@@ -5,9 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**amount** | **float** |  | [optional] 
-**salary_item** | [**PaymentItemDetailSalaryItemResponse**](PaymentItemDetailSalaryItemResponse.md) |  | [optional] 
+**id** | **str** |  | 
+**amount** | **float** |  | 
+**salary_item** | [**PaymentItemDetailSalaryItemResponse**](PaymentItemDetailSalaryItemResponse.md) |  | 
 
 ## Example
 

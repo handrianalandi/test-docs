@@ -5,11 +5,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**code** | **str** |  | [optional] 
-**min_job_level** | [**JobLevelResponse**](JobLevelResponse.md) |  | [optional] 
-**max_job_level** | [**JobLevelResponse**](JobLevelResponse.md) |  | [optional] 
+**id** | **str** |  | 
+**name** | **str** |  | 
+**code** | **str** |  | 
+**min_job_level** | [**JobLevelResponse**](JobLevelResponse.md) |  | 
+**max_job_level** | [**JobLevelResponse**](JobLevelResponse.md) |  | 
 
 ## Example
 

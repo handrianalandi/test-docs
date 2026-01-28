@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **str** | Name of the tax dependent | [optional] 
-**ptkp_relation_type** | **str** | Relationship type for PTKP calculation | [optional] 
-**date_of_birth** | **date** | Date of birth of the tax dependent | [optional] 
-**job** | **str** | Job or occupation of the tax dependent | [optional] 
+**name** | **str** | Name of the tax dependent | 
+**ptkp_relation_type** | **str** | Relationship type for PTKP calculation | 
+**date_of_birth** | **date** | Date of birth of the tax dependent | 
+**job** | **str** | Job or occupation of the tax dependent | 
 
 ## Example
 

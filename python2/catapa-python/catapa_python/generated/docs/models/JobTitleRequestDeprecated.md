@@ -7,8 +7,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **code** | **str** |  | 
 **name** | **str** |  | 
-**min_job_level_id** | **str** |  | [optional] 
-**max_job_level_id** | **str** |  | [optional] 
+**min_job_level_id** | **str** |  | 
+**max_job_level_id** | **str** |  | 
 
 ## Example
 

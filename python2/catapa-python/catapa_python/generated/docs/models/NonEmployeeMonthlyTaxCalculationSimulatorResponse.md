@@ -6,11 +6,11 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **type** | **str** |  | 
-**basic_salary** | **float** |  | [optional] 
-**tax_allowance** | **float** |  | [optional] 
-**base_income** | **float** |  | [optional] 
-**base_income_tax_deduction** | **float** |  | [optional] 
-**base_income_tax** | **float** |  | [optional] 
+**basic_salary** | **float** |  | 
+**tax_allowance** | **float** |  | 
+**base_income** | **float** |  | 
+**base_income_tax_deduction** | **float** |  | 
+**base_income_tax** | **float** |  | 
 
 ## Example
 

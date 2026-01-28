@@ -5,16 +5,16 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**employee** | [**EmployeeResponse**](EmployeeResponse.md) |  | [optional] 
-**payment_method** | **str** |  | [optional] 
-**updated_date** | **int** |  | [optional] 
-**effective_date** | **date** | YYYY-MM-DD | [optional] 
-**distribution_method** | **str** |  | [optional] 
-**default_bank_account** | [**BankAccountResponse**](BankAccountResponse.md) |  | [optional] 
-**bank_accounts** | [**List[BankAccountResponse]**](BankAccountResponse.md) |  | [optional] 
-**source** | [**BankAccountConfigurationResponseSource**](BankAccountConfigurationResponseSource.md) |  | [optional] 
-**approval_status** | **str** |  | [optional] 
+**id** | **str** |  | 
+**employee** | [**EmployeeResponse**](EmployeeResponse.md) |  | 
+**payment_method** | **str** |  | 
+**updated_date** | **int** |  | 
+**effective_date** | **date** | YYYY-MM-DD | 
+**distribution_method** | **str** |  | 
+**default_bank_account** | [**BankAccountResponse**](BankAccountResponse.md) |  | 
+**bank_accounts** | [**List[BankAccountResponse]**](BankAccountResponse.md) |  | 
+**source** | [**BankAccountConfigurationResponseSource**](BankAccountConfigurationResponseSource.md) |  | 
+**approval_status** | **str** |  | 
 
 ## Example
 

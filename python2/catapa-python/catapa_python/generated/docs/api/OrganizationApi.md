@@ -1,8 +1,5 @@
 # OrganizationApi
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
-> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
-
 All URIs are relative to the `base_url` specified in the Catapa client constructor (default: *https://api.catapa.com*)
 
 Method | HTTP request | Description
@@ -83,7 +80,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **sub_location_request** | [**SubLocationRequest**](../models/SubLocationRequest.md)|  | [optional] 
+ **sub_location_request** | [**SubLocationRequest**](../models/SubLocationRequest.md)|  | 
 
 ### Return type
 
@@ -147,7 +144,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **request** | [**CompanyDetailRequest**](../models/CompanyDetailRequest.md)|  | 
- **file** | **bytearray**| Upload the company logo. Allowed file types: &#x60;jpg&#x60;, &#x60;jpeg&#x60;, &#x60;png&#x60;, and &#x60;svg&#x60;. The Content-Type must be &#x60;image/jpeg&#x60;, &#x60;image/png&#x60;, or &#x60;image/svg+xml&#x60;. The maximum file size is &#x60;4MB&#x60;. | [optional] 
+ **file** | **bytearray**| Upload the company logo. Allowed file types: &#x60;jpg&#x60;, &#x60;jpeg&#x60;, &#x60;png&#x60;, and &#x60;svg&#x60;. The Content-Type must be &#x60;image/jpeg&#x60;, &#x60;image/png&#x60;, or &#x60;image/svg+xml&#x60;. The maximum file size is &#x60;4MB&#x60;. | 
 
 ### Return type
 
@@ -209,7 +206,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **cost_center_request** | [**CostCenterRequest**](../models/CostCenterRequest.md)|  | [optional] 
+ **cost_center_request** | [**CostCenterRequest**](../models/CostCenterRequest.md)|  | 
 
 ### Return type
 
@@ -271,7 +268,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **job_level_request** | [**JobLevelRequest**](../models/JobLevelRequest.md)|  | [optional] 
+ **job_level_request** | [**JobLevelRequest**](../models/JobLevelRequest.md)|  | 
 
 ### Return type
 
@@ -337,7 +334,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **job_title_request_deprecated** | [**JobTitleRequestDeprecated**](../models/JobTitleRequestDeprecated.md)|  | [optional] 
+ **job_title_request_deprecated** | [**JobTitleRequestDeprecated**](../models/JobTitleRequestDeprecated.md)|  | 
 
 ### Return type
 
@@ -399,7 +396,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **job_title_request** | [**JobTitleRequest**](../models/JobTitleRequest.md)|  | [optional] 
+ **job_title_request** | [**JobTitleRequest**](../models/JobTitleRequest.md)|  | 
 
 ### Return type
 
@@ -461,7 +458,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **location_create_request** | [**LocationCreateRequest**](../models/LocationCreateRequest.md)|  | [optional] 
+ **location_create_request** | [**LocationCreateRequest**](../models/LocationCreateRequest.md)|  | 
 
 ### Return type
 
@@ -523,7 +520,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **organization_request** | [**OrganizationRequest**](../models/OrganizationRequest.md)|  | [optional] 
+ **organization_request** | [**OrganizationRequest**](../models/OrganizationRequest.md)|  | 
 
 ### Return type
 
@@ -585,7 +582,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **organization_group_request** | [**OrganizationGroupRequest**](../models/OrganizationGroupRequest.md)|  | [optional] 
+ **organization_group_request** | [**OrganizationGroupRequest**](../models/OrganizationGroupRequest.md)|  | 
 
 ### Return type
 
@@ -647,7 +644,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **organization_hierarchy_request** | [**OrganizationHierarchyRequest**](../models/OrganizationHierarchyRequest.md)|  | [optional] 
+ **organization_hierarchy_request** | [**OrganizationHierarchyRequest**](../models/OrganizationHierarchyRequest.md)|  | 
 
 ### Return type
 
@@ -778,9 +775,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search query   | Supported Keys         | Supported Operators | Notes                                                         | |------------------------|---------------------|---------------------------------------------------------------| | name                   | &#x60;:&#x60;                 | Equal operator                                                | | companySuperior.id     | &#x60;:&#x60;                 | Equal operator                                                |  | [optional] 
+ **page** | **int**| Page number | [default to 0]
+ **size** | **int**| Page size | [default to 10]
+ **query** | **str**| ### Search query   | Supported Keys         | Supported Operators | Notes                                                         | |------------------------|---------------------|---------------------------------------------------------------| | name                   | &#x60;:&#x60;                 | Equal operator                                                | | companySuperior.id     | &#x60;:&#x60;                 | Equal operator                                                |  | 
 
 ### Return type
 
@@ -902,9 +899,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search Query | Supported Keys  | Supported Operators | Notes                                                                                     | |-----------------|---------------------|-------------------------------------------------------------------------------------------| | code            | &#x60;:&#x60;                 | Like operator                                                                             | | name            | &#x60;:&#x60;                 | Like operator                                                                             |  | [optional] 
+ **page** | **int**| Page number | [default to 0]
+ **size** | **int**| Page size | [default to 10]
+ **query** | **str**| ### Search Query | Supported Keys  | Supported Operators | Notes                                                                                     | |-----------------|---------------------|-------------------------------------------------------------------------------------------| | code            | &#x60;:&#x60;                 | Like operator                                                                             | | name            | &#x60;:&#x60;                 | Like operator                                                                             |  | 
 
 ### Return type
 
@@ -1097,9 +1094,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search Query | Supported Keys | Supported Operators | Notes                      | |----------------|---------------------|----------------------------| | name           | &#x60;:&#x60;                 | Like operator              | | code           | &#x60;:&#x60;                 | Like operator              | | minJobLevelId  | &#x60;:&#x60;                 | Equal operator(Deprecated) | | maxJobLevelId  | &#x60;:&#x60;                 | Equal operator(Deprecated) |  | [optional] 
+ **page** | **int**| Page number | [default to 0]
+ **size** | **int**| Page size | [default to 10]
+ **query** | **str**| ### Search Query | Supported Keys | Supported Operators | Notes                      | |----------------|---------------------|----------------------------| | name           | &#x60;:&#x60;                 | Like operator              | | code           | &#x60;:&#x60;                 | Like operator              | | minJobLevelId  | &#x60;:&#x60;                 | Equal operator(Deprecated) | | maxJobLevelId  | &#x60;:&#x60;                 | Equal operator(Deprecated) |  | 
 
 ### Return type
 
@@ -1166,9 +1163,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search Query | Supported Keys | Supported Operators | Notes                                                                                     | |----------------|---------------------|-------------------------------------------------------------------------------------------| | jobLevel.code  | &#x60;:&#x60;                 | Like operator                                                                             | | jobLevel.name  | &#x60;:&#x60;                 | Like operator                                                                             | | jobTitle.id    | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | jobLevel.id    | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter |  | [optional] 
+ **page** | **int**| Page number | [default to 0]
+ **size** | **int**| Page size | [default to 10]
+ **query** | **str**| ### Search Query | Supported Keys | Supported Operators | Notes                                                                                     | |----------------|---------------------|-------------------------------------------------------------------------------------------| | jobLevel.code  | &#x60;:&#x60;                 | Like operator                                                                             | | jobLevel.name  | &#x60;:&#x60;                 | Like operator                                                                             | | jobTitle.id    | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | jobLevel.id    | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter |  | 
 
 ### Return type
 
@@ -1297,9 +1294,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search query   | Supported Keys    | Supported Operators | Notes                                                                                                              | |-------------------|---------------------|-------------------------------------------------------------------------------------------------------------------| | name              | &#x60;:&#x60;                 | Like operator                                                                                                      | | code              | &#x60;:&#x60;                 | Like operator                                                                                                      | | zipCode           | &#x60;:&#x60;                 | Equal operator                                                                                                     | | phone             | &#x60;:&#x60;                 | Equal operator                                                                                                     | | address           | &#x60;:&#x60;                 | Equal operator                                                                                                     | | locationGroupId   | &#x60;:&#x60;                 | Equal operator                                                                                                     | | cityId            | &#x60;:&#x60;                 | Equal operator                                                                                                     |  | [optional] 
+ **page** | **int**| Page number | [default to 0]
+ **size** | **int**| Page size | [default to 10]
+ **query** | **str**| ### Search query   | Supported Keys    | Supported Operators | Notes                                                                                                              | |-------------------|---------------------|-------------------------------------------------------------------------------------------------------------------| | name              | &#x60;:&#x60;                 | Like operator                                                                                                      | | code              | &#x60;:&#x60;                 | Like operator                                                                                                      | | zipCode           | &#x60;:&#x60;                 | Equal operator                                                                                                     | | phone             | &#x60;:&#x60;                 | Equal operator                                                                                                     | | address           | &#x60;:&#x60;                 | Equal operator                                                                                                     | | locationGroupId   | &#x60;:&#x60;                 | Equal operator                                                                                                     | | cityId            | &#x60;:&#x60;                 | Equal operator                                                                                                     |  | 
 
 ### Return type
 
@@ -1363,9 +1360,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search Query | Supported Keys  | Supported Operators | Notes                                                                                     | |-----------------|---------------------|-------------------------------------------------------------------------------------------| | id              | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | name            | &#x60;:&#x60;                 | Like operator                                                                             | | code            | &#x60;:&#x60;                 | Like operator                                                                             |  | [optional] 
+ **page** | **int**| Page number | [default to 0]
+ **size** | **int**| Page size | [default to 10]
+ **query** | **str**| ### Search Query | Supported Keys  | Supported Operators | Notes                                                                                     | |-----------------|---------------------|-------------------------------------------------------------------------------------------| | id              | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | name            | &#x60;:&#x60;                 | Like operator                                                                             | | code            | &#x60;:&#x60;                 | Like operator                                                                             |  | 
 
 ### Return type
 
@@ -1571,9 +1568,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search Query   | Supported Keys          | Supported Operators | Notes                                                                                     |   |-------------------------|---------------------|-------------------------------------------------------------------------------------------|   | id                      | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter |   | organization.company.id | &#x60;:&#x60;                 | Equal operator                                                                            |   | organization.id         | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter |  | [optional] 
+ **page** | **int**| Page number | [default to 0]
+ **size** | **int**| Page size | [default to 10]
+ **query** | **str**| ### Search Query   | Supported Keys          | Supported Operators | Notes                                                                                     |   |-------------------------|---------------------|-------------------------------------------------------------------------------------------|   | id                      | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter |   | organization.company.id | &#x60;:&#x60;                 | Equal operator                                                                            |   | organization.id         | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter |  | 
 
 ### Return type
 
@@ -1704,9 +1701,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search Query | Supported Keys       | Supported Operators | Notes                                                                                     | |---------------------|---------------------|-------------------------------------------------------------------------------------------| | id                  | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | organization.id     | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | type                | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | organization.company.id          | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | organizationGroup.id| &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | effectiveDate       | &#x60;&gt;&#x60;, &#x60;&lt;&#x60;            | Greater than or equal / Less than or equal operators&lt;br/&gt;Date format: YYYY-MM-DD         | | endDate             | &#x60;&gt;&#x60;, &#x60;&lt;&#x60;            | Greater than or equal / Less than or equal operators&lt;br/&gt;Date format: YYYY-MM-DD         |  | [optional] 
+ **page** | **int**| Page number | [default to 0]
+ **size** | **int**| Page size | [default to 10]
+ **query** | **str**| ### Search Query | Supported Keys       | Supported Operators | Notes                                                                                     | |---------------------|---------------------|-------------------------------------------------------------------------------------------| | id                  | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | organization.id     | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | type                | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | organization.company.id          | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | organizationGroup.id| &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | effectiveDate       | &#x60;&gt;&#x60;, &#x60;&lt;&#x60;            | Greater than or equal / Less than or equal operators&lt;br/&gt;Date format: YYYY-MM-DD         | | endDate             | &#x60;&gt;&#x60;, &#x60;&lt;&#x60;            | Greater than or equal / Less than or equal operators&lt;br/&gt;Date format: YYYY-MM-DD         |  | 
 
 ### Return type
 
@@ -1770,9 +1767,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search Query | Supported Keys  | Supported Operators | Notes                                                                                     | |-----------------|---------------------|-------------------------------------------------------------------------------------------| | id              | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | organization.id | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | superior.id     | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | effectiveDate   | &#x60;gte&#x60;, &#x60;lte&#x60;        | Greater than or equal / Less than or equal operators&lt;br/&gt;Date format: YYYY-MM-DD         |  | [optional] 
+ **page** | **int**| Page number | [default to 0]
+ **size** | **int**| Page size | [default to 10]
+ **query** | **str**| ### Search Query | Supported Keys  | Supported Operators | Notes                                                                                     | |-----------------|---------------------|-------------------------------------------------------------------------------------------| | id              | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | organization.id | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | superior.id     | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | effectiveDate   | &#x60;gte&#x60;, &#x60;lte&#x60;        | Greater than or equal / Less than or equal operators&lt;br/&gt;Date format: YYYY-MM-DD         |  | 
 
 ### Return type
 
@@ -1836,9 +1833,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search Query | Supported Keys  | Supported Operators | Notes                                                                                     | |-----------------|---------------------|-------------------------------------------------------------------------------------------| | id              | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | position.id     | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter |  | [optional] 
+ **page** | **int**| Page number | [default to 0]
+ **size** | **int**| Page size | [default to 10]
+ **query** | **str**| ### Search Query | Supported Keys  | Supported Operators | Notes                                                                                     | |-----------------|---------------------|-------------------------------------------------------------------------------------------| | id              | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | position.id     | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter |  | 
 
 ### Return type
 
@@ -1902,9 +1899,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search Query | Supported Keys  | Supported Operators | Notes                                                                                     | |-----------------|---------------------|-------------------------------------------------------------------------------------------| | id              | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | position.id     | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | organization.id | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter |  | [optional] 
+ **page** | **int**| Page number | [default to 0]
+ **size** | **int**| Page size | [default to 10]
+ **query** | **str**| ### Search Query | Supported Keys  | Supported Operators | Notes                                                                                     | |-----------------|---------------------|-------------------------------------------------------------------------------------------| | id              | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | position.id     | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | organization.id | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter |  | 
 
 ### Return type
 
@@ -1968,9 +1965,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search Query | Supported Keys  | Supported Operators | Notes                                                                                     | |-----------------|---------------------|-------------------------------------------------------------------------------------------| | id              | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | position.id     | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | vacancyStatus   | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter |  | [optional] 
+ **page** | **int**| Page number | [default to 0]
+ **size** | **int**| Page size | [default to 10]
+ **query** | **str**| ### Search Query | Supported Keys  | Supported Operators | Notes                                                                                     | |-----------------|---------------------|-------------------------------------------------------------------------------------------| | id              | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | position.id     | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | vacancyStatus   | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter |  | 
 
 ### Return type
 
@@ -2034,9 +2031,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| Get a list of positions with pagination support. ### Search Query   | Supported Keys          | Supported Operators | Notes                                                                           |   |-------------------------|---------------------|---------------------------------------------------------------------------------|   | id                      | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter |   | name                    | &#x60;:&#x60;                 | Like operator                                                                   |   | code                    | &#x60;:&#x60;                 | Like operator                                                                   |  | [optional] 
+ **page** | **int**| Page number | [default to 0]
+ **size** | **int**| Page size | [default to 10]
+ **query** | **str**| Get a list of positions with pagination support. ### Search Query   | Supported Keys          | Supported Operators | Notes                                                                           |   |-------------------------|---------------------|---------------------------------------------------------------------------------|   | id                      | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter |   | name                    | &#x60;:&#x60;                 | Like operator                                                                   |   | code                    | &#x60;:&#x60;                 | Like operator                                                                   |  | 
 
 ### Return type
 
@@ -2100,9 +2097,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search Query | Supported Keys  | Supported Operators | Notes                                                                                     | |-----------------|---------------------|-------------------------------------------------------------------------------------------| | id              | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | name            | &#x60;:&#x60;                 | Like operator                                                                             | | code            | &#x60;:&#x60;                 | Like operator                                                                             | | location.id     | &#x60;:&#x60;                 | Equal operator                                                                            |  | [optional] 
+ **page** | **int**| Page number | [default to 0]
+ **size** | **int**| Page size | [default to 10]
+ **query** | **str**| ### Search Query | Supported Keys  | Supported Operators | Notes                                                                                     | |-----------------|---------------------|-------------------------------------------------------------------------------------------| | id              | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | name            | &#x60;:&#x60;                 | Like operator                                                                             | | code            | &#x60;:&#x60;                 | Like operator                                                                             | | location.id     | &#x60;:&#x60;                 | Equal operator                                                                            |  | 
 
 ### Return type
 
@@ -2166,7 +2163,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**|  | 
- **cost_center_request** | [**CostCenterRequest**](../models/CostCenterRequest.md)|  | [optional] 
+ **cost_center_request** | [**CostCenterRequest**](../models/CostCenterRequest.md)|  | 
 
 ### Return type
 

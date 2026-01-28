@@ -5,17 +5,17 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**gender** | **str** |  | [optional] 
-**date_of_birth** | **date** | YYYY-MM-DD | [optional] 
-**family_relation** | [**FamilyMemberRelationResponse**](FamilyMemberRelationResponse.md) |  | [optional] 
-**effective_date** | **date** | YYYY-MM-DD | [optional] 
-**end_date** | **date** | YYYY-MM-DD | [optional] 
-**created_by** | **str** |  | [optional] 
-**created_date** | **float** |  | [optional] 
-**updated_by** | **str** |  | [optional] 
-**updated_date** | **float** |  | [optional] 
+**id** | **str** |  | 
+**name** | **str** |  | 
+**gender** | **str** |  | 
+**date_of_birth** | **date** | YYYY-MM-DD | 
+**family_relation** | [**FamilyMemberRelationResponse**](FamilyMemberRelationResponse.md) |  | 
+**effective_date** | **date** | YYYY-MM-DD | 
+**end_date** | **date** | YYYY-MM-DD | 
+**created_by** | **str** |  | 
+**created_date** | **float** |  | 
+**updated_by** | **str** |  | 
+**updated_date** | **float** |  | 
 
 ## Example
 

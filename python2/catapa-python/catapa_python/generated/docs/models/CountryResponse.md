@@ -5,11 +5,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**code** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**calling_code** | **str** |  | [optional] 
-**tax_treaty** | **bool** |  | [optional] 
+**id** | **str** |  | 
+**code** | **str** |  | 
+**name** | **str** |  | 
+**calling_code** | **str** |  | 
+**tax_treaty** | **bool** |  | 
 
 ## Example
 

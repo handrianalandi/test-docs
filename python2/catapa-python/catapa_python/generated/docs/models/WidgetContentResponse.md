@@ -5,9 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** | Content identifier | [optional] 
-**title** | **str** | Content title | [optional] 
-**size** | **float** | Content size | [optional] 
+**id** | **str** | Content identifier | 
+**title** | **str** | Content title | 
+**size** | **float** | Content size | 
 
 ## Example
 

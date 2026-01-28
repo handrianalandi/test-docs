@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**account_number** | **str** |  | [optional] 
+**account_number** | **str** |  | 
 
 ## Example
 

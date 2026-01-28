@@ -5,15 +5,15 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**chart_filter_type** | **str** |  | [optional] 
-**column** | [**AnalyticsColumnResponse**](AnalyticsColumnResponse.md) |  | [optional] 
-**values** | **List[str]** |  | [optional] 
-**start_date** | **str** |  | [optional] 
-**end_date** | **str** |  | [optional] 
-**time_frame** | **str** |  | [optional] 
-**time_unit** | **str** |  | [optional] 
-**duration** | **float** |  | [optional] 
+**id** | **str** |  | 
+**chart_filter_type** | **str** |  | 
+**column** | [**AnalyticsColumnResponse**](AnalyticsColumnResponse.md) |  | 
+**values** | **List[str]** |  | 
+**start_date** | **str** |  | 
+**end_date** | **str** |  | 
+**time_frame** | **str** |  | 
+**time_unit** | **str** |  | 
+**duration** | **float** |  | 
 
 ## Example
 

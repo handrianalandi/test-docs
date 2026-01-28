@@ -7,11 +7,11 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **code** | **str** |  | 
 **organization_hierarchy_id** | **str** |  | 
-**organization_parent_id** | **str** |  | [optional] 
+**organization_parent_id** | **str** |  | 
 **name** | **str** |  | 
 **type** | **str** |  | 
-**organization_group_id** | **str** |  | [optional] 
-**company_id** | **str** | If the request is null, then it will default to the earliest company created in the system. | [optional] 
+**organization_group_id** | **str** |  | 
+**company_id** | **str** | If the request is null, then it will default to the earliest company created in the system. | 
 
 ## Example
 

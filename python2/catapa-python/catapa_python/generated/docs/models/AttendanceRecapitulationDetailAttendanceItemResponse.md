@@ -5,11 +5,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**type** | **str** |  | [optional] 
-**code** | **str** |  | [optional] 
-**time_in** | **str** |  | [optional] 
-**time_out** | **str** |  | [optional] 
-**description** | **str** |  | [optional] 
+**type** | **str** |  | 
+**code** | **str** |  | 
+**time_in** | **str** |  | 
+**time_out** | **str** |  | 
+**description** | **str** |  | 
 
 ## Example
 

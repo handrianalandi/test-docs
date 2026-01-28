@@ -5,11 +5,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**identification_number** | **str** |  | [optional] 
-**join_date** | **date** |  | [optional] 
-**name** | **str** |  | [optional] 
-**start_date** | **date** |  | [optional] 
+**id** | **str** |  | 
+**identification_number** | **str** |  | 
+**join_date** | **date** |  | 
+**name** | **str** |  | 
+**start_date** | **date** |  | 
 
 ## Example
 

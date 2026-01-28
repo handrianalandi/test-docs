@@ -5,11 +5,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**code** | **str** |  | [optional] 
-**id** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**salary_item_category** | **str** |  | [optional] 
-**salary_item_type** | **str** |  | [optional] 
+**code** | **str** |  | 
+**id** | **str** |  | 
+**name** | **str** |  | 
+**salary_item_category** | **str** |  | 
+**salary_item_type** | **str** |  | 
 
 ## Example
 

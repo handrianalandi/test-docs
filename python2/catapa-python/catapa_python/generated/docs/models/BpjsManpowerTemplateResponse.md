@@ -5,11 +5,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**code** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**salary_type** | **str** |  | [optional] 
-**link_to_payroll** | **bool** |  | [optional] 
+**id** | **str** |  | 
+**code** | **str** |  | 
+**name** | **str** |  | 
+**salary_type** | **str** |  | 
+**link_to_payroll** | **bool** |  | 
 
 ## Example
 

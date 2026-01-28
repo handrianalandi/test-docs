@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **UUID** |  | [optional] 
-**salary_item** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | [optional] 
+**id** | **UUID** |  | 
+**salary_item** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
 
 ## Example
 

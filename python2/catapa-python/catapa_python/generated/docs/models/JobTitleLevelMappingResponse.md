@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**job_title** | [**JobTitleResponse**](JobTitleResponse.md) |  | [optional] 
-**job_level** | [**JobLevelResponse**](JobLevelResponse.md) |  | [optional] 
+**job_title** | [**JobTitleResponse**](JobTitleResponse.md) |  | 
+**job_level** | [**JobLevelResponse**](JobLevelResponse.md) |  | 
 
 ## Example
 

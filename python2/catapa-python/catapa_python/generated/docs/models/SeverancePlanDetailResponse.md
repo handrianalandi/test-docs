@@ -5,11 +5,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**code** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**category** | **str** |  | [optional] 
-**amount** | **float** |  | [optional] 
-**pph21_item_method** | **str** |  | [optional] 
+**code** | **str** |  | 
+**name** | **str** |  | 
+**category** | **str** |  | 
+**amount** | **float** |  | 
+**pph21_item_method** | **str** |  | 
 
 ## Example
 

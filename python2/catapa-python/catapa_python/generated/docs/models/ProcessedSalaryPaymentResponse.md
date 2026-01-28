@@ -5,11 +5,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**employee_id** | **str** |  | [optional] 
-**location_group_code** | **str** |  | [optional] 
-**payment_date** | **str** |  | [optional] 
-**salary_payment_details** | [**List[ProcessedSalaryPaymentDetailResponse]**](ProcessedSalaryPaymentDetailResponse.md) |  | [optional] 
-**total_thp** | **float** |  | [optional] 
+**employee_id** | **str** |  | 
+**location_group_code** | **str** |  | 
+**payment_date** | **str** |  | 
+**salary_payment_details** | [**List[ProcessedSalaryPaymentDetailResponse]**](ProcessedSalaryPaymentDetailResponse.md) |  | 
+**total_thp** | **float** |  | 
 
 ## Example
 

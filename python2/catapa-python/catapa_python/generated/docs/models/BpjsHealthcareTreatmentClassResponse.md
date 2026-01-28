@@ -5,12 +5,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**min_salary_type** | **str** |  | [optional] 
-**min_salary_value** | **str** |  | [optional] 
-**max_salary_type** | **str** |  | [optional] 
-**max_salary_value** | **str** |  | [optional] 
+**id** | **str** |  | 
+**name** | **str** |  | 
+**min_salary_type** | **str** |  | 
+**min_salary_value** | **str** |  | 
+**max_salary_type** | **str** |  | 
+**max_salary_value** | **str** |  | 
 
 ## Example
 

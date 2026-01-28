@@ -5,18 +5,18 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** | ID of the BPJS Healthcare Membership | [optional] 
-**employee_id** | **str** |  | [optional] 
-**membership_number** | **str** |  | [optional] 
-**start_date** | **str** |  | [optional] 
-**end_date** | **str** |  | [optional] 
-**effective_date** | **str** |  | [optional] 
-**first_level_healthcare_facility** | **str** |  | [optional] 
-**dental_healthcare_facility** | **str** |  | [optional] 
-**bpjs_healthcare_provider** | [**BpjsHealthcareProviderListItemResponse**](BpjsHealthcareProviderListItemResponse.md) |  | [optional] 
-**bpjs_healthcare_template** | [**BpjsHealthcareTemplateListItemResponse**](BpjsHealthcareTemplateListItemResponse.md) |  | [optional] 
-**bpjs_healthcare_treatment_class** | [**BpjsHealthcareTreatmentClassResponse**](BpjsHealthcareTreatmentClassResponse.md) |  | [optional] 
-**additional_family_memberships** | [**List[AdditionalFamilyMembershipResponse]**](AdditionalFamilyMembershipResponse.md) |  | [optional] 
+**id** | **str** | ID of the BPJS Healthcare Membership | 
+**employee_id** | **str** |  | 
+**membership_number** | **str** |  | 
+**start_date** | **str** |  | 
+**end_date** | **str** |  | 
+**effective_date** | **str** |  | 
+**first_level_healthcare_facility** | **str** |  | 
+**dental_healthcare_facility** | **str** |  | 
+**bpjs_healthcare_provider** | [**BpjsHealthcareProviderListItemResponse**](BpjsHealthcareProviderListItemResponse.md) |  | 
+**bpjs_healthcare_template** | [**BpjsHealthcareTemplateListItemResponse**](BpjsHealthcareTemplateListItemResponse.md) |  | 
+**bpjs_healthcare_treatment_class** | [**BpjsHealthcareTreatmentClassResponse**](BpjsHealthcareTreatmentClassResponse.md) |  | 
+**additional_family_memberships** | [**List[AdditionalFamilyMembershipResponse]**](AdditionalFamilyMembershipResponse.md) |  | 
 
 ## Example
 

@@ -5,13 +5,13 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**code** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**position** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | [optional] 
-**organization** | [**PositionHistoryOrganizationResponse**](PositionHistoryOrganizationResponse.md) |  | [optional] 
-**effective_date** | **str** |  | [optional] 
-**end_date** | **str** |  | [optional] 
+**id** | **str** |  | 
+**code** | **str** |  | 
+**name** | **str** |  | 
+**position** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
+**organization** | [**PositionHistoryOrganizationResponse**](PositionHistoryOrganizationResponse.md) |  | 
+**effective_date** | **str** |  | 
+**end_date** | **str** |  | 
 
 ## Example
 

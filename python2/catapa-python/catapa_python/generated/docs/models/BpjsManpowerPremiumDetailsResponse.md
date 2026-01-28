@@ -5,12 +5,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**employee_id** | **str** |  | [optional] 
-**employee_identification_number** | **str** |  | [optional] 
-**employee_name** | **str** |  | [optional] 
-**monthly_wage** | **float** |  | [optional] 
-**current_month_detail** | [**BpjsManpowerCurrentMonthDetailResponse**](BpjsManpowerCurrentMonthDetailResponse.md) |  | [optional] 
-**details** | [**List[BpjsManpowerPremiumDetailsItemResponse]**](BpjsManpowerPremiumDetailsItemResponse.md) | Possible empty list | [optional] 
+**employee_id** | **str** |  | 
+**employee_identification_number** | **str** |  | 
+**employee_name** | **str** |  | 
+**monthly_wage** | **float** |  | 
+**current_month_detail** | [**BpjsManpowerCurrentMonthDetailResponse**](BpjsManpowerCurrentMonthDetailResponse.md) |  | 
+**details** | [**List[BpjsManpowerPremiumDetailsItemResponse]**](BpjsManpowerPremiumDetailsItemResponse.md) | Possible empty list | 
 
 ## Example
 

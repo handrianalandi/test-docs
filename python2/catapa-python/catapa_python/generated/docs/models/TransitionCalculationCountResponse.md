@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**processed_count** | **float** |  | [optional] 
-**unprocessed_count** | **float** |  | [optional] 
+**processed_count** | **float** |  | 
+**unprocessed_count** | **float** |  | 
 
 ## Example
 

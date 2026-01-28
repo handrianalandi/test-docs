@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**dental_healthcare_facility** | **str** |  | [optional] 
+**dental_healthcare_facility** | **str** |  | 
 **family_member_name** | **str** |  | 
 **family_member_relation_id** | **str** |  | 
-**first_level_healthcare_facility** | **str** |  | [optional] 
+**first_level_healthcare_facility** | **str** |  | 
 **id** | **str** |  | 
 
 ## Example

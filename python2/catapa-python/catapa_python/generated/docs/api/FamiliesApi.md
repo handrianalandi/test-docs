@@ -1,8 +1,5 @@
 # FamiliesApi
 
-> **💡 Quick Start:** Use the `catapa.Catapa` wrapper for automatic OAuth2 authentication and token refresh!  
-> **✨ Auto-refresh:** Tokens are automatically refreshed before they expire (5-minute buffer) - no manual token management needed!
-
 All URIs are relative to the `base_url` specified in the Catapa client constructor (default: *https://api.catapa.com*)
 
 Method | HTTP request | Description
@@ -58,7 +55,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id_request** | [**List[IdRequest]**](../models/IdRequest.md)|  | [optional] 
+ **id_request** | [**List[IdRequest]**](../models/IdRequest.md)|  | 
 
 ### Return type
 
@@ -122,7 +119,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **employee_id** | **str**|  | 
- **family_approval_request** | [**FamilyApprovalRequest**](../models/FamilyApprovalRequest.md)|  | [optional] 
+ **family_approval_request** | [**FamilyApprovalRequest**](../models/FamilyApprovalRequest.md)|  | 
 
 ### Return type
 
@@ -310,9 +307,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **int**| Page number | [optional] [default to 0]
- **size** | **int**| Page size | [optional] [default to 10]
- **query** | **str**| ### Search Query | Supported Keys     | Supported Operators | Notes                                                                                     | |--------------------|---------------------|-------------------------------------------------------------------------------------------| | id                 | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | employee.id        | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter |  | [optional] 
+ **page** | **int**| Page number | [default to 0]
+ **size** | **int**| Page size | [default to 10]
+ **query** | **str**| ### Search Query | Supported Keys     | Supported Operators | Notes                                                                                     | |--------------------|---------------------|-------------------------------------------------------------------------------------------| | id                 | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter | | employee.id        | &#x60;:&#x60;                 | Equal operator&lt;br/&gt;Support multiple values with each value separated by the &#x60;;&#x60; delimiter |  | 
 
 ### Return type
 
@@ -440,7 +437,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **reject_approval_request** | [**List[RejectApprovalRequest]**](../models/RejectApprovalRequest.md)|  | [optional] 
+ **reject_approval_request** | [**List[RejectApprovalRequest]**](../models/RejectApprovalRequest.md)|  | 
 
 ### Return type
 
@@ -508,7 +505,7 @@ Name | Type | Description  | Notes
  **tenant** | **str**|  | 
  **employee_id** | **str**|  | 
  **approval_id** | **str**|  | 
- **family_approval_request** | [**FamilyApprovalRequest**](../models/FamilyApprovalRequest.md)|  | [optional] 
+ **family_approval_request** | [**FamilyApprovalRequest**](../models/FamilyApprovalRequest.md)|  | 
 
 ### Return type
 

@@ -5,13 +5,13 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**effective_date** | **str** |  | [optional] 
-**proportional** | **bool** |  | [optional] 
-**retroactive** | **bool** |  | [optional] 
-**salary_decree_number** | **str** |  | [optional] 
-**salary_template_id** | **str** |  | [optional] 
-**employee_salaries** | [**List[EmployeeSalaryResponse]**](EmployeeSalaryResponse.md) |  | [optional] 
+**id** | **str** |  | 
+**effective_date** | **str** |  | 
+**proportional** | **bool** |  | 
+**retroactive** | **bool** |  | 
+**salary_decree_number** | **str** |  | 
+**salary_template_id** | **str** |  | 
+**employee_salaries** | [**List[EmployeeSalaryResponse]**](EmployeeSalaryResponse.md) |  | 
 
 ## Example
 

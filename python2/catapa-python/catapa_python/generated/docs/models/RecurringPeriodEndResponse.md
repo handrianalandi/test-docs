@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**year** | **float** |  | [optional] 
-**month** | **float** |  | [optional] 
+**year** | **float** |  | 
+**month** | **float** |  | 
 
 ## Example
 

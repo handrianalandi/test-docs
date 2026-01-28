@@ -7,9 +7,9 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **bpjs_manpower_provider_id** | **str** |  | 
 **bpjs_manpower_template_id** | **str** |  | 
-**membership_number** | **str** |  | [optional] 
+**membership_number** | **str** |  | 
 **start_date** | **str** |  | 
-**effective_date** | **str** | Effective Date of the BPJS Manpower Membership default value is start date | [optional] 
+**effective_date** | **str** | Effective Date of the BPJS Manpower Membership default value is start date | 
 
 ## Example
 

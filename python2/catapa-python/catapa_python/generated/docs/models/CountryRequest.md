@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **code** | **str** |  | 
 **calling_code** | **str** | e.g. &#x60;+62&#x60; | 
 **name** | **str** |  | 
-**tax_treaty** | **bool** |  | [optional] [default to False]
+**tax_treaty** | **bool** |  | [default to False]
 
 ## Example
 

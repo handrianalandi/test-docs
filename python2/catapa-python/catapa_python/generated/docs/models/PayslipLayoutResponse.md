@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**html** | **str** |  | [optional] 
-**section** | **str** |  | [optional] 
-**effective_date** | **str** |  | [optional] 
+**id** | **str** |  | 
+**html** | **str** |  | 
+**section** | **str** |  | 
+**effective_date** | **str** |  | 
 
 ## Example
 

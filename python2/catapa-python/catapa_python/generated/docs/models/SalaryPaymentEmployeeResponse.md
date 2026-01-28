@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**identification_number** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**employment_status** | [**SalaryPaymentEmploymentStatusResponse**](SalaryPaymentEmploymentStatusResponse.md) |  | [optional] 
+**id** | **str** |  | 
+**identification_number** | **str** |  | 
+**name** | **str** |  | 
+**employment_status** | [**SalaryPaymentEmploymentStatusResponse**](SalaryPaymentEmploymentStatusResponse.md) |  | 
 
 ## Example
 

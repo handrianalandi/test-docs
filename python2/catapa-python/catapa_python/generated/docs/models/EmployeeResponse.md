@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**identification_number** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**active** | **bool** |  | [optional] 
+**id** | **str** |  | 
+**identification_number** | **str** |  | 
+**name** | **str** |  | 
+**active** | **bool** |  | 
 
 ## Example
 

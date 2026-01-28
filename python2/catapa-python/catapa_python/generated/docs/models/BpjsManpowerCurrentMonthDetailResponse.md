@@ -5,15 +5,15 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**start_cutoff_date** | **str** |  | [optional] 
-**end_cutoff_date** | **str** |  | [optional] 
-**jkk_amount** | **float** |  | [optional] 
-**jkm_amount** | **float** |  | [optional] 
-**jhtpk_amount** | **float** |  | [optional] 
-**jhtp_amount** | **float** |  | [optional] 
-**jppk_amount** | **float** |  | [optional] 
-**jpp_amount** | **float** |  | [optional] 
-**jkp_amount** | **float** |  | [optional] 
+**start_cutoff_date** | **str** |  | 
+**end_cutoff_date** | **str** |  | 
+**jkk_amount** | **float** |  | 
+**jkm_amount** | **float** |  | 
+**jhtpk_amount** | **float** |  | 
+**jhtp_amount** | **float** |  | 
+**jppk_amount** | **float** |  | 
+**jpp_amount** | **float** |  | 
+**jkp_amount** | **float** |  | 
 
 ## Example
 

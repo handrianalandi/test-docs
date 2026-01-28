@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** | Role ID | [optional] 
-**name** | **str** | Role Name | [optional] 
+**id** | **str** | Role ID | 
+**name** | **str** | Role Name | 
 
 ## Example
 

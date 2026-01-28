@@ -5,16 +5,16 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**payment_method** | **str** |  | [optional] 
-**payment_date** | **str** |  | [optional] 
-**organization** | [**PositionHistoryOrganizationResponse**](PositionHistoryOrganizationResponse.md) |  | [optional] 
-**job_level** | [**NameResponse**](NameResponse.md) |  | [optional] 
-**job_title** | [**NameResponse**](NameResponse.md) |  | [optional] 
-**location** | [**NameResponse**](NameResponse.md) |  | [optional] 
-**cost_center** | [**CostCenterSimpleResponse**](CostCenterSimpleResponse.md) |  | [optional] 
-**employee** | [**SalaryPaymentEmployeeResponse**](SalaryPaymentEmployeeResponse.md) |  | [optional] 
-**salary_payment_details** | [**List[SalaryPaymentDetailResponse]**](SalaryPaymentDetailResponse.md) |  | [optional] 
+**id** | **str** |  | 
+**payment_method** | **str** |  | 
+**payment_date** | **str** |  | 
+**organization** | [**PositionHistoryOrganizationResponse**](PositionHistoryOrganizationResponse.md) |  | 
+**job_level** | [**NameResponse**](NameResponse.md) |  | 
+**job_title** | [**NameResponse**](NameResponse.md) |  | 
+**location** | [**NameResponse**](NameResponse.md) |  | 
+**cost_center** | [**CostCenterSimpleResponse**](CostCenterSimpleResponse.md) |  | 
+**employee** | [**SalaryPaymentEmployeeResponse**](SalaryPaymentEmployeeResponse.md) |  | 
+**salary_payment_details** | [**List[SalaryPaymentDetailResponse]**](SalaryPaymentDetailResponse.md) |  | 
 
 ## Example
 

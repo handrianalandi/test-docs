@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **UUID** |  | [optional] 
-**code** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**base_currency** | **bool** |  | [optional] 
+**id** | **UUID** |  | 
+**code** | **str** |  | 
+**name** | **str** |  | 
+**base_currency** | **bool** |  | 
 
 ## Example
 

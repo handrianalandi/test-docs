@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **identity_card_id** | **str** |  | 
 **identity_card_number** | **str** | Alphanumeric | 
-**expired_date** | **date** |  | [optional] 
+**expired_date** | **date** |  | 
 
 ## Example
 

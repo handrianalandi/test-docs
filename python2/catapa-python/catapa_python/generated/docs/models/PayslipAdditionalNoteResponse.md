@@ -5,9 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**payment_date** | **str** |  | [optional] 
-**note** | **str** |  | [optional] 
+**id** | **str** |  | 
+**payment_date** | **str** |  | 
+**note** | **str** |  | 
 
 ## Example
 

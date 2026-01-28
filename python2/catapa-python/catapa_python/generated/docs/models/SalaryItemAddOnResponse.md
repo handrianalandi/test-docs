@@ -5,11 +5,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**amount** | **float** |  | [optional] 
-**var_date** | **str** |  | [optional] 
-**employee** | [**SalaryItemAddOnEmployeeResponse**](SalaryItemAddOnEmployeeResponse.md) |  | [optional] 
-**salary_calculation_processed** | **bool** |  | [optional] 
-**salary_item** | [**SalaryItemSimpleResponse**](SalaryItemSimpleResponse.md) |  | [optional] 
+**amount** | **float** |  | 
+**var_date** | **str** |  | 
+**employee** | [**SalaryItemAddOnEmployeeResponse**](SalaryItemAddOnEmployeeResponse.md) |  | 
+**salary_calculation_processed** | **bool** |  | 
+**salary_item** | [**SalaryItemSimpleResponse**](SalaryItemSimpleResponse.md) |  | 
 
 ## Example
 

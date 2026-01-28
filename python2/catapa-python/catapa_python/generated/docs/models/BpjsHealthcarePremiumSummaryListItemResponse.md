@@ -5,12 +5,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**employee_identification_number** | **str** |  | [optional] 
-**employee_name** | **str** |  | [optional] 
-**monthly_wage** | **float** |  | [optional] 
-**company_amount** | **float** |  | [optional] 
-**employee_amount** | **float** |  | [optional] 
+**id** | **str** |  | 
+**employee_identification_number** | **str** |  | 
+**employee_name** | **str** |  | 
+**monthly_wage** | **float** |  | 
+**company_amount** | **float** |  | 
+**employee_amount** | **float** |  | 
 
 ## Example
 

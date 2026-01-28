@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **code** | **str** |  | 
 **level** | **float** |  | 
-**job_position_id** | **str** |  | [optional] 
+**job_position_id** | **str** |  | 
 **name** | **str** |  | 
 
 ## Example

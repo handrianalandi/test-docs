@@ -5,16 +5,16 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**bank_code** | **str** |  | [optional] 
-**bank_name** | **str** |  | [optional] 
-**account_name** | **str** |  | [optional] 
-**account_number** | **str** |  | [optional] 
-**bank_account_priority** | **int** |  | [optional] 
-**currency_code** | **str** |  | [optional] 
-**amount** | **float** |  | [optional] 
-**exchanged_amount** | **float** |  | [optional] 
-**company_bank_account** | [**SalaryPaymentDetailCompanyBankAccountResponse**](SalaryPaymentDetailCompanyBankAccountResponse.md) |  | [optional] 
+**id** | **str** |  | 
+**bank_code** | **str** |  | 
+**bank_name** | **str** |  | 
+**account_name** | **str** |  | 
+**account_number** | **str** |  | 
+**bank_account_priority** | **int** |  | 
+**currency_code** | **str** |  | 
+**amount** | **float** |  | 
+**exchanged_amount** | **float** |  | 
+**company_bank_account** | [**SalaryPaymentDetailCompanyBankAccountResponse**](SalaryPaymentDetailCompanyBankAccountResponse.md) |  | 
 
 ## Example
 

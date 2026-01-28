@@ -5,30 +5,30 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**marital_status** | **str** |  | [optional] 
-**religion** | [**ReligionResponse**](ReligionResponse.md) |  | [optional] 
-**foreign_labour** | **bool** |  | [optional] 
-**citizenship** | **object** |  | [optional] 
-**identification_number** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**date_of_birth** | **str** |  | [optional] 
-**place_of_birth** | [**PlaceOfBirthResponse**](PlaceOfBirthResponse.md) |  | [optional] 
-**join_date** | **str** |  | [optional] 
-**start_date** | **str** |  | [optional] 
-**gender** | **str** |  | [optional] 
-**point_of_hire** | [**PointOfHireResponse**](PointOfHireResponse.md) |  | [optional] 
-**employment_status_number** | **str** |  | [optional] 
-**organization** | [**OrganizationResponse**](OrganizationResponse.md) |  | [optional] 
-**job_title** | [**JobTitleResponse**](JobTitleResponse.md) |  | [optional] 
-**job_level** | [**JobLevelResponse**](JobLevelResponse.md) |  | [optional] 
-**location** | [**LocationResponse**](LocationResponse.md) |  | [optional] 
-**employment_type** | [**EmploymentTypeResponse**](EmploymentTypeResponse.md) |  | [optional] 
-**contract_start** | **str** |  | [optional] 
-**contract_end** | **str** |  | [optional] 
-**identity_card_number** | **str** |  | [optional] 
-**identity_card_expired_date** | **date** |  | [optional] 
-**email** | **str** |  | [optional] 
+**id** | **str** |  | 
+**marital_status** | **str** |  | 
+**religion** | [**ReligionResponse**](ReligionResponse.md) |  | 
+**foreign_labour** | **bool** |  | 
+**citizenship** | **object** |  | 
+**identification_number** | **str** |  | 
+**name** | **str** |  | 
+**date_of_birth** | **str** |  | 
+**place_of_birth** | [**PlaceOfBirthResponse**](PlaceOfBirthResponse.md) |  | 
+**join_date** | **str** |  | 
+**start_date** | **str** |  | 
+**gender** | **str** |  | 
+**point_of_hire** | [**PointOfHireResponse**](PointOfHireResponse.md) |  | 
+**employment_status_number** | **str** |  | 
+**organization** | [**OrganizationResponse**](OrganizationResponse.md) |  | 
+**job_title** | [**JobTitleResponse**](JobTitleResponse.md) |  | 
+**job_level** | [**JobLevelResponse**](JobLevelResponse.md) |  | 
+**location** | [**LocationResponse**](LocationResponse.md) |  | 
+**employment_type** | [**EmploymentTypeResponse**](EmploymentTypeResponse.md) |  | 
+**contract_start** | **str** |  | 
+**contract_end** | **str** |  | 
+**identity_card_number** | **str** |  | 
+**identity_card_expired_date** | **date** |  | 
+**email** | **str** |  | 
 
 ## Example
 

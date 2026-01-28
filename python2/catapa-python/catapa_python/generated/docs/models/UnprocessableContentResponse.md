@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**error** | **str** | Error message | [optional] 
-**details** | **List[str]** | Business validation errors | [optional] 
+**error** | **str** | Error message | 
+**details** | **List[str]** | Business validation errors | 
 
 ## Example
 

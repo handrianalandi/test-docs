@@ -5,12 +5,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**effective_date** | **date** |  | [optional] 
-**created_date** | **float** |  | [optional] 
-**updated_date** | **float** |  | [optional] 
-**workflow_template** | [**PayrollProcessSnapshotWorkflowTemplateResponse**](PayrollProcessSnapshotWorkflowTemplateResponse.md) |  | [optional] 
-**workflow_reason** | [**PayrollProcessSnapshotWorkflowReasonResponse**](PayrollProcessSnapshotWorkflowReasonResponse.md) |  | [optional] 
+**id** | **str** |  | 
+**effective_date** | **date** |  | 
+**created_date** | **float** |  | 
+**updated_date** | **float** |  | 
+**workflow_template** | [**PayrollProcessSnapshotWorkflowTemplateResponse**](PayrollProcessSnapshotWorkflowTemplateResponse.md) |  | 
+**workflow_reason** | [**PayrollProcessSnapshotWorkflowReasonResponse**](PayrollProcessSnapshotWorkflowReasonResponse.md) |  | 
 
 ## Example
 

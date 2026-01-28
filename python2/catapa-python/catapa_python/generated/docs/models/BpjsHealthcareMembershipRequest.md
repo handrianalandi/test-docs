@@ -8,12 +8,12 @@ Name | Type | Description | Notes
 **additional_family_memberships** | [**List[BpjsHealthcareMembershipAdditionalFamilyMembership]**](BpjsHealthcareMembershipAdditionalFamilyMembership.md) |  | 
 **bpjs_healthcare_provider_id** | **str** |  | 
 **bpjs_healthcare_template_id** | **str** |  | 
-**bpjs_healthcare_treatment_class_id** | **str** |  | [optional] 
-**dental_healthcare_facility** | **str** |  | [optional] 
-**first_level_healthcare_facility** | **str** |  | [optional] 
+**bpjs_healthcare_treatment_class_id** | **str** |  | 
+**dental_healthcare_facility** | **str** |  | 
+**first_level_healthcare_facility** | **str** |  | 
 **membership_number** | **str** |  | 
 **start_date** | **str** |  | 
-**effective_date** | **str** | Effective Date of the BPJS Healthcare Membership default to start date | [optional] 
+**effective_date** | **str** | Effective Date of the BPJS Healthcare Membership default to start date | 
 
 ## Example
 

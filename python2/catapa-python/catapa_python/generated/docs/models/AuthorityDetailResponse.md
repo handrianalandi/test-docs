@@ -5,11 +5,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** | Authority identifier | [optional] 
-**code** | **str** | Authority code | [optional] 
-**name** | **str** | Authority name | [optional] 
-**description** | **str** | Authority description | [optional] 
-**module_name** | **str** | Module name this authority belongs to | [optional] 
+**id** | **str** | Authority identifier | 
+**code** | **str** | Authority code | 
+**name** | **str** | Authority name | 
+**description** | **str** | Authority description | 
+**module_name** | **str** | Module name this authority belongs to | 
 
 ## Example
 

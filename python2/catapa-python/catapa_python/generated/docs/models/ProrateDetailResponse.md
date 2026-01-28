@@ -5,12 +5,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**amount** | **float** |  | [optional] 
-**effective_date** | **str** |  | [optional] 
-**formula** | **str** |  | [optional] 
-**prorated_amount** | **float** |  | [optional] 
-**salary_decree_number** | **str** |  | [optional] 
-**salary_template_detail** | [**ProrateDetailSalaryTemplateDetailResponse**](ProrateDetailSalaryTemplateDetailResponse.md) |  | [optional] 
+**amount** | **float** |  | 
+**effective_date** | **str** |  | 
+**formula** | **str** |  | 
+**prorated_amount** | **float** |  | 
+**salary_decree_number** | **str** |  | 
+**salary_template_detail** | [**ProrateDetailSalaryTemplateDetailResponse**](ProrateDetailSalaryTemplateDetailResponse.md) |  | 
 
 ## Example
 

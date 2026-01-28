@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**code** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**job_levels** | [**List[JobLevelResponse]**](JobLevelResponse.md) |  | [optional] 
+**id** | **str** |  | 
+**code** | **str** |  | 
+**name** | **str** |  | 
+**job_levels** | [**List[JobLevelResponse]**](JobLevelResponse.md) |  | 
 
 ## Example
 

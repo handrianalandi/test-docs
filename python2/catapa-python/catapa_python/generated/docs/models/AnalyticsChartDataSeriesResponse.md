@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **str** | Series name | [optional] 
-**data** | **List[float]** | Series data points | [optional] 
+**name** | **str** | Series name | 
+**data** | **List[float]** | Series data points | 
 
 ## Example
 

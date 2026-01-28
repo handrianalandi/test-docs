@@ -5,13 +5,13 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**created_date** | **float** |  | [optional] 
-**updated_date** | **float** |  | [optional] 
-**workflow_template** | [**WorkflowTemplateResponse**](WorkflowTemplateResponse.md) |  | [optional] 
-**effective_date** | **str** |  | [optional] 
-**workflow_reason** | [**WorkflowReasonResponse**](WorkflowReasonResponse.md) |  | [optional] 
-**employee** | [**EmployeeSimpleResponse**](EmployeeSimpleResponse.md) |  | [optional] 
+**id** | **str** |  | 
+**created_date** | **float** |  | 
+**updated_date** | **float** |  | 
+**workflow_template** | [**WorkflowTemplateResponse**](WorkflowTemplateResponse.md) |  | 
+**effective_date** | **str** |  | 
+**workflow_reason** | [**WorkflowReasonResponse**](WorkflowReasonResponse.md) |  | 
+**employee** | [**EmployeeSimpleResponse**](EmployeeSimpleResponse.md) |  | 
 
 ## Example
 

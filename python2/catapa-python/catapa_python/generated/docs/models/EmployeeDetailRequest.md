@@ -5,14 +5,14 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**blood_type** | **str** |  | [optional] 
+**blood_type** | **str** |  | 
 **citizenship_id** | **str** | Country ID | 
-**date_of_birth** | **date** | YYYY-MM-DD | [optional] 
-**foreign_labour** | **bool** |  | [optional] [default to False]
-**gender** | **str** |  | [optional] 
+**date_of_birth** | **date** | YYYY-MM-DD | 
+**foreign_labour** | **bool** |  | [default to False]
+**gender** | **str** |  | 
 **marital_status** | **str** |  | 
 **name** | **str** |  | 
-**place_of_birth_id** | **str** | City ID | [optional] 
+**place_of_birth_id** | **str** | City ID | 
 **religion_id** | **str** |  | 
 
 ## Example

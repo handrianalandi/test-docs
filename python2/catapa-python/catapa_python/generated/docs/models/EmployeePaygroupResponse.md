@@ -5,11 +5,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**updated_date** | **int** |  | [optional] 
-**employee** | [**EmployeeResponse**](EmployeeResponse.md) |  | [optional] 
-**paygroup** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | [optional] 
-**effective_date** | **date** |  | [optional] 
+**id** | **str** |  | 
+**updated_date** | **int** |  | 
+**employee** | [**EmployeeResponse**](EmployeeResponse.md) |  | 
+**paygroup** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
+**effective_date** | **date** |  | 
 
 ## Example
 

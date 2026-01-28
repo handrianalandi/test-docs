@@ -5,9 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**original** | **float** | Original tax amount | [optional] 
-**penalty** | **float** | Penalty tax amount | [optional] 
-**total** | **float** | Total tax amount including penalty | [optional] 
+**original** | **float** | Original tax amount | 
+**penalty** | **float** | Penalty tax amount | 
+**total** | **float** | Total tax amount including penalty | 
 
 ## Example
 

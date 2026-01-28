@@ -7,13 +7,13 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **code** | **str** |  | 
 **name** | **str** |  | 
-**location_group** | [**IdRequest**](IdRequest.md) |  | [optional] 
+**location_group** | [**IdRequest**](IdRequest.md) |  | 
 **city** | [**IdRequest**](.md) |  | 
-**latitude** | **float** |  | [optional] 
-**longitude** | **float** |  | [optional] 
-**address** | **str** |  | [optional] 
-**phone** | **str** | e.g. &#x60;+6281234567890&#x60; | [optional] 
-**zip_code** | **str** | Numeric | [optional] 
+**latitude** | **float** |  | 
+**longitude** | **float** |  | 
+**address** | **str** |  | 
+**phone** | **str** | e.g. &#x60;+6281234567890&#x60; | 
+**zip_code** | **str** | Numeric | 
 **headquarter** | **bool** | If value is true, will automatically update headquarter in company profile | 
 
 ## Example

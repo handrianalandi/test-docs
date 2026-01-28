@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**employee_id** | **str** |  | [optional] 
-**payment_item_group_id** | **str** |  | [optional] 
-**sequence** | **int** |  | [optional] 
-**previous_sequence** | **int** |  | [optional] 
+**employee_id** | **str** |  | 
+**payment_item_group_id** | **str** |  | 
+**sequence** | **int** |  | 
+**previous_sequence** | **int** |  | 
 
 ## Example
 

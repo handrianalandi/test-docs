@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** | Unique identifier for the widget | [optional] 
-**position** | **float** | Position of the widget in the layout | [optional] 
-**widget_type** | **str** | Type of the widget | [optional] 
-**content** | [**WidgetContentResponse**](WidgetContentResponse.md) |  | [optional] 
+**id** | **str** | Unique identifier for the widget | 
+**position** | **float** | Position of the widget in the layout | 
+**widget_type** | **str** | Type of the widget | 
+**content** | [**WidgetContentResponse**](WidgetContentResponse.md) |  | 
 
 ## Example
 

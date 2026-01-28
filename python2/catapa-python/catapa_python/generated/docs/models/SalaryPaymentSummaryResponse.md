@@ -5,14 +5,14 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**account_number** | **str** |  | [optional] 
-**amount** | **float** |  | [optional] 
-**id** | **str** |  | [optional] 
-**number_of_processed_employees** | **float** |  | [optional] 
-**number_of_transferred_employees** | **float** |  | [optional] 
-**payment_date** | **str** |  | [optional] 
-**transferred_amount** | **float** |  | [optional] 
-**company_bank_account** | [**SalaryPaymentSummaryCompanyBankAccountResponse**](SalaryPaymentSummaryCompanyBankAccountResponse.md) |  | [optional] 
+**account_number** | **str** |  | 
+**amount** | **float** |  | 
+**id** | **str** |  | 
+**number_of_processed_employees** | **float** |  | 
+**number_of_transferred_employees** | **float** |  | 
+**payment_date** | **str** |  | 
+**transferred_amount** | **float** |  | 
+**company_bank_account** | [**SalaryPaymentSummaryCompanyBankAccountResponse**](SalaryPaymentSummaryCompanyBankAccountResponse.md) |  | 
 
 ## Example
 

@@ -5,12 +5,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**employee_id** | **str** |  | [optional] 
-**employee_identification_number** | **str** |  | [optional] 
-**employee_name** | **str** |  | [optional] 
-**monthly_wage** | **float** |  | [optional] 
-**current_month_detail** | [**BpjsHealthcareCurrentMonthDetailResponse**](BpjsHealthcareCurrentMonthDetailResponse.md) |  | [optional] 
-**details** | [**List[BpjsHealthcarePremiumDetailsItemResponse]**](BpjsHealthcarePremiumDetailsItemResponse.md) |  | [optional] 
+**employee_id** | **str** |  | 
+**employee_identification_number** | **str** |  | 
+**employee_name** | **str** |  | 
+**monthly_wage** | **float** |  | 
+**current_month_detail** | [**BpjsHealthcareCurrentMonthDetailResponse**](BpjsHealthcareCurrentMonthDetailResponse.md) |  | 
+**details** | [**List[BpjsHealthcarePremiumDetailsItemResponse]**](BpjsHealthcarePremiumDetailsItemResponse.md) |  | 
 
 ## Example
 

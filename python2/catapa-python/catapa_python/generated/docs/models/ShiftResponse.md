@@ -5,16 +5,16 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**code** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**time_in** | **str** |  | [optional] 
-**time_out** | **str** |  | [optional] 
-**time_in_utc** | **float** |  | [optional] 
-**time_out_utc** | **float** |  | [optional] 
-**break_start_utc** | **float** |  | [optional] 
-**break_end_utc** | **float** |  | [optional] 
-**color** | **str** |  | [optional] 
+**id** | **str** |  | 
+**code** | **str** |  | 
+**name** | **str** |  | 
+**time_in** | **str** |  | 
+**time_out** | **str** |  | 
+**time_in_utc** | **float** |  | 
+**time_out_utc** | **float** |  | 
+**break_start_utc** | **float** |  | 
+**break_end_utc** | **float** |  | 
+**color** | **str** |  | 
 
 ## Example
 

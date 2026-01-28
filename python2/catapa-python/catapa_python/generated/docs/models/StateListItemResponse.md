@@ -5,11 +5,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**code** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**country** | [**CountryResponse**](CountryResponse.md) |  | [optional] 
-**description** | **str** |  | [optional] 
+**id** | **str** |  | 
+**code** | **str** |  | 
+**name** | **str** |  | 
+**country** | [**CountryResponse**](CountryResponse.md) |  | 
+**description** | **str** |  | 
 
 ## Example
 

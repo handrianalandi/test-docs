@@ -5,12 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** | Permission identifier | [optional] 
-**data_id** | **str** | Data identifier (e.g., organization ID, location ID, or \&quot;ALL\&quot;) | [optional] 
-**data_type** | **str** | Type of data this permission applies to | [optional] 
-**role** | [**RoleIdNameResponse**](RoleIdNameResponse.md) | Role associated with this permission | [optional] 
-**organization_name** | **str** | Name of the organization (when dataType is ORGANIZATION) | [optional] 
-**location_name** | **str** | Name of the location (when dataType is LOCATION) | [optional] 
+**id** | **str** | Permission identifier | 
+**data_id** | **str** | Data identifier (e.g., organization ID, location ID, or \&quot;ALL\&quot;) | 
+**data_type** | **str** | Type of data this permission applies to | 
+**role** | [**RoleIdNameResponse**](RoleIdNameResponse.md) | Role associated with this permission | 
 
 ## Example
 

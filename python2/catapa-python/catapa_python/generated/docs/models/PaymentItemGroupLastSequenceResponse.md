@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**employee_id** | **str** |  | [optional] 
-**last_sequence** | **int** |  | [optional] 
+**employee_id** | **str** |  | 
+**last_sequence** | **int** |  | 
 
 ## Example
 
