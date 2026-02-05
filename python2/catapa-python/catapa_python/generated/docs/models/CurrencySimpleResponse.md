@@ -1,33 +1,57 @@
 # CurrencySimpleResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **UUID** |  | 
-**code** | **str** |  | 
-**name** | **str** |  | 
-**base_currency** | **bool** |  | 
+| Name            | Type   | Description |
+| :-------------- | :----- | :---------- |
+| `id`            | `UUID` |             |
+| `code`          | `str`  |             |
+| `name`          | `str`  |             |
+| `base_currency` | `bool` |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import CurrencySimpleResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of CurrencySimpleResponse from a JSON string
-currency_simple_response_instance = CurrencySimpleResponse.from_json(json)
-# print the JSON string representation of the object
-print(CurrencySimpleResponse.to_json())
-
-# convert the object into a dict
-currency_simple_response_dict = currency_simple_response_instance.to_dict()
-# create an instance of CurrencySimpleResponse from a dict
-currency_simple_response_from_dict = CurrencySimpleResponse.from_dict(currency_simple_response_dict)
+currency_simple_response = CurrencySimpleResponse(
+    id="'d1ea18d8-a691-11e6-80f5-76304dec7066'",
+    code="'IDR'",
+    name="'Indonesian Rupiah'",
+    base_currency=True,
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import CurrencySimpleResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+currency_simple_response = CurrencySimpleResponse.from_json(json_str)
+
+# Convert to JSON
+print(currency_simple_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import CurrencySimpleResponse
+
+# Convert to/from dictionary
+data_dict = currency_simple_response.to_dict()
+currency_simple_response = CurrencySimpleResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(currency_simple_response.id)
+# Update properties
+currency_simple_response.id = "new_value"
+```

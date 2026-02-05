@@ -1,41 +1,73 @@
 # CompanySuperiorResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**name** | **str** |  | 
-**code** | **str** |  | 
-**website** | **str** |  | 
-**siup** | **str** |  | 
-**tdp** | **str** |  | 
-**logo** | **str** |  | 
-**logo_original_filename** | **str** |  | 
-**logo_file_metadata** | [**LogoFileMetadataResponse**](LogoFileMetadataResponse.md) |  | 
-**time_zone** | [**TimeZoneResponse**](TimeZoneResponse.md) |  | 
-**email** | **str** |  | 
-**location** | [**LocationResponse**](LocationResponse.md) |  | 
+| Name                     | Type                                                      | Description |
+| :----------------------- | :-------------------------------------------------------- | :---------- |
+| `id`                     | `str`                                                     |             |
+| `name`                   | `str`                                                     |             |
+| `code`                   | `str`                                                     |             |
+| `website`                | `str`                                                     |             |
+| `siup`                   | `str`                                                     |             |
+| `tdp`                    | `str`                                                     |             |
+| `logo`                   | `str`                                                     |             |
+| `logo_original_filename` | `str`                                                     |             |
+| `logo_file_metadata`     | [`LogoFileMetadataResponse`](LogoFileMetadataResponse.md) |             |
+| `time_zone`              | [`TimeZoneResponse`](TimeZoneResponse.md)                 |             |
+| `email`                  | `str`                                                     |             |
+| `location`               | [`LocationResponse`](LocationResponse.md)                 |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import CompanySuperiorResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of CompanySuperiorResponse from a JSON string
-company_superior_response_instance = CompanySuperiorResponse.from_json(json)
-# print the JSON string representation of the object
-print(CompanySuperiorResponse.to_json())
-
-# convert the object into a dict
-company_superior_response_dict = company_superior_response_instance.to_dict()
-# create an instance of CompanySuperiorResponse from a dict
-company_superior_response_from_dict = CompanySuperiorResponse.from_dict(company_superior_response_dict)
+company_superior_response = CompanySuperiorResponse(
+    id="''",
+    name="''",
+    code="''",
+    website="''",
+    siup="''",
+    tdp="''",
+    logo="''",
+    logo_original_filename="''",
+    logo_file_metadata=None,  # [LogoFileMetadataResponse](LogoFileMetadataResponse.md)
+    time_zone=None,  # [TimeZoneResponse](TimeZoneResponse.md)
+    email="''",
+    location=None,  # [LocationResponse](LocationResponse.md)
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import CompanySuperiorResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+company_superior_response = CompanySuperiorResponse.from_json(json_str)
+
+# Convert to JSON
+print(company_superior_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import CompanySuperiorResponse
+
+# Convert to/from dictionary
+data_dict = company_superior_response.to_dict()
+company_superior_response = CompanySuperiorResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(company_superior_response.id)
+# Update properties
+company_superior_response.id = "new_value"
+```

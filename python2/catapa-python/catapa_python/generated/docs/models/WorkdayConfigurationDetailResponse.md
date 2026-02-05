@@ -1,31 +1,56 @@
 # WorkdayConfigurationDetailResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**shift** | [**ShiftResponse**](ShiftResponse.md) |  | 
-**sequence** | **float** |  | 
+| Name       | Type                                | Description |
+| :--------- | :---------------------------------- | :---------- |
+| `shift`    | [`ShiftResponse`](ShiftResponse.md) |             |
+| `sequence` | `float`                             |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import WorkdayConfigurationDetailResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of WorkdayConfigurationDetailResponse from a JSON string
-workday_configuration_detail_response_instance = WorkdayConfigurationDetailResponse.from_json(json)
-# print the JSON string representation of the object
-print(WorkdayConfigurationDetailResponse.to_json())
-
-# convert the object into a dict
-workday_configuration_detail_response_dict = workday_configuration_detail_response_instance.to_dict()
-# create an instance of WorkdayConfigurationDetailResponse from a dict
-workday_configuration_detail_response_from_dict = WorkdayConfigurationDetailResponse.from_dict(workday_configuration_detail_response_dict)
+workday_configuration_detail_response = WorkdayConfigurationDetailResponse(
+    shift=None, sequence=1.337  # [ShiftResponse](ShiftResponse.md)
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import WorkdayConfigurationDetailResponse
 
+# Parse from JSON
+json_str = '{"shift": "example"}'
+workday_configuration_detail_response = WorkdayConfigurationDetailResponse.from_json(
+    json_str
+)
+
+# Convert to JSON
+print(workday_configuration_detail_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import WorkdayConfigurationDetailResponse
+
+# Convert to/from dictionary
+data_dict = workday_configuration_detail_response.to_dict()
+workday_configuration_detail_response = WorkdayConfigurationDetailResponse.from_dict(
+    data_dict
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(workday_configuration_detail_response.shift)
+# Update properties
+workday_configuration_detail_response.shift = new_value
+```

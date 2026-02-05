@@ -1,30 +1,53 @@
 # SalaryItemAddOnEmployeeRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**identification_number** | **str** |  | 
+| Name                    | Type  | Required | Description |
+| :---------------------- | :---- | :------: | :---------- |
+| `identification_number` | `str` |    ✅    |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import SalaryItemAddOnEmployeeRequest
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of SalaryItemAddOnEmployeeRequest from a JSON string
-salary_item_add_on_employee_request_instance = SalaryItemAddOnEmployeeRequest.from_json(json)
-# print the JSON string representation of the object
-print(SalaryItemAddOnEmployeeRequest.to_json())
-
-# convert the object into a dict
-salary_item_add_on_employee_request_dict = salary_item_add_on_employee_request_instance.to_dict()
-# create an instance of SalaryItemAddOnEmployeeRequest from a dict
-salary_item_add_on_employee_request_from_dict = SalaryItemAddOnEmployeeRequest.from_dict(salary_item_add_on_employee_request_dict)
+salary_item_add_on_employee_request = SalaryItemAddOnEmployeeRequest(
+    identification_number="''"
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import SalaryItemAddOnEmployeeRequest
 
+# Parse from JSON
+json_str = '{"identification_number": "example"}'
+salary_item_add_on_employee_request = SalaryItemAddOnEmployeeRequest.from_json(json_str)
+
+# Convert to JSON
+print(salary_item_add_on_employee_request.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import SalaryItemAddOnEmployeeRequest
+
+# Convert to/from dictionary
+data_dict = salary_item_add_on_employee_request.to_dict()
+salary_item_add_on_employee_request = SalaryItemAddOnEmployeeRequest.from_dict(
+    data_dict
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(salary_item_add_on_employee_request.identification_number)
+# Update properties
+salary_item_add_on_employee_request.identification_number = "new_value"
+```

@@ -1,39 +1,69 @@
 # OrganizationHistoryResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**code** | **str** |  | 
-**name** | **str** |  | 
-**organization** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
-**company** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
-**type** | **str** |  | 
-**organization_hierarchy** | [**OrganizationHistoryHierarchyResponse**](OrganizationHistoryHierarchyResponse.md) |  | 
-**organization_group** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
-**effective_date** | **date** |  | 
-**end_date** | **date** |  | 
+| Name                     | Type                                                                              | Description |
+| :----------------------- | :-------------------------------------------------------------------------------- | :---------- |
+| `id`                     | `str`                                                                             |             |
+| `code`                   | `str`                                                                             |             |
+| `name`                   | `str`                                                                             |             |
+| `organization`           | [`IdCodeNameResponse`](IdCodeNameResponse.md)                                     |             |
+| `company`                | [`IdCodeNameResponse`](IdCodeNameResponse.md)                                     |             |
+| `type`                   | `str`                                                                             |             |
+| `organization_hierarchy` | [`OrganizationHistoryHierarchyResponse`](OrganizationHistoryHierarchyResponse.md) |             |
+| `organization_group`     | [`IdCodeNameResponse`](IdCodeNameResponse.md)                                     |             |
+| `effective_date`         | `date`                                                                            |             |
+| `end_date`               | `date`                                                                            |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import OrganizationHistoryResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of OrganizationHistoryResponse from a JSON string
-organization_history_response_instance = OrganizationHistoryResponse.from_json(json)
-# print the JSON string representation of the object
-print(OrganizationHistoryResponse.to_json())
-
-# convert the object into a dict
-organization_history_response_dict = organization_history_response_instance.to_dict()
-# create an instance of OrganizationHistoryResponse from a dict
-organization_history_response_from_dict = OrganizationHistoryResponse.from_dict(organization_history_response_dict)
+organization_history_response = OrganizationHistoryResponse(
+    id="''",
+    code="''",
+    name="''",
+    organization=None,  # [IdCodeNameResponse](IdCodeNameResponse.md)
+    company=None,  # [IdCodeNameResponse](IdCodeNameResponse.md)
+    type="'STRUCTURAL'",
+    organization_hierarchy=None,  # [OrganizationHistoryHierarchyResponse](OrganizationHistoryHierarchyResponse.md)
+    organization_group=None,  # [IdCodeNameResponse](IdCodeNameResponse.md)
+    effective_date=datetime.datetime.strptime("1975-12-30", "%Y-%m-%d").date(),
+    end_date=datetime.datetime.strptime("1975-12-30", "%Y-%m-%d").date(),
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import OrganizationHistoryResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+organization_history_response = OrganizationHistoryResponse.from_json(json_str)
+
+# Convert to JSON
+print(organization_history_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import OrganizationHistoryResponse
+
+# Convert to/from dictionary
+data_dict = organization_history_response.to_dict()
+organization_history_response = OrganizationHistoryResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(organization_history_response.id)
+# Update properties
+organization_history_response.id = "new_value"
+```

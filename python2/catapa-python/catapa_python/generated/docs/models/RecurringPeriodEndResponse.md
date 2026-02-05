@@ -1,31 +1,50 @@
 # RecurringPeriodEndResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**year** | **float** |  | 
-**month** | **float** |  | 
+| Name    | Type    | Description |
+| :------ | :------ | :---------- |
+| `year`  | `float` |             |
+| `month` | `float` |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import RecurringPeriodEndResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of RecurringPeriodEndResponse from a JSON string
-recurring_period_end_response_instance = RecurringPeriodEndResponse.from_json(json)
-# print the JSON string representation of the object
-print(RecurringPeriodEndResponse.to_json())
-
-# convert the object into a dict
-recurring_period_end_response_dict = recurring_period_end_response_instance.to_dict()
-# create an instance of RecurringPeriodEndResponse from a dict
-recurring_period_end_response_from_dict = RecurringPeriodEndResponse.from_dict(recurring_period_end_response_dict)
+recurring_period_end_response = RecurringPeriodEndResponse(year=1.337, month=1.337)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import RecurringPeriodEndResponse
 
+# Parse from JSON
+json_str = '{"year": "example"}'
+recurring_period_end_response = RecurringPeriodEndResponse.from_json(json_str)
+
+# Convert to JSON
+print(recurring_period_end_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import RecurringPeriodEndResponse
+
+# Convert to/from dictionary
+data_dict = recurring_period_end_response.to_dict()
+recurring_period_end_response = RecurringPeriodEndResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(recurring_period_end_response.year)
+# Update properties
+recurring_period_end_response.year = new_value
+```

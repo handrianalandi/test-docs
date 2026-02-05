@@ -1,31 +1,56 @@
 # BulkOperationFailureParamResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**reason** | **str** |  | 
+| Name     | Type  | Description |
+| :------- | :---- | :---------- |
+| `id`     | `str` |             |
+| `reason` | `str` |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import BulkOperationFailureParamResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of BulkOperationFailureParamResponse from a JSON string
-bulk_operation_failure_param_response_instance = BulkOperationFailureParamResponse.from_json(json)
-# print the JSON string representation of the object
-print(BulkOperationFailureParamResponse.to_json())
-
-# convert the object into a dict
-bulk_operation_failure_param_response_dict = bulk_operation_failure_param_response_instance.to_dict()
-# create an instance of BulkOperationFailureParamResponse from a dict
-bulk_operation_failure_param_response_from_dict = BulkOperationFailureParamResponse.from_dict(bulk_operation_failure_param_response_dict)
+bulk_operation_failure_param_response = BulkOperationFailureParamResponse(
+    id="''", reason="''"
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import BulkOperationFailureParamResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+bulk_operation_failure_param_response = BulkOperationFailureParamResponse.from_json(
+    json_str
+)
+
+# Convert to JSON
+print(bulk_operation_failure_param_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import BulkOperationFailureParamResponse
+
+# Convert to/from dictionary
+data_dict = bulk_operation_failure_param_response.to_dict()
+bulk_operation_failure_param_response = BulkOperationFailureParamResponse.from_dict(
+    data_dict
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(bulk_operation_failure_param_response.id)
+# Update properties
+bulk_operation_failure_param_response.id = "new_value"
+```

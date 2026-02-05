@@ -1,35 +1,67 @@
 # BpjsHealthcarePremiumSummaryListItemResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**employee_identification_number** | **str** |  | 
-**employee_name** | **str** |  | 
-**monthly_wage** | **float** |  | 
-**company_amount** | **float** |  | 
-**employee_amount** | **float** |  | 
+| Name                             | Type    | Description |
+| :------------------------------- | :------ | :---------- |
+| `id`                             | `str`   |             |
+| `employee_identification_number` | `str`   |             |
+| `employee_name`                  | `str`   |             |
+| `monthly_wage`                   | `float` |             |
+| `company_amount`                 | `float` |             |
+| `employee_amount`                | `float` |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import BpjsHealthcarePremiumSummaryListItemResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of BpjsHealthcarePremiumSummaryListItemResponse from a JSON string
-bpjs_healthcare_premium_summary_list_item_response_instance = BpjsHealthcarePremiumSummaryListItemResponse.from_json(json)
-# print the JSON string representation of the object
-print(BpjsHealthcarePremiumSummaryListItemResponse.to_json())
-
-# convert the object into a dict
-bpjs_healthcare_premium_summary_list_item_response_dict = bpjs_healthcare_premium_summary_list_item_response_instance.to_dict()
-# create an instance of BpjsHealthcarePremiumSummaryListItemResponse from a dict
-bpjs_healthcare_premium_summary_list_item_response_from_dict = BpjsHealthcarePremiumSummaryListItemResponse.from_dict(bpjs_healthcare_premium_summary_list_item_response_dict)
+bpjs_healthcare_premium_summary_list_item_response = (
+    BpjsHealthcarePremiumSummaryListItemResponse(
+        id="''",
+        employee_identification_number="''",
+        employee_name="''",
+        monthly_wage=1.337,
+        company_amount=1.337,
+        employee_amount=1.337,
+    )
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import BpjsHealthcarePremiumSummaryListItemResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+bpjs_healthcare_premium_summary_list_item_response = (
+    BpjsHealthcarePremiumSummaryListItemResponse.from_json(json_str)
+)
+
+# Convert to JSON
+print(bpjs_healthcare_premium_summary_list_item_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import BpjsHealthcarePremiumSummaryListItemResponse
+
+# Convert to/from dictionary
+data_dict = bpjs_healthcare_premium_summary_list_item_response.to_dict()
+bpjs_healthcare_premium_summary_list_item_response = (
+    BpjsHealthcarePremiumSummaryListItemResponse.from_dict(data_dict)
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(bpjs_healthcare_premium_summary_list_item_response.id)
+# Update properties
+bpjs_healthcare_premium_summary_list_item_response.id = "new_value"
+```

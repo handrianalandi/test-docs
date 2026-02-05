@@ -1,36 +1,63 @@
 # BpjsManpowerProviderResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**code** | **str** |  | 
-**name** | **str** |  | 
-**address** | **str** |  | 
-**registration_number** | **str** |  | 
-**report_signatory_name** | **str** |  | 
-**report_signatory_job_title** | **str** |  | 
+| Name                         | Type  | Description |
+| :--------------------------- | :---- | :---------- |
+| `id`                         | `str` |             |
+| `code`                       | `str` |             |
+| `name`                       | `str` |             |
+| `address`                    | `str` |             |
+| `registration_number`        | `str` |             |
+| `report_signatory_name`      | `str` |             |
+| `report_signatory_job_title` | `str` |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import BpjsManpowerProviderResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of BpjsManpowerProviderResponse from a JSON string
-bpjs_manpower_provider_response_instance = BpjsManpowerProviderResponse.from_json(json)
-# print the JSON string representation of the object
-print(BpjsManpowerProviderResponse.to_json())
-
-# convert the object into a dict
-bpjs_manpower_provider_response_dict = bpjs_manpower_provider_response_instance.to_dict()
-# create an instance of BpjsManpowerProviderResponse from a dict
-bpjs_manpower_provider_response_from_dict = BpjsManpowerProviderResponse.from_dict(bpjs_manpower_provider_response_dict)
+bpjs_manpower_provider_response = BpjsManpowerProviderResponse(
+    id="''",
+    code="''",
+    name="''",
+    address="''",
+    registration_number="''",
+    report_signatory_name="''",
+    report_signatory_job_title="''",
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import BpjsManpowerProviderResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+bpjs_manpower_provider_response = BpjsManpowerProviderResponse.from_json(json_str)
+
+# Convert to JSON
+print(bpjs_manpower_provider_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import BpjsManpowerProviderResponse
+
+# Convert to/from dictionary
+data_dict = bpjs_manpower_provider_response.to_dict()
+bpjs_manpower_provider_response = BpjsManpowerProviderResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(bpjs_manpower_provider_response.id)
+# Update properties
+bpjs_manpower_provider_response.id = "new_value"
+```

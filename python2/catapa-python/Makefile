@@ -31,7 +31,7 @@ install: ensure-venv
 # Regenerate Python client from OpenAPI spec
 # Note: This will also reinstall the package to pick up the new generated code
 regenerate-client: ensure-venv
-	@cd ../../scripts/sdk && ./regenerate-client.sh -py -u https://developer.catapa.com/openapi-dist.yaml
+	@cd ../../scripts/sdk/generate && uv sync && uv run main.py py
 	@bash -c '$(VENV_ACTIVATE) && echo "Reinstalling package to pick up generated code..." && uv pip uninstall catapa-python 2>/dev/null || true && uv pip install -e .'
 
 # Run unit tests only

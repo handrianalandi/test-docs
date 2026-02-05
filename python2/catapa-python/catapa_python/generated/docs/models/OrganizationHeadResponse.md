@@ -1,33 +1,57 @@
 # OrganizationHeadResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**effective_date** | **str** |  | 
-**organization** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
-**position** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
+| Name             | Type                                          | Description |
+| :--------------- | :-------------------------------------------- | :---------- |
+| `id`             | `str`                                         |             |
+| `effective_date` | `str`                                         |             |
+| `organization`   | [`IdCodeNameResponse`](IdCodeNameResponse.md) |             |
+| `position`       | [`IdCodeNameResponse`](IdCodeNameResponse.md) |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import OrganizationHeadResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of OrganizationHeadResponse from a JSON string
-organization_head_response_instance = OrganizationHeadResponse.from_json(json)
-# print the JSON string representation of the object
-print(OrganizationHeadResponse.to_json())
-
-# convert the object into a dict
-organization_head_response_dict = organization_head_response_instance.to_dict()
-# create an instance of OrganizationHeadResponse from a dict
-organization_head_response_from_dict = OrganizationHeadResponse.from_dict(organization_head_response_dict)
+organization_head_response = OrganizationHeadResponse(
+    id="''",
+    effective_date="''",
+    organization=None,  # [IdCodeNameResponse](IdCodeNameResponse.md)
+    position=None,  # [IdCodeNameResponse](IdCodeNameResponse.md)
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import OrganizationHeadResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+organization_head_response = OrganizationHeadResponse.from_json(json_str)
+
+# Convert to JSON
+print(organization_head_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import OrganizationHeadResponse
+
+# Convert to/from dictionary
+data_dict = organization_head_response.to_dict()
+organization_head_response = OrganizationHeadResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(organization_head_response.id)
+# Update properties
+organization_head_response.id = "new_value"
+```

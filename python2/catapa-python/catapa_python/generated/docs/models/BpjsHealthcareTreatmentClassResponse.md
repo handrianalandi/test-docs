@@ -1,35 +1,65 @@
 # BpjsHealthcareTreatmentClassResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**name** | **str** |  | 
-**min_salary_type** | **str** |  | 
-**min_salary_value** | **str** |  | 
-**max_salary_type** | **str** |  | 
-**max_salary_value** | **str** |  | 
+| Name               | Type  | Description |
+| :----------------- | :---- | :---------- |
+| `id`               | `str` |             |
+| `name`             | `str` |             |
+| `min_salary_type`  | `str` |             |
+| `min_salary_value` | `str` |             |
+| `max_salary_type`  | `str` |             |
+| `max_salary_value` | `str` |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import BpjsHealthcareTreatmentClassResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of BpjsHealthcareTreatmentClassResponse from a JSON string
-bpjs_healthcare_treatment_class_response_instance = BpjsHealthcareTreatmentClassResponse.from_json(json)
-# print the JSON string representation of the object
-print(BpjsHealthcareTreatmentClassResponse.to_json())
-
-# convert the object into a dict
-bpjs_healthcare_treatment_class_response_dict = bpjs_healthcare_treatment_class_response_instance.to_dict()
-# create an instance of BpjsHealthcareTreatmentClassResponse from a dict
-bpjs_healthcare_treatment_class_response_from_dict = BpjsHealthcareTreatmentClassResponse.from_dict(bpjs_healthcare_treatment_class_response_dict)
+bpjs_healthcare_treatment_class_response = BpjsHealthcareTreatmentClassResponse(
+    id="''",
+    name="''",
+    min_salary_type="''",
+    min_salary_value="''",
+    max_salary_type="''",
+    max_salary_value="''",
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import BpjsHealthcareTreatmentClassResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+bpjs_healthcare_treatment_class_response = (
+    BpjsHealthcareTreatmentClassResponse.from_json(json_str)
+)
+
+# Convert to JSON
+print(bpjs_healthcare_treatment_class_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import BpjsHealthcareTreatmentClassResponse
+
+# Convert to/from dictionary
+data_dict = bpjs_healthcare_treatment_class_response.to_dict()
+bpjs_healthcare_treatment_class_response = (
+    BpjsHealthcareTreatmentClassResponse.from_dict(data_dict)
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(bpjs_healthcare_treatment_class_response.id)
+# Update properties
+bpjs_healthcare_treatment_class_response.id = "new_value"
+```

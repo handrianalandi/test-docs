@@ -1,35 +1,65 @@
 # PaymentItemDetailSalaryItemResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**code** | **str** |  | 
-**name** | **str** |  | 
-**salary_item_category** | **str** |  | 
-**salary_item_type** | **str** |  | 
-**thp** | **bool** |  | 
+| Name                   | Type   | Description |
+| :--------------------- | :----- | :---------- |
+| `id`                   | `str`  |             |
+| `code`                 | `str`  |             |
+| `name`                 | `str`  |             |
+| `salary_item_category` | `str`  |             |
+| `salary_item_type`     | `str`  |             |
+| `thp`                  | `bool` |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import PaymentItemDetailSalaryItemResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of PaymentItemDetailSalaryItemResponse from a JSON string
-payment_item_detail_salary_item_response_instance = PaymentItemDetailSalaryItemResponse.from_json(json)
-# print the JSON string representation of the object
-print(PaymentItemDetailSalaryItemResponse.to_json())
-
-# convert the object into a dict
-payment_item_detail_salary_item_response_dict = payment_item_detail_salary_item_response_instance.to_dict()
-# create an instance of PaymentItemDetailSalaryItemResponse from a dict
-payment_item_detail_salary_item_response_from_dict = PaymentItemDetailSalaryItemResponse.from_dict(payment_item_detail_salary_item_response_dict)
+payment_item_detail_salary_item_response = PaymentItemDetailSalaryItemResponse(
+    id="''",
+    code="''",
+    name="''",
+    salary_item_category="''",
+    salary_item_type="''",
+    thp=True,
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import PaymentItemDetailSalaryItemResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+payment_item_detail_salary_item_response = (
+    PaymentItemDetailSalaryItemResponse.from_json(json_str)
+)
+
+# Convert to JSON
+print(payment_item_detail_salary_item_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import PaymentItemDetailSalaryItemResponse
+
+# Convert to/from dictionary
+data_dict = payment_item_detail_salary_item_response.to_dict()
+payment_item_detail_salary_item_response = (
+    PaymentItemDetailSalaryItemResponse.from_dict(data_dict)
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(payment_item_detail_salary_item_response.id)
+# Update properties
+payment_item_detail_salary_item_response.id = "new_value"
+```

@@ -1,47 +1,91 @@
 # EmploymentStatusHistoryDetailResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**contract_start** | **date** | YYYY-MM-DD | 
-**contract_end** | **date** | YYYY-MM-DD | 
-**cost_center** | [**CostCenterListItemResponse**](CostCenterListItemResponse.md) |  | 
-**effective_date** | **date** | YYYY-MM-DD | 
-**end_date** | **date** | YYYY-MM-DD | 
-**employment_status_number** | **str** |  | 
-**employment_status_type** | [**EmploymentStatusTypeResponse**](EmploymentStatusTypeResponse.md) |  | 
-**employment_type** | [**EmploymentTypeResponse**](EmploymentTypeResponse.md) |  | 
-**job_level** | [**JobLevelResponse**](JobLevelResponse.md) |  | 
-**job_title** | [**JobTitleResponse**](JobTitleResponse.md) |  | 
-**location** | [**LocationResponse**](LocationResponse.md) |  | 
-**organization** | [**OrganizationResponse**](OrganizationResponse.md) |  | 
-**permanent_date** | **date** | YYYY-MM-DD | 
-**sign_date** | **date** | YYYY-MM-DD | 
-**sub_location** | [**SubLocationResponse**](SubLocationResponse.md) |  | 
-**operational_group** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
-**position** | [**EmploymentStatusDetailPositionResponse**](EmploymentStatusDetailPositionResponse.md) |  | 
+| Name                       | Type                                                                                  | Description |
+| :------------------------- | :------------------------------------------------------------------------------------ | :---------- |
+| `id`                       | `str`                                                                                 |             |
+| `contract_start`           | `date`                                                                                | YYYY-MM-DD  |
+| `contract_end`             | `date`                                                                                | YYYY-MM-DD  |
+| `cost_center`              | [`CostCenterListItemResponse`](CostCenterListItemResponse.md)                         |             |
+| `effective_date`           | `date`                                                                                | YYYY-MM-DD  |
+| `end_date`                 | `date`                                                                                | YYYY-MM-DD  |
+| `employment_status_number` | `str`                                                                                 |             |
+| `employment_status_type`   | [`EmploymentStatusTypeResponse`](EmploymentStatusTypeResponse.md)                     |             |
+| `employment_type`          | [`EmploymentTypeResponse`](EmploymentTypeResponse.md)                                 |             |
+| `job_level`                | [`JobLevelResponse`](JobLevelResponse.md)                                             |             |
+| `job_title`                | [`JobTitleResponse`](JobTitleResponse.md)                                             |             |
+| `location`                 | [`LocationResponse`](LocationResponse.md)                                             |             |
+| `organization`             | [`OrganizationResponse`](OrganizationResponse.md)                                     |             |
+| `permanent_date`           | `date`                                                                                | YYYY-MM-DD  |
+| `sign_date`                | `date`                                                                                | YYYY-MM-DD  |
+| `sub_location`             | [`SubLocationResponse`](SubLocationResponse.md)                                       |             |
+| `operational_group`        | [`IdCodeNameResponse`](IdCodeNameResponse.md)                                         |             |
+| `position`                 | [`EmploymentStatusDetailPositionResponse`](EmploymentStatusDetailPositionResponse.md) |             |
+| `employee`                 | [`EmployeeIdIdentificationNumberResponse`](EmployeeIdIdentificationNumberResponse.md) |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import EmploymentStatusHistoryDetailResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of EmploymentStatusHistoryDetailResponse from a JSON string
-employment_status_history_detail_response_instance = EmploymentStatusHistoryDetailResponse.from_json(json)
-# print the JSON string representation of the object
-print(EmploymentStatusHistoryDetailResponse.to_json())
-
-# convert the object into a dict
-employment_status_history_detail_response_dict = employment_status_history_detail_response_instance.to_dict()
-# create an instance of EmploymentStatusHistoryDetailResponse from a dict
-employment_status_history_detail_response_from_dict = EmploymentStatusHistoryDetailResponse.from_dict(employment_status_history_detail_response_dict)
+employment_status_history_detail_response = EmploymentStatusHistoryDetailResponse(
+    id="''",
+    contract_start=datetime.datetime.strptime("1975-12-30", "%Y-%m-%d").date(),
+    contract_end=datetime.datetime.strptime("1975-12-30", "%Y-%m-%d").date(),
+    cost_center=None,  # [CostCenterListItemResponse](CostCenterListItemResponse.md)
+    effective_date=datetime.datetime.strptime("1975-12-30", "%Y-%m-%d").date(),
+    end_date=datetime.datetime.strptime("1975-12-30", "%Y-%m-%d").date(),
+    employment_status_number="''",
+    employment_status_type=None,  # [EmploymentStatusTypeResponse](EmploymentStatusTypeResponse.md)
+    employment_type=None,  # [EmploymentTypeResponse](EmploymentTypeResponse.md)
+    job_level=None,  # [JobLevelResponse](JobLevelResponse.md)
+    job_title=None,  # [JobTitleResponse](JobTitleResponse.md)
+    location=None,  # [LocationResponse](LocationResponse.md)
+    organization=None,  # [OrganizationResponse](OrganizationResponse.md)
+    permanent_date=datetime.datetime.strptime("1975-12-30", "%Y-%m-%d").date(),
+    sign_date=datetime.datetime.strptime("1975-12-30", "%Y-%m-%d").date(),
+    sub_location=None,  # [SubLocationResponse](SubLocationResponse.md)
+    operational_group=None,  # [IdCodeNameResponse](IdCodeNameResponse.md)
+    position=None,  # [EmploymentStatusDetailPositionResponse](EmploymentStatusDetailPositionResponse.md)
+    employee=None,  # [EmployeeIdIdentificationNumberResponse](EmployeeIdIdentificationNumberResponse.md)
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import EmploymentStatusHistoryDetailResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+employment_status_history_detail_response = (
+    EmploymentStatusHistoryDetailResponse.from_json(json_str)
+)
+
+# Convert to JSON
+print(employment_status_history_detail_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import EmploymentStatusHistoryDetailResponse
+
+# Convert to/from dictionary
+data_dict = employment_status_history_detail_response.to_dict()
+employment_status_history_detail_response = (
+    EmploymentStatusHistoryDetailResponse.from_dict(data_dict)
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(employment_status_history_detail_response.id)
+# Update properties
+employment_status_history_detail_response.id = "new_value"
+```

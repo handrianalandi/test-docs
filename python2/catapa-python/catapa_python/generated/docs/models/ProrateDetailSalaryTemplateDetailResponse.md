@@ -1,32 +1,59 @@
 # ProrateDetailSalaryTemplateDetailResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**salary_item** | [**ProrateDetailSalaryTemplateDetailSalaryItemResponse**](ProrateDetailSalaryTemplateDetailSalaryItemResponse.md) |  | 
-**salary_item_type** | **str** |  | 
+| Name               | Type                                                                                                            | Description |
+| :----------------- | :-------------------------------------------------------------------------------------------------------------- | :---------- |
+| `id`               | `str`                                                                                                           |             |
+| `salary_item`      | [`ProrateDetailSalaryTemplateDetailSalaryItemResponse`](ProrateDetailSalaryTemplateDetailSalaryItemResponse.md) |             |
+| `salary_item_type` | `str`                                                                                                           |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import ProrateDetailSalaryTemplateDetailResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of ProrateDetailSalaryTemplateDetailResponse from a JSON string
-prorate_detail_salary_template_detail_response_instance = ProrateDetailSalaryTemplateDetailResponse.from_json(json)
-# print the JSON string representation of the object
-print(ProrateDetailSalaryTemplateDetailResponse.to_json())
-
-# convert the object into a dict
-prorate_detail_salary_template_detail_response_dict = prorate_detail_salary_template_detail_response_instance.to_dict()
-# create an instance of ProrateDetailSalaryTemplateDetailResponse from a dict
-prorate_detail_salary_template_detail_response_from_dict = ProrateDetailSalaryTemplateDetailResponse.from_dict(prorate_detail_salary_template_detail_response_dict)
+prorate_detail_salary_template_detail_response = ProrateDetailSalaryTemplateDetailResponse(
+    id="''",
+    salary_item=None,  # [ProrateDetailSalaryTemplateDetailSalaryItemResponse](ProrateDetailSalaryTemplateDetailSalaryItemResponse.md)
+    salary_item_type="''",
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import ProrateDetailSalaryTemplateDetailResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+prorate_detail_salary_template_detail_response = (
+    ProrateDetailSalaryTemplateDetailResponse.from_json(json_str)
+)
+
+# Convert to JSON
+print(prorate_detail_salary_template_detail_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import ProrateDetailSalaryTemplateDetailResponse
+
+# Convert to/from dictionary
+data_dict = prorate_detail_salary_template_detail_response.to_dict()
+prorate_detail_salary_template_detail_response = (
+    ProrateDetailSalaryTemplateDetailResponse.from_dict(data_dict)
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(prorate_detail_salary_template_detail_response.id)
+# Update properties
+prorate_detail_salary_template_detail_response.id = "new_value"
+```

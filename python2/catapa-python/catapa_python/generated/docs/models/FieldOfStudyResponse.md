@@ -1,32 +1,51 @@
 # FieldOfStudyResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**name** | **str** |  | 
-**code** | **str** |  | 
+| Name   | Type  | Description |
+| :----- | :---- | :---------- |
+| `id`   | `str` |             |
+| `name` | `str` |             |
+| `code` | `str` |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import FieldOfStudyResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of FieldOfStudyResponse from a JSON string
-field_of_study_response_instance = FieldOfStudyResponse.from_json(json)
-# print the JSON string representation of the object
-print(FieldOfStudyResponse.to_json())
-
-# convert the object into a dict
-field_of_study_response_dict = field_of_study_response_instance.to_dict()
-# create an instance of FieldOfStudyResponse from a dict
-field_of_study_response_from_dict = FieldOfStudyResponse.from_dict(field_of_study_response_dict)
+field_of_study_response = FieldOfStudyResponse(id="''", name="''", code="''")
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import FieldOfStudyResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+field_of_study_response = FieldOfStudyResponse.from_json(json_str)
+
+# Convert to JSON
+print(field_of_study_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import FieldOfStudyResponse
+
+# Convert to/from dictionary
+data_dict = field_of_study_response.to_dict()
+field_of_study_response = FieldOfStudyResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(field_of_study_response.id)
+# Update properties
+field_of_study_response.id = "new_value"
+```

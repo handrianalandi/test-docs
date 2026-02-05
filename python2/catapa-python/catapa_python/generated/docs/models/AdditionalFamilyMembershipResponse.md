@@ -1,34 +1,63 @@
 # AdditionalFamilyMembershipResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**family_member_name** | **str** |  | 
-**family_member_relation** | [**FamilyMemberRelationResponse**](FamilyMemberRelationResponse.md) |  | 
-**first_level_healthcare_facility** | **str** |  | 
-**dental_healthcare_facility** | **str** |  | 
+| Name                              | Type                                                              | Description |
+| :-------------------------------- | :---------------------------------------------------------------- | :---------- |
+| `id`                              | `str`                                                             |             |
+| `family_member_name`              | `str`                                                             |             |
+| `family_member_relation`          | [`FamilyMemberRelationResponse`](FamilyMemberRelationResponse.md) |             |
+| `first_level_healthcare_facility` | `str`                                                             |             |
+| `dental_healthcare_facility`      | `str`                                                             |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import AdditionalFamilyMembershipResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of AdditionalFamilyMembershipResponse from a JSON string
-additional_family_membership_response_instance = AdditionalFamilyMembershipResponse.from_json(json)
-# print the JSON string representation of the object
-print(AdditionalFamilyMembershipResponse.to_json())
-
-# convert the object into a dict
-additional_family_membership_response_dict = additional_family_membership_response_instance.to_dict()
-# create an instance of AdditionalFamilyMembershipResponse from a dict
-additional_family_membership_response_from_dict = AdditionalFamilyMembershipResponse.from_dict(additional_family_membership_response_dict)
+additional_family_membership_response = AdditionalFamilyMembershipResponse(
+    id="''",
+    family_member_name="''",
+    family_member_relation=None,  # [FamilyMemberRelationResponse](FamilyMemberRelationResponse.md)
+    first_level_healthcare_facility="''",
+    dental_healthcare_facility="''",
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import AdditionalFamilyMembershipResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+additional_family_membership_response = AdditionalFamilyMembershipResponse.from_json(
+    json_str
+)
+
+# Convert to JSON
+print(additional_family_membership_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import AdditionalFamilyMembershipResponse
+
+# Convert to/from dictionary
+data_dict = additional_family_membership_response.to_dict()
+additional_family_membership_response = AdditionalFamilyMembershipResponse.from_dict(
+    data_dict
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(additional_family_membership_response.id)
+# Update properties
+additional_family_membership_response.id = "new_value"
+```

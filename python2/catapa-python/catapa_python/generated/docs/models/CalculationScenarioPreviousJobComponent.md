@@ -1,31 +1,56 @@
 # CalculationScenarioPreviousJobComponent
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**net_income** | **float** |  | [default to 0]
-**tax** | **float** |  | [default to 0]
+| Name         | Type    | Required | Description    |
+| :----------- | :------ | :------: | :------------- |
+| `net_income` | `float` |    ❌    | (default: `0`) |
+| `tax`        | `float` |    ❌    | (default: `0`) |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import CalculationScenarioPreviousJobComponent
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of CalculationScenarioPreviousJobComponent from a JSON string
-calculation_scenario_previous_job_component_instance = CalculationScenarioPreviousJobComponent.from_json(json)
-# print the JSON string representation of the object
-print(CalculationScenarioPreviousJobComponent.to_json())
-
-# convert the object into a dict
-calculation_scenario_previous_job_component_dict = calculation_scenario_previous_job_component_instance.to_dict()
-# create an instance of CalculationScenarioPreviousJobComponent from a dict
-calculation_scenario_previous_job_component_from_dict = CalculationScenarioPreviousJobComponent.from_dict(calculation_scenario_previous_job_component_dict)
+calculation_scenario_previous_job_component = CalculationScenarioPreviousJobComponent(
+    net_income=1.337, tax=1.337
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import CalculationScenarioPreviousJobComponent
 
+# Parse from JSON
+json_str = '{"net_income": "example"}'
+calculation_scenario_previous_job_component = (
+    CalculationScenarioPreviousJobComponent.from_json(json_str)
+)
+
+# Convert to JSON
+print(calculation_scenario_previous_job_component.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import CalculationScenarioPreviousJobComponent
+
+# Convert to/from dictionary
+data_dict = calculation_scenario_previous_job_component.to_dict()
+calculation_scenario_previous_job_component = (
+    CalculationScenarioPreviousJobComponent.from_dict(data_dict)
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(calculation_scenario_previous_job_component.net_income)
+# Update properties
+calculation_scenario_previous_job_component.net_income = new_value
+```

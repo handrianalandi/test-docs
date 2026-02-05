@@ -1,31 +1,53 @@
 # FingerprintResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**successes** | [**List[FingerprintSuccessItemResponse]**](FingerprintSuccessItemResponse.md) |  | 
-**failures** | [**List[FingerprintFailureItemResponse]**](FingerprintFailureItemResponse.md) |  | 
+| Name        | Type                                                                        | Description |
+| :---------- | :-------------------------------------------------------------------------- | :---------- |
+| `successes` | [`List[FingerprintSuccessItemResponse]`](FingerprintSuccessItemResponse.md) |             |
+| `failures`  | [`List[FingerprintFailureItemResponse]`](FingerprintFailureItemResponse.md) |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import FingerprintResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of FingerprintResponse from a JSON string
-fingerprint_response_instance = FingerprintResponse.from_json(json)
-# print the JSON string representation of the object
-print(FingerprintResponse.to_json())
-
-# convert the object into a dict
-fingerprint_response_dict = fingerprint_response_instance.to_dict()
-# create an instance of FingerprintResponse from a dict
-fingerprint_response_from_dict = FingerprintResponse.from_dict(fingerprint_response_dict)
+fingerprint_response = FingerprintResponse(
+    successes=[],  # List[[FingerprintSuccessItemResponse](FingerprintSuccessItemResponse.md)]
+    failures=[],  # List[[FingerprintFailureItemResponse](FingerprintFailureItemResponse.md)]
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import FingerprintResponse
 
+# Parse from JSON
+json_str = '{"successes": "example"}'
+fingerprint_response = FingerprintResponse.from_json(json_str)
+
+# Convert to JSON
+print(fingerprint_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import FingerprintResponse
+
+# Convert to/from dictionary
+data_dict = fingerprint_response.to_dict()
+fingerprint_response = FingerprintResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(fingerprint_response.successes)
+# Update properties
+fingerprint_response.successes = new_value
+```

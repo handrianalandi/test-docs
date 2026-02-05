@@ -1,31 +1,54 @@
 # AnomalySuspectAttributeResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Unique identifier for the attribute | 
-**attribute_key** | **str** | Key/name of the attribute | 
+| Name            | Type  | Description                         |
+| :-------------- | :---- | :---------------------------------- |
+| `id`            | `str` | Unique identifier for the attribute |
+| `attribute_key` | `str` | Key/name of the attribute           |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import AnomalySuspectAttributeResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of AnomalySuspectAttributeResponse from a JSON string
-anomaly_suspect_attribute_response_instance = AnomalySuspectAttributeResponse.from_json(json)
-# print the JSON string representation of the object
-print(AnomalySuspectAttributeResponse.to_json())
-
-# convert the object into a dict
-anomaly_suspect_attribute_response_dict = anomaly_suspect_attribute_response_instance.to_dict()
-# create an instance of AnomalySuspectAttributeResponse from a dict
-anomaly_suspect_attribute_response_from_dict = AnomalySuspectAttributeResponse.from_dict(anomaly_suspect_attribute_response_dict)
+anomaly_suspect_attribute_response = AnomalySuspectAttributeResponse(
+    id="''", attribute_key="''"
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import AnomalySuspectAttributeResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+anomaly_suspect_attribute_response = AnomalySuspectAttributeResponse.from_json(json_str)
+
+# Convert to JSON
+print(anomaly_suspect_attribute_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import AnomalySuspectAttributeResponse
+
+# Convert to/from dictionary
+data_dict = anomaly_suspect_attribute_response.to_dict()
+anomaly_suspect_attribute_response = AnomalySuspectAttributeResponse.from_dict(
+    data_dict
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(anomaly_suspect_attribute_response.id)
+# Update properties
+anomaly_suspect_attribute_response.id = "new_value"
+```

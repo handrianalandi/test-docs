@@ -1,33 +1,54 @@
 # StateResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**code** | **str** |  | 
-**name** | **str** |  | 
-**country** | [**CountryResponse**](CountryResponse.md) |  | 
+| Name      | Type                                    | Description |
+| :-------- | :-------------------------------------- | :---------- |
+| `id`      | `str`                                   |             |
+| `code`    | `str`                                   |             |
+| `name`    | `str`                                   |             |
+| `country` | [`CountryResponse`](CountryResponse.md) |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import StateResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of StateResponse from a JSON string
-state_response_instance = StateResponse.from_json(json)
-# print the JSON string representation of the object
-print(StateResponse.to_json())
-
-# convert the object into a dict
-state_response_dict = state_response_instance.to_dict()
-# create an instance of StateResponse from a dict
-state_response_from_dict = StateResponse.from_dict(state_response_dict)
+state_response = StateResponse(
+    id="''", code="''", name="''", country=None  # [CountryResponse](CountryResponse.md)
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import StateResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+state_response = StateResponse.from_json(json_str)
+
+# Convert to JSON
+print(state_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import StateResponse
+
+# Convert to/from dictionary
+data_dict = state_response.to_dict()
+state_response = StateResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(state_response.id)
+# Update properties
+state_response.id = "new_value"
+```

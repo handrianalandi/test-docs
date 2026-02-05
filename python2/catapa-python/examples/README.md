@@ -47,9 +47,9 @@ client = Catapa(
     client_secret="your-client-secret"
 )
 
-# Create API instances - tokens are automatically refreshed on every API call
+# Create API instances
 employee_api = EmployeeApi(client)
-employees = employee_api.list_all_employees(page=0, size=10)
+employees = employee_api.get_employees(page=0, size=10)
 
 organization_api = OrganizationApi(client)
 company = organization_api.get_company()

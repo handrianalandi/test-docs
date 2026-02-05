@@ -1,33 +1,54 @@
 # Pph21PolicyResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**link_to_payroll** | **bool** |  | 
-**pph21_form_format_number** | **str** |  | 
-**pph21_method** | **str** |  | 
+| Name                       | Type   | Description |
+| :------------------------- | :----- | :---------- |
+| `id`                       | `str`  |             |
+| `link_to_payroll`          | `bool` |             |
+| `pph21_form_format_number` | `str`  |             |
+| `pph21_method`             | `str`  |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import Pph21PolicyResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of Pph21PolicyResponse from a JSON string
-pph21_policy_response_instance = Pph21PolicyResponse.from_json(json)
-# print the JSON string representation of the object
-print(Pph21PolicyResponse.to_json())
-
-# convert the object into a dict
-pph21_policy_response_dict = pph21_policy_response_instance.to_dict()
-# create an instance of Pph21PolicyResponse from a dict
-pph21_policy_response_from_dict = Pph21PolicyResponse.from_dict(pph21_policy_response_dict)
+pph21_policy_response = Pph21PolicyResponse(
+    id="''", link_to_payroll=True, pph21_form_format_number="''", pph21_method="''"
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import Pph21PolicyResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+pph21_policy_response = Pph21PolicyResponse.from_json(json_str)
+
+# Convert to JSON
+print(pph21_policy_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import Pph21PolicyResponse
+
+# Convert to/from dictionary
+data_dict = pph21_policy_response.to_dict()
+pph21_policy_response = Pph21PolicyResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(pph21_policy_response.id)
+# Update properties
+pph21_policy_response.id = "new_value"
+```

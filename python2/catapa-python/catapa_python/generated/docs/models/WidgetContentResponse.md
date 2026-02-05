@@ -1,32 +1,51 @@
 # WidgetContentResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Content identifier | 
-**title** | **str** | Content title | 
-**size** | **float** | Content size | 
+| Name    | Type    | Description        |
+| :------ | :------ | :----------------- |
+| `id`    | `str`   | Content identifier |
+| `title` | `str`   | Content title      |
+| `size`  | `float` | Content size       |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import WidgetContentResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of WidgetContentResponse from a JSON string
-widget_content_response_instance = WidgetContentResponse.from_json(json)
-# print the JSON string representation of the object
-print(WidgetContentResponse.to_json())
-
-# convert the object into a dict
-widget_content_response_dict = widget_content_response_instance.to_dict()
-# create an instance of WidgetContentResponse from a dict
-widget_content_response_from_dict = WidgetContentResponse.from_dict(widget_content_response_dict)
+widget_content_response = WidgetContentResponse(id="''", title="''", size=1.337)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import WidgetContentResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+widget_content_response = WidgetContentResponse.from_json(json_str)
+
+# Convert to JSON
+print(widget_content_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import WidgetContentResponse
+
+# Convert to/from dictionary
+data_dict = widget_content_response.to_dict()
+widget_content_response = WidgetContentResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(widget_content_response.id)
+# Update properties
+widget_content_response.id = "new_value"
+```

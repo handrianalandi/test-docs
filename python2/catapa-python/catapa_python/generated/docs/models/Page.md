@@ -1,37 +1,65 @@
 # Page
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**total_pages** | **int** |  | 
-**last** | **bool** |  | 
-**total_elements** | **int** |  | 
-**number_of_elements** | **int** |  | 
-**sort** | [**List[SortProperty]**](SortProperty.md) |  | 
-**first** | **bool** |  | 
-**size** | **int** |  | 
-**number** | **int** |  | 
+| Name                 | Type                                    | Required | Description                                    |
+| :------------------- | :-------------------------------------- | :------: | :--------------------------------------------- |
+| `total_pages`        | `int`                                   |    ✅    | Total number of pages available                |
+| `last`               | `bool`                                  |    ✅    | Indicates whether this is the last page        |
+| `total_elements`     | `int`                                   |    ✅    | Total number of elements across all pages      |
+| `number_of_elements` | `int`                                   |    ✅    | Number of elements in the current page         |
+| `sort`               | [`List[SortProperty]`](SortProperty.md) |    ❌    |                                                |
+| `first`              | `bool`                                  |    ✅    | Indicates whether this is the first page       |
+| `size`               | `int`                                   |    ✅    | Size of the page (number of elements per page) |
+| `number`             | `int`                                   |    ✅    | Current page number (zero-indexed)             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import Page
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of Page from a JSON string
-page_instance = Page.from_json(json)
-# print the JSON string representation of the object
-print(Page.to_json())
-
-# convert the object into a dict
-page_dict = page_instance.to_dict()
-# create an instance of Page from a dict
-page_from_dict = Page.from_dict(page_dict)
+page = Page(
+    total_pages=56,
+    last=True,
+    total_elements=56,
+    number_of_elements=56,
+    sort=[],  # List[[SortProperty](SortProperty.md)]
+    first=True,
+    size=56,
+    number=56,
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import Page
 
+# Parse from JSON
+json_str = '{"total_pages": "example"}'
+page = Page.from_json(json_str)
+
+# Convert to JSON
+print(page.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import Page
+
+# Convert to/from dictionary
+data_dict = page.to_dict()
+page = Page.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(page.total_pages)
+# Update properties
+page.total_pages = new_value
+```

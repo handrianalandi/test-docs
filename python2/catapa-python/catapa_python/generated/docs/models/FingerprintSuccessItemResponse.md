@@ -1,32 +1,53 @@
 # FingerprintSuccessItemResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**identification_number** | **str** |  | 
-**time** | **str** |  | 
-**var_date** | **str** |  | 
+| Name                    | Type  | Description |
+| :---------------------- | :---- | :---------- |
+| `identification_number` | `str` |             |
+| `time`                  | `str` |             |
+| `var_date`              | `str` |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import FingerprintSuccessItemResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of FingerprintSuccessItemResponse from a JSON string
-fingerprint_success_item_response_instance = FingerprintSuccessItemResponse.from_json(json)
-# print the JSON string representation of the object
-print(FingerprintSuccessItemResponse.to_json())
-
-# convert the object into a dict
-fingerprint_success_item_response_dict = fingerprint_success_item_response_instance.to_dict()
-# create an instance of FingerprintSuccessItemResponse from a dict
-fingerprint_success_item_response_from_dict = FingerprintSuccessItemResponse.from_dict(fingerprint_success_item_response_dict)
+fingerprint_success_item_response = FingerprintSuccessItemResponse(
+    identification_number="''", time="''", var_date="''"
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import FingerprintSuccessItemResponse
 
+# Parse from JSON
+json_str = '{"identification_number": "example"}'
+fingerprint_success_item_response = FingerprintSuccessItemResponse.from_json(json_str)
+
+# Convert to JSON
+print(fingerprint_success_item_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import FingerprintSuccessItemResponse
+
+# Convert to/from dictionary
+data_dict = fingerprint_success_item_response.to_dict()
+fingerprint_success_item_response = FingerprintSuccessItemResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(fingerprint_success_item_response.identification_number)
+# Update properties
+fingerprint_success_item_response.identification_number = "new_value"
+```

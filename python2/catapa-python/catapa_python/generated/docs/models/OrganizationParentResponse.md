@@ -1,43 +1,77 @@
 # OrganizationParentResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**code** | **str** |  | 
-**name** | **str** |  | 
-**type** | **str** |  | 
-**effective_date** | **date** | YYYY-MM-DD | 
-**end_date** | **date** | YYYY-MM-DD | 
-**created_by** | **str** |  | 
-**created_date** | **float** |  | 
-**updated_by** | **str** |  | 
-**updated_date** | **float** |  | 
-**organization_hierarchy** | [**OrganizationHierarchyResponse**](OrganizationHierarchyResponse.md) |  | 
-**organization_group** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
-**organization_parent** | **object** |  | 
-**company** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
+| Name                     | Type                                                                | Description |
+| :----------------------- | :------------------------------------------------------------------ | :---------- |
+| `id`                     | `str`                                                               |             |
+| `code`                   | `str`                                                               |             |
+| `name`                   | `str`                                                               |             |
+| `type`                   | `str`                                                               |             |
+| `effective_date`         | `date`                                                              | YYYY-MM-DD  |
+| `end_date`               | `date`                                                              | YYYY-MM-DD  |
+| `created_by`             | `str`                                                               |             |
+| `created_date`           | `float`                                                             |             |
+| `updated_by`             | `str`                                                               |             |
+| `updated_date`           | `float`                                                             |             |
+| `organization_hierarchy` | [`OrganizationHierarchyResponse`](OrganizationHierarchyResponse.md) |             |
+| `organization_group`     | [`IdCodeNameResponse`](IdCodeNameResponse.md)                       |             |
+| `organization_parent`    | `object`                                                            |             |
+| `company`                | [`IdCodeNameResponse`](IdCodeNameResponse.md)                       |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import OrganizationParentResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of OrganizationParentResponse from a JSON string
-organization_parent_response_instance = OrganizationParentResponse.from_json(json)
-# print the JSON string representation of the object
-print(OrganizationParentResponse.to_json())
-
-# convert the object into a dict
-organization_parent_response_dict = organization_parent_response_instance.to_dict()
-# create an instance of OrganizationParentResponse from a dict
-organization_parent_response_from_dict = OrganizationParentResponse.from_dict(organization_parent_response_dict)
+organization_parent_response = OrganizationParentResponse(
+    id="''",
+    code="''",
+    name="''",
+    type="'STRUCTURAL'",
+    effective_date=datetime.datetime.strptime("1975-12-30", "%Y-%m-%d").date(),
+    end_date=datetime.datetime.strptime("1975-12-30", "%Y-%m-%d").date(),
+    created_by="''",
+    created_date=1.337,
+    updated_by="''",
+    updated_date=1.337,
+    organization_hierarchy=None,  # [OrganizationHierarchyResponse](OrganizationHierarchyResponse.md)
+    organization_group=None,  # [IdCodeNameResponse](IdCodeNameResponse.md)
+    organization_parent=None,
+    company=None,  # [IdCodeNameResponse](IdCodeNameResponse.md)
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import OrganizationParentResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+organization_parent_response = OrganizationParentResponse.from_json(json_str)
+
+# Convert to JSON
+print(organization_parent_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import OrganizationParentResponse
+
+# Convert to/from dictionary
+data_dict = organization_parent_response.to_dict()
+organization_parent_response = OrganizationParentResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(organization_parent_response.id)
+# Update properties
+organization_parent_response.id = "new_value"
+```

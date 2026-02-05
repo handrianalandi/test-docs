@@ -1,36 +1,65 @@
 # SalaryCalculationDetailResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**amount** | **float** |  | 
-**id** | **str** |  | 
-**salary_item_category** | **str** |  | 
-**salary_item_code** | **str** |  | 
-**salary_item_name** | **str** |  | 
-**salary_item_type** | **str** |  | 
-**thp** | **bool** |  | 
+| Name                   | Type    | Description |
+| :--------------------- | :------ | :---------- |
+| `amount`               | `float` |             |
+| `id`                   | `str`   |             |
+| `salary_item_category` | `str`   |             |
+| `salary_item_code`     | `str`   |             |
+| `salary_item_name`     | `str`   |             |
+| `salary_item_type`     | `str`   |             |
+| `thp`                  | `bool`  |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import SalaryCalculationDetailResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of SalaryCalculationDetailResponse from a JSON string
-salary_calculation_detail_response_instance = SalaryCalculationDetailResponse.from_json(json)
-# print the JSON string representation of the object
-print(SalaryCalculationDetailResponse.to_json())
-
-# convert the object into a dict
-salary_calculation_detail_response_dict = salary_calculation_detail_response_instance.to_dict()
-# create an instance of SalaryCalculationDetailResponse from a dict
-salary_calculation_detail_response_from_dict = SalaryCalculationDetailResponse.from_dict(salary_calculation_detail_response_dict)
+salary_calculation_detail_response = SalaryCalculationDetailResponse(
+    amount=1.337,
+    id="''",
+    salary_item_category="''",
+    salary_item_code="''",
+    salary_item_name="''",
+    salary_item_type="''",
+    thp=True,
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import SalaryCalculationDetailResponse
 
+# Parse from JSON
+json_str = '{"amount": "example"}'
+salary_calculation_detail_response = SalaryCalculationDetailResponse.from_json(json_str)
+
+# Convert to JSON
+print(salary_calculation_detail_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import SalaryCalculationDetailResponse
+
+# Convert to/from dictionary
+data_dict = salary_calculation_detail_response.to_dict()
+salary_calculation_detail_response = SalaryCalculationDetailResponse.from_dict(
+    data_dict
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(salary_calculation_detail_response.amount)
+# Update properties
+salary_calculation_detail_response.amount = new_value
+```

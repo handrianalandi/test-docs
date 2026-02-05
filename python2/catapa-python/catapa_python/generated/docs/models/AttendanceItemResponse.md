@@ -1,35 +1,61 @@
 # AttendanceItemResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**employee** | [**EmployeeSimpleResponse**](EmployeeSimpleResponse.md) |  | 
-**var_date** | **str** |  | 
-**time_in** | **str** |  | 
-**time_out** | **str** |  | 
-**attendance_status_in** | [**AttendanceStatusResponse**](AttendanceStatusResponse.md) |  | 
+| Name                   | Type                                                      | Description |
+| :--------------------- | :-------------------------------------------------------- | :---------- |
+| `id`                   | `str`                                                     |             |
+| `employee`             | [`EmployeeSimpleResponse`](EmployeeSimpleResponse.md)     |             |
+| `var_date`             | `str`                                                     |             |
+| `time_in`              | `str`                                                     |             |
+| `time_out`             | `str`                                                     |             |
+| `attendance_status_in` | [`AttendanceStatusResponse`](AttendanceStatusResponse.md) |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import AttendanceItemResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of AttendanceItemResponse from a JSON string
-attendance_item_response_instance = AttendanceItemResponse.from_json(json)
-# print the JSON string representation of the object
-print(AttendanceItemResponse.to_json())
-
-# convert the object into a dict
-attendance_item_response_dict = attendance_item_response_instance.to_dict()
-# create an instance of AttendanceItemResponse from a dict
-attendance_item_response_from_dict = AttendanceItemResponse.from_dict(attendance_item_response_dict)
+attendance_item_response = AttendanceItemResponse(
+    id="''",
+    employee=None,  # [EmployeeSimpleResponse](EmployeeSimpleResponse.md)
+    var_date="''",
+    time_in="''",
+    time_out="''",
+    attendance_status_in=None,  # [AttendanceStatusResponse](AttendanceStatusResponse.md)
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import AttendanceItemResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+attendance_item_response = AttendanceItemResponse.from_json(json_str)
+
+# Convert to JSON
+print(attendance_item_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import AttendanceItemResponse
+
+# Convert to/from dictionary
+data_dict = attendance_item_response.to_dict()
+attendance_item_response = AttendanceItemResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(attendance_item_response.id)
+# Update properties
+attendance_item_response.id = "new_value"
+```

@@ -11,21 +11,27 @@ Python 3.11+
 {% tabs %}
 
 {% tab title="pip" %}
+
 ```bash
 pip install catapa
 ```
+
 {% endtab %}
 
 {% tab title="poetry" %}
+
 ```bash
 poetry add catapa
 ```
+
 {% endtab %}
 
 {% tab title="uv" %}
+
 ```bash
 uv add catapa
 ```
+
 {% endtab %}
 
 {% endtabs %}
@@ -35,34 +41,25 @@ uv add catapa
 A complete Hello World example to get you started immediately.
 
 ```python
-#!/usr/bin/env python3
-
 from catapa import Catapa, EmployeeApi
 
-def main() -> None:
-    """Main function demonstrating basic SDK usage."""
-    # Initialize the client with your credentials
-    # The client automatically handles OAuth2 authentication and token refresh
-    client = Catapa(tenant="zfrl", client_id="test-client-id", client_secret="test-client-secret")
+client = Catapa(tenant="zfrl", client_id="demo", client_secret="demo-secret")
+employee_api = EmployeeApi(client)
 
-    # Create an API instance
-    employee_api = EmployeeApi(client)
+# Get employees. The client automatically handles OAuth2 authentication and token refresh
+employees = employee_api.get_employees(page=0, size=10)
 
-    # Make your first API call
-    employees = employee_api.list_all_employees(page=0, size=10)
-    print(f"Found {len(employees.content)} employees")
-
-if __name__ == "__main__":
-    main()
+print(f"Found {len(employees.content)} employees")
 ```
 
 > **💡 Tip:** By default, the SDK connects to `https://api.catapa.com`. To use a different base URL (e.g., for staging or testing), pass the `base_url` parameter:
+>
 > ```python
 > client = Catapa(
 >     tenant="your-tenant",
 >     client_id="your-client-id",
 >     client_secret="your-client-secret",
->     base_url="https://staging-api.catapa.com"  # Optional: override default base URL
+>     base_url="https://api-development.catapa.com",  # Optional: override default base URL
 > )
 > ```
 
@@ -95,10 +92,11 @@ A complete example showing how to use multiple API classes with a single client.
 
 from catapa import Catapa, OrganizationApi, MasterDataApi
 
+
 def main() -> None:
     """Main function demonstrating multiple API usage."""
     # Initialize client once
-    client = Catapa(tenant="zfrl", client_id="test-client-id", client_secret="test-client-secret")
+    client = Catapa(tenant="zfrl", client_id="demo", client_secret="demo-secret")
 
     # Use different APIs with the same client
     org_api = OrganizationApi(client)
@@ -108,6 +106,7 @@ def main() -> None:
     master_data_api = MasterDataApi(client)
     countries = master_data_api.get_countries()
     print(f"Countries available: {len(countries.content)}")
+
 
 if __name__ == "__main__":
     main()
@@ -127,14 +126,15 @@ A complete example for long-running services that need persistent API access.
 from catapa import Catapa, EmployeeApi
 import time
 
+
 def main() -> None:
     """Main function for long-running service example."""
     # Initialize client once at service startup
-    client = Catapa(tenant="zfrl", client_id="test-client-id", client_secret="test-client-secret")
+    client = Catapa(tenant="zfrl", client_id="demo", client_secret="demo-secret")
     employee_api = EmployeeApi(client)
 
     # Make an API call
-    employees = employee_api.list_all_employees(page=0, size=10)
+    employees = employee_api.get_employees(page=0, size=10)
     print(f"Initial call: {len(employees.content)} employees")
 
     # Simulate long-running service (e.g., wait an hour)
@@ -142,9 +142,10 @@ def main() -> None:
     print("Service running... (simulating 1 hour wait)")
     time.sleep(3600)
 
-    employees = employee_api.list_all_employees(page=0, size=10)
+    employees = employee_api.get_employees(page=0, size=10)
     print(f"After 1 hour: {len(employees.content)} employees")
     print("✅ Token was automatically refreshed if needed!")
+
 
 if __name__ == "__main__":
     main()
@@ -160,9 +161,10 @@ A complete example for making concurrent API calls efficiently.
 from catapa import Catapa, EmployeeApi, OrganizationApi, MasterDataApi
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
+
 def main() -> None:
     """Main function for concurrent API calls example."""
-    client = Catapa(tenant="zfrl", client_id="test-client-id", client_secret="test-client-secret")
+    client = Catapa(tenant="zfrl", client_id="demo", client_secret="demo-secret")
 
     # Create API instances
     employee_api = EmployeeApi(client)
@@ -171,7 +173,7 @@ def main() -> None:
 
     # Define API call functions
     def get_employees():
-        return employee_api.list_all_employees(page=0, size=10)
+        return employee_api.get_employees(page=0, size=10)
 
     def get_organization():
         return org_api.get_companies()
@@ -184,7 +186,7 @@ def main() -> None:
         futures = {
             executor.submit(get_employees): "employees",
             executor.submit(get_organization): "organization",
-            executor.submit(get_countries): "countries"
+            executor.submit(get_countries): "countries",
         }
 
         results = {}
@@ -226,745 +228,876 @@ from catapa import (
 )
 ```
 
-## Documentation for API Endpoints
+## API Reference
 
-All URIs are relative to the `base_url` specified in the Catapa client constructor (default: *https://api.catapa.com*)
+Browse the complete API reference documentation below. Each API class provides a set of methods to interact with specific CATAPA resources.
 
-Class | Method | HTTP request | Description
------------- | ------------- | ------------- | -------------
-*AnalyticsApi* | [**create_analytics_chart**](docs/api/AnalyticsApi.md#create_analytics_chart) | **POST** /core/v1/analytics/charts | Create Analytics Chart
-*AnalyticsApi* | [**get_analytics_chart**](docs/api/AnalyticsApi.md#get_analytics_chart) | **GET** /core/v1/analytics/charts | Get Analytics Chart Data
-*AnalyticsApi* | [**get_analytics_data_by_chart_id_and_current_user**](docs/api/AnalyticsApi.md#get_analytics_data_by_chart_id_and_current_user) | **GET** /core/v1/users/me/analytics/charts/{id}/data | Get Analytics Data by Chart ID and Current User
-*AnomalyDetectionApi* | [**read_anomaly_suspect**](docs/api/AnomalyDetectionApi.md#read_anomaly_suspect) | **GET** /anomalydetection/v1/anomaly-detection-types/MEDICAL_CLAIM/anomaly-suspects | Read Anomaly Suspects
-*AnomalyDetectionApi* | [**read_anomaly_suspect_by_id**](docs/api/AnomalyDetectionApi.md#read_anomaly_suspect_by_id) | **GET** /anomalydetection/v1/anomaly-detection-types/MEDICAL_CLAIM/anomaly-suspects/{id} | Read Anomaly Suspect By Id
-*BankAccountConfigurationApi* | [**approve_approval**](docs/api/BankAccountConfigurationApi.md#approve_approval) | **PUT** /core/v1/bank-account-configurations/approvals/approve | Update Bank Account Configuration
-*BankAccountConfigurationApi* | [**cancel_approval**](docs/api/BankAccountConfigurationApi.md#cancel_approval) | **PUT** /core/v1/bank-account-configurations/approvals/{id}/cancel | Cancel Bank Account Configuration
-*BankAccountConfigurationApi* | [**create_bank_account_configuration_approval**](docs/api/BankAccountConfigurationApi.md#create_bank_account_configuration_approval) | **POST** /core/v1/bank-account-configurations/approvals | Create Bank Account Configuration Approval
-*BankAccountConfigurationApi* | [**get_bank_account_configuration_by_id**](docs/api/BankAccountConfigurationApi.md#get_bank_account_configuration_by_id) | **GET** /core/v1/bank-account-configurations/{id} | Get Bank Account Configuration by Id
-*BankAccountConfigurationApi* | [**get_bank_account_configurations**](docs/api/BankAccountConfigurationApi.md#get_bank_account_configurations) | **GET** /core/v1/bank-account-configurations | Get all bank account configurations
-*BankAccountConfigurationApi* | [**reject_approval**](docs/api/BankAccountConfigurationApi.md#reject_approval) | **PUT** /core/v1/bank-account-configurations/approvals/reject | Reject Bank Account Configuration
-*BankAccountConfigurationApi* | [**undo**](docs/api/BankAccountConfigurationApi.md#undo) | **PUT** /core/v1/bank-account-configurations/approvals/undo | Undo Bank Account Configuration
-*BankAccountConfigurationApi* | [**update_bank_account_configuration_approval**](docs/api/BankAccountConfigurationApi.md#update_bank_account_configuration_approval) | **PUT** /core/v1/bank-account-configurations/approvals/{id} | Update Bank Account Configuration Approval
-*BpjsHealthcareApi* | [**download_bpjs_healthcare_payment_details_report**](docs/api/BpjsHealthcareApi.md#download_bpjs_healthcare_payment_details_report) | **GET** /core/v1/bpjs-healthcare-reports/payment-details | Download BPJS Healthcare Payment Details Report
-*BpjsHealthcareApi* | [**download_e_dabu_advance_member_report**](docs/api/BpjsHealthcareApi.md#download_e_dabu_advance_member_report) | **GET** /core/v1/bpjs-healthcare-reports/edabu-advance-members | Download E-Dabu Advance Member Report
-*BpjsHealthcareApi* | [**download_e_dabu_employee_identity_card_member_check_report**](docs/api/BpjsHealthcareApi.md#download_e_dabu_employee_identity_card_member_check_report) | **GET** /core/v1/bpjs-healthcare-reports/edabu-employee-identity-card-number-check | Download E-Dabu Employee Identity Card Member Check Report
-*BpjsHealthcareApi* | [**download_e_dabu_new_member_report**](docs/api/BpjsHealthcareApi.md#download_e_dabu_new_member_report) | **GET** /core/v1/bpjs-healthcare-reports/edabu-new-members | Download E-Dabu New Member Report
-*BpjsHealthcareApi* | [**download_e_dabu_wage_update_report**](docs/api/BpjsHealthcareApi.md#download_e_dabu_wage_update_report) | **GET** /core/v1/bpjs-healthcare-reports/edabu-wage-update | Download E-Dabu Wage Update Report
-*BpjsHealthcareApi* | [**get_bpjs_healthcare_premium_summaries**](docs/api/BpjsHealthcareApi.md#get_bpjs_healthcare_premium_summaries) | **GET** /core/v1/bpjs-healthcare-premiums/summaries | Get BPJS Healthcare Premium Summaries
-*BpjsHealthcareApi* | [**get_bpjs_healthcare_premium_summary_details**](docs/api/BpjsHealthcareApi.md#get_bpjs_healthcare_premium_summary_details) | **GET** /core/v1/bpjs-healthcare-premiums/summaries/{id}/details | Get BPJS Healthcare Premium Summary Details
-*BpjsHealthcareApi* | [**get_bpjs_healthcare_providers**](docs/api/BpjsHealthcareApi.md#get_bpjs_healthcare_providers) | **GET** /core/v1/bpjs-healthcare-providers | Get BPJS Healthcare Providers
-*BpjsHealthcareApi* | [**get_bpjs_healthcare_templates**](docs/api/BpjsHealthcareApi.md#get_bpjs_healthcare_templates) | **GET** /core/v1/bpjs-healthcare-templates | Get BPJS Healthcare Templates
-*BpjsManpowerApi* | [**download_bpjs_manpower_payment_details_report**](docs/api/BpjsManpowerApi.md#download_bpjs_manpower_payment_details_report) | **GET** /core/v1/bpjs-manpower-reports/payment-details | Download BPJS Manpower Payment Details Report
-*BpjsManpowerApi* | [**download_pension_debt_report**](docs/api/BpjsManpowerApi.md#download_pension_debt_report) | **GET** /core/v1/bpjs-manpower-reports/pension-debt-report | Download Pension Debt Report
-*BpjsManpowerApi* | [**download_sipp_advance_member_report**](docs/api/BpjsManpowerApi.md#download_sipp_advance_member_report) | **GET** /core/v1/bpjs-manpower-reports/sipp-advance-members | Download SIPP Advance Member Report
-*BpjsManpowerApi* | [**download_sipp_new_member_report**](docs/api/BpjsManpowerApi.md#download_sipp_new_member_report) | **GET** /core/v1/bpjs-manpower-reports/sipp-new-members | Download SIPP New Member Report
-*BpjsManpowerApi* | [**download_sipp_terminated_member_report**](docs/api/BpjsManpowerApi.md#download_sipp_terminated_member_report) | **GET** /core/v1/bpjs-manpower-reports/sipp-terminated-member | Download SIPP Terminated Member Report
-*BpjsManpowerApi* | [**download_sipp_wage_update_report**](docs/api/BpjsManpowerApi.md#download_sipp_wage_update_report) | **GET** /core/v1/bpjs-manpower-reports/sipp-wage-update | Download SIPP Wage Update Report
-*BpjsManpowerApi* | [**get_bpjs_manpower_premium_summaries**](docs/api/BpjsManpowerApi.md#get_bpjs_manpower_premium_summaries) | **GET** /core/v1/bpjs-manpower-premiums/summaries | Get BPJS Manpower Premium Summaries
-*BpjsManpowerApi* | [**get_bpjs_manpower_premium_summary_details**](docs/api/BpjsManpowerApi.md#get_bpjs_manpower_premium_summary_details) | **GET** /core/v1/bpjs-manpower-premiums/summaries/{id}/details | Get BPJS Manpower Premium Summary Details
-*BpjsManpowerApi* | [**get_bpjs_manpower_providers**](docs/api/BpjsManpowerApi.md#get_bpjs_manpower_providers) | **GET** /core/v1/bpjs-manpower-providers | Get BPJS Manpower Providers
-*BpjsManpowerApi* | [**get_bpjs_manpower_templates**](docs/api/BpjsManpowerApi.md#get_bpjs_manpower_templates) | **GET** /core/v1/bpjs-manpower-templates | Get BPJS Manpower Templates
-*CompanyBankAccountApi* | [**get_company_bank_accounts**](docs/api/CompanyBankAccountApi.md#get_company_bank_accounts) | **GET** /core/v1/company-bank-accounts | Get Company Bank Accounts
-*ContactInformationApi* | [**get_contact_information**](docs/api/ContactInformationApi.md#get_contact_information) | **GET** /core/v1/employees/{employeeId}/contact-information | Get Contact Information
-*ContactInformationApi* | [**get_historical_contact_information**](docs/api/ContactInformationApi.md#get_historical_contact_information) | **GET** /core/v1/contact-information | Get Historical Contact Information
-*ContactInformationApi* | [**update_contact_information**](docs/api/ContactInformationApi.md#update_contact_information) | **PUT** /core/v1/employees/{employeeId}/contact-information | Update Contact Information
-*CustomTableApi* | [**find_all_custom_tables**](docs/api/CustomTableApi.md#find_all_custom_tables) | **GET** /core/v1/custom-tables | Retrieve all custom tables
-*CustomTableApi* | [**find_custom_table_by_id**](docs/api/CustomTableApi.md#find_custom_table_by_id) | **GET** /core/v1/custom-tables/{tableId} | Find Custom Table by Table ID
-*CustomTableEntryApi* | [**create_entry**](docs/api/CustomTableEntryApi.md#create_entry) | **POST** /core/v1/custom-tables/{tableId}/entries | Create a new entry in a custom table
-*CustomTableEntryApi* | [**find_all_entries**](docs/api/CustomTableEntryApi.md#find_all_entries) | **GET** /core/v1/custom-tables/{tableId}/entries | Retrieve all entries for a custom table, with response structure varying based on the custom table columns
-*CustomTableEntryApi* | [**update_entry**](docs/api/CustomTableEntryApi.md#update_entry) | **PUT** /core/v1/custom-tables/{tableId}/entries/{entryId} | Update an entry in a custom table
-*EditableSalaryPreprocessApi* | [**preprocess_editable_salary**](docs/api/EditableSalaryPreprocessApi.md#preprocess_editable_salary) | **POST** /core/v1/editable-salary-preprocess | Preprocess editable salary
-*EmployeeApi* | [**add_employee**](docs/api/EmployeeApi.md#add_employee) | **POST** /core/v1/employees | Add Employee
-*EmployeeApi* | [**delete_employee**](docs/api/EmployeeApi.md#delete_employee) | **DELETE** /core/v1/employees | Delete Employee
-*EmployeeApi* | [**get_additional_assignment_approvals**](docs/api/EmployeeApi.md#get_additional_assignment_approvals) | **GET** /core/v1/additional-assignments/approvals | List All Additional Assignment Approvals
-*EmployeeApi* | [**get_employee_hiring_data**](docs/api/EmployeeApi.md#get_employee_hiring_data) | **GET** /core/v1/employees/{id}/hiring-data | Get Employee Hiring Data
-*EmployeeApi* | [**list_all_employees**](docs/api/EmployeeApi.md#list_all_employees) | **GET** /core/v1/employees | List All Employees
-*EmployeeApi* | [**update_employee_hiring_data**](docs/api/EmployeeApi.md#update_employee_hiring_data) | **PUT** /core/v1/employees/{id}/hiring-data | Update Employee Hiring Data
-*EmployeeApi* | [**update_manager**](docs/api/EmployeeApi.md#update_manager) | **PUT** /core/v1/employees/{employeeId}/manager | Update Manager
-*EmployeeBankAccountConfigurationApi* | [**get_employee_bank_account_configuration**](docs/api/EmployeeBankAccountConfigurationApi.md#get_employee_bank_account_configuration) | **GET** /core/v1/employees/{employeeId}/bank-account-configurations | Get Employee Bank Account Configuration
-*EmployeeBankAccountConfigurationApi* | [**get_employee_bank_account_configuration_histories**](docs/api/EmployeeBankAccountConfigurationApi.md#get_employee_bank_account_configuration_histories) | **GET** /core/v1/employees/{employeeId}/bank-account-configurations/histories | Get Employee Bank Account Configuration Histories
-*EmployeeBankAccountConfigurationApi* | [**update_bank_account_configuration**](docs/api/EmployeeBankAccountConfigurationApi.md#update_bank_account_configuration) | **PUT** /core/v1/employees/{employeeId}/bank-account-configurations | Update Bank Account Configuration
-*EmployeeBpjsMembershipApi* | [**get_bpjs_healthcare_membership**](docs/api/EmployeeBpjsMembershipApi.md#get_bpjs_healthcare_membership) | **GET** /core/v1/employees/{employeeId}/bpjs-healthcare-memberships | Get BPJS Healthcare Membership
-*EmployeeBpjsMembershipApi* | [**get_bpjs_manpower_membership**](docs/api/EmployeeBpjsMembershipApi.md#get_bpjs_manpower_membership) | **GET** /core/v1/employees/{employeeId}/bpjs-manpower-memberships | Get BPJS Manpower Membership
-*EmployeeBpjsMembershipApi* | [**update_bpjs_healthcare_membership**](docs/api/EmployeeBpjsMembershipApi.md#update_bpjs_healthcare_membership) | **PUT** /core/v1/employees/{employeeId}/bpjs-healthcare-memberships | Update BPJS Healthcare Membership
-*EmployeeBpjsMembershipApi* | [**update_bpjs_manpower_membership**](docs/api/EmployeeBpjsMembershipApi.md#update_bpjs_manpower_membership) | **PUT** /core/v1/employees/{employeeId}/bpjs-manpower-memberships | Update BPJS Manpower Membership
-*EmployeeDetailApi* | [**get_employee_detail**](docs/api/EmployeeDetailApi.md#get_employee_detail) | **GET** /core/v1/employees/{employeeId}/employee-details | Get Employee Detail
-*EmployeeDetailApi* | [**get_historical_employee_details**](docs/api/EmployeeDetailApi.md#get_historical_employee_details) | **GET** /core/v1/employee-details | Get Historical Employee Details
-*EmployeeDetailApi* | [**update_employee_detail**](docs/api/EmployeeDetailApi.md#update_employee_detail) | **PUT** /core/v1/employees/{employeeId}/employee-details | Update Employee Detail
-*EmployeePaygroupApi* | [**get_employee_paygroup_by_id**](docs/api/EmployeePaygroupApi.md#get_employee_paygroup_by_id) | **GET** /core/v1/employee-paygroups/{id} | Get Employee Paygroup by ID
-*EmployeePaygroupApi* | [**get_employee_paygroups**](docs/api/EmployeePaygroupApi.md#get_employee_paygroups) | **GET** /core/v1/employee-paygroups | Get Employee Paygroups
-*EmployeePaymentItemGroupSequenceApi* | [**get_last_sequence_employee**](docs/api/EmployeePaymentItemGroupSequenceApi.md#get_last_sequence_employee) | **GET** /core/v1/employees/{employeeId}/payment-item-groups/last-sequence | Get Last Payment Item Group Sequence
-*EmployeePaymentItemGroupSequenceApi* | [**get_payment_item_group_sequences**](docs/api/EmployeePaymentItemGroupSequenceApi.md#get_payment_item_group_sequences) | **GET** /core/v1/employees/{employeeId}/payment-item-groups/sequences | Get Payment Item Group Sequences
-*EmployeeSalaryTemplateApi* | [**createor_update_employee_salary_template**](docs/api/EmployeeSalaryTemplateApi.md#createor_update_employee_salary_template) | **PATCH** /core/v1/employees/{id}/employee-salary-templates | Create or Update Employee Salary Template
-*EmployeeSalaryTemplateApi* | [**get_effective_employee_salary_template**](docs/api/EmployeeSalaryTemplateApi.md#get_effective_employee_salary_template) | **GET** /core/v1/employees/{id}/employee-salary-templates/effective | Get Effective Employee Salary Template
-*EmployeeSalaryTemplateApi* | [**get_latest_employee_salary_template**](docs/api/EmployeeSalaryTemplateApi.md#get_latest_employee_salary_template) | **GET** /core/v1/employees/{id}/employee-salary-templates | Get Latest Employee Salary Template
-*EmployeeVariableApi* | [**create_employee_variable**](docs/api/EmployeeVariableApi.md#create_employee_variable) | **POST** /core/v1/employee-variables | Create Employee Variable
-*EmployeeVariableApi* | [**create_employee_variable_metadata**](docs/api/EmployeeVariableApi.md#create_employee_variable_metadata) | **POST** /core/v1/employee-variable-metadata | Create Employee Variable Metadata
-*EmployeeVariableApi* | [**create_or_update_employee_variables**](docs/api/EmployeeVariableApi.md#create_or_update_employee_variables) | **PUT** /core/v1/employee-variables | Create or Update Employee Variables
-*EmployeeVariableApi* | [**delete_all_aperiodic_employee_variables**](docs/api/EmployeeVariableApi.md#delete_all_aperiodic_employee_variables) | **DELETE** /core/v1/employee-variables/aperiodic/all | Delete All Aperiodic Employee Variables
-*EmployeeVariableApi* | [**delete_employee_variable_metadata**](docs/api/EmployeeVariableApi.md#delete_employee_variable_metadata) | **DELETE** /core/v1/employee-variable-metadata | Delete Employee Variable Metadata
-*EmployeeVariableApi* | [**delete_employee_variables**](docs/api/EmployeeVariableApi.md#delete_employee_variables) | **DELETE** /core/v1/employee-variables | Delete Employee Variables
-*EmployeeVariableApi* | [**get_aperiodic_employee_variables**](docs/api/EmployeeVariableApi.md#get_aperiodic_employee_variables) | **GET** /core/v1/employee-variables/aperiodic | Get Aperiodic Employee Variables
-*EmployeeVariableApi* | [**get_employee_variable_by_id**](docs/api/EmployeeVariableApi.md#get_employee_variable_by_id) | **GET** /core/v1/employee-variables/{id} | Get Employee Variable By Id
-*EmployeeVariableApi* | [**get_employee_variable_metadata**](docs/api/EmployeeVariableApi.md#get_employee_variable_metadata) | **GET** /core/v1/employee-variable-metadata | Get Employee Variable Metadata
-*EmployeeVariableApi* | [**get_employee_variable_metadata_by_id**](docs/api/EmployeeVariableApi.md#get_employee_variable_metadata_by_id) | **GET** /core/v1/employee-variable-metadata/{id} | Get Employee Variable Metadata By Id
-*EmployeeVariableApi* | [**get_employee_variables**](docs/api/EmployeeVariableApi.md#get_employee_variables) | **GET** /core/v1/employee-variables | Get Employee Variables
-*EmployeeVariableApi* | [**get_periodic_employee_variables**](docs/api/EmployeeVariableApi.md#get_periodic_employee_variables) | **GET** /core/v1/employee-variables/periodic | Get Periodic Employee Variables
-*EmployeeVariableApi* | [**update_employee_variable_by_id**](docs/api/EmployeeVariableApi.md#update_employee_variable_by_id) | **PUT** /core/v1/employee-variables/{id} | Update Employee Variable By Id
-*EmployeeVariableApi* | [**update_employee_variable_metadata**](docs/api/EmployeeVariableApi.md#update_employee_variable_metadata) | **PUT** /core/v1/employee-variable-metadata/{id} | Update Employee Variable Metadata
-*EmploymentStatusApi* | [**get_employment_status_by_employee**](docs/api/EmploymentStatusApi.md#get_employment_status_by_employee) | **GET** /core/v1/employees/{employeeId}/employment-data | Get Employment Status by Employee
-*EmploymentStatusApi* | [**get_employment_status_histories**](docs/api/EmploymentStatusApi.md#get_employment_status_histories) | **GET** /core/v1/employment-status-histories | Get Employment Status Histories
-*EmploymentStatusApi* | [**get_employment_statuses**](docs/api/EmploymentStatusApi.md#get_employment_statuses) | **GET** /core/v1/employment-statuses | Get Employment Statuses
-*EmploymentStatusApi* | [**update_employment_status_by_employee**](docs/api/EmploymentStatusApi.md#update_employment_status_by_employee) | **PUT** /core/v1/employees/{employeeId}/employment-data | Update Employment Status by Employee
-*FamiliesApi* | [**approve_family_by_employee**](docs/api/FamiliesApi.md#approve_family_by_employee) | **PUT** /core/v1/families/approvals/approve | Approve Families
-*FamiliesApi* | [**create_family_by_employee**](docs/api/FamiliesApi.md#create_family_by_employee) | **POST** /core/v1/employees/{employeeId}/families/approvals | Create Family By Employee
-*FamiliesApi* | [**delete_family_by_employee**](docs/api/FamiliesApi.md#delete_family_by_employee) | **DELETE** /core/v1/employees/{employeeId}/families/{familyId} | Delete Family
-*FamiliesApi* | [**get_family_by_employee**](docs/api/FamiliesApi.md#get_family_by_employee) | **GET** /core/v1/employees/{employeeId}/families/approvals | List All Families
-*FamiliesApi* | [**get_historical_families**](docs/api/FamiliesApi.md#get_historical_families) | **GET** /core/v1/families | Get Historical Families
-*FamiliesApi* | [**get_job_experiences_by_employeeand_id**](docs/api/FamiliesApi.md#get_job_experiences_by_employeeand_id) | **GET** /core/v1/employees/{employeeId}/families/approvals/{approvalId} | Get Family
-*FamiliesApi* | [**reject_familiesby_employee**](docs/api/FamiliesApi.md#reject_familiesby_employee) | **PUT** /core/v1/families/approvals/reject | Reject Families
-*FamiliesApi* | [**update_family_by_employee**](docs/api/FamiliesApi.md#update_family_by_employee) | **PUT** /core/v1/employees/{employeeId}/families/approvals/{approvalId} | Update Family By Employee
-*FormerEmployeeIncomeApi* | [**get_former_employee_income_by_id**](docs/api/FormerEmployeeIncomeApi.md#get_former_employee_income_by_id) | **GET** /core/v1/former-employee-incomes/{id} | Get Former Employee Income By Id
-*FormerEmployeeIncomeApi* | [**get_former_employee_income_employee**](docs/api/FormerEmployeeIncomeApi.md#get_former_employee_income_employee) | **GET** /core/v1/former-employee-income-employees | Get Former Employee Income Employee
-*FormerEmployeeIncomeApi* | [**get_former_employee_income_employee_by_former_employee_income_id**](docs/api/FormerEmployeeIncomeApi.md#get_former_employee_income_employee_by_former_employee_income_id) | **GET** /core/v1/former-employee-incomes/{formerEmployeeIncomeId}/former-employee-income-employees | Get Former Employee Income Employee By Former Employee Income Id
-*FormerEmployeeIncomeApi* | [**get_former_employee_incomes**](docs/api/FormerEmployeeIncomeApi.md#get_former_employee_incomes) | **GET** /core/v1/former-employee-incomes | Get Former Employee Incomes
-*FormerEmployeeIncomeApi* | [**update_former_employee_income_employee_by_former_employee_income_id**](docs/api/FormerEmployeeIncomeApi.md#update_former_employee_income_employee_by_former_employee_income_id) | **PUT** /core/v1/former-employee-incomes/{formerEmployeeIncomeId}/former-employee-income-employees/amounts | Update Former Employee Income Employee By Former Employee Income Id
-*IdentityCardsApi* | [**create_employee_identity_cards**](docs/api/IdentityCardsApi.md#create_employee_identity_cards) | **POST** /core/v1/employees/{employeeId}/employee-identity-cards | Create Employee Identity Cards
-*IdentityCardsApi* | [**delete_employee_identity_cards**](docs/api/IdentityCardsApi.md#delete_employee_identity_cards) | **DELETE** /core/v1/employees/{employeeId}/employee-identity-cards/{employeeIdentityCardId} | Delete Employee Identity Cards
-*IdentityCardsApi* | [**get_employee_identity_cards**](docs/api/IdentityCardsApi.md#get_employee_identity_cards) | **GET** /core/v1/employees/{employeeId}/employee-identity-cards | Get Employee Identity Cards
-*IdentityCardsApi* | [**update_employee_identity_cards**](docs/api/IdentityCardsApi.md#update_employee_identity_cards) | **PUT** /core/v1/employees/{employeeId}/employee-identity-cards/{employeeIdentityCardId} | Update Employee Identity Cards
-*MasterDataApi* | [**create_city**](docs/api/MasterDataApi.md#create_city) | **POST** /core/v1/cities | Create City
-*MasterDataApi* | [**create_country**](docs/api/MasterDataApi.md#create_country) | **POST** /core/v1/countries | Create Country
-*MasterDataApi* | [**create_employment_type**](docs/api/MasterDataApi.md#create_employment_type) | **POST** /core/v1/employment-types | Create Employment Type
-*MasterDataApi* | [**create_religion**](docs/api/MasterDataApi.md#create_religion) | **POST** /core/v1/religions | Create Religion
-*MasterDataApi* | [**get_bank_branches**](docs/api/MasterDataApi.md#get_bank_branches) | **GET** /core/v1/bank-branches | Get Bank Branches
-*MasterDataApi* | [**get_banks**](docs/api/MasterDataApi.md#get_banks) | **GET** /core/v1/banks | Get Banks
-*MasterDataApi* | [**get_cities**](docs/api/MasterDataApi.md#get_cities) | **GET** /core/v1/cities | Get Cities
-*MasterDataApi* | [**get_countries**](docs/api/MasterDataApi.md#get_countries) | **GET** /core/v1/countries | Get Countries
-*MasterDataApi* | [**get_currencies**](docs/api/MasterDataApi.md#get_currencies) | **GET** /core/v1/currencies | Get Currencies
-*MasterDataApi* | [**get_education_levels**](docs/api/MasterDataApi.md#get_education_levels) | **GET** /core/v1/education-levels | Get Education Levels
-*MasterDataApi* | [**get_employment_status_type**](docs/api/MasterDataApi.md#get_employment_status_type) | **GET** /core/v1/employment-status-types | Get Employment Status Type
-*MasterDataApi* | [**get_employment_type**](docs/api/MasterDataApi.md#get_employment_type) | **GET** /core/v1/employment-types | Get Employment Type
-*MasterDataApi* | [**get_family_relations**](docs/api/MasterDataApi.md#get_family_relations) | **GET** /core/v1/family-relations | Get Family Relations
-*MasterDataApi* | [**get_field_of_studies**](docs/api/MasterDataApi.md#get_field_of_studies) | **GET** /core/v1/field-of-studies | Get Field Of Study
-*MasterDataApi* | [**get_historical_educations**](docs/api/MasterDataApi.md#get_historical_educations) | **GET** /core/v1/educations | Get Historical Educations
-*MasterDataApi* | [**get_identity_card**](docs/api/MasterDataApi.md#get_identity_card) | **GET** /core/v1/identity-cards | Get Identity Card
-*MasterDataApi* | [**get_institutions**](docs/api/MasterDataApi.md#get_institutions) | **GET** /core/v1/institutions | Get Institutions
-*MasterDataApi* | [**get_religions**](docs/api/MasterDataApi.md#get_religions) | **GET** /core/v1/religions | Get Religions
-*MasterDataApi* | [**get_states**](docs/api/MasterDataApi.md#get_states) | **GET** /core/v1/states | Get States
-*MasterDataApi* | [**update_employment_type**](docs/api/MasterDataApi.md#update_employment_type) | **PUT** /core/v1/employment-types/{id} | Update Employment Type
-*OauthClientApi* | [**get_o_auth_client_by_id**](docs/api/OauthClientApi.md#get_o_auth_client_by_id) | **GET** /v1/oauth-clients/{id} | Get OAuth Client by ID
-*OauthClientApi* | [**list_all_o_auth_clients**](docs/api/OauthClientApi.md#list_all_o_auth_clients) | **GET** /v1/oauth-clients | List All OAuth Clients
-*OrganizationApi* | [**add_sub_location**](docs/api/OrganizationApi.md#add_sub_location) | **POST** /core/v1/sub-locations | Add Sub Location
-*OrganizationApi* | [**create_company**](docs/api/OrganizationApi.md#create_company) | **POST** /core/v1/companies | Create Company
-*OrganizationApi* | [**create_cost_center**](docs/api/OrganizationApi.md#create_cost_center) | **POST** /core/v1/cost-centers | Create Cost Center
-*OrganizationApi* | [**create_job_level**](docs/api/OrganizationApi.md#create_job_level) | **POST** /core/v1/job-levels | Create Job Level
-*OrganizationApi* | [**create_job_title**](docs/api/OrganizationApi.md#create_job_title) | **POST** /core/v1/job-titles | Create Job Title
-*OrganizationApi* | [**create_job_title_with_job_levels**](docs/api/OrganizationApi.md#create_job_title_with_job_levels) | **POST** /core/v1/job-titles/create | Create Job Title with Job Levels
-*OrganizationApi* | [**create_location**](docs/api/OrganizationApi.md#create_location) | **POST** /core/v1/locations | Create Location
-*OrganizationApi* | [**create_organization**](docs/api/OrganizationApi.md#create_organization) | **POST** /core/v1/organizations | Create Organization
-*OrganizationApi* | [**create_organization_group**](docs/api/OrganizationApi.md#create_organization_group) | **POST** /core/v1/organization-groups | Create Organization Group
-*OrganizationApi* | [**create_organization_hierarchies**](docs/api/OrganizationApi.md#create_organization_hierarchies) | **POST** /core/v1/organization-hierarchies | Create Organization Hierarchies
-*OrganizationApi* | [**delete_sub_location**](docs/api/OrganizationApi.md#delete_sub_location) | **DELETE** /core/v1/sub-locations | Delete Sub Location
-*OrganizationApi* | [**get_companies**](docs/api/OrganizationApi.md#get_companies) | **GET** /core/v1/companies/list | Get Companies
-*OrganizationApi* | [**get_company**](docs/api/OrganizationApi.md#get_company) | **GET** /core/v1/companies | Get Company
-*OrganizationApi* | [**get_company_groups**](docs/api/OrganizationApi.md#get_company_groups) | **GET** /core/v1/company-groups | Get Company Groups
-*OrganizationApi* | [**get_cost_center**](docs/api/OrganizationApi.md#get_cost_center) | **GET** /core/v1/cost-centers | Get Cost Center
-*OrganizationApi* | [**get_job_level**](docs/api/OrganizationApi.md#get_job_level) | **GET** /core/v1/job-levels | Get Job Level
-*OrganizationApi* | [**get_job_title**](docs/api/OrganizationApi.md#get_job_title) | **GET** /core/v1/job-titles | Get Job Title
-*OrganizationApi* | [**get_job_title_job_level_mappings**](docs/api/OrganizationApi.md#get_job_title_job_level_mappings) | **GET** /core/v1/job-title-levels | Get Job Title Job Level Mappings
-*OrganizationApi* | [**get_location_group**](docs/api/OrganizationApi.md#get_location_group) | **GET** /core/v1/location-groups | Get Location Group
-*OrganizationApi* | [**get_locations**](docs/api/OrganizationApi.md#get_locations) | **GET** /core/v1/locations | Get Location
-*OrganizationApi* | [**get_operational_groups**](docs/api/OrganizationApi.md#get_operational_groups) | **GET** /core/v1/operational-groups | Get Operational Groups
-*OrganizationApi* | [**get_organization**](docs/api/OrganizationApi.md#get_organization) | **GET** /core/v1/organizations | Get Organization
-*OrganizationApi* | [**get_organization_group**](docs/api/OrganizationApi.md#get_organization_group) | **GET** /core/v1/organization-groups | Get Organization Group
-*OrganizationApi* | [**get_organization_heads**](docs/api/OrganizationApi.md#get_organization_heads) | **GET** /core/v1/organizations/heads | Get Organization Heads
-*OrganizationApi* | [**get_organization_hierarchies**](docs/api/OrganizationApi.md#get_organization_hierarchies) | **GET** /core/v1/organization-hierarchies | Get Organization Hierarchies
-*OrganizationApi* | [**get_organization_histories**](docs/api/OrganizationApi.md#get_organization_histories) | **GET** /core/v1/organizations/histories | Get Organization Histories
-*OrganizationApi* | [**get_organization_superiors**](docs/api/OrganizationApi.md#get_organization_superiors) | **GET** /core/v1/organizations/superiors | Get Organization Superiors
-*OrganizationApi* | [**get_position_cost_centers**](docs/api/OrganizationApi.md#get_position_cost_centers) | **GET** /core/v1/positions/cost-centers | Get Position Cost Centers
-*OrganizationApi* | [**get_position_histories**](docs/api/OrganizationApi.md#get_position_histories) | **GET** /core/v1/positions/histories | Get Position Histories
-*OrganizationApi* | [**get_position_vacancy_statuses**](docs/api/OrganizationApi.md#get_position_vacancy_statuses) | **GET** /core/v1/positions/vacancy-statuses | Get Position Vacancy Statuses
-*OrganizationApi* | [**get_positions**](docs/api/OrganizationApi.md#get_positions) | **GET** /core/v1/positions | Get Positions
-*OrganizationApi* | [**get_sub_locations**](docs/api/OrganizationApi.md#get_sub_locations) | **GET** /core/v1/sub-locations | Get Sub Location
-*OrganizationApi* | [**update_cost_center**](docs/api/OrganizationApi.md#update_cost_center) | **PUT** /core/v1/cost-centers/{id} | Update Cost Center
-*PaygroupApi* | [**get_paygroup**](docs/api/PaygroupApi.md#get_paygroup) | **GET** /core/v1/paygroups | Get Paygroup
-*PayrollOthersApi* | [**get_additional_income**](docs/api/PayrollOthersApi.md#get_additional_income) | **GET** /core/v1/additional-income-payments | Get Additional Income
-*PayrollOthersApi* | [**get_monthly_recapitulation**](docs/api/PayrollOthersApi.md#get_monthly_recapitulation) | **GET** /core/v1/monthly-recapitulation/{filterType} | Get Monthly Recapitulation
-*PayrollProcessSnapshotApi* | [**find_payroll_process_snapshots**](docs/api/PayrollProcessSnapshotApi.md#find_payroll_process_snapshots) | **GET** /core/v1/payroll-process-snapshots | Find all payroll process snapshots
-*PayslipApi* | [**create_or_update_payslip_layout**](docs/api/PayslipApi.md#create_or_update_payslip_layout) | **PUT** /core/v1/payslip-layouts | Create or Update Payslip Layout
-*PayslipApi* | [**create_payslip_additional_note**](docs/api/PayslipApi.md#create_payslip_additional_note) | **POST** /core/v1/payslip-additional-notes | Create Payslip Additional Note
-*PayslipApi* | [**delete_payslip_layout_by_id**](docs/api/PayslipApi.md#delete_payslip_layout_by_id) | **DELETE** /core/v1/payslip-layouts/{id} | Delete Payslip Layout By Id
-*PayslipApi* | [**download_payslip**](docs/api/PayslipApi.md#download_payslip) | **POST** /core/v1/employees/{id}/payslip | Download Payslip
-*PayslipApi* | [**get_payslip_additional_notes**](docs/api/PayslipApi.md#get_payslip_additional_notes) | **GET** /core/v1/payslip-additional-notes | Get Payslip Additional Notes
-*PayslipApi* | [**get_payslip_layout_by_id**](docs/api/PayslipApi.md#get_payslip_layout_by_id) | **GET** /core/v1/payslip-layouts/{id} | Get Payslip Layout By Id
-*PayslipApi* | [**get_payslip_layouts**](docs/api/PayslipApi.md#get_payslip_layouts) | **GET** /core/v1/payslip-layouts | Get Payslip Layouts
-*PayslipApi* | [**update_payslip_additional_note_by_id**](docs/api/PayslipApi.md#update_payslip_additional_note_by_id) | **PUT** /core/v1/payslip-additional-notes/{id} | Update Payslip Additional Note by Id
-*RoleApi* | [**get_role_authorities**](docs/api/RoleApi.md#get_role_authorities) | **GET** /v1/roles/{id}/authorities | Get Role Authorities
-*RoleApi* | [**get_role_by_id**](docs/api/RoleApi.md#get_role_by_id) | **GET** /v1/roles/{id} | Get Role by ID
-*RoleApi* | [**get_role_permissions**](docs/api/RoleApi.md#get_role_permissions) | **GET** /v1/roles/{id}/permissions | Get Role Permissions
-*RoleApi* | [**list_all_roles**](docs/api/RoleApi.md#list_all_roles) | **GET** /v1/roles | List All Roles
-*SalaryCalculationApi* | [**get_salary_calculation**](docs/api/SalaryCalculationApi.md#get_salary_calculation) | **GET** /core/v1/salary-calculations | Get Salary Calculation
-*SalaryCalculationApi* | [**get_salary_calculation_details**](docs/api/SalaryCalculationApi.md#get_salary_calculation_details) | **GET** /core/v1/salary-calculations/details | Get Salary Calculation Details
-*SalaryCalculationApi* | [**get_time_allowance_details_by_salary_calculation_detail**](docs/api/SalaryCalculationApi.md#get_time_allowance_details_by_salary_calculation_detail) | **GET** /core/v1/salary-calculations/details/{id}/time-allowance-details | Get Time Allowance Details By Salary Calculation Detail
-*SalaryCalculationApi* | [**update_salary_calculation_detail**](docs/api/SalaryCalculationApi.md#update_salary_calculation_detail) | **PUT** /core/v1/salary-calculations/{id}/details/salaryItemCode&#x3D;{code} | Update Salary Calculation Detail
-*SalaryItemApi* | [**get_salary_item_by_id**](docs/api/SalaryItemApi.md#get_salary_item_by_id) | **GET** /core/v1/salary-items/{id} | Get Salary Item by ID
-*SalaryItemApi* | [**get_salary_items**](docs/api/SalaryItemApi.md#get_salary_items) | **GET** /core/v1/salary-items | Get Salary Items
-*SalaryPaymentApi* | [**get_payment_item_groups**](docs/api/SalaryPaymentApi.md#get_payment_item_groups) | **GET** /core/v1/salary-payments/{id}/payment-item-groups | Get Payment Item Groups
-*SalaryPaymentApi* | [**get_processed_salary_payment_summaries**](docs/api/SalaryPaymentApi.md#get_processed_salary_payment_summaries) | **GET** /core/v1/salary-payment-summaries | Get Processed Salary Payment Summaries
-*SalaryPaymentApi* | [**get_processed_salary_payments**](docs/api/SalaryPaymentApi.md#get_processed_salary_payments) | **GET** /core/v1/salary-payments/process/processable/processed | Get Processed Salary Payments
-*SalaryPaymentApi* | [**get_salary_payments**](docs/api/SalaryPaymentApi.md#get_salary_payments) | **GET** /core/v1/salary-payments | Get Salary Payments
-*SalaryPaymentApi* | [**get_salary_payments_date**](docs/api/SalaryPaymentApi.md#get_salary_payments_date) | **GET** /core/v1/salary-payments/dates | Get Salary Payments Date
-*SalaryTemplateApi* | [**add_salary_item_add_on**](docs/api/SalaryTemplateApi.md#add_salary_item_add_on) | **PUT** /core/v1/salary-item-add-on/add | Add Salary Item Add On
-*SalaryTemplateApi* | [**delete_salary_item_add_on**](docs/api/SalaryTemplateApi.md#delete_salary_item_add_on) | **DELETE** /core/v1/salary-item-add-on | Delete Salary Item Add On
-*SalaryTemplateApi* | [**get_salary_item_add_on**](docs/api/SalaryTemplateApi.md#get_salary_item_add_on) | **GET** /core/v1/salary-item-add-on | Get Salary Item Add On
-*SalaryTemplateApi* | [**get_salary_template_by_id**](docs/api/SalaryTemplateApi.md#get_salary_template_by_id) | **GET** /core/v1/salary-templates/{id} | Get Salary Template by ID
-*SalaryTemplateApi* | [**get_salary_templates**](docs/api/SalaryTemplateApi.md#get_salary_templates) | **GET** /core/v1/salary-templates | Get Salary Templates
-*SalaryTemplateApi* | [**subtract_salary_item_add_on**](docs/api/SalaryTemplateApi.md#subtract_salary_item_add_on) | **PUT** /core/v1/salary-item-add-on/subtract | Subtract Salary Item Add On
-*SalaryTemplateApi* | [**update_salary_item_add_on**](docs/api/SalaryTemplateApi.md#update_salary_item_add_on) | **PUT** /core/v1/salary-item-add-on | Update Salary Item Add On
-*SeveranceApi* | [**create_severance_plan**](docs/api/SeveranceApi.md#create_severance_plan) | **POST** /core/v1/termination-entries/{id}/severance-plans | Create Severance Plan
-*SeveranceApi* | [**delete_severance_plans_by_id**](docs/api/SeveranceApi.md#delete_severance_plans_by_id) | **DELETE** /core/v1/severance-plans/{id} | Delete Severance Plans By Id
-*SeveranceApi* | [**download_severance_slip**](docs/api/SeveranceApi.md#download_severance_slip) | **GET** /core/v1/employees/{id}/payslip/severance | Download Severance Slip
-*SeveranceApi* | [**get_severance_payment_plan**](docs/api/SeveranceApi.md#get_severance_payment_plan) | **GET** /core/v1/severance-payment-plans | Get Severance Payment Plan
-*SeveranceApi* | [**get_severance_payment_plan_by_id**](docs/api/SeveranceApi.md#get_severance_payment_plan_by_id) | **GET** /core/v1/severance-payment-plans/{id} | Get Severance Payment Plan By Id
-*SeveranceApi* | [**get_severance_plans**](docs/api/SeveranceApi.md#get_severance_plans) | **GET** /core/v1/severance-plans | Get Severance Plans
-*SeveranceApi* | [**get_severance_plans_by_id**](docs/api/SeveranceApi.md#get_severance_plans_by_id) | **GET** /core/v1/severance-plans/{id} | Get Severance Plans By Id
-*TaxApi* | [**create_tax_calculation**](docs/api/TaxApi.md#create_tax_calculation) | **POST** /core/v1/tax-calculations | Create Tax Calculation
-*TaxApi* | [**download1721_a1_report**](docs/api/TaxApi.md#download1721_a1_report) | **GET** /core/v1/tax-reports/1721-a1/{id}/download | Download 1721 A1 Report
-*TaxApi* | [**download1721_vi_report**](docs/api/TaxApi.md#download1721_vi_report) | **GET** /core/v1/pph21-reports/1721-vi/{id}/download | Download 1721 VI Report
-*TaxApi* | [**download1721_vi_tax_report**](docs/api/TaxApi.md#download1721_vi_tax_report) | **GET** /core/v1/tax-reports/1721-vi/{id}/download | Download 1721 VI Report
-*TaxApi* | [**download1721_vii_report**](docs/api/TaxApi.md#download1721_vii_report) | **GET** /core/v1/pph21-reports/1721-vii/{id}/download | Download 1721 VII Report
-*TaxApi* | [**download1721_vii_tax_report**](docs/api/TaxApi.md#download1721_vii_tax_report) | **GET** /core/v1/tax-reports/1721-vii/{id}/download | Download 1721 VII Report
-*TaxApi* | [**download1721_viii_report**](docs/api/TaxApi.md#download1721_viii_report) | **GET** /core/v1/tax-reports/1721-viii/{id}/download | Download 1721 VIII Report
-*TaxApi* | [**get1721_a1_reports**](docs/api/TaxApi.md#get1721_a1_reports) | **GET** /core/v1/tax-reports/1721-a1 | Get 1721 A1 Reports
-*TaxApi* | [**get1721_vi_reports**](docs/api/TaxApi.md#get1721_vi_reports) | **GET** /core/v1/pph21-reports/1721-vi | Get 1721 VI Reports
-*TaxApi* | [**get1721_vi_tax_reports**](docs/api/TaxApi.md#get1721_vi_tax_reports) | **GET** /core/v1/tax-reports/1721-vi | Get 1721 VI Reports
-*TaxApi* | [**get1721_vii_reports**](docs/api/TaxApi.md#get1721_vii_reports) | **GET** /core/v1/pph21-reports/1721-vii | Get 1721 VII Reports
-*TaxApi* | [**get1721_vii_tax_reports**](docs/api/TaxApi.md#get1721_vii_tax_reports) | **GET** /core/v1/tax-reports/1721-vii | Get 1721 VII Reports
-*TaxApi* | [**get1721_viii_reports**](docs/api/TaxApi.md#get1721_viii_reports) | **GET** /core/v1/tax-reports/1721-viii | Get 1721 VIII Reports
-*TaxApi* | [**get_detailed1721_vi_reports**](docs/api/TaxApi.md#get_detailed1721_vi_reports) | **GET** /core/v1/pph21-reports/1721-vi/detail | Get Detailed 1721 VI Reports
-*TaxApi* | [**get_detailed1721_vi_tax_reports**](docs/api/TaxApi.md#get_detailed1721_vi_tax_reports) | **GET** /core/v1/tax-reports/1721-vi/detail | Get Detailed 1721 VI Reports
-*TaxApi* | [**get_kpp**](docs/api/TaxApi.md#get_kpp) | **GET** /core/v1/kpps | Get Kpp
-*TaxApi* | [**get_monthly_tax_report**](docs/api/TaxApi.md#get_monthly_tax_report) | **GET** /core/v1/monthly-tax-reports | Get Monthly Tax Report
-*TaxApi* | [**get_pph21_policy**](docs/api/TaxApi.md#get_pph21_policy) | **GET** /core/v1/pph21-policies | Get Pph21 Policy
-*TaxApi* | [**get_ptkp_categories**](docs/api/TaxApi.md#get_ptkp_categories) | **GET** /core/v1/ptkp-categories | Get Ptkp Categories
-*TaxApi* | [**get_tax_calculations**](docs/api/TaxApi.md#get_tax_calculations) | **GET** /core/v1/tax-calculations | Get Tax Calculations
-*TaxApi* | [**get_tax_calculations_by_external_id**](docs/api/TaxApi.md#get_tax_calculations_by_external_id) | **GET** /core/v1/tax-calculations/externalId&#x3D;{externalId} | Get Tax Calculations By External Id
-*TaxApi* | [**get_tax_calculations_by_id**](docs/api/TaxApi.md#get_tax_calculations_by_id) | **GET** /core/v1/tax-calculations/{id} | Get Tax Calculations By Id
-*TaxApi* | [**monthly_tax_detail_find_all**](docs/api/TaxApi.md#monthly_tax_detail_find_all) | **GET** /core/v1/monthly-tax-details | GET Monthly Tax Detail
-*TaxApi* | [**simulate_annual_tax**](docs/api/TaxApi.md#simulate_annual_tax) | **POST** /core/v1/tax-calculators | Simulate annual tax calculation
-*TaxApi* | [**simulate_monthly_tax**](docs/api/TaxApi.md#simulate_monthly_tax) | **POST** /core/v1/tax-calculators/monthly | Simulate monthly tax calculation
-*TaxApi* | [**undo_tax_calculation_by_id**](docs/api/TaxApi.md#undo_tax_calculation_by_id) | **DELETE** /core/v1/tax-calculations/{id} | Undo Tax Calculation By Id
-*TaxApi* | [**undo_tax_calculations_by_external_id**](docs/api/TaxApi.md#undo_tax_calculations_by_external_id) | **DELETE** /core/v1/tax-calculations/externalId&#x3D;{externalId} | Undo Tax Calculations By External Id
-*TaxMembershipApi* | [**get_tax_membership**](docs/api/TaxMembershipApi.md#get_tax_membership) | **GET** /core/v1/employees/{employeeId}/tax-memberships | Get Tax Membership
-*TaxMembershipApi* | [**update_tax_membership**](docs/api/TaxMembershipApi.md#update_tax_membership) | **PUT** /core/v1/employees/{employeeId}/tax-memberships | Update Tax Membership
-*TaxMembershipApi* | [**update_tax_membership_tax_subject**](docs/api/TaxMembershipApi.md#update_tax_membership_tax_subject) | **PUT** /core/v1/employees/{employeeId}/tax-memberships/tax-subjects | Update Tax Membership Tax Subject
-*TaxMembershipHistoryApi* | [**get_tax_membership_history**](docs/api/TaxMembershipHistoryApi.md#get_tax_membership_history) | **GET** /core/v1/employees/{employeeId}/tax-membership-histories | Get Tax Membership History
-*TaxMembershipHistoryApi* | [**get_tax_membership_history_by_id**](docs/api/TaxMembershipHistoryApi.md#get_tax_membership_history_by_id) | **GET** /core/v1/tax-membership-histories/{id} | Get Tax Membership History by ID
-*TaxMembershipHistoryApi* | [**update_tax_membership_history_tax_subject**](docs/api/TaxMembershipHistoryApi.md#update_tax_membership_history_tax_subject) | **PUT** /core/v1/tax-membership-histories/{id}/tax-subjects | Update Tax Membership History Tax Subject
-*TerminationApi* | [**create_termination_entry**](docs/api/TerminationApi.md#create_termination_entry) | **POST** /core/v1/employees/{employeeId}/termination-entries | Create Termination Entry
-*TerminationApi* | [**create_termination_reason**](docs/api/TerminationApi.md#create_termination_reason) | **POST** /core/v1/termination-reasons | Create Termination Reason
-*TerminationApi* | [**get_termination_bpjs_manpower_reason**](docs/api/TerminationApi.md#get_termination_bpjs_manpower_reason) | **GET** /core/v1/termination-bpjs-manpower-reasons | Get Termination BPJS Manpower Reason
-*TerminationApi* | [**get_termination_entry**](docs/api/TerminationApi.md#get_termination_entry) | **GET** /core/v1/employees/{employeeId}/termination-entries | Get Termination Entry
-*TerminationApi* | [**get_termination_reason**](docs/api/TerminationApi.md#get_termination_reason) | **GET** /core/v1/termination-reasons | Get Termination Reason
-*TerminationApi* | [**get_termination_reason_category**](docs/api/TerminationApi.md#get_termination_reason_category) | **GET** /core/v1/termination-reason-categories | Get Termination Reason Category
-*TerminationApi* | [**get_termination_tax_reason**](docs/api/TerminationApi.md#get_termination_tax_reason) | **GET** /core/v1/termination-tax-reasons | Get Termination Tax Reason
-*TerminationApi* | [**undo_termination_entry**](docs/api/TerminationApi.md#undo_termination_entry) | **DELETE** /core/v1/employees/{employeeId}/termination-entries | Undo Termination Entry
-*TerminationApi* | [**update_termination_reason**](docs/api/TerminationApi.md#update_termination_reason) | **PUT** /core/v1/termination-reasons/{id} | Update Termination Reason
-*TimeManagementApi* | [**create_attendance_machine_data**](docs/api/TimeManagementApi.md#create_attendance_machine_data) | **POST** /timemanagement/v1/fingerprints | Create Attendance Machine Data
-*TimeManagementApi* | [**create_employee_roster_configuration**](docs/api/TimeManagementApi.md#create_employee_roster_configuration) | **POST** /timemanagement/v1/employee-workday-configurations | Create Employee Roster Configuration
-*TimeManagementApi* | [**create_leave_balance**](docs/api/TimeManagementApi.md#create_leave_balance) | **POST** /timemanagement/v1/leave-balances | Create Leave Balance
-*TimeManagementApi* | [**create_other_leave_balance**](docs/api/TimeManagementApi.md#create_other_leave_balance) | **POST** /timemanagement/v1/other-leave-balances | Create Other Leave Balance
-*TimeManagementApi* | [**create_shift_pattern_template**](docs/api/TimeManagementApi.md#create_shift_pattern_template) | **POST** /timemanagement/v1/shift-pattern-templates | Create Shift Pattern Template
-*TimeManagementApi* | [**create_workgroup_roster_configuration**](docs/api/TimeManagementApi.md#create_workgroup_roster_configuration) | **POST** /timemanagement/v1/workgroup-workday-configurations | Create Workgroup Roster Configuration
-*TimeManagementApi* | [**delete_employee_roster_configuration**](docs/api/TimeManagementApi.md#delete_employee_roster_configuration) | **DELETE** /timemanagement/v1/employee-workday-configurations/{id} | Delete Employee Roster Configuration
-*TimeManagementApi* | [**delete_shift_pattern_template**](docs/api/TimeManagementApi.md#delete_shift_pattern_template) | **DELETE** /timemanagement/v1/shift-pattern-templates/{id} | Delete Shift Pattern Template
-*TimeManagementApi* | [**delete_workgroup_roster_configuration**](docs/api/TimeManagementApi.md#delete_workgroup_roster_configuration) | **DELETE** /timemanagement/v1/workgroup-workday-configurations/{id} | Delete Workgroup Roster Configuration
-*TimeManagementApi* | [**read_attendance**](docs/api/TimeManagementApi.md#read_attendance) | **GET** /timemanagement/v1/attendances | Read Attendance
-*TimeManagementApi* | [**read_attendance_recapitulation_detail**](docs/api/TimeManagementApi.md#read_attendance_recapitulation_detail) | **GET** /timemanagement/v1/attendance-recapitulations/details | Read Attendance Recapitulation Detail
-*TimeManagementApi* | [**read_employee_roster_configuration**](docs/api/TimeManagementApi.md#read_employee_roster_configuration) | **GET** /timemanagement/v1/employee-workday-configurations | Read Employee Roster Configuration
-*TimeManagementApi* | [**read_employee_roster_configuration_by_id**](docs/api/TimeManagementApi.md#read_employee_roster_configuration_by_id) | **GET** /timemanagement/v1/employee-workday-configurations/{id} | Read Employee Roster Configuration By Id
-*TimeManagementApi* | [**read_holiday**](docs/api/TimeManagementApi.md#read_holiday) | **GET** /timemanagement/v1/holidays | Read Holiday
-*TimeManagementApi* | [**read_leave_balance**](docs/api/TimeManagementApi.md#read_leave_balance) | **GET** /timemanagement/v1/leave-balances | Read Leave Balance
-*TimeManagementApi* | [**read_other_leave_balance**](docs/api/TimeManagementApi.md#read_other_leave_balance) | **GET** /timemanagement/v1/other-leave-balances | Read Other Leave Balance
-*TimeManagementApi* | [**read_shift_pattern_template**](docs/api/TimeManagementApi.md#read_shift_pattern_template) | **GET** /timemanagement/v1/shift-pattern-templates | Read Shift Pattern Template
-*TimeManagementApi* | [**read_shift_pattern_template_by_id**](docs/api/TimeManagementApi.md#read_shift_pattern_template_by_id) | **GET** /timemanagement/v1/shift-pattern-templates/{id} | Read Shift Pattern Template By Id
-*TimeManagementApi* | [**read_workgroup_roster_configuration**](docs/api/TimeManagementApi.md#read_workgroup_roster_configuration) | **GET** /timemanagement/v1/workgroup-workday-configurations | Read Workgroup Roster Configuration
-*TimeManagementApi* | [**read_workgroup_roster_configuration_by_id**](docs/api/TimeManagementApi.md#read_workgroup_roster_configuration_by_id) | **GET** /timemanagement/v1/workgroup-workday-configurations/{id} | Read Workgroup Roster Configuration By ID
-*TimeManagementApi* | [**update_employee_roster_configuration**](docs/api/TimeManagementApi.md#update_employee_roster_configuration) | **PUT** /timemanagement/v1/employee-workday-configurations/{id} | Update Employee Roster Configuration
-*TimeManagementApi* | [**update_shift_pattern_template**](docs/api/TimeManagementApi.md#update_shift_pattern_template) | **PUT** /timemanagement/v1/shift-pattern-templates/{id} | Update Shift Pattern Template
-*TimeManagementApi* | [**update_workgroup_roster_configuration**](docs/api/TimeManagementApi.md#update_workgroup_roster_configuration) | **PUT** /timemanagement/v1/workgroup-workday-configurations/{id} | Update Workgroup Roster Configuration
-*TransitionCalculationApi* | [**get_processable_time_allowance_transition**](docs/api/TransitionCalculationApi.md#get_processable_time_allowance_transition) | **GET** /core/v1/transition-calculations/time-allowances/process/processable | Get Processable Time Allowance Transition
-*TransitionCalculationApi* | [**get_processable_transition_calculation**](docs/api/TransitionCalculationApi.md#get_processable_transition_calculation) | **GET** /core/v1/transition-calculations/process/processable/unprocessed | Get Processable Transition Calculation
-*TransitionCalculationApi* | [**get_processed_transition_calculation**](docs/api/TransitionCalculationApi.md#get_processed_transition_calculation) | **GET** /core/v1/transition-calculations/process/processable/processed | Get Processed Transition Calculation
-*TransitionCalculationApi* | [**get_prorate_details_by_transition_calculation_detail_id**](docs/api/TransitionCalculationApi.md#get_prorate_details_by_transition_calculation_detail_id) | **GET** /core/v1/transition-calculation-details/{id}/prorate-details | Get Prorate Details By Transition Calculation Detail Id
-*TransitionCalculationApi* | [**get_time_allowance_detailsby_transition_calculation_detail_id**](docs/api/TransitionCalculationApi.md#get_time_allowance_detailsby_transition_calculation_detail_id) | **GET** /core/v1/transition-calculation-details/{id}/time-allowance-details | Get Time Allowance Details by Transition Calculation Detail Id
-*TransitionCalculationApi* | [**get_transition_calculation_count**](docs/api/TransitionCalculationApi.md#get_transition_calculation_count) | **GET** /core/v1/transition-calculations/process/count | Get Transition Calculation Count
-*TransitionCalculationApi* | [**get_transition_calculationby_id**](docs/api/TransitionCalculationApi.md#get_transition_calculationby_id) | **GET** /core/v1/transition-calculations/{id} | Get Transition Calculation by Id
-*TransitionCalculationApi* | [**update_transition_calculation_details_with_editable_type**](docs/api/TransitionCalculationApi.md#update_transition_calculation_details_with_editable_type) | **PUT** /core/v1/transition-calculations/{id}/details | Update Transition Calculation Details With Editable Type
-*UserApi* | [**find_all_users**](docs/api/UserApi.md#find_all_users) | **GET** /core/v1/users | Retrieve all users
-*UserApi* | [**get_current_user**](docs/api/UserApi.md#get_current_user) | **GET** /v1/users/me | Get Current User
-*WidgetsApi* | [**get_widgets_by_current_user**](docs/api/WidgetsApi.md#get_widgets_by_current_user) | **GET** /core/v1/users/me/widgets | Get Widgets by Current User
-*WorkflowApi* | [**create_workflow_reason**](docs/api/WorkflowApi.md#create_workflow_reason) | **POST** /core/v1/workflow-reasons | Create Workflow Reason
-*WorkflowApi* | [**create_workflow_reason_category**](docs/api/WorkflowApi.md#create_workflow_reason_category) | **POST** /core/v1/workflow-reason-categories | Create Workflow Reason Category
-*WorkflowApi* | [**get_workflow_activity**](docs/api/WorkflowApi.md#get_workflow_activity) | **GET** /core/v1/workflow-activities | Get Workflow Activities
-*WorkflowApi* | [**get_workflow_reason**](docs/api/WorkflowApi.md#get_workflow_reason) | **GET** /core/v1/workflow-reasons | Get Workflow Reasons
-*WorkflowApi* | [**get_workflow_reason_category**](docs/api/WorkflowApi.md#get_workflow_reason_category) | **GET** /core/v1/workflow-reason-categories | Get Workflow Reason Categories
-*WorkflowApi* | [**update_workflow_reason**](docs/api/WorkflowApi.md#update_workflow_reason) | **PUT** /core/v1/workflow-reasons/{id} | Update Workflow Reason
-*WorkflowApi* | [**update_workflow_reason_categories**](docs/api/WorkflowApi.md#update_workflow_reason_categories) | **PUT** /core/v1/workflow-reason-categories/{id} | Update Workflow Reason Category
+### API Classes
 
+#### [AnalyticsApi](docs/AnalyticsApi.md)
 
-## Documentation For Models
+- [`create_analytics_chart()`](docs/AnalyticsApi.md#create_analytics_chart) - Create Analytics Chart
+- [`get_analytics_chart()`](docs/AnalyticsApi.md#get_analytics_chart) - Get Analytics Chart Data
+- [`get_analytics_data_by_chart_id_and_current_user()`](docs/AnalyticsApi.md#get_analytics_data_by_chart_id_and_current_user) - Get Analytics Data by Chart ID and Current User
 
- - [AdditionalAssignmentApprovalPageResponse](docs/models/AdditionalAssignmentApprovalPageResponse.md)
- - [AdditionalAssignmentApprovalResponse](docs/models/AdditionalAssignmentApprovalResponse.md)
- - [AdditionalAssignmentApprovaleSubLocationResponse](docs/models/AdditionalAssignmentApprovaleSubLocationResponse.md)
- - [AdditionalAssignmentResponse](docs/models/AdditionalAssignmentResponse.md)
- - [AdditionalFamilyMembershipResponse](docs/models/AdditionalFamilyMembershipResponse.md)
- - [AdditionalIncomePaymentListItemResponse](docs/models/AdditionalIncomePaymentListItemResponse.md)
- - [AdditionalIncomePaymentPageResponse](docs/models/AdditionalIncomePaymentPageResponse.md)
- - [AddressDetailResponse](docs/models/AddressDetailResponse.md)
- - [AmountRequest](docs/models/AmountRequest.md)
- - [AnalyticsChartDataResponse](docs/models/AnalyticsChartDataResponse.md)
- - [AnalyticsChartDataSeriesResponse](docs/models/AnalyticsChartDataSeriesResponse.md)
- - [AnalyticsChartPageResponse](docs/models/AnalyticsChartPageResponse.md)
- - [AnalyticsChartRequest](docs/models/AnalyticsChartRequest.md)
- - [AnalyticsChartResponse](docs/models/AnalyticsChartResponse.md)
- - [AnalyticsColorSchemeDetailResponse](docs/models/AnalyticsColorSchemeDetailResponse.md)
- - [AnalyticsColorSchemeResponse](docs/models/AnalyticsColorSchemeResponse.md)
- - [AnalyticsColumnResponse](docs/models/AnalyticsColumnResponse.md)
- - [AnnualTaxCalculationSimulatorMonthlyTaxReportsResponse](docs/models/AnnualTaxCalculationSimulatorMonthlyTaxReportsResponse.md)
- - [AnnualTaxCalculationSimulatorRequest](docs/models/AnnualTaxCalculationSimulatorRequest.md)
- - [AnnualTaxCalculationSimulatorResponse](docs/models/AnnualTaxCalculationSimulatorResponse.md)
- - [AnnualTaxCalculationSimulatorResultResponse](docs/models/AnnualTaxCalculationSimulatorResultResponse.md)
- - [AnomalySuspectAttributeResponse](docs/models/AnomalySuspectAttributeResponse.md)
- - [AnomalySuspectAttributeValueChildResponse](docs/models/AnomalySuspectAttributeValueChildResponse.md)
- - [AnomalySuspectAttributeValueResponse](docs/models/AnomalySuspectAttributeValueResponse.md)
- - [AnomalySuspectFileResponse](docs/models/AnomalySuspectFileResponse.md)
- - [AnomalySuspectPageResponse](docs/models/AnomalySuspectPageResponse.md)
- - [AnomalySuspectResponse](docs/models/AnomalySuspectResponse.md)
- - [AttendanceItemResponse](docs/models/AttendanceItemResponse.md)
- - [AttendancePageResponse](docs/models/AttendancePageResponse.md)
- - [AttendanceRecapitulationDetailAttendanceItemResponse](docs/models/AttendanceRecapitulationDetailAttendanceItemResponse.md)
- - [AttendanceRecapitulationDetailItemResponse](docs/models/AttendanceRecapitulationDetailItemResponse.md)
- - [AttendanceRecapitulationDetailOvertimeResponse](docs/models/AttendanceRecapitulationDetailOvertimeResponse.md)
- - [AttendanceRecapitulationDetailPageResponse](docs/models/AttendanceRecapitulationDetailPageResponse.md)
- - [AttendanceStatusResponse](docs/models/AttendanceStatusResponse.md)
- - [AuthorityDetailResponse](docs/models/AuthorityDetailResponse.md)
- - [BankAccountConfigurationPageResponse](docs/models/BankAccountConfigurationPageResponse.md)
- - [BankAccountConfigurationRequest](docs/models/BankAccountConfigurationRequest.md)
- - [BankAccountConfigurationResponse](docs/models/BankAccountConfigurationResponse.md)
- - [BankAccountConfigurationResponseSource](docs/models/BankAccountConfigurationResponseSource.md)
- - [BankAccountResponse](docs/models/BankAccountResponse.md)
- - [BankBranchPageResponse](docs/models/BankBranchPageResponse.md)
- - [BankBranchResponse](docs/models/BankBranchResponse.md)
- - [BankBranchSimpleResponse](docs/models/BankBranchSimpleResponse.md)
- - [BankPageResponse](docs/models/BankPageResponse.md)
- - [BankResponse](docs/models/BankResponse.md)
- - [BpjsHealthcareCurrentMonthDetailResponse](docs/models/BpjsHealthcareCurrentMonthDetailResponse.md)
- - [BpjsHealthcareMembershipAdditionalFamilyMembership](docs/models/BpjsHealthcareMembershipAdditionalFamilyMembership.md)
- - [BpjsHealthcareMembershipRequest](docs/models/BpjsHealthcareMembershipRequest.md)
- - [BpjsHealthcareMembershipResponse](docs/models/BpjsHealthcareMembershipResponse.md)
- - [BpjsHealthcarePremiumDetailsItemResponse](docs/models/BpjsHealthcarePremiumDetailsItemResponse.md)
- - [BpjsHealthcarePremiumDetailsResponse](docs/models/BpjsHealthcarePremiumDetailsResponse.md)
- - [BpjsHealthcarePremiumSummaryListItemResponse](docs/models/BpjsHealthcarePremiumSummaryListItemResponse.md)
- - [BpjsHealthcarePremiumSummaryPageResponse](docs/models/BpjsHealthcarePremiumSummaryPageResponse.md)
- - [BpjsHealthcareProviderListItemResponse](docs/models/BpjsHealthcareProviderListItemResponse.md)
- - [BpjsHealthcareProviderPageResponse](docs/models/BpjsHealthcareProviderPageResponse.md)
- - [BpjsHealthcareTemplateListItemResponse](docs/models/BpjsHealthcareTemplateListItemResponse.md)
- - [BpjsHealthcareTemplatePageResponse](docs/models/BpjsHealthcareTemplatePageResponse.md)
- - [BpjsHealthcareTreatmentClassResponse](docs/models/BpjsHealthcareTreatmentClassResponse.md)
- - [BpjsManpowerCurrentMonthDetailResponse](docs/models/BpjsManpowerCurrentMonthDetailResponse.md)
- - [BpjsManpowerMembershipRequest](docs/models/BpjsManpowerMembershipRequest.md)
- - [BpjsManpowerMembershipResponse](docs/models/BpjsManpowerMembershipResponse.md)
- - [BpjsManpowerPremiumDetailsItemResponse](docs/models/BpjsManpowerPremiumDetailsItemResponse.md)
- - [BpjsManpowerPremiumDetailsResponse](docs/models/BpjsManpowerPremiumDetailsResponse.md)
- - [BpjsManpowerPremiumSummaryListItemResponse](docs/models/BpjsManpowerPremiumSummaryListItemResponse.md)
- - [BpjsManpowerPremiumSummaryPageResponse](docs/models/BpjsManpowerPremiumSummaryPageResponse.md)
- - [BpjsManpowerProviderPageResponse](docs/models/BpjsManpowerProviderPageResponse.md)
- - [BpjsManpowerProviderResponse](docs/models/BpjsManpowerProviderResponse.md)
- - [BpjsManpowerTemplatePageResponse](docs/models/BpjsManpowerTemplatePageResponse.md)
- - [BpjsManpowerTemplateResponse](docs/models/BpjsManpowerTemplateResponse.md)
- - [BulkOperationFailureParamResponse](docs/models/BulkOperationFailureParamResponse.md)
- - [BulkOperationFailureResponse](docs/models/BulkOperationFailureResponse.md)
- - [BulkOperationResponse](docs/models/BulkOperationResponse.md)
- - [CalculationScenarioComponent](docs/models/CalculationScenarioComponent.md)
- - [CalculationScenarioPreviousJobComponent](docs/models/CalculationScenarioPreviousJobComponent.md)
- - [CalculationScenarioSalaryComponent](docs/models/CalculationScenarioSalaryComponent.md)
- - [ChartFilterRequest](docs/models/ChartFilterRequest.md)
- - [ChartFilterResponse](docs/models/ChartFilterResponse.md)
- - [ChartTableRelationRequest](docs/models/ChartTableRelationRequest.md)
- - [ChartTableRelationResponse](docs/models/ChartTableRelationResponse.md)
- - [ChartValueCollectionFilterRequest](docs/models/ChartValueCollectionFilterRequest.md)
- - [CityPageResponse](docs/models/CityPageResponse.md)
- - [CityResponse](docs/models/CityResponse.md)
- - [CompanyBankAccountPageResponse](docs/models/CompanyBankAccountPageResponse.md)
- - [CompanyBankAccountResponse](docs/models/CompanyBankAccountResponse.md)
- - [CompanyDetailRequest](docs/models/CompanyDetailRequest.md)
- - [CompanyDetailResponse](docs/models/CompanyDetailResponse.md)
- - [CompanyDetailTimeZoneRequest](docs/models/CompanyDetailTimeZoneRequest.md)
- - [CompanyGroupPageResponse](docs/models/CompanyGroupPageResponse.md)
- - [CompanyListItemResponse](docs/models/CompanyListItemResponse.md)
- - [CompanyPageResponse](docs/models/CompanyPageResponse.md)
- - [CompanySuperiorResponse](docs/models/CompanySuperiorResponse.md)
- - [ContactInformationPageResponse](docs/models/ContactInformationPageResponse.md)
- - [ContactInformationRequest](docs/models/ContactInformationRequest.md)
- - [ContactInformationResponse](docs/models/ContactInformationResponse.md)
- - [CostCenterListItemResponse](docs/models/CostCenterListItemResponse.md)
- - [CostCenterPageResponse](docs/models/CostCenterPageResponse.md)
- - [CostCenterRequest](docs/models/CostCenterRequest.md)
- - [CostCenterResponse](docs/models/CostCenterResponse.md)
- - [CostCenterSimpleResponse](docs/models/CostCenterSimpleResponse.md)
- - [CountResponse](docs/models/CountResponse.md)
- - [CountryPageResponse](docs/models/CountryPageResponse.md)
- - [CountryRequest](docs/models/CountryRequest.md)
- - [CountryResponse](docs/models/CountryResponse.md)
- - [CreateCityRequest](docs/models/CreateCityRequest.md)
- - [CreateCityRequestState](docs/models/CreateCityRequestState.md)
- - [CurrencyPageResponse](docs/models/CurrencyPageResponse.md)
- - [CurrencyResponse](docs/models/CurrencyResponse.md)
- - [CurrencySimpleResponse](docs/models/CurrencySimpleResponse.md)
- - [CustomTableColumnResponse](docs/models/CustomTableColumnResponse.md)
- - [CustomTableEntryPageResponse](docs/models/CustomTableEntryPageResponse.md)
- - [CustomTablePageResponse](docs/models/CustomTablePageResponse.md)
- - [CustomTableResponse](docs/models/CustomTableResponse.md)
- - [EditableSalaryPreprocessRequest](docs/models/EditableSalaryPreprocessRequest.md)
- - [EditableSalaryPreprocessResponse](docs/models/EditableSalaryPreprocessResponse.md)
- - [EditableSalaryPreprocessSuccess](docs/models/EditableSalaryPreprocessSuccess.md)
- - [EducationLevelPageResponse](docs/models/EducationLevelPageResponse.md)
- - [EducationLevelResponse](docs/models/EducationLevelResponse.md)
- - [EducationPageResponse](docs/models/EducationPageResponse.md)
- - [EducationResponse](docs/models/EducationResponse.md)
- - [EmergencyContactResponse](docs/models/EmergencyContactResponse.md)
- - [EmployeeCreateResponse](docs/models/EmployeeCreateResponse.md)
- - [EmployeeDetailPageResponse](docs/models/EmployeeDetailPageResponse.md)
- - [EmployeeDetailRequest](docs/models/EmployeeDetailRequest.md)
- - [EmployeeDetailResponse](docs/models/EmployeeDetailResponse.md)
- - [EmployeeFullResponse](docs/models/EmployeeFullResponse.md)
- - [EmployeeHiringDataRequest](docs/models/EmployeeHiringDataRequest.md)
- - [EmployeeHiringDataResponse](docs/models/EmployeeHiringDataResponse.md)
- - [EmployeeHiringDataSimpleResponse](docs/models/EmployeeHiringDataSimpleResponse.md)
- - [EmployeeIdNameResponse](docs/models/EmployeeIdNameResponse.md)
- - [EmployeeIdentificationNumberResponse](docs/models/EmployeeIdentificationNumberResponse.md)
- - [EmployeeIdentityCardPageResponse](docs/models/EmployeeIdentityCardPageResponse.md)
- - [EmployeeIdentityCardRequest](docs/models/EmployeeIdentityCardRequest.md)
- - [EmployeeIdentityCardResponse](docs/models/EmployeeIdentityCardResponse.md)
- - [EmployeeManagerResponse](docs/models/EmployeeManagerResponse.md)
- - [EmployeePageResponse](docs/models/EmployeePageResponse.md)
- - [EmployeePaygroupPageResponse](docs/models/EmployeePaygroupPageResponse.md)
- - [EmployeePaygroupResponse](docs/models/EmployeePaygroupResponse.md)
- - [EmployeeRequest](docs/models/EmployeeRequest.md)
- - [EmployeeResponse](docs/models/EmployeeResponse.md)
- - [EmployeeSalaryRequest](docs/models/EmployeeSalaryRequest.md)
- - [EmployeeSalaryResponse](docs/models/EmployeeSalaryResponse.md)
- - [EmployeeSalaryTemplatePageResponse](docs/models/EmployeeSalaryTemplatePageResponse.md)
- - [EmployeeSalaryTemplateRequest](docs/models/EmployeeSalaryTemplateRequest.md)
- - [EmployeeSalaryTemplateResponse](docs/models/EmployeeSalaryTemplateResponse.md)
- - [EmployeeSalaryTemplateUpdateResponse](docs/models/EmployeeSalaryTemplateUpdateResponse.md)
- - [EmployeeSimpleResponse](docs/models/EmployeeSimpleResponse.md)
- - [EmployeeVariableMetadataPageResponse](docs/models/EmployeeVariableMetadataPageResponse.md)
- - [EmployeeVariableMetadataRequest](docs/models/EmployeeVariableMetadataRequest.md)
- - [EmployeeVariableMetadataResponse](docs/models/EmployeeVariableMetadataResponse.md)
- - [EmployeeVariablePageResponse](docs/models/EmployeeVariablePageResponse.md)
- - [EmployeeVariableRequest](docs/models/EmployeeVariableRequest.md)
- - [EmployeeVariableResponse](docs/models/EmployeeVariableResponse.md)
- - [EmployeeVariableValidationRequest](docs/models/EmployeeVariableValidationRequest.md)
- - [EmployeeVariableValidationResponse](docs/models/EmployeeVariableValidationResponse.md)
- - [EmployeeWorkdayConfigurationPageResponse](docs/models/EmployeeWorkdayConfigurationPageResponse.md)
- - [EmployeeWorkdayConfigurationRequest](docs/models/EmployeeWorkdayConfigurationRequest.md)
- - [EmployeeWorkdayConfigurationResponse](docs/models/EmployeeWorkdayConfigurationResponse.md)
- - [EmploymentDataPositionResponse](docs/models/EmploymentDataPositionResponse.md)
- - [EmploymentDataRequest](docs/models/EmploymentDataRequest.md)
- - [EmploymentDataResponse](docs/models/EmploymentDataResponse.md)
- - [EmploymentStatusDetailPositionResponse](docs/models/EmploymentStatusDetailPositionResponse.md)
- - [EmploymentStatusDetailResponse](docs/models/EmploymentStatusDetailResponse.md)
- - [EmploymentStatusHistoryDetailResponse](docs/models/EmploymentStatusHistoryDetailResponse.md)
- - [EmploymentStatusHistoryPageResponse](docs/models/EmploymentStatusHistoryPageResponse.md)
- - [EmploymentStatusPageResponse](docs/models/EmploymentStatusPageResponse.md)
- - [EmploymentStatusTypePageResponse](docs/models/EmploymentStatusTypePageResponse.md)
- - [EmploymentStatusTypeResponse](docs/models/EmploymentStatusTypeResponse.md)
- - [EmploymentTypePageResponse](docs/models/EmploymentTypePageResponse.md)
- - [EmploymentTypeRequest](docs/models/EmploymentTypeRequest.md)
- - [EmploymentTypeResponse](docs/models/EmploymentTypeResponse.md)
- - [ErrorResponse](docs/models/ErrorResponse.md)
- - [FamilyApprovalListItemResponse](docs/models/FamilyApprovalListItemResponse.md)
- - [FamilyApprovalListItemWithApprovalStatusResponse](docs/models/FamilyApprovalListItemWithApprovalStatusResponse.md)
- - [FamilyApprovalPageResponse](docs/models/FamilyApprovalPageResponse.md)
- - [FamilyApprovalRequest](docs/models/FamilyApprovalRequest.md)
- - [FamilyApprovalResponse](docs/models/FamilyApprovalResponse.md)
- - [FamilyHistoricalPageResponse](docs/models/FamilyHistoricalPageResponse.md)
- - [FamilyHistoricalResponse](docs/models/FamilyHistoricalResponse.md)
- - [FamilyMemberRelationPageResponse](docs/models/FamilyMemberRelationPageResponse.md)
- - [FamilyMemberRelationResponse](docs/models/FamilyMemberRelationResponse.md)
- - [FieldOfStudyPageResponse](docs/models/FieldOfStudyPageResponse.md)
- - [FieldOfStudyResponse](docs/models/FieldOfStudyResponse.md)
- - [FingerprintFailureItemResponse](docs/models/FingerprintFailureItemResponse.md)
- - [FingerprintItemRequest](docs/models/FingerprintItemRequest.md)
- - [FingerprintResponse](docs/models/FingerprintResponse.md)
- - [FingerprintSuccessItemResponse](docs/models/FingerprintSuccessItemResponse.md)
- - [FormerEmployeeIncomeEmployeeAmountUpdateRequest](docs/models/FormerEmployeeIncomeEmployeeAmountUpdateRequest.md)
- - [FormerEmployeeIncomeEmployeePageResponse](docs/models/FormerEmployeeIncomeEmployeePageResponse.md)
- - [FormerEmployeeIncomeEmployeeResponse](docs/models/FormerEmployeeIncomeEmployeeResponse.md)
- - [FormerEmployeeIncomePageResponse](docs/models/FormerEmployeeIncomePageResponse.md)
- - [FormerEmployeeIncomeResponse](docs/models/FormerEmployeeIncomeResponse.md)
- - [HolidayItemResponse](docs/models/HolidayItemResponse.md)
- - [HolidayPageResponse](docs/models/HolidayPageResponse.md)
- - [IdCodeNameResponse](docs/models/IdCodeNameResponse.md)
- - [IdRequest](docs/models/IdRequest.md)
- - [IdResponse](docs/models/IdResponse.md)
- - [IdentityCardPageResponse](docs/models/IdentityCardPageResponse.md)
- - [IdentityCardResponse](docs/models/IdentityCardResponse.md)
- - [InstitutionPageResponse](docs/models/InstitutionPageResponse.md)
- - [InstitutionResponse](docs/models/InstitutionResponse.md)
- - [JobLevelPageResponse](docs/models/JobLevelPageResponse.md)
- - [JobLevelRequest](docs/models/JobLevelRequest.md)
- - [JobLevelResponse](docs/models/JobLevelResponse.md)
- - [JobTitleLevelMappingPageResponse](docs/models/JobTitleLevelMappingPageResponse.md)
- - [JobTitleLevelMappingResponse](docs/models/JobTitleLevelMappingResponse.md)
- - [JobTitlePageResponse](docs/models/JobTitlePageResponse.md)
- - [JobTitleRequest](docs/models/JobTitleRequest.md)
- - [JobTitleRequestDeprecated](docs/models/JobTitleRequestDeprecated.md)
- - [JobTitleResponse](docs/models/JobTitleResponse.md)
- - [JobTitleWithJobLevelsResponse](docs/models/JobTitleWithJobLevelsResponse.md)
- - [KppPageResponse](docs/models/KppPageResponse.md)
- - [KppResponse](docs/models/KppResponse.md)
- - [KppSimpleResponse](docs/models/KppSimpleResponse.md)
- - [LeaveBalanceItemResponse](docs/models/LeaveBalanceItemResponse.md)
- - [LeaveBalancePageResponse](docs/models/LeaveBalancePageResponse.md)
- - [LeaveBalanceRequest](docs/models/LeaveBalanceRequest.md)
- - [LocationCreateRequest](docs/models/LocationCreateRequest.md)
- - [LocationGroupPageResponse](docs/models/LocationGroupPageResponse.md)
- - [LocationPageResponse](docs/models/LocationPageResponse.md)
- - [LocationResponse](docs/models/LocationResponse.md)
- - [LogoFileMetadataResponse](docs/models/LogoFileMetadataResponse.md)
- - [ManagerRequest](docs/models/ManagerRequest.md)
- - [MonthlyRecapitulationItemDetailResponse](docs/models/MonthlyRecapitulationItemDetailResponse.md)
- - [MonthlyRecapitulationItemResponse](docs/models/MonthlyRecapitulationItemResponse.md)
- - [MonthlyRecapitulationPageResponse](docs/models/MonthlyRecapitulationPageResponse.md)
- - [MonthlyTaxCalculationSimulatorRequest](docs/models/MonthlyTaxCalculationSimulatorRequest.md)
- - [MonthlyTaxCalculationSimulatorResponse](docs/models/MonthlyTaxCalculationSimulatorResponse.md)
- - [MonthlyTaxDetailPageResponse](docs/models/MonthlyTaxDetailPageResponse.md)
- - [MonthlyTaxDetailResponse](docs/models/MonthlyTaxDetailResponse.md)
- - [MonthlyTaxReportPageResponse](docs/models/MonthlyTaxReportPageResponse.md)
- - [MonthlyTaxReportResponse](docs/models/MonthlyTaxReportResponse.md)
- - [NameResponse](docs/models/NameResponse.md)
- - [NonEmployeeMonthlyTaxCalculationSimulatorResponse](docs/models/NonEmployeeMonthlyTaxCalculationSimulatorResponse.md)
- - [OAuthClientPageResponse](docs/models/OAuthClientPageResponse.md)
- - [OAuthClientResponse](docs/models/OAuthClientResponse.md)
- - [OperationalGroupPageResponse](docs/models/OperationalGroupPageResponse.md)
- - [OrganizationGroupPageResponse](docs/models/OrganizationGroupPageResponse.md)
- - [OrganizationGroupRequest](docs/models/OrganizationGroupRequest.md)
- - [OrganizationHeadPageResponse](docs/models/OrganizationHeadPageResponse.md)
- - [OrganizationHeadResponse](docs/models/OrganizationHeadResponse.md)
- - [OrganizationHierarchyPageResponse](docs/models/OrganizationHierarchyPageResponse.md)
- - [OrganizationHierarchyRequest](docs/models/OrganizationHierarchyRequest.md)
- - [OrganizationHierarchyResponse](docs/models/OrganizationHierarchyResponse.md)
- - [OrganizationHistoryHierarchyResponse](docs/models/OrganizationHistoryHierarchyResponse.md)
- - [OrganizationHistoryPageResponse](docs/models/OrganizationHistoryPageResponse.md)
- - [OrganizationHistoryResponse](docs/models/OrganizationHistoryResponse.md)
- - [OrganizationPageResponse](docs/models/OrganizationPageResponse.md)
- - [OrganizationParentResponse](docs/models/OrganizationParentResponse.md)
- - [OrganizationRequest](docs/models/OrganizationRequest.md)
- - [OrganizationResponse](docs/models/OrganizationResponse.md)
- - [OrganizationSuperiorPageResponse](docs/models/OrganizationSuperiorPageResponse.md)
- - [OrganizationSuperiorResponse](docs/models/OrganizationSuperiorResponse.md)
- - [OtherLeaveBalanceCreateResponse](docs/models/OtherLeaveBalanceCreateResponse.md)
- - [OtherLeaveBalanceItemResponse](docs/models/OtherLeaveBalanceItemResponse.md)
- - [OtherLeaveBalancePageResponse](docs/models/OtherLeaveBalancePageResponse.md)
- - [OtherLeaveBalanceRequest](docs/models/OtherLeaveBalanceRequest.md)
- - [OtherLeaveStatusResponse](docs/models/OtherLeaveStatusResponse.md)
- - [Page](docs/models/Page.md)
- - [PaygroupPageResponse](docs/models/PaygroupPageResponse.md)
- - [PaygroupResponse](docs/models/PaygroupResponse.md)
- - [PaymentItemDetailResponse](docs/models/PaymentItemDetailResponse.md)
- - [PaymentItemDetailSalaryItemResponse](docs/models/PaymentItemDetailSalaryItemResponse.md)
- - [PaymentItemGroupLastSequenceResponse](docs/models/PaymentItemGroupLastSequenceResponse.md)
- - [PaymentItemGroupPageResponse](docs/models/PaymentItemGroupPageResponse.md)
- - [PaymentItemGroupResponse](docs/models/PaymentItemGroupResponse.md)
- - [PaymentItemGroupSequenceResponse](docs/models/PaymentItemGroupSequenceResponse.md)
- - [PayrollProcessSnapshotBankAccountConfigurationResponse](docs/models/PayrollProcessSnapshotBankAccountConfigurationResponse.md)
- - [PayrollProcessSnapshotBankAccountResponse](docs/models/PayrollProcessSnapshotBankAccountResponse.md)
- - [PayrollProcessSnapshotEmploymentStatusResponse](docs/models/PayrollProcessSnapshotEmploymentStatusResponse.md)
- - [PayrollProcessSnapshotPageResponse](docs/models/PayrollProcessSnapshotPageResponse.md)
- - [PayrollProcessSnapshotResponse](docs/models/PayrollProcessSnapshotResponse.md)
- - [PayrollProcessSnapshotWorkflowActivityResponse](docs/models/PayrollProcessSnapshotWorkflowActivityResponse.md)
- - [PayrollProcessSnapshotWorkflowReasonResponse](docs/models/PayrollProcessSnapshotWorkflowReasonResponse.md)
- - [PayrollProcessSnapshotWorkflowTemplateResponse](docs/models/PayrollProcessSnapshotWorkflowTemplateResponse.md)
- - [PayslipAdditionalNotePageResponse](docs/models/PayslipAdditionalNotePageResponse.md)
- - [PayslipAdditionalNoteRequest](docs/models/PayslipAdditionalNoteRequest.md)
- - [PayslipAdditionalNoteResponse](docs/models/PayslipAdditionalNoteResponse.md)
- - [PayslipDownloadRequest](docs/models/PayslipDownloadRequest.md)
- - [PayslipLayoutPageResponse](docs/models/PayslipLayoutPageResponse.md)
- - [PayslipLayoutRequest](docs/models/PayslipLayoutRequest.md)
- - [PayslipLayoutResponse](docs/models/PayslipLayoutResponse.md)
- - [PermanentMonthlyTaxCalculationSimulatorResponse](docs/models/PermanentMonthlyTaxCalculationSimulatorResponse.md)
- - [PhotoResponse](docs/models/PhotoResponse.md)
- - [PlaceOfBirthRequest](docs/models/PlaceOfBirthRequest.md)
- - [PlaceOfBirthResponse](docs/models/PlaceOfBirthResponse.md)
- - [PointOfHireResponse](docs/models/PointOfHireResponse.md)
- - [PositionCostCenterPageResponse](docs/models/PositionCostCenterPageResponse.md)
- - [PositionCostCenterResponse](docs/models/PositionCostCenterResponse.md)
- - [PositionHistoryOrganizationResponse](docs/models/PositionHistoryOrganizationResponse.md)
- - [PositionHistoryPageResponse](docs/models/PositionHistoryPageResponse.md)
- - [PositionHistoryResponse](docs/models/PositionHistoryResponse.md)
- - [PositionListItemResponse](docs/models/PositionListItemResponse.md)
- - [PositionPageResponse](docs/models/PositionPageResponse.md)
- - [PositionResponse](docs/models/PositionResponse.md)
- - [PositionVacancyStatusPageResponse](docs/models/PositionVacancyStatusPageResponse.md)
- - [PositionVacancyStatusResponse](docs/models/PositionVacancyStatusResponse.md)
- - [Pph21PolicyResponse](docs/models/Pph21PolicyResponse.md)
- - [ProcessableTimeAllowanceTransitionEmployeeResponse](docs/models/ProcessableTimeAllowanceTransitionEmployeeResponse.md)
- - [ProcessableTimeAllowanceTransitionEmploymentStatusResponse](docs/models/ProcessableTimeAllowanceTransitionEmploymentStatusResponse.md)
- - [ProcessableTimeAllowanceTransitionPageResponse](docs/models/ProcessableTimeAllowanceTransitionPageResponse.md)
- - [ProcessableTimeAllowanceTransitionResponse](docs/models/ProcessableTimeAllowanceTransitionResponse.md)
- - [ProcessedSalaryPaymentDetailResponse](docs/models/ProcessedSalaryPaymentDetailResponse.md)
- - [ProcessedSalaryPaymentPageResponse](docs/models/ProcessedSalaryPaymentPageResponse.md)
- - [ProcessedSalaryPaymentResponse](docs/models/ProcessedSalaryPaymentResponse.md)
- - [ProcessedTransitionCalculationPageResponse](docs/models/ProcessedTransitionCalculationPageResponse.md)
- - [ProcessedTransitionCalculationResponse](docs/models/ProcessedTransitionCalculationResponse.md)
- - [ProrateDetailResponse](docs/models/ProrateDetailResponse.md)
- - [ProrateDetailSalaryTemplateDetailResponse](docs/models/ProrateDetailSalaryTemplateDetailResponse.md)
- - [ProrateDetailSalaryTemplateDetailSalaryItemResponse](docs/models/ProrateDetailSalaryTemplateDetailSalaryItemResponse.md)
- - [PtkpCategoryPageResponse](docs/models/PtkpCategoryPageResponse.md)
- - [PtkpCategoryResponse](docs/models/PtkpCategoryResponse.md)
- - [RecurringConfigurationRequest](docs/models/RecurringConfigurationRequest.md)
- - [RecurringConfigurationResponse](docs/models/RecurringConfigurationResponse.md)
- - [RecurringPeriodEndRequest](docs/models/RecurringPeriodEndRequest.md)
- - [RecurringPeriodEndResponse](docs/models/RecurringPeriodEndResponse.md)
- - [RejectApprovalRequest](docs/models/RejectApprovalRequest.md)
- - [ReligionPageResponse](docs/models/ReligionPageResponse.md)
- - [ReligionRequest](docs/models/ReligionRequest.md)
- - [ReligionResponse](docs/models/ReligionResponse.md)
- - [RoleAuthorityPageResponse](docs/models/RoleAuthorityPageResponse.md)
- - [RoleAuthorityResponse](docs/models/RoleAuthorityResponse.md)
- - [RoleDetailResponse](docs/models/RoleDetailResponse.md)
- - [RoleIdNameResponse](docs/models/RoleIdNameResponse.md)
- - [RolePageResponse](docs/models/RolePageResponse.md)
- - [RolePermissionPageResponse](docs/models/RolePermissionPageResponse.md)
- - [RolePermissionResponse](docs/models/RolePermissionResponse.md)
- - [RoleResponse](docs/models/RoleResponse.md)
- - [SalaryCalculationDetailPageResponse](docs/models/SalaryCalculationDetailPageResponse.md)
- - [SalaryCalculationDetailResponse](docs/models/SalaryCalculationDetailResponse.md)
- - [SalaryCalculationPageResponse](docs/models/SalaryCalculationPageResponse.md)
- - [SalaryCalculationResponse](docs/models/SalaryCalculationResponse.md)
- - [SalaryItemAddOnEmployeeRequest](docs/models/SalaryItemAddOnEmployeeRequest.md)
- - [SalaryItemAddOnEmployeeResponse](docs/models/SalaryItemAddOnEmployeeResponse.md)
- - [SalaryItemAddOnRequest](docs/models/SalaryItemAddOnRequest.md)
- - [SalaryItemAddOnResponse](docs/models/SalaryItemAddOnResponse.md)
- - [SalaryItemAddOnSalaryItemRequest](docs/models/SalaryItemAddOnSalaryItemRequest.md)
- - [SalaryItemPageResponse](docs/models/SalaryItemPageResponse.md)
- - [SalaryItemResponse](docs/models/SalaryItemResponse.md)
- - [SalaryItemResponseWithCategory](docs/models/SalaryItemResponseWithCategory.md)
- - [SalaryItemSimpleResponse](docs/models/SalaryItemSimpleResponse.md)
- - [SalaryItemWithSalaryItemTypeResponse](docs/models/SalaryItemWithSalaryItemTypeResponse.md)
- - [SalaryPaymentDetailCompanyBankAccountResponse](docs/models/SalaryPaymentDetailCompanyBankAccountResponse.md)
- - [SalaryPaymentDetailResponse](docs/models/SalaryPaymentDetailResponse.md)
- - [SalaryPaymentEmployeeResponse](docs/models/SalaryPaymentEmployeeResponse.md)
- - [SalaryPaymentEmploymentStatusResponse](docs/models/SalaryPaymentEmploymentStatusResponse.md)
- - [SalaryPaymentPageResponse](docs/models/SalaryPaymentPageResponse.md)
- - [SalaryPaymentResponse](docs/models/SalaryPaymentResponse.md)
- - [SalaryPaymentSummaryCompanyBankAccountResponse](docs/models/SalaryPaymentSummaryCompanyBankAccountResponse.md)
- - [SalaryPaymentSummaryPageResponse](docs/models/SalaryPaymentSummaryPageResponse.md)
- - [SalaryPaymentSummaryResponse](docs/models/SalaryPaymentSummaryResponse.md)
- - [SalaryTemplateDetailResponse](docs/models/SalaryTemplateDetailResponse.md)
- - [SalaryTemplatePageResponse](docs/models/SalaryTemplatePageResponse.md)
- - [SalaryTemplateResponse](docs/models/SalaryTemplateResponse.md)
- - [SeverancePaymentPlanPageResponse](docs/models/SeverancePaymentPlanPageResponse.md)
- - [SeverancePaymentPlanResponse](docs/models/SeverancePaymentPlanResponse.md)
- - [SeverancePlanDetailItemRequest](docs/models/SeverancePlanDetailItemRequest.md)
- - [SeverancePlanDetailResponse](docs/models/SeverancePlanDetailResponse.md)
- - [SeverancePlanPageResponse](docs/models/SeverancePlanPageResponse.md)
- - [SeverancePlanPaymentPlanItemRequest](docs/models/SeverancePlanPaymentPlanItemRequest.md)
- - [SeverancePlanRequest](docs/models/SeverancePlanRequest.md)
- - [SeverancePlanResponse](docs/models/SeverancePlanResponse.md)
- - [SeverancePlanResponseWithDetail](docs/models/SeverancePlanResponseWithDetail.md)
- - [ShiftPatternTemplateDetailItemRequest](docs/models/ShiftPatternTemplateDetailItemRequest.md)
- - [ShiftPatternTemplateDetailItemRequestShift](docs/models/ShiftPatternTemplateDetailItemRequestShift.md)
- - [ShiftPatternTemplateDetailResponse](docs/models/ShiftPatternTemplateDetailResponse.md)
- - [ShiftPatternTemplateItemResponse](docs/models/ShiftPatternTemplateItemResponse.md)
- - [ShiftPatternTemplateListItemResponse](docs/models/ShiftPatternTemplateListItemResponse.md)
- - [ShiftPatternTemplatePageResponse](docs/models/ShiftPatternTemplatePageResponse.md)
- - [ShiftPatternTemplateRequest](docs/models/ShiftPatternTemplateRequest.md)
- - [ShiftPatternTemplateSimpleResponse](docs/models/ShiftPatternTemplateSimpleResponse.md)
- - [ShiftResponse](docs/models/ShiftResponse.md)
- - [SortProperty](docs/models/SortProperty.md)
- - [StateListItemResponse](docs/models/StateListItemResponse.md)
- - [StatePageResponse](docs/models/StatePageResponse.md)
- - [StateRequest](docs/models/StateRequest.md)
- - [StateResponse](docs/models/StateResponse.md)
- - [SubLocationLocationResponse](docs/models/SubLocationLocationResponse.md)
- - [SubLocationPageResponse](docs/models/SubLocationPageResponse.md)
- - [SubLocationRequest](docs/models/SubLocationRequest.md)
- - [SubLocationResponse](docs/models/SubLocationResponse.md)
- - [TaxAmountResponse](docs/models/TaxAmountResponse.md)
- - [TaxAndAllowanceResponse](docs/models/TaxAndAllowanceResponse.md)
- - [TaxCalculationDetailResponse](docs/models/TaxCalculationDetailResponse.md)
- - [TaxCalculationIncomeRequest](docs/models/TaxCalculationIncomeRequest.md)
- - [TaxCalculationPageResponse](docs/models/TaxCalculationPageResponse.md)
- - [TaxCalculationRequest](docs/models/TaxCalculationRequest.md)
- - [TaxCalculationResponse](docs/models/TaxCalculationResponse.md)
- - [TaxDependentRequest](docs/models/TaxDependentRequest.md)
- - [TaxDependentResponse](docs/models/TaxDependentResponse.md)
- - [TaxIncomeResponse](docs/models/TaxIncomeResponse.md)
- - [TaxMembershipHistoryResponse](docs/models/TaxMembershipHistoryResponse.md)
- - [TaxMembershipPeriodResponse](docs/models/TaxMembershipPeriodResponse.md)
- - [TaxMembershipResponse](docs/models/TaxMembershipResponse.md)
- - [TaxMembershipTaxSubjectRequest](docs/models/TaxMembershipTaxSubjectRequest.md)
- - [TaxReport1721A1PageResponse](docs/models/TaxReport1721A1PageResponse.md)
- - [TaxReport1721A1Response](docs/models/TaxReport1721A1Response.md)
- - [TaxReport1721VIDetailResponse](docs/models/TaxReport1721VIDetailResponse.md)
- - [TaxReport1721VIIIPageResponse](docs/models/TaxReport1721VIIIPageResponse.md)
- - [TaxReport1721VIIIResponse](docs/models/TaxReport1721VIIIResponse.md)
- - [TaxReport1721VIIPageResponse](docs/models/TaxReport1721VIIPageResponse.md)
- - [TaxReport1721VIIResponse](docs/models/TaxReport1721VIIResponse.md)
- - [TaxReport1721VIPageResponse](docs/models/TaxReport1721VIPageResponse.md)
- - [TaxReport1721VIResponse](docs/models/TaxReport1721VIResponse.md)
- - [TemporaryMonthlyTaxCalculationSimulatorResponse](docs/models/TemporaryMonthlyTaxCalculationSimulatorResponse.md)
- - [TerminationBPJSManpowerReasonPageResponse](docs/models/TerminationBPJSManpowerReasonPageResponse.md)
- - [TerminationBPJSManpowerReasonResponse](docs/models/TerminationBPJSManpowerReasonResponse.md)
- - [TerminationEntryRequest](docs/models/TerminationEntryRequest.md)
- - [TerminationEntryResponse](docs/models/TerminationEntryResponse.md)
- - [TerminationReasonCategoryPageResponse](docs/models/TerminationReasonCategoryPageResponse.md)
- - [TerminationReasonCategoryResponse](docs/models/TerminationReasonCategoryResponse.md)
- - [TerminationReasonDetailResponse](docs/models/TerminationReasonDetailResponse.md)
- - [TerminationReasonPageResponse](docs/models/TerminationReasonPageResponse.md)
- - [TerminationReasonRequest](docs/models/TerminationReasonRequest.md)
- - [TerminationReasonResponse](docs/models/TerminationReasonResponse.md)
- - [TerminationTaxReasonPageResponse](docs/models/TerminationTaxReasonPageResponse.md)
- - [TerminationTaxReasonResponse](docs/models/TerminationTaxReasonResponse.md)
- - [TimeAllowanceDetailResponse](docs/models/TimeAllowanceDetailResponse.md)
- - [TimeAllowanceDetailsResponse](docs/models/TimeAllowanceDetailsResponse.md)
- - [TimeZoneResponse](docs/models/TimeZoneResponse.md)
- - [TransitionCalculationCountResponse](docs/models/TransitionCalculationCountResponse.md)
- - [TransitionCalculationDetailsAmountRequest](docs/models/TransitionCalculationDetailsAmountRequest.md)
- - [TransitionCalculationDetailsRequest](docs/models/TransitionCalculationDetailsRequest.md)
- - [TransitionCalculationEmployeeSalaryTemplateResponse](docs/models/TransitionCalculationEmployeeSalaryTemplateResponse.md)
- - [TransitionCalculationResponse](docs/models/TransitionCalculationResponse.md)
- - [TransitionCalculationSalaryTemplateDetailResponse](docs/models/TransitionCalculationSalaryTemplateDetailResponse.md)
- - [TransitionTimeAllowanceDetailResponse](docs/models/TransitionTimeAllowanceDetailResponse.md)
- - [UnprocessableContentResponse](docs/models/UnprocessableContentResponse.md)
- - [UnprocessableMessage](docs/models/UnprocessableMessage.md)
- - [UnprocessedTransitionCalculationPageResponse](docs/models/UnprocessedTransitionCalculationPageResponse.md)
- - [UnprocessedTransitionCalculationResponse](docs/models/UnprocessedTransitionCalculationResponse.md)
- - [UpdateBankAccountConfigurationRequest](docs/models/UpdateBankAccountConfigurationRequest.md)
- - [UserAndRoleResponse](docs/models/UserAndRoleResponse.md)
- - [UserPageResponse](docs/models/UserPageResponse.md)
- - [UserResponse](docs/models/UserResponse.md)
- - [WidgetContentResponse](docs/models/WidgetContentResponse.md)
- - [WidgetPageResponse](docs/models/WidgetPageResponse.md)
- - [WidgetResponse](docs/models/WidgetResponse.md)
- - [WorkdayConfigurationDetailResponse](docs/models/WorkdayConfigurationDetailResponse.md)
- - [WorkflowActivityPageResponse](docs/models/WorkflowActivityPageResponse.md)
- - [WorkflowActivityResponse](docs/models/WorkflowActivityResponse.md)
- - [WorkflowReasonCategoryPageResponse](docs/models/WorkflowReasonCategoryPageResponse.md)
- - [WorkflowReasonCategoryRequest](docs/models/WorkflowReasonCategoryRequest.md)
- - [WorkflowReasonCategoryResponse](docs/models/WorkflowReasonCategoryResponse.md)
- - [WorkflowReasonPageResponse](docs/models/WorkflowReasonPageResponse.md)
- - [WorkflowReasonRequest](docs/models/WorkflowReasonRequest.md)
- - [WorkflowReasonResponse](docs/models/WorkflowReasonResponse.md)
- - [WorkflowTemplateResponse](docs/models/WorkflowTemplateResponse.md)
- - [WorkgroupWorkdayConfigurationPageResponse](docs/models/WorkgroupWorkdayConfigurationPageResponse.md)
- - [WorkgroupWorkdayConfigurationRequest](docs/models/WorkgroupWorkdayConfigurationRequest.md)
- - [WorkgroupWorkdayConfigurationResponse](docs/models/WorkgroupWorkdayConfigurationResponse.md)
+#### [AnomalyDetectionApi](docs/AnomalyDetectionApi.md)
 
+- [`read_anomaly_suspect()`](docs/AnomalyDetectionApi.md#read_anomaly_suspect) - Read Anomaly Suspects
+- [`read_anomaly_suspect_by_id()`](docs/AnomalyDetectionApi.md#read_anomaly_suspect_by_id) - Read Anomaly Suspect By Id
 
+#### [BankAccountConfigurationApi](docs/BankAccountConfigurationApi.md)
+
+- [`approve_approval()`](docs/BankAccountConfigurationApi.md#approve_approval) - Update Bank Account Configuration
+- [`cancel_approval()`](docs/BankAccountConfigurationApi.md#cancel_approval) - Cancel Bank Account Configuration
+- [`create_bank_account_configuration_approval()`](docs/BankAccountConfigurationApi.md#create_bank_account_configuration_approval) - Create Bank Account Configuration Approval
+- [`get_bank_account_configuration_by_id()`](docs/BankAccountConfigurationApi.md#get_bank_account_configuration_by_id) - Get Bank Account Configuration by Id
+- [`get_bank_account_configurations()`](docs/BankAccountConfigurationApi.md#get_bank_account_configurations) - Get all bank account configurations
+- [`reject_approval()`](docs/BankAccountConfigurationApi.md#reject_approval) - Reject Bank Account Configuration
+- [`undo()`](docs/BankAccountConfigurationApi.md#undo) - Undo Bank Account Configuration
+- [`update_bank_account_configuration_approval()`](docs/BankAccountConfigurationApi.md#update_bank_account_configuration_approval) - Update Bank Account Configuration Approval
+
+#### [BpjsHealthcareApi](docs/BpjsHealthcareApi.md)
+
+- [`download_bpjs_healthcare_payment_details_report()`](docs/BpjsHealthcareApi.md#download_bpjs_healthcare_payment_details_report) - Download BPJS Healthcare Payment Details Report
+- [`download_e_dabu_advance_member_report()`](docs/BpjsHealthcareApi.md#download_e_dabu_advance_member_report) - Download E-Dabu Advance Member Report
+- [`download_e_dabu_employee_identity_card_member_check_report()`](docs/BpjsHealthcareApi.md#download_e_dabu_employee_identity_card_member_check_report) - Download E-Dabu Employee Identity Card Member Check Report
+- [`download_e_dabu_new_member_report()`](docs/BpjsHealthcareApi.md#download_e_dabu_new_member_report) - Download E-Dabu New Member Report
+- [`download_e_dabu_wage_update_report()`](docs/BpjsHealthcareApi.md#download_e_dabu_wage_update_report) - Download E-Dabu Wage Update Report
+- [`get_bpjs_healthcare_premium_summaries()`](docs/BpjsHealthcareApi.md#get_bpjs_healthcare_premium_summaries) - Get BPJS Healthcare Premium Summaries
+- [`get_bpjs_healthcare_premium_summary_details()`](docs/BpjsHealthcareApi.md#get_bpjs_healthcare_premium_summary_details) - Get BPJS Healthcare Premium Summary Details
+- [`get_bpjs_healthcare_providers()`](docs/BpjsHealthcareApi.md#get_bpjs_healthcare_providers) - Get BPJS Healthcare Providers
+- [`get_bpjs_healthcare_templates()`](docs/BpjsHealthcareApi.md#get_bpjs_healthcare_templates) - Get BPJS Healthcare Templates
+
+#### [BpjsManpowerApi](docs/BpjsManpowerApi.md)
+
+- [`download_bpjs_manpower_payment_details_report()`](docs/BpjsManpowerApi.md#download_bpjs_manpower_payment_details_report) - Download BPJS Manpower Payment Details Report
+- [`download_pension_debt_report()`](docs/BpjsManpowerApi.md#download_pension_debt_report) - Download Pension Debt Report
+- [`download_sipp_advance_member_report()`](docs/BpjsManpowerApi.md#download_sipp_advance_member_report) - Download SIPP Advance Member Report
+- [`download_sipp_new_member_report()`](docs/BpjsManpowerApi.md#download_sipp_new_member_report) - Download SIPP New Member Report
+- [`download_sipp_terminated_member_report()`](docs/BpjsManpowerApi.md#download_sipp_terminated_member_report) - Download SIPP Terminated Member Report
+- [`download_sipp_wage_update_report()`](docs/BpjsManpowerApi.md#download_sipp_wage_update_report) - Download SIPP Wage Update Report
+- [`get_bpjs_manpower_premium_summaries()`](docs/BpjsManpowerApi.md#get_bpjs_manpower_premium_summaries) - Get BPJS Manpower Premium Summaries
+- [`get_bpjs_manpower_premium_summary_details()`](docs/BpjsManpowerApi.md#get_bpjs_manpower_premium_summary_details) - Get BPJS Manpower Premium Summary Details
+- [`get_bpjs_manpower_providers()`](docs/BpjsManpowerApi.md#get_bpjs_manpower_providers) - Get BPJS Manpower Providers
+- [`get_bpjs_manpower_templates()`](docs/BpjsManpowerApi.md#get_bpjs_manpower_templates) - Get BPJS Manpower Templates
+
+#### [CompanyBankAccountApi](docs/CompanyBankAccountApi.md)
+
+- [`get_company_bank_accounts()`](docs/CompanyBankAccountApi.md#get_company_bank_accounts) - Get Company Bank Accounts
+
+#### [ContactInformationApi](docs/ContactInformationApi.md)
+
+- [`get_contact_information()`](docs/ContactInformationApi.md#get_contact_information) - Get Contact Information
+- [`get_historical_contact_information()`](docs/ContactInformationApi.md#get_historical_contact_information) - Get Historical Contact Information
+- [`update_contact_information()`](docs/ContactInformationApi.md#update_contact_information) - Update Contact Information
+
+#### [CustomTableApi](docs/CustomTableApi.md)
+
+- [`find_custom_table_by_id()`](docs/CustomTableApi.md#find_custom_table_by_id) - Find Custom Table by Table ID
+- [`get_custom_tables()`](docs/CustomTableApi.md#get_custom_tables) - Get Custom Tables
+
+#### [CustomTableEntryApi](docs/CustomTableEntryApi.md)
+
+- [`create_entry()`](docs/CustomTableEntryApi.md#create_entry) - Create a new entry in a custom table
+- [`find_all_entries()`](docs/CustomTableEntryApi.md#find_all_entries) - Retrieve all entries for a custom table, with response structure varying based on the custom table columns
+- [`update_entry()`](docs/CustomTableEntryApi.md#update_entry) - Update an entry in a custom table
+
+#### [EditableSalaryPreprocessApi](docs/EditableSalaryPreprocessApi.md)
+
+- [`preprocess_editable_salary()`](docs/EditableSalaryPreprocessApi.md#preprocess_editable_salary) - Preprocess editable salary
+
+#### [EmployeeApi](docs/EmployeeApi.md)
+
+- [`add_employee()`](docs/EmployeeApi.md#add_employee) - Add Employee
+- [`delete_employee()`](docs/EmployeeApi.md#delete_employee) - Delete Employee
+- [`get_additional_assignment_approvals()`](docs/EmployeeApi.md#get_additional_assignment_approvals) - List All Additional Assignment Approvals
+- [`get_employee_hiring_data()`](docs/EmployeeApi.md#get_employee_hiring_data) - Get Employee Hiring Data
+- [`get_employees()`](docs/EmployeeApi.md#get_employees) - Get Employees
+- [`update_employee_hiring_data()`](docs/EmployeeApi.md#update_employee_hiring_data) - Update Employee Hiring Data
+- [`update_manager()`](docs/EmployeeApi.md#update_manager) - Update Manager
+
+#### [EmployeeBankAccountConfigurationApi](docs/EmployeeBankAccountConfigurationApi.md)
+
+- [`get_employee_bank_account_configuration()`](docs/EmployeeBankAccountConfigurationApi.md#get_employee_bank_account_configuration) - Get Employee Bank Account Configuration
+- [`get_employee_bank_account_configuration_histories()`](docs/EmployeeBankAccountConfigurationApi.md#get_employee_bank_account_configuration_histories) - Get Employee Bank Account Configuration Histories
+- [`update_bank_account_configuration()`](docs/EmployeeBankAccountConfigurationApi.md#update_bank_account_configuration) - Update Bank Account Configuration
+
+#### [EmployeeBpjsMembershipApi](docs/EmployeeBpjsMembershipApi.md)
+
+- [`get_bpjs_healthcare_membership()`](docs/EmployeeBpjsMembershipApi.md#get_bpjs_healthcare_membership) - Get BPJS Healthcare Membership
+- [`get_bpjs_manpower_membership()`](docs/EmployeeBpjsMembershipApi.md#get_bpjs_manpower_membership) - Get BPJS Manpower Membership
+- [`update_bpjs_healthcare_membership()`](docs/EmployeeBpjsMembershipApi.md#update_bpjs_healthcare_membership) - Update BPJS Healthcare Membership
+- [`update_bpjs_manpower_membership()`](docs/EmployeeBpjsMembershipApi.md#update_bpjs_manpower_membership) - Update BPJS Manpower Membership
+
+#### [EmployeeDetailApi](docs/EmployeeDetailApi.md)
+
+- [`get_employee_detail()`](docs/EmployeeDetailApi.md#get_employee_detail) - Get Employee Detail
+- [`get_historical_employee_details()`](docs/EmployeeDetailApi.md#get_historical_employee_details) - Get Historical Employee Details
+- [`update_employee_detail()`](docs/EmployeeDetailApi.md#update_employee_detail) - Update Employee Detail
+
+#### [EmployeePaygroupApi](docs/EmployeePaygroupApi.md)
+
+- [`get_employee_paygroup_by_id()`](docs/EmployeePaygroupApi.md#get_employee_paygroup_by_id) - Get Employee Paygroup by ID
+- [`get_employee_paygroups()`](docs/EmployeePaygroupApi.md#get_employee_paygroups) - Get Employee Paygroups
+
+#### [EmployeePaymentItemGroupSequenceApi](docs/EmployeePaymentItemGroupSequenceApi.md)
+
+- [`get_last_sequence_employee()`](docs/EmployeePaymentItemGroupSequenceApi.md#get_last_sequence_employee) - Get Last Payment Item Group Sequence
+- [`get_payment_item_group_sequences()`](docs/EmployeePaymentItemGroupSequenceApi.md#get_payment_item_group_sequences) - Get Payment Item Group Sequences
+
+#### [EmployeeSalaryTemplateApi](docs/EmployeeSalaryTemplateApi.md)
+
+- [`createor_update_employee_salary_template()`](docs/EmployeeSalaryTemplateApi.md#createor_update_employee_salary_template) - Create or Update Employee Salary Template
+- [`get_effective_employee_salary_template()`](docs/EmployeeSalaryTemplateApi.md#get_effective_employee_salary_template) - Get Effective Employee Salary Template
+- [`get_latest_employee_salary_template()`](docs/EmployeeSalaryTemplateApi.md#get_latest_employee_salary_template) - Get Latest Employee Salary Template
+
+#### [EmployeeVariableApi](docs/EmployeeVariableApi.md)
+
+- [`create_employee_variable()`](docs/EmployeeVariableApi.md#create_employee_variable) - Create Employee Variable
+- [`create_employee_variable_metadata()`](docs/EmployeeVariableApi.md#create_employee_variable_metadata) - Create Employee Variable Metadata
+- [`create_or_update_employee_variables()`](docs/EmployeeVariableApi.md#create_or_update_employee_variables) - Create or Update Employee Variables
+- [`delete_all_aperiodic_employee_variables()`](docs/EmployeeVariableApi.md#delete_all_aperiodic_employee_variables) - Delete All Aperiodic Employee Variables
+- [`delete_employee_variable_metadata()`](docs/EmployeeVariableApi.md#delete_employee_variable_metadata) - Delete Employee Variable Metadata
+- [`delete_employee_variables()`](docs/EmployeeVariableApi.md#delete_employee_variables) - Delete Employee Variables
+- [`get_aperiodic_employee_variables()`](docs/EmployeeVariableApi.md#get_aperiodic_employee_variables) - Get Aperiodic Employee Variables
+- [`get_employee_variable_by_id()`](docs/EmployeeVariableApi.md#get_employee_variable_by_id) - Get Employee Variable By Id
+- [`get_employee_variable_metadata()`](docs/EmployeeVariableApi.md#get_employee_variable_metadata) - Get Employee Variable Metadata
+- [`get_employee_variable_metadata_by_id()`](docs/EmployeeVariableApi.md#get_employee_variable_metadata_by_id) - Get Employee Variable Metadata By Id
+- [`get_employee_variables()`](docs/EmployeeVariableApi.md#get_employee_variables) - Get Employee Variables
+- [`get_periodic_employee_variables()`](docs/EmployeeVariableApi.md#get_periodic_employee_variables) - Get Periodic Employee Variables
+- [`update_employee_variable_by_id()`](docs/EmployeeVariableApi.md#update_employee_variable_by_id) - Update Employee Variable By Id
+- [`update_employee_variable_metadata()`](docs/EmployeeVariableApi.md#update_employee_variable_metadata) - Update Employee Variable Metadata
+
+#### [EmploymentStatusApi](docs/EmploymentStatusApi.md)
+
+- [`get_employment_status_by_employee()`](docs/EmploymentStatusApi.md#get_employment_status_by_employee) - Get Employment Status by Employee
+- [`get_employment_status_histories()`](docs/EmploymentStatusApi.md#get_employment_status_histories) - Get Employment Status Histories
+- [`get_employment_statuses()`](docs/EmploymentStatusApi.md#get_employment_statuses) - Get Employment Statuses
+- [`update_employment_status_by_employee()`](docs/EmploymentStatusApi.md#update_employment_status_by_employee) - Update Employment Status by Employee
+
+#### [FamiliesApi](docs/FamiliesApi.md)
+
+- [`approve_family_by_employee()`](docs/FamiliesApi.md#approve_family_by_employee) - Approve Families
+- [`create_family_by_employee()`](docs/FamiliesApi.md#create_family_by_employee) - Create Family By Employee
+- [`delete_family_by_employee()`](docs/FamiliesApi.md#delete_family_by_employee) - Delete Family
+- [`get_families()`](docs/FamiliesApi.md#get_families) - Get Families
+- [`get_family_by_employee()`](docs/FamiliesApi.md#get_family_by_employee) - List All Families
+- [`get_job_experiences_by_employeeand_id()`](docs/FamiliesApi.md#get_job_experiences_by_employeeand_id) - Get Family
+- [`reject_familiesby_employee()`](docs/FamiliesApi.md#reject_familiesby_employee) - Reject Families
+- [`update_family_by_employee()`](docs/FamiliesApi.md#update_family_by_employee) - Update Family By Employee
+
+#### [FormerEmployeeIncomeApi](docs/FormerEmployeeIncomeApi.md)
+
+- [`get_former_employee_income_by_id()`](docs/FormerEmployeeIncomeApi.md#get_former_employee_income_by_id) - Get Former Employee Income By Id
+- [`get_former_employee_income_employee()`](docs/FormerEmployeeIncomeApi.md#get_former_employee_income_employee) - Get Former Employee Income Employee
+- [`get_former_employee_income_employee_by_former_employee_income_id()`](docs/FormerEmployeeIncomeApi.md#get_former_employee_income_employee_by_former_employee_income_id) - Get Former Employee Income Employee By Former Employee Income Id
+- [`get_former_employee_incomes()`](docs/FormerEmployeeIncomeApi.md#get_former_employee_incomes) - Get Former Employee Incomes
+- [`update_former_employee_income_employee_by_former_employee_income_id()`](docs/FormerEmployeeIncomeApi.md#update_former_employee_income_employee_by_former_employee_income_id) - Update Former Employee Income Employee By Former Employee Income Id
+
+#### [IdentityCardsApi](docs/IdentityCardsApi.md)
+
+- [`create_employee_identity_cards()`](docs/IdentityCardsApi.md#create_employee_identity_cards) - Create Employee Identity Cards
+- [`delete_employee_identity_cards()`](docs/IdentityCardsApi.md#delete_employee_identity_cards) - Delete Employee Identity Cards
+- [`get_employee_identity_cards()`](docs/IdentityCardsApi.md#get_employee_identity_cards) - Get Employee Identity Cards
+- [`update_employee_identity_cards()`](docs/IdentityCardsApi.md#update_employee_identity_cards) - Update Employee Identity Cards
+
+#### [MasterDataApi](docs/MasterDataApi.md)
+
+- [`create_city()`](docs/MasterDataApi.md#create_city) - Create City
+- [`create_country()`](docs/MasterDataApi.md#create_country) - Create Country
+- [`create_employment_type()`](docs/MasterDataApi.md#create_employment_type) - Create Employment Type
+- [`create_religion()`](docs/MasterDataApi.md#create_religion) - Create Religion
+- [`get_bank_branches()`](docs/MasterDataApi.md#get_bank_branches) - Get Bank Branches
+- [`get_banks()`](docs/MasterDataApi.md#get_banks) - Get Banks
+- [`get_cities()`](docs/MasterDataApi.md#get_cities) - Get Cities
+- [`get_countries()`](docs/MasterDataApi.md#get_countries) - Get Countries
+- [`get_currencies()`](docs/MasterDataApi.md#get_currencies) - Get Currencies
+- [`get_education_levels()`](docs/MasterDataApi.md#get_education_levels) - Get Education Levels
+- [`get_employment_status_types()`](docs/MasterDataApi.md#get_employment_status_types) - Get Employment Status Types
+- [`get_employment_types()`](docs/MasterDataApi.md#get_employment_types) - Get Employment Types
+- [`get_family_relations()`](docs/MasterDataApi.md#get_family_relations) - Get Family Relations
+- [`get_field_of_studies()`](docs/MasterDataApi.md#get_field_of_studies) - Get Field Of Study
+- [`get_historical_educations()`](docs/MasterDataApi.md#get_historical_educations) - Get Historical Educations
+- [`get_identity_card()`](docs/MasterDataApi.md#get_identity_card) - Get Identity Card
+- [`get_institutions()`](docs/MasterDataApi.md#get_institutions) - Get Institutions
+- [`get_religions()`](docs/MasterDataApi.md#get_religions) - Get Religions
+- [`get_states()`](docs/MasterDataApi.md#get_states) - Get States
+- [`update_employment_type()`](docs/MasterDataApi.md#update_employment_type) - Update Employment Type
+
+#### [OauthClientApi](docs/OauthClientApi.md)
+
+- [`get_o_auth_client_by_id()`](docs/OauthClientApi.md#get_o_auth_client_by_id) - Get OAuth Client by ID
+- [`list_all_o_auth_clients()`](docs/OauthClientApi.md#list_all_o_auth_clients) - List All OAuth Clients
+
+#### [OrganizationApi](docs/OrganizationApi.md)
+
+- [`add_sub_location()`](docs/OrganizationApi.md#add_sub_location) - Add Sub Location
+- [`create_company()`](docs/OrganizationApi.md#create_company) - Create Company
+- [`create_cost_center()`](docs/OrganizationApi.md#create_cost_center) - Create Cost Center
+- [`create_job_level()`](docs/OrganizationApi.md#create_job_level) - Create Job Level
+- [`create_job_title()`](docs/OrganizationApi.md#create_job_title) - Create Job Title
+- [`create_job_title_with_job_levels()`](docs/OrganizationApi.md#create_job_title_with_job_levels) - Create Job Title with Job Levels
+- [`create_location()`](docs/OrganizationApi.md#create_location) - Create Location
+- [`create_organization()`](docs/OrganizationApi.md#create_organization) - Create Organization
+- [`create_organization_group()`](docs/OrganizationApi.md#create_organization_group) - Create Organization Group
+- [`create_organization_hierarchies()`](docs/OrganizationApi.md#create_organization_hierarchies) - Create Organization Hierarchies
+- [`delete_sub_location()`](docs/OrganizationApi.md#delete_sub_location) - Delete Sub Location
+- [`get_companies()`](docs/OrganizationApi.md#get_companies) - Get Companies
+- [`get_company()`](docs/OrganizationApi.md#get_company) - Get Company
+- [`get_company_groups()`](docs/OrganizationApi.md#get_company_groups) - Get Company Groups
+- [`get_cost_center()`](docs/OrganizationApi.md#get_cost_center) - Get Cost Center
+- [`get_job_level()`](docs/OrganizationApi.md#get_job_level) - Get Job Level
+- [`get_job_title_job_level_mappings()`](docs/OrganizationApi.md#get_job_title_job_level_mappings) - Get Job Title Job Level Mappings
+- [`get_job_titles()`](docs/OrganizationApi.md#get_job_titles) - Get Job Titles
+- [`get_location_group()`](docs/OrganizationApi.md#get_location_group) - Get Location Group
+- [`get_locations()`](docs/OrganizationApi.md#get_locations) - Get Location
+- [`get_operational_groups()`](docs/OrganizationApi.md#get_operational_groups) - Get Operational Groups
+- [`get_organization_group()`](docs/OrganizationApi.md#get_organization_group) - Get Organization Group
+- [`get_organization_heads()`](docs/OrganizationApi.md#get_organization_heads) - Get Organization Heads
+- [`get_organization_hierarchies()`](docs/OrganizationApi.md#get_organization_hierarchies) - Get Organization Hierarchies
+- [`get_organization_histories()`](docs/OrganizationApi.md#get_organization_histories) - Get Organization Histories
+- [`get_organization_superiors()`](docs/OrganizationApi.md#get_organization_superiors) - Get Organization Superiors
+- [`get_organizations()`](docs/OrganizationApi.md#get_organizations) - Get Organization
+- [`get_position_cost_centers()`](docs/OrganizationApi.md#get_position_cost_centers) - Get Position Cost Centers
+- [`get_position_histories()`](docs/OrganizationApi.md#get_position_histories) - Get Position Histories
+- [`get_position_vacancy_statuses()`](docs/OrganizationApi.md#get_position_vacancy_statuses) - Get Position Vacancy Statuses
+- [`get_positions()`](docs/OrganizationApi.md#get_positions) - Get Positions
+- [`get_sub_locations()`](docs/OrganizationApi.md#get_sub_locations) - Get Sub Location
+- [`update_cost_center()`](docs/OrganizationApi.md#update_cost_center) - Update Cost Center
+
+#### [PaygroupApi](docs/PaygroupApi.md)
+
+- [`get_paygroups()`](docs/PaygroupApi.md#get_paygroups) - Get Paygroups
+
+#### [PayrollOthersApi](docs/PayrollOthersApi.md)
+
+- [`get_additional_income_payments()`](docs/PayrollOthersApi.md#get_additional_income_payments) - Get Additional Income Payments
+- [`get_monthly_recapitulation()`](docs/PayrollOthersApi.md#get_monthly_recapitulation) - Get Monthly Recapitulation
+
+#### [PayrollProcessSnapshotApi](docs/PayrollProcessSnapshotApi.md)
+
+- [`find_payroll_process_snapshots()`](docs/PayrollProcessSnapshotApi.md#find_payroll_process_snapshots) - Find all payroll process snapshots
+
+#### [PayslipApi](docs/PayslipApi.md)
+
+- [`create_or_update_payslip_layout()`](docs/PayslipApi.md#create_or_update_payslip_layout) - Create or Update Payslip Layout
+- [`create_payslip_additional_note()`](docs/PayslipApi.md#create_payslip_additional_note) - Create Payslip Additional Note
+- [`delete_payslip_layout_by_id()`](docs/PayslipApi.md#delete_payslip_layout_by_id) - Delete Payslip Layout By Id
+- [`download_payslip()`](docs/PayslipApi.md#download_payslip) - Download Payslip
+- [`get_payslip_additional_notes()`](docs/PayslipApi.md#get_payslip_additional_notes) - Get Payslip Additional Notes
+- [`get_payslip_layout_by_id()`](docs/PayslipApi.md#get_payslip_layout_by_id) - Get Payslip Layout By Id
+- [`get_payslip_layouts()`](docs/PayslipApi.md#get_payslip_layouts) - Get Payslip Layouts
+- [`update_payslip_additional_note_by_id()`](docs/PayslipApi.md#update_payslip_additional_note_by_id) - Update Payslip Additional Note by Id
+
+#### [RoleApi](docs/RoleApi.md)
+
+- [`get_role_authorities()`](docs/RoleApi.md#get_role_authorities) - Get Role Authorities
+- [`get_role_by_id()`](docs/RoleApi.md#get_role_by_id) - Get Role by ID
+- [`get_role_permissions()`](docs/RoleApi.md#get_role_permissions) - Get Role Permissions
+- [`get_roles()`](docs/RoleApi.md#get_roles) - Get Roles
+
+#### [SalaryCalculationApi](docs/SalaryCalculationApi.md)
+
+- [`get_salary_calculation()`](docs/SalaryCalculationApi.md#get_salary_calculation) - Get Salary Calculation
+- [`get_salary_calculation_details()`](docs/SalaryCalculationApi.md#get_salary_calculation_details) - Get Salary Calculation Details
+- [`get_time_allowance_details_by_salary_calculation_detail()`](docs/SalaryCalculationApi.md#get_time_allowance_details_by_salary_calculation_detail) - Get Time Allowance Details By Salary Calculation Detail
+- [`update_salary_calculation_detail()`](docs/SalaryCalculationApi.md#update_salary_calculation_detail) - Update Salary Calculation Detail
+
+#### [SalaryItemApi](docs/SalaryItemApi.md)
+
+- [`get_salary_item_by_id()`](docs/SalaryItemApi.md#get_salary_item_by_id) - Get Salary Item by ID
+- [`get_salary_items()`](docs/SalaryItemApi.md#get_salary_items) - Get Salary Items
+
+#### [SalaryPaymentApi](docs/SalaryPaymentApi.md)
+
+- [`get_payment_item_groups()`](docs/SalaryPaymentApi.md#get_payment_item_groups) - Get Payment Item Groups
+- [`get_processed_salary_payment_summaries()`](docs/SalaryPaymentApi.md#get_processed_salary_payment_summaries) - Get Processed Salary Payment Summaries
+- [`get_processed_salary_payments()`](docs/SalaryPaymentApi.md#get_processed_salary_payments) - Get Processed Salary Payments
+- [`get_salary_payments()`](docs/SalaryPaymentApi.md#get_salary_payments) - Get Salary Payments
+- [`get_salary_payments_date()`](docs/SalaryPaymentApi.md#get_salary_payments_date) - Get Salary Payments Date
+
+#### [SalaryTemplateApi](docs/SalaryTemplateApi.md)
+
+- [`add_salary_item_add_on()`](docs/SalaryTemplateApi.md#add_salary_item_add_on) - Add Salary Item Add On
+- [`delete_salary_item_add_on()`](docs/SalaryTemplateApi.md#delete_salary_item_add_on) - Delete Salary Item Add On
+- [`get_salary_item_add_on()`](docs/SalaryTemplateApi.md#get_salary_item_add_on) - Get Salary Item Add On
+- [`get_salary_template_by_id()`](docs/SalaryTemplateApi.md#get_salary_template_by_id) - Get Salary Template by ID
+- [`get_salary_templates()`](docs/SalaryTemplateApi.md#get_salary_templates) - Get Salary Templates
+- [`subtract_salary_item_add_on()`](docs/SalaryTemplateApi.md#subtract_salary_item_add_on) - Subtract Salary Item Add On
+- [`update_salary_item_add_on()`](docs/SalaryTemplateApi.md#update_salary_item_add_on) - Update Salary Item Add On
+
+#### [SeveranceApi](docs/SeveranceApi.md)
+
+- [`create_severance_plan()`](docs/SeveranceApi.md#create_severance_plan) - Create Severance Plan
+- [`delete_severance_plans_by_id()`](docs/SeveranceApi.md#delete_severance_plans_by_id) - Delete Severance Plans By Id
+- [`download_severance_slip()`](docs/SeveranceApi.md#download_severance_slip) - Download Severance Slip
+- [`get_severance_payment_plan_by_id()`](docs/SeveranceApi.md#get_severance_payment_plan_by_id) - Get Severance Payment Plan By Id
+- [`get_severance_payment_plans()`](docs/SeveranceApi.md#get_severance_payment_plans) - Get Severance Payment Plans
+- [`get_severance_plans()`](docs/SeveranceApi.md#get_severance_plans) - Get Severance Plans
+- [`get_severance_plans_by_id()`](docs/SeveranceApi.md#get_severance_plans_by_id) - Get Severance Plans By Id
+
+#### [TaxApi](docs/TaxApi.md)
+
+- [`create_tax_calculation()`](docs/TaxApi.md#create_tax_calculation) - Create Tax Calculation
+- [`download1721_a1_report()`](docs/TaxApi.md#download1721_a1_report) - Download 1721 A1 Report
+- [`download1721_vi_report()`](docs/TaxApi.md#download1721_vi_report) - Download 1721 VI Report
+- [`download1721_vi_tax_report()`](docs/TaxApi.md#download1721_vi_tax_report) - Download 1721 VI Report
+- [`download1721_vii_report()`](docs/TaxApi.md#download1721_vii_report) - Download 1721 VII Report
+- [`download1721_vii_tax_report()`](docs/TaxApi.md#download1721_vii_tax_report) - Download 1721 VII Report
+- [`download1721_viii_report()`](docs/TaxApi.md#download1721_viii_report) - Download 1721 VIII Report
+- [`get1721_a1_reports()`](docs/TaxApi.md#get1721_a1_reports) - Get 1721 A1 Reports
+- [`get1721_vi_reports()`](docs/TaxApi.md#get1721_vi_reports) - Get 1721 VI Reports
+- [`get1721_vi_tax_reports()`](docs/TaxApi.md#get1721_vi_tax_reports) - Get 1721 VI Reports
+- [`get1721_vii_reports()`](docs/TaxApi.md#get1721_vii_reports) - Get 1721 VII Reports
+- [`get1721_vii_tax_reports()`](docs/TaxApi.md#get1721_vii_tax_reports) - Get 1721 VII Reports
+- [`get1721_viii_reports()`](docs/TaxApi.md#get1721_viii_reports) - Get 1721 VIII Reports
+- [`get_detailed1721_vi_reports()`](docs/TaxApi.md#get_detailed1721_vi_reports) - Get Detailed 1721 VI Reports
+- [`get_detailed1721_vi_tax_reports()`](docs/TaxApi.md#get_detailed1721_vi_tax_reports) - Get Detailed 1721 VI Reports
+- [`get_kpp()`](docs/TaxApi.md#get_kpp) - Get Kpp
+- [`get_monthly_tax_report()`](docs/TaxApi.md#get_monthly_tax_report) - Get Monthly Tax Report
+- [`get_pph21_policy()`](docs/TaxApi.md#get_pph21_policy) - Get Pph21 Policy
+- [`get_ptkp_categories()`](docs/TaxApi.md#get_ptkp_categories) - Get Ptkp Categories
+- [`get_tax_calculations()`](docs/TaxApi.md#get_tax_calculations) - Get Tax Calculations
+- [`get_tax_calculations_by_external_id()`](docs/TaxApi.md#get_tax_calculations_by_external_id) - Get Tax Calculations By External Id
+- [`get_tax_calculations_by_id()`](docs/TaxApi.md#get_tax_calculations_by_id) - Get Tax Calculations By Id
+- [`monthly_tax_detail_find_all()`](docs/TaxApi.md#monthly_tax_detail_find_all) - GET Monthly Tax Detail
+- [`simulate_annual_tax()`](docs/TaxApi.md#simulate_annual_tax) - Simulate annual tax calculation
+- [`simulate_monthly_tax()`](docs/TaxApi.md#simulate_monthly_tax) - Simulate monthly tax calculation
+- [`undo_tax_calculation_by_id()`](docs/TaxApi.md#undo_tax_calculation_by_id) - Undo Tax Calculation By Id
+- [`undo_tax_calculations_by_external_id()`](docs/TaxApi.md#undo_tax_calculations_by_external_id) - Undo Tax Calculations By External Id
+
+#### [TaxMembershipApi](docs/TaxMembershipApi.md)
+
+- [`get_tax_membership()`](docs/TaxMembershipApi.md#get_tax_membership) - Get Tax Membership
+- [`update_tax_membership()`](docs/TaxMembershipApi.md#update_tax_membership) - Update Tax Membership
+- [`update_tax_membership_tax_subject()`](docs/TaxMembershipApi.md#update_tax_membership_tax_subject) - Update Tax Membership Tax Subject
+
+#### [TaxMembershipHistoryApi](docs/TaxMembershipHistoryApi.md)
+
+- [`get_tax_membership_history()`](docs/TaxMembershipHistoryApi.md#get_tax_membership_history) - Get Tax Membership History
+- [`get_tax_membership_history_by_id()`](docs/TaxMembershipHistoryApi.md#get_tax_membership_history_by_id) - Get Tax Membership History by ID
+- [`update_tax_membership_history_tax_subject()`](docs/TaxMembershipHistoryApi.md#update_tax_membership_history_tax_subject) - Update Tax Membership History Tax Subject
+
+#### [TerminationApi](docs/TerminationApi.md)
+
+- [`create_termination_entry()`](docs/TerminationApi.md#create_termination_entry) - Create Termination Entry
+- [`create_termination_reason()`](docs/TerminationApi.md#create_termination_reason) - Create Termination Reason
+- [`get_termination_bpjs_manpower_reasons()`](docs/TerminationApi.md#get_termination_bpjs_manpower_reasons) - Get Termination BPJS Manpower Reasons
+- [`get_termination_entry()`](docs/TerminationApi.md#get_termination_entry) - Get Termination Entry
+- [`get_termination_reason()`](docs/TerminationApi.md#get_termination_reason) - Get Termination Reason
+- [`get_termination_reason_category()`](docs/TerminationApi.md#get_termination_reason_category) - Get Termination Reason Category
+- [`get_termination_tax_reasons()`](docs/TerminationApi.md#get_termination_tax_reasons) - Get Termination Tax Reasons
+- [`undo_termination_entry()`](docs/TerminationApi.md#undo_termination_entry) - Undo Termination Entry
+- [`update_termination_reason()`](docs/TerminationApi.md#update_termination_reason) - Update Termination Reason
+
+#### [TimeManagementApi](docs/TimeManagementApi.md)
+
+- [`create_attendance_machine_data()`](docs/TimeManagementApi.md#create_attendance_machine_data) - Create Attendance Machine Data
+- [`create_employee_roster_configuration()`](docs/TimeManagementApi.md#create_employee_roster_configuration) - Create Employee Roster Configuration
+- [`create_leave_balance()`](docs/TimeManagementApi.md#create_leave_balance) - Create Leave Balance
+- [`create_other_leave_balance()`](docs/TimeManagementApi.md#create_other_leave_balance) - Create Other Leave Balance
+- [`create_shift_pattern_template()`](docs/TimeManagementApi.md#create_shift_pattern_template) - Create Shift Pattern Template
+- [`create_workgroup_roster_configuration()`](docs/TimeManagementApi.md#create_workgroup_roster_configuration) - Create Workgroup Roster Configuration
+- [`delete_employee_roster_configuration()`](docs/TimeManagementApi.md#delete_employee_roster_configuration) - Delete Employee Roster Configuration
+- [`delete_shift_pattern_template()`](docs/TimeManagementApi.md#delete_shift_pattern_template) - Delete Shift Pattern Template
+- [`delete_workgroup_roster_configuration()`](docs/TimeManagementApi.md#delete_workgroup_roster_configuration) - Delete Workgroup Roster Configuration
+- [`get_attendances()`](docs/TimeManagementApi.md#get_attendances) - Get Attendances
+- [`get_employee_workday_configurations()`](docs/TimeManagementApi.md#get_employee_workday_configurations) - Get Employee Workday Configurations
+- [`get_holidays()`](docs/TimeManagementApi.md#get_holidays) - Get Holidays
+- [`get_leave_balances()`](docs/TimeManagementApi.md#get_leave_balances) - Get Leave Balances
+- [`get_other_leave_balances()`](docs/TimeManagementApi.md#get_other_leave_balances) - Get Other Leave Balances
+- [`get_shift_pattern_templates()`](docs/TimeManagementApi.md#get_shift_pattern_templates) - Get Shift Pattern Templates
+- [`get_workgroup_workday_configurations()`](docs/TimeManagementApi.md#get_workgroup_workday_configurations) - Get Workgroup Workday Configurations
+- [`read_attendance_recapitulation_detail()`](docs/TimeManagementApi.md#read_attendance_recapitulation_detail) - Read Attendance Recapitulation Detail
+- [`read_employee_roster_configuration_by_id()`](docs/TimeManagementApi.md#read_employee_roster_configuration_by_id) - Read Employee Roster Configuration By Id
+- [`read_shift_pattern_template_by_id()`](docs/TimeManagementApi.md#read_shift_pattern_template_by_id) - Read Shift Pattern Template By Id
+- [`read_workgroup_roster_configuration_by_id()`](docs/TimeManagementApi.md#read_workgroup_roster_configuration_by_id) - Read Workgroup Roster Configuration By ID
+- [`update_employee_roster_configuration()`](docs/TimeManagementApi.md#update_employee_roster_configuration) - Update Employee Roster Configuration
+- [`update_shift_pattern_template()`](docs/TimeManagementApi.md#update_shift_pattern_template) - Update Shift Pattern Template
+- [`update_workgroup_roster_configuration()`](docs/TimeManagementApi.md#update_workgroup_roster_configuration) - Update Workgroup Roster Configuration
+
+#### [TransitionCalculationApi](docs/TransitionCalculationApi.md)
+
+- [`get_processable_time_allowance_transition()`](docs/TransitionCalculationApi.md#get_processable_time_allowance_transition) - Get Processable Time Allowance Transition
+- [`get_processable_transition_calculation()`](docs/TransitionCalculationApi.md#get_processable_transition_calculation) - Get Processable Transition Calculation
+- [`get_processed_transition_calculation()`](docs/TransitionCalculationApi.md#get_processed_transition_calculation) - Get Processed Transition Calculation
+- [`get_prorate_details_by_transition_calculation_detail_id()`](docs/TransitionCalculationApi.md#get_prorate_details_by_transition_calculation_detail_id) - Get Prorate Details By Transition Calculation Detail Id
+- [`get_time_allowance_detailsby_transition_calculation_detail_id()`](docs/TransitionCalculationApi.md#get_time_allowance_detailsby_transition_calculation_detail_id) - Get Time Allowance Details by Transition Calculation Detail Id
+- [`get_transition_calculation_count()`](docs/TransitionCalculationApi.md#get_transition_calculation_count) - Get Transition Calculation Count
+- [`get_transition_calculationby_id()`](docs/TransitionCalculationApi.md#get_transition_calculationby_id) - Get Transition Calculation by Id
+- [`update_transition_calculation_details_with_editable_type()`](docs/TransitionCalculationApi.md#update_transition_calculation_details_with_editable_type) - Update Transition Calculation Details With Editable Type
+
+#### [UserApi](docs/UserApi.md)
+
+- [`get_current_user()`](docs/UserApi.md#get_current_user) - Get Current User
+- [`get_users()`](docs/UserApi.md#get_users) - Get Users
+
+#### [WidgetsApi](docs/WidgetsApi.md)
+
+- [`get_widgets_by_current_user()`](docs/WidgetsApi.md#get_widgets_by_current_user) - Get Widgets by Current User
+
+#### [WorkflowApi](docs/WorkflowApi.md)
+
+- [`create_workflow_reason()`](docs/WorkflowApi.md#create_workflow_reason) - Create Workflow Reason
+- [`create_workflow_reason_category()`](docs/WorkflowApi.md#create_workflow_reason_category) - Create Workflow Reason Category
+- [`get_workflow_activity()`](docs/WorkflowApi.md#get_workflow_activity) - Get Workflow Activities
+- [`get_workflow_reason()`](docs/WorkflowApi.md#get_workflow_reason) - Get Workflow Reasons
+- [`get_workflow_reason_category()`](docs/WorkflowApi.md#get_workflow_reason_category) - Get Workflow Reason Categories
+- [`update_workflow_reason()`](docs/WorkflowApi.md#update_workflow_reason) - Update Workflow Reason
+- [`update_workflow_reason_categories()`](docs/WorkflowApi.md#update_workflow_reason_categories) - Update Workflow Reason Category
+
+### Data Models
+
+Complete reference for all data models used in the SDK:
+
+- [AdditionalAssignmentApprovalPageResponse](docs/AdditionalAssignmentApprovalPageResponse.md)
+- [AdditionalAssignmentApprovalResponse](docs/AdditionalAssignmentApprovalResponse.md)
+- [AdditionalAssignmentApprovaleSubLocationResponse](docs/AdditionalAssignmentApprovaleSubLocationResponse.md)
+- [AdditionalAssignmentResponse](docs/AdditionalAssignmentResponse.md)
+- [AdditionalFamilyMembershipResponse](docs/AdditionalFamilyMembershipResponse.md)
+- [AdditionalIncomePaymentListItemResponse](docs/AdditionalIncomePaymentListItemResponse.md)
+- [AdditionalIncomePaymentPageResponse](docs/AdditionalIncomePaymentPageResponse.md)
+- [AddressDetailResponse](docs/AddressDetailResponse.md)
+- [AmountRequest](docs/AmountRequest.md)
+- [AnalyticsChartDataResponse](docs/AnalyticsChartDataResponse.md)
+- [AnalyticsChartDataSeriesResponse](docs/AnalyticsChartDataSeriesResponse.md)
+- [AnalyticsChartPageResponse](docs/AnalyticsChartPageResponse.md)
+- [AnalyticsChartRequest](docs/AnalyticsChartRequest.md)
+- [AnalyticsChartResponse](docs/AnalyticsChartResponse.md)
+- [AnalyticsColorSchemeDetailResponse](docs/AnalyticsColorSchemeDetailResponse.md)
+- [AnalyticsColorSchemeResponse](docs/AnalyticsColorSchemeResponse.md)
+- [AnalyticsColumnResponse](docs/AnalyticsColumnResponse.md)
+- [AnnualTaxCalculationSimulatorMonthlyTaxReportsResponse](docs/AnnualTaxCalculationSimulatorMonthlyTaxReportsResponse.md)
+- [AnnualTaxCalculationSimulatorRequest](docs/AnnualTaxCalculationSimulatorRequest.md)
+- [AnnualTaxCalculationSimulatorResponse](docs/AnnualTaxCalculationSimulatorResponse.md)
+- [AnnualTaxCalculationSimulatorResultResponse](docs/AnnualTaxCalculationSimulatorResultResponse.md)
+- [AnomalySuspectAttributeResponse](docs/AnomalySuspectAttributeResponse.md)
+- [AnomalySuspectAttributeValueChildResponse](docs/AnomalySuspectAttributeValueChildResponse.md)
+- [AnomalySuspectAttributeValueResponse](docs/AnomalySuspectAttributeValueResponse.md)
+- [AnomalySuspectFileResponse](docs/AnomalySuspectFileResponse.md)
+- [AnomalySuspectPageResponse](docs/AnomalySuspectPageResponse.md)
+- [AnomalySuspectResponse](docs/AnomalySuspectResponse.md)
+- [AttendanceItemResponse](docs/AttendanceItemResponse.md)
+- [AttendancePageResponse](docs/AttendancePageResponse.md)
+- [AttendanceRecapitulationDetailAttendanceItemResponse](docs/AttendanceRecapitulationDetailAttendanceItemResponse.md)
+- [AttendanceRecapitulationDetailItemResponse](docs/AttendanceRecapitulationDetailItemResponse.md)
+- [AttendanceRecapitulationDetailOvertimeResponse](docs/AttendanceRecapitulationDetailOvertimeResponse.md)
+- [AttendanceRecapitulationDetailPageResponse](docs/AttendanceRecapitulationDetailPageResponse.md)
+- [AttendanceStatusResponse](docs/AttendanceStatusResponse.md)
+- [AuthorityDetailResponse](docs/AuthorityDetailResponse.md)
+- [BankAccountConfigurationPageResponse](docs/BankAccountConfigurationPageResponse.md)
+- [BankAccountConfigurationRequest](docs/BankAccountConfigurationRequest.md)
+- [BankAccountConfigurationResponse](docs/BankAccountConfigurationResponse.md)
+- [BankAccountConfigurationResponseSource](docs/BankAccountConfigurationResponseSource.md)
+- [BankAccountResponse](docs/BankAccountResponse.md)
+- [BankBranchPageResponse](docs/BankBranchPageResponse.md)
+- [BankBranchResponse](docs/BankBranchResponse.md)
+- [BankBranchSimpleResponse](docs/BankBranchSimpleResponse.md)
+- [BankPageResponse](docs/BankPageResponse.md)
+- [BankResponse](docs/BankResponse.md)
+- [BpjsHealthcareCurrentMonthDetailResponse](docs/BpjsHealthcareCurrentMonthDetailResponse.md)
+- [BpjsHealthcareMembershipAdditionalFamilyMembership](docs/BpjsHealthcareMembershipAdditionalFamilyMembership.md)
+- [BpjsHealthcareMembershipRequest](docs/BpjsHealthcareMembershipRequest.md)
+- [BpjsHealthcareMembershipResponse](docs/BpjsHealthcareMembershipResponse.md)
+- [BpjsHealthcarePremiumDetailsItemResponse](docs/BpjsHealthcarePremiumDetailsItemResponse.md)
+- [BpjsHealthcarePremiumDetailsResponse](docs/BpjsHealthcarePremiumDetailsResponse.md)
+- [BpjsHealthcarePremiumSummaryListItemResponse](docs/BpjsHealthcarePremiumSummaryListItemResponse.md)
+- [BpjsHealthcarePremiumSummaryPageResponse](docs/BpjsHealthcarePremiumSummaryPageResponse.md)
+- [BpjsHealthcareProviderListItemResponse](docs/BpjsHealthcareProviderListItemResponse.md)
+- [BpjsHealthcareProviderPageResponse](docs/BpjsHealthcareProviderPageResponse.md)
+- [BpjsHealthcareTemplateListItemResponse](docs/BpjsHealthcareTemplateListItemResponse.md)
+- [BpjsHealthcareTemplatePageResponse](docs/BpjsHealthcareTemplatePageResponse.md)
+- [BpjsHealthcareTreatmentClassResponse](docs/BpjsHealthcareTreatmentClassResponse.md)
+- [BpjsManpowerCurrentMonthDetailResponse](docs/BpjsManpowerCurrentMonthDetailResponse.md)
+- [BpjsManpowerMembershipRequest](docs/BpjsManpowerMembershipRequest.md)
+- [BpjsManpowerMembershipResponse](docs/BpjsManpowerMembershipResponse.md)
+- [BpjsManpowerPremiumDetailsItemResponse](docs/BpjsManpowerPremiumDetailsItemResponse.md)
+- [BpjsManpowerPremiumDetailsResponse](docs/BpjsManpowerPremiumDetailsResponse.md)
+- [BpjsManpowerPremiumSummaryListItemResponse](docs/BpjsManpowerPremiumSummaryListItemResponse.md)
+- [BpjsManpowerPremiumSummaryPageResponse](docs/BpjsManpowerPremiumSummaryPageResponse.md)
+- [BpjsManpowerProviderPageResponse](docs/BpjsManpowerProviderPageResponse.md)
+- [BpjsManpowerProviderResponse](docs/BpjsManpowerProviderResponse.md)
+- [BpjsManpowerTemplatePageResponse](docs/BpjsManpowerTemplatePageResponse.md)
+- [BpjsManpowerTemplateResponse](docs/BpjsManpowerTemplateResponse.md)
+- [BulkOperationFailureParamResponse](docs/BulkOperationFailureParamResponse.md)
+- [BulkOperationFailureResponse](docs/BulkOperationFailureResponse.md)
+- [BulkOperationResponse](docs/BulkOperationResponse.md)
+- [CalculationScenarioComponent](docs/CalculationScenarioComponent.md)
+- [CalculationScenarioPreviousJobComponent](docs/CalculationScenarioPreviousJobComponent.md)
+- [CalculationScenarioSalaryComponent](docs/CalculationScenarioSalaryComponent.md)
+- [ChartFilterRequest](docs/ChartFilterRequest.md)
+- [ChartFilterResponse](docs/ChartFilterResponse.md)
+- [ChartTableRelationRequest](docs/ChartTableRelationRequest.md)
+- [ChartTableRelationResponse](docs/ChartTableRelationResponse.md)
+- [ChartValueCollectionFilterRequest](docs/ChartValueCollectionFilterRequest.md)
+- [CityPageResponse](docs/CityPageResponse.md)
+- [CityResponse](docs/CityResponse.md)
+- [CompanyBankAccountPageResponse](docs/CompanyBankAccountPageResponse.md)
+- [CompanyBankAccountResponse](docs/CompanyBankAccountResponse.md)
+- [CompanyDetailRequest](docs/CompanyDetailRequest.md)
+- [CompanyDetailResponse](docs/CompanyDetailResponse.md)
+- [CompanyDetailTimeZoneRequest](docs/CompanyDetailTimeZoneRequest.md)
+- [CompanyGroupPageResponse](docs/CompanyGroupPageResponse.md)
+- [CompanyListItemResponse](docs/CompanyListItemResponse.md)
+- [CompanyPageResponse](docs/CompanyPageResponse.md)
+- [CompanySuperiorResponse](docs/CompanySuperiorResponse.md)
+- [ContactInformationPageResponse](docs/ContactInformationPageResponse.md)
+- [ContactInformationRequest](docs/ContactInformationRequest.md)
+- [ContactInformationResponse](docs/ContactInformationResponse.md)
+- [CostCenterListItemResponse](docs/CostCenterListItemResponse.md)
+- [CostCenterPageResponse](docs/CostCenterPageResponse.md)
+- [CostCenterRequest](docs/CostCenterRequest.md)
+- [CostCenterResponse](docs/CostCenterResponse.md)
+- [CostCenterSimpleResponse](docs/CostCenterSimpleResponse.md)
+- [CountResponse](docs/CountResponse.md)
+- [CountryPageResponse](docs/CountryPageResponse.md)
+- [CountryRequest](docs/CountryRequest.md)
+- [CountryResponse](docs/CountryResponse.md)
+- [CreateCityRequest](docs/CreateCityRequest.md)
+- [CreateCityRequestState](docs/CreateCityRequestState.md)
+- [CurrencyPageResponse](docs/CurrencyPageResponse.md)
+- [CurrencyResponse](docs/CurrencyResponse.md)
+- [CurrencySimpleResponse](docs/CurrencySimpleResponse.md)
+- [CustomTableColumnResponse](docs/CustomTableColumnResponse.md)
+- [CustomTableEntryPageResponse](docs/CustomTableEntryPageResponse.md)
+- [CustomTablePageResponse](docs/CustomTablePageResponse.md)
+- [CustomTableResponse](docs/CustomTableResponse.md)
+- [EditableSalaryPreprocessRequest](docs/EditableSalaryPreprocessRequest.md)
+- [EditableSalaryPreprocessResponse](docs/EditableSalaryPreprocessResponse.md)
+- [EditableSalaryPreprocessSuccess](docs/EditableSalaryPreprocessSuccess.md)
+- [EducationLevelPageResponse](docs/EducationLevelPageResponse.md)
+- [EducationLevelResponse](docs/EducationLevelResponse.md)
+- [EducationPageResponse](docs/EducationPageResponse.md)
+- [EducationResponse](docs/EducationResponse.md)
+- [EmergencyContactResponse](docs/EmergencyContactResponse.md)
+- [EmployeeCreateResponse](docs/EmployeeCreateResponse.md)
+- [EmployeeDetailPageResponse](docs/EmployeeDetailPageResponse.md)
+- [EmployeeDetailRequest](docs/EmployeeDetailRequest.md)
+- [EmployeeDetailResponse](docs/EmployeeDetailResponse.md)
+- [EmployeeFullResponse](docs/EmployeeFullResponse.md)
+- [EmployeeHiringDataRequest](docs/EmployeeHiringDataRequest.md)
+- [EmployeeHiringDataResponse](docs/EmployeeHiringDataResponse.md)
+- [EmployeeHiringDataSimpleResponse](docs/EmployeeHiringDataSimpleResponse.md)
+- [EmployeeIdIdentificationNumberResponse](docs/EmployeeIdIdentificationNumberResponse.md)
+- [EmployeeIdNameResponse](docs/EmployeeIdNameResponse.md)
+- [EmployeeIdentificationNumberResponse](docs/EmployeeIdentificationNumberResponse.md)
+- [EmployeeIdentityCardPageResponse](docs/EmployeeIdentityCardPageResponse.md)
+- [EmployeeIdentityCardRequest](docs/EmployeeIdentityCardRequest.md)
+- [EmployeeIdentityCardResponse](docs/EmployeeIdentityCardResponse.md)
+- [EmployeeManagerResponse](docs/EmployeeManagerResponse.md)
+- [EmployeePageResponse](docs/EmployeePageResponse.md)
+- [EmployeePaygroupPageResponse](docs/EmployeePaygroupPageResponse.md)
+- [EmployeePaygroupResponse](docs/EmployeePaygroupResponse.md)
+- [EmployeeRequest](docs/EmployeeRequest.md)
+- [EmployeeResponse](docs/EmployeeResponse.md)
+- [EmployeeSalaryRequest](docs/EmployeeSalaryRequest.md)
+- [EmployeeSalaryResponse](docs/EmployeeSalaryResponse.md)
+- [EmployeeSalaryTemplatePageResponse](docs/EmployeeSalaryTemplatePageResponse.md)
+- [EmployeeSalaryTemplateRequest](docs/EmployeeSalaryTemplateRequest.md)
+- [EmployeeSalaryTemplateResponse](docs/EmployeeSalaryTemplateResponse.md)
+- [EmployeeSalaryTemplateUpdateResponse](docs/EmployeeSalaryTemplateUpdateResponse.md)
+- [EmployeeSimpleResponse](docs/EmployeeSimpleResponse.md)
+- [EmployeeVariableMetadataPageResponse](docs/EmployeeVariableMetadataPageResponse.md)
+- [EmployeeVariableMetadataRequest](docs/EmployeeVariableMetadataRequest.md)
+- [EmployeeVariableMetadataResponse](docs/EmployeeVariableMetadataResponse.md)
+- [EmployeeVariablePageResponse](docs/EmployeeVariablePageResponse.md)
+- [EmployeeVariableRequest](docs/EmployeeVariableRequest.md)
+- [EmployeeVariableResponse](docs/EmployeeVariableResponse.md)
+- [EmployeeVariableValidationRequest](docs/EmployeeVariableValidationRequest.md)
+- [EmployeeVariableValidationResponse](docs/EmployeeVariableValidationResponse.md)
+- [EmployeeWorkdayConfigurationPageResponse](docs/EmployeeWorkdayConfigurationPageResponse.md)
+- [EmployeeWorkdayConfigurationRequest](docs/EmployeeWorkdayConfigurationRequest.md)
+- [EmployeeWorkdayConfigurationResponse](docs/EmployeeWorkdayConfigurationResponse.md)
+- [EmploymentDataPositionResponse](docs/EmploymentDataPositionResponse.md)
+- [EmploymentDataRequest](docs/EmploymentDataRequest.md)
+- [EmploymentDataResponse](docs/EmploymentDataResponse.md)
+- [EmploymentStatusDetailPositionResponse](docs/EmploymentStatusDetailPositionResponse.md)
+- [EmploymentStatusDetailResponse](docs/EmploymentStatusDetailResponse.md)
+- [EmploymentStatusHistoryDetailResponse](docs/EmploymentStatusHistoryDetailResponse.md)
+- [EmploymentStatusHistoryPageResponse](docs/EmploymentStatusHistoryPageResponse.md)
+- [EmploymentStatusPageResponse](docs/EmploymentStatusPageResponse.md)
+- [EmploymentStatusTypePageResponse](docs/EmploymentStatusTypePageResponse.md)
+- [EmploymentStatusTypeResponse](docs/EmploymentStatusTypeResponse.md)
+- [EmploymentTypePageResponse](docs/EmploymentTypePageResponse.md)
+- [EmploymentTypeRequest](docs/EmploymentTypeRequest.md)
+- [EmploymentTypeResponse](docs/EmploymentTypeResponse.md)
+- [ErrorResponse](docs/ErrorResponse.md)
+- [FamilyApprovalListItemResponse](docs/FamilyApprovalListItemResponse.md)
+- [FamilyApprovalListItemWithApprovalStatusResponse](docs/FamilyApprovalListItemWithApprovalStatusResponse.md)
+- [FamilyApprovalPageResponse](docs/FamilyApprovalPageResponse.md)
+- [FamilyApprovalRequest](docs/FamilyApprovalRequest.md)
+- [FamilyApprovalResponse](docs/FamilyApprovalResponse.md)
+- [FamilyHistoricalPageResponse](docs/FamilyHistoricalPageResponse.md)
+- [FamilyHistoricalResponse](docs/FamilyHistoricalResponse.md)
+- [FamilyMemberRelationPageResponse](docs/FamilyMemberRelationPageResponse.md)
+- [FamilyMemberRelationResponse](docs/FamilyMemberRelationResponse.md)
+- [FieldOfStudyPageResponse](docs/FieldOfStudyPageResponse.md)
+- [FieldOfStudyResponse](docs/FieldOfStudyResponse.md)
+- [FingerprintFailureItemResponse](docs/FingerprintFailureItemResponse.md)
+- [FingerprintItemRequest](docs/FingerprintItemRequest.md)
+- [FingerprintResponse](docs/FingerprintResponse.md)
+- [FingerprintSuccessItemResponse](docs/FingerprintSuccessItemResponse.md)
+- [FormerEmployeeIncomeEmployeeAmountUpdateRequest](docs/FormerEmployeeIncomeEmployeeAmountUpdateRequest.md)
+- [FormerEmployeeIncomeEmployeePageResponse](docs/FormerEmployeeIncomeEmployeePageResponse.md)
+- [FormerEmployeeIncomeEmployeeResponse](docs/FormerEmployeeIncomeEmployeeResponse.md)
+- [FormerEmployeeIncomePageResponse](docs/FormerEmployeeIncomePageResponse.md)
+- [FormerEmployeeIncomeResponse](docs/FormerEmployeeIncomeResponse.md)
+- [HolidayItemResponse](docs/HolidayItemResponse.md)
+- [HolidayPageResponse](docs/HolidayPageResponse.md)
+- [IdCodeNameResponse](docs/IdCodeNameResponse.md)
+- [IdRequest](docs/IdRequest.md)
+- [IdResponse](docs/IdResponse.md)
+- [IdentityCardPageResponse](docs/IdentityCardPageResponse.md)
+- [IdentityCardResponse](docs/IdentityCardResponse.md)
+- [InstitutionPageResponse](docs/InstitutionPageResponse.md)
+- [InstitutionResponse](docs/InstitutionResponse.md)
+- [JobLevelPageResponse](docs/JobLevelPageResponse.md)
+- [JobLevelRequest](docs/JobLevelRequest.md)
+- [JobLevelResponse](docs/JobLevelResponse.md)
+- [JobTitleLevelMappingPageResponse](docs/JobTitleLevelMappingPageResponse.md)
+- [JobTitleLevelMappingResponse](docs/JobTitleLevelMappingResponse.md)
+- [JobTitlePageResponse](docs/JobTitlePageResponse.md)
+- [JobTitleRequest](docs/JobTitleRequest.md)
+- [JobTitleRequestDeprecated](docs/JobTitleRequestDeprecated.md)
+- [JobTitleResponse](docs/JobTitleResponse.md)
+- [JobTitleWithJobLevelsResponse](docs/JobTitleWithJobLevelsResponse.md)
+- [KppPageResponse](docs/KppPageResponse.md)
+- [KppResponse](docs/KppResponse.md)
+- [KppSimpleResponse](docs/KppSimpleResponse.md)
+- [LeaveBalanceItemResponse](docs/LeaveBalanceItemResponse.md)
+- [LeaveBalancePageResponse](docs/LeaveBalancePageResponse.md)
+- [LeaveBalanceRequest](docs/LeaveBalanceRequest.md)
+- [LocationCreateRequest](docs/LocationCreateRequest.md)
+- [LocationGroupPageResponse](docs/LocationGroupPageResponse.md)
+- [LocationPageResponse](docs/LocationPageResponse.md)
+- [LocationResponse](docs/LocationResponse.md)
+- [LogoFileMetadataResponse](docs/LogoFileMetadataResponse.md)
+- [ManagerRequest](docs/ManagerRequest.md)
+- [MonthlyRecapitulationItemDetailResponse](docs/MonthlyRecapitulationItemDetailResponse.md)
+- [MonthlyRecapitulationItemResponse](docs/MonthlyRecapitulationItemResponse.md)
+- [MonthlyRecapitulationPageResponse](docs/MonthlyRecapitulationPageResponse.md)
+- [MonthlyTaxCalculationSimulatorRequest](docs/MonthlyTaxCalculationSimulatorRequest.md)
+- [MonthlyTaxCalculationSimulatorResponse](docs/MonthlyTaxCalculationSimulatorResponse.md)
+- [MonthlyTaxDetailPageResponse](docs/MonthlyTaxDetailPageResponse.md)
+- [MonthlyTaxDetailResponse](docs/MonthlyTaxDetailResponse.md)
+- [MonthlyTaxReportPageResponse](docs/MonthlyTaxReportPageResponse.md)
+- [MonthlyTaxReportResponse](docs/MonthlyTaxReportResponse.md)
+- [NameResponse](docs/NameResponse.md)
+- [NonEmployeeMonthlyTaxCalculationSimulatorResponse](docs/NonEmployeeMonthlyTaxCalculationSimulatorResponse.md)
+- [OAuthClientPageResponse](docs/OAuthClientPageResponse.md)
+- [OAuthClientResponse](docs/OAuthClientResponse.md)
+- [OperationalGroupPageResponse](docs/OperationalGroupPageResponse.md)
+- [OrganizationGroupPageResponse](docs/OrganizationGroupPageResponse.md)
+- [OrganizationGroupRequest](docs/OrganizationGroupRequest.md)
+- [OrganizationHeadPageResponse](docs/OrganizationHeadPageResponse.md)
+- [OrganizationHeadResponse](docs/OrganizationHeadResponse.md)
+- [OrganizationHierarchyPageResponse](docs/OrganizationHierarchyPageResponse.md)
+- [OrganizationHierarchyRequest](docs/OrganizationHierarchyRequest.md)
+- [OrganizationHierarchyResponse](docs/OrganizationHierarchyResponse.md)
+- [OrganizationHistoryHierarchyResponse](docs/OrganizationHistoryHierarchyResponse.md)
+- [OrganizationHistoryPageResponse](docs/OrganizationHistoryPageResponse.md)
+- [OrganizationHistoryResponse](docs/OrganizationHistoryResponse.md)
+- [OrganizationPageResponse](docs/OrganizationPageResponse.md)
+- [OrganizationParentResponse](docs/OrganizationParentResponse.md)
+- [OrganizationRequest](docs/OrganizationRequest.md)
+- [OrganizationResponse](docs/OrganizationResponse.md)
+- [OrganizationSuperiorPageResponse](docs/OrganizationSuperiorPageResponse.md)
+- [OrganizationSuperiorResponse](docs/OrganizationSuperiorResponse.md)
+- [OtherLeaveBalanceCreateResponse](docs/OtherLeaveBalanceCreateResponse.md)
+- [OtherLeaveBalanceItemResponse](docs/OtherLeaveBalanceItemResponse.md)
+- [OtherLeaveBalancePageResponse](docs/OtherLeaveBalancePageResponse.md)
+- [OtherLeaveBalanceRequest](docs/OtherLeaveBalanceRequest.md)
+- [OtherLeaveStatusResponse](docs/OtherLeaveStatusResponse.md)
+- [Page](docs/Page.md)
+- [PaygroupPageResponse](docs/PaygroupPageResponse.md)
+- [PaygroupResponse](docs/PaygroupResponse.md)
+- [PaymentItemDetailResponse](docs/PaymentItemDetailResponse.md)
+- [PaymentItemDetailSalaryItemResponse](docs/PaymentItemDetailSalaryItemResponse.md)
+- [PaymentItemGroupLastSequenceResponse](docs/PaymentItemGroupLastSequenceResponse.md)
+- [PaymentItemGroupPageResponse](docs/PaymentItemGroupPageResponse.md)
+- [PaymentItemGroupResponse](docs/PaymentItemGroupResponse.md)
+- [PaymentItemGroupSequenceResponse](docs/PaymentItemGroupSequenceResponse.md)
+- [PayrollProcessSnapshotBankAccountConfigurationResponse](docs/PayrollProcessSnapshotBankAccountConfigurationResponse.md)
+- [PayrollProcessSnapshotBankAccountResponse](docs/PayrollProcessSnapshotBankAccountResponse.md)
+- [PayrollProcessSnapshotEmploymentStatusResponse](docs/PayrollProcessSnapshotEmploymentStatusResponse.md)
+- [PayrollProcessSnapshotPageResponse](docs/PayrollProcessSnapshotPageResponse.md)
+- [PayrollProcessSnapshotResponse](docs/PayrollProcessSnapshotResponse.md)
+- [PayrollProcessSnapshotWorkflowActivityResponse](docs/PayrollProcessSnapshotWorkflowActivityResponse.md)
+- [PayrollProcessSnapshotWorkflowReasonResponse](docs/PayrollProcessSnapshotWorkflowReasonResponse.md)
+- [PayrollProcessSnapshotWorkflowTemplateResponse](docs/PayrollProcessSnapshotWorkflowTemplateResponse.md)
+- [PayslipAdditionalNotePageResponse](docs/PayslipAdditionalNotePageResponse.md)
+- [PayslipAdditionalNoteRequest](docs/PayslipAdditionalNoteRequest.md)
+- [PayslipAdditionalNoteResponse](docs/PayslipAdditionalNoteResponse.md)
+- [PayslipDownloadRequest](docs/PayslipDownloadRequest.md)
+- [PayslipLayoutPageResponse](docs/PayslipLayoutPageResponse.md)
+- [PayslipLayoutRequest](docs/PayslipLayoutRequest.md)
+- [PayslipLayoutResponse](docs/PayslipLayoutResponse.md)
+- [PermanentMonthlyTaxCalculationSimulatorResponse](docs/PermanentMonthlyTaxCalculationSimulatorResponse.md)
+- [PhotoResponse](docs/PhotoResponse.md)
+- [PlaceOfBirthRequest](docs/PlaceOfBirthRequest.md)
+- [PlaceOfBirthResponse](docs/PlaceOfBirthResponse.md)
+- [PointOfHireResponse](docs/PointOfHireResponse.md)
+- [PositionCostCenterPageResponse](docs/PositionCostCenterPageResponse.md)
+- [PositionCostCenterResponse](docs/PositionCostCenterResponse.md)
+- [PositionHistoryOrganizationResponse](docs/PositionHistoryOrganizationResponse.md)
+- [PositionHistoryPageResponse](docs/PositionHistoryPageResponse.md)
+- [PositionHistoryResponse](docs/PositionHistoryResponse.md)
+- [PositionListItemResponse](docs/PositionListItemResponse.md)
+- [PositionPageResponse](docs/PositionPageResponse.md)
+- [PositionResponse](docs/PositionResponse.md)
+- [PositionVacancyStatusPageResponse](docs/PositionVacancyStatusPageResponse.md)
+- [PositionVacancyStatusResponse](docs/PositionVacancyStatusResponse.md)
+- [Pph21PolicyResponse](docs/Pph21PolicyResponse.md)
+- [ProcessableTimeAllowanceTransitionEmployeeResponse](docs/ProcessableTimeAllowanceTransitionEmployeeResponse.md)
+- [ProcessableTimeAllowanceTransitionEmploymentStatusResponse](docs/ProcessableTimeAllowanceTransitionEmploymentStatusResponse.md)
+- [ProcessableTimeAllowanceTransitionPageResponse](docs/ProcessableTimeAllowanceTransitionPageResponse.md)
+- [ProcessableTimeAllowanceTransitionResponse](docs/ProcessableTimeAllowanceTransitionResponse.md)
+- [ProcessedSalaryPaymentDetailResponse](docs/ProcessedSalaryPaymentDetailResponse.md)
+- [ProcessedSalaryPaymentPageResponse](docs/ProcessedSalaryPaymentPageResponse.md)
+- [ProcessedSalaryPaymentResponse](docs/ProcessedSalaryPaymentResponse.md)
+- [ProcessedTransitionCalculationPageResponse](docs/ProcessedTransitionCalculationPageResponse.md)
+- [ProcessedTransitionCalculationResponse](docs/ProcessedTransitionCalculationResponse.md)
+- [ProrateDetailResponse](docs/ProrateDetailResponse.md)
+- [ProrateDetailSalaryTemplateDetailResponse](docs/ProrateDetailSalaryTemplateDetailResponse.md)
+- [ProrateDetailSalaryTemplateDetailSalaryItemResponse](docs/ProrateDetailSalaryTemplateDetailSalaryItemResponse.md)
+- [PtkpCategoryPageResponse](docs/PtkpCategoryPageResponse.md)
+- [PtkpCategoryResponse](docs/PtkpCategoryResponse.md)
+- [RecurringConfigurationRequest](docs/RecurringConfigurationRequest.md)
+- [RecurringConfigurationResponse](docs/RecurringConfigurationResponse.md)
+- [RecurringPeriodEndRequest](docs/RecurringPeriodEndRequest.md)
+- [RecurringPeriodEndResponse](docs/RecurringPeriodEndResponse.md)
+- [RejectApprovalRequest](docs/RejectApprovalRequest.md)
+- [ReligionPageResponse](docs/ReligionPageResponse.md)
+- [ReligionRequest](docs/ReligionRequest.md)
+- [ReligionResponse](docs/ReligionResponse.md)
+- [RoleAuthorityPageResponse](docs/RoleAuthorityPageResponse.md)
+- [RoleAuthorityResponse](docs/RoleAuthorityResponse.md)
+- [RoleDetailResponse](docs/RoleDetailResponse.md)
+- [RoleIdNameResponse](docs/RoleIdNameResponse.md)
+- [RolePageResponse](docs/RolePageResponse.md)
+- [RolePermissionPageResponse](docs/RolePermissionPageResponse.md)
+- [RolePermissionResponse](docs/RolePermissionResponse.md)
+- [RoleResponse](docs/RoleResponse.md)
+- [SalaryCalculationDetailPageResponse](docs/SalaryCalculationDetailPageResponse.md)
+- [SalaryCalculationDetailResponse](docs/SalaryCalculationDetailResponse.md)
+- [SalaryCalculationPageResponse](docs/SalaryCalculationPageResponse.md)
+- [SalaryCalculationResponse](docs/SalaryCalculationResponse.md)
+- [SalaryItemAddOnEmployeeRequest](docs/SalaryItemAddOnEmployeeRequest.md)
+- [SalaryItemAddOnEmployeeResponse](docs/SalaryItemAddOnEmployeeResponse.md)
+- [SalaryItemAddOnRequest](docs/SalaryItemAddOnRequest.md)
+- [SalaryItemAddOnResponse](docs/SalaryItemAddOnResponse.md)
+- [SalaryItemAddOnSalaryItemRequest](docs/SalaryItemAddOnSalaryItemRequest.md)
+- [SalaryItemPageResponse](docs/SalaryItemPageResponse.md)
+- [SalaryItemResponse](docs/SalaryItemResponse.md)
+- [SalaryItemResponseWithCategory](docs/SalaryItemResponseWithCategory.md)
+- [SalaryItemSimpleResponse](docs/SalaryItemSimpleResponse.md)
+- [SalaryItemWithSalaryItemTypeResponse](docs/SalaryItemWithSalaryItemTypeResponse.md)
+- [SalaryPaymentDetailCompanyBankAccountResponse](docs/SalaryPaymentDetailCompanyBankAccountResponse.md)
+- [SalaryPaymentDetailResponse](docs/SalaryPaymentDetailResponse.md)
+- [SalaryPaymentEmployeeResponse](docs/SalaryPaymentEmployeeResponse.md)
+- [SalaryPaymentEmploymentStatusResponse](docs/SalaryPaymentEmploymentStatusResponse.md)
+- [SalaryPaymentPageResponse](docs/SalaryPaymentPageResponse.md)
+- [SalaryPaymentResponse](docs/SalaryPaymentResponse.md)
+- [SalaryPaymentSummaryCompanyBankAccountResponse](docs/SalaryPaymentSummaryCompanyBankAccountResponse.md)
+- [SalaryPaymentSummaryPageResponse](docs/SalaryPaymentSummaryPageResponse.md)
+- [SalaryPaymentSummaryResponse](docs/SalaryPaymentSummaryResponse.md)
+- [SalaryTemplateDetailResponse](docs/SalaryTemplateDetailResponse.md)
+- [SalaryTemplatePageResponse](docs/SalaryTemplatePageResponse.md)
+- [SalaryTemplateResponse](docs/SalaryTemplateResponse.md)
+- [SeverancePaymentPlanPageResponse](docs/SeverancePaymentPlanPageResponse.md)
+- [SeverancePaymentPlanResponse](docs/SeverancePaymentPlanResponse.md)
+- [SeverancePlanDetailItemRequest](docs/SeverancePlanDetailItemRequest.md)
+- [SeverancePlanDetailResponse](docs/SeverancePlanDetailResponse.md)
+- [SeverancePlanPageResponse](docs/SeverancePlanPageResponse.md)
+- [SeverancePlanPaymentPlanItemRequest](docs/SeverancePlanPaymentPlanItemRequest.md)
+- [SeverancePlanRequest](docs/SeverancePlanRequest.md)
+- [SeverancePlanResponse](docs/SeverancePlanResponse.md)
+- [SeverancePlanResponseWithDetail](docs/SeverancePlanResponseWithDetail.md)
+- [ShiftPatternTemplateDetailItemRequest](docs/ShiftPatternTemplateDetailItemRequest.md)
+- [ShiftPatternTemplateDetailItemRequestShift](docs/ShiftPatternTemplateDetailItemRequestShift.md)
+- [ShiftPatternTemplateDetailResponse](docs/ShiftPatternTemplateDetailResponse.md)
+- [ShiftPatternTemplateItemResponse](docs/ShiftPatternTemplateItemResponse.md)
+- [ShiftPatternTemplateListItemResponse](docs/ShiftPatternTemplateListItemResponse.md)
+- [ShiftPatternTemplatePageResponse](docs/ShiftPatternTemplatePageResponse.md)
+- [ShiftPatternTemplateRequest](docs/ShiftPatternTemplateRequest.md)
+- [ShiftPatternTemplateSimpleResponse](docs/ShiftPatternTemplateSimpleResponse.md)
+- [ShiftResponse](docs/ShiftResponse.md)
+- [SortProperty](docs/SortProperty.md)
+- [StateListItemResponse](docs/StateListItemResponse.md)
+- [StatePageResponse](docs/StatePageResponse.md)
+- [StateRequest](docs/StateRequest.md)
+- [StateResponse](docs/StateResponse.md)
+- [SubLocationLocationResponse](docs/SubLocationLocationResponse.md)
+- [SubLocationPageResponse](docs/SubLocationPageResponse.md)
+- [SubLocationRequest](docs/SubLocationRequest.md)
+- [SubLocationResponse](docs/SubLocationResponse.md)
+- [TaxAmountResponse](docs/TaxAmountResponse.md)
+- [TaxAndAllowanceResponse](docs/TaxAndAllowanceResponse.md)
+- [TaxCalculationDetailResponse](docs/TaxCalculationDetailResponse.md)
+- [TaxCalculationIncomeRequest](docs/TaxCalculationIncomeRequest.md)
+- [TaxCalculationPageResponse](docs/TaxCalculationPageResponse.md)
+- [TaxCalculationRequest](docs/TaxCalculationRequest.md)
+- [TaxCalculationResponse](docs/TaxCalculationResponse.md)
+- [TaxDependentRequest](docs/TaxDependentRequest.md)
+- [TaxDependentResponse](docs/TaxDependentResponse.md)
+- [TaxIncomeResponse](docs/TaxIncomeResponse.md)
+- [TaxMembershipHistoryResponse](docs/TaxMembershipHistoryResponse.md)
+- [TaxMembershipPeriodResponse](docs/TaxMembershipPeriodResponse.md)
+- [TaxMembershipResponse](docs/TaxMembershipResponse.md)
+- [TaxMembershipTaxSubjectRequest](docs/TaxMembershipTaxSubjectRequest.md)
+- [TaxReport1721A1PageResponse](docs/TaxReport1721A1PageResponse.md)
+- [TaxReport1721A1Response](docs/TaxReport1721A1Response.md)
+- [TaxReport1721VIDetailResponse](docs/TaxReport1721VIDetailResponse.md)
+- [TaxReport1721VIIIPageResponse](docs/TaxReport1721VIIIPageResponse.md)
+- [TaxReport1721VIIIResponse](docs/TaxReport1721VIIIResponse.md)
+- [TaxReport1721VIIPageResponse](docs/TaxReport1721VIIPageResponse.md)
+- [TaxReport1721VIIResponse](docs/TaxReport1721VIIResponse.md)
+- [TaxReport1721VIPageResponse](docs/TaxReport1721VIPageResponse.md)
+- [TaxReport1721VIResponse](docs/TaxReport1721VIResponse.md)
+- [TemporaryMonthlyTaxCalculationSimulatorResponse](docs/TemporaryMonthlyTaxCalculationSimulatorResponse.md)
+- [TerminationBPJSManpowerReasonPageResponse](docs/TerminationBPJSManpowerReasonPageResponse.md)
+- [TerminationBPJSManpowerReasonResponse](docs/TerminationBPJSManpowerReasonResponse.md)
+- [TerminationEntryRequest](docs/TerminationEntryRequest.md)
+- [TerminationEntryResponse](docs/TerminationEntryResponse.md)
+- [TerminationReasonCategoryPageResponse](docs/TerminationReasonCategoryPageResponse.md)
+- [TerminationReasonCategoryResponse](docs/TerminationReasonCategoryResponse.md)
+- [TerminationReasonDetailResponse](docs/TerminationReasonDetailResponse.md)
+- [TerminationReasonPageResponse](docs/TerminationReasonPageResponse.md)
+- [TerminationReasonRequest](docs/TerminationReasonRequest.md)
+- [TerminationReasonResponse](docs/TerminationReasonResponse.md)
+- [TerminationTaxReasonPageResponse](docs/TerminationTaxReasonPageResponse.md)
+- [TerminationTaxReasonResponse](docs/TerminationTaxReasonResponse.md)
+- [TimeAllowanceDetailResponse](docs/TimeAllowanceDetailResponse.md)
+- [TimeAllowanceDetailsResponse](docs/TimeAllowanceDetailsResponse.md)
+- [TimeZoneResponse](docs/TimeZoneResponse.md)
+- [TransitionCalculationCountResponse](docs/TransitionCalculationCountResponse.md)
+- [TransitionCalculationDetailsAmountRequest](docs/TransitionCalculationDetailsAmountRequest.md)
+- [TransitionCalculationDetailsRequest](docs/TransitionCalculationDetailsRequest.md)
+- [TransitionCalculationEmployeeSalaryTemplateResponse](docs/TransitionCalculationEmployeeSalaryTemplateResponse.md)
+- [TransitionCalculationResponse](docs/TransitionCalculationResponse.md)
+- [TransitionCalculationSalaryTemplateDetailResponse](docs/TransitionCalculationSalaryTemplateDetailResponse.md)
+- [TransitionTimeAllowanceDetailResponse](docs/TransitionTimeAllowanceDetailResponse.md)
+- [UnprocessableContentResponse](docs/UnprocessableContentResponse.md)
+- [UnprocessableMessage](docs/UnprocessableMessage.md)
+- [UnprocessedTransitionCalculationPageResponse](docs/UnprocessedTransitionCalculationPageResponse.md)
+- [UnprocessedTransitionCalculationResponse](docs/UnprocessedTransitionCalculationResponse.md)
+- [UpdateBankAccountConfigurationRequest](docs/UpdateBankAccountConfigurationRequest.md)
+- [UserAndRoleResponse](docs/UserAndRoleResponse.md)
+- [UserPageResponse](docs/UserPageResponse.md)
+- [UserResponse](docs/UserResponse.md)
+- [WidgetContentResponse](docs/WidgetContentResponse.md)
+- [WidgetPageResponse](docs/WidgetPageResponse.md)
+- [WidgetResponse](docs/WidgetResponse.md)
+- [WorkdayConfigurationDetailResponse](docs/WorkdayConfigurationDetailResponse.md)
+- [WorkflowActivityPageResponse](docs/WorkflowActivityPageResponse.md)
+- [WorkflowActivityResponse](docs/WorkflowActivityResponse.md)
+- [WorkflowReasonCategoryPageResponse](docs/WorkflowReasonCategoryPageResponse.md)
+- [WorkflowReasonCategoryRequest](docs/WorkflowReasonCategoryRequest.md)
+- [WorkflowReasonCategoryResponse](docs/WorkflowReasonCategoryResponse.md)
+- [WorkflowReasonPageResponse](docs/WorkflowReasonPageResponse.md)
+- [WorkflowReasonRequest](docs/WorkflowReasonRequest.md)
+- [WorkflowReasonResponse](docs/WorkflowReasonResponse.md)
+- [WorkflowTemplateResponse](docs/WorkflowTemplateResponse.md)
+- [WorkgroupWorkdayConfigurationPageResponse](docs/WorkgroupWorkdayConfigurationPageResponse.md)
+- [WorkgroupWorkdayConfigurationRequest](docs/WorkgroupWorkdayConfigurationRequest.md)
+- [WorkgroupWorkdayConfigurationResponse](docs/WorkgroupWorkdayConfigurationResponse.md)

@@ -1,34 +1,63 @@
 # MonthlyTaxCalculationSimulatorResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**monthly_gross_income** | **float** |  | 
-**percentage** | **float** |  | 
-**monthly_tax** | **float** |  | 
-**netto_tax** | **float** |  | 
-**type** | **str** |  | 
+| Name                   | Type    | Description |
+| :--------------------- | :------ | :---------- |
+| `monthly_gross_income` | `float` |             |
+| `percentage`           | `float` |             |
+| `monthly_tax`          | `float` |             |
+| `netto_tax`            | `float` |             |
+| `type`                 | `str`   |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import MonthlyTaxCalculationSimulatorResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of MonthlyTaxCalculationSimulatorResponse from a JSON string
-monthly_tax_calculation_simulator_response_instance = MonthlyTaxCalculationSimulatorResponse.from_json(json)
-# print the JSON string representation of the object
-print(MonthlyTaxCalculationSimulatorResponse.to_json())
-
-# convert the object into a dict
-monthly_tax_calculation_simulator_response_dict = monthly_tax_calculation_simulator_response_instance.to_dict()
-# create an instance of MonthlyTaxCalculationSimulatorResponse from a dict
-monthly_tax_calculation_simulator_response_from_dict = MonthlyTaxCalculationSimulatorResponse.from_dict(monthly_tax_calculation_simulator_response_dict)
+monthly_tax_calculation_simulator_response = MonthlyTaxCalculationSimulatorResponse(
+    monthly_gross_income=1.337,
+    percentage=1.337,
+    monthly_tax=1.337,
+    netto_tax=1.337,
+    type="''",
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import MonthlyTaxCalculationSimulatorResponse
 
+# Parse from JSON
+json_str = '{"monthly_gross_income": "example"}'
+monthly_tax_calculation_simulator_response = (
+    MonthlyTaxCalculationSimulatorResponse.from_json(json_str)
+)
+
+# Convert to JSON
+print(monthly_tax_calculation_simulator_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import MonthlyTaxCalculationSimulatorResponse
+
+# Convert to/from dictionary
+data_dict = monthly_tax_calculation_simulator_response.to_dict()
+monthly_tax_calculation_simulator_response = (
+    MonthlyTaxCalculationSimulatorResponse.from_dict(data_dict)
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(monthly_tax_calculation_simulator_response.monthly_gross_income)
+# Update properties
+monthly_tax_calculation_simulator_response.monthly_gross_income = new_value
+```

@@ -1,32 +1,51 @@
 # IdCodeNameResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**code** | **str** |  | 
-**name** | **str** |  | 
+| Name   | Type  | Description |
+| :----- | :---- | :---------- |
+| `id`   | `str` |             |
+| `code` | `str` |             |
+| `name` | `str` |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import IdCodeNameResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of IdCodeNameResponse from a JSON string
-id_code_name_response_instance = IdCodeNameResponse.from_json(json)
-# print the JSON string representation of the object
-print(IdCodeNameResponse.to_json())
-
-# convert the object into a dict
-id_code_name_response_dict = id_code_name_response_instance.to_dict()
-# create an instance of IdCodeNameResponse from a dict
-id_code_name_response_from_dict = IdCodeNameResponse.from_dict(id_code_name_response_dict)
+id_code_name_response = IdCodeNameResponse(id="''", code="''", name="''")
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import IdCodeNameResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+id_code_name_response = IdCodeNameResponse.from_json(json_str)
+
+# Convert to JSON
+print(id_code_name_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import IdCodeNameResponse
+
+# Convert to/from dictionary
+data_dict = id_code_name_response.to_dict()
+id_code_name_response = IdCodeNameResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(id_code_name_response.id)
+# Update properties
+id_code_name_response.id = "new_value"
+```

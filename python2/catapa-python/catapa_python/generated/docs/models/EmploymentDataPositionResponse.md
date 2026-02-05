@@ -1,40 +1,71 @@
 # EmploymentDataPositionResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**code** | **str** |  | 
-**name** | **str** |  | 
-**assigned** | **bool** |  | 
-**effective_date** | **str** |  | 
-**end_date** | **str** |  | 
-**max_employees** | **int** |  | 
-**created_by** | **str** |  | 
-**created_date** | **float** |  | 
-**updated_by** | **str** |  | 
-**updated_date** | **float** |  | 
+| Name             | Type    | Description |
+| :--------------- | :------ | :---------- |
+| `id`             | `str`   |             |
+| `code`           | `str`   |             |
+| `name`           | `str`   |             |
+| `assigned`       | `bool`  |             |
+| `effective_date` | `str`   |             |
+| `end_date`       | `str`   |             |
+| `max_employees`  | `int`   |             |
+| `created_by`     | `str`   |             |
+| `created_date`   | `float` |             |
+| `updated_by`     | `str`   |             |
+| `updated_date`   | `float` |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import EmploymentDataPositionResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of EmploymentDataPositionResponse from a JSON string
-employment_data_position_response_instance = EmploymentDataPositionResponse.from_json(json)
-# print the JSON string representation of the object
-print(EmploymentDataPositionResponse.to_json())
-
-# convert the object into a dict
-employment_data_position_response_dict = employment_data_position_response_instance.to_dict()
-# create an instance of EmploymentDataPositionResponse from a dict
-employment_data_position_response_from_dict = EmploymentDataPositionResponse.from_dict(employment_data_position_response_dict)
+employment_data_position_response = EmploymentDataPositionResponse(
+    id="''",
+    code="''",
+    name="''",
+    assigned=True,
+    effective_date="''",
+    end_date="''",
+    max_employees=56,
+    created_by="''",
+    created_date=1.337,
+    updated_by="''",
+    updated_date=1.337,
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import EmploymentDataPositionResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+employment_data_position_response = EmploymentDataPositionResponse.from_json(json_str)
+
+# Convert to JSON
+print(employment_data_position_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import EmploymentDataPositionResponse
+
+# Convert to/from dictionary
+data_dict = employment_data_position_response.to_dict()
+employment_data_position_response = EmploymentDataPositionResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(employment_data_position_response.id)
+# Update properties
+employment_data_position_response.id = "new_value"
+```

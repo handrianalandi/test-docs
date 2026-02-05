@@ -1,31 +1,50 @@
 # UnprocessableMessage
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**code** | **str** |  | 
-**description** | **str** |  | 
+| Name          | Type  | Required | Description |
+| :------------ | :---- | :------: | :---------- |
+| `code`        | `str` |    ❌    |             |
+| `description` | `str` |    ❌    |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import UnprocessableMessage
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of UnprocessableMessage from a JSON string
-unprocessable_message_instance = UnprocessableMessage.from_json(json)
-# print the JSON string representation of the object
-print(UnprocessableMessage.to_json())
-
-# convert the object into a dict
-unprocessable_message_dict = unprocessable_message_instance.to_dict()
-# create an instance of UnprocessableMessage from a dict
-unprocessable_message_from_dict = UnprocessableMessage.from_dict(unprocessable_message_dict)
+unprocessable_message = UnprocessableMessage(code="''", description="''")
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import UnprocessableMessage
 
+# Parse from JSON
+json_str = '{"code": "example"}'
+unprocessable_message = UnprocessableMessage.from_json(json_str)
+
+# Convert to JSON
+print(unprocessable_message.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import UnprocessableMessage
+
+# Convert to/from dictionary
+data_dict = unprocessable_message.to_dict()
+unprocessable_message = UnprocessableMessage.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(unprocessable_message.code)
+# Update properties
+unprocessable_message.code = "new_value"
+```

@@ -1,33 +1,54 @@
 # JobLevelRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**code** | **str** |  | 
-**level** | **float** |  | 
-**job_position_id** | **str** |  | 
-**name** | **str** |  | 
+| Name              | Type    | Required | Description |
+| :---------------- | :------ | :------: | :---------- |
+| `code`            | `str`   |    ✅    |             |
+| `level`           | `float` |    ✅    |             |
+| `job_position_id` | `str`   |    ❌    |             |
+| `name`            | `str`   |    ✅    |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import JobLevelRequest
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of JobLevelRequest from a JSON string
-job_level_request_instance = JobLevelRequest.from_json(json)
-# print the JSON string representation of the object
-print(JobLevelRequest.to_json())
-
-# convert the object into a dict
-job_level_request_dict = job_level_request_instance.to_dict()
-# create an instance of JobLevelRequest from a dict
-job_level_request_from_dict = JobLevelRequest.from_dict(job_level_request_dict)
+job_level_request = JobLevelRequest(
+    code="'0'", level=1, job_position_id="''", name="'0'"
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import JobLevelRequest
 
+# Parse from JSON
+json_str = '{"code": "example"}'
+job_level_request = JobLevelRequest.from_json(json_str)
+
+# Convert to JSON
+print(job_level_request.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import JobLevelRequest
+
+# Convert to/from dictionary
+data_dict = job_level_request.to_dict()
+job_level_request = JobLevelRequest.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(job_level_request.code)
+# Update properties
+job_level_request.code = "new_value"
+```

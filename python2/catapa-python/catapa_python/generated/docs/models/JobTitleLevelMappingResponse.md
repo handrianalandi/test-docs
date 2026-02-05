@@ -1,31 +1,53 @@
 # JobTitleLevelMappingResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**job_title** | [**JobTitleResponse**](JobTitleResponse.md) |  | 
-**job_level** | [**JobLevelResponse**](JobLevelResponse.md) |  | 
+| Name        | Type                                      | Description |
+| :---------- | :---------------------------------------- | :---------- |
+| `job_title` | [`JobTitleResponse`](JobTitleResponse.md) |             |
+| `job_level` | [`JobLevelResponse`](JobLevelResponse.md) |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import JobTitleLevelMappingResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of JobTitleLevelMappingResponse from a JSON string
-job_title_level_mapping_response_instance = JobTitleLevelMappingResponse.from_json(json)
-# print the JSON string representation of the object
-print(JobTitleLevelMappingResponse.to_json())
-
-# convert the object into a dict
-job_title_level_mapping_response_dict = job_title_level_mapping_response_instance.to_dict()
-# create an instance of JobTitleLevelMappingResponse from a dict
-job_title_level_mapping_response_from_dict = JobTitleLevelMappingResponse.from_dict(job_title_level_mapping_response_dict)
+job_title_level_mapping_response = JobTitleLevelMappingResponse(
+    job_title=None,  # [JobTitleResponse](JobTitleResponse.md)
+    job_level=None,  # [JobLevelResponse](JobLevelResponse.md)
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import JobTitleLevelMappingResponse
 
+# Parse from JSON
+json_str = '{"job_title": "example"}'
+job_title_level_mapping_response = JobTitleLevelMappingResponse.from_json(json_str)
+
+# Convert to JSON
+print(job_title_level_mapping_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import JobTitleLevelMappingResponse
+
+# Convert to/from dictionary
+data_dict = job_title_level_mapping_response.to_dict()
+job_title_level_mapping_response = JobTitleLevelMappingResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(job_title_level_mapping_response.job_title)
+# Update properties
+job_title_level_mapping_response.job_title = new_value
+```

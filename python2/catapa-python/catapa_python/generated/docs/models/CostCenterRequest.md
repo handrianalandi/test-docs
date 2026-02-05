@@ -1,32 +1,51 @@
 # CostCenterRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**code** | **str** |  | 
-**name** | **str** |  | 
-**description** | **str** |  | 
+| Name          | Type  | Required | Description |
+| :------------ | :---- | :------: | :---------- |
+| `code`        | `str` |    ✅    |             |
+| `name`        | `str` |    ✅    |             |
+| `description` | `str` |    ❌    |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import CostCenterRequest
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of CostCenterRequest from a JSON string
-cost_center_request_instance = CostCenterRequest.from_json(json)
-# print the JSON string representation of the object
-print(CostCenterRequest.to_json())
-
-# convert the object into a dict
-cost_center_request_dict = cost_center_request_instance.to_dict()
-# create an instance of CostCenterRequest from a dict
-cost_center_request_from_dict = CostCenterRequest.from_dict(cost_center_request_dict)
+cost_center_request = CostCenterRequest(code="'0'", name="'0'", description="''")
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import CostCenterRequest
 
+# Parse from JSON
+json_str = '{"code": "example"}'
+cost_center_request = CostCenterRequest.from_json(json_str)
+
+# Convert to JSON
+print(cost_center_request.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import CostCenterRequest
+
+# Convert to/from dictionary
+data_dict = cost_center_request.to_dict()
+cost_center_request = CostCenterRequest.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(cost_center_request.code)
+# Update properties
+cost_center_request.code = "new_value"
+```

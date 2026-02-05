@@ -64,13 +64,8 @@ python_functions = "test_*"
 norecursedirs = ["build", "dist", ".venv", ".pytest_cache", ".ruff_cache"]
 
 [tool.coverage.run]
-# IMPORTANT for SonarQube:
-# - Use project root as coverage source so paths are relative to python/catapa-python
-# - Enable relative_files so coverage.xml uses "." as <source> and relative filenames
-#   like "catapa_python/catapa/auto_refresh_api_client.py" that Sonar can resolve.
-source = ["."]
+source = ["catapa_python"]
 omit = ["*/tests/*", "*/test_*", "*/__pycache__/*", "**/__init__.py"]
-relative_files = true
 
 [tool.coverage.report]
 exclude_lines = [

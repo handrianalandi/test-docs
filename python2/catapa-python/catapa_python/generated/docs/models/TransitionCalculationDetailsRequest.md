@@ -1,31 +1,57 @@
 # TransitionCalculationDetailsRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**transition_id** | **str** |  | 
-**details** | [**List[TransitionCalculationDetailsAmountRequest]**](TransitionCalculationDetailsAmountRequest.md) |  | 
+| Name            | Type                                                                                              | Required | Description |
+| :-------------- | :------------------------------------------------------------------------------------------------ | :------: | :---------- |
+| `transition_id` | `str`                                                                                             |    ✅    |             |
+| `details`       | [`List[TransitionCalculationDetailsAmountRequest]`](TransitionCalculationDetailsAmountRequest.md) |    ✅    |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import TransitionCalculationDetailsRequest
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of TransitionCalculationDetailsRequest from a JSON string
-transition_calculation_details_request_instance = TransitionCalculationDetailsRequest.from_json(json)
-# print the JSON string representation of the object
-print(TransitionCalculationDetailsRequest.to_json())
-
-# convert the object into a dict
-transition_calculation_details_request_dict = transition_calculation_details_request_instance.to_dict()
-# create an instance of TransitionCalculationDetailsRequest from a dict
-transition_calculation_details_request_from_dict = TransitionCalculationDetailsRequest.from_dict(transition_calculation_details_request_dict)
+transition_calculation_details_request = TransitionCalculationDetailsRequest(
+    transition_id="''",
+    details=[],  # List[[TransitionCalculationDetailsAmountRequest](TransitionCalculationDetailsAmountRequest.md)]
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import TransitionCalculationDetailsRequest
 
+# Parse from JSON
+json_str = '{"transition_id": "example"}'
+transition_calculation_details_request = TransitionCalculationDetailsRequest.from_json(
+    json_str
+)
+
+# Convert to JSON
+print(transition_calculation_details_request.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import TransitionCalculationDetailsRequest
+
+# Convert to/from dictionary
+data_dict = transition_calculation_details_request.to_dict()
+transition_calculation_details_request = TransitionCalculationDetailsRequest.from_dict(
+    data_dict
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(transition_calculation_details_request.transition_id)
+# Update properties
+transition_calculation_details_request.transition_id = "new_value"
+```

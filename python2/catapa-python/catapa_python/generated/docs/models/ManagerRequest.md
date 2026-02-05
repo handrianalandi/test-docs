@@ -1,30 +1,49 @@
 # ManagerRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**manager_id** | **str** |  | 
+| Name         | Type  | Required | Description |
+| :----------- | :---- | :------: | :---------- |
+| `manager_id` | `str` |    ✅    |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import ManagerRequest
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of ManagerRequest from a JSON string
-manager_request_instance = ManagerRequest.from_json(json)
-# print the JSON string representation of the object
-print(ManagerRequest.to_json())
-
-# convert the object into a dict
-manager_request_dict = manager_request_instance.to_dict()
-# create an instance of ManagerRequest from a dict
-manager_request_from_dict = ManagerRequest.from_dict(manager_request_dict)
+manager_request = ManagerRequest(manager_id="''")
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import ManagerRequest
 
+# Parse from JSON
+json_str = '{"manager_id": "example"}'
+manager_request = ManagerRequest.from_json(json_str)
+
+# Convert to JSON
+print(manager_request.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import ManagerRequest
+
+# Convert to/from dictionary
+data_dict = manager_request.to_dict()
+manager_request = ManagerRequest.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(manager_request.manager_id)
+# Update properties
+manager_request.manager_id = "new_value"
+```

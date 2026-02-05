@@ -1,31 +1,53 @@
 # BulkOperationResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**successes** | [**List[IdResponse]**](IdResponse.md) |  | 
-**failures** | [**List[BulkOperationFailureResponse]**](BulkOperationFailureResponse.md) |  | 
+| Name        | Type                                                                    | Description |
+| :---------- | :---------------------------------------------------------------------- | :---------- |
+| `successes` | [`List[IdResponse]`](IdResponse.md)                                     |             |
+| `failures`  | [`List[BulkOperationFailureResponse]`](BulkOperationFailureResponse.md) |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import BulkOperationResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of BulkOperationResponse from a JSON string
-bulk_operation_response_instance = BulkOperationResponse.from_json(json)
-# print the JSON string representation of the object
-print(BulkOperationResponse.to_json())
-
-# convert the object into a dict
-bulk_operation_response_dict = bulk_operation_response_instance.to_dict()
-# create an instance of BulkOperationResponse from a dict
-bulk_operation_response_from_dict = BulkOperationResponse.from_dict(bulk_operation_response_dict)
+bulk_operation_response = BulkOperationResponse(
+    successes=[],  # List[[IdResponse](IdResponse.md)]
+    failures=[],  # List[[BulkOperationFailureResponse](BulkOperationFailureResponse.md)]
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import BulkOperationResponse
 
+# Parse from JSON
+json_str = '{"successes": "example"}'
+bulk_operation_response = BulkOperationResponse.from_json(json_str)
+
+# Convert to JSON
+print(bulk_operation_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import BulkOperationResponse
+
+# Convert to/from dictionary
+data_dict = bulk_operation_response.to_dict()
+bulk_operation_response = BulkOperationResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(bulk_operation_response.successes)
+# Update properties
+bulk_operation_response.successes = new_value
+```

@@ -1,34 +1,69 @@
 # BpjsHealthcareMembershipAdditionalFamilyMembership
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**dental_healthcare_facility** | **str** |  | 
-**family_member_name** | **str** |  | 
-**family_member_relation_id** | **str** |  | 
-**first_level_healthcare_facility** | **str** |  | 
-**id** | **str** |  | 
+| Name                              | Type  | Required | Description |
+| :-------------------------------- | :---- | :------: | :---------- |
+| `dental_healthcare_facility`      | `str` |    ❌    |             |
+| `family_member_name`              | `str` |    ✅    |             |
+| `family_member_relation_id`       | `str` |    ✅    |             |
+| `first_level_healthcare_facility` | `str` |    ❌    |             |
+| `id`                              | `str` |    ✅    |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import BpjsHealthcareMembershipAdditionalFamilyMembership
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of BpjsHealthcareMembershipAdditionalFamilyMembership from a JSON string
-bpjs_healthcare_membership_additional_family_membership_instance = BpjsHealthcareMembershipAdditionalFamilyMembership.from_json(json)
-# print the JSON string representation of the object
-print(BpjsHealthcareMembershipAdditionalFamilyMembership.to_json())
-
-# convert the object into a dict
-bpjs_healthcare_membership_additional_family_membership_dict = bpjs_healthcare_membership_additional_family_membership_instance.to_dict()
-# create an instance of BpjsHealthcareMembershipAdditionalFamilyMembership from a dict
-bpjs_healthcare_membership_additional_family_membership_from_dict = BpjsHealthcareMembershipAdditionalFamilyMembership.from_dict(bpjs_healthcare_membership_additional_family_membership_dict)
+bpjs_healthcare_membership_additional_family_membership = (
+    BpjsHealthcareMembershipAdditionalFamilyMembership(
+        dental_healthcare_facility="''",
+        family_member_name="''",
+        family_member_relation_id="''",
+        first_level_healthcare_facility="''",
+        id="''",
+    )
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import BpjsHealthcareMembershipAdditionalFamilyMembership
 
+# Parse from JSON
+json_str = '{"dental_healthcare_facility": "example"}'
+bpjs_healthcare_membership_additional_family_membership = (
+    BpjsHealthcareMembershipAdditionalFamilyMembership.from_json(json_str)
+)
+
+# Convert to JSON
+print(bpjs_healthcare_membership_additional_family_membership.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import BpjsHealthcareMembershipAdditionalFamilyMembership
+
+# Convert to/from dictionary
+data_dict = bpjs_healthcare_membership_additional_family_membership.to_dict()
+bpjs_healthcare_membership_additional_family_membership = (
+    BpjsHealthcareMembershipAdditionalFamilyMembership.from_dict(data_dict)
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(
+    bpjs_healthcare_membership_additional_family_membership.dental_healthcare_facility
+)
+# Update properties
+bpjs_healthcare_membership_additional_family_membership.dental_healthcare_facility = (
+    "new_value"
+)
+```

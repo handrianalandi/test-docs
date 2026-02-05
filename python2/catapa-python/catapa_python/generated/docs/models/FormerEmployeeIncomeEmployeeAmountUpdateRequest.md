@@ -1,31 +1,56 @@
 # FormerEmployeeIncomeEmployeeAmountUpdateRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Employee income ID | 
-**amount** | **float** | Updated amount | 
+| Name     | Type    | Required | Description        |
+| :------- | :------ | :------: | :----------------- |
+| `id`     | `str`   |    ✅    | Employee income ID |
+| `amount` | `float` |    ✅    | Updated amount     |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import FormerEmployeeIncomeEmployeeAmountUpdateRequest
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of FormerEmployeeIncomeEmployeeAmountUpdateRequest from a JSON string
-former_employee_income_employee_amount_update_request_instance = FormerEmployeeIncomeEmployeeAmountUpdateRequest.from_json(json)
-# print the JSON string representation of the object
-print(FormerEmployeeIncomeEmployeeAmountUpdateRequest.to_json())
-
-# convert the object into a dict
-former_employee_income_employee_amount_update_request_dict = former_employee_income_employee_amount_update_request_instance.to_dict()
-# create an instance of FormerEmployeeIncomeEmployeeAmountUpdateRequest from a dict
-former_employee_income_employee_amount_update_request_from_dict = FormerEmployeeIncomeEmployeeAmountUpdateRequest.from_dict(former_employee_income_employee_amount_update_request_dict)
+former_employee_income_employee_amount_update_request = (
+    FormerEmployeeIncomeEmployeeAmountUpdateRequest(id="''", amount=1.337)
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import FormerEmployeeIncomeEmployeeAmountUpdateRequest
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+former_employee_income_employee_amount_update_request = (
+    FormerEmployeeIncomeEmployeeAmountUpdateRequest.from_json(json_str)
+)
+
+# Convert to JSON
+print(former_employee_income_employee_amount_update_request.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import FormerEmployeeIncomeEmployeeAmountUpdateRequest
+
+# Convert to/from dictionary
+data_dict = former_employee_income_employee_amount_update_request.to_dict()
+former_employee_income_employee_amount_update_request = (
+    FormerEmployeeIncomeEmployeeAmountUpdateRequest.from_dict(data_dict)
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(former_employee_income_employee_amount_update_request.id)
+# Update properties
+former_employee_income_employee_amount_update_request.id = "new_value"
+```

@@ -1,34 +1,59 @@
 # SalaryItemAddOnResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**amount** | **float** |  | 
-**var_date** | **str** |  | 
-**employee** | [**SalaryItemAddOnEmployeeResponse**](SalaryItemAddOnEmployeeResponse.md) |  | 
-**salary_calculation_processed** | **bool** |  | 
-**salary_item** | [**SalaryItemSimpleResponse**](SalaryItemSimpleResponse.md) |  | 
+| Name                           | Type                                                                    | Description |
+| :----------------------------- | :---------------------------------------------------------------------- | :---------- |
+| `amount`                       | `float`                                                                 |             |
+| `var_date`                     | `str`                                                                   |             |
+| `employee`                     | [`SalaryItemAddOnEmployeeResponse`](SalaryItemAddOnEmployeeResponse.md) |             |
+| `salary_calculation_processed` | `bool`                                                                  |             |
+| `salary_item`                  | [`SalaryItemSimpleResponse`](SalaryItemSimpleResponse.md)               |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import SalaryItemAddOnResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of SalaryItemAddOnResponse from a JSON string
-salary_item_add_on_response_instance = SalaryItemAddOnResponse.from_json(json)
-# print the JSON string representation of the object
-print(SalaryItemAddOnResponse.to_json())
-
-# convert the object into a dict
-salary_item_add_on_response_dict = salary_item_add_on_response_instance.to_dict()
-# create an instance of SalaryItemAddOnResponse from a dict
-salary_item_add_on_response_from_dict = SalaryItemAddOnResponse.from_dict(salary_item_add_on_response_dict)
+salary_item_add_on_response = SalaryItemAddOnResponse(
+    amount=1.337,
+    var_date="''",
+    employee=None,  # [SalaryItemAddOnEmployeeResponse](SalaryItemAddOnEmployeeResponse.md)
+    salary_calculation_processed=True,
+    salary_item=None,  # [SalaryItemSimpleResponse](SalaryItemSimpleResponse.md)
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import SalaryItemAddOnResponse
 
+# Parse from JSON
+json_str = '{"amount": "example"}'
+salary_item_add_on_response = SalaryItemAddOnResponse.from_json(json_str)
+
+# Convert to JSON
+print(salary_item_add_on_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import SalaryItemAddOnResponse
+
+# Convert to/from dictionary
+data_dict = salary_item_add_on_response.to_dict()
+salary_item_add_on_response = SalaryItemAddOnResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(salary_item_add_on_response.amount)
+# Update properties
+salary_item_add_on_response.amount = new_value
+```

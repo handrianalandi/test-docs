@@ -1,35 +1,65 @@
 # BpjsManpowerPremiumDetailsResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**employee_id** | **str** |  | 
-**employee_identification_number** | **str** |  | 
-**employee_name** | **str** |  | 
-**monthly_wage** | **float** |  | 
-**current_month_detail** | [**BpjsManpowerCurrentMonthDetailResponse**](BpjsManpowerCurrentMonthDetailResponse.md) |  | 
-**details** | [**List[BpjsManpowerPremiumDetailsItemResponse]**](BpjsManpowerPremiumDetailsItemResponse.md) | Possible empty list | 
+| Name                             | Type                                                                                        | Description         |
+| :------------------------------- | :------------------------------------------------------------------------------------------ | :------------------ |
+| `employee_id`                    | `str`                                                                                       |                     |
+| `employee_identification_number` | `str`                                                                                       |                     |
+| `employee_name`                  | `str`                                                                                       |                     |
+| `monthly_wage`                   | `float`                                                                                     |                     |
+| `current_month_detail`           | [`BpjsManpowerCurrentMonthDetailResponse`](BpjsManpowerCurrentMonthDetailResponse.md)       |                     |
+| `details`                        | [`List[BpjsManpowerPremiumDetailsItemResponse]`](BpjsManpowerPremiumDetailsItemResponse.md) | Possible empty list |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import BpjsManpowerPremiumDetailsResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of BpjsManpowerPremiumDetailsResponse from a JSON string
-bpjs_manpower_premium_details_response_instance = BpjsManpowerPremiumDetailsResponse.from_json(json)
-# print the JSON string representation of the object
-print(BpjsManpowerPremiumDetailsResponse.to_json())
-
-# convert the object into a dict
-bpjs_manpower_premium_details_response_dict = bpjs_manpower_premium_details_response_instance.to_dict()
-# create an instance of BpjsManpowerPremiumDetailsResponse from a dict
-bpjs_manpower_premium_details_response_from_dict = BpjsManpowerPremiumDetailsResponse.from_dict(bpjs_manpower_premium_details_response_dict)
+bpjs_manpower_premium_details_response = BpjsManpowerPremiumDetailsResponse(
+    employee_id="''",
+    employee_identification_number="''",
+    employee_name="''",
+    monthly_wage=1.337,
+    current_month_detail=None,  # [BpjsManpowerCurrentMonthDetailResponse](BpjsManpowerCurrentMonthDetailResponse.md)
+    details=[],  # List[[BpjsManpowerPremiumDetailsItemResponse](BpjsManpowerPremiumDetailsItemResponse.md)]
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import BpjsManpowerPremiumDetailsResponse
 
+# Parse from JSON
+json_str = '{"employee_id": "example"}'
+bpjs_manpower_premium_details_response = BpjsManpowerPremiumDetailsResponse.from_json(
+    json_str
+)
+
+# Convert to JSON
+print(bpjs_manpower_premium_details_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import BpjsManpowerPremiumDetailsResponse
+
+# Convert to/from dictionary
+data_dict = bpjs_manpower_premium_details_response.to_dict()
+bpjs_manpower_premium_details_response = BpjsManpowerPremiumDetailsResponse.from_dict(
+    data_dict
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(bpjs_manpower_premium_details_response.employee_id)
+# Update properties
+bpjs_manpower_premium_details_response.employee_id = "new_value"
+```

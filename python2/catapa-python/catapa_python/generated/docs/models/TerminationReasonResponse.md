@@ -1,35 +1,61 @@
 # TerminationReasonResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **UUID** |  | 
-**name** | **str** |  | 
-**termination_pph21_reason** | **str** |  | 
-**termination_bpjs_manpower_reason** | **str** |  | 
-**termination_reason_category** | **str** |  | 
-**severance** | **bool** |  | 
+| Name                               | Type   | Description |
+| :--------------------------------- | :----- | :---------- |
+| `id`                               | `UUID` |             |
+| `name`                             | `str`  |             |
+| `termination_pph21_reason`         | `str`  |             |
+| `termination_bpjs_manpower_reason` | `str`  |             |
+| `termination_reason_category`      | `str`  |             |
+| `severance`                        | `bool` |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import TerminationReasonResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of TerminationReasonResponse from a JSON string
-termination_reason_response_instance = TerminationReasonResponse.from_json(json)
-# print the JSON string representation of the object
-print(TerminationReasonResponse.to_json())
-
-# convert the object into a dict
-termination_reason_response_dict = termination_reason_response_instance.to_dict()
-# create an instance of TerminationReasonResponse from a dict
-termination_reason_response_from_dict = TerminationReasonResponse.from_dict(termination_reason_response_dict)
+termination_reason_response = TerminationReasonResponse(
+    id="''",
+    name="''",
+    termination_pph21_reason="''",
+    termination_bpjs_manpower_reason="''",
+    termination_reason_category="''",
+    severance=True,
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import TerminationReasonResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+termination_reason_response = TerminationReasonResponse.from_json(json_str)
+
+# Convert to JSON
+print(termination_reason_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import TerminationReasonResponse
+
+# Convert to/from dictionary
+data_dict = termination_reason_response.to_dict()
+termination_reason_response = TerminationReasonResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(termination_reason_response.id)
+# Update properties
+termination_reason_response.id = "new_value"
+```

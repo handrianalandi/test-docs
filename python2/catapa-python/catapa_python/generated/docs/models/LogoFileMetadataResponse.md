@@ -1,32 +1,53 @@
 # LogoFileMetadataResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**filename** | **str** |  | 
-**path** | **str** |  | 
-**url** | **str** |  | 
+| Name       | Type  | Description |
+| :--------- | :---- | :---------- |
+| `filename` | `str` |             |
+| `path`     | `str` |             |
+| `url`      | `str` |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import LogoFileMetadataResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of LogoFileMetadataResponse from a JSON string
-logo_file_metadata_response_instance = LogoFileMetadataResponse.from_json(json)
-# print the JSON string representation of the object
-print(LogoFileMetadataResponse.to_json())
-
-# convert the object into a dict
-logo_file_metadata_response_dict = logo_file_metadata_response_instance.to_dict()
-# create an instance of LogoFileMetadataResponse from a dict
-logo_file_metadata_response_from_dict = LogoFileMetadataResponse.from_dict(logo_file_metadata_response_dict)
+logo_file_metadata_response = LogoFileMetadataResponse(
+    filename="''", path="''", url="''"
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import LogoFileMetadataResponse
 
+# Parse from JSON
+json_str = '{"filename": "example"}'
+logo_file_metadata_response = LogoFileMetadataResponse.from_json(json_str)
+
+# Convert to JSON
+print(logo_file_metadata_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import LogoFileMetadataResponse
+
+# Convert to/from dictionary
+data_dict = logo_file_metadata_response.to_dict()
+logo_file_metadata_response = LogoFileMetadataResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(logo_file_metadata_response.filename)
+# Update properties
+logo_file_metadata_response.filename = "new_value"
+```

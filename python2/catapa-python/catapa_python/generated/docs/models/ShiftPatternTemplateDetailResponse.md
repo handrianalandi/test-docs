@@ -1,31 +1,56 @@
 # ShiftPatternTemplateDetailResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**shift** | [**ShiftResponse**](ShiftResponse.md) |  | 
-**sequence** | **float** |  | 
+| Name       | Type                                | Description |
+| :--------- | :---------------------------------- | :---------- |
+| `shift`    | [`ShiftResponse`](ShiftResponse.md) |             |
+| `sequence` | `float`                             |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import ShiftPatternTemplateDetailResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of ShiftPatternTemplateDetailResponse from a JSON string
-shift_pattern_template_detail_response_instance = ShiftPatternTemplateDetailResponse.from_json(json)
-# print the JSON string representation of the object
-print(ShiftPatternTemplateDetailResponse.to_json())
-
-# convert the object into a dict
-shift_pattern_template_detail_response_dict = shift_pattern_template_detail_response_instance.to_dict()
-# create an instance of ShiftPatternTemplateDetailResponse from a dict
-shift_pattern_template_detail_response_from_dict = ShiftPatternTemplateDetailResponse.from_dict(shift_pattern_template_detail_response_dict)
+shift_pattern_template_detail_response = ShiftPatternTemplateDetailResponse(
+    shift=None, sequence=1.337  # [ShiftResponse](ShiftResponse.md)
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import ShiftPatternTemplateDetailResponse
 
+# Parse from JSON
+json_str = '{"shift": "example"}'
+shift_pattern_template_detail_response = ShiftPatternTemplateDetailResponse.from_json(
+    json_str
+)
+
+# Convert to JSON
+print(shift_pattern_template_detail_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import ShiftPatternTemplateDetailResponse
+
+# Convert to/from dictionary
+data_dict = shift_pattern_template_detail_response.to_dict()
+shift_pattern_template_detail_response = ShiftPatternTemplateDetailResponse.from_dict(
+    data_dict
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(shift_pattern_template_detail_response.shift)
+# Update properties
+shift_pattern_template_detail_response.shift = new_value
+```

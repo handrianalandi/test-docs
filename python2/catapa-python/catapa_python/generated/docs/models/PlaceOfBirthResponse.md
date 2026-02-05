@@ -1,33 +1,54 @@
 # PlaceOfBirthResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**code** | **str** |  | 
-**name** | **str** |  | 
-**state** | [**StateResponse**](StateResponse.md) |  | 
+| Name    | Type                                | Description |
+| :------ | :---------------------------------- | :---------- |
+| `id`    | `str`                               |             |
+| `code`  | `str`                               |             |
+| `name`  | `str`                               |             |
+| `state` | [`StateResponse`](StateResponse.md) |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import PlaceOfBirthResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of PlaceOfBirthResponse from a JSON string
-place_of_birth_response_instance = PlaceOfBirthResponse.from_json(json)
-# print the JSON string representation of the object
-print(PlaceOfBirthResponse.to_json())
-
-# convert the object into a dict
-place_of_birth_response_dict = place_of_birth_response_instance.to_dict()
-# create an instance of PlaceOfBirthResponse from a dict
-place_of_birth_response_from_dict = PlaceOfBirthResponse.from_dict(place_of_birth_response_dict)
+place_of_birth_response = PlaceOfBirthResponse(
+    id="''", code="''", name="''", state=None  # [StateResponse](StateResponse.md)
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import PlaceOfBirthResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+place_of_birth_response = PlaceOfBirthResponse.from_json(json_str)
+
+# Convert to JSON
+print(place_of_birth_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import PlaceOfBirthResponse
+
+# Convert to/from dictionary
+data_dict = place_of_birth_response.to_dict()
+place_of_birth_response = PlaceOfBirthResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(place_of_birth_response.id)
+# Update properties
+place_of_birth_response.id = "new_value"
+```

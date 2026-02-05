@@ -1,31 +1,52 @@
 # PayslipDownloadRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**payment_date** | **date** |  | 
-**type** | **str** |  | 
+| Name           | Type   | Required | Description |
+| :------------- | :----- | :------: | :---------- |
+| `payment_date` | `date` |    ✅    |             |
+| `type`         | `str`  |    ✅    |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import PayslipDownloadRequest
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of PayslipDownloadRequest from a JSON string
-payslip_download_request_instance = PayslipDownloadRequest.from_json(json)
-# print the JSON string representation of the object
-print(PayslipDownloadRequest.to_json())
-
-# convert the object into a dict
-payslip_download_request_dict = payslip_download_request_instance.to_dict()
-# create an instance of PayslipDownloadRequest from a dict
-payslip_download_request_from_dict = PayslipDownloadRequest.from_dict(payslip_download_request_dict)
+payslip_download_request = PayslipDownloadRequest(
+    payment_date=datetime.datetime.strptime("1975-12-30", "%Y-%m-%d").date(), type="''"
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import PayslipDownloadRequest
 
+# Parse from JSON
+json_str = '{"payment_date": "example"}'
+payslip_download_request = PayslipDownloadRequest.from_json(json_str)
+
+# Convert to JSON
+print(payslip_download_request.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import PayslipDownloadRequest
+
+# Convert to/from dictionary
+data_dict = payslip_download_request.to_dict()
+payslip_download_request = PayslipDownloadRequest.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(payslip_download_request.payment_date)
+# Update properties
+payslip_download_request.payment_date = new_value
+```

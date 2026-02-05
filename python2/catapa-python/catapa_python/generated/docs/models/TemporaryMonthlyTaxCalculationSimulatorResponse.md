@@ -1,33 +1,60 @@
 # TemporaryMonthlyTaxCalculationSimulatorResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** | **str** |  | 
-**basic_salary** | **float** |  | 
-**tax_allowance** | **float** |  | 
-**bonus** | **float** |  | 
+| Name            | Type    | Description |
+| :-------------- | :------ | :---------- |
+| `type`          | `str`   |             |
+| `basic_salary`  | `float` |             |
+| `tax_allowance` | `float` |             |
+| `bonus`         | `float` |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import TemporaryMonthlyTaxCalculationSimulatorResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of TemporaryMonthlyTaxCalculationSimulatorResponse from a JSON string
-temporary_monthly_tax_calculation_simulator_response_instance = TemporaryMonthlyTaxCalculationSimulatorResponse.from_json(json)
-# print the JSON string representation of the object
-print(TemporaryMonthlyTaxCalculationSimulatorResponse.to_json())
-
-# convert the object into a dict
-temporary_monthly_tax_calculation_simulator_response_dict = temporary_monthly_tax_calculation_simulator_response_instance.to_dict()
-# create an instance of TemporaryMonthlyTaxCalculationSimulatorResponse from a dict
-temporary_monthly_tax_calculation_simulator_response_from_dict = TemporaryMonthlyTaxCalculationSimulatorResponse.from_dict(temporary_monthly_tax_calculation_simulator_response_dict)
+temporary_monthly_tax_calculation_simulator_response = (
+    TemporaryMonthlyTaxCalculationSimulatorResponse(
+        type="'TEMPORARY'", basic_salary=1.337, tax_allowance=1.337, bonus=1.337
+    )
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import TemporaryMonthlyTaxCalculationSimulatorResponse
 
+# Parse from JSON
+json_str = '{"type": "example"}'
+temporary_monthly_tax_calculation_simulator_response = (
+    TemporaryMonthlyTaxCalculationSimulatorResponse.from_json(json_str)
+)
+
+# Convert to JSON
+print(temporary_monthly_tax_calculation_simulator_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import TemporaryMonthlyTaxCalculationSimulatorResponse
+
+# Convert to/from dictionary
+data_dict = temporary_monthly_tax_calculation_simulator_response.to_dict()
+temporary_monthly_tax_calculation_simulator_response = (
+    TemporaryMonthlyTaxCalculationSimulatorResponse.from_dict(data_dict)
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(temporary_monthly_tax_calculation_simulator_response.type)
+# Update properties
+temporary_monthly_tax_calculation_simulator_response.type = "new_value"
+```

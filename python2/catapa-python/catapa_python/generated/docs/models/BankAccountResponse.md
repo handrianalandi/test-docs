@@ -1,41 +1,73 @@
 # BankAccountResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **UUID** |  | 
-**bank_id** | **str** |  | 
-**bank** | [**BankResponse**](BankResponse.md) |  | 
-**bank_branch_id** | **str** |  | 
-**bank_branch** | [**BankBranchResponse**](BankBranchResponse.md) |  | 
-**account_number** | **str** |  | 
-**account_name** | **str** |  | 
-**beneficiary_id** | **str** |  | 
-**priority** | **float** |  | 
-**currency** | [**CurrencySimpleResponse**](CurrencySimpleResponse.md) |  | 
-**percentage** | **float** |  | 
-**amount** | **float** |  | 
+| Name             | Type                                                  | Description |
+| :--------------- | :---------------------------------------------------- | :---------- |
+| `id`             | `UUID`                                                |             |
+| `bank_id`        | `str`                                                 |             |
+| `bank`           | [`BankResponse`](BankResponse.md)                     |             |
+| `bank_branch_id` | `str`                                                 |             |
+| `bank_branch`    | [`BankBranchResponse`](BankBranchResponse.md)         |             |
+| `account_number` | `str`                                                 |             |
+| `account_name`   | `str`                                                 |             |
+| `beneficiary_id` | `str`                                                 |             |
+| `priority`       | `float`                                               |             |
+| `currency`       | [`CurrencySimpleResponse`](CurrencySimpleResponse.md) |             |
+| `percentage`     | `float`                                               |             |
+| `amount`         | `float`                                               |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import BankAccountResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of BankAccountResponse from a JSON string
-bank_account_response_instance = BankAccountResponse.from_json(json)
-# print the JSON string representation of the object
-print(BankAccountResponse.to_json())
-
-# convert the object into a dict
-bank_account_response_dict = bank_account_response_instance.to_dict()
-# create an instance of BankAccountResponse from a dict
-bank_account_response_from_dict = BankAccountResponse.from_dict(bank_account_response_dict)
+bank_account_response = BankAccountResponse(
+    id="'8bf610cc-c83b-11e6-9d9d-cec0c932ce01'",
+    bank_id="''",
+    bank=None,  # [BankResponse](BankResponse.md)
+    bank_branch_id="''",
+    bank_branch=None,  # [BankBranchResponse](BankBranchResponse.md)
+    account_number="''",
+    account_name="''",
+    beneficiary_id="''",
+    priority=1.337,
+    currency=None,  # [CurrencySimpleResponse](CurrencySimpleResponse.md)
+    percentage=1.337,
+    amount=1.337,
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import BankAccountResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+bank_account_response = BankAccountResponse.from_json(json_str)
+
+# Convert to JSON
+print(bank_account_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import BankAccountResponse
+
+# Convert to/from dictionary
+data_dict = bank_account_response.to_dict()
+bank_account_response = BankAccountResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(bank_account_response.id)
+# Update properties
+bank_account_response.id = "new_value"
+```

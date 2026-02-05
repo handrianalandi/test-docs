@@ -1,37 +1,65 @@
 # ChartFilterRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**column_id** | **str** |  | 
-**chart_filter_type** | **str** |  | 
-**chart_value_collection_filters** | [**List[ChartValueCollectionFilterRequest]**](ChartValueCollectionFilterRequest.md) |  | 
-**start_date** | **str** |  | 
-**end_date** | **str** |  | 
-**time_frame** | **str** |  | 
-**time_unit** | **str** |  | 
-**duration** | **float** |  | 
+| Name                             | Type                                                                              | Required | Description |
+| :------------------------------- | :-------------------------------------------------------------------------------- | :------: | :---------- |
+| `column_id`                      | `str`                                                                             |    ❌    |             |
+| `chart_filter_type`              | `str`                                                                             |    ❌    |             |
+| `chart_value_collection_filters` | [`List[ChartValueCollectionFilterRequest]`](ChartValueCollectionFilterRequest.md) |    ❌    |             |
+| `start_date`                     | `str`                                                                             |    ❌    |             |
+| `end_date`                       | `str`                                                                             |    ❌    |             |
+| `time_frame`                     | `str`                                                                             |    ❌    |             |
+| `time_unit`                      | `str`                                                                             |    ❌    |             |
+| `duration`                       | `float`                                                                           |    ❌    |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import ChartFilterRequest
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of ChartFilterRequest from a JSON string
-chart_filter_request_instance = ChartFilterRequest.from_json(json)
-# print the JSON string representation of the object
-print(ChartFilterRequest.to_json())
-
-# convert the object into a dict
-chart_filter_request_dict = chart_filter_request_instance.to_dict()
-# create an instance of ChartFilterRequest from a dict
-chart_filter_request_from_dict = ChartFilterRequest.from_dict(chart_filter_request_dict)
+chart_filter_request = ChartFilterRequest(
+    column_id="''",
+    chart_filter_type="''",
+    chart_value_collection_filters=[],  # List[[ChartValueCollectionFilterRequest](ChartValueCollectionFilterRequest.md)]
+    start_date="''",
+    end_date="''",
+    time_frame="''",
+    time_unit="''",
+    duration=1.337,
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import ChartFilterRequest
 
+# Parse from JSON
+json_str = '{"column_id": "example"}'
+chart_filter_request = ChartFilterRequest.from_json(json_str)
+
+# Convert to JSON
+print(chart_filter_request.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import ChartFilterRequest
+
+# Convert to/from dictionary
+data_dict = chart_filter_request.to_dict()
+chart_filter_request = ChartFilterRequest.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(chart_filter_request.column_id)
+# Update properties
+chart_filter_request.column_id = "new_value"
+```

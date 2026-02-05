@@ -1,33 +1,54 @@
 # AttendanceStatusResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**code** | **str** |  | 
-**name** | **str** |  | 
-**attendance_type** | **str** |  | 
+| Name              | Type  | Description |
+| :---------------- | :---- | :---------- |
+| `id`              | `str` |             |
+| `code`            | `str` |             |
+| `name`            | `str` |             |
+| `attendance_type` | `str` |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import AttendanceStatusResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of AttendanceStatusResponse from a JSON string
-attendance_status_response_instance = AttendanceStatusResponse.from_json(json)
-# print the JSON string representation of the object
-print(AttendanceStatusResponse.to_json())
-
-# convert the object into a dict
-attendance_status_response_dict = attendance_status_response_instance.to_dict()
-# create an instance of AttendanceStatusResponse from a dict
-attendance_status_response_from_dict = AttendanceStatusResponse.from_dict(attendance_status_response_dict)
+attendance_status_response = AttendanceStatusResponse(
+    id="''", code="''", name="''", attendance_type="''"
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import AttendanceStatusResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+attendance_status_response = AttendanceStatusResponse.from_json(json_str)
+
+# Convert to JSON
+print(attendance_status_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import AttendanceStatusResponse
+
+# Convert to/from dictionary
+data_dict = attendance_status_response.to_dict()
+attendance_status_response = AttendanceStatusResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(attendance_status_response.id)
+# Update properties
+attendance_status_response.id = "new_value"
+```

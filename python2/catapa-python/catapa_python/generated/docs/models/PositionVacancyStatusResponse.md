@@ -1,37 +1,65 @@
 # PositionVacancyStatusResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**effective_date** | **str** |  | 
-**vacancy_status** | **str** |  | 
-**position** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
-**created_by** | **str** |  | 
-**created_date** | **float** |  | 
-**updated_by** | **str** |  | 
-**updated_date** | **float** |  | 
+| Name             | Type                                          | Description |
+| :--------------- | :-------------------------------------------- | :---------- |
+| `id`             | `str`                                         |             |
+| `effective_date` | `str`                                         |             |
+| `vacancy_status` | `str`                                         |             |
+| `position`       | [`IdCodeNameResponse`](IdCodeNameResponse.md) |             |
+| `created_by`     | `str`                                         |             |
+| `created_date`   | `float`                                       |             |
+| `updated_by`     | `str`                                         |             |
+| `updated_date`   | `float`                                       |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import PositionVacancyStatusResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of PositionVacancyStatusResponse from a JSON string
-position_vacancy_status_response_instance = PositionVacancyStatusResponse.from_json(json)
-# print the JSON string representation of the object
-print(PositionVacancyStatusResponse.to_json())
-
-# convert the object into a dict
-position_vacancy_status_response_dict = position_vacancy_status_response_instance.to_dict()
-# create an instance of PositionVacancyStatusResponse from a dict
-position_vacancy_status_response_from_dict = PositionVacancyStatusResponse.from_dict(position_vacancy_status_response_dict)
+position_vacancy_status_response = PositionVacancyStatusResponse(
+    id="''",
+    effective_date="''",
+    vacancy_status="'VACANT'",
+    position=None,  # [IdCodeNameResponse](IdCodeNameResponse.md)
+    created_by="''",
+    created_date=1.337,
+    updated_by="''",
+    updated_date=1.337,
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import PositionVacancyStatusResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+position_vacancy_status_response = PositionVacancyStatusResponse.from_json(json_str)
+
+# Convert to JSON
+print(position_vacancy_status_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import PositionVacancyStatusResponse
+
+# Convert to/from dictionary
+data_dict = position_vacancy_status_response.to_dict()
+position_vacancy_status_response = PositionVacancyStatusResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(position_vacancy_status_response.id)
+# Update properties
+position_vacancy_status_response.id = "new_value"
+```

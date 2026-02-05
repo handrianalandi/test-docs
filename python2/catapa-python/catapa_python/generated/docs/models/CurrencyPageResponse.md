@@ -1,38 +1,67 @@
 # CurrencyPageResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**total_pages** | **int** |  | 
-**last** | **bool** |  | 
-**total_elements** | **int** |  | 
-**number_of_elements** | **int** |  | 
-**sort** | [**List[SortProperty]**](SortProperty.md) |  | 
-**first** | **bool** |  | 
-**size** | **int** |  | 
-**number** | **int** |  | 
-**content** | [**List[CurrencyResponse]**](CurrencyResponse.md) |  | 
+| Name                 | Type                                            | Description                                    |
+| :------------------- | :---------------------------------------------- | :--------------------------------------------- |
+| `total_pages`        | `int`                                           | Total number of pages available                |
+| `last`               | `bool`                                          | Indicates whether this is the last page        |
+| `total_elements`     | `int`                                           | Total number of elements across all pages      |
+| `number_of_elements` | `int`                                           | Number of elements in the current page         |
+| `sort`               | [`List[SortProperty]`](SortProperty.md)         |                                                |
+| `first`              | `bool`                                          | Indicates whether this is the first page       |
+| `size`               | `int`                                           | Size of the page (number of elements per page) |
+| `number`             | `int`                                           | Current page number (zero-indexed)             |
+| `content`            | [`List[CurrencyResponse]`](CurrencyResponse.md) |                                                |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import CurrencyPageResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of CurrencyPageResponse from a JSON string
-currency_page_response_instance = CurrencyPageResponse.from_json(json)
-# print the JSON string representation of the object
-print(CurrencyPageResponse.to_json())
-
-# convert the object into a dict
-currency_page_response_dict = currency_page_response_instance.to_dict()
-# create an instance of CurrencyPageResponse from a dict
-currency_page_response_from_dict = CurrencyPageResponse.from_dict(currency_page_response_dict)
+currency_page_response = CurrencyPageResponse(
+    total_pages=56,
+    last=True,
+    total_elements=56,
+    number_of_elements=56,
+    sort=[],  # List[[SortProperty](SortProperty.md)]
+    first=True,
+    size=56,
+    number=56,
+    content=[],  # List[[CurrencyResponse](CurrencyResponse.md)]
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import CurrencyPageResponse
 
+# Parse from JSON
+json_str = '{"total_pages": "example"}'
+currency_page_response = CurrencyPageResponse.from_json(json_str)
+
+# Convert to JSON
+print(currency_page_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import CurrencyPageResponse
+
+# Convert to/from dictionary
+data_dict = currency_page_response.to_dict()
+currency_page_response = CurrencyPageResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(currency_page_response.total_pages)
+# Update properties
+currency_page_response.total_pages = new_value
+```

@@ -1,33 +1,54 @@
 # CountryRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**code** | **str** |  | 
-**calling_code** | **str** | e.g. &#x60;+62&#x60; | 
-**name** | **str** |  | 
-**tax_treaty** | **bool** |  | [default to False]
+| Name           | Type   | Required | Description        |
+| :------------- | :----- | :------: | :----------------- |
+| `code`         | `str`  |    ✅    |                    |
+| `calling_code` | `str`  |    ✅    | e.g. \`+62\`       |
+| `name`         | `str`  |    ✅    |                    |
+| `tax_treaty`   | `bool` |    ❌    | (default: `False`) |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import CountryRequest
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of CountryRequest from a JSON string
-country_request_instance = CountryRequest.from_json(json)
-# print the JSON string representation of the object
-print(CountryRequest.to_json())
-
-# convert the object into a dict
-country_request_dict = country_request_instance.to_dict()
-# create an instance of CountryRequest from a dict
-country_request_from_dict = CountryRequest.from_dict(country_request_dict)
+country_request = CountryRequest(
+    code="'0'", calling_code="'+40'", name="'0'", tax_treaty=True
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import CountryRequest
 
+# Parse from JSON
+json_str = '{"code": "example"}'
+country_request = CountryRequest.from_json(json_str)
+
+# Convert to JSON
+print(country_request.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import CountryRequest
+
+# Convert to/from dictionary
+data_dict = country_request.to_dict()
+country_request = CountryRequest.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(country_request.code)
+# Update properties
+country_request.code = "new_value"
+```

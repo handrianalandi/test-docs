@@ -1,31 +1,52 @@
 # BankBranchSimpleResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**bank** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
+| Name   | Type                                          | Description |
+| :----- | :-------------------------------------------- | :---------- |
+| `id`   | `str`                                         |             |
+| `bank` | [`IdCodeNameResponse`](IdCodeNameResponse.md) |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import BankBranchSimpleResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of BankBranchSimpleResponse from a JSON string
-bank_branch_simple_response_instance = BankBranchSimpleResponse.from_json(json)
-# print the JSON string representation of the object
-print(BankBranchSimpleResponse.to_json())
-
-# convert the object into a dict
-bank_branch_simple_response_dict = bank_branch_simple_response_instance.to_dict()
-# create an instance of BankBranchSimpleResponse from a dict
-bank_branch_simple_response_from_dict = BankBranchSimpleResponse.from_dict(bank_branch_simple_response_dict)
+bank_branch_simple_response = BankBranchSimpleResponse(
+    id="''", bank=None  # [IdCodeNameResponse](IdCodeNameResponse.md)
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import BankBranchSimpleResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+bank_branch_simple_response = BankBranchSimpleResponse.from_json(json_str)
+
+# Convert to JSON
+print(bank_branch_simple_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import BankBranchSimpleResponse
+
+# Convert to/from dictionary
+data_dict = bank_branch_simple_response.to_dict()
+bank_branch_simple_response = BankBranchSimpleResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(bank_branch_simple_response.id)
+# Update properties
+bank_branch_simple_response.id = "new_value"
+```

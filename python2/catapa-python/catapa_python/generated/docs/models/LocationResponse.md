@@ -1,41 +1,73 @@
 # LocationResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**code** | **str** |  | 
-**name** | **str** |  | 
-**location_group** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
-**city** | [**CityResponse**](CityResponse.md) |  | 
-**latitude** | **float** |  | 
-**longitude** | **float** |  | 
-**headquarter** | **bool** |  | 
-**address** | **str** |  | 
-**phone** | **str** |  | 
-**zip_code** | **str** |  | 
-**company** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
+| Name             | Type                                          | Description |
+| :--------------- | :-------------------------------------------- | :---------- |
+| `id`             | `str`                                         |             |
+| `code`           | `str`                                         |             |
+| `name`           | `str`                                         |             |
+| `location_group` | [`IdCodeNameResponse`](IdCodeNameResponse.md) |             |
+| `city`           | [`CityResponse`](CityResponse.md)             |             |
+| `latitude`       | `float`                                       |             |
+| `longitude`      | `float`                                       |             |
+| `headquarter`    | `bool`                                        |             |
+| `address`        | `str`                                         |             |
+| `phone`          | `str`                                         |             |
+| `zip_code`       | `str`                                         |             |
+| `company`        | [`IdCodeNameResponse`](IdCodeNameResponse.md) |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import LocationResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of LocationResponse from a JSON string
-location_response_instance = LocationResponse.from_json(json)
-# print the JSON string representation of the object
-print(LocationResponse.to_json())
-
-# convert the object into a dict
-location_response_dict = location_response_instance.to_dict()
-# create an instance of LocationResponse from a dict
-location_response_from_dict = LocationResponse.from_dict(location_response_dict)
+location_response = LocationResponse(
+    id="''",
+    code="''",
+    name="''",
+    location_group=None,  # [IdCodeNameResponse](IdCodeNameResponse.md)
+    city=None,  # [CityResponse](CityResponse.md)
+    latitude=1.337,
+    longitude=1.337,
+    headquarter=True,
+    address="''",
+    phone="''",
+    zip_code="''",
+    company=None,  # [IdCodeNameResponse](IdCodeNameResponse.md)
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import LocationResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+location_response = LocationResponse.from_json(json_str)
+
+# Convert to JSON
+print(location_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import LocationResponse
+
+# Convert to/from dictionary
+data_dict = location_response.to_dict()
+location_response = LocationResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(location_response.id)
+# Update properties
+location_response.id = "new_value"
+```

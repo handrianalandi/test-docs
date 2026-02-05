@@ -1,32 +1,57 @@
 # EmployeeVariableValidationRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** | **str** |  | 
-**value** | **float** |  | 
-**options** | **List[str]** |  | 
+| Name      | Type        | Required | Description |
+| :-------- | :---------- | :------: | :---------- |
+| `type`    | `str`       |    ❌    |             |
+| `value`   | `float`     |    ❌    |             |
+| `options` | `List[str]` |    ❌    |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import EmployeeVariableValidationRequest
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of EmployeeVariableValidationRequest from a JSON string
-employee_variable_validation_request_instance = EmployeeVariableValidationRequest.from_json(json)
-# print the JSON string representation of the object
-print(EmployeeVariableValidationRequest.to_json())
-
-# convert the object into a dict
-employee_variable_validation_request_dict = employee_variable_validation_request_instance.to_dict()
-# create an instance of EmployeeVariableValidationRequest from a dict
-employee_variable_validation_request_from_dict = EmployeeVariableValidationRequest.from_dict(employee_variable_validation_request_dict)
+employee_variable_validation_request = EmployeeVariableValidationRequest(
+    type="'MIN'", value=1.337, options=[""]
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import EmployeeVariableValidationRequest
 
+# Parse from JSON
+json_str = '{"type": "example"}'
+employee_variable_validation_request = EmployeeVariableValidationRequest.from_json(
+    json_str
+)
+
+# Convert to JSON
+print(employee_variable_validation_request.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import EmployeeVariableValidationRequest
+
+# Convert to/from dictionary
+data_dict = employee_variable_validation_request.to_dict()
+employee_variable_validation_request = EmployeeVariableValidationRequest.from_dict(
+    data_dict
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(employee_variable_validation_request.type)
+# Update properties
+employee_variable_validation_request.type = "new_value"
+```

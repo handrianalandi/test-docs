@@ -1,31 +1,56 @@
 # PaymentItemGroupLastSequenceResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**employee_id** | **str** |  | 
-**last_sequence** | **int** |  | 
+| Name            | Type  | Description |
+| :-------------- | :---- | :---------- |
+| `employee_id`   | `str` |             |
+| `last_sequence` | `int` |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import PaymentItemGroupLastSequenceResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of PaymentItemGroupLastSequenceResponse from a JSON string
-payment_item_group_last_sequence_response_instance = PaymentItemGroupLastSequenceResponse.from_json(json)
-# print the JSON string representation of the object
-print(PaymentItemGroupLastSequenceResponse.to_json())
-
-# convert the object into a dict
-payment_item_group_last_sequence_response_dict = payment_item_group_last_sequence_response_instance.to_dict()
-# create an instance of PaymentItemGroupLastSequenceResponse from a dict
-payment_item_group_last_sequence_response_from_dict = PaymentItemGroupLastSequenceResponse.from_dict(payment_item_group_last_sequence_response_dict)
+payment_item_group_last_sequence_response = PaymentItemGroupLastSequenceResponse(
+    employee_id="''", last_sequence=56
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import PaymentItemGroupLastSequenceResponse
 
+# Parse from JSON
+json_str = '{"employee_id": "example"}'
+payment_item_group_last_sequence_response = (
+    PaymentItemGroupLastSequenceResponse.from_json(json_str)
+)
+
+# Convert to JSON
+print(payment_item_group_last_sequence_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import PaymentItemGroupLastSequenceResponse
+
+# Convert to/from dictionary
+data_dict = payment_item_group_last_sequence_response.to_dict()
+payment_item_group_last_sequence_response = (
+    PaymentItemGroupLastSequenceResponse.from_dict(data_dict)
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(payment_item_group_last_sequence_response.employee_id)
+# Update properties
+payment_item_group_last_sequence_response.employee_id = "new_value"
+```

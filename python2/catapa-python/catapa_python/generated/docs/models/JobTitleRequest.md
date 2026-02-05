@@ -1,32 +1,53 @@
 # JobTitleRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**code** | **str** |  | 
-**name** | **str** |  | 
-**job_levels** | [**List[IdRequest]**](IdRequest.md) |  | 
+| Name         | Type                              | Required | Description |
+| :----------- | :-------------------------------- | :------: | :---------- |
+| `code`       | `str`                             |    ✅    |             |
+| `name`       | `str`                             |    ✅    |             |
+| `job_levels` | [`List[IdRequest]`](IdRequest.md) |    ❌    |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import JobTitleRequest
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of JobTitleRequest from a JSON string
-job_title_request_instance = JobTitleRequest.from_json(json)
-# print the JSON string representation of the object
-print(JobTitleRequest.to_json())
-
-# convert the object into a dict
-job_title_request_dict = job_title_request_instance.to_dict()
-# create an instance of JobTitleRequest from a dict
-job_title_request_from_dict = JobTitleRequest.from_dict(job_title_request_dict)
+job_title_request = JobTitleRequest(
+    code="'0'", name="'0'", job_levels=[]  # List[[IdRequest](IdRequest.md)]
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import JobTitleRequest
 
+# Parse from JSON
+json_str = '{"code": "example"}'
+job_title_request = JobTitleRequest.from_json(json_str)
+
+# Convert to JSON
+print(job_title_request.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import JobTitleRequest
+
+# Convert to/from dictionary
+data_dict = job_title_request.to_dict()
+job_title_request = JobTitleRequest.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(job_title_request.code)
+# Update properties
+job_title_request.code = "new_value"
+```

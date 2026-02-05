@@ -1,31 +1,50 @@
 # RejectApprovalRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Approval ID | 
-**reason** | **str** | Reason of Rejection | 
+| Name     | Type  | Required | Description         |
+| :------- | :---- | :------: | :------------------ |
+| `id`     | `str` |    ✅    | Approval ID         |
+| `reason` | `str` |    ✅    | Reason of Rejection |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import RejectApprovalRequest
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of RejectApprovalRequest from a JSON string
-reject_approval_request_instance = RejectApprovalRequest.from_json(json)
-# print the JSON string representation of the object
-print(RejectApprovalRequest.to_json())
-
-# convert the object into a dict
-reject_approval_request_dict = reject_approval_request_instance.to_dict()
-# create an instance of RejectApprovalRequest from a dict
-reject_approval_request_from_dict = RejectApprovalRequest.from_dict(reject_approval_request_dict)
+reject_approval_request = RejectApprovalRequest(id="''", reason="''")
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import RejectApprovalRequest
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+reject_approval_request = RejectApprovalRequest.from_json(json_str)
+
+# Convert to JSON
+print(reject_approval_request.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import RejectApprovalRequest
+
+# Convert to/from dictionary
+data_dict = reject_approval_request.to_dict()
+reject_approval_request = RejectApprovalRequest.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(reject_approval_request.id)
+# Update properties
+reject_approval_request.id = "new_value"
+```

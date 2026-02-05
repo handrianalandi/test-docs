@@ -1,34 +1,61 @@
 # TaxDependentRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Unique identifier for the tax dependent | 
-**name** | **str** | Name of the tax dependent | 
-**ptkp_relation_type** | **str** | Relationship type for PTKP calculation | 
-**date_of_birth** | **datetime** | Date of birth of the tax dependent | 
-**job** | **str** | Job or occupation of the tax dependent | 
+| Name                 | Type       | Required | Description                             |
+| :------------------- | :--------- | :------: | :-------------------------------------- |
+| `id`                 | `str`      |    ❌    | Unique identifier for the tax dependent |
+| `name`               | `str`      |    ✅    | Name of the tax dependent               |
+| `ptkp_relation_type` | `str`      |    ✅    | Relationship type for PTKP calculation  |
+| `date_of_birth`      | `datetime` |    ✅    | Date of birth of the tax dependent      |
+| `job`                | `str`      |    ❌    | Job or occupation of the tax dependent  |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import TaxDependentRequest
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of TaxDependentRequest from a JSON string
-tax_dependent_request_instance = TaxDependentRequest.from_json(json)
-# print the JSON string representation of the object
-print(TaxDependentRequest.to_json())
-
-# convert the object into a dict
-tax_dependent_request_dict = tax_dependent_request_instance.to_dict()
-# create an instance of TaxDependentRequest from a dict
-tax_dependent_request_from_dict = TaxDependentRequest.from_dict(tax_dependent_request_dict)
+tax_dependent_request = TaxDependentRequest(
+    id="''",
+    name="''",
+    ptkp_relation_type="'CHILD'",
+    date_of_birth=datetime.datetime.strptime(
+        "2013-10-20 19:20:30.00", "%Y-%m-%d %H:%M:%S.%f"
+    ),
+    job="''",
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import TaxDependentRequest
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+tax_dependent_request = TaxDependentRequest.from_json(json_str)
+
+# Convert to JSON
+print(tax_dependent_request.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import TaxDependentRequest
+
+# Convert to/from dictionary
+data_dict = tax_dependent_request.to_dict()
+tax_dependent_request = TaxDependentRequest.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(tax_dependent_request.id)
+# Update properties
+tax_dependent_request.id = "new_value"
+```

@@ -1,33 +1,54 @@
 # EmploymentStatusTypeResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**default_data** | **bool** |  | 
-**employment_status_number_type** | **str** |  | 
-**name** | **str** |  | 
+| Name                            | Type   | Description |
+| :------------------------------ | :----- | :---------- |
+| `id`                            | `str`  |             |
+| `default_data`                  | `bool` |             |
+| `employment_status_number_type` | `str`  |             |
+| `name`                          | `str`  |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import EmploymentStatusTypeResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of EmploymentStatusTypeResponse from a JSON string
-employment_status_type_response_instance = EmploymentStatusTypeResponse.from_json(json)
-# print the JSON string representation of the object
-print(EmploymentStatusTypeResponse.to_json())
-
-# convert the object into a dict
-employment_status_type_response_dict = employment_status_type_response_instance.to_dict()
-# create an instance of EmploymentStatusTypeResponse from a dict
-employment_status_type_response_from_dict = EmploymentStatusTypeResponse.from_dict(employment_status_type_response_dict)
+employment_status_type_response = EmploymentStatusTypeResponse(
+    id="''", default_data=True, employment_status_number_type="'PKWT_NUMBER'", name="''"
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import EmploymentStatusTypeResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+employment_status_type_response = EmploymentStatusTypeResponse.from_json(json_str)
+
+# Convert to JSON
+print(employment_status_type_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import EmploymentStatusTypeResponse
+
+# Convert to/from dictionary
+data_dict = employment_status_type_response.to_dict()
+employment_status_type_response = EmploymentStatusTypeResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(employment_status_type_response.id)
+# Update properties
+employment_status_type_response.id = "new_value"
+```

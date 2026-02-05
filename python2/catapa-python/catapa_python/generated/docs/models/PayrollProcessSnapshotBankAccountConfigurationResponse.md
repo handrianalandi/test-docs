@@ -1,31 +1,57 @@
 # PayrollProcessSnapshotBankAccountConfigurationResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**effective_date** | **date** |  | 
-**bank_accounts** | [**List[PayrollProcessSnapshotBankAccountResponse]**](PayrollProcessSnapshotBankAccountResponse.md) |  | 
+| Name             | Type                                                                                              | Description |
+| :--------------- | :------------------------------------------------------------------------------------------------ | :---------- |
+| `effective_date` | `date`                                                                                            |             |
+| `bank_accounts`  | [`List[PayrollProcessSnapshotBankAccountResponse]`](PayrollProcessSnapshotBankAccountResponse.md) |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import PayrollProcessSnapshotBankAccountConfigurationResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of PayrollProcessSnapshotBankAccountConfigurationResponse from a JSON string
-payroll_process_snapshot_bank_account_configuration_response_instance = PayrollProcessSnapshotBankAccountConfigurationResponse.from_json(json)
-# print the JSON string representation of the object
-print(PayrollProcessSnapshotBankAccountConfigurationResponse.to_json())
-
-# convert the object into a dict
-payroll_process_snapshot_bank_account_configuration_response_dict = payroll_process_snapshot_bank_account_configuration_response_instance.to_dict()
-# create an instance of PayrollProcessSnapshotBankAccountConfigurationResponse from a dict
-payroll_process_snapshot_bank_account_configuration_response_from_dict = PayrollProcessSnapshotBankAccountConfigurationResponse.from_dict(payroll_process_snapshot_bank_account_configuration_response_dict)
+payroll_process_snapshot_bank_account_configuration_response = PayrollProcessSnapshotBankAccountConfigurationResponse(
+    effective_date=datetime.datetime.strptime("1975-12-30", "%Y-%m-%d").date(),
+    bank_accounts=[],  # List[[PayrollProcessSnapshotBankAccountResponse](PayrollProcessSnapshotBankAccountResponse.md)]
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import PayrollProcessSnapshotBankAccountConfigurationResponse
 
+# Parse from JSON
+json_str = '{"effective_date": "example"}'
+payroll_process_snapshot_bank_account_configuration_response = (
+    PayrollProcessSnapshotBankAccountConfigurationResponse.from_json(json_str)
+)
+
+# Convert to JSON
+print(payroll_process_snapshot_bank_account_configuration_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import PayrollProcessSnapshotBankAccountConfigurationResponse
+
+# Convert to/from dictionary
+data_dict = payroll_process_snapshot_bank_account_configuration_response.to_dict()
+payroll_process_snapshot_bank_account_configuration_response = (
+    PayrollProcessSnapshotBankAccountConfigurationResponse.from_dict(data_dict)
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(payroll_process_snapshot_bank_account_configuration_response.effective_date)
+# Update properties
+payroll_process_snapshot_bank_account_configuration_response.effective_date = new_value
+```

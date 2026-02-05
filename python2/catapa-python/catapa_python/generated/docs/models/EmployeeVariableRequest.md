@@ -1,33 +1,57 @@
 # EmployeeVariableRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**employee_id** | **str** |  | 
-**name** | **str** |  | 
-**var_date** | **date** |  | 
-**value** | **str** |  | 
+| Name          | Type   | Required | Description |
+| :------------ | :----- | :------: | :---------- |
+| `employee_id` | `str`  |    ✅    |             |
+| `name`        | `str`  |    ✅    |             |
+| `var_date`    | `date` |    ✅    |             |
+| `value`       | `str`  |    ✅    |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import EmployeeVariableRequest
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of EmployeeVariableRequest from a JSON string
-employee_variable_request_instance = EmployeeVariableRequest.from_json(json)
-# print the JSON string representation of the object
-print(EmployeeVariableRequest.to_json())
-
-# convert the object into a dict
-employee_variable_request_dict = employee_variable_request_instance.to_dict()
-# create an instance of EmployeeVariableRequest from a dict
-employee_variable_request_from_dict = EmployeeVariableRequest.from_dict(employee_variable_request_dict)
+employee_variable_request = EmployeeVariableRequest(
+    employee_id="''",
+    name="''",
+    var_date=datetime.datetime.strptime("1975-12-30", "%Y-%m-%d").date(),
+    value="''",
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import EmployeeVariableRequest
 
+# Parse from JSON
+json_str = '{"employee_id": "example"}'
+employee_variable_request = EmployeeVariableRequest.from_json(json_str)
+
+# Convert to JSON
+print(employee_variable_request.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import EmployeeVariableRequest
+
+# Convert to/from dictionary
+data_dict = employee_variable_request.to_dict()
+employee_variable_request = EmployeeVariableRequest.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(employee_variable_request.employee_id)
+# Update properties
+employee_variable_request.employee_id = "new_value"
+```

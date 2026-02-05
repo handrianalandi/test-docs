@@ -1,32 +1,53 @@
 # TerminationTaxReasonResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**name** | **str** |  | 
-**tax_annualized** | **bool** |  | 
+| Name             | Type   | Description |
+| :--------------- | :----- | :---------- |
+| `id`             | `str`  |             |
+| `name`           | `str`  |             |
+| `tax_annualized` | `bool` |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import TerminationTaxReasonResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of TerminationTaxReasonResponse from a JSON string
-termination_tax_reason_response_instance = TerminationTaxReasonResponse.from_json(json)
-# print the JSON string representation of the object
-print(TerminationTaxReasonResponse.to_json())
-
-# convert the object into a dict
-termination_tax_reason_response_dict = termination_tax_reason_response_instance.to_dict()
-# create an instance of TerminationTaxReasonResponse from a dict
-termination_tax_reason_response_from_dict = TerminationTaxReasonResponse.from_dict(termination_tax_reason_response_dict)
+termination_tax_reason_response = TerminationTaxReasonResponse(
+    id="''", name="''", tax_annualized=True
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import TerminationTaxReasonResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+termination_tax_reason_response = TerminationTaxReasonResponse.from_json(json_str)
+
+# Convert to JSON
+print(termination_tax_reason_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import TerminationTaxReasonResponse
+
+# Convert to/from dictionary
+data_dict = termination_tax_reason_response.to_dict()
+termination_tax_reason_response = TerminationTaxReasonResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(termination_tax_reason_response.id)
+# Update properties
+termination_tax_reason_response.id = "new_value"
+```

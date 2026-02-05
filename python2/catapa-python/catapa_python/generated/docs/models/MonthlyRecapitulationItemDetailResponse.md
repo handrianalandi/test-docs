@@ -1,31 +1,57 @@
 # MonthlyRecapitulationItemDetailResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**amount** | **float** |  | 
-**salary_item** | [**SalaryItemWithSalaryItemTypeResponse**](SalaryItemWithSalaryItemTypeResponse.md) |  | 
+| Name          | Type                                                                              | Description |
+| :------------ | :-------------------------------------------------------------------------------- | :---------- |
+| `amount`      | `float`                                                                           |             |
+| `salary_item` | [`SalaryItemWithSalaryItemTypeResponse`](SalaryItemWithSalaryItemTypeResponse.md) |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import MonthlyRecapitulationItemDetailResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of MonthlyRecapitulationItemDetailResponse from a JSON string
-monthly_recapitulation_item_detail_response_instance = MonthlyRecapitulationItemDetailResponse.from_json(json)
-# print the JSON string representation of the object
-print(MonthlyRecapitulationItemDetailResponse.to_json())
-
-# convert the object into a dict
-monthly_recapitulation_item_detail_response_dict = monthly_recapitulation_item_detail_response_instance.to_dict()
-# create an instance of MonthlyRecapitulationItemDetailResponse from a dict
-monthly_recapitulation_item_detail_response_from_dict = MonthlyRecapitulationItemDetailResponse.from_dict(monthly_recapitulation_item_detail_response_dict)
+monthly_recapitulation_item_detail_response = MonthlyRecapitulationItemDetailResponse(
+    amount=1.337,
+    salary_item=None,  # [SalaryItemWithSalaryItemTypeResponse](SalaryItemWithSalaryItemTypeResponse.md)
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import MonthlyRecapitulationItemDetailResponse
 
+# Parse from JSON
+json_str = '{"amount": "example"}'
+monthly_recapitulation_item_detail_response = (
+    MonthlyRecapitulationItemDetailResponse.from_json(json_str)
+)
+
+# Convert to JSON
+print(monthly_recapitulation_item_detail_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import MonthlyRecapitulationItemDetailResponse
+
+# Convert to/from dictionary
+data_dict = monthly_recapitulation_item_detail_response.to_dict()
+monthly_recapitulation_item_detail_response = (
+    MonthlyRecapitulationItemDetailResponse.from_dict(data_dict)
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(monthly_recapitulation_item_detail_response.amount)
+# Update properties
+monthly_recapitulation_item_detail_response.amount = new_value
+```

@@ -1,33 +1,54 @@
 # CostCenterResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**code** | **str** |  | 
-**name** | **str** |  | 
-**description** | **str** |  | 
+| Name          | Type  | Description |
+| :------------ | :---- | :---------- |
+| `id`          | `str` |             |
+| `code`        | `str` |             |
+| `name`        | `str` |             |
+| `description` | `str` |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import CostCenterResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of CostCenterResponse from a JSON string
-cost_center_response_instance = CostCenterResponse.from_json(json)
-# print the JSON string representation of the object
-print(CostCenterResponse.to_json())
-
-# convert the object into a dict
-cost_center_response_dict = cost_center_response_instance.to_dict()
-# create an instance of CostCenterResponse from a dict
-cost_center_response_from_dict = CostCenterResponse.from_dict(cost_center_response_dict)
+cost_center_response = CostCenterResponse(
+    id="''", code="''", name="''", description="''"
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import CostCenterResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+cost_center_response = CostCenterResponse.from_json(json_str)
+
+# Convert to JSON
+print(cost_center_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import CostCenterResponse
+
+# Convert to/from dictionary
+data_dict = cost_center_response.to_dict()
+cost_center_response = CostCenterResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(cost_center_response.id)
+# Update properties
+cost_center_response.id = "new_value"
+```

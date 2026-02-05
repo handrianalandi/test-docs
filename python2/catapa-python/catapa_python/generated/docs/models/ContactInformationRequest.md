@@ -1,32 +1,53 @@
 # ContactInformationRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**email** | **str** |  | 
-**mobile_phone** | **str** | e.g. &#x60;+6281234567890&#x60; | 
-**original_address** | **str** |  | 
+| Name               | Type  | Required | Description             |
+| :----------------- | :---- | :------: | :---------------------- |
+| `email`            | `str` |    ❌    |                         |
+| `mobile_phone`     | `str` |    ❌    | e.g. \`+6281234567890\` |
+| `original_address` | `str` |    ❌    |                         |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import ContactInformationRequest
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of ContactInformationRequest from a JSON string
-contact_information_request_instance = ContactInformationRequest.from_json(json)
-# print the JSON string representation of the object
-print(ContactInformationRequest.to_json())
-
-# convert the object into a dict
-contact_information_request_dict = contact_information_request_instance.to_dict()
-# create an instance of ContactInformationRequest from a dict
-contact_information_request_from_dict = ContactInformationRequest.from_dict(contact_information_request_dict)
+contact_information_request = ContactInformationRequest(
+    email="''", mobile_phone="'+08988'", original_address="''"
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import ContactInformationRequest
 
+# Parse from JSON
+json_str = '{"email": "example"}'
+contact_information_request = ContactInformationRequest.from_json(json_str)
+
+# Convert to JSON
+print(contact_information_request.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import ContactInformationRequest
+
+# Convert to/from dictionary
+data_dict = contact_information_request.to_dict()
+contact_information_request = ContactInformationRequest.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(contact_information_request.email)
+# Update properties
+contact_information_request.email = "new_value"
+```

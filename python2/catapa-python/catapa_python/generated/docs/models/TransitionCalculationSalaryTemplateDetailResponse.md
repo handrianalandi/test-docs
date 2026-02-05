@@ -1,33 +1,61 @@
 # TransitionCalculationSalaryTemplateDetailResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**salary_item** | [**SalaryItemResponseWithCategory**](SalaryItemResponseWithCategory.md) |  | 
-**salary_item_type** | **str** |  | 
-**thp** | **bool** |  | 
+| Name               | Type                                                                  | Description |
+| :----------------- | :-------------------------------------------------------------------- | :---------- |
+| `id`               | `str`                                                                 |             |
+| `salary_item`      | [`SalaryItemResponseWithCategory`](SalaryItemResponseWithCategory.md) |             |
+| `salary_item_type` | `str`                                                                 |             |
+| `thp`              | `bool`                                                                |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import TransitionCalculationSalaryTemplateDetailResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of TransitionCalculationSalaryTemplateDetailResponse from a JSON string
-transition_calculation_salary_template_detail_response_instance = TransitionCalculationSalaryTemplateDetailResponse.from_json(json)
-# print the JSON string representation of the object
-print(TransitionCalculationSalaryTemplateDetailResponse.to_json())
-
-# convert the object into a dict
-transition_calculation_salary_template_detail_response_dict = transition_calculation_salary_template_detail_response_instance.to_dict()
-# create an instance of TransitionCalculationSalaryTemplateDetailResponse from a dict
-transition_calculation_salary_template_detail_response_from_dict = TransitionCalculationSalaryTemplateDetailResponse.from_dict(transition_calculation_salary_template_detail_response_dict)
+transition_calculation_salary_template_detail_response = TransitionCalculationSalaryTemplateDetailResponse(
+    id="''",
+    salary_item=None,  # [SalaryItemResponseWithCategory](SalaryItemResponseWithCategory.md)
+    salary_item_type="''",
+    thp=True,
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import TransitionCalculationSalaryTemplateDetailResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+transition_calculation_salary_template_detail_response = (
+    TransitionCalculationSalaryTemplateDetailResponse.from_json(json_str)
+)
+
+# Convert to JSON
+print(transition_calculation_salary_template_detail_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import TransitionCalculationSalaryTemplateDetailResponse
+
+# Convert to/from dictionary
+data_dict = transition_calculation_salary_template_detail_response.to_dict()
+transition_calculation_salary_template_detail_response = (
+    TransitionCalculationSalaryTemplateDetailResponse.from_dict(data_dict)
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(transition_calculation_salary_template_detail_response.id)
+# Update properties
+transition_calculation_salary_template_detail_response.id = "new_value"
+```

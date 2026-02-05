@@ -1,36 +1,63 @@
 # WorkflowActivityResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**created_date** | **float** |  | 
-**updated_date** | **float** |  | 
-**workflow_template** | [**WorkflowTemplateResponse**](WorkflowTemplateResponse.md) |  | 
-**effective_date** | **str** |  | 
-**workflow_reason** | [**WorkflowReasonResponse**](WorkflowReasonResponse.md) |  | 
-**employee** | [**EmployeeSimpleResponse**](EmployeeSimpleResponse.md) |  | 
+| Name                | Type                                                      | Description |
+| :------------------ | :-------------------------------------------------------- | :---------- |
+| `id`                | `str`                                                     |             |
+| `created_date`      | `float`                                                   |             |
+| `updated_date`      | `float`                                                   |             |
+| `workflow_template` | [`WorkflowTemplateResponse`](WorkflowTemplateResponse.md) |             |
+| `effective_date`    | `str`                                                     |             |
+| `workflow_reason`   | [`WorkflowReasonResponse`](WorkflowReasonResponse.md)     |             |
+| `employee`          | [`EmployeeSimpleResponse`](EmployeeSimpleResponse.md)     |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import WorkflowActivityResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of WorkflowActivityResponse from a JSON string
-workflow_activity_response_instance = WorkflowActivityResponse.from_json(json)
-# print the JSON string representation of the object
-print(WorkflowActivityResponse.to_json())
-
-# convert the object into a dict
-workflow_activity_response_dict = workflow_activity_response_instance.to_dict()
-# create an instance of WorkflowActivityResponse from a dict
-workflow_activity_response_from_dict = WorkflowActivityResponse.from_dict(workflow_activity_response_dict)
+workflow_activity_response = WorkflowActivityResponse(
+    id="''",
+    created_date=1.337,
+    updated_date=1.337,
+    workflow_template=None,  # [WorkflowTemplateResponse](WorkflowTemplateResponse.md)
+    effective_date="''",
+    workflow_reason=None,  # [WorkflowReasonResponse](WorkflowReasonResponse.md)
+    employee=None,  # [EmployeeSimpleResponse](EmployeeSimpleResponse.md)
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import WorkflowActivityResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+workflow_activity_response = WorkflowActivityResponse.from_json(json_str)
+
+# Convert to JSON
+print(workflow_activity_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import WorkflowActivityResponse
+
+# Convert to/from dictionary
+data_dict = workflow_activity_response.to_dict()
+workflow_activity_response = WorkflowActivityResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(workflow_activity_response.id)
+# Update properties
+workflow_activity_response.id = "new_value"
+```

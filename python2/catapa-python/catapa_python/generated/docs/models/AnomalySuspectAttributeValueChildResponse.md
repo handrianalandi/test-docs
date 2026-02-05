@@ -1,32 +1,59 @@
 # AnomalySuspectAttributeValueChildResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Unique identifier for the child attribute value | 
-**attribute_value** | **str** | Value of the child attribute | 
-**anomaly_suspect_attribute** | [**AnomalySuspectAttributeResponse**](AnomalySuspectAttributeResponse.md) |  | 
+| Name                        | Type                                                                    | Description                                     |
+| :-------------------------- | :---------------------------------------------------------------------- | :---------------------------------------------- |
+| `id`                        | `str`                                                                   | Unique identifier for the child attribute value |
+| `attribute_value`           | `str`                                                                   | Value of the child attribute                    |
+| `anomaly_suspect_attribute` | [`AnomalySuspectAttributeResponse`](AnomalySuspectAttributeResponse.md) |                                                 |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import AnomalySuspectAttributeValueChildResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of AnomalySuspectAttributeValueChildResponse from a JSON string
-anomaly_suspect_attribute_value_child_response_instance = AnomalySuspectAttributeValueChildResponse.from_json(json)
-# print the JSON string representation of the object
-print(AnomalySuspectAttributeValueChildResponse.to_json())
-
-# convert the object into a dict
-anomaly_suspect_attribute_value_child_response_dict = anomaly_suspect_attribute_value_child_response_instance.to_dict()
-# create an instance of AnomalySuspectAttributeValueChildResponse from a dict
-anomaly_suspect_attribute_value_child_response_from_dict = AnomalySuspectAttributeValueChildResponse.from_dict(anomaly_suspect_attribute_value_child_response_dict)
+anomaly_suspect_attribute_value_child_response = AnomalySuspectAttributeValueChildResponse(
+    id="''",
+    attribute_value="''",
+    anomaly_suspect_attribute=None,  # [AnomalySuspectAttributeResponse](AnomalySuspectAttributeResponse.md)
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import AnomalySuspectAttributeValueChildResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+anomaly_suspect_attribute_value_child_response = (
+    AnomalySuspectAttributeValueChildResponse.from_json(json_str)
+)
+
+# Convert to JSON
+print(anomaly_suspect_attribute_value_child_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import AnomalySuspectAttributeValueChildResponse
+
+# Convert to/from dictionary
+data_dict = anomaly_suspect_attribute_value_child_response.to_dict()
+anomaly_suspect_attribute_value_child_response = (
+    AnomalySuspectAttributeValueChildResponse.from_dict(data_dict)
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(anomaly_suspect_attribute_value_child_response.id)
+# Update properties
+anomaly_suspect_attribute_value_child_response.id = "new_value"
+```

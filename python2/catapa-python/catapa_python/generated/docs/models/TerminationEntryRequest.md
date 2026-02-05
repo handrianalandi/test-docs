@@ -1,39 +1,73 @@
 # TerminationEntryRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**termination_code** | **str** |  | 
-**payroll_method** | **str** |  | 
-**termination_reason_id** | **str** |  | 
-**request_date** | **date** | YYYY-MM-DD | 
-**bpjs_manpower_end_date** | **date** | YYYY-MM-DD | 
-**service_period_by** | **str** |  | 
-**pph21_membership_end_date** | **date** | YYYY-MM-DD | 
-**bpjs_healthcare_end_date** | **date** | YYYY-MM-DD | 
-**effective_date** | **date** | YYYY-MM-DD | 
-**rehire** | **bool** | Deprecated field that no longer has any effect on terminated employee pages | 
+| Name                        | Type   | Required | Description                                                                 |
+| :-------------------------- | :----- | :------: | :-------------------------------------------------------------------------- |
+| `termination_code`          | `str`  |    ❌    |                                                                             |
+| `payroll_method`            | `str`  |    ✅    |                                                                             |
+| `termination_reason_id`     | `str`  |    ✅    |                                                                             |
+| `request_date`              | `date` |    ✅    | YYYY-MM-DD                                                                  |
+| `bpjs_manpower_end_date`    | `date` |    ✅    | YYYY-MM-DD                                                                  |
+| `service_period_by`         | `str`  |    ❌    |                                                                             |
+| `pph21_membership_end_date` | `date` |    ✅    | YYYY-MM-DD                                                                  |
+| `bpjs_healthcare_end_date`  | `date` |    ✅    | YYYY-MM-DD                                                                  |
+| `effective_date`            | `date` |    ✅    | YYYY-MM-DD                                                                  |
+| `rehire`                    | `bool` |    ✅    | Deprecated field that no longer has any effect on terminated employee pages |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import TerminationEntryRequest
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of TerminationEntryRequest from a JSON string
-termination_entry_request_instance = TerminationEntryRequest.from_json(json)
-# print the JSON string representation of the object
-print(TerminationEntryRequest.to_json())
-
-# convert the object into a dict
-termination_entry_request_dict = termination_entry_request_instance.to_dict()
-# create an instance of TerminationEntryRequest from a dict
-termination_entry_request_from_dict = TerminationEntryRequest.from_dict(termination_entry_request_dict)
+termination_entry_request = TerminationEntryRequest(
+    termination_code="''",
+    payroll_method="'FULL'",
+    termination_reason_id="''",
+    request_date=datetime.datetime.strptime("1975-12-30", "%Y-%m-%d").date(),
+    bpjs_manpower_end_date=datetime.datetime.strptime("1975-12-30", "%Y-%m-%d").date(),
+    service_period_by="'JOIN_DATE'",
+    pph21_membership_end_date=datetime.datetime.strptime(
+        "1975-12-30", "%Y-%m-%d"
+    ).date(),
+    bpjs_healthcare_end_date=datetime.datetime.strptime(
+        "1975-12-30", "%Y-%m-%d"
+    ).date(),
+    effective_date=datetime.datetime.strptime("1975-12-30", "%Y-%m-%d").date(),
+    rehire=True,
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import TerminationEntryRequest
 
+# Parse from JSON
+json_str = '{"termination_code": "example"}'
+termination_entry_request = TerminationEntryRequest.from_json(json_str)
+
+# Convert to JSON
+print(termination_entry_request.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import TerminationEntryRequest
+
+# Convert to/from dictionary
+data_dict = termination_entry_request.to_dict()
+termination_entry_request = TerminationEntryRequest.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(termination_entry_request.termination_code)
+# Update properties
+termination_entry_request.termination_code = "new_value"
+```

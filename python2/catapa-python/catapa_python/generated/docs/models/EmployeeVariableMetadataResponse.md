@@ -1,35 +1,65 @@
 # EmployeeVariableMetadataResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**name** | **str** |  | 
-**type** | **str** |  | 
-**periodic** | **bool** |  | 
-**description** | **str** |  | 
-**validations** | [**List[EmployeeVariableValidationResponse]**](EmployeeVariableValidationResponse.md) |  | 
+| Name          | Type                                                                                | Description |
+| :------------ | :---------------------------------------------------------------------------------- | :---------- |
+| `id`          | `str`                                                                               |             |
+| `name`        | `str`                                                                               |             |
+| `type`        | `str`                                                                               |             |
+| `periodic`    | `bool`                                                                              |             |
+| `description` | `str`                                                                               |             |
+| `validations` | [`List[EmployeeVariableValidationResponse]`](EmployeeVariableValidationResponse.md) |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import EmployeeVariableMetadataResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of EmployeeVariableMetadataResponse from a JSON string
-employee_variable_metadata_response_instance = EmployeeVariableMetadataResponse.from_json(json)
-# print the JSON string representation of the object
-print(EmployeeVariableMetadataResponse.to_json())
-
-# convert the object into a dict
-employee_variable_metadata_response_dict = employee_variable_metadata_response_instance.to_dict()
-# create an instance of EmployeeVariableMetadataResponse from a dict
-employee_variable_metadata_response_from_dict = EmployeeVariableMetadataResponse.from_dict(employee_variable_metadata_response_dict)
+employee_variable_metadata_response = EmployeeVariableMetadataResponse(
+    id="''",
+    name="''",
+    type="'STRING'",
+    periodic=True,
+    description="''",
+    validations=[],  # List[[EmployeeVariableValidationResponse](EmployeeVariableValidationResponse.md)]
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import EmployeeVariableMetadataResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+employee_variable_metadata_response = EmployeeVariableMetadataResponse.from_json(
+    json_str
+)
+
+# Convert to JSON
+print(employee_variable_metadata_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import EmployeeVariableMetadataResponse
+
+# Convert to/from dictionary
+data_dict = employee_variable_metadata_response.to_dict()
+employee_variable_metadata_response = EmployeeVariableMetadataResponse.from_dict(
+    data_dict
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(employee_variable_metadata_response.id)
+# Update properties
+employee_variable_metadata_response.id = "new_value"
+```

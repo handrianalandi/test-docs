@@ -1,33 +1,54 @@
 # OrganizationHierarchyRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**code** | **str** |  | 
-**name** | **str** |  | 
-**color** | **str** | Hexadecimal color code, e.g. &#x60;#62A4D5&#x60; | 
-**level** | **float** |  | 
+| Name    | Type    | Required | Description                              |
+| :------ | :------ | :------: | :--------------------------------------- |
+| `code`  | `str`   |    ✅    |                                          |
+| `name`  | `str`   |    ✅    |                                          |
+| `color` | `str`   |    ❌    | Hexadecimal color code, e.g. \`#62A4D5\` |
+| `level` | `float` |    ✅    |                                          |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import OrganizationHierarchyRequest
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of OrganizationHierarchyRequest from a JSON string
-organization_hierarchy_request_instance = OrganizationHierarchyRequest.from_json(json)
-# print the JSON string representation of the object
-print(OrganizationHierarchyRequest.to_json())
-
-# convert the object into a dict
-organization_hierarchy_request_dict = organization_hierarchy_request_instance.to_dict()
-# create an instance of OrganizationHierarchyRequest from a dict
-organization_hierarchy_request_from_dict = OrganizationHierarchyRequest.from_dict(organization_hierarchy_request_dict)
+organization_hierarchy_request = OrganizationHierarchyRequest(
+    code="'0'", name="'0'", color="'0123456'", level=1
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import OrganizationHierarchyRequest
 
+# Parse from JSON
+json_str = '{"code": "example"}'
+organization_hierarchy_request = OrganizationHierarchyRequest.from_json(json_str)
+
+# Convert to JSON
+print(organization_hierarchy_request.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import OrganizationHierarchyRequest
+
+# Convert to/from dictionary
+data_dict = organization_hierarchy_request.to_dict()
+organization_hierarchy_request = OrganizationHierarchyRequest.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(organization_hierarchy_request.code)
+# Update properties
+organization_hierarchy_request.code = "new_value"
+```

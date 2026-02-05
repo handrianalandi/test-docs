@@ -1,33 +1,58 @@
 # OrganizationHistoryHierarchyResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**code** | **str** |  | 
-**name** | **str** |  | 
-**level** | **int** |  | 
+| Name    | Type  | Description |
+| :------ | :---- | :---------- |
+| `id`    | `str` |             |
+| `code`  | `str` |             |
+| `name`  | `str` |             |
+| `level` | `int` |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import OrganizationHistoryHierarchyResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of OrganizationHistoryHierarchyResponse from a JSON string
-organization_history_hierarchy_response_instance = OrganizationHistoryHierarchyResponse.from_json(json)
-# print the JSON string representation of the object
-print(OrganizationHistoryHierarchyResponse.to_json())
-
-# convert the object into a dict
-organization_history_hierarchy_response_dict = organization_history_hierarchy_response_instance.to_dict()
-# create an instance of OrganizationHistoryHierarchyResponse from a dict
-organization_history_hierarchy_response_from_dict = OrganizationHistoryHierarchyResponse.from_dict(organization_history_hierarchy_response_dict)
+organization_history_hierarchy_response = OrganizationHistoryHierarchyResponse(
+    id="''", code="''", name="''", level=56
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import OrganizationHistoryHierarchyResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+organization_history_hierarchy_response = (
+    OrganizationHistoryHierarchyResponse.from_json(json_str)
+)
+
+# Convert to JSON
+print(organization_history_hierarchy_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import OrganizationHistoryHierarchyResponse
+
+# Convert to/from dictionary
+data_dict = organization_history_hierarchy_response.to_dict()
+organization_history_hierarchy_response = (
+    OrganizationHistoryHierarchyResponse.from_dict(data_dict)
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(organization_history_hierarchy_response.id)
+# Update properties
+organization_history_hierarchy_response.id = "new_value"
+```

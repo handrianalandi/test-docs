@@ -1,33 +1,52 @@
 # ErrorResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**code** | **str** | Error code | 
-**message** | **str** | Error message | 
-**status** | **int** | HTTP status code | 
-**timestamp** | **str** | Timestamp when the error occurred | 
+| Name        | Type  | Description                       |
+| :---------- | :---- | :-------------------------------- |
+| `code`      | `str` | Error code                        |
+| `message`   | `str` | Error message                     |
+| `status`    | `int` | HTTP status code                  |
+| `timestamp` | `str` | Timestamp when the error occurred |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import ErrorResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of ErrorResponse from a JSON string
-error_response_instance = ErrorResponse.from_json(json)
-# print the JSON string representation of the object
-print(ErrorResponse.to_json())
-
-# convert the object into a dict
-error_response_dict = error_response_instance.to_dict()
-# create an instance of ErrorResponse from a dict
-error_response_from_dict = ErrorResponse.from_dict(error_response_dict)
+error_response = ErrorResponse(code="''", message="''", status=56, timestamp="''")
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import ErrorResponse
 
+# Parse from JSON
+json_str = '{"code": "example"}'
+error_response = ErrorResponse.from_json(json_str)
+
+# Convert to JSON
+print(error_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import ErrorResponse
+
+# Convert to/from dictionary
+data_dict = error_response.to_dict()
+error_response = ErrorResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(error_response.code)
+# Update properties
+error_response.code = "new_value"
+```

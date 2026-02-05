@@ -1,33 +1,54 @@
 # StateRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**code** | **str** |  | 
-**name** | **str** |  | 
-**country** | [**CountryRequest**](CountryRequest.md) |  | 
+| Name      | Type                                  | Required | Description |
+| :-------- | :------------------------------------ | :------: | :---------- |
+| `id`      | `str`                                 |    ❌    |             |
+| `code`    | `str`                                 |    ❌    |             |
+| `name`    | `str`                                 |    ❌    |             |
+| `country` | [`CountryRequest`](CountryRequest.md) |    ❌    |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import StateRequest
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of StateRequest from a JSON string
-state_request_instance = StateRequest.from_json(json)
-# print the JSON string representation of the object
-print(StateRequest.to_json())
-
-# convert the object into a dict
-state_request_dict = state_request_instance.to_dict()
-# create an instance of StateRequest from a dict
-state_request_from_dict = StateRequest.from_dict(state_request_dict)
+state_request = StateRequest(
+    id="''", code="''", name="''", country=None  # [CountryRequest](CountryRequest.md)
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import StateRequest
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+state_request = StateRequest.from_json(json_str)
+
+# Convert to JSON
+print(state_request.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import StateRequest
+
+# Convert to/from dictionary
+data_dict = state_request.to_dict()
+state_request = StateRequest.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(state_request.id)
+# Update properties
+state_request.id = "new_value"
+```

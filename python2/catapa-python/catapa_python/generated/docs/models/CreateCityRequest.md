@@ -1,32 +1,55 @@
 # CreateCityRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**code** | **str** |  | 
-**name** | **str** |  | 
-**state** | [**CreateCityRequestState**](CreateCityRequestState.md) |  | 
+| Name    | Type                                                  | Required | Description |
+| :------ | :---------------------------------------------------- | :------: | :---------- |
+| `code`  | `str`                                                 |    ✅    |             |
+| `name`  | `str`                                                 |    ✅    |             |
+| `state` | [`CreateCityRequestState`](CreateCityRequestState.md) |    ✅    |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import CreateCityRequest
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of CreateCityRequest from a JSON string
-create_city_request_instance = CreateCityRequest.from_json(json)
-# print the JSON string representation of the object
-print(CreateCityRequest.to_json())
-
-# convert the object into a dict
-create_city_request_dict = create_city_request_instance.to_dict()
-# create an instance of CreateCityRequest from a dict
-create_city_request_from_dict = CreateCityRequest.from_dict(create_city_request_dict)
+create_city_request = CreateCityRequest(
+    code="'0'",
+    name="'0'",
+    state=None,  # [CreateCityRequestState](CreateCityRequestState.md)
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import CreateCityRequest
 
+# Parse from JSON
+json_str = '{"code": "example"}'
+create_city_request = CreateCityRequest.from_json(json_str)
+
+# Convert to JSON
+print(create_city_request.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import CreateCityRequest
+
+# Convert to/from dictionary
+data_dict = create_city_request.to_dict()
+create_city_request = CreateCityRequest.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(create_city_request.code)
+# Update properties
+create_city_request.code = "new_value"
+```

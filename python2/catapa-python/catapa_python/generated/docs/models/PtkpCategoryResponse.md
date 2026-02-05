@@ -1,34 +1,55 @@
 # PtkpCategoryResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**code** | **str** |  | 
-**name** | **str** |  | 
-**max_dependent** | **float** |  | 
-**formula** | **str** |  | 
+| Name            | Type    | Description |
+| :-------------- | :------ | :---------- |
+| `id`            | `str`   |             |
+| `code`          | `str`   |             |
+| `name`          | `str`   |             |
+| `max_dependent` | `float` |             |
+| `formula`       | `str`   |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import PtkpCategoryResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of PtkpCategoryResponse from a JSON string
-ptkp_category_response_instance = PtkpCategoryResponse.from_json(json)
-# print the JSON string representation of the object
-print(PtkpCategoryResponse.to_json())
-
-# convert the object into a dict
-ptkp_category_response_dict = ptkp_category_response_instance.to_dict()
-# create an instance of PtkpCategoryResponse from a dict
-ptkp_category_response_from_dict = PtkpCategoryResponse.from_dict(ptkp_category_response_dict)
+ptkp_category_response = PtkpCategoryResponse(
+    id="''", code="''", name="''", max_dependent=1.337, formula="''"
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import PtkpCategoryResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+ptkp_category_response = PtkpCategoryResponse.from_json(json_str)
+
+# Convert to JSON
+print(ptkp_category_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import PtkpCategoryResponse
+
+# Convert to/from dictionary
+data_dict = ptkp_category_response.to_dict()
+ptkp_category_response = PtkpCategoryResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(ptkp_category_response.id)
+# Update properties
+ptkp_category_response.id = "new_value"
+```

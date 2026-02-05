@@ -1,31 +1,50 @@
 # OrganizationGroupRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**code** | **str** |  | 
-**name** | **str** |  | 
+| Name   | Type  | Required | Description |
+| :----- | :---- | :------: | :---------- |
+| `code` | `str` |    ✅    |             |
+| `name` | `str` |    ✅    |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import OrganizationGroupRequest
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of OrganizationGroupRequest from a JSON string
-organization_group_request_instance = OrganizationGroupRequest.from_json(json)
-# print the JSON string representation of the object
-print(OrganizationGroupRequest.to_json())
-
-# convert the object into a dict
-organization_group_request_dict = organization_group_request_instance.to_dict()
-# create an instance of OrganizationGroupRequest from a dict
-organization_group_request_from_dict = OrganizationGroupRequest.from_dict(organization_group_request_dict)
+organization_group_request = OrganizationGroupRequest(code="'0'", name="'0'")
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import OrganizationGroupRequest
 
+# Parse from JSON
+json_str = '{"code": "example"}'
+organization_group_request = OrganizationGroupRequest.from_json(json_str)
+
+# Convert to JSON
+print(organization_group_request.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import OrganizationGroupRequest
+
+# Convert to/from dictionary
+data_dict = organization_group_request.to_dict()
+organization_group_request = OrganizationGroupRequest.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(organization_group_request.code)
+# Update properties
+organization_group_request.code = "new_value"
+```

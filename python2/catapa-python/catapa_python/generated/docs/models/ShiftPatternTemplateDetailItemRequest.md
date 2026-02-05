@@ -1,31 +1,57 @@
 # ShiftPatternTemplateDetailItemRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**shift** | [**ShiftPatternTemplateDetailItemRequestShift**](ShiftPatternTemplateDetailItemRequestShift.md) |  | 
-**sequence** | **float** |  | 
+| Name       | Type                                                                                          | Required | Description |
+| :--------- | :-------------------------------------------------------------------------------------------- | :------: | :---------- |
+| `shift`    | [`ShiftPatternTemplateDetailItemRequestShift`](ShiftPatternTemplateDetailItemRequestShift.md) |    ✅    |             |
+| `sequence` | `float`                                                                                       |    ✅    |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import ShiftPatternTemplateDetailItemRequest
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of ShiftPatternTemplateDetailItemRequest from a JSON string
-shift_pattern_template_detail_item_request_instance = ShiftPatternTemplateDetailItemRequest.from_json(json)
-# print the JSON string representation of the object
-print(ShiftPatternTemplateDetailItemRequest.to_json())
-
-# convert the object into a dict
-shift_pattern_template_detail_item_request_dict = shift_pattern_template_detail_item_request_instance.to_dict()
-# create an instance of ShiftPatternTemplateDetailItemRequest from a dict
-shift_pattern_template_detail_item_request_from_dict = ShiftPatternTemplateDetailItemRequest.from_dict(shift_pattern_template_detail_item_request_dict)
+shift_pattern_template_detail_item_request = ShiftPatternTemplateDetailItemRequest(
+    shift=None,  # [ShiftPatternTemplateDetailItemRequestShift](ShiftPatternTemplateDetailItemRequestShift.md)
+    sequence=1.337,
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import ShiftPatternTemplateDetailItemRequest
 
+# Parse from JSON
+json_str = '{"shift": "example"}'
+shift_pattern_template_detail_item_request = (
+    ShiftPatternTemplateDetailItemRequest.from_json(json_str)
+)
+
+# Convert to JSON
+print(shift_pattern_template_detail_item_request.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import ShiftPatternTemplateDetailItemRequest
+
+# Convert to/from dictionary
+data_dict = shift_pattern_template_detail_item_request.to_dict()
+shift_pattern_template_detail_item_request = (
+    ShiftPatternTemplateDetailItemRequest.from_dict(data_dict)
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(shift_pattern_template_detail_item_request.shift)
+# Update properties
+shift_pattern_template_detail_item_request.shift = new_value
+```

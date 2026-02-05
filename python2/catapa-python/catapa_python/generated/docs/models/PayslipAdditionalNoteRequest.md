@@ -1,31 +1,52 @@
 # PayslipAdditionalNoteRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**payment_date** | **str** |  | 
-**note** | **str** | Max length 150 | 
+| Name           | Type  | Required | Description    |
+| :------------- | :---- | :------: | :------------- |
+| `payment_date` | `str` |    ✅    |                |
+| `note`         | `str` |    ✅    | Max length 150 |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import PayslipAdditionalNoteRequest
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of PayslipAdditionalNoteRequest from a JSON string
-payslip_additional_note_request_instance = PayslipAdditionalNoteRequest.from_json(json)
-# print the JSON string representation of the object
-print(PayslipAdditionalNoteRequest.to_json())
-
-# convert the object into a dict
-payslip_additional_note_request_dict = payslip_additional_note_request_instance.to_dict()
-# create an instance of PayslipAdditionalNoteRequest from a dict
-payslip_additional_note_request_from_dict = PayslipAdditionalNoteRequest.from_dict(payslip_additional_note_request_dict)
+payslip_additional_note_request = PayslipAdditionalNoteRequest(
+    payment_date="''", note="''"
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import PayslipAdditionalNoteRequest
 
+# Parse from JSON
+json_str = '{"payment_date": "example"}'
+payslip_additional_note_request = PayslipAdditionalNoteRequest.from_json(json_str)
+
+# Convert to JSON
+print(payslip_additional_note_request.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import PayslipAdditionalNoteRequest
+
+# Convert to/from dictionary
+data_dict = payslip_additional_note_request.to_dict()
+payslip_additional_note_request = PayslipAdditionalNoteRequest.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(payslip_additional_note_request.payment_date)
+# Update properties
+payslip_additional_note_request.payment_date = "new_value"
+```

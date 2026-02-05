@@ -1,36 +1,63 @@
 # AnalyticsColumnResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**created_by** | **str** |  | 
-**created_date** | **float** |  | 
-**updated_by** | **str** |  | 
-**updated_date** | **float** |  | 
-**name** | **str** |  | 
-**type** | **str** |  | 
+| Name           | Type    | Description |
+| :------------- | :------ | :---------- |
+| `id`           | `str`   |             |
+| `created_by`   | `str`   |             |
+| `created_date` | `float` |             |
+| `updated_by`   | `str`   |             |
+| `updated_date` | `float` |             |
+| `name`         | `str`   |             |
+| `type`         | `str`   |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import AnalyticsColumnResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of AnalyticsColumnResponse from a JSON string
-analytics_column_response_instance = AnalyticsColumnResponse.from_json(json)
-# print the JSON string representation of the object
-print(AnalyticsColumnResponse.to_json())
-
-# convert the object into a dict
-analytics_column_response_dict = analytics_column_response_instance.to_dict()
-# create an instance of AnalyticsColumnResponse from a dict
-analytics_column_response_from_dict = AnalyticsColumnResponse.from_dict(analytics_column_response_dict)
+analytics_column_response = AnalyticsColumnResponse(
+    id="''",
+    created_by="''",
+    created_date=1.337,
+    updated_by="''",
+    updated_date=1.337,
+    name="''",
+    type="''",
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import AnalyticsColumnResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+analytics_column_response = AnalyticsColumnResponse.from_json(json_str)
+
+# Convert to JSON
+print(analytics_column_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import AnalyticsColumnResponse
+
+# Convert to/from dictionary
+data_dict = analytics_column_response.to_dict()
+analytics_column_response = AnalyticsColumnResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(analytics_column_response.id)
+# Update properties
+analytics_column_response.id = "new_value"
+```

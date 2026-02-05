@@ -1,32 +1,53 @@
 # PayslipLayoutRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**html** | **str** |  | 
-**section** | **str** |  | 
-**effective_date** | **str** |  | 
+| Name             | Type  | Required | Description |
+| :--------------- | :---- | :------: | :---------- |
+| `html`           | `str` |    ✅    |             |
+| `section`        | `str` |    ✅    |             |
+| `effective_date` | `str` |    ✅    |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import PayslipLayoutRequest
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of PayslipLayoutRequest from a JSON string
-payslip_layout_request_instance = PayslipLayoutRequest.from_json(json)
-# print the JSON string representation of the object
-print(PayslipLayoutRequest.to_json())
-
-# convert the object into a dict
-payslip_layout_request_dict = payslip_layout_request_instance.to_dict()
-# create an instance of PayslipLayoutRequest from a dict
-payslip_layout_request_from_dict = PayslipLayoutRequest.from_dict(payslip_layout_request_dict)
+payslip_layout_request = PayslipLayoutRequest(
+    html="''", section="''", effective_date="''"
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import PayslipLayoutRequest
 
+# Parse from JSON
+json_str = '{"html": "example"}'
+payslip_layout_request = PayslipLayoutRequest.from_json(json_str)
+
+# Convert to JSON
+print(payslip_layout_request.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import PayslipLayoutRequest
+
+# Convert to/from dictionary
+data_dict = payslip_layout_request.to_dict()
+payslip_layout_request = PayslipLayoutRequest.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(payslip_layout_request.html)
+# Update properties
+payslip_layout_request.html = "new_value"
+```

@@ -1,35 +1,61 @@
 # SortProperty
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**direction** | **str** |  | 
-**var_property** | **str** |  | 
-**ignore_case** | **bool** |  | 
-**null_handling** | **str** |  | 
-**ascending** | **bool** |  | 
-**descending** | **bool** |  | 
+| Name            | Type   | Required | Description |
+| :-------------- | :----- | :------: | :---------- |
+| `direction`     | `str`  |    ✅    |             |
+| `var_property`  | `str`  |    ✅    |             |
+| `ignore_case`   | `bool` |    ❌    |             |
+| `null_handling` | `str`  |    ❌    |             |
+| `ascending`     | `bool` |    ❌    |             |
+| `descending`    | `bool` |    ❌    |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import SortProperty
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of SortProperty from a JSON string
-sort_property_instance = SortProperty.from_json(json)
-# print the JSON string representation of the object
-print(SortProperty.to_json())
-
-# convert the object into a dict
-sort_property_dict = sort_property_instance.to_dict()
-# create an instance of SortProperty from a dict
-sort_property_from_dict = SortProperty.from_dict(sort_property_dict)
+sort_property = SortProperty(
+    direction="''",
+    var_property="''",
+    ignore_case=True,
+    null_handling="''",
+    ascending=True,
+    descending=True,
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import SortProperty
 
+# Parse from JSON
+json_str = '{"direction": "example"}'
+sort_property = SortProperty.from_json(json_str)
+
+# Convert to JSON
+print(sort_property.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import SortProperty
+
+# Convert to/from dictionary
+data_dict = sort_property.to_dict()
+sort_property = SortProperty.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(sort_property.direction)
+# Update properties
+sort_property.direction = "new_value"
+```

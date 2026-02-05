@@ -1,37 +1,65 @@
 # PositionCostCenterResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**effective_date** | **str** |  | 
-**cost_center** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
-**position** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
-**created_by** | **str** |  | 
-**created_date** | **float** |  | 
-**updated_by** | **str** |  | 
-**updated_date** | **float** |  | 
+| Name             | Type                                          | Description |
+| :--------------- | :-------------------------------------------- | :---------- |
+| `id`             | `str`                                         |             |
+| `effective_date` | `str`                                         |             |
+| `cost_center`    | [`IdCodeNameResponse`](IdCodeNameResponse.md) |             |
+| `position`       | [`IdCodeNameResponse`](IdCodeNameResponse.md) |             |
+| `created_by`     | `str`                                         |             |
+| `created_date`   | `float`                                       |             |
+| `updated_by`     | `str`                                         |             |
+| `updated_date`   | `float`                                       |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import PositionCostCenterResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of PositionCostCenterResponse from a JSON string
-position_cost_center_response_instance = PositionCostCenterResponse.from_json(json)
-# print the JSON string representation of the object
-print(PositionCostCenterResponse.to_json())
-
-# convert the object into a dict
-position_cost_center_response_dict = position_cost_center_response_instance.to_dict()
-# create an instance of PositionCostCenterResponse from a dict
-position_cost_center_response_from_dict = PositionCostCenterResponse.from_dict(position_cost_center_response_dict)
+position_cost_center_response = PositionCostCenterResponse(
+    id="''",
+    effective_date="''",
+    cost_center=None,  # [IdCodeNameResponse](IdCodeNameResponse.md)
+    position=None,  # [IdCodeNameResponse](IdCodeNameResponse.md)
+    created_by="''",
+    created_date=1.337,
+    updated_by="''",
+    updated_date=1.337,
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import PositionCostCenterResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+position_cost_center_response = PositionCostCenterResponse.from_json(json_str)
+
+# Convert to JSON
+print(position_cost_center_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import PositionCostCenterResponse
+
+# Convert to/from dictionary
+data_dict = position_cost_center_response.to_dict()
+position_cost_center_response = PositionCostCenterResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(position_cost_center_response.id)
+# Update properties
+position_cost_center_response.id = "new_value"
+```

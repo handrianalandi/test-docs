@@ -1,33 +1,57 @@
 # EmployeeSalaryResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**salary_item_id** | **str** |  | 
-**salary_item_code** | **str** |  | 
-**amount** | **float** |  | 
-**recurring_configuration** | [**RecurringConfigurationResponse**](RecurringConfigurationResponse.md) |  | 
+| Name                      | Type                                                                  | Description |
+| :------------------------ | :-------------------------------------------------------------------- | :---------- |
+| `salary_item_id`          | `str`                                                                 |             |
+| `salary_item_code`        | `str`                                                                 |             |
+| `amount`                  | `float`                                                               |             |
+| `recurring_configuration` | [`RecurringConfigurationResponse`](RecurringConfigurationResponse.md) |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import EmployeeSalaryResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of EmployeeSalaryResponse from a JSON string
-employee_salary_response_instance = EmployeeSalaryResponse.from_json(json)
-# print the JSON string representation of the object
-print(EmployeeSalaryResponse.to_json())
-
-# convert the object into a dict
-employee_salary_response_dict = employee_salary_response_instance.to_dict()
-# create an instance of EmployeeSalaryResponse from a dict
-employee_salary_response_from_dict = EmployeeSalaryResponse.from_dict(employee_salary_response_dict)
+employee_salary_response = EmployeeSalaryResponse(
+    salary_item_id="''",
+    salary_item_code="''",
+    amount=1.337,
+    recurring_configuration=None,  # [RecurringConfigurationResponse](RecurringConfigurationResponse.md)
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import EmployeeSalaryResponse
 
+# Parse from JSON
+json_str = '{"salary_item_id": "example"}'
+employee_salary_response = EmployeeSalaryResponse.from_json(json_str)
+
+# Convert to JSON
+print(employee_salary_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import EmployeeSalaryResponse
+
+# Convert to/from dictionary
+data_dict = employee_salary_response.to_dict()
+employee_salary_response = EmployeeSalaryResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(employee_salary_response.salary_item_id)
+# Update properties
+employee_salary_response.salary_item_id = "new_value"
+```

@@ -1,32 +1,55 @@
 # EmployeeIdentityCardRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**identity_card_id** | **str** |  | 
-**identity_card_number** | **str** | Alphanumeric | 
-**expired_date** | **date** |  | 
+| Name                   | Type   | Required | Description  |
+| :--------------------- | :----- | :------: | :----------- |
+| `identity_card_id`     | `str`  |    ✅    |              |
+| `identity_card_number` | `str`  |    ✅    | Alphanumeric |
+| `expired_date`         | `date` |    ❌    |              |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import EmployeeIdentityCardRequest
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of EmployeeIdentityCardRequest from a JSON string
-employee_identity_card_request_instance = EmployeeIdentityCardRequest.from_json(json)
-# print the JSON string representation of the object
-print(EmployeeIdentityCardRequest.to_json())
-
-# convert the object into a dict
-employee_identity_card_request_dict = employee_identity_card_request_instance.to_dict()
-# create an instance of EmployeeIdentityCardRequest from a dict
-employee_identity_card_request_from_dict = EmployeeIdentityCardRequest.from_dict(employee_identity_card_request_dict)
+employee_identity_card_request = EmployeeIdentityCardRequest(
+    identity_card_id="''",
+    identity_card_number="'C0'",
+    expired_date=datetime.datetime.strptime("1975-12-30", "%Y-%m-%d").date(),
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import EmployeeIdentityCardRequest
 
+# Parse from JSON
+json_str = '{"identity_card_id": "example"}'
+employee_identity_card_request = EmployeeIdentityCardRequest.from_json(json_str)
+
+# Convert to JSON
+print(employee_identity_card_request.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import EmployeeIdentityCardRequest
+
+# Convert to/from dictionary
+data_dict = employee_identity_card_request.to_dict()
+employee_identity_card_request = EmployeeIdentityCardRequest.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(employee_identity_card_request.identity_card_id)
+# Update properties
+employee_identity_card_request.identity_card_id = "new_value"
+```

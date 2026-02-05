@@ -1,33 +1,58 @@
 # PaymentItemGroupSequenceResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**employee_id** | **str** |  | 
-**payment_item_group_id** | **str** |  | 
-**sequence** | **int** |  | 
-**previous_sequence** | **int** |  | 
+| Name                    | Type  | Description |
+| :---------------------- | :---- | :---------- |
+| `employee_id`           | `str` |             |
+| `payment_item_group_id` | `str` |             |
+| `sequence`              | `int` |             |
+| `previous_sequence`     | `int` |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import PaymentItemGroupSequenceResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of PaymentItemGroupSequenceResponse from a JSON string
-payment_item_group_sequence_response_instance = PaymentItemGroupSequenceResponse.from_json(json)
-# print the JSON string representation of the object
-print(PaymentItemGroupSequenceResponse.to_json())
-
-# convert the object into a dict
-payment_item_group_sequence_response_dict = payment_item_group_sequence_response_instance.to_dict()
-# create an instance of PaymentItemGroupSequenceResponse from a dict
-payment_item_group_sequence_response_from_dict = PaymentItemGroupSequenceResponse.from_dict(payment_item_group_sequence_response_dict)
+payment_item_group_sequence_response = PaymentItemGroupSequenceResponse(
+    employee_id="''", payment_item_group_id="''", sequence=56, previous_sequence=56
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import PaymentItemGroupSequenceResponse
 
+# Parse from JSON
+json_str = '{"employee_id": "example"}'
+payment_item_group_sequence_response = PaymentItemGroupSequenceResponse.from_json(
+    json_str
+)
+
+# Convert to JSON
+print(payment_item_group_sequence_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import PaymentItemGroupSequenceResponse
+
+# Convert to/from dictionary
+data_dict = payment_item_group_sequence_response.to_dict()
+payment_item_group_sequence_response = PaymentItemGroupSequenceResponse.from_dict(
+    data_dict
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(payment_item_group_sequence_response.employee_id)
+# Update properties
+payment_item_group_sequence_response.employee_id = "new_value"
+```

@@ -1,31 +1,56 @@
 # TransitionCalculationCountResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**processed_count** | **float** |  | 
-**unprocessed_count** | **float** |  | 
+| Name                | Type    | Description |
+| :------------------ | :------ | :---------- |
+| `processed_count`   | `float` |             |
+| `unprocessed_count` | `float` |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import TransitionCalculationCountResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of TransitionCalculationCountResponse from a JSON string
-transition_calculation_count_response_instance = TransitionCalculationCountResponse.from_json(json)
-# print the JSON string representation of the object
-print(TransitionCalculationCountResponse.to_json())
-
-# convert the object into a dict
-transition_calculation_count_response_dict = transition_calculation_count_response_instance.to_dict()
-# create an instance of TransitionCalculationCountResponse from a dict
-transition_calculation_count_response_from_dict = TransitionCalculationCountResponse.from_dict(transition_calculation_count_response_dict)
+transition_calculation_count_response = TransitionCalculationCountResponse(
+    processed_count=1.337, unprocessed_count=1.337
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import TransitionCalculationCountResponse
 
+# Parse from JSON
+json_str = '{"processed_count": "example"}'
+transition_calculation_count_response = TransitionCalculationCountResponse.from_json(
+    json_str
+)
+
+# Convert to JSON
+print(transition_calculation_count_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import TransitionCalculationCountResponse
+
+# Convert to/from dictionary
+data_dict = transition_calculation_count_response.to_dict()
+transition_calculation_count_response = TransitionCalculationCountResponse.from_dict(
+    data_dict
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(transition_calculation_count_response.processed_count)
+# Update properties
+transition_calculation_count_response.processed_count = new_value
+```

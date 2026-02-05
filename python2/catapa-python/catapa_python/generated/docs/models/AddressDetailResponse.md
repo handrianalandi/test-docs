@@ -1,34 +1,59 @@
 # AddressDetailResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**address** | **str** |  | 
-**zip_code** | **str** |  | 
-**phone** | **str** |  | 
-**district** | **str** |  | 
-**city** | [**CityResponse**](CityResponse.md) |  | 
+| Name       | Type                              | Description |
+| :--------- | :-------------------------------- | :---------- |
+| `address`  | `str`                             |             |
+| `zip_code` | `str`                             |             |
+| `phone`    | `str`                             |             |
+| `district` | `str`                             |             |
+| `city`     | [`CityResponse`](CityResponse.md) |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import AddressDetailResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of AddressDetailResponse from a JSON string
-address_detail_response_instance = AddressDetailResponse.from_json(json)
-# print the JSON string representation of the object
-print(AddressDetailResponse.to_json())
-
-# convert the object into a dict
-address_detail_response_dict = address_detail_response_instance.to_dict()
-# create an instance of AddressDetailResponse from a dict
-address_detail_response_from_dict = AddressDetailResponse.from_dict(address_detail_response_dict)
+address_detail_response = AddressDetailResponse(
+    address="''",
+    zip_code="''",
+    phone="''",
+    district="''",
+    city=None,  # [CityResponse](CityResponse.md)
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import AddressDetailResponse
 
+# Parse from JSON
+json_str = '{"address": "example"}'
+address_detail_response = AddressDetailResponse.from_json(json_str)
+
+# Convert to JSON
+print(address_detail_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import AddressDetailResponse
+
+# Convert to/from dictionary
+data_dict = address_detail_response.to_dict()
+address_detail_response = AddressDetailResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(address_detail_response.address)
+# Update properties
+address_detail_response.address = "new_value"
+```

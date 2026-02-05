@@ -1,32 +1,53 @@
 # WorkflowReasonRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**code** | **str** |  | 
-**name** | **str** |  | 
-**category** | [**IdRequest**](IdRequest.md) |  | 
+| Name       | Type                        | Required | Description |
+| :--------- | :-------------------------- | :------: | :---------- |
+| `code`     | `str`                       |    ✅    |             |
+| `name`     | `str`                       |    ✅    |             |
+| `category` | [`IdRequest`](IdRequest.md) |    ✅    |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import WorkflowReasonRequest
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of WorkflowReasonRequest from a JSON string
-workflow_reason_request_instance = WorkflowReasonRequest.from_json(json)
-# print the JSON string representation of the object
-print(WorkflowReasonRequest.to_json())
-
-# convert the object into a dict
-workflow_reason_request_dict = workflow_reason_request_instance.to_dict()
-# create an instance of WorkflowReasonRequest from a dict
-workflow_reason_request_from_dict = WorkflowReasonRequest.from_dict(workflow_reason_request_dict)
+workflow_reason_request = WorkflowReasonRequest(
+    code="'0'", name="'0'", category=None  # [IdRequest](IdRequest.md)
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import WorkflowReasonRequest
 
+# Parse from JSON
+json_str = '{"code": "example"}'
+workflow_reason_request = WorkflowReasonRequest.from_json(json_str)
+
+# Convert to JSON
+print(workflow_reason_request.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import WorkflowReasonRequest
+
+# Convert to/from dictionary
+data_dict = workflow_reason_request.to_dict()
+workflow_reason_request = WorkflowReasonRequest.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(workflow_reason_request.code)
+# Update properties
+workflow_reason_request.code = "new_value"
+```

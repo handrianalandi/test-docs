@@ -1,34 +1,55 @@
 # SeverancePlanDetailResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**code** | **str** |  | 
-**name** | **str** |  | 
-**category** | **str** |  | 
-**amount** | **float** |  | 
-**pph21_item_method** | **str** |  | 
+| Name                | Type    | Description |
+| :------------------ | :------ | :---------- |
+| `code`              | `str`   |             |
+| `name`              | `str`   |             |
+| `category`          | `str`   |             |
+| `amount`            | `float` |             |
+| `pph21_item_method` | `str`   |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import SeverancePlanDetailResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of SeverancePlanDetailResponse from a JSON string
-severance_plan_detail_response_instance = SeverancePlanDetailResponse.from_json(json)
-# print the JSON string representation of the object
-print(SeverancePlanDetailResponse.to_json())
-
-# convert the object into a dict
-severance_plan_detail_response_dict = severance_plan_detail_response_instance.to_dict()
-# create an instance of SeverancePlanDetailResponse from a dict
-severance_plan_detail_response_from_dict = SeverancePlanDetailResponse.from_dict(severance_plan_detail_response_dict)
+severance_plan_detail_response = SeverancePlanDetailResponse(
+    code="''", name="''", category="''", amount=1.337, pph21_item_method="''"
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import SeverancePlanDetailResponse
 
+# Parse from JSON
+json_str = '{"code": "example"}'
+severance_plan_detail_response = SeverancePlanDetailResponse.from_json(json_str)
+
+# Convert to JSON
+print(severance_plan_detail_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import SeverancePlanDetailResponse
+
+# Convert to/from dictionary
+data_dict = severance_plan_detail_response.to_dict()
+severance_plan_detail_response = SeverancePlanDetailResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(severance_plan_detail_response.code)
+# Update properties
+severance_plan_detail_response.code = "new_value"
+```

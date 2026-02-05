@@ -1,37 +1,65 @@
 # CustomTableResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Unique identifier of the custom table | 
-**table_name** | **str** | Technical name of the custom table | 
-**display_name** | **str** | Display name of the custom table | 
-**menu_location** | **str** | Location of the table in menu hierarchy | 
-**historical_type** | **str** | Type of historical tracking for the table | 
-**parent_entity** | **str** | Parent entity reference | 
-**parent_reference_field** | **str** | Field used for parent entity reference | 
-**columns** | [**List[CustomTableColumnResponse]**](CustomTableColumnResponse.md) | List of columns in the table | 
+| Name                     | Type                                                              | Description                               |
+| :----------------------- | :---------------------------------------------------------------- | :---------------------------------------- |
+| `id`                     | `str`                                                             | Unique identifier of the custom table     |
+| `table_name`             | `str`                                                             | Technical name of the custom table        |
+| `display_name`           | `str`                                                             | Display name of the custom table          |
+| `menu_location`          | `str`                                                             | Location of the table in menu hierarchy   |
+| `historical_type`        | `str`                                                             | Type of historical tracking for the table |
+| `parent_entity`          | `str`                                                             | Parent entity reference                   |
+| `parent_reference_field` | `str`                                                             | Field used for parent entity reference    |
+| `columns`                | [`List[CustomTableColumnResponse]`](CustomTableColumnResponse.md) | List of columns in the table              |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import CustomTableResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of CustomTableResponse from a JSON string
-custom_table_response_instance = CustomTableResponse.from_json(json)
-# print the JSON string representation of the object
-print(CustomTableResponse.to_json())
-
-# convert the object into a dict
-custom_table_response_dict = custom_table_response_instance.to_dict()
-# create an instance of CustomTableResponse from a dict
-custom_table_response_from_dict = CustomTableResponse.from_dict(custom_table_response_dict)
+custom_table_response = CustomTableResponse(
+    id="''",
+    table_name="''",
+    display_name="''",
+    menu_location="''",
+    historical_type="''",
+    parent_entity="''",
+    parent_reference_field="''",
+    columns=[],  # List[[CustomTableColumnResponse](CustomTableColumnResponse.md)]
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import CustomTableResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+custom_table_response = CustomTableResponse.from_json(json_str)
+
+# Convert to JSON
+print(custom_table_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import CustomTableResponse
+
+# Convert to/from dictionary
+data_dict = custom_table_response.to_dict()
+custom_table_response = CustomTableResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(custom_table_response.id)
+# Update properties
+custom_table_response.id = "new_value"
+```

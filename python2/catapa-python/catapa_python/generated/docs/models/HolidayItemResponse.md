@@ -1,31 +1,52 @@
 # HolidayItemResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**holiday_date** | **date** | Date of the holiday | 
-**name** | **str** | Name of the holiday | 
+| Name           | Type   | Description         |
+| :------------- | :----- | :------------------ |
+| `holiday_date` | `date` | Date of the holiday |
+| `name`         | `str`  | Name of the holiday |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import HolidayItemResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of HolidayItemResponse from a JSON string
-holiday_item_response_instance = HolidayItemResponse.from_json(json)
-# print the JSON string representation of the object
-print(HolidayItemResponse.to_json())
-
-# convert the object into a dict
-holiday_item_response_dict = holiday_item_response_instance.to_dict()
-# create an instance of HolidayItemResponse from a dict
-holiday_item_response_from_dict = HolidayItemResponse.from_dict(holiday_item_response_dict)
+holiday_item_response = HolidayItemResponse(
+    holiday_date=datetime.datetime.strptime("1975-12-30", "%Y-%m-%d").date(), name="''"
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import HolidayItemResponse
 
+# Parse from JSON
+json_str = '{"holiday_date": "example"}'
+holiday_item_response = HolidayItemResponse.from_json(json_str)
+
+# Convert to JSON
+print(holiday_item_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import HolidayItemResponse
+
+# Convert to/from dictionary
+data_dict = holiday_item_response.to_dict()
+holiday_item_response = HolidayItemResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(holiday_item_response.holiday_date)
+# Update properties
+holiday_item_response.holiday_date = new_value
+```

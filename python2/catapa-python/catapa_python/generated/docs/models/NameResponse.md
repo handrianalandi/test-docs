@@ -1,30 +1,49 @@
 # NameResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** |  | 
+| Name   | Type  | Description |
+| :----- | :---- | :---------- |
+| `name` | `str` |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import NameResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of NameResponse from a JSON string
-name_response_instance = NameResponse.from_json(json)
-# print the JSON string representation of the object
-print(NameResponse.to_json())
-
-# convert the object into a dict
-name_response_dict = name_response_instance.to_dict()
-# create an instance of NameResponse from a dict
-name_response_from_dict = NameResponse.from_dict(name_response_dict)
+name_response = NameResponse(name="''")
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import NameResponse
 
+# Parse from JSON
+json_str = '{"name": "example"}'
+name_response = NameResponse.from_json(json_str)
+
+# Convert to JSON
+print(name_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import NameResponse
+
+# Convert to/from dictionary
+data_dict = name_response.to_dict()
+name_response = NameResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(name_response.name)
+# Update properties
+name_response.name = "new_value"
+```

@@ -1,30 +1,49 @@
 # IdRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Unique identifier | 
+| Name | Type  | Required | Description       |
+| :--- | :---- | :------: | :---------------- |
+| `id` | `str` |    ✅    | Unique identifier |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import IdRequest
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of IdRequest from a JSON string
-id_request_instance = IdRequest.from_json(json)
-# print the JSON string representation of the object
-print(IdRequest.to_json())
-
-# convert the object into a dict
-id_request_dict = id_request_instance.to_dict()
-# create an instance of IdRequest from a dict
-id_request_from_dict = IdRequest.from_dict(id_request_dict)
+id_request = IdRequest(id="''")
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import IdRequest
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+id_request = IdRequest.from_json(json_str)
+
+# Convert to JSON
+print(id_request.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import IdRequest
+
+# Convert to/from dictionary
+data_dict = id_request.to_dict()
+id_request = IdRequest.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(id_request.id)
+# Update properties
+id_request.id = "new_value"
+```

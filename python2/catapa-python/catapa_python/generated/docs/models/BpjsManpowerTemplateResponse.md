@@ -1,34 +1,55 @@
 # BpjsManpowerTemplateResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**code** | **str** |  | 
-**name** | **str** |  | 
-**salary_type** | **str** |  | 
-**link_to_payroll** | **bool** |  | 
+| Name              | Type   | Description |
+| :---------------- | :----- | :---------- |
+| `id`              | `str`  |             |
+| `code`            | `str`  |             |
+| `name`            | `str`  |             |
+| `salary_type`     | `str`  |             |
+| `link_to_payroll` | `bool` |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import BpjsManpowerTemplateResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of BpjsManpowerTemplateResponse from a JSON string
-bpjs_manpower_template_response_instance = BpjsManpowerTemplateResponse.from_json(json)
-# print the JSON string representation of the object
-print(BpjsManpowerTemplateResponse.to_json())
-
-# convert the object into a dict
-bpjs_manpower_template_response_dict = bpjs_manpower_template_response_instance.to_dict()
-# create an instance of BpjsManpowerTemplateResponse from a dict
-bpjs_manpower_template_response_from_dict = BpjsManpowerTemplateResponse.from_dict(bpjs_manpower_template_response_dict)
+bpjs_manpower_template_response = BpjsManpowerTemplateResponse(
+    id="''", code="''", name="''", salary_type="''", link_to_payroll=True
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import BpjsManpowerTemplateResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+bpjs_manpower_template_response = BpjsManpowerTemplateResponse.from_json(json_str)
+
+# Convert to JSON
+print(bpjs_manpower_template_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import BpjsManpowerTemplateResponse
+
+# Convert to/from dictionary
+data_dict = bpjs_manpower_template_response.to_dict()
+bpjs_manpower_template_response = BpjsManpowerTemplateResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(bpjs_manpower_template_response.id)
+# Update properties
+bpjs_manpower_template_response.id = "new_value"
+```

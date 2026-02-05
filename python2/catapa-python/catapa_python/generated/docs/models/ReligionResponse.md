@@ -1,32 +1,51 @@
 # ReligionResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**name** | **str** |  | 
-**code** | **str** |  | 
+| Name   | Type  | Description |
+| :----- | :---- | :---------- |
+| `id`   | `str` |             |
+| `name` | `str` |             |
+| `code` | `str` |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import ReligionResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of ReligionResponse from a JSON string
-religion_response_instance = ReligionResponse.from_json(json)
-# print the JSON string representation of the object
-print(ReligionResponse.to_json())
-
-# convert the object into a dict
-religion_response_dict = religion_response_instance.to_dict()
-# create an instance of ReligionResponse from a dict
-religion_response_from_dict = ReligionResponse.from_dict(religion_response_dict)
+religion_response = ReligionResponse(id="''", name="''", code="''")
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import ReligionResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+religion_response = ReligionResponse.from_json(json_str)
+
+# Convert to JSON
+print(religion_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import ReligionResponse
+
+# Convert to/from dictionary
+data_dict = religion_response.to_dict()
+religion_response = ReligionResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(religion_response.id)
+# Update properties
+religion_response.id = "new_value"
+```

@@ -1,31 +1,56 @@
 # TransitionCalculationDetailsAmountRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**amount** | **float** |  | 
-**id** | **str** |  | 
+| Name     | Type    | Required | Description |
+| :------- | :------ | :------: | :---------- |
+| `amount` | `float` |    ✅    |             |
+| `id`     | `str`   |    ✅    |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import TransitionCalculationDetailsAmountRequest
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of TransitionCalculationDetailsAmountRequest from a JSON string
-transition_calculation_details_amount_request_instance = TransitionCalculationDetailsAmountRequest.from_json(json)
-# print the JSON string representation of the object
-print(TransitionCalculationDetailsAmountRequest.to_json())
-
-# convert the object into a dict
-transition_calculation_details_amount_request_dict = transition_calculation_details_amount_request_instance.to_dict()
-# create an instance of TransitionCalculationDetailsAmountRequest from a dict
-transition_calculation_details_amount_request_from_dict = TransitionCalculationDetailsAmountRequest.from_dict(transition_calculation_details_amount_request_dict)
+transition_calculation_details_amount_request = (
+    TransitionCalculationDetailsAmountRequest(amount=1.337, id="''")
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import TransitionCalculationDetailsAmountRequest
 
+# Parse from JSON
+json_str = '{"amount": "example"}'
+transition_calculation_details_amount_request = (
+    TransitionCalculationDetailsAmountRequest.from_json(json_str)
+)
+
+# Convert to JSON
+print(transition_calculation_details_amount_request.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import TransitionCalculationDetailsAmountRequest
+
+# Convert to/from dictionary
+data_dict = transition_calculation_details_amount_request.to_dict()
+transition_calculation_details_amount_request = (
+    TransitionCalculationDetailsAmountRequest.from_dict(data_dict)
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(transition_calculation_details_amount_request.amount)
+# Update properties
+transition_calculation_details_amount_request.amount = new_value
+```

@@ -1,34 +1,55 @@
 # SeverancePlanDetailItemRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**code** | **str** |  | 
-**name** | **str** |  | 
-**category** | **str** |  | 
-**amount** | **float** |  | 
-**pph21_item_method** | **str** |  | 
+| Name                | Type    | Required | Description |
+| :------------------ | :------ | :------: | :---------- |
+| `code`              | `str`   |    ✅    |             |
+| `name`              | `str`   |    ✅    |             |
+| `category`          | `str`   |    ✅    |             |
+| `amount`            | `float` |    ✅    |             |
+| `pph21_item_method` | `str`   |    ✅    |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import SeverancePlanDetailItemRequest
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of SeverancePlanDetailItemRequest from a JSON string
-severance_plan_detail_item_request_instance = SeverancePlanDetailItemRequest.from_json(json)
-# print the JSON string representation of the object
-print(SeverancePlanDetailItemRequest.to_json())
-
-# convert the object into a dict
-severance_plan_detail_item_request_dict = severance_plan_detail_item_request_instance.to_dict()
-# create an instance of SeverancePlanDetailItemRequest from a dict
-severance_plan_detail_item_request_from_dict = SeverancePlanDetailItemRequest.from_dict(severance_plan_detail_item_request_dict)
+severance_plan_detail_item_request = SeverancePlanDetailItemRequest(
+    code="''", name="''", category="''", amount=1.337, pph21_item_method="''"
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import SeverancePlanDetailItemRequest
 
+# Parse from JSON
+json_str = '{"code": "example"}'
+severance_plan_detail_item_request = SeverancePlanDetailItemRequest.from_json(json_str)
+
+# Convert to JSON
+print(severance_plan_detail_item_request.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import SeverancePlanDetailItemRequest
+
+# Convert to/from dictionary
+data_dict = severance_plan_detail_item_request.to_dict()
+severance_plan_detail_item_request = SeverancePlanDetailItemRequest.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(severance_plan_detail_item_request.code)
+# Update properties
+severance_plan_detail_item_request.code = "new_value"
+```

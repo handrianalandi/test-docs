@@ -1,30 +1,55 @@
 # ShiftPatternTemplateDetailItemRequestShift
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Unique identifier | 
+| Name | Type  | Required | Description       |
+| :--- | :---- | :------: | :---------------- |
+| `id` | `str` |    ✅    | Unique identifier |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import ShiftPatternTemplateDetailItemRequestShift
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of ShiftPatternTemplateDetailItemRequestShift from a JSON string
-shift_pattern_template_detail_item_request_shift_instance = ShiftPatternTemplateDetailItemRequestShift.from_json(json)
-# print the JSON string representation of the object
-print(ShiftPatternTemplateDetailItemRequestShift.to_json())
-
-# convert the object into a dict
-shift_pattern_template_detail_item_request_shift_dict = shift_pattern_template_detail_item_request_shift_instance.to_dict()
-# create an instance of ShiftPatternTemplateDetailItemRequestShift from a dict
-shift_pattern_template_detail_item_request_shift_from_dict = ShiftPatternTemplateDetailItemRequestShift.from_dict(shift_pattern_template_detail_item_request_shift_dict)
+shift_pattern_template_detail_item_request_shift = (
+    ShiftPatternTemplateDetailItemRequestShift(id="''")
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import ShiftPatternTemplateDetailItemRequestShift
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+shift_pattern_template_detail_item_request_shift = (
+    ShiftPatternTemplateDetailItemRequestShift.from_json(json_str)
+)
+
+# Convert to JSON
+print(shift_pattern_template_detail_item_request_shift.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import ShiftPatternTemplateDetailItemRequestShift
+
+# Convert to/from dictionary
+data_dict = shift_pattern_template_detail_item_request_shift.to_dict()
+shift_pattern_template_detail_item_request_shift = (
+    ShiftPatternTemplateDetailItemRequestShift.from_dict(data_dict)
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(shift_pattern_template_detail_item_request_shift.id)
+# Update properties
+shift_pattern_template_detail_item_request_shift.id = "new_value"
+```

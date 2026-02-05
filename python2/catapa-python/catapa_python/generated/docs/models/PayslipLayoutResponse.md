@@ -1,33 +1,54 @@
 # PayslipLayoutResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**html** | **str** |  | 
-**section** | **str** |  | 
-**effective_date** | **str** |  | 
+| Name             | Type  | Description |
+| :--------------- | :---- | :---------- |
+| `id`             | `str` |             |
+| `html`           | `str` |             |
+| `section`        | `str` |             |
+| `effective_date` | `str` |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import PayslipLayoutResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of PayslipLayoutResponse from a JSON string
-payslip_layout_response_instance = PayslipLayoutResponse.from_json(json)
-# print the JSON string representation of the object
-print(PayslipLayoutResponse.to_json())
-
-# convert the object into a dict
-payslip_layout_response_dict = payslip_layout_response_instance.to_dict()
-# create an instance of PayslipLayoutResponse from a dict
-payslip_layout_response_from_dict = PayslipLayoutResponse.from_dict(payslip_layout_response_dict)
+payslip_layout_response = PayslipLayoutResponse(
+    id="''", html="''", section="''", effective_date="''"
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import PayslipLayoutResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+payslip_layout_response = PayslipLayoutResponse.from_json(json_str)
+
+# Convert to JSON
+print(payslip_layout_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import PayslipLayoutResponse
+
+# Convert to/from dictionary
+data_dict = payslip_layout_response.to_dict()
+payslip_layout_response = PayslipLayoutResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(payslip_layout_response.id)
+# Update properties
+payslip_layout_response.id = "new_value"
+```

@@ -1,34 +1,59 @@
 # EmployeePaygroupResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**updated_date** | **int** |  | 
-**employee** | [**EmployeeResponse**](EmployeeResponse.md) |  | 
-**paygroup** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
-**effective_date** | **date** |  | 
+| Name             | Type                                          | Description |
+| :--------------- | :-------------------------------------------- | :---------- |
+| `id`             | `str`                                         |             |
+| `updated_date`   | `int`                                         |             |
+| `employee`       | [`EmployeeResponse`](EmployeeResponse.md)     |             |
+| `paygroup`       | [`IdCodeNameResponse`](IdCodeNameResponse.md) |             |
+| `effective_date` | `date`                                        |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import EmployeePaygroupResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of EmployeePaygroupResponse from a JSON string
-employee_paygroup_response_instance = EmployeePaygroupResponse.from_json(json)
-# print the JSON string representation of the object
-print(EmployeePaygroupResponse.to_json())
-
-# convert the object into a dict
-employee_paygroup_response_dict = employee_paygroup_response_instance.to_dict()
-# create an instance of EmployeePaygroupResponse from a dict
-employee_paygroup_response_from_dict = EmployeePaygroupResponse.from_dict(employee_paygroup_response_dict)
+employee_paygroup_response = EmployeePaygroupResponse(
+    id="''",
+    updated_date=56,
+    employee=None,  # [EmployeeResponse](EmployeeResponse.md)
+    paygroup=None,  # [IdCodeNameResponse](IdCodeNameResponse.md)
+    effective_date=datetime.datetime.strptime("1975-12-30", "%Y-%m-%d").date(),
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import EmployeePaygroupResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+employee_paygroup_response = EmployeePaygroupResponse.from_json(json_str)
+
+# Convert to JSON
+print(employee_paygroup_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import EmployeePaygroupResponse
+
+# Convert to/from dictionary
+data_dict = employee_paygroup_response.to_dict()
+employee_paygroup_response = EmployeePaygroupResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(employee_paygroup_response.id)
+# Update properties
+employee_paygroup_response.id = "new_value"
+```

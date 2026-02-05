@@ -1,31 +1,56 @@
 # ShiftPatternTemplateSimpleResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**name** | **str** |  | 
+| Name   | Type  | Description |
+| :----- | :---- | :---------- |
+| `id`   | `str` |             |
+| `name` | `str` |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import ShiftPatternTemplateSimpleResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of ShiftPatternTemplateSimpleResponse from a JSON string
-shift_pattern_template_simple_response_instance = ShiftPatternTemplateSimpleResponse.from_json(json)
-# print the JSON string representation of the object
-print(ShiftPatternTemplateSimpleResponse.to_json())
-
-# convert the object into a dict
-shift_pattern_template_simple_response_dict = shift_pattern_template_simple_response_instance.to_dict()
-# create an instance of ShiftPatternTemplateSimpleResponse from a dict
-shift_pattern_template_simple_response_from_dict = ShiftPatternTemplateSimpleResponse.from_dict(shift_pattern_template_simple_response_dict)
+shift_pattern_template_simple_response = ShiftPatternTemplateSimpleResponse(
+    id="''", name="''"
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import ShiftPatternTemplateSimpleResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+shift_pattern_template_simple_response = ShiftPatternTemplateSimpleResponse.from_json(
+    json_str
+)
+
+# Convert to JSON
+print(shift_pattern_template_simple_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import ShiftPatternTemplateSimpleResponse
+
+# Convert to/from dictionary
+data_dict = shift_pattern_template_simple_response.to_dict()
+shift_pattern_template_simple_response = ShiftPatternTemplateSimpleResponse.from_dict(
+    data_dict
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(shift_pattern_template_simple_response.id)
+# Update properties
+shift_pattern_template_simple_response.id = "new_value"
+```

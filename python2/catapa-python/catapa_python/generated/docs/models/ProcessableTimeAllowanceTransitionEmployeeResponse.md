@@ -1,33 +1,61 @@
 # ProcessableTimeAllowanceTransitionEmployeeResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**identification_number** | **str** |  | 
-**name** | **str** |  | 
-**employment_status** | [**ProcessableTimeAllowanceTransitionEmploymentStatusResponse**](ProcessableTimeAllowanceTransitionEmploymentStatusResponse.md) |  | 
+| Name                    | Type                                                                                                                          | Description |
+| :---------------------- | :---------------------------------------------------------------------------------------------------------------------------- | :---------- |
+| `id`                    | `str`                                                                                                                         |             |
+| `identification_number` | `str`                                                                                                                         |             |
+| `name`                  | `str`                                                                                                                         |             |
+| `employment_status`     | [`ProcessableTimeAllowanceTransitionEmploymentStatusResponse`](ProcessableTimeAllowanceTransitionEmploymentStatusResponse.md) |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import ProcessableTimeAllowanceTransitionEmployeeResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of ProcessableTimeAllowanceTransitionEmployeeResponse from a JSON string
-processable_time_allowance_transition_employee_response_instance = ProcessableTimeAllowanceTransitionEmployeeResponse.from_json(json)
-# print the JSON string representation of the object
-print(ProcessableTimeAllowanceTransitionEmployeeResponse.to_json())
-
-# convert the object into a dict
-processable_time_allowance_transition_employee_response_dict = processable_time_allowance_transition_employee_response_instance.to_dict()
-# create an instance of ProcessableTimeAllowanceTransitionEmployeeResponse from a dict
-processable_time_allowance_transition_employee_response_from_dict = ProcessableTimeAllowanceTransitionEmployeeResponse.from_dict(processable_time_allowance_transition_employee_response_dict)
+processable_time_allowance_transition_employee_response = ProcessableTimeAllowanceTransitionEmployeeResponse(
+    id="''",
+    identification_number="''",
+    name="''",
+    employment_status=None,  # [ProcessableTimeAllowanceTransitionEmploymentStatusResponse](ProcessableTimeAllowanceTransitionEmploymentStatusResponse.md)
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import ProcessableTimeAllowanceTransitionEmployeeResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+processable_time_allowance_transition_employee_response = (
+    ProcessableTimeAllowanceTransitionEmployeeResponse.from_json(json_str)
+)
+
+# Convert to JSON
+print(processable_time_allowance_transition_employee_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import ProcessableTimeAllowanceTransitionEmployeeResponse
+
+# Convert to/from dictionary
+data_dict = processable_time_allowance_transition_employee_response.to_dict()
+processable_time_allowance_transition_employee_response = (
+    ProcessableTimeAllowanceTransitionEmployeeResponse.from_dict(data_dict)
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(processable_time_allowance_transition_employee_response.id)
+# Update properties
+processable_time_allowance_transition_employee_response.id = "new_value"
+```

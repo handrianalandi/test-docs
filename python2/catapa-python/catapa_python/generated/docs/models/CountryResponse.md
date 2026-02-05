@@ -1,34 +1,55 @@
 # CountryResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**code** | **str** |  | 
-**name** | **str** |  | 
-**calling_code** | **str** |  | 
-**tax_treaty** | **bool** |  | 
+| Name           | Type   | Description |
+| :------------- | :----- | :---------- |
+| `id`           | `str`  |             |
+| `code`         | `str`  |             |
+| `name`         | `str`  |             |
+| `calling_code` | `str`  |             |
+| `tax_treaty`   | `bool` |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import CountryResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of CountryResponse from a JSON string
-country_response_instance = CountryResponse.from_json(json)
-# print the JSON string representation of the object
-print(CountryResponse.to_json())
-
-# convert the object into a dict
-country_response_dict = country_response_instance.to_dict()
-# create an instance of CountryResponse from a dict
-country_response_from_dict = CountryResponse.from_dict(country_response_dict)
+country_response = CountryResponse(
+    id="''", code="''", name="''", calling_code="''", tax_treaty=True
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import CountryResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+country_response = CountryResponse.from_json(json_str)
+
+# Convert to JSON
+print(country_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import CountryResponse
+
+# Convert to/from dictionary
+data_dict = country_response.to_dict()
+country_response = CountryResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(country_response.id)
+# Update properties
+country_response.id = "new_value"
+```

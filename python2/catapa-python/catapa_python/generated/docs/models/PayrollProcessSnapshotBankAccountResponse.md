@@ -1,31 +1,56 @@
 # PayrollProcessSnapshotBankAccountResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**priority** | **int** |  | 
+| Name       | Type  | Description |
+| :--------- | :---- | :---------- |
+| `id`       | `str` |             |
+| `priority` | `int` |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import PayrollProcessSnapshotBankAccountResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of PayrollProcessSnapshotBankAccountResponse from a JSON string
-payroll_process_snapshot_bank_account_response_instance = PayrollProcessSnapshotBankAccountResponse.from_json(json)
-# print the JSON string representation of the object
-print(PayrollProcessSnapshotBankAccountResponse.to_json())
-
-# convert the object into a dict
-payroll_process_snapshot_bank_account_response_dict = payroll_process_snapshot_bank_account_response_instance.to_dict()
-# create an instance of PayrollProcessSnapshotBankAccountResponse from a dict
-payroll_process_snapshot_bank_account_response_from_dict = PayrollProcessSnapshotBankAccountResponse.from_dict(payroll_process_snapshot_bank_account_response_dict)
+payroll_process_snapshot_bank_account_response = (
+    PayrollProcessSnapshotBankAccountResponse(id="''", priority=56)
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import PayrollProcessSnapshotBankAccountResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+payroll_process_snapshot_bank_account_response = (
+    PayrollProcessSnapshotBankAccountResponse.from_json(json_str)
+)
+
+# Convert to JSON
+print(payroll_process_snapshot_bank_account_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import PayrollProcessSnapshotBankAccountResponse
+
+# Convert to/from dictionary
+data_dict = payroll_process_snapshot_bank_account_response.to_dict()
+payroll_process_snapshot_bank_account_response = (
+    PayrollProcessSnapshotBankAccountResponse.from_dict(data_dict)
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(payroll_process_snapshot_bank_account_response.id)
+# Update properties
+payroll_process_snapshot_bank_account_response.id = "new_value"
+```

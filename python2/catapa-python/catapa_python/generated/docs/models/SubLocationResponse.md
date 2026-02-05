@@ -1,33 +1,57 @@
 # SubLocationResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**code** | **str** |  | 
-**name** | **str** |  | 
-**location** | [**SubLocationLocationResponse**](SubLocationLocationResponse.md) |  | 
+| Name       | Type                                                            | Description |
+| :--------- | :-------------------------------------------------------------- | :---------- |
+| `id`       | `str`                                                           |             |
+| `code`     | `str`                                                           |             |
+| `name`     | `str`                                                           |             |
+| `location` | [`SubLocationLocationResponse`](SubLocationLocationResponse.md) |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import SubLocationResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of SubLocationResponse from a JSON string
-sub_location_response_instance = SubLocationResponse.from_json(json)
-# print the JSON string representation of the object
-print(SubLocationResponse.to_json())
-
-# convert the object into a dict
-sub_location_response_dict = sub_location_response_instance.to_dict()
-# create an instance of SubLocationResponse from a dict
-sub_location_response_from_dict = SubLocationResponse.from_dict(sub_location_response_dict)
+sub_location_response = SubLocationResponse(
+    id="''",
+    code="''",
+    name="''",
+    location=None,  # [SubLocationLocationResponse](SubLocationLocationResponse.md)
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import SubLocationResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+sub_location_response = SubLocationResponse.from_json(json_str)
+
+# Convert to JSON
+print(sub_location_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import SubLocationResponse
+
+# Convert to/from dictionary
+data_dict = sub_location_response.to_dict()
+sub_location_response = SubLocationResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(sub_location_response.id)
+# Update properties
+sub_location_response.id = "new_value"
+```

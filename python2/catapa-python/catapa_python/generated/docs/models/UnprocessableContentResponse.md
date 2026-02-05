@@ -1,31 +1,50 @@
 # UnprocessableContentResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**error** | **str** | Error message | 
-**details** | **List[str]** | Business validation errors | 
+| Name      | Type        | Description                |
+| :-------- | :---------- | :------------------------- |
+| `error`   | `str`       | Error message              |
+| `details` | `List[str]` | Business validation errors |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import UnprocessableContentResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of UnprocessableContentResponse from a JSON string
-unprocessable_content_response_instance = UnprocessableContentResponse.from_json(json)
-# print the JSON string representation of the object
-print(UnprocessableContentResponse.to_json())
-
-# convert the object into a dict
-unprocessable_content_response_dict = unprocessable_content_response_instance.to_dict()
-# create an instance of UnprocessableContentResponse from a dict
-unprocessable_content_response_from_dict = UnprocessableContentResponse.from_dict(unprocessable_content_response_dict)
+unprocessable_content_response = UnprocessableContentResponse(error="''", details=[""])
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import UnprocessableContentResponse
 
+# Parse from JSON
+json_str = '{"error": "example"}'
+unprocessable_content_response = UnprocessableContentResponse.from_json(json_str)
+
+# Convert to JSON
+print(unprocessable_content_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import UnprocessableContentResponse
+
+# Convert to/from dictionary
+data_dict = unprocessable_content_response.to_dict()
+unprocessable_content_response = UnprocessableContentResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(unprocessable_content_response.error)
+# Update properties
+unprocessable_content_response.error = "new_value"
+```

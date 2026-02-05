@@ -1,32 +1,51 @@
 # InstitutionResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**name** | **str** |  | 
-**code** | **str** |  | 
+| Name   | Type  | Description |
+| :----- | :---- | :---------- |
+| `id`   | `str` |             |
+| `name` | `str` |             |
+| `code` | `str` |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import InstitutionResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of InstitutionResponse from a JSON string
-institution_response_instance = InstitutionResponse.from_json(json)
-# print the JSON string representation of the object
-print(InstitutionResponse.to_json())
-
-# convert the object into a dict
-institution_response_dict = institution_response_instance.to_dict()
-# create an instance of InstitutionResponse from a dict
-institution_response_from_dict = InstitutionResponse.from_dict(institution_response_dict)
+institution_response = InstitutionResponse(id="''", name="''", code="''")
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import InstitutionResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+institution_response = InstitutionResponse.from_json(json_str)
+
+# Convert to JSON
+print(institution_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import InstitutionResponse
+
+# Convert to/from dictionary
+data_dict = institution_response.to_dict()
+institution_response = InstitutionResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(institution_response.id)
+# Update properties
+institution_response.id = "new_value"
+```

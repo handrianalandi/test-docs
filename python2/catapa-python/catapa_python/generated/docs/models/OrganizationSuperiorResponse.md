@@ -1,33 +1,57 @@
 # OrganizationSuperiorResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**organization** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
-**superior** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
-**effective_date** | **date** |  | 
+| Name             | Type                                          | Description |
+| :--------------- | :-------------------------------------------- | :---------- |
+| `id`             | `str`                                         |             |
+| `organization`   | [`IdCodeNameResponse`](IdCodeNameResponse.md) |             |
+| `superior`       | [`IdCodeNameResponse`](IdCodeNameResponse.md) |             |
+| `effective_date` | `date`                                        |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import OrganizationSuperiorResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of OrganizationSuperiorResponse from a JSON string
-organization_superior_response_instance = OrganizationSuperiorResponse.from_json(json)
-# print the JSON string representation of the object
-print(OrganizationSuperiorResponse.to_json())
-
-# convert the object into a dict
-organization_superior_response_dict = organization_superior_response_instance.to_dict()
-# create an instance of OrganizationSuperiorResponse from a dict
-organization_superior_response_from_dict = OrganizationSuperiorResponse.from_dict(organization_superior_response_dict)
+organization_superior_response = OrganizationSuperiorResponse(
+    id="''",
+    organization=None,  # [IdCodeNameResponse](IdCodeNameResponse.md)
+    superior=None,  # [IdCodeNameResponse](IdCodeNameResponse.md)
+    effective_date=datetime.datetime.strptime("1975-12-30", "%Y-%m-%d").date(),
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import OrganizationSuperiorResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+organization_superior_response = OrganizationSuperiorResponse.from_json(json_str)
+
+# Convert to JSON
+print(organization_superior_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import OrganizationSuperiorResponse
+
+# Convert to/from dictionary
+data_dict = organization_superior_response.to_dict()
+organization_superior_response = OrganizationSuperiorResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(organization_superior_response.id)
+# Update properties
+organization_superior_response.id = "new_value"
+```

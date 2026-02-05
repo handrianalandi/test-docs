@@ -1,33 +1,57 @@
 # TaxDependentResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** | Name of the tax dependent | 
-**ptkp_relation_type** | **str** | Relationship type for PTKP calculation | 
-**date_of_birth** | **date** | Date of birth of the tax dependent | 
-**job** | **str** | Job or occupation of the tax dependent | 
+| Name                 | Type   | Description                            |
+| :------------------- | :----- | :------------------------------------- |
+| `name`               | `str`  | Name of the tax dependent              |
+| `ptkp_relation_type` | `str`  | Relationship type for PTKP calculation |
+| `date_of_birth`      | `date` | Date of birth of the tax dependent     |
+| `job`                | `str`  | Job or occupation of the tax dependent |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import TaxDependentResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of TaxDependentResponse from a JSON string
-tax_dependent_response_instance = TaxDependentResponse.from_json(json)
-# print the JSON string representation of the object
-print(TaxDependentResponse.to_json())
-
-# convert the object into a dict
-tax_dependent_response_dict = tax_dependent_response_instance.to_dict()
-# create an instance of TaxDependentResponse from a dict
-tax_dependent_response_from_dict = TaxDependentResponse.from_dict(tax_dependent_response_dict)
+tax_dependent_response = TaxDependentResponse(
+    name="''",
+    ptkp_relation_type="'SPOUSE'",
+    date_of_birth=datetime.datetime.strptime("1975-12-30", "%Y-%m-%d").date(),
+    job="''",
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import TaxDependentResponse
 
+# Parse from JSON
+json_str = '{"name": "example"}'
+tax_dependent_response = TaxDependentResponse.from_json(json_str)
+
+# Convert to JSON
+print(tax_dependent_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import TaxDependentResponse
+
+# Convert to/from dictionary
+data_dict = tax_dependent_response.to_dict()
+tax_dependent_response = TaxDependentResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(tax_dependent_response.name)
+# Update properties
+tax_dependent_response.name = "new_value"
+```

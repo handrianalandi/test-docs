@@ -1,33 +1,54 @@
 # IdentityCardResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**code** | **str** |  | 
-**name** | **str** |  | 
-**identity_card_type** | **str** |  | 
+| Name                 | Type  | Description |
+| :------------------- | :---- | :---------- |
+| `id`                 | `str` |             |
+| `code`               | `str` |             |
+| `name`               | `str` |             |
+| `identity_card_type` | `str` |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import IdentityCardResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of IdentityCardResponse from a JSON string
-identity_card_response_instance = IdentityCardResponse.from_json(json)
-# print the JSON string representation of the object
-print(IdentityCardResponse.to_json())
-
-# convert the object into a dict
-identity_card_response_dict = identity_card_response_instance.to_dict()
-# create an instance of IdentityCardResponse from a dict
-identity_card_response_from_dict = IdentityCardResponse.from_dict(identity_card_response_dict)
+identity_card_response = IdentityCardResponse(
+    id="''", code="''", name="''", identity_card_type="''"
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import IdentityCardResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+identity_card_response = IdentityCardResponse.from_json(json_str)
+
+# Convert to JSON
+print(identity_card_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import IdentityCardResponse
+
+# Convert to/from dictionary
+data_dict = identity_card_response.to_dict()
+identity_card_response = IdentityCardResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(identity_card_response.id)
+# Update properties
+identity_card_response.id = "new_value"
+```

@@ -1,39 +1,69 @@
 # SalaryPaymentDetailResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**bank_code** | **str** |  | 
-**bank_name** | **str** |  | 
-**account_name** | **str** |  | 
-**account_number** | **str** |  | 
-**bank_account_priority** | **int** |  | 
-**currency_code** | **str** |  | 
-**amount** | **float** |  | 
-**exchanged_amount** | **float** |  | 
-**company_bank_account** | [**SalaryPaymentDetailCompanyBankAccountResponse**](SalaryPaymentDetailCompanyBankAccountResponse.md) |  | 
+| Name                    | Type                                                                                                | Description |
+| :---------------------- | :-------------------------------------------------------------------------------------------------- | :---------- |
+| `id`                    | `str`                                                                                               |             |
+| `bank_code`             | `str`                                                                                               |             |
+| `bank_name`             | `str`                                                                                               |             |
+| `account_name`          | `str`                                                                                               |             |
+| `account_number`        | `str`                                                                                               |             |
+| `bank_account_priority` | `int`                                                                                               |             |
+| `currency_code`         | `str`                                                                                               |             |
+| `amount`                | `float`                                                                                             |             |
+| `exchanged_amount`      | `float`                                                                                             |             |
+| `company_bank_account`  | [`SalaryPaymentDetailCompanyBankAccountResponse`](SalaryPaymentDetailCompanyBankAccountResponse.md) |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import SalaryPaymentDetailResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of SalaryPaymentDetailResponse from a JSON string
-salary_payment_detail_response_instance = SalaryPaymentDetailResponse.from_json(json)
-# print the JSON string representation of the object
-print(SalaryPaymentDetailResponse.to_json())
-
-# convert the object into a dict
-salary_payment_detail_response_dict = salary_payment_detail_response_instance.to_dict()
-# create an instance of SalaryPaymentDetailResponse from a dict
-salary_payment_detail_response_from_dict = SalaryPaymentDetailResponse.from_dict(salary_payment_detail_response_dict)
+salary_payment_detail_response = SalaryPaymentDetailResponse(
+    id="''",
+    bank_code="''",
+    bank_name="''",
+    account_name="''",
+    account_number="''",
+    bank_account_priority=56,
+    currency_code="''",
+    amount=1.337,
+    exchanged_amount=1.337,
+    company_bank_account=None,  # [SalaryPaymentDetailCompanyBankAccountResponse](SalaryPaymentDetailCompanyBankAccountResponse.md)
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import SalaryPaymentDetailResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+salary_payment_detail_response = SalaryPaymentDetailResponse.from_json(json_str)
+
+# Convert to JSON
+print(salary_payment_detail_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import SalaryPaymentDetailResponse
+
+# Convert to/from dictionary
+data_dict = salary_payment_detail_response.to_dict()
+salary_payment_detail_response = SalaryPaymentDetailResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(salary_payment_detail_response.id)
+# Update properties
+salary_payment_detail_response.id = "new_value"
+```

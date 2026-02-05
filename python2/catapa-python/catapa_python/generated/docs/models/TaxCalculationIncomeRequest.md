@@ -1,32 +1,53 @@
 # TaxCalculationIncomeRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**method** | **str** |  | 
-**amount** | **float** |  | 
-**item** | **str** |  | 
+| Name     | Type    | Required | Description |
+| :------- | :------ | :------: | :---------- |
+| `method` | `str`   |    ✅    |             |
+| `amount` | `float` |    ✅    |             |
+| `item`   | `str`   |    ✅    |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import TaxCalculationIncomeRequest
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of TaxCalculationIncomeRequest from a JSON string
-tax_calculation_income_request_instance = TaxCalculationIncomeRequest.from_json(json)
-# print the JSON string representation of the object
-print(TaxCalculationIncomeRequest.to_json())
-
-# convert the object into a dict
-tax_calculation_income_request_dict = tax_calculation_income_request_instance.to_dict()
-# create an instance of TaxCalculationIncomeRequest from a dict
-tax_calculation_income_request_from_dict = TaxCalculationIncomeRequest.from_dict(tax_calculation_income_request_dict)
+tax_calculation_income_request = TaxCalculationIncomeRequest(
+    method="''", amount=1.337, item="''"
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import TaxCalculationIncomeRequest
 
+# Parse from JSON
+json_str = '{"method": "example"}'
+tax_calculation_income_request = TaxCalculationIncomeRequest.from_json(json_str)
+
+# Convert to JSON
+print(tax_calculation_income_request.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import TaxCalculationIncomeRequest
+
+# Convert to/from dictionary
+data_dict = tax_calculation_income_request.to_dict()
+tax_calculation_income_request = TaxCalculationIncomeRequest.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(tax_calculation_income_request.method)
+# Update properties
+tax_calculation_income_request.method = "new_value"
+```

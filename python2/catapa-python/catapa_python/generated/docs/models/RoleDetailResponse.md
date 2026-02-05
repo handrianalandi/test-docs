@@ -1,35 +1,61 @@
 # RoleDetailResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Role identifier | 
-**name** | **str** | Role name | 
-**description** | **str** | Role description | 
-**role_type** | **str** | Type of role | 
-**cascade_organization_permission** | **bool** | Whether organization permissions cascade to child organizations | 
-**authorities** | [**List[AuthorityDetailResponse]**](AuthorityDetailResponse.md) | List of authorities assigned to this role | 
+| Name                              | Type                                                          | Description                                                     |
+| :-------------------------------- | :------------------------------------------------------------ | :-------------------------------------------------------------- |
+| `id`                              | `str`                                                         | Role identifier                                                 |
+| `name`                            | `str`                                                         | Role name                                                       |
+| `description`                     | `str`                                                         | Role description                                                |
+| `role_type`                       | `str`                                                         | Type of role                                                    |
+| `cascade_organization_permission` | `bool`                                                        | Whether organization permissions cascade to child organizations |
+| `authorities`                     | [`List[AuthorityDetailResponse]`](AuthorityDetailResponse.md) | List of authorities assigned to this role                       |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import RoleDetailResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of RoleDetailResponse from a JSON string
-role_detail_response_instance = RoleDetailResponse.from_json(json)
-# print the JSON string representation of the object
-print(RoleDetailResponse.to_json())
-
-# convert the object into a dict
-role_detail_response_dict = role_detail_response_instance.to_dict()
-# create an instance of RoleDetailResponse from a dict
-role_detail_response_from_dict = RoleDetailResponse.from_dict(role_detail_response_dict)
+role_detail_response = RoleDetailResponse(
+    id="''",
+    name="''",
+    description="''",
+    role_type="'ADMIN'",
+    cascade_organization_permission=True,
+    authorities=[],  # List[[AuthorityDetailResponse](AuthorityDetailResponse.md)]
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import RoleDetailResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+role_detail_response = RoleDetailResponse.from_json(json_str)
+
+# Convert to JSON
+print(role_detail_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import RoleDetailResponse
+
+# Convert to/from dictionary
+data_dict = role_detail_response.to_dict()
+role_detail_response = RoleDetailResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(role_detail_response.id)
+# Update properties
+role_detail_response.id = "new_value"
+```

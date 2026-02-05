@@ -1,33 +1,54 @@
 # EmploymentTypeRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** |  | 
-**employment_group_code** | **str** |  | 
-**month_duration** | **int** |  | 
-**permanent** | **bool** |  | [default to False]
+| Name                    | Type   | Required | Description        |
+| :---------------------- | :----- | :------: | :----------------- |
+| `name`                  | `str`  |    ✅    |                    |
+| `employment_group_code` | `str`  |    ✅    |                    |
+| `month_duration`        | `int`  |    ✅    |                    |
+| `permanent`             | `bool` |    ❌    | (default: `False`) |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import EmploymentTypeRequest
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of EmploymentTypeRequest from a JSON string
-employment_type_request_instance = EmploymentTypeRequest.from_json(json)
-# print the JSON string representation of the object
-print(EmploymentTypeRequest.to_json())
-
-# convert the object into a dict
-employment_type_request_dict = employment_type_request_instance.to_dict()
-# create an instance of EmploymentTypeRequest from a dict
-employment_type_request_from_dict = EmploymentTypeRequest.from_dict(employment_type_request_dict)
+employment_type_request = EmploymentTypeRequest(
+    name="'0'", employment_group_code="'C0'", month_duration=0, permanent=True
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import EmploymentTypeRequest
 
+# Parse from JSON
+json_str = '{"name": "example"}'
+employment_type_request = EmploymentTypeRequest.from_json(json_str)
+
+# Convert to JSON
+print(employment_type_request.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import EmploymentTypeRequest
+
+# Convert to/from dictionary
+data_dict = employment_type_request.to_dict()
+employment_type_request = EmploymentTypeRequest.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(employment_type_request.name)
+# Update properties
+employment_type_request.name = "new_value"
+```

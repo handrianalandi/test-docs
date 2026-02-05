@@ -1,32 +1,53 @@
 # EmployeeSimpleResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**identification_number** | **str** |  | 
-**name** | **str** |  | 
+| Name                    | Type  | Description |
+| :---------------------- | :---- | :---------- |
+| `id`                    | `str` |             |
+| `identification_number` | `str` |             |
+| `name`                  | `str` |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import EmployeeSimpleResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of EmployeeSimpleResponse from a JSON string
-employee_simple_response_instance = EmployeeSimpleResponse.from_json(json)
-# print the JSON string representation of the object
-print(EmployeeSimpleResponse.to_json())
-
-# convert the object into a dict
-employee_simple_response_dict = employee_simple_response_instance.to_dict()
-# create an instance of EmployeeSimpleResponse from a dict
-employee_simple_response_from_dict = EmployeeSimpleResponse.from_dict(employee_simple_response_dict)
+employee_simple_response = EmployeeSimpleResponse(
+    id="''", identification_number="''", name="''"
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import EmployeeSimpleResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+employee_simple_response = EmployeeSimpleResponse.from_json(json_str)
+
+# Convert to JSON
+print(employee_simple_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import EmployeeSimpleResponse
+
+# Convert to/from dictionary
+data_dict = employee_simple_response.to_dict()
+employee_simple_response = EmployeeSimpleResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(employee_simple_response.id)
+# Update properties
+employee_simple_response.id = "new_value"
+```

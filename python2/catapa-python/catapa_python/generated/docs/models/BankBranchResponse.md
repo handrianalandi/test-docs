@@ -1,34 +1,59 @@
 # BankBranchResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **UUID** |  | 
-**name** | **str** |  | 
-**code** | **str** |  | 
-**address** | **str** |  | 
-**bank** | [**BankResponse**](BankResponse.md) |  | 
+| Name      | Type                              | Description |
+| :-------- | :-------------------------------- | :---------- |
+| `id`      | `UUID`                            |             |
+| `name`    | `str`                             |             |
+| `code`    | `str`                             |             |
+| `address` | `str`                             |             |
+| `bank`    | [`BankResponse`](BankResponse.md) |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import BankBranchResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of BankBranchResponse from a JSON string
-bank_branch_response_instance = BankBranchResponse.from_json(json)
-# print the JSON string representation of the object
-print(BankBranchResponse.to_json())
-
-# convert the object into a dict
-bank_branch_response_dict = bank_branch_response_instance.to_dict()
-# create an instance of BankBranchResponse from a dict
-bank_branch_response_from_dict = BankBranchResponse.from_dict(bank_branch_response_dict)
+bank_branch_response = BankBranchResponse(
+    id="'0e5f074c-c929-11e6-9d9d-cec0c932ce01'",
+    name="'BCA Wisma Asia'",
+    code="'BCA01'",
+    address="'BCA01'",
+    bank=None,  # [BankResponse](BankResponse.md)
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import BankBranchResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+bank_branch_response = BankBranchResponse.from_json(json_str)
+
+# Convert to JSON
+print(bank_branch_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import BankBranchResponse
+
+# Convert to/from dictionary
+data_dict = bank_branch_response.to_dict()
+bank_branch_response = BankBranchResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(bank_branch_response.id)
+# Update properties
+bank_branch_response.id = "new_value"
+```

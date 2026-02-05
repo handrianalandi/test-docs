@@ -1,36 +1,67 @@
 # EmployeeWorkdayConfigurationRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**start_date** | **str** |  | 
-**end_date** | **str** |  | 
-**shift_pattern_template** | [**IdRequest**](IdRequest.md) |  | 
-**start_sequence** | **float** |  | 
-**include_holiday** | **bool** |  | 
-**include_missing_shift** | **bool** |  | 
-**employee** | [**IdRequest**](IdRequest.md) |  | 
+| Name                     | Type                        | Required | Description |
+| :----------------------- | :-------------------------- | :------: | :---------- |
+| `start_date`             | `str`                       |    ✅    |             |
+| `end_date`               | `str`                       |    ✅    |             |
+| `shift_pattern_template` | [`IdRequest`](IdRequest.md) |    ✅    |             |
+| `start_sequence`         | `float`                     |    ✅    |             |
+| `include_holiday`        | `bool`                      |    ✅    |             |
+| `include_missing_shift`  | `bool`                      |    ✅    |             |
+| `employee`               | [`IdRequest`](IdRequest.md) |    ✅    |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import EmployeeWorkdayConfigurationRequest
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of EmployeeWorkdayConfigurationRequest from a JSON string
-employee_workday_configuration_request_instance = EmployeeWorkdayConfigurationRequest.from_json(json)
-# print the JSON string representation of the object
-print(EmployeeWorkdayConfigurationRequest.to_json())
-
-# convert the object into a dict
-employee_workday_configuration_request_dict = employee_workday_configuration_request_instance.to_dict()
-# create an instance of EmployeeWorkdayConfigurationRequest from a dict
-employee_workday_configuration_request_from_dict = EmployeeWorkdayConfigurationRequest.from_dict(employee_workday_configuration_request_dict)
+employee_workday_configuration_request = EmployeeWorkdayConfigurationRequest(
+    start_date="''",
+    end_date="''",
+    shift_pattern_template=None,  # [IdRequest](IdRequest.md)
+    start_sequence=1.337,
+    include_holiday=True,
+    include_missing_shift=True,
+    employee=None,  # [IdRequest](IdRequest.md)
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import EmployeeWorkdayConfigurationRequest
 
+# Parse from JSON
+json_str = '{"start_date": "example"}'
+employee_workday_configuration_request = EmployeeWorkdayConfigurationRequest.from_json(
+    json_str
+)
+
+# Convert to JSON
+print(employee_workday_configuration_request.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import EmployeeWorkdayConfigurationRequest
+
+# Convert to/from dictionary
+data_dict = employee_workday_configuration_request.to_dict()
+employee_workday_configuration_request = EmployeeWorkdayConfigurationRequest.from_dict(
+    data_dict
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(employee_workday_configuration_request.start_date)
+# Update properties
+employee_workday_configuration_request.start_date = "new_value"
+```

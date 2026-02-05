@@ -1,34 +1,63 @@
 # EmploymentStatusDetailPositionResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**code** | **str** |  | 
-**name** | **str** |  | 
-**effective_date** | **date** | YYYY-MM-DD | 
-**end_date** | **date** | YYYY-MM-DD | 
+| Name             | Type   | Description |
+| :--------------- | :----- | :---------- |
+| `id`             | `str`  |             |
+| `code`           | `str`  |             |
+| `name`           | `str`  |             |
+| `effective_date` | `date` | YYYY-MM-DD  |
+| `end_date`       | `date` | YYYY-MM-DD  |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import EmploymentStatusDetailPositionResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of EmploymentStatusDetailPositionResponse from a JSON string
-employment_status_detail_position_response_instance = EmploymentStatusDetailPositionResponse.from_json(json)
-# print the JSON string representation of the object
-print(EmploymentStatusDetailPositionResponse.to_json())
-
-# convert the object into a dict
-employment_status_detail_position_response_dict = employment_status_detail_position_response_instance.to_dict()
-# create an instance of EmploymentStatusDetailPositionResponse from a dict
-employment_status_detail_position_response_from_dict = EmploymentStatusDetailPositionResponse.from_dict(employment_status_detail_position_response_dict)
+employment_status_detail_position_response = EmploymentStatusDetailPositionResponse(
+    id="''",
+    code="''",
+    name="''",
+    effective_date=datetime.datetime.strptime("1975-12-30", "%Y-%m-%d").date(),
+    end_date=datetime.datetime.strptime("1975-12-30", "%Y-%m-%d").date(),
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import EmploymentStatusDetailPositionResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+employment_status_detail_position_response = (
+    EmploymentStatusDetailPositionResponse.from_json(json_str)
+)
+
+# Convert to JSON
+print(employment_status_detail_position_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import EmploymentStatusDetailPositionResponse
+
+# Convert to/from dictionary
+data_dict = employment_status_detail_position_response.to_dict()
+employment_status_detail_position_response = (
+    EmploymentStatusDetailPositionResponse.from_dict(data_dict)
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(employment_status_detail_position_response.id)
+# Update properties
+employment_status_detail_position_response.id = "new_value"
+```

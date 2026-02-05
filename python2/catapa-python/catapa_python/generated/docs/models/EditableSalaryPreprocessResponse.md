@@ -1,31 +1,57 @@
 # EditableSalaryPreprocessResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**successes** | [**List[EditableSalaryPreprocessSuccess]**](EditableSalaryPreprocessSuccess.md) |  | 
-**failures** | [**List[BulkOperationFailureResponse]**](BulkOperationFailureResponse.md) |  | 
+| Name        | Type                                                                          | Description |
+| :---------- | :---------------------------------------------------------------------------- | :---------- |
+| `successes` | [`List[EditableSalaryPreprocessSuccess]`](EditableSalaryPreprocessSuccess.md) |             |
+| `failures`  | [`List[BulkOperationFailureResponse]`](BulkOperationFailureResponse.md)       |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import EditableSalaryPreprocessResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of EditableSalaryPreprocessResponse from a JSON string
-editable_salary_preprocess_response_instance = EditableSalaryPreprocessResponse.from_json(json)
-# print the JSON string representation of the object
-print(EditableSalaryPreprocessResponse.to_json())
-
-# convert the object into a dict
-editable_salary_preprocess_response_dict = editable_salary_preprocess_response_instance.to_dict()
-# create an instance of EditableSalaryPreprocessResponse from a dict
-editable_salary_preprocess_response_from_dict = EditableSalaryPreprocessResponse.from_dict(editable_salary_preprocess_response_dict)
+editable_salary_preprocess_response = EditableSalaryPreprocessResponse(
+    successes=[],  # List[[EditableSalaryPreprocessSuccess](EditableSalaryPreprocessSuccess.md)]
+    failures=[],  # List[[BulkOperationFailureResponse](BulkOperationFailureResponse.md)]
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import EditableSalaryPreprocessResponse
 
+# Parse from JSON
+json_str = '{"successes": "example"}'
+editable_salary_preprocess_response = EditableSalaryPreprocessResponse.from_json(
+    json_str
+)
+
+# Convert to JSON
+print(editable_salary_preprocess_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import EditableSalaryPreprocessResponse
+
+# Convert to/from dictionary
+data_dict = editable_salary_preprocess_response.to_dict()
+editable_salary_preprocess_response = EditableSalaryPreprocessResponse.from_dict(
+    data_dict
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(editable_salary_preprocess_response.successes)
+# Update properties
+editable_salary_preprocess_response.successes = new_value
+```

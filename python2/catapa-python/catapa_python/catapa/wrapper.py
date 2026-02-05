@@ -49,11 +49,11 @@ class Catapa(AutoRefreshApiClient):
         from catapa import EmployeeApi, OrganizationApi
 
         employee_api = EmployeeApi(client)
-        employees = employee_api.list_all_employees(page=0, size=10)
+        employees = employee_api.get_employees(page=0, size=10)
 
         # Even after token expires, it will auto-refresh!
         time.sleep(3600)  # Wait 1 hour
-        employees = employee_api.list_all_employees(page=0, size=10)  # ✅ Works!
+        employees = employee_api.get_employees(page=0, size=10)  # ✅ Works!
 
         org_api = OrganizationApi(client)
         company = org_api.get_companies()

@@ -1,34 +1,59 @@
 # ProcessedSalaryPaymentResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**employee_id** | **str** |  | 
-**location_group_code** | **str** |  | 
-**payment_date** | **str** |  | 
-**salary_payment_details** | [**List[ProcessedSalaryPaymentDetailResponse]**](ProcessedSalaryPaymentDetailResponse.md) |  | 
-**total_thp** | **float** |  | 
+| Name                     | Type                                                                                    | Description |
+| :----------------------- | :-------------------------------------------------------------------------------------- | :---------- |
+| `employee_id`            | `str`                                                                                   |             |
+| `location_group_code`    | `str`                                                                                   |             |
+| `payment_date`           | `str`                                                                                   |             |
+| `salary_payment_details` | [`List[ProcessedSalaryPaymentDetailResponse]`](ProcessedSalaryPaymentDetailResponse.md) |             |
+| `total_thp`              | `float`                                                                                 |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import ProcessedSalaryPaymentResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of ProcessedSalaryPaymentResponse from a JSON string
-processed_salary_payment_response_instance = ProcessedSalaryPaymentResponse.from_json(json)
-# print the JSON string representation of the object
-print(ProcessedSalaryPaymentResponse.to_json())
-
-# convert the object into a dict
-processed_salary_payment_response_dict = processed_salary_payment_response_instance.to_dict()
-# create an instance of ProcessedSalaryPaymentResponse from a dict
-processed_salary_payment_response_from_dict = ProcessedSalaryPaymentResponse.from_dict(processed_salary_payment_response_dict)
+processed_salary_payment_response = ProcessedSalaryPaymentResponse(
+    employee_id="''",
+    location_group_code="''",
+    payment_date="''",
+    salary_payment_details=[],  # List[[ProcessedSalaryPaymentDetailResponse](ProcessedSalaryPaymentDetailResponse.md)]
+    total_thp=1.337,
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import ProcessedSalaryPaymentResponse
 
+# Parse from JSON
+json_str = '{"employee_id": "example"}'
+processed_salary_payment_response = ProcessedSalaryPaymentResponse.from_json(json_str)
+
+# Convert to JSON
+print(processed_salary_payment_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import ProcessedSalaryPaymentResponse
+
+# Convert to/from dictionary
+data_dict = processed_salary_payment_response.to_dict()
+processed_salary_payment_response = ProcessedSalaryPaymentResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(processed_salary_payment_response.employee_id)
+# Update properties
+processed_salary_payment_response.employee_id = "new_value"
+```

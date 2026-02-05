@@ -10,7 +10,7 @@
 - **Run all tests**: `make test` or `uv run pytest tests/`
 - **Run single test**: `uv run pytest tests/path/to/test_file.py::test_function`
 - **Run with coverage**: `make test` (includes coverage by default)
-- **Regenerate client**: `make regenerate-client` (must run before tests/examples)
+- **Regenerate client**: `make regenerate-client` or `cd ../../scripts/sdk/generate && uv run main.py py` (must run before tests/examples)
 - **Run example**: `make run-example` or `uv run examples/example.py`
 
 ## Code Style Guidelines

@@ -1,36 +1,67 @@
 # MonthlyRecapitulationItemResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**code** | **str** |  | 
-**id** | **str** |  | 
-**month** | **float** |  | 
-**name** | **str** |  | 
-**total_thp** | **float** |  | 
-**year** | **float** |  | 
-**details** | [**List[MonthlyRecapitulationItemDetailResponse]**](MonthlyRecapitulationItemDetailResponse.md) |  | 
+| Name        | Type                                                                                          | Description |
+| :---------- | :-------------------------------------------------------------------------------------------- | :---------- |
+| `code`      | `str`                                                                                         |             |
+| `id`        | `str`                                                                                         |             |
+| `month`     | `float`                                                                                       |             |
+| `name`      | `str`                                                                                         |             |
+| `total_thp` | `float`                                                                                       |             |
+| `year`      | `float`                                                                                       |             |
+| `details`   | [`List[MonthlyRecapitulationItemDetailResponse]`](MonthlyRecapitulationItemDetailResponse.md) |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import MonthlyRecapitulationItemResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of MonthlyRecapitulationItemResponse from a JSON string
-monthly_recapitulation_item_response_instance = MonthlyRecapitulationItemResponse.from_json(json)
-# print the JSON string representation of the object
-print(MonthlyRecapitulationItemResponse.to_json())
-
-# convert the object into a dict
-monthly_recapitulation_item_response_dict = monthly_recapitulation_item_response_instance.to_dict()
-# create an instance of MonthlyRecapitulationItemResponse from a dict
-monthly_recapitulation_item_response_from_dict = MonthlyRecapitulationItemResponse.from_dict(monthly_recapitulation_item_response_dict)
+monthly_recapitulation_item_response = MonthlyRecapitulationItemResponse(
+    code="''",
+    id="''",
+    month=1.337,
+    name="''",
+    total_thp=1.337,
+    year=1.337,
+    details=[],  # List[[MonthlyRecapitulationItemDetailResponse](MonthlyRecapitulationItemDetailResponse.md)]
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import MonthlyRecapitulationItemResponse
 
+# Parse from JSON
+json_str = '{"code": "example"}'
+monthly_recapitulation_item_response = MonthlyRecapitulationItemResponse.from_json(
+    json_str
+)
+
+# Convert to JSON
+print(monthly_recapitulation_item_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import MonthlyRecapitulationItemResponse
+
+# Convert to/from dictionary
+data_dict = monthly_recapitulation_item_response.to_dict()
+monthly_recapitulation_item_response = MonthlyRecapitulationItemResponse.from_dict(
+    data_dict
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(monthly_recapitulation_item_response.code)
+# Update properties
+monthly_recapitulation_item_response.code = "new_value"
+```

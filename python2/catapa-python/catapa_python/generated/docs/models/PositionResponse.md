@@ -1,40 +1,71 @@
 # PositionResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**code** | **str** |  | 
-**name** | **str** |  | 
-**organization** | [**OrganizationResponse**](OrganizationResponse.md) |  | 
-**job_title** | [**JobTitleResponse**](JobTitleResponse.md) |  | 
-**job_level** | [**JobLevelResponse**](JobLevelResponse.md) |  | 
-**cost_center** | [**CostCenterResponse**](CostCenterResponse.md) |  | 
-**location** | [**LocationResponse**](LocationResponse.md) |  | 
-**assigned** | **bool** |  | 
-**effective_date** | **str** |  | 
-**end_date** | **str** |  | 
+| Name             | Type                                              | Description |
+| :--------------- | :------------------------------------------------ | :---------- |
+| `id`             | `str`                                             |             |
+| `code`           | `str`                                             |             |
+| `name`           | `str`                                             |             |
+| `organization`   | [`OrganizationResponse`](OrganizationResponse.md) |             |
+| `job_title`      | [`JobTitleResponse`](JobTitleResponse.md)         |             |
+| `job_level`      | [`JobLevelResponse`](JobLevelResponse.md)         |             |
+| `cost_center`    | [`CostCenterResponse`](CostCenterResponse.md)     |             |
+| `location`       | [`LocationResponse`](LocationResponse.md)         |             |
+| `assigned`       | `bool`                                            |             |
+| `effective_date` | `str`                                             |             |
+| `end_date`       | `str`                                             |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import PositionResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of PositionResponse from a JSON string
-position_response_instance = PositionResponse.from_json(json)
-# print the JSON string representation of the object
-print(PositionResponse.to_json())
-
-# convert the object into a dict
-position_response_dict = position_response_instance.to_dict()
-# create an instance of PositionResponse from a dict
-position_response_from_dict = PositionResponse.from_dict(position_response_dict)
+position_response = PositionResponse(
+    id="''",
+    code="''",
+    name="''",
+    organization=None,  # [OrganizationResponse](OrganizationResponse.md)
+    job_title=None,  # [JobTitleResponse](JobTitleResponse.md)
+    job_level=None,  # [JobLevelResponse](JobLevelResponse.md)
+    cost_center=None,  # [CostCenterResponse](CostCenterResponse.md)
+    location=None,  # [LocationResponse](LocationResponse.md)
+    assigned=True,
+    effective_date="''",
+    end_date="''",
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import PositionResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+position_response = PositionResponse.from_json(json_str)
+
+# Convert to JSON
+print(position_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import PositionResponse
+
+# Convert to/from dictionary
+data_dict = position_response.to_dict()
+position_response = PositionResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(position_response.id)
+# Update properties
+position_response.id = "new_value"
+```

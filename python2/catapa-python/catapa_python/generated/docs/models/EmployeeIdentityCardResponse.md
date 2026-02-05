@@ -1,33 +1,57 @@
 # EmployeeIdentityCardResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**identity_card** | [**IdentityCardResponse**](IdentityCardResponse.md) |  | 
-**identity_card_number** | **str** |  | 
-**expired_date** | **str** |  | 
+| Name                   | Type                                              | Description |
+| :--------------------- | :------------------------------------------------ | :---------- |
+| `id`                   | `str`                                             |             |
+| `identity_card`        | [`IdentityCardResponse`](IdentityCardResponse.md) |             |
+| `identity_card_number` | `str`                                             |             |
+| `expired_date`         | `str`                                             |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import EmployeeIdentityCardResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of EmployeeIdentityCardResponse from a JSON string
-employee_identity_card_response_instance = EmployeeIdentityCardResponse.from_json(json)
-# print the JSON string representation of the object
-print(EmployeeIdentityCardResponse.to_json())
-
-# convert the object into a dict
-employee_identity_card_response_dict = employee_identity_card_response_instance.to_dict()
-# create an instance of EmployeeIdentityCardResponse from a dict
-employee_identity_card_response_from_dict = EmployeeIdentityCardResponse.from_dict(employee_identity_card_response_dict)
+employee_identity_card_response = EmployeeIdentityCardResponse(
+    id="''",
+    identity_card=None,  # [IdentityCardResponse](IdentityCardResponse.md)
+    identity_card_number="''",
+    expired_date="''",
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import EmployeeIdentityCardResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+employee_identity_card_response = EmployeeIdentityCardResponse.from_json(json_str)
+
+# Convert to JSON
+print(employee_identity_card_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import EmployeeIdentityCardResponse
+
+# Convert to/from dictionary
+data_dict = employee_identity_card_response.to_dict()
+employee_identity_card_response = EmployeeIdentityCardResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(employee_identity_card_response.id)
+# Update properties
+employee_identity_card_response.id = "new_value"
+```

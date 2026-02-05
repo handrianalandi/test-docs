@@ -1,33 +1,57 @@
 # CompanyListItemResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**name** | **str** |  | 
-**code** | **str** |  | 
-**company_group** | [**IdCodeNameResponse**](IdCodeNameResponse.md) |  | 
+| Name            | Type                                          | Description |
+| :-------------- | :-------------------------------------------- | :---------- |
+| `id`            | `str`                                         |             |
+| `name`          | `str`                                         |             |
+| `code`          | `str`                                         |             |
+| `company_group` | [`IdCodeNameResponse`](IdCodeNameResponse.md) |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import CompanyListItemResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of CompanyListItemResponse from a JSON string
-company_list_item_response_instance = CompanyListItemResponse.from_json(json)
-# print the JSON string representation of the object
-print(CompanyListItemResponse.to_json())
-
-# convert the object into a dict
-company_list_item_response_dict = company_list_item_response_instance.to_dict()
-# create an instance of CompanyListItemResponse from a dict
-company_list_item_response_from_dict = CompanyListItemResponse.from_dict(company_list_item_response_dict)
+company_list_item_response = CompanyListItemResponse(
+    id="''",
+    name="''",
+    code="''",
+    company_group=None,  # [IdCodeNameResponse](IdCodeNameResponse.md)
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import CompanyListItemResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+company_list_item_response = CompanyListItemResponse.from_json(json_str)
+
+# Convert to JSON
+print(company_list_item_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import CompanyListItemResponse
+
+# Convert to/from dictionary
+data_dict = company_list_item_response.to_dict()
+company_list_item_response = CompanyListItemResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(company_list_item_response.id)
+# Update properties
+company_list_item_response.id = "new_value"
+```

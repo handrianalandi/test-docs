@@ -4,36 +4,66 @@ The Content-Type must be `application/json`
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** |  | 
-**code** | **str** |  | 
-**website** | **str** |  | 
-**siup** | **str** | Alphanumeric, hyphen (-), slash (/), period (.), and space | 
-**tdp** | **str** | Alphanumeric, hyphen (-), slash (/), period (.), and space | 
-**time_zone** | [**CompanyDetailTimeZoneRequest**](CompanyDetailTimeZoneRequest.md) |  | 
-**email** | **str** |  | 
-**company_superior** | [**IdRequest**](IdRequest.md) |  | 
-**location** | [**IdRequest**](IdRequest.md) |  | 
+| Name               | Type                                                              | Required | Description                                                |
+| :----------------- | :---------------------------------------------------------------- | :------: | :--------------------------------------------------------- |
+| `name`             | `str`                                                             |    ✅    |                                                            |
+| `code`             | `str`                                                             |    ❌    |                                                            |
+| `website`          | `str`                                                             |    ❌    |                                                            |
+| `siup`             | `str`                                                             |    ❌    | Alphanumeric, hyphen (-), slash (/), period (.), and space |
+| `tdp`              | `str`                                                             |    ❌    | Alphanumeric, hyphen (-), slash (/), period (.), and space |
+| `time_zone`        | [`CompanyDetailTimeZoneRequest`](CompanyDetailTimeZoneRequest.md) |    ✅    |                                                            |
+| `email`            | `str`                                                             |    ✅    |                                                            |
+| `company_superior` | [`IdRequest`](IdRequest.md)                                       |    ❌    |                                                            |
+| `location`         | [`IdRequest`](IdRequest.md)                                       |    ✅    |                                                            |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import CompanyDetailRequest
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of CompanyDetailRequest from a JSON string
-company_detail_request_instance = CompanyDetailRequest.from_json(json)
-# print the JSON string representation of the object
-print(CompanyDetailRequest.to_json())
-
-# convert the object into a dict
-company_detail_request_dict = company_detail_request_instance.to_dict()
-# create an instance of CompanyDetailRequest from a dict
-company_detail_request_from_dict = CompanyDetailRequest.from_dict(company_detail_request_dict)
+company_detail_request = CompanyDetailRequest(
+    name="'0'",
+    code="'0'",
+    website="'012'",
+    siup="'.0'",
+    tdp="'.0'",
+    time_zone=None,  # [CompanyDetailTimeZoneRequest](CompanyDetailTimeZoneRequest.md)
+    email="''",
+    company_superior=None,  # [IdRequest](IdRequest.md)
+    location=None,  # [IdRequest](IdRequest.md)
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import CompanyDetailRequest
 
+# Parse from JSON
+json_str = '{"name": "example"}'
+company_detail_request = CompanyDetailRequest.from_json(json_str)
+
+# Convert to JSON
+print(company_detail_request.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import CompanyDetailRequest
+
+# Convert to/from dictionary
+data_dict = company_detail_request.to_dict()
+company_detail_request = CompanyDetailRequest.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(company_detail_request.name)
+# Update properties
+company_detail_request.name = "new_value"
+```

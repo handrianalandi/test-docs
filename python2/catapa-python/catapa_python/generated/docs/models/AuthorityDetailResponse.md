@@ -1,34 +1,55 @@
 # AuthorityDetailResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Authority identifier | 
-**code** | **str** | Authority code | 
-**name** | **str** | Authority name | 
-**description** | **str** | Authority description | 
-**module_name** | **str** | Module name this authority belongs to | 
+| Name          | Type  | Description                           |
+| :------------ | :---- | :------------------------------------ |
+| `id`          | `str` | Authority identifier                  |
+| `code`        | `str` | Authority code                        |
+| `name`        | `str` | Authority name                        |
+| `description` | `str` | Authority description                 |
+| `module_name` | `str` | Module name this authority belongs to |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import AuthorityDetailResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of AuthorityDetailResponse from a JSON string
-authority_detail_response_instance = AuthorityDetailResponse.from_json(json)
-# print the JSON string representation of the object
-print(AuthorityDetailResponse.to_json())
-
-# convert the object into a dict
-authority_detail_response_dict = authority_detail_response_instance.to_dict()
-# create an instance of AuthorityDetailResponse from a dict
-authority_detail_response_from_dict = AuthorityDetailResponse.from_dict(authority_detail_response_dict)
+authority_detail_response = AuthorityDetailResponse(
+    id="''", code="''", name="''", description="''", module_name="''"
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import AuthorityDetailResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+authority_detail_response = AuthorityDetailResponse.from_json(json_str)
+
+# Convert to JSON
+print(authority_detail_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import AuthorityDetailResponse
+
+# Convert to/from dictionary
+data_dict = authority_detail_response.to_dict()
+authority_detail_response = AuthorityDetailResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(authority_detail_response.id)
+# Update properties
+authority_detail_response.id = "new_value"
+```

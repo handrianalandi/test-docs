@@ -1,31 +1,56 @@
 # TerminationBPJSManpowerReasonResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**name** | **str** |  | 
+| Name   | Type  | Description |
+| :----- | :---- | :---------- |
+| `id`   | `str` |             |
+| `name` | `str` |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import TerminationBPJSManpowerReasonResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of TerminationBPJSManpowerReasonResponse from a JSON string
-termination_bpjs_manpower_reason_response_instance = TerminationBPJSManpowerReasonResponse.from_json(json)
-# print the JSON string representation of the object
-print(TerminationBPJSManpowerReasonResponse.to_json())
-
-# convert the object into a dict
-termination_bpjs_manpower_reason_response_dict = termination_bpjs_manpower_reason_response_instance.to_dict()
-# create an instance of TerminationBPJSManpowerReasonResponse from a dict
-termination_bpjs_manpower_reason_response_from_dict = TerminationBPJSManpowerReasonResponse.from_dict(termination_bpjs_manpower_reason_response_dict)
+termination_bpjs_manpower_reason_response = TerminationBPJSManpowerReasonResponse(
+    id="''", name="''"
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import TerminationBPJSManpowerReasonResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+termination_bpjs_manpower_reason_response = (
+    TerminationBPJSManpowerReasonResponse.from_json(json_str)
+)
+
+# Convert to JSON
+print(termination_bpjs_manpower_reason_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import TerminationBPJSManpowerReasonResponse
+
+# Convert to/from dictionary
+data_dict = termination_bpjs_manpower_reason_response.to_dict()
+termination_bpjs_manpower_reason_response = (
+    TerminationBPJSManpowerReasonResponse.from_dict(data_dict)
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(termination_bpjs_manpower_reason_response.id)
+# Update properties
+termination_bpjs_manpower_reason_response.id = "new_value"
+```

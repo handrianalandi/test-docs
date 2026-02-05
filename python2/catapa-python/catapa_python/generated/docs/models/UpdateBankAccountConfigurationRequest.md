@@ -1,34 +1,65 @@
 # UpdateBankAccountConfigurationRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**employee** | [**IdRequest**](IdRequest.md) |  | 
-**effective_date** | **date** | YYYY-MM-DD | 
-**payment_method** | **str** |  | 
-**distribution_method** | **str** |  | 
-**bank_accounts** | [**List[BankAccountConfigurationRequest]**](BankAccountConfigurationRequest.md) |  | 
+| Name                  | Type                                                                          | Required | Description |
+| :-------------------- | :---------------------------------------------------------------------------- | :------: | :---------- |
+| `employee`            | [`IdRequest`](IdRequest.md)                                                   |    ❌    |             |
+| `effective_date`      | `date`                                                                        |    ❌    | YYYY-MM-DD  |
+| `payment_method`      | `str`                                                                         |    ✅    |             |
+| `distribution_method` | `str`                                                                         |    ❌    |             |
+| `bank_accounts`       | [`List[BankAccountConfigurationRequest]`](BankAccountConfigurationRequest.md) |    ❌    |             |
+| `source`              | [`IdRequest`](IdRequest.md)                                                   |    ❌    |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import UpdateBankAccountConfigurationRequest
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of UpdateBankAccountConfigurationRequest from a JSON string
-update_bank_account_configuration_request_instance = UpdateBankAccountConfigurationRequest.from_json(json)
-# print the JSON string representation of the object
-print(UpdateBankAccountConfigurationRequest.to_json())
-
-# convert the object into a dict
-update_bank_account_configuration_request_dict = update_bank_account_configuration_request_instance.to_dict()
-# create an instance of UpdateBankAccountConfigurationRequest from a dict
-update_bank_account_configuration_request_from_dict = UpdateBankAccountConfigurationRequest.from_dict(update_bank_account_configuration_request_dict)
+update_bank_account_configuration_request = UpdateBankAccountConfigurationRequest(
+    employee=None,  # [IdRequest](IdRequest.md)
+    effective_date=datetime.datetime.strptime("1975-12-30", "%Y-%m-%d").date(),
+    payment_method="'TRANSFER'",
+    distribution_method="'PERCENTAGE'",
+    bank_accounts=[],  # List[[BankAccountConfigurationRequest](BankAccountConfigurationRequest.md)]
+    source=None,  # [IdRequest](IdRequest.md)
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import UpdateBankAccountConfigurationRequest
 
+# Parse from JSON
+json_str = '{"employee": "example"}'
+update_bank_account_configuration_request = (
+    UpdateBankAccountConfigurationRequest.from_json(json_str)
+)
+
+# Convert to JSON
+print(update_bank_account_configuration_request.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import UpdateBankAccountConfigurationRequest
+
+# Convert to/from dictionary
+data_dict = update_bank_account_configuration_request.to_dict()
+update_bank_account_configuration_request = (
+    UpdateBankAccountConfigurationRequest.from_dict(data_dict)
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(update_bank_account_configuration_request.employee)
+# Update properties
+update_bank_account_configuration_request.employee = new_value
+```

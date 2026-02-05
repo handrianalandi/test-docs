@@ -1,32 +1,51 @@
 # RoleResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**name** | **str** |  | 
-**active** | **bool** |  | 
+| Name     | Type   | Description |
+| :------- | :----- | :---------- |
+| `id`     | `str`  |             |
+| `name`   | `str`  |             |
+| `active` | `bool` |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import RoleResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of RoleResponse from a JSON string
-role_response_instance = RoleResponse.from_json(json)
-# print the JSON string representation of the object
-print(RoleResponse.to_json())
-
-# convert the object into a dict
-role_response_dict = role_response_instance.to_dict()
-# create an instance of RoleResponse from a dict
-role_response_from_dict = RoleResponse.from_dict(role_response_dict)
+role_response = RoleResponse(id="''", name="''", active=True)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import RoleResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+role_response = RoleResponse.from_json(json_str)
+
+# Convert to JSON
+print(role_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import RoleResponse
+
+# Convert to/from dictionary
+data_dict = role_response.to_dict()
+role_response = RoleResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(role_response.id)
+# Update properties
+role_response.id = "new_value"
+```

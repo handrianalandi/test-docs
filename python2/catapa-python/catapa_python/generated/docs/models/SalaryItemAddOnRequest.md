@@ -1,33 +1,57 @@
 # SalaryItemAddOnRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**amount** | **float** |  | 
-**var_date** | **str** |  | 
-**employee** | [**SalaryItemAddOnEmployeeRequest**](SalaryItemAddOnEmployeeRequest.md) |  | 
-**salary_item** | [**SalaryItemAddOnSalaryItemRequest**](SalaryItemAddOnSalaryItemRequest.md) |  | 
+| Name          | Type                                                                      | Required | Description |
+| :------------ | :------------------------------------------------------------------------ | :------: | :---------- |
+| `amount`      | `float`                                                                   |    ✅    |             |
+| `var_date`    | `str`                                                                     |    ✅    |             |
+| `employee`    | [`SalaryItemAddOnEmployeeRequest`](SalaryItemAddOnEmployeeRequest.md)     |    ✅    |             |
+| `salary_item` | [`SalaryItemAddOnSalaryItemRequest`](SalaryItemAddOnSalaryItemRequest.md) |    ✅    |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import SalaryItemAddOnRequest
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of SalaryItemAddOnRequest from a JSON string
-salary_item_add_on_request_instance = SalaryItemAddOnRequest.from_json(json)
-# print the JSON string representation of the object
-print(SalaryItemAddOnRequest.to_json())
-
-# convert the object into a dict
-salary_item_add_on_request_dict = salary_item_add_on_request_instance.to_dict()
-# create an instance of SalaryItemAddOnRequest from a dict
-salary_item_add_on_request_from_dict = SalaryItemAddOnRequest.from_dict(salary_item_add_on_request_dict)
+salary_item_add_on_request = SalaryItemAddOnRequest(
+    amount=1.337,
+    var_date="''",
+    employee=None,  # [SalaryItemAddOnEmployeeRequest](SalaryItemAddOnEmployeeRequest.md)
+    salary_item=None,  # [SalaryItemAddOnSalaryItemRequest](SalaryItemAddOnSalaryItemRequest.md)
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import SalaryItemAddOnRequest
 
+# Parse from JSON
+json_str = '{"amount": "example"}'
+salary_item_add_on_request = SalaryItemAddOnRequest.from_json(json_str)
+
+# Convert to JSON
+print(salary_item_add_on_request.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import SalaryItemAddOnRequest
+
+# Convert to/from dictionary
+data_dict = salary_item_add_on_request.to_dict()
+salary_item_add_on_request = SalaryItemAddOnRequest.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(salary_item_add_on_request.amount)
+# Update properties
+salary_item_add_on_request.amount = new_value
+```

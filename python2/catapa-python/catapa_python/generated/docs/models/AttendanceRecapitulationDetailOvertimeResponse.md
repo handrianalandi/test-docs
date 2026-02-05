@@ -1,32 +1,59 @@
 # AttendanceRecapitulationDetailOvertimeResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**requested** | **float** |  | 
-**paid** | **float** |  | 
-**description** | **str** |  | 
+| Name          | Type    | Description |
+| :------------ | :------ | :---------- |
+| `requested`   | `float` |             |
+| `paid`        | `float` |             |
+| `description` | `str`   |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import AttendanceRecapitulationDetailOvertimeResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of AttendanceRecapitulationDetailOvertimeResponse from a JSON string
-attendance_recapitulation_detail_overtime_response_instance = AttendanceRecapitulationDetailOvertimeResponse.from_json(json)
-# print the JSON string representation of the object
-print(AttendanceRecapitulationDetailOvertimeResponse.to_json())
-
-# convert the object into a dict
-attendance_recapitulation_detail_overtime_response_dict = attendance_recapitulation_detail_overtime_response_instance.to_dict()
-# create an instance of AttendanceRecapitulationDetailOvertimeResponse from a dict
-attendance_recapitulation_detail_overtime_response_from_dict = AttendanceRecapitulationDetailOvertimeResponse.from_dict(attendance_recapitulation_detail_overtime_response_dict)
+attendance_recapitulation_detail_overtime_response = (
+    AttendanceRecapitulationDetailOvertimeResponse(
+        requested=1.337, paid=1.337, description="''"
+    )
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import AttendanceRecapitulationDetailOvertimeResponse
 
+# Parse from JSON
+json_str = '{"requested": "example"}'
+attendance_recapitulation_detail_overtime_response = (
+    AttendanceRecapitulationDetailOvertimeResponse.from_json(json_str)
+)
+
+# Convert to JSON
+print(attendance_recapitulation_detail_overtime_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import AttendanceRecapitulationDetailOvertimeResponse
+
+# Convert to/from dictionary
+data_dict = attendance_recapitulation_detail_overtime_response.to_dict()
+attendance_recapitulation_detail_overtime_response = (
+    AttendanceRecapitulationDetailOvertimeResponse.from_dict(data_dict)
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(attendance_recapitulation_detail_overtime_response.requested)
+# Update properties
+attendance_recapitulation_detail_overtime_response.requested = new_value
+```

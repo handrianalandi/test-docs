@@ -1,31 +1,50 @@
 # RecurringPeriodEndRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**year** | **float** |  | 
-**month** | **float** |  | 
+| Name    | Type    | Required | Description |
+| :------ | :------ | :------: | :---------- |
+| `year`  | `float` |    ✅    |             |
+| `month` | `float` |    ✅    |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import RecurringPeriodEndRequest
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of RecurringPeriodEndRequest from a JSON string
-recurring_period_end_request_instance = RecurringPeriodEndRequest.from_json(json)
-# print the JSON string representation of the object
-print(RecurringPeriodEndRequest.to_json())
-
-# convert the object into a dict
-recurring_period_end_request_dict = recurring_period_end_request_instance.to_dict()
-# create an instance of RecurringPeriodEndRequest from a dict
-recurring_period_end_request_from_dict = RecurringPeriodEndRequest.from_dict(recurring_period_end_request_dict)
+recurring_period_end_request = RecurringPeriodEndRequest(year=1.337, month=1.337)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import RecurringPeriodEndRequest
 
+# Parse from JSON
+json_str = '{"year": "example"}'
+recurring_period_end_request = RecurringPeriodEndRequest.from_json(json_str)
+
+# Convert to JSON
+print(recurring_period_end_request.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import RecurringPeriodEndRequest
+
+# Convert to/from dictionary
+data_dict = recurring_period_end_request.to_dict()
+recurring_period_end_request = RecurringPeriodEndRequest.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(recurring_period_end_request.year)
+# Update properties
+recurring_period_end_request.year = new_value
+```

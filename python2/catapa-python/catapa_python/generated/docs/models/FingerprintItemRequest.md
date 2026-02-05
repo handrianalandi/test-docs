@@ -1,31 +1,50 @@
 # FingerprintItemRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**identification_number** | **str** |  | 
-**time** | **str** |  | 
+| Name                    | Type  | Required | Description |
+| :---------------------- | :---- | :------: | :---------- |
+| `identification_number` | `str` |    ✅    |             |
+| `time`                  | `str` |    ✅    |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import FingerprintItemRequest
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of FingerprintItemRequest from a JSON string
-fingerprint_item_request_instance = FingerprintItemRequest.from_json(json)
-# print the JSON string representation of the object
-print(FingerprintItemRequest.to_json())
-
-# convert the object into a dict
-fingerprint_item_request_dict = fingerprint_item_request_instance.to_dict()
-# create an instance of FingerprintItemRequest from a dict
-fingerprint_item_request_from_dict = FingerprintItemRequest.from_dict(fingerprint_item_request_dict)
+fingerprint_item_request = FingerprintItemRequest(identification_number="''", time="''")
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import FingerprintItemRequest
 
+# Parse from JSON
+json_str = '{"identification_number": "example"}'
+fingerprint_item_request = FingerprintItemRequest.from_json(json_str)
+
+# Convert to JSON
+print(fingerprint_item_request.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import FingerprintItemRequest
+
+# Convert to/from dictionary
+data_dict = fingerprint_item_request.to_dict()
+fingerprint_item_request = FingerprintItemRequest.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(fingerprint_item_request.identification_number)
+# Update properties
+fingerprint_item_request.identification_number = "new_value"
+```

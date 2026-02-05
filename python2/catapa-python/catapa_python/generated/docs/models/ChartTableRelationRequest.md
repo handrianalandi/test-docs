@@ -1,31 +1,52 @@
 # ChartTableRelationRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**chart_table_relation_id** | **str** |  | 
-**sequence** | **float** |  | 
+| Name                      | Type    | Required | Description |
+| :------------------------ | :------ | :------: | :---------- |
+| `chart_table_relation_id` | `str`   |    ❌    |             |
+| `sequence`                | `float` |    ❌    |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import ChartTableRelationRequest
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of ChartTableRelationRequest from a JSON string
-chart_table_relation_request_instance = ChartTableRelationRequest.from_json(json)
-# print the JSON string representation of the object
-print(ChartTableRelationRequest.to_json())
-
-# convert the object into a dict
-chart_table_relation_request_dict = chart_table_relation_request_instance.to_dict()
-# create an instance of ChartTableRelationRequest from a dict
-chart_table_relation_request_from_dict = ChartTableRelationRequest.from_dict(chart_table_relation_request_dict)
+chart_table_relation_request = ChartTableRelationRequest(
+    chart_table_relation_id="''", sequence=1.337
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import ChartTableRelationRequest
 
+# Parse from JSON
+json_str = '{"chart_table_relation_id": "example"}'
+chart_table_relation_request = ChartTableRelationRequest.from_json(json_str)
+
+# Convert to JSON
+print(chart_table_relation_request.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import ChartTableRelationRequest
+
+# Convert to/from dictionary
+data_dict = chart_table_relation_request.to_dict()
+chart_table_relation_request = ChartTableRelationRequest.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(chart_table_relation_request.chart_table_relation_id)
+# Update properties
+chart_table_relation_request.chart_table_relation_id = "new_value"
+```

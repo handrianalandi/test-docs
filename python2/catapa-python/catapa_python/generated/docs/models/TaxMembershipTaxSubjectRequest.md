@@ -1,36 +1,63 @@
 # TaxMembershipTaxSubjectRequest
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**npwp_address** | **str** | Address registered with NPWP | 
-**npwp_number** | **str** | NPWP (Tax ID) number - can be empty or contain only digits | 
-**id_tku** | **str** | TKU (Tax Knowledge Unit) identifier | 
-**tin** | **str** | Tax Identification Number | 
-**kpp_id** | **str** | Tax office (KPP) identifier | 
-**ptkp_category_id** | **str** | PTKP (Personal Tax Free Income) category identifier | 
-**tax_dependents** | [**List[TaxDependentRequest]**](TaxDependentRequest.md) | List of tax dependents for PTKP calculation | 
+| Name               | Type                                                  | Required | Description                                                |
+| :----------------- | :---------------------------------------------------- | :------: | :--------------------------------------------------------- |
+| `npwp_address`     | `str`                                                 |    ✅    | Address registered with NPWP                               |
+| `npwp_number`      | `str`                                                 |    ❌    | NPWP (Tax ID) number - can be empty or contain only digits |
+| `id_tku`           | `str`                                                 |    ❌    | TKU (Tax Knowledge Unit) identifier                        |
+| `tin`              | `str`                                                 |    ❌    | Tax Identification Number                                  |
+| `kpp_id`           | `str`                                                 |    ❌    | Tax office (KPP) identifier                                |
+| `ptkp_category_id` | `str`                                                 |    ❌    | PTKP (Personal Tax Free Income) category identifier        |
+| `tax_dependents`   | [`List[TaxDependentRequest]`](TaxDependentRequest.md) |    ❌    | List of tax dependents for PTKP calculation                |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import TaxMembershipTaxSubjectRequest
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of TaxMembershipTaxSubjectRequest from a JSON string
-tax_membership_tax_subject_request_instance = TaxMembershipTaxSubjectRequest.from_json(json)
-# print the JSON string representation of the object
-print(TaxMembershipTaxSubjectRequest.to_json())
-
-# convert the object into a dict
-tax_membership_tax_subject_request_dict = tax_membership_tax_subject_request_instance.to_dict()
-# create an instance of TaxMembershipTaxSubjectRequest from a dict
-tax_membership_tax_subject_request_from_dict = TaxMembershipTaxSubjectRequest.from_dict(tax_membership_tax_subject_request_dict)
+tax_membership_tax_subject_request = TaxMembershipTaxSubjectRequest(
+    npwp_address="''",
+    npwp_number="'80728'",
+    id_tku="''",
+    tin="''",
+    kpp_id="''",
+    ptkp_category_id="''",
+    tax_dependents=[],  # List[[TaxDependentRequest](TaxDependentRequest.md)]
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import TaxMembershipTaxSubjectRequest
 
+# Parse from JSON
+json_str = '{"npwp_address": "example"}'
+tax_membership_tax_subject_request = TaxMembershipTaxSubjectRequest.from_json(json_str)
+
+# Convert to JSON
+print(tax_membership_tax_subject_request.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import TaxMembershipTaxSubjectRequest
+
+# Convert to/from dictionary
+data_dict = tax_membership_tax_subject_request.to_dict()
+tax_membership_tax_subject_request = TaxMembershipTaxSubjectRequest.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(tax_membership_tax_subject_request.npwp_address)
+# Update properties
+tax_membership_tax_subject_request.npwp_address = "new_value"
+```

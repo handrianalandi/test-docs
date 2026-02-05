@@ -1,34 +1,59 @@
 # UserAndRoleResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**username** | **str** |  | 
-**email** | **str** |  | 
-**employee** | [**EmployeeIdNameResponse**](EmployeeIdNameResponse.md) |  | 
-**roles** | [**List[RoleResponse]**](RoleResponse.md) |  | 
+| Name       | Type                                                  | Description |
+| :--------- | :---------------------------------------------------- | :---------- |
+| `id`       | `str`                                                 |             |
+| `username` | `str`                                                 |             |
+| `email`    | `str`                                                 |             |
+| `employee` | [`EmployeeIdNameResponse`](EmployeeIdNameResponse.md) |             |
+| `roles`    | [`List[RoleResponse]`](RoleResponse.md)               |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import UserAndRoleResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of UserAndRoleResponse from a JSON string
-user_and_role_response_instance = UserAndRoleResponse.from_json(json)
-# print the JSON string representation of the object
-print(UserAndRoleResponse.to_json())
-
-# convert the object into a dict
-user_and_role_response_dict = user_and_role_response_instance.to_dict()
-# create an instance of UserAndRoleResponse from a dict
-user_and_role_response_from_dict = UserAndRoleResponse.from_dict(user_and_role_response_dict)
+user_and_role_response = UserAndRoleResponse(
+    id="''",
+    username="''",
+    email="''",
+    employee=None,  # [EmployeeIdNameResponse](EmployeeIdNameResponse.md)
+    roles=[],  # List[[RoleResponse](RoleResponse.md)]
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import UserAndRoleResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+user_and_role_response = UserAndRoleResponse.from_json(json_str)
+
+# Convert to JSON
+print(user_and_role_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import UserAndRoleResponse
+
+# Convert to/from dictionary
+data_dict = user_and_role_response.to_dict()
+user_and_role_response = UserAndRoleResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(user_and_role_response.id)
+# Update properties
+user_and_role_response.id = "new_value"
+```

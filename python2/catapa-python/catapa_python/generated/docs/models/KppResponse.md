@@ -1,37 +1,65 @@
 # KppResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | KPP unique identifier | 
-**code** | **str** | KPP code | 
-**name** | **str** | KPP name | 
-**address** | **str** | KPP address | 
-**responsible_person_name** | **str** | Name of the responsible person | 
-**responsible_person_npwp** | **str** | NPWP of the responsible person | 
-**responsible_person_job_title** | **str** | Job title of the responsible person | 
-**kpp_status** | **str** | Status of the KPP | 
+| Name                           | Type  | Description                         |
+| :----------------------------- | :---- | :---------------------------------- |
+| `id`                           | `str` | KPP unique identifier               |
+| `code`                         | `str` | KPP code                            |
+| `name`                         | `str` | KPP name                            |
+| `address`                      | `str` | KPP address                         |
+| `responsible_person_name`      | `str` | Name of the responsible person      |
+| `responsible_person_npwp`      | `str` | NPWP of the responsible person      |
+| `responsible_person_job_title` | `str` | Job title of the responsible person |
+| `kpp_status`                   | `str` | Status of the KPP                   |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import KppResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of KppResponse from a JSON string
-kpp_response_instance = KppResponse.from_json(json)
-# print the JSON string representation of the object
-print(KppResponse.to_json())
-
-# convert the object into a dict
-kpp_response_dict = kpp_response_instance.to_dict()
-# create an instance of KppResponse from a dict
-kpp_response_from_dict = KppResponse.from_dict(kpp_response_dict)
+kpp_response = KppResponse(
+    id="''",
+    code="''",
+    name="''",
+    address="''",
+    responsible_person_name="''",
+    responsible_person_npwp="''",
+    responsible_person_job_title="''",
+    kpp_status="''",
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import KppResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+kpp_response = KppResponse.from_json(json_str)
+
+# Convert to JSON
+print(kpp_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import KppResponse
+
+# Convert to/from dictionary
+data_dict = kpp_response.to_dict()
+kpp_response = KppResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(kpp_response.id)
+# Update properties
+kpp_response.id = "new_value"
+```

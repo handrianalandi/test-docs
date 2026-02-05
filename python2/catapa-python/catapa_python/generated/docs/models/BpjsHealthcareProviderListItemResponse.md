@@ -1,36 +1,67 @@
 # BpjsHealthcareProviderListItemResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**code** | **str** |  | 
-**name** | **str** |  | 
-**address** | **str** |  | 
-**registration_number** | **str** |  | 
-**report_signatory_name** | **str** |  | 
-**report_signatory_job_title** | **str** |  | 
+| Name                         | Type  | Description |
+| :--------------------------- | :---- | :---------- |
+| `id`                         | `str` |             |
+| `code`                       | `str` |             |
+| `name`                       | `str` |             |
+| `address`                    | `str` |             |
+| `registration_number`        | `str` |             |
+| `report_signatory_name`      | `str` |             |
+| `report_signatory_job_title` | `str` |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import BpjsHealthcareProviderListItemResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of BpjsHealthcareProviderListItemResponse from a JSON string
-bpjs_healthcare_provider_list_item_response_instance = BpjsHealthcareProviderListItemResponse.from_json(json)
-# print the JSON string representation of the object
-print(BpjsHealthcareProviderListItemResponse.to_json())
-
-# convert the object into a dict
-bpjs_healthcare_provider_list_item_response_dict = bpjs_healthcare_provider_list_item_response_instance.to_dict()
-# create an instance of BpjsHealthcareProviderListItemResponse from a dict
-bpjs_healthcare_provider_list_item_response_from_dict = BpjsHealthcareProviderListItemResponse.from_dict(bpjs_healthcare_provider_list_item_response_dict)
+bpjs_healthcare_provider_list_item_response = BpjsHealthcareProviderListItemResponse(
+    id="''",
+    code="''",
+    name="''",
+    address="''",
+    registration_number="''",
+    report_signatory_name="''",
+    report_signatory_job_title="''",
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import BpjsHealthcareProviderListItemResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+bpjs_healthcare_provider_list_item_response = (
+    BpjsHealthcareProviderListItemResponse.from_json(json_str)
+)
+
+# Convert to JSON
+print(bpjs_healthcare_provider_list_item_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import BpjsHealthcareProviderListItemResponse
+
+# Convert to/from dictionary
+data_dict = bpjs_healthcare_provider_list_item_response.to_dict()
+bpjs_healthcare_provider_list_item_response = (
+    BpjsHealthcareProviderListItemResponse.from_dict(data_dict)
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(bpjs_healthcare_provider_list_item_response.id)
+# Update properties
+bpjs_healthcare_provider_list_item_response.id = "new_value"
+```

@@ -1,37 +1,65 @@
 # SalaryPaymentSummaryResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**account_number** | **str** |  | 
-**amount** | **float** |  | 
-**id** | **str** |  | 
-**number_of_processed_employees** | **float** |  | 
-**number_of_transferred_employees** | **float** |  | 
-**payment_date** | **str** |  | 
-**transferred_amount** | **float** |  | 
-**company_bank_account** | [**SalaryPaymentSummaryCompanyBankAccountResponse**](SalaryPaymentSummaryCompanyBankAccountResponse.md) |  | 
+| Name                              | Type                                                                                                  | Description |
+| :-------------------------------- | :---------------------------------------------------------------------------------------------------- | :---------- |
+| `account_number`                  | `str`                                                                                                 |             |
+| `amount`                          | `float`                                                                                               |             |
+| `id`                              | `str`                                                                                                 |             |
+| `number_of_processed_employees`   | `float`                                                                                               |             |
+| `number_of_transferred_employees` | `float`                                                                                               |             |
+| `payment_date`                    | `str`                                                                                                 |             |
+| `transferred_amount`              | `float`                                                                                               |             |
+| `company_bank_account`            | [`SalaryPaymentSummaryCompanyBankAccountResponse`](SalaryPaymentSummaryCompanyBankAccountResponse.md) |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import SalaryPaymentSummaryResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of SalaryPaymentSummaryResponse from a JSON string
-salary_payment_summary_response_instance = SalaryPaymentSummaryResponse.from_json(json)
-# print the JSON string representation of the object
-print(SalaryPaymentSummaryResponse.to_json())
-
-# convert the object into a dict
-salary_payment_summary_response_dict = salary_payment_summary_response_instance.to_dict()
-# create an instance of SalaryPaymentSummaryResponse from a dict
-salary_payment_summary_response_from_dict = SalaryPaymentSummaryResponse.from_dict(salary_payment_summary_response_dict)
+salary_payment_summary_response = SalaryPaymentSummaryResponse(
+    account_number="''",
+    amount=1.337,
+    id="''",
+    number_of_processed_employees=1.337,
+    number_of_transferred_employees=1.337,
+    payment_date="''",
+    transferred_amount=1.337,
+    company_bank_account=None,  # [SalaryPaymentSummaryCompanyBankAccountResponse](SalaryPaymentSummaryCompanyBankAccountResponse.md)
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import SalaryPaymentSummaryResponse
 
+# Parse from JSON
+json_str = '{"account_number": "example"}'
+salary_payment_summary_response = SalaryPaymentSummaryResponse.from_json(json_str)
+
+# Convert to JSON
+print(salary_payment_summary_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import SalaryPaymentSummaryResponse
+
+# Convert to/from dictionary
+data_dict = salary_payment_summary_response.to_dict()
+salary_payment_summary_response = SalaryPaymentSummaryResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(salary_payment_summary_response.account_number)
+# Update properties
+salary_payment_summary_response.account_number = "new_value"
+```

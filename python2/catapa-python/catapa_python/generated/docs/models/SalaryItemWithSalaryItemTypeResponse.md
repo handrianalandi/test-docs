@@ -1,33 +1,58 @@
 # SalaryItemWithSalaryItemTypeResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**code** | **str** |  | 
-**name** | **str** |  | 
-**salary_item_type** | **str** |  | 
+| Name               | Type  | Description |
+| :----------------- | :---- | :---------- |
+| `id`               | `str` |             |
+| `code`             | `str` |             |
+| `name`             | `str` |             |
+| `salary_item_type` | `str` |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import SalaryItemWithSalaryItemTypeResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of SalaryItemWithSalaryItemTypeResponse from a JSON string
-salary_item_with_salary_item_type_response_instance = SalaryItemWithSalaryItemTypeResponse.from_json(json)
-# print the JSON string representation of the object
-print(SalaryItemWithSalaryItemTypeResponse.to_json())
-
-# convert the object into a dict
-salary_item_with_salary_item_type_response_dict = salary_item_with_salary_item_type_response_instance.to_dict()
-# create an instance of SalaryItemWithSalaryItemTypeResponse from a dict
-salary_item_with_salary_item_type_response_from_dict = SalaryItemWithSalaryItemTypeResponse.from_dict(salary_item_with_salary_item_type_response_dict)
+salary_item_with_salary_item_type_response = SalaryItemWithSalaryItemTypeResponse(
+    id="''", code="''", name="''", salary_item_type="''"
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import SalaryItemWithSalaryItemTypeResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+salary_item_with_salary_item_type_response = (
+    SalaryItemWithSalaryItemTypeResponse.from_json(json_str)
+)
+
+# Convert to JSON
+print(salary_item_with_salary_item_type_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import SalaryItemWithSalaryItemTypeResponse
+
+# Convert to/from dictionary
+data_dict = salary_item_with_salary_item_type_response.to_dict()
+salary_item_with_salary_item_type_response = (
+    SalaryItemWithSalaryItemTypeResponse.from_dict(data_dict)
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(salary_item_with_salary_item_type_response.id)
+# Update properties
+salary_item_with_salary_item_type_response.id = "new_value"
+```

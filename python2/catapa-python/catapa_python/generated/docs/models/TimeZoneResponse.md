@@ -1,31 +1,50 @@
 # TimeZoneResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**code** | **str** |  | 
-**offset** | **str** |  | 
+| Name     | Type  | Description |
+| :------- | :---- | :---------- |
+| `code`   | `str` |             |
+| `offset` | `str` |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import TimeZoneResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of TimeZoneResponse from a JSON string
-time_zone_response_instance = TimeZoneResponse.from_json(json)
-# print the JSON string representation of the object
-print(TimeZoneResponse.to_json())
-
-# convert the object into a dict
-time_zone_response_dict = time_zone_response_instance.to_dict()
-# create an instance of TimeZoneResponse from a dict
-time_zone_response_from_dict = TimeZoneResponse.from_dict(time_zone_response_dict)
+time_zone_response = TimeZoneResponse(code="''", offset="''")
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import TimeZoneResponse
 
+# Parse from JSON
+json_str = '{"code": "example"}'
+time_zone_response = TimeZoneResponse.from_json(json_str)
+
+# Convert to JSON
+print(time_zone_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import TimeZoneResponse
+
+# Convert to/from dictionary
+data_dict = time_zone_response.to_dict()
+time_zone_response = TimeZoneResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(time_zone_response.code)
+# Update properties
+time_zone_response.code = "new_value"
+```

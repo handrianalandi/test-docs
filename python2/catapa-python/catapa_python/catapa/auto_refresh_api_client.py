@@ -31,7 +31,7 @@ class AutoRefreshApiClient(ApiClient):
 
         # Token automatically refreshed on every call
         employee_api = EmployeeApi(api_client)
-        employees = employee_api.list_all_employees()  # ✅ Auto-refresh!
+        employees = employee_api.get_employees()  # ✅ Auto-refresh!
     """
 
     def __init__(

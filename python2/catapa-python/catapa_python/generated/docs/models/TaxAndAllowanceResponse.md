@@ -1,33 +1,54 @@
 # TaxAndAllowanceResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**original** | **float** |  | 
-**penalty** | **float** |  | 
-**tax** | **float** |  | 
-**allowance** | **float** |  | 
+| Name        | Type    | Description |
+| :---------- | :------ | :---------- |
+| `original`  | `float` |             |
+| `penalty`   | `float` |             |
+| `tax`       | `float` |             |
+| `allowance` | `float` |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import TaxAndAllowanceResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of TaxAndAllowanceResponse from a JSON string
-tax_and_allowance_response_instance = TaxAndAllowanceResponse.from_json(json)
-# print the JSON string representation of the object
-print(TaxAndAllowanceResponse.to_json())
-
-# convert the object into a dict
-tax_and_allowance_response_dict = tax_and_allowance_response_instance.to_dict()
-# create an instance of TaxAndAllowanceResponse from a dict
-tax_and_allowance_response_from_dict = TaxAndAllowanceResponse.from_dict(tax_and_allowance_response_dict)
+tax_and_allowance_response = TaxAndAllowanceResponse(
+    original=1.337, penalty=1.337, tax=1.337, allowance=1.337
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import TaxAndAllowanceResponse
 
+# Parse from JSON
+json_str = '{"original": "example"}'
+tax_and_allowance_response = TaxAndAllowanceResponse.from_json(json_str)
+
+# Convert to JSON
+print(tax_and_allowance_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import TaxAndAllowanceResponse
+
+# Convert to/from dictionary
+data_dict = tax_and_allowance_response.to_dict()
+tax_and_allowance_response = TaxAndAllowanceResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(tax_and_allowance_response.original)
+# Update properties
+tax_and_allowance_response.original = new_value
+```

@@ -1,34 +1,61 @@
 # EditableSalaryPreprocessSuccess
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**employee_identification_number** | **str** |  | 
-**salary_item_code** | **str** |  | 
-**amount** | **float** |  | 
-**period** | **int** |  | 
-**year** | **int** |  | 
+| Name                             | Type    | Required | Description |
+| :------------------------------- | :------ | :------: | :---------- |
+| `employee_identification_number` | `str`   |    ❌    |             |
+| `salary_item_code`               | `str`   |    ❌    |             |
+| `amount`                         | `float` |    ❌    |             |
+| `period`                         | `int`   |    ❌    |             |
+| `year`                           | `int`   |    ❌    |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import EditableSalaryPreprocessSuccess
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of EditableSalaryPreprocessSuccess from a JSON string
-editable_salary_preprocess_success_instance = EditableSalaryPreprocessSuccess.from_json(json)
-# print the JSON string representation of the object
-print(EditableSalaryPreprocessSuccess.to_json())
-
-# convert the object into a dict
-editable_salary_preprocess_success_dict = editable_salary_preprocess_success_instance.to_dict()
-# create an instance of EditableSalaryPreprocessSuccess from a dict
-editable_salary_preprocess_success_from_dict = EditableSalaryPreprocessSuccess.from_dict(editable_salary_preprocess_success_dict)
+editable_salary_preprocess_success = EditableSalaryPreprocessSuccess(
+    employee_identification_number="''",
+    salary_item_code="''",
+    amount=1.337,
+    period=56,
+    year=56,
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import EditableSalaryPreprocessSuccess
 
+# Parse from JSON
+json_str = '{"employee_identification_number": "example"}'
+editable_salary_preprocess_success = EditableSalaryPreprocessSuccess.from_json(json_str)
+
+# Convert to JSON
+print(editable_salary_preprocess_success.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import EditableSalaryPreprocessSuccess
+
+# Convert to/from dictionary
+data_dict = editable_salary_preprocess_success.to_dict()
+editable_salary_preprocess_success = EditableSalaryPreprocessSuccess.from_dict(
+    data_dict
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(editable_salary_preprocess_success.employee_identification_number)
+# Update properties
+editable_salary_preprocess_success.employee_identification_number = "new_value"
+```

@@ -1,32 +1,61 @@
 # TransitionCalculationEmployeeSalaryTemplateResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**effective_date** | **str** |  | 
-**salary_decree_number** | **str** |  | 
-**salary_template** | [**NameResponse**](NameResponse.md) |  | 
+| Name                   | Type                              | Description |
+| :--------------------- | :-------------------------------- | :---------- |
+| `effective_date`       | `str`                             |             |
+| `salary_decree_number` | `str`                             |             |
+| `salary_template`      | [`NameResponse`](NameResponse.md) |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import TransitionCalculationEmployeeSalaryTemplateResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of TransitionCalculationEmployeeSalaryTemplateResponse from a JSON string
-transition_calculation_employee_salary_template_response_instance = TransitionCalculationEmployeeSalaryTemplateResponse.from_json(json)
-# print the JSON string representation of the object
-print(TransitionCalculationEmployeeSalaryTemplateResponse.to_json())
-
-# convert the object into a dict
-transition_calculation_employee_salary_template_response_dict = transition_calculation_employee_salary_template_response_instance.to_dict()
-# create an instance of TransitionCalculationEmployeeSalaryTemplateResponse from a dict
-transition_calculation_employee_salary_template_response_from_dict = TransitionCalculationEmployeeSalaryTemplateResponse.from_dict(transition_calculation_employee_salary_template_response_dict)
+transition_calculation_employee_salary_template_response = (
+    TransitionCalculationEmployeeSalaryTemplateResponse(
+        effective_date="''",
+        salary_decree_number="''",
+        salary_template=None,  # [NameResponse](NameResponse.md)
+    )
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import TransitionCalculationEmployeeSalaryTemplateResponse
 
+# Parse from JSON
+json_str = '{"effective_date": "example"}'
+transition_calculation_employee_salary_template_response = (
+    TransitionCalculationEmployeeSalaryTemplateResponse.from_json(json_str)
+)
+
+# Convert to JSON
+print(transition_calculation_employee_salary_template_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import TransitionCalculationEmployeeSalaryTemplateResponse
+
+# Convert to/from dictionary
+data_dict = transition_calculation_employee_salary_template_response.to_dict()
+transition_calculation_employee_salary_template_response = (
+    TransitionCalculationEmployeeSalaryTemplateResponse.from_dict(data_dict)
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(transition_calculation_employee_salary_template_response.effective_date)
+# Update properties
+transition_calculation_employee_salary_template_response.effective_date = "new_value"
+```

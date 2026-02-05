@@ -1,39 +1,69 @@
 # TaxReport1721VIIIResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**employee** | [**EmployeeSimpleResponse**](EmployeeSimpleResponse.md) |  | 
-**kpp** | [**KppSimpleResponse**](KppSimpleResponse.md) |  | 
-**year** | **float** |  | 
-**month** | **float** |  | 
-**sequence_number** | **float** |  | 
-**npwp_number** | **str** |  | 
-**address** | **str** |  | 
-**monthly_gross_income** | **float** |  | 
-**monthly_tax** | [**TaxAmountResponse**](TaxAmountResponse.md) |  | 
+| Name                   | Type                                                  | Description |
+| :--------------------- | :---------------------------------------------------- | :---------- |
+| `id`                   | `str`                                                 |             |
+| `employee`             | [`EmployeeSimpleResponse`](EmployeeSimpleResponse.md) |             |
+| `kpp`                  | [`KppSimpleResponse`](KppSimpleResponse.md)           |             |
+| `year`                 | `float`                                               |             |
+| `month`                | `float`                                               |             |
+| `sequence_number`      | `float`                                               |             |
+| `npwp_number`          | `str`                                                 |             |
+| `address`              | `str`                                                 |             |
+| `monthly_gross_income` | `float`                                               |             |
+| `monthly_tax`          | [`TaxAmountResponse`](TaxAmountResponse.md)           |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import TaxReport1721VIIIResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of TaxReport1721VIIIResponse from a JSON string
-tax_report1721_viii_response_instance = TaxReport1721VIIIResponse.from_json(json)
-# print the JSON string representation of the object
-print(TaxReport1721VIIIResponse.to_json())
-
-# convert the object into a dict
-tax_report1721_viii_response_dict = tax_report1721_viii_response_instance.to_dict()
-# create an instance of TaxReport1721VIIIResponse from a dict
-tax_report1721_viii_response_from_dict = TaxReport1721VIIIResponse.from_dict(tax_report1721_viii_response_dict)
+tax_report1721_viii_response = TaxReport1721VIIIResponse(
+    id="''",
+    employee=None,  # [EmployeeSimpleResponse](EmployeeSimpleResponse.md)
+    kpp=None,  # [KppSimpleResponse](KppSimpleResponse.md)
+    year=1.337,
+    month=1.337,
+    sequence_number=1.337,
+    npwp_number="''",
+    address="''",
+    monthly_gross_income=1.337,
+    monthly_tax=None,  # [TaxAmountResponse](TaxAmountResponse.md)
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import TaxReport1721VIIIResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+tax_report1721_viii_response = TaxReport1721VIIIResponse.from_json(json_str)
+
+# Convert to JSON
+print(tax_report1721_viii_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import TaxReport1721VIIIResponse
+
+# Convert to/from dictionary
+data_dict = tax_report1721_viii_response.to_dict()
+tax_report1721_viii_response = TaxReport1721VIIIResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(tax_report1721_viii_response.id)
+# Update properties
+tax_report1721_viii_response.id = "new_value"
+```

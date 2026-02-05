@@ -1,32 +1,61 @@
 # SalaryPaymentSummaryCompanyBankAccountResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | 
-**account_number** | **str** |  | 
-**bank_branch** | [**BankBranchSimpleResponse**](BankBranchSimpleResponse.md) |  | 
+| Name             | Type                                                      | Description |
+| :--------------- | :-------------------------------------------------------- | :---------- |
+| `id`             | `str`                                                     |             |
+| `account_number` | `str`                                                     |             |
+| `bank_branch`    | [`BankBranchSimpleResponse`](BankBranchSimpleResponse.md) |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import SalaryPaymentSummaryCompanyBankAccountResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of SalaryPaymentSummaryCompanyBankAccountResponse from a JSON string
-salary_payment_summary_company_bank_account_response_instance = SalaryPaymentSummaryCompanyBankAccountResponse.from_json(json)
-# print the JSON string representation of the object
-print(SalaryPaymentSummaryCompanyBankAccountResponse.to_json())
-
-# convert the object into a dict
-salary_payment_summary_company_bank_account_response_dict = salary_payment_summary_company_bank_account_response_instance.to_dict()
-# create an instance of SalaryPaymentSummaryCompanyBankAccountResponse from a dict
-salary_payment_summary_company_bank_account_response_from_dict = SalaryPaymentSummaryCompanyBankAccountResponse.from_dict(salary_payment_summary_company_bank_account_response_dict)
+salary_payment_summary_company_bank_account_response = (
+    SalaryPaymentSummaryCompanyBankAccountResponse(
+        id="''",
+        account_number="'98343411'",
+        bank_branch=None,  # [BankBranchSimpleResponse](BankBranchSimpleResponse.md)
+    )
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import SalaryPaymentSummaryCompanyBankAccountResponse
 
+# Parse from JSON
+json_str = '{"id": "example"}'
+salary_payment_summary_company_bank_account_response = (
+    SalaryPaymentSummaryCompanyBankAccountResponse.from_json(json_str)
+)
+
+# Convert to JSON
+print(salary_payment_summary_company_bank_account_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import SalaryPaymentSummaryCompanyBankAccountResponse
+
+# Convert to/from dictionary
+data_dict = salary_payment_summary_company_bank_account_response.to_dict()
+salary_payment_summary_company_bank_account_response = (
+    SalaryPaymentSummaryCompanyBankAccountResponse.from_dict(data_dict)
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(salary_payment_summary_company_bank_account_response.id)
+# Update properties
+salary_payment_summary_company_bank_account_response.id = "new_value"
+```

@@ -1,33 +1,54 @@
 # JobTitleRequestDeprecated
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**code** | **str** |  | 
-**name** | **str** |  | 
-**min_job_level_id** | **str** |  | 
-**max_job_level_id** | **str** |  | 
+| Name               | Type  | Required | Description |
+| :----------------- | :---- | :------: | :---------- |
+| `code`             | `str` |    ✅    |             |
+| `name`             | `str` |    ✅    |             |
+| `min_job_level_id` | `str` |    ❌    |             |
+| `max_job_level_id` | `str` |    ❌    |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import JobTitleRequestDeprecated
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of JobTitleRequestDeprecated from a JSON string
-job_title_request_deprecated_instance = JobTitleRequestDeprecated.from_json(json)
-# print the JSON string representation of the object
-print(JobTitleRequestDeprecated.to_json())
-
-# convert the object into a dict
-job_title_request_deprecated_dict = job_title_request_deprecated_instance.to_dict()
-# create an instance of JobTitleRequestDeprecated from a dict
-job_title_request_deprecated_from_dict = JobTitleRequestDeprecated.from_dict(job_title_request_deprecated_dict)
+job_title_request_deprecated = JobTitleRequestDeprecated(
+    code="'0'", name="'0'", min_job_level_id="''", max_job_level_id="''"
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import JobTitleRequestDeprecated
 
+# Parse from JSON
+json_str = '{"code": "example"}'
+job_title_request_deprecated = JobTitleRequestDeprecated.from_json(json_str)
+
+# Convert to JSON
+print(job_title_request_deprecated.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import JobTitleRequestDeprecated
+
+# Convert to/from dictionary
+data_dict = job_title_request_deprecated.to_dict()
+job_title_request_deprecated = JobTitleRequestDeprecated.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(job_title_request_deprecated.code)
+# Update properties
+job_title_request_deprecated.code = "new_value"
+```

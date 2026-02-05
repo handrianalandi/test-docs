@@ -26,13 +26,11 @@ def main() -> None:
     print("✓ Client initialized with auto-refresh token support\n")
 
     # Step 2: Create API instances
-    # Tokens are automatically refreshed on every API call (5-minute buffer before expiration)
     employee_api = EmployeeApi(client)
     master_data_api = MasterDataApi(client)
 
     # Step 3: Make API calls
-    # No need to worry about token expiration - it's handled automatically!
-    employees = employee_api.list_all_employees(page=0, size=5)
+    employees = employee_api.get_employees(page=0, size=5)
     print(f"📋 Employees: {len(employees.content)} found, first 3:")
     for emp in employees.content[:3]:
         print(f"   • {emp.name}")

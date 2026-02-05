@@ -1,30 +1,55 @@
 # ProcessedSalaryPaymentDetailResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**account_number** | **str** |  | 
+| Name             | Type  | Description |
+| :--------------- | :---- | :---------- |
+| `account_number` | `str` |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import ProcessedSalaryPaymentDetailResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of ProcessedSalaryPaymentDetailResponse from a JSON string
-processed_salary_payment_detail_response_instance = ProcessedSalaryPaymentDetailResponse.from_json(json)
-# print the JSON string representation of the object
-print(ProcessedSalaryPaymentDetailResponse.to_json())
-
-# convert the object into a dict
-processed_salary_payment_detail_response_dict = processed_salary_payment_detail_response_instance.to_dict()
-# create an instance of ProcessedSalaryPaymentDetailResponse from a dict
-processed_salary_payment_detail_response_from_dict = ProcessedSalaryPaymentDetailResponse.from_dict(processed_salary_payment_detail_response_dict)
+processed_salary_payment_detail_response = ProcessedSalaryPaymentDetailResponse(
+    account_number="''"
+)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import ProcessedSalaryPaymentDetailResponse
 
+# Parse from JSON
+json_str = '{"account_number": "example"}'
+processed_salary_payment_detail_response = (
+    ProcessedSalaryPaymentDetailResponse.from_json(json_str)
+)
+
+# Convert to JSON
+print(processed_salary_payment_detail_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import ProcessedSalaryPaymentDetailResponse
+
+# Convert to/from dictionary
+data_dict = processed_salary_payment_detail_response.to_dict()
+processed_salary_payment_detail_response = (
+    ProcessedSalaryPaymentDetailResponse.from_dict(data_dict)
+)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(processed_salary_payment_detail_response.account_number)
+# Update properties
+processed_salary_payment_detail_response.account_number = "new_value"
+```

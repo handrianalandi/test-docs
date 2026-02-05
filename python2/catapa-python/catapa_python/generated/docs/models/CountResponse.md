@@ -1,30 +1,49 @@
 # CountResponse
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**count** | **int** |  | 
+| Name    | Type  | Description |
+| :------ | :---- | :---------- |
+| `count` | `int` |             |
 
-## Example
+## Usage Examples
+
+### Creating an instance
 
 ```python
 from catapa import CountResponse
 
-# TODO update the JSON string below
-json = "{}"
-# create an instance of CountResponse from a JSON string
-count_response_instance = CountResponse.from_json(json)
-# print the JSON string representation of the object
-print(CountResponse.to_json())
-
-# convert the object into a dict
-count_response_dict = count_response_instance.to_dict()
-# create an instance of CountResponse from a dict
-count_response_from_dict = CountResponse.from_dict(count_response_dict)
+count_response = CountResponse(count=56)
 ```
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
+### Working with JSON
 
+```python
+from catapa import CountResponse
 
+# Parse from JSON
+json_str = '{"count": "example"}'
+count_response = CountResponse.from_json(json_str)
+
+# Convert to JSON
+print(count_response.to_json())
+```
+
+### Working with dictionaries
+
+```python
+from catapa import CountResponse
+
+# Convert to/from dictionary
+data_dict = count_response.to_dict()
+count_response = CountResponse.from_dict(data_dict)
+```
+
+### Accessing properties
+
+```python
+# Access properties
+print(count_response.count)
+# Update properties
+count_response.count = new_value
+```

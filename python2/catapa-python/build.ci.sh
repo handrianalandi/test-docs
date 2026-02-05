@@ -1,5 +1,5 @@
 #!/bin/bash
-set -uo pipefail  # Exit on undefined variables and pipe failures
+set -ueo pipefail  # Exit on undefined variables and pipe failures
 
 # Script: build.ci.sh
 # Purpose: CI script for building Catapa SDK
@@ -10,7 +10,7 @@ echo "🚀 Starting Catapa SDK CI Build"
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 
 # Set default parameters based on user requirements
-SPEC_URL="https://developer.catapa.com/openapi-dist.yaml"
+export SPEC_URL="https://developer.catapa.com/openapi-dist.yaml"
 GENERATE_PYTHON=true
 
 # Initialize status variables
@@ -25,8 +25,8 @@ echo "📦 Generating: Python SDK"
 # Check if we're in the correct directory
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
-# Navigate to scripts/sdk to access regenerate-client.sh
-cd ../../scripts/sdk
+# Navigate to scripts/sdk/generate for SDK generation
+cd ../../scripts/sdk/generate
 
 # Check for required tools
 echo "🔍 Checking required tools..."
@@ -64,7 +64,7 @@ echo "📦 Installing Dependencies from pyproject.toml"
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 
 # Navigate to python/catapa-python directory and install dependencies
-cd ../../python/catapa-python
+cd ../../../python/catapa-python
 if uv sync && uv pip install -e ".[dev]"; then
     echo "✅ Dependencies installed successfully"
     DEPENDENCIES_INSTALLED=true
@@ -90,16 +90,15 @@ else
     LINTING_PASSED=false
 fi
 
-# Navigate to scripts/sdk for regenerate-client.sh
-# From python/catapa-python, go up two levels then into scripts/sdk
-cd ../../scripts/sdk
+# Navigate to scripts/sdk/generate and run Python SDK generation
+# From python/catapa-python, go up two levels then into scripts/sdk/generate
+cd ../../scripts/sdk/generate
 
-# Run the regenerate-client.sh script with required parameters
 echo ""
 echo "🔄 Running SDK regeneration..."
-echo "📝 Command: ./regenerate-client.sh --url \"$SPEC_URL\" --python"
+echo "📝 Command: uv run main.py py"
 
-if ./regenerate-client.sh --url "$SPEC_URL" --python; then
+if uv sync && uv run main.py py; then
     echo ""
     echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
     echo "✅ SDK Regeneration Completed Successfully!"
@@ -108,8 +107,8 @@ if ./regenerate-client.sh --url "$SPEC_URL" --python; then
     SDK_GENERATED=true
     
     # Navigate back to python/catapa-python directory for testing
-    # From scripts/sdk, go up to root then into python/catapa-python
-    cd ../../python/catapa-python
+    # From scripts/sdk/generate, go up to repo root then into python/catapa-python
+    cd ../../../python/catapa-python
     
     # Verify the generated files
     echo ""
@@ -130,22 +129,16 @@ if ./regenerate-client.sh --url "$SPEC_URL" --python; then
     echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
     
     # Create directory for coverage report
-    rm -rf build/reports
     mkdir -p build/reports
     
-    # Run pytest with coverage
+    # Run pytest with coverage using coverage command
     # Coverage report will be generated at build/reports/coverage.xml for Sonarqube
     # Use set +e to continue even if tests fail (to ensure coverage report is always generated)
     set +e
-    # IMPORTANT for SonarQube integration:
-    # - Use "." as the coverage target so coverage.py + relative_files emit paths
-    #   relative to python/catapa-python (the sonar.projectBaseDir), e.g.
-    #   "catapa_python/catapa/auto_refresh_api_client.py".
-    uv run pytest tests/ \
-        --cov=. \
-        --cov-report=xml:build/reports/coverage.xml \
-        --cov-report=term
+    uv run coverage run -m pytest tests/
     TEST_EXIT_CODE=$?
+    uv run coverage report -m -i --skip-empty
+    uv run coverage xml -i -o build/reports/coverage.xml
     set -e
     
     if [ $TEST_EXIT_CODE -eq 0 ]; then
