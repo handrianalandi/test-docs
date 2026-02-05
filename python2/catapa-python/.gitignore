@@ -121,6 +121,6 @@ condaenv.t1e302om.requirements.txt
 
 catapa_python/generated/**
 !catapa_python/generated/README.md
-!catapa_python/generated/SUMMARY.md
+!catapa_python/generated/custom_docs/**
 !catapa_python/generated/docs/
 !catapa_python/generated/docs/**

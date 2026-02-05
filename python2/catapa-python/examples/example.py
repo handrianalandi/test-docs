@@ -10,7 +10,7 @@ References:
     NONE
 """
 
-from catapa import Catapa, EmployeeApi, MasterDataApi
+from catapa import Catapa, EmployeeApi, MasterDataApi, SearchQueryBuilder
 
 
 def main() -> None:
@@ -20,8 +20,8 @@ def main() -> None:
     # Step 1: Initialize with your credentials
     client = Catapa(
         tenant="zfrl",
-        client_id="test-client-id",
-        client_secret="test-client-secret"
+        client_id="demo",
+        client_secret="demo-secret"
     )
     print("✓ Client initialized with auto-refresh token support\n")
 
@@ -38,16 +38,28 @@ def main() -> None:
     countries = master_data_api.get_countries()
     print(f"\n🌍 Countries: {len(countries.content)} found")
 
+    # Step 4: Search with Query Builder
+    print("\n🔍 Search employees with name containing 'a':")
+    query_string = SearchQueryBuilder().search("name", "a").build_query()
+    search_results = employee_api.get_employees(page=0, size=5, query=query_string)
+    print(f"   Query: {query_string}")
+    print(f"   Found: {search_results.total_elements} employees, showing first 3:")
+    for emp in search_results.content[:3]:
+        print(f"   • {emp.name}")
+
     print("\n✨ That's all! All APIs work the same way.")
     print("\n💡 Key Features:")
     print("  • Automatic token refresh on every API call")
     print("  • Create API instances once, use them throughout your application")
     print("  • Perfect for long-running services and daemons")
     print("  • No manual token management needed")
+    print("  • SearchQueryBuilder for advanced filtering")
     print("\n📚 Available APIs:")
     print("  • EmployeeApi, OrganizationApi, MasterDataApi")
     print("  • TaxApi, SalaryPaymentApi, PayrollProcessSnapshotApi")
     print("  • ... and 40+ more!")
+    print("\n📖 More Examples:")
+    print("  • See examples/query_builder_example.py for advanced query patterns")
 
 
 if __name__ == "__main__":

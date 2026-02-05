@@ -507,7 +507,6 @@
   - [WorkgroupWorkdayConfigurationRequest](docs/models/WorkgroupWorkdayConfigurationRequest.md)
   - [WorkgroupWorkdayConfigurationResponse](docs/models/WorkgroupWorkdayConfigurationResponse.md)
 
-## Custom Documentation
+## Others
 
-- [Hello](custom_docs/hello.md)
-- [Hello World](custom_docs/hello_world.md)
+- [Query Builder](custom_docs/query_builder.md)

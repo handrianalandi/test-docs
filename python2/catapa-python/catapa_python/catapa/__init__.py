@@ -5,6 +5,7 @@ Main entry point for the CATAPA Python SDK with authentication wrapper.
 This package provides:
 - Catapa: Main wrapper class with automatic OAuth2 authentication.
 - CatapaAuth & CatapaConfig: Authentication utilities.
+- SearchQueryBuilder: Query builder utility for constructing search queries.
 - All generated API classes (EmployeeApi, OrganizationApi, etc.).
 - All generated model classes (EmployeeResponse, CompanyDetailResponse, etc.).
 - Core classes (Configuration, ApiClient).
@@ -22,6 +23,9 @@ from catapa.auth.catapa_auth import CatapaAuth, CatapaConfig
 
 # Auto-refresh API client
 from catapa.auto_refresh_api_client import AutoRefreshApiClient
+
+# Query builder
+from catapa.query_builder import SearchQueryBuilder
 
 # Main wrapper class
 from catapa.wrapper import Catapa
@@ -47,4 +51,5 @@ __all__ = [
     "CatapaAuth",
     "CatapaConfig",
     "AutoRefreshApiClient",
+    "SearchQueryBuilder",
 ] + list(_generated_all)

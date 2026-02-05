@@ -96,6 +96,96 @@ if __name__ == "__main__":
     main()
 ```
 
+### Tutorial 2: Using the Query Builder
+
+A complete example showing how to use `SearchQueryBuilder` for complex search queries.
+
+```python
+#!/usr/bin/env python3
+
+from catapa import Catapa, EmployeeApi, SearchQueryBuilder
+
+def main() -> None:
+    """Main function demonstrating query builder usage."""
+    client = Catapa(tenant="zfrl", client_id="demo", client_secret="demo-secret")
+    employee_api = EmployeeApi(client)
+
+    # Example 1: Simple search
+    print("=== Simple Search ===")
+    query_string = SearchQueryBuilder().search("name", "John").build_query()
+    results = employee_api.get_employees(page=0, size=5, query=query_string)
+    print(f"Found {results.total_elements} employees\n")
+
+    # Example 2: OR search across multiple fields
+    print("=== OR Search (Multiple Fields) ===")
+    query_string = (SearchQueryBuilder()
+        .search("name", "John")
+        .search("name", "Jane")
+        .build_query())
+    results = employee_api.get_employees(page=0, size=10, query=query_string)
+    print(f"Found {results.total_elements} employees\n")
+
+    # Example 3: Combined search + filter (OR + AND)
+    print("=== Combined Search and Filter ===")
+    query_string = (SearchQueryBuilder()
+        .search("name", "John")
+        .filter("startDate", {"from": "2024-01-01"})
+        .build_query())
+    results = employee_api.get_employees(page=0, size=10, query=query_string)
+    print(f"Found {results.total_elements} employees\n")
+
+if __name__ == "__main__":
+    main()
+```
+
+**Key Query Builder Concepts:**
+
+- **`.search(field, value)`** - Adds OR condition (matches if ANY field contains value)
+- **`.filter(field, value)`** - Adds AND condition (matches only if ALL conditions are met)
+- **`.build_query()`** - Converts the query to a URL-encoded string ready for API requests
+- **Method Chaining** - Chain multiple `.search()` and `.filter()` calls fluently
+
+**Query Syntax Examples:**
+
+```python
+# Simple search - one liner
+query_string = SearchQueryBuilder().search("name", "John").build_query()
+# → "(name:John)"
+
+# OR search - multiple calls
+query_string = (SearchQueryBuilder()
+    .search("name", "John")
+    .search("name", "Jane")
+    .build_query())
+# → "(name:John|name:Jane)"
+
+# AND filter - combined conditions
+query_string = (SearchQueryBuilder()
+    .filter("isActive", True)
+    .filter("organizationId", "123")
+    .build_query())
+# → "(isActive:true,organizationId:123)"
+
+# Date range filtering
+query_string = (SearchQueryBuilder()
+    .filter("startDate", {"from": "2024-01-01", "to": "2024-12-31"})
+    .build_query())
+# → "(startDate>2024-01-01,startDate<2024-12-31)"
+
+# Combined search and filter
+query_string = (SearchQueryBuilder()
+    .search("name", "John")
+    .filter("isActive", True)
+    .build_query())
+# → "((name:John),(isActive:true))"
+
+# IN operator
+query_string = (SearchQueryBuilder()
+    .search("id", {"in": ["123", "456", "789"]})
+    .build_query())
+# → "(idIn:123;456;789)"
+```
+
 ## Cookbook
 
 Intermediate to Advanced examples for real-world scenarios.
@@ -199,6 +289,7 @@ All CATAPA APIs are available through the `catapa` package:
 ```python
 from catapa import (
     Catapa,
+    SearchQueryBuilder,
     EmployeeApi,
     OrganizationApi,
     MasterDataApi,

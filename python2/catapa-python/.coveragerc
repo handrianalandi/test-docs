@@ -1,0 +1,49 @@
+# Coverage.py configuration file
+# https://coverage.readthedocs.io/en/latest/config.html
+
+[run]
+# Measure branch coverage in addition to statement coverage
+branch = True
+
+# Source packages to measure - use current directory as source root
+# so that XML reports contain paths relative to project root
+source = .
+
+# Directories/files to include in measurement (only measure main package)
+include = catapa_python/*
+
+# Directories/files to exclude from measurement
+omit =
+    tests/*
+    catapa_python/generated/*
+    scripts/*
+    examples/*
+    **/__init__.py
+
+[report]
+# Exclude lines from coverage report matching these patterns
+exclude_lines =
+    # Standard pragma
+    pragma: no cover
+
+    # Don't complain about missing debug-only code
+    def __repr__
+    def __str__
+
+    # Don't complain if tests don't hit defensive assertions
+    raise AssertionError
+    raise NotImplementedError
+
+    # Don't complain about abstract methods
+    @abstractmethod
+    @abc.abstractmethod
+
+    # Don't complain about type checking blocks
+    if TYPE_CHECKING:
+    if typing.TYPE_CHECKING:
+
+    # Don't complain about conditional imports
+    except ImportError
+
+    # Don't complain about main block
+    if __name__ == .__main__.:
